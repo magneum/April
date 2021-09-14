@@ -1,0 +1,7 @@
+{
+    "MAX_PLAYLIST_SIZE": 10,
+    "PREFIX": "/",
+    "PRUNING": false,
+    "LOCALE": "en",
+    "STAY_TIME": 30
+}
