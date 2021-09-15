@@ -73,7 +73,7 @@ Display all commands and descriptions.
 == Stops the music.
 • /vol
 == Change volume of currently playing music.
-
+```
 
 # 💠 DΣPLӨY  
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴛʜᴇɴ ᴄʜᴀɴɢᴇ [app.bot](app.bot) ᴛᴏ app.json
