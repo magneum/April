@@ -13,7 +13,7 @@ const NoirYt = require("ytdl-core");
 const pnoir = require("../ɴᴏɪʀ_ᴏꜱ/pnoir");
 const { play } = require("../ɴᴏɪʀ_ʏᴏᴜᴛᴜʙᴇ/play");
 const YouTubeAPI = require("simple-youtube-api");
-const { NOIRTUNE } = require("../ɴᴏɪʀ_ᴏꜱ/Sys")
+const { NOIRTUNE } = require("../ɴᴏɪʀ_ᴏꜱ/noirsys")
 const youtube = new YouTubeAPI(NOIRTUNE);
 /**
  * 

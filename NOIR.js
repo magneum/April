@@ -13,7 +13,7 @@ const os = require('os')
 const { join } = require("path");
 const { readdirSync } = require("fs");
 const pnoir = require("./ɴᴏɪʀ_ᴏꜱ/pnoir");
-const { PREFIX, NDISCORD } = require("./ɴᴏɪʀ_ᴏꜱ/Sys");
+const { PREFIX, NDISCORD } = require("./ɴᴏɪʀ_ᴏꜱ/noirsys");
 const { Client, Collection } = require('discord.js');
 /**
  * 

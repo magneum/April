@@ -13,7 +13,7 @@ const pnoir = require("../ɴᴏɪʀ_ᴏꜱ/pnoir");
 const { play } = require("../ɴᴏɪʀ_ʏᴏᴜᴛᴜʙᴇ/play");
 const { MessageEmbed } = require("discord.js");
 const YouTubeAPI = require("simple-youtube-api");
-const { NOIRTUNE, MAX_PLAYLIST_SIZE } = require("../ɴᴏɪʀ_ᴏꜱ/Sys")
+const { NOIRTUNE, MAX_PLAYLIST_SIZE } = require("../ɴᴏɪʀ_ᴏꜱ/noirsys")
 const youtube = new YouTubeAPI(NOIRTUNE);
 /**
  * 

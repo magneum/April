@@ -11,7 +11,7 @@
 =================================================================—••÷[🕊NOIR🕊]÷••—==========================================================================`
 const pnoir = require("../ɴᴏɪʀ_ᴏꜱ/pnoir");
 const NoirYt = require("ytdl-core-discord");
-const { canModifyQueue, STAY_TIME } = require("../ɴᴏɪʀ_ᴏꜱ/Sys");
+const { canModifyQueue, STAY_TIME } = require("../ɴᴏɪʀ_ᴏꜱ/noirsys");
 /**
  * 
  * 
@@ -91,22 +91,23 @@ module.exports = {
     dispatcher.setVolumeLogarithmic(queue.volume / 100);
 
     try {
-      var playingMessage = await queue.textChannel.send(
+      var noirPlayerMsg = await queue.textChannel.send(
         pnoir.__mf("play.ɴᴏɪʀ_started_Playing", { title: song.title, url: song.url })
       );
-      await playingMessage.react("⏭");
-      await playingMessage.react("⏯");
-      await playingMessage.react("🔇");
-      await playingMessage.react("🔉");
-      await playingMessage.react("🔊");
-      await playingMessage.react("🔁");
-      await playingMessage.react("⏹");
+      await noirPlayerMsg.react("➡️");
+      await noirPlayerMsg.react("🚦");
+      await noirPlayerMsg.react("🔕");
+      await noirPlayerMsg.react("🔉");
+      await noirPlayerMsg.react("🔊");
+      await noirPlayerMsg.react("🔁");
+      await noirPlayerMsg.react("❌");
+
     } catch (error) {
       console.error(error);
     }
 
     const filter = (reaction, user) => user.id !== message.client.user.id;
-    var collector = playingMessage.createReactionCollector(filter, {
+    var collector = noirPlayerMsg.createReactionCollector(filter, {
       time: song.duration > 0 ? song.duration * 1000 : 600000
     });
 
@@ -115,7 +116,7 @@ module.exports = {
       const member = message.guild.member(user);
 
       switch (reaction.emoji.name) {
-        case "⏭":
+        case "➡️":
           queue.playing = true;
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return pnoir.__("common.errorNotChannel");
@@ -124,7 +125,7 @@ module.exports = {
           collector.stop();
           break;
 
-        case "⏯":
+        case "🚦":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return pnoir.__("common.errorNotChannel");
           if (queue.playing) {
@@ -138,7 +139,7 @@ module.exports = {
           }
           break;
 
-        case "🔇":
+        case "🔕":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return pnoir.__("common.errorNotChannel");
           queue.muted = !queue.muted;
@@ -187,7 +188,7 @@ module.exports = {
             .catch(console.error);
           break;
 
-        case "⏹":
+        case "❌":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return pnoir.__("common.errorNotChannel");
           queue.songs = [];
@@ -208,9 +209,9 @@ module.exports = {
     });
 
     collector.on("end", () => {
-      playingMessage.reactions.removeAll().catch(console.error);
-      if (PRUNING && playingMessage && !playingMessage.deleted) {
-        playingMessage.delete({ timeout: 3000 }).catch(console.error);
+      noirPlayerMsg.reactions.removeAll().catch(console.error);
+      if (PRUNING && noirPlayerMsg && !noirPlayerMsg.deleted) {
+        noirPlayerMsg.delete({ timeout: 3000 }).catch(console.error);
       }
     });
   }
