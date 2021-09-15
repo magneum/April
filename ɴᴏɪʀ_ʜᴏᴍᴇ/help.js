@@ -9,7 +9,6 @@
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 =================================================================—••÷[🕊NOIR🕊]÷••—==========================================================================`
-const pnoir = require("../ɴᴏɪʀ_ᴏꜱ/pnoir");
 const { MessageEmbed } = require("discord.js");
 /**
  * 
@@ -68,7 +67,6 @@ Display all commands and descriptions.
  */
 module.exports = {
   name: "help",
-  description: pnoir.__("help.ɴᴏɪʀ_description"),
 
   execute(message, args) {
     try { message.delete(); }
@@ -79,8 +77,8 @@ module.exports = {
       .setDescription(NoirHelpQ)
       .setAuthor("Author•— HypeVoidSoul")
       .setFooter("—••÷=======[ 🕊NOIR🕊 ]=======÷•—")
-      .setThumbnail("https://telegra.ph/file/805a9684da89a5dcac320.jpg")
-      .setImage("https://telegra.ph/file/805a9684da89a5dcac320.jpg")
+      .setThumbnail("https://telegra.ph/file/3766d80c69f488d850173.jpg")
+      .setImage("https://telegra.ph/file/3766d80c69f488d850173.jpg")
       .setColor("0x1f8b4c");
     helpEmbed.setTimestamp();
 
