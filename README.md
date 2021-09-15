@@ -41,44 +41,44 @@
                     keep any command prefix as per your needs!
 
 •♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
-**• /help**
+• /help
 Display all commands and descriptions.
-**• /loop**  
+• /loop  
 == Toggle music loop.
-**• /lyrics**
+• /lyrics
 == Get lyrics for the currently playing song.
-**• /nowplaying**
+• /nowplaying
 == Show now playing song.
-**• /pause**
+• /pause
 == Pause the currently playing music.
-**• /ping**
+• /ping
 == Check server ping of client.
-**• /play**
+• /play
 == Plays audio from YouTube.
-**• /list**
+• /list
 == Play a playlist from YouTube.
-**• /queue**
+• /queue
 == Show the music queue and now playing.
-**• /remove**
+• /remove
 == Remove song from the queue.
-**• /resume**
+• /resume
 == Resume currently playing music.
-**• /shuffle**
+• /shuffle
 == Shuffle music queue.
-**• /next**
+• /next
 == Skip the currently playing song.
-**• /skip**
+• /skip
 == Skip to the selected queue number.
-**• /stop**
+• /stop
 == Stops the music.
-**• /vol**
+• /vol
 == Change volume of currently playing music.
 
 
 # 💠 DΣPLӨY  
 - ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴛʜᴇɴ ᴄʜᴀɴɢᴇ [app.bot](app.bot) ᴛᴏ app.json
 
-- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSoul/Norded.git/tree/VOID) 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
+- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSoul/Noir.git/tree/VOID) 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
 
 
 
