@@ -9,8 +9,28 @@
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 =================================================================—••÷[🕊NOIR🕊]÷••—==========================================================================`
-const pnoir = require("../Noir_Sys/pnoir");
-const { canModifyQueue } = require("../Noir_Sys/Sys");
+const { MessageEmbed } = require("discord.js");
+const { PREFIX } = require("../ɴᴏɪʀ_ᴏꜱ/Sys");
+/**
+ * 
+ * 
+ * —••÷[🕊NOIR🕊]÷••—  ===================================================================================
+ * Discord Music player Bot 
+ * has been licensed under GNU General Public License
+ * 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+ * —••÷[🕊NOIR🕊]÷••—  ===================================================================================
+ * 
+ * 
+ */
+const NOIRED = `=• **🕊NOIR🕊** is a Discord Music player Bot 
+with YouTube Support and is available on both 
+Discord and Telegram.
+
+=• use ${PREFIX}help to learn how to use **🕊NOIR🕊**
+
+=• **🕊NOIR🕊** has been licensed under 
+GNU General Public License
+𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀`
 /**
  * 
  * 
@@ -23,59 +43,23 @@ const { canModifyQueue } = require("../Noir_Sys/Sys");
  * 
  */
 module.exports = {
-name: "skip",
-description: pnoir.__("skip.ɴᴏɪʀ_description"),
-/**
- * 
- * 
- * —••÷[🕊NOIR🕊]÷••—  ===================================================================================
- * Discord Music player Bot 
- * has been licensed under GNU General Public License
- * 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
- * —••÷[🕊NOIR🕊]÷••—  ===================================================================================
- * 
- * 
- */
-execute(message, args) {
-try { message.delete(); }
-catch (error) { console.error(error); }
-/**
- * 
- * 
- * —••÷[🕊NOIR🕊]÷••—  ===================================================================================
- * Discord Music player Bot 
- * has been licensed under GNU General Public License
- * 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
- * —••÷[🕊NOIR🕊]÷••—  ===================================================================================
- * 
- * 
- */
-if (!args.length || isNaN(args[0]))
-return message
-.reply(pnoir.__mf("skip.ɴᴏɪʀ_usage_Reply", { prefix: message.client.prefix, name: module.exports.name }))
-.catch(console.error);
+  name: "noir",
 
-const queue = message.client.queue.get(message.guild.id);
-if (!queue) return message.channel.send(pnoir.__("skip.ɴᴏɪʀ_error_Not_Queue")).catch(console.error);
-if (!canModifyQueue(message.member)) return pnoir.__("common.ɴᴏɪʀ_error_NotChannel");
-if (args[0] > queue.songs.length)
-return message
-.reply(pnoir.__mf("skip.ɴᴏɪʀ_error_Not_Valid", { length: queue.songs.length }))
-.catch(console.error);
+  execute(message, args) {
+    try { message.delete(); }
+    catch (error) { console.error(error); }
 
-queue.playing = true;
-
-if (queue.loop) {
-for (let i = 0; i < args[0] - 2; i++) {
-queue.songs.push(queue.songs.shift());
-}
-} else {
-queue.songs = queue.songs.slice(args[0] - 2);
-}
-
-queue.connection.dispatcher.end();
-queue.textChannel
-.send(pnoir.__mf("skip.ɴᴏɪʀ_player_result", { author: message.author, arg: args[0] - 1 }))
-.catch(console.error);
-}
+    let Embed = new MessageEmbed()
+      .setFooter("—••÷=======[ 🕊NOIR🕊 ]=======÷•—")
+      .setDescription(NOIRED)
+      .setImage("https://telegra.ph/file/805a9684da89a5dcac320.jpg")
+      .setColor("0x1f8b4c");
+    Embed.setTimestamp();
+    try {
+      return message.channel.send(Embed);
+    }
+    catch (error) {
+      console.error(error);
+    }
+  }
 };

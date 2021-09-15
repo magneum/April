@@ -9,8 +9,9 @@
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 =================================================================—••÷[🕊NOIR🕊]÷••—==========================================================================`
-const pnoir = require("../Noir_Sys/pnoir");
-const { canModifyQueue } = require("../Noir_Sys/Sys");
+const pnoir = require("../ɴᴏɪʀ_ᴏꜱ/pnoir");
+const { MessageEmbed } = require("discord.js");
+const { splitBar } = require("string-progressbar");
 /**
  * 
  * 
@@ -23,44 +24,37 @@ const { canModifyQueue } = require("../Noir_Sys/Sys");
  * 
  */
 module.exports = {
-name: "shuffle",
-description: pnoir.__("shuffle.ɴᴏɪʀ_description"),
-/**
- * 
- * 
- * —••÷[🕊NOIR🕊]÷••—  ===================================================================================
- * Discord Music player Bot 
- * has been licensed under GNU General Public License
- * 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
- * —••÷[🕊NOIR🕊]÷••—  ===================================================================================
- * 
- * 
- */
-execute(message, args) {
-try { message.delete(); }
-catch (error) { console.error(error); }
-/**
- * 
- * 
- * —••÷[🕊NOIR🕊]÷••—  ===================================================================================
- * Discord Music player Bot 
- * has been licensed under GNU General Public License
- * 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
- * —••÷[🕊NOIR🕊]÷••—  ===================================================================================
- * 
- * 
- */
-const queue = message.client.queue.get(message.guild.id);
-if (!queue) return message.channel.send(pnoir.__("shuffle.ɴᴏɪʀ_error_Not_Queue")).catch(console.error);
-if (!canModifyQueue(message.member)) return pnoir.__("common.ɴᴏɪʀ_error_NotChannel");
+  name: "current",
+  description: pnoir.__("current.ɴᴏɪʀ_description"),
 
-let songs = queue.songs;
-for (let i = songs.length - 1; i > 1; i--) {
-let j = 1 + Math.floor(Math.random() * i);
-[songs[i], songs[j]] = [songs[j], songs[i]];
-}
-queue.songs = songs;
-message.client.queue.set(message.guild.id, queue);
-queue.textChannel.send(pnoir.__mf("shuffle.ɴᴏɪʀ_player_result", { author: message.author })).catch(console.error);
-}
+  execute(message, args) {
+    try { message.delete(); }
+    catch (error) { console.error(error); }
+
+    const queue = message.client.queue.get(message.guild.id);
+    if (!queue)
+      return message.reply(pnoir.__("current.ɴᴏɪʀ_error_Not_Queue")).catch(console.error);
+
+    const song = queue.songs[0];
+    const seek = (queue.connection.dispatcher.streamTime - queue.connection.dispatcher.pausedTime) / 1000;
+    const left = song.duration - seek;
+
+    let nowPlaying = new MessageEmbed()
+      .setTitle(pnoir.__("current.ɴᴏɪʀ_embed_Title"))
+      .setDescription(`${song.title}\n${song.url}`)
+      .setColor("0x1f8b4c")
+      .setAuthor(message.client.user.username);
+
+    if (song.duration > 0) {
+      nowPlaying.addField(
+        "\u200b",
+        new Date(seek * 1000).toISOString().substr(11, 8) +
+        "[" + splitBar(song.duration == 0 ? seek : song.duration, seek, 20)[0] +
+        "]" + (song.duration == 0 ? " ◉ LIVE" : new Date(song.duration * 1000).toISOString().substr(11, 8)),
+        false
+      );
+      nowPlaying.setFooter(pnoir.__mf("current.ɴᴏɪʀ_time_Remaining", { time: new Date(left * 1000).toISOString().substr(11, 8) }));
+    }
+    return message.channel.send(nowPlaying);
+  }
 };
