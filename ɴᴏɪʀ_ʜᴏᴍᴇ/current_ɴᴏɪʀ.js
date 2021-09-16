@@ -9,9 +9,9 @@
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 =================================================================—••÷[🦋NOIR🦋]÷••—==========================================================================`
-exports.canModifyQueue = (member) => {
-  const { channelID } = member.voice;
-  const botChannel = member.guild.voice.channelID;
+const pnoir = require("../ɴᴏɪʀ_ᴏꜱ/pnoir");
+const { MessageEmbed } = require("discord.js");
+const { splitBar } = require("string-progressbar");
 /**
  * 
  * 
@@ -27,16 +27,51 @@ exports.canModifyQueue = (member) => {
  * 
  * 
  */
-  if (channelID !== botChannel) {
-    return;
-  } return true;
+module.exports = {
+  name: "current",
+/**
+ * 
+ * 
+ * —••÷[🦋NOIR🦋]÷••—  ===================================================================================
+
+ * —••÷[🦋NOIR🦋]÷••—  ===================================================================================
+ * —••÷[🦋NOIR🦋]÷••—  ===================================================================================
+
+ * —••÷[🦋NOIR🦋]÷••—  ===================================================================================
+ * —••÷[🦋NOIR🦋]÷••—  ===================================================================================
+
+ * —••÷[🦋NOIR🦋]÷••—  ===================================================================================
+ * 
+ * 
+ */
+  execute(message, args) {
+    try { message.delete(); }
+    catch (error) { console.error(error); }
+
+    const queue = message.client.queue.get(message.guild.id);
+    if (!queue)
+      return message.reply(pnoir.__("current.ɴᴏɪʀ_error_Not_Queue")).catch(console.error);
+
+    const song = queue.songs[0];
+    const seek = (queue.connection.dispatcher.streamTime - queue.connection.dispatcher.pausedTime) / 1000;
+    const left = song.duration - seek;
+
+    let nowPlaying = new MessageEmbed()
+      .setTitle(pnoir.__("current.ɴᴏɪʀ_embed_Title"))
+      .setDescription(`${song.title}\n${song.url}`)
+      .setColor("0x1f8b4c")
+      .setAuthor(message.client.user.username);
+
+    if (song.duration > 0) {
+      nowPlaying.addField(
+        "\u200b",
+        new Date(seek * 1000).toISOString().substr(11, 8) +
+        "[" + splitBar(song.duration == 0 ? seek : song.duration, seek, 20)[0] +
+        "]" + (song.duration == 0 ? " ◉ LIVE" : new Date(song.duration * 1000).toISOString().substr(11, 8)),
+        false
+      );
+      nowPlaying.setFooter(pnoir.__mf("current.ɴᴏɪʀ_time_Remaining", { time: new Date(left * 1000).toISOString().substr(11, 8) }));
+    }
+    return message.channel.send(nowPlaying);
+  }
 };
-
-
-require('dotenv').config()
-exports.NDISCORD = process.env.NDISCORD;
-exports.PREFIX = process.env.PREFIX;
-exports.NOIRTUNE = process.env.NOIRTUNE
-exports.MAX_PLAYLIST_SIZE = process.env.MAX_PLAYLIST_SIZE;
-exports.STAY_TIME = process.env.STAY_TIME;
-exports.LOCALE = process.env.LOCALE;

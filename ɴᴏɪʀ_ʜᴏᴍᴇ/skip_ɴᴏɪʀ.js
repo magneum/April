@@ -9,9 +9,8 @@
                                             has been licensed under GNU General Public License
                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 =================================================================—••÷[🦋NOIR🦋]÷••—==========================================================================`
-exports.canModifyQueue = (member) => {
-  const { channelID } = member.voice;
-  const botChannel = member.guild.voice.channelID;
+const pnoir = require("../ɴᴏɪʀ_ᴏꜱ/pnoir");
+const { canModifyQueue } = require("../ɴᴏɪʀ_ᴏꜱ/noirsys");
 /**
  * 
  * 
@@ -27,16 +26,58 @@ exports.canModifyQueue = (member) => {
  * 
  * 
  */
-  if (channelID !== botChannel) {
-    return;
-  } return true;
+module.exports = {
+  name: "skip",
+  // description: pnoir.__("skip.ɴᴏɪʀ_description"),
+/**
+ * 
+ * 
+ * —••÷[🦋NOIR🦋]÷••—  ===================================================================================
+
+ * —••÷[🦋NOIR🦋]÷••—  ===================================================================================
+ * —••÷[🦋NOIR🦋]÷••—  ===================================================================================
+
+ * —••÷[🦋NOIR🦋]÷••—  ===================================================================================
+ * —••÷[🦋NOIR🦋]÷••—  ===================================================================================
+
+ * —••÷[🦋NOIR🦋]÷••—  ===================================================================================
+ * 
+ * 
+ */
+  execute(message, args) {
+    try { message.delete(); }
+    catch (error) { console.error(error); }
+
+    if (!args.length || isNaN(args[0]))
+      return message
+        .reply(pnoir.__mf("skip.ɴᴏɪʀ_usage_Reply", { prefix: message.client.prefix, name: module.exports.name }))
+        .catch(console.error);
+
+    const queue = message.client.queue.get(message.guild.id);
+
+
+    if (!queue)
+      return message.channel.send(pnoir.__("skip.ɴᴏɪʀ_error_Not_Queue")).catch(console.error);
+    if (!canModifyQueue(message.member))
+      return pnoir.__("common.ɴᴏɪʀ_error_NotChannel");
+    if (args[0] > queue.songs.length)
+      return message
+        .reply(pnoir.__mf("skip.ɴᴏɪʀ_error_Not_Valid", { length: queue.songs.length }))
+        .catch(console.error);
+
+    queue.playing = true;
+
+    if (queue.loop) {
+      for (let i = 0; i < args[0] - 2; i++) {
+        queue.songs.push(queue.songs.shift());
+      }
+    } else {
+      queue.songs = queue.songs.slice(args[0] - 2);
+    }
+
+    queue.connection.dispatcher.end();
+    queue.textChannel
+      .send(pnoir.__mf("skip.ɴᴏɪʀ_player_result", { author: message.author, arg: args[0] - 1 }))
+      .catch(console.error);
+  }
 };
-
-
-require('dotenv').config()
-exports.NDISCORD = process.env.NDISCORD;
-exports.PREFIX = process.env.PREFIX;
-exports.NOIRTUNE = process.env.NOIRTUNE
-exports.MAX_PLAYLIST_SIZE = process.env.MAX_PLAYLIST_SIZE;
-exports.STAY_TIME = process.env.STAY_TIME;
-exports.LOCALE = process.env.LOCALE;
