@@ -6,6 +6,43 @@ const noir_loader = require("./NOIR_SYSTEM/noir_loader");
 const { NOIRDISK, PREFIX } = require("./NOIR_SYSTEM/noir_env.js");
 
 
+
+
+const NOIRHelpQ = `📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪n
+• !help
+== Display all commands and descriptions.
+• !loop  
+== Toggle music loop.
+• !lyrics
+== Get lyrics for the currently playing song.
+• !nowplaying
+== Show now playing song.
+• !pause
+== Pause the currently playing music.
+• !ping
+== Check server ping of client.
+• !play
+== Plays audio from YouTube.
+• !list
+== Play a playlist from YouTube.
+• !queue
+== Show the music queue and now playing.
+• !remove
+== Remove song from the queue.
+• !resume
+== Resume currently playing music.
+• !shuffle
+== Shuffle music queue.
+• !next
+== Skip the currently playing song.
+• !skip
+== Skip to the selected queue number.
+• !stop
+== Stops the music.
+• !vol
+== Change volume of currently playing music.`;
+
+
 const NOIR = new Client({
   disableMentions: "everyone",
   restTimeOffset: 0
@@ -22,6 +59,7 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 NOIR.on("ready", () => {
   console.clear();
   NOIR.user.setActivity(`🎧 ${PREFIX}help and ${PREFIX}NOIR`, { type: "WATCHING" });
+  console.log(NOIRHelpQ)
   console.log(`—••÷=======[ 🦋NOIR🦋 ]=======÷•—
 |🦋••  Bot_Status : Ready! 
 |🦋••  Bot_Name   : ${NOIR.user.username}
