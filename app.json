@@ -31,10 +31,6 @@
             "description": "I guess 10 is perfect",
             "required": true
         }
-    },
-    "buildpacks": [
-        {
-            "url": "heroku/nodejs"
-        }
-    ]
+    }
 }
+
