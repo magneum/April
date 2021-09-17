@@ -15,9 +15,9 @@ const { readdirSync } = require("fs");
 const pnoir = require("./ɴᴏɪʀ_ᴏꜱ/pnoir");
 const { PREFIX, NDISCORD } = require("./ɴᴏɪʀ_ᴏꜱ/noirsys");
 const { Client, Collection } = require('discord.js');
-server.connection({
-  port: process.env.PORT || 3000 
-});
+// server.connection({
+//   port: process.env.PORT || 3000 
+// });
 
 
 const NOIR = new Client({ disableMentions: "everyone", restTimeOffset: 0 }); // discordjs version12 and i will soon work on discordjs version13
