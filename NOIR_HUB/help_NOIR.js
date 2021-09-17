@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 
-const NOIRHelpQ = `•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪\n
+const NOIRHelpQ = `📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪n
 • !help
 Display all commands and descriptions.
 • !loop  

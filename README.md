@@ -20,10 +20,8 @@
 
 # 📂 CӨMMΛNDS
 ```sh
-📌 - *DYNO = Will be asked when deploying and you can 
-                    keep any command prefix as per your needs!
+📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
 
-•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
 • !help
 Display all commands and descriptions.
 • !loop  
