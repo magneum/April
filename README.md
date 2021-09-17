@@ -21,6 +21,20 @@
 - [![Generic badge](https://img.shields.io/badge/𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙱𝚘𝚝-Vïå_ßð†-orange.svg)](https://t.me/HypeVoidBot) 𝘛𝘶𝘳𝘯 𝘰𝘯 𝘣𝘰𝘵 𝘪𝘯 𝘵𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘢𝘯𝘥 𝘵𝘺𝘱𝘦 /us
 
 
+# 📷 SCЯΣΣПSΉӨƬS
+## 🕊NOIR🕊  Bot Joined:
+<p align="centre"><img  width="25%" height="25%" img src="https://telegra.ph/file/3766d80c69f488d850173.jpg" /></p>
+
+## 🕊NOIR🕊  Help Query:
+<p align="centre"><img  width="25%" height="25%" img src="https://telegra.ph/file/3766d80c69f488d850173.jpg" /></p>
+
+## 🕊NOIR🕊  Music Player:
+<p align="centre"><img  width="25%" height="25%" img src="https://telegra.ph/file/3766d80c69f488d850173.jpg" /></p>
+
+## 🕊NOIR🕊  YouTube Downloader:
+<p align="centre"><img  width="25%" height="25%" img src="https://telegra.ph/file/3766d80c69f488d850173.jpg" /></p>
+
+
 # 📂 CӨMMΛNDS
 ```sh
 📌 - *DYNO = Will be asked when deploying and you can 
