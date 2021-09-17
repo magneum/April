@@ -1,7 +1,7 @@
 const https = require("https");
 const ytdl = require("ytdl-core");
 const noir_loader = require("../NOIR_SYSTEM/noir_loader");
-const { play } = require(".MЦƧIC");
+const { play } = require("./MЦƧIC");
 const YouTubeAPI = require("simple-youtube-api");
 const scdl = require("soundcloud-downloader").default;
 const { NOIRYT, SOUNDCLOUD_CLIENT_ID, NOIRVOL } = require("../NOIR_SYSTEM/noir_env");
