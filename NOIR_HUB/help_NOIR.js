@@ -1,39 +1,37 @@
 const { MessageEmbed } = require("discord.js");
 
-const NOIRHelpQ = `
-**• /help**
+const NOIRHelpQ = `•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪\n
+• !help
 Display all commands and descriptions.
-**• /NOIR**
-Display license and some documentation.
-**• /loop**  
+• !loop  
 == Toggle music loop.
-**• /lyrics**
+• !lyrics
 == Get lyrics for the currently playing song.
-**• /nowplaying**
+• !nowplaying
 == Show now playing song.
-**• /pause**
+• !pause
 == Pause the currently playing music.
-**• /ping**
+• !ping
 == Check server ping of client.
-**• /play**
+• !play
 == Plays audio from YouTube.
-**• /list**
+• !list
 == Play a playlist from YouTube.
-**• /queue**
+• !queue
 == Show the music queue and now playing.
-**• /remove**
+• !remove
 == Remove song from the queue.
-**• /resume**
+• !resume
 == Resume currently playing music.
-**• /shuffle**
+• !shuffle
 == Shuffle music queue.
-**• /next**
+• !next
 == Skip the currently playing song.
-**• /skipto**
-== Skip-to the selected queue number.
-**• /stop**
+• !skip
+== Skip to the selected queue number.
+• !stop
 == Stops the music.
-**• /vol**
+• !vol
 == Change volume of currently playing music.`;
 
 
