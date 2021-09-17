@@ -1,6 +1,6 @@
 {
   "name": "noir_audio",
-  "version": "7.6.8",
+  "version": "7.7.3",
   "description": "Discord music bot built with discord.js",
   "main": "NOIR.js",
   "author": "HypeVoidSoul",
@@ -20,6 +20,7 @@
     "@discordjs/opus": "^0.5.3",
     "array-move": "^3.0.1",
     "discord.js": "^12.5.1",
+    "dotenv": "^10.0.0",
     "ffmpeg-static": "^4.4.0",
     "i18n": "^0.13.3",
     "lyrics-finder": "^21.0.5",
@@ -27,15 +28,14 @@
     "string-progressbar": "^1.0.4",
     "ytdl-core": "^4.9.1",
     "ytdl-core-discord": "^1.3.1",
-    "dotenv": "^10.0.0"
+    "nodemon": "^2.0.12"
   },
   "scripts": {
-    "start": "node NOIR.js",
+    "start": "nodemon NOIR.js",
     "commit": "cz"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^3.3.0",
-    "nodemon": "^2.0.12"
+    "cz-conventional-changelog": "^3.3.0"
   },
   "config": {
     "commitizen": {
