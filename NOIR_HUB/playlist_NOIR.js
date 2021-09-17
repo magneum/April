@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 const noir_loader = require("../NOIR_SYSTEM/noir_loader");
-const { play } = require("../NOIR_MUSIC/MЦƧIC");
+const { play } = require(".MЦƧIC");
 const YouTubeAPI = require("simple-youtube-api");
 const scdl = require("soundcloud-downloader").default;
 const { NOIRYT, SOUNDCLOUD_CLIENT_ID, NOIRMAX, NOIRVOL } = require("../NOIR_SYSTEM/noir_env");
