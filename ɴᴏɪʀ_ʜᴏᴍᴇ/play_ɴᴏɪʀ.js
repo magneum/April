@@ -21,9 +21,6 @@ const youtube = new YouTubeAPI(NOIRTUNE);
 module.exports = {
   name: "play",
   cooldown: 3,
-  // description: pnoir.__("play.ɴᴏɪʀ_description"),
-
-
 
   async execute(message, args) {
     try { message.delete(); }
@@ -54,13 +51,13 @@ module.exports = {
     const url = args[0];
     const urlValid = videoPattern.test(args[0]);
 
-
-
-    // Start the playlist if playlist url was provided
     if (!videoPattern.test(args[0]) && playlistPattern.test(args[0])) {
-      return message.client.commands.get("playlist").execute(message, args);
+      return message.reply(pnoir.__("play.ɴᴏɪʀ_not_ready_yet"));
     }
 
+    // if (!videoPattern.test(args[0]) && playlistPattern.test(args[0])) {
+    //   return message.client.commands.get("playlist").execute(message, args);
+    // }
 
     const queueConstruct = {
       textChannel: message.channel,
@@ -74,7 +71,7 @@ module.exports = {
     };
 
 
-    
+
     let songInfo = null;
     let song = null;
 
