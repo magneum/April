@@ -38,5 +38,4 @@ exports.NDISCORD = process.env.NDISCORD;
 exports.PREFIX = process.env.PREFIX;
 exports.NOIRTUNE = process.env.NOIRTUNE
 exports.MAX_PLAYLIST_SIZE = process.env.MAX_PLAYLIST_SIZE;
-exports.STAY_TIME = process.env.STAY_TIME;
 exports.LOCALE = process.env.LOCALE;

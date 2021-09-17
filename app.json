@@ -1,0 +1,40 @@
+{
+    "logo": "https://telegra.ph/file/3766d80c69f488d850173.jpg",
+    "name": "🎧『 ᴅɪꜱᴄᴏʀᴅ ᴍᴜꜱɪᴄ ʙᴏᴛ: - 𝐍𝐎𝐈𝐑 』🎧",
+    "repository": "https://github.com/HypeVoidSoul/Noir.git",
+    "stack": "container",
+    "description": "—••÷[🕊NOIR🕊]÷••— \n❄️ 𝘗𝘭𝘢𝘺 𝘢𝘯𝘺 𝘮𝘶𝘴𝘪𝘤 𝘪𝘯 𝘺𝘰𝘶𝘳 discord channel. 𝘠𝘰𝘶 𝘸𝘪𝘭𝘭 𝘩𝘢𝘷𝘦 𝘵𝘰 make bot admin 𝘵𝘰 𝘶𝘴𝘦 𝘵𝘩𝘪𝘴 𝘣𝘰𝘵 𝘰𝘳 𝘨𝘦𝘵 𝘦𝘳𝘳𝘰𝘳𝘴.",
+    "website": "https://t.me/hypevoids",
+    "keywords": [
+        "discord",
+        "voice",
+        "music",
+        "musicbot",
+        "bot",
+        "discordjs",
+        "nodejs"
+    ],
+    "env": {
+        "NDISCORD": {
+            "description": "You Discord Bot Token",
+            "required": true
+        },
+        "PREFIX": {
+            "description": "Your bot usage Prefix",
+            "required": true
+        },
+        "NOIRTUNE": {
+            "description": "Your NOIRTUNE api_token",
+            "required": true
+        },
+        "MAX_PLAYLIST_SIZE": {
+            "description": "I guess 10 is perfect",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/nodejs"
+        }
+    ]
+}
