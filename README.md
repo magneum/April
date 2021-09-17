@@ -1,4 +1,3 @@
-|🔥🔥|======|ΉYPΣ_VӨID_LΛB|======|🔥🔥|
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="HypeVoidSoul"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 # 🎧『 ᴅɪꜱᴄᴏʀᴅ ᴍᴜꜱɪᴄ ʙᴏᴛ: - 𝐍𝐎𝐈𝐑 』🎧
 <p align="centre"><img  width="800%" height="80%" img src="https://telegra.ph/file/3766d80c69f488d850173.jpg" /></p>
@@ -17,20 +16,6 @@
 - [![Generic badge](https://img.shields.io/badge/🕊NOIR🕊_𝘐𝘯𝘷𝘪𝘵𝘦_𝘓𝘪𝘯𝘬-green.svg)](https://discord.com/api/oauth2/authorize?client_id=885784029511696424&permissions=8&scope=bot)
 𝙳𝚒𝚛𝚎𝚌𝚝𝚕𝚢 𝚞𝚜𝚎 𝚃𝚑𝚎 𝙱𝚘𝚝 𝚒𝚗 Discord
 - [![Generic badge](https://img.shields.io/badge/𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙱𝚘𝚝-Vïå_ßð†-orange.svg)](https://t.me/HypeVoidBot) 𝘛𝘶𝘳𝘯 𝘰𝘯 𝘣𝘰𝘵 𝘪𝘯 𝘵𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘢𝘯𝘥 𝘵𝘺𝘱𝘦 /us
-
-
-# 📷 SCЯΣΣПSΉӨƬS
-## 🕊NOIR🕊  Bot Joined:
-<p align="centre"><img  width="25%" height="25%" img src="https://telegra.ph/file/3766d80c69f488d850173.jpg" /></p>
-
-## 🕊NOIR🕊  Help Query:
-<p align="centre"><img  width="25%" height="25%" img src="https://telegra.ph/file/3766d80c69f488d850173.jpg" /></p>
-
-## 🕊NOIR🕊  Music Player:
-<p align="centre"><img  width="25%" height="25%" img src="https://telegra.ph/file/3766d80c69f488d850173.jpg" /></p>
-
-## 🕊NOIR🕊  YouTube Downloader:
-<p align="centre"><img  width="25%" height="25%" img src="https://telegra.ph/file/3766d80c69f488d850173.jpg" /></p>
 
 
 # 📂 CӨMMΛNDS
