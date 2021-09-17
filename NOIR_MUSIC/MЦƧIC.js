@@ -78,13 +78,13 @@ module.exports = {
       var playingMessage = await queue.textChannel.send(
         noir_loader.__mf("play.ПOIЯD_ꜱᴛᴀʀᴛᴇᴅ_ᴘʟᴀʏɪɴɢ", { title: song.title, url: song.url })
       );
-      await playingMessage.react("⏭");
+      await playingMessage.react("👉🏻");
       await playingMessage.react("⏯");
-      await playingMessage.react("🔇");
+      await playingMessage.react("🤫");
       await playingMessage.react("🔉");
       await playingMessage.react("🔊");
-      await playingMessage.react("🔁");
-      await playingMessage.react("⏹");
+      await playingMessage.react("⭕️");
+      await playingMessage.react("❌");
     } catch (error) {
       console.error(error);
     }
@@ -99,7 +99,7 @@ module.exports = {
       const member = message.guild.member(user);
 
       switch (reaction.emoji.name) {
-        case "⏭":
+        case "👉🏻":
           queue.playing = true;
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return noir_loader.__("common.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ᴄʜᴀɴɴᴇʟ");
@@ -122,7 +122,7 @@ module.exports = {
           }
           break;
 
-        case "🔇":
+        case "🤫":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return noir_loader.__("common.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ᴄʜᴀɴɴᴇʟ");
           queue.muted = !queue.muted;
@@ -157,7 +157,7 @@ module.exports = {
             .catch(console.error);
           break;
 
-        case "🔁":
+        case "⭕️":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return noir_loader.__("common.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ᴄʜᴀɴɴᴇʟ");
           queue.loop = !queue.loop;
@@ -171,7 +171,7 @@ module.exports = {
             .catch(console.error);
           break;
 
-        case "⏹":
+        case "❌":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return noir_loader.__("common.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ᴄʜᴀɴɴᴇʟ");
           queue.songs = [];
