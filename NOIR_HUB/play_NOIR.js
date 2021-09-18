@@ -14,11 +14,11 @@ module.exports = {
 
 
   async execute(message, args) {
-    // try { message.delete(); }
-    // catch (error) {
-    //   console.error(error);
-    //   pass;
-    // }
+    try { message.delete(); }
+    catch (error) {
+      console.error(error);
+      pass;
+    }
 
 
     const { channel } = message.member.voice;
@@ -48,12 +48,12 @@ module.exports = {
     const url = args[0];
     const urlValid = videoPattern.test(args[0]);
 
-    // Start the playlist if playlist url was provided
+
     if (!videoPattern.test(args[0]) && playlistPattern.test(args[0])) {
       return message.client.commands.get("playlist").execute(message, args);
     } else if (scdl.isValidUrl(url) && url.includes("/sets/")) {
       return
-      // message.client.commands.get("playlist").execute(message, args);
+      message.client.commands.get("playlist").execute(message, args);
     }
 
     if (not_needed_scl.test(url)) {

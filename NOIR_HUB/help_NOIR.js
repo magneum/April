@@ -39,23 +39,11 @@ module.exports = {
   name: "help",
 
   execute(message, args) {
-    // try { message.delete(); }
-    // catch (error) {
-    //   console.error(error);
-    //   pass;
-    // }
-
-    try {
-      message.delete();
+    try { message.delete(); }
+    catch (error) {
+      console.error(error);
+      pass;
     }
-    catch (exception_var) {
-      console.error(exception_var);
-    }
-    finally {
-      continue
-    }
-
-
 
 
     let helpEmbed = new MessageEmbed()

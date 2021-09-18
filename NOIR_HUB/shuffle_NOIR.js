@@ -7,11 +7,11 @@ module.exports = {
 
 
   execute(message, args) {
-    // try { message.delete(); }
-    // catch (error) {
-    //   console.error(error);
-    //   pass;
-    // }
+    try { message.delete(); }
+    catch (error) {
+      console.error(error);
+      pass;
+    }
 
     const queue = message.client.queue.get(message.guild.id);
     if (!queue) return message.channel.send(noir_loader.__("shuffle.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_Qᴜᴇᴜᴇ")).catch(console.error);
