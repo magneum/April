@@ -75,8 +75,7 @@ module.exports = {
     dispatcher.setVolumeLogarithmic(queue.volume / 100);
 
     try {
-      var playingMessage = await queue.textChannel.send(
-        noir_loader.__mf("play.ПOIЯD_ꜱᴛᴀʀᴛᴇᴅ_ᴘʟᴀʏɪɴɢ", { title: song.title, url: song.url })
+      var playingMessage = await queue.textChannel.send(noir_loader.__mf("play.ПOIЯD_ꜱᴛᴀʀᴛᴇᴅ_ᴘʟᴀʏɪɴɢ", { title: song.title, url: song.url, performer: song.performer })
       );
       await playingMessage.react("👉🏻");
       await playingMessage.react("⏯");
