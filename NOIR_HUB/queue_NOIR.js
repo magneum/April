@@ -7,11 +7,11 @@ module.exports = {
 
 
   async execute(message, args) {
-    try { message.delete(); }
-    catch (error) {
-      console.error(error);
-      pass;
-    }
+    // try { message.delete(); }
+    // catch (error) {
+    //   console.error(error);
+    //   pass;
+    // }
 
 
     const permissions = message.channel.permissionsFor(message.client.user);

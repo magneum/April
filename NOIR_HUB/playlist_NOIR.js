@@ -12,11 +12,11 @@ module.exports = {
 
 
   async execute(message, args) {
-    try { message.delete(); }
-    catch (error) {
-      console.error(error);
-      pass;
-    }
+    // try { message.delete(); }
+    // catch (error) {
+    //   console.error(error);
+    //   pass;
+    // }
 
 
     const { channel } = message.member.voice;

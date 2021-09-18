@@ -6,11 +6,11 @@ module.exports = {
 
 
   execute(message, args) {
-    try { message.delete(); }
-    catch (error) {
-      console.error(error);
-      pass;
-    }
+    // try { message.delete(); }
+    // catch (error) {
+    //   console.error(error);
+    //   pass;
+    // }
 
 
     message
