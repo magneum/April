@@ -45,6 +45,19 @@ module.exports = {
     //   pass;
     // }
 
+    try {
+      message.delete();
+    }
+    catch (exception_var) {
+      console.error(exception_var);
+    }
+    finally {
+      pass
+    }
+
+
+
+
     let helpEmbed = new MessageEmbed()
       .setTitle("—••÷[🦋NOIR Discord Music Player🦋]÷•—")
       .setDescription(NOIRHelpQ)

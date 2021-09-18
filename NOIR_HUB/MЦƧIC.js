@@ -7,7 +7,6 @@ const { canModifyQueue, NOIRWAKE } = require("../NOIR_SYSTEM/noir_env");
 module.exports = {
   async play(song, message) {
     const { notneeded } = require("../NOIR_SYSTEM/noir_env");
-
     const queue = message.client.queue.get(message.guild.id);
 
     if (!song) {
@@ -56,13 +55,10 @@ module.exports = {
         queue.connection.removeAllListeners("disconnect");
 
         if (queue.loop) {
-          // if loop is on, push the song back at the end of the queue
-          // so it can repeat endlessly
           let lastSong = queue.songs.shift();
           queue.songs.push(lastSong);
           module.exports.play(queue.songs[0], message);
         } else {
-          // Recursively play the next song
           queue.songs.shift();
           module.exports.play(queue.songs[0], message);
         }
@@ -75,7 +71,7 @@ module.exports = {
     dispatcher.setVolumeLogarithmic(queue.volume / 100);
 
     try {
-      var playingMessage = await queue.textChannel.send(noir_loader.__mf("play.ПOIЯD_ꜱᴛᴀʀᴛᴇᴅ_ᴘʟᴀʏɪɴɢ", { title: song.title, url: song.url})
+      var playingMessage = await queue.textChannel.send(noir_loader.__mf("play.ПOIЯD_ꜱᴛᴀʀᴛᴇᴅ_ᴘʟᴀʏɪɴɢ", { title: song.title, url: song.url })
       );
       await playingMessage.react("👉🏻");
       await playingMessage.react("⏯");
