@@ -52,7 +52,7 @@ module.exports = {
       console.error(exception_var);
     }
     finally {
-      pass
+      continue
     }
 
 
