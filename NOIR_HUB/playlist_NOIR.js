@@ -3,7 +3,7 @@ const noir_loader = require("../NOIR_SYSTEM/noir_loader");
 const { play } = require("./MЦƧIC");
 const YouTubeAPI = require("simple-youtube-api");
 const scdl = require("soundcloud-downloader").default;
-const { NOIRYT, SOUNDCLOUD_CLIENT_ID, NOIRMAX, NOIRVOL } = require("../NOIR_SYSTEM/noir_env");
+const { NOIRYT, notneeded, NOIRMAX, NOIRVOL } = require("../NOIR_SYSTEM/noir_env");
 const youtube = new YouTubeAPI(NOIRYT);
 
 module.exports = {
@@ -67,7 +67,7 @@ module.exports = {
     } else if (scdl.isValidUrl(args[0])) {
       if (args[0].includes("/sets/")) {
         message.channel.send(noir_loader.__("playlist.ПOIЯD_ꜰᴇᴛᴄʜɪɴɢ_ᴘʟᴀʏʟɪꜱᴛ"));
-        playlist = await scdl.getSetInfo(args[0], SOUNDCLOUD_CLIENT_ID);
+        playlist = await scdl.getSetInfo(args[0], notneeded);
         videos = playlist.tracks.map((track) => ({
           title: track.title,
           url: track.permalink_url,

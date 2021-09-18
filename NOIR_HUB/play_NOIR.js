@@ -4,7 +4,7 @@ const noir_loader = require("../NOIR_SYSTEM/noir_loader");
 const { play } = require("./MЦƧIC");
 const YouTubeAPI = require("simple-youtube-api");
 const scdl = require("soundcloud-downloader").default;
-const { NOIRYT, SOUNDCLOUD_CLIENT_ID, NOIRVOL } = require("../NOIR_SYSTEM/noir_env");
+const { NOIRYT, notneeded, NOIRVOL } = require("../NOIR_SYSTEM/noir_env");
 const youtube = new YouTubeAPI(NOIRYT);
 
 
@@ -100,7 +100,7 @@ module.exports = {
       }
     } else if (scRegex.test(url)) {
       try {
-        const trackInfo = await scdl.getInfo(url, SOUNDCLOUD_CLIENT_ID);
+        const trackInfo = await scdl.getInfo(url, notneeded);
         song = {
           title: trackInfo.title,
           url: trackInfo.permalink_url,

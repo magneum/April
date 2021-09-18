@@ -6,7 +6,7 @@ const { canModifyQueue, NOIRWAKE } = require("../NOIR_SYSTEM/noir_env");
 
 module.exports = {
   async play(song, message) {
-    const { SOUNDCLOUD_CLIENT_ID } = require("../NOIR_SYSTEM/noir_env");
+    const { notneeded } = require("../NOIR_SYSTEM/noir_env");
 
     const queue = message.client.queue.get(message.guild.id);
 
@@ -28,9 +28,9 @@ module.exports = {
         stream = await ytdl(song.url, { highWaterMark: 1 << 25 });
       } else if (song.url.includes("soundcloud.com")) {
         try {
-          stream = await scdl.downloadFormat(song.url, scdl.FORMATS.OPUS, SOUNDCLOUD_CLIENT_ID);
+          stream = await scdl.downloadFormat(song.url, scdl.FORMATS.OPUS, notneeded);
         } catch (error) {
-          stream = await scdl.downloadFormat(song.url, scdl.FORMATS.MP3, SOUNDCLOUD_CLIENT_ID);
+          stream = await scdl.downloadFormat(song.url, scdl.FORMATS.MP3, notneeded);
           streamType = "unknown";
         }
       }
