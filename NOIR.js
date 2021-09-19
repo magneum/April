@@ -58,7 +58,7 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 NOIR.on("ready", () => {
   console.clear();
-  NOIR.user.setActivity(`🎧 ${PREFIX}help and ${PREFIX}NOIR`, { type: "WATCHING" });
+  NOIR.user.setActivity(`🎧 ${PREFIX}noir and ${PREFIX}help`, { type: "WATCHING" });
   console.log(NOIRHelpQ)
   console.log(`—••÷=======[ 🦋NOIR🦋 ]=======÷•—
 |🦋••  Bot_Status : Ready! 
