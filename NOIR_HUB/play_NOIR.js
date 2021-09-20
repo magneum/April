@@ -24,7 +24,8 @@ module.exports = {
     const { channel } = message.member.voice;
     const serverQueue = message.client.queue.get(message.guild.id);
 
-    if (!channel) return message.reply(noir_loader.__("play.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ᴄʜᴀɴɴᴇʟ")).catch(console.error);
+    if (!channel) return message.reply(noir_loader.__("play.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ᴄʜᴀɴɴᴇʟ"))
+      .catch(console.error);
 
     if (serverQueue && channel !== message.guild.me.voice.channel)
       return message
