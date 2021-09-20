@@ -16,7 +16,11 @@ module.exports = {
 
     const queue = message.client.queue.get(message.guild.id);
 
-    if (!queue) return message.channel.send(noir_loader.__("remove.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_Qᴜᴇᴜᴇ")).catch(console.error);
+    if (!queue) return message.channel.send(noir_loader.__("remove.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_Qᴜᴇᴜᴇ"))
+      .then(message => {
+        message.delete({ timeout: 6000 });
+      })
+      .catch(console.error);
     if (!canModifyQueue(message.member)) return noir_loader.__("common.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ᴄʜᴀɴɴᴇʟ");
     if (!args.length) return message.reply(noir_loader.__mf("remove.ПOIЯD_ᴜꜱᴀɢᴇ_ʀᴇᴘʟʏ", { prefix: message.client.prefix }));
 

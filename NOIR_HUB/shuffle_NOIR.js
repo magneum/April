@@ -14,7 +14,11 @@ module.exports = {
     // }
 
     const queue = message.client.queue.get(message.guild.id);
-    if (!queue) return message.channel.send(noir_loader.__("shuffle.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_Qᴜᴇᴜᴇ")).catch(console.error);
+    if (!queue) return message.channel.send(noir_loader.__("shuffle.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_Qᴜᴇᴜᴇ"))
+      .then(message => {
+        message.delete({ timeout: 6000 });
+      })
+      .catch(console.error);
     if (!canModifyQueue(message.member)) return noir_loader.__("common.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ᴄʜᴀɴɴᴇʟ");
 
     let songs = queue.songs;
@@ -24,6 +28,10 @@ module.exports = {
     }
     queue.songs = songs;
     message.client.queue.set(message.guild.id, queue);
-    queue.textChannel.send(noir_loader.__mf("shuffle.ПOIЯD_ʀᴇꜱᴜʟᴛ", { author: message.author })).catch(console.error);
+    queue.textChannel.send(noir_loader.__mf("shuffle.ПOIЯD_ʀᴇꜱᴜʟᴛ", { author: message.author }))
+      .then(message => {
+        message.delete({ timeout: 6000 });
+      })
+      .catch(console.error);
   }
 };

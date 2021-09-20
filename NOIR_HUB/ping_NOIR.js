@@ -15,6 +15,9 @@ module.exports = {
 
     message
       .reply(noir_loader.__mf("ping.ПOIЯD_ʀᴇꜱᴜʟᴛ", { ping: Math.round(message.client.ws.ping) }))
+      .then(message => {
+        message.delete({ timeout: 6000 });
+      })
       .catch(console.error);
   }
 };
