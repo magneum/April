@@ -38,12 +38,10 @@ const NOIRHelpQ = `📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪n
 module.exports = {
   name: "help",
 
-  execute(message, args) {
-    // try { message.delete(); }
-    // catch (error) {
-    //   console.error(error);
-    //   pass;
-    // }
+  execute(message) {
+    if (message.author) {
+      message.delete();
+    }
 
 
     let helpEmbed = new MessageEmbed()
