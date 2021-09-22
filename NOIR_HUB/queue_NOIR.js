@@ -7,9 +7,9 @@ module.exports = {
 
 
   async execute(message, args) {
-    if (message.author) {
-      message.delete();
-    } 
+    // if (message.author) {
+    //   message.delete();
+    // } 
 
 
     const permissions = message.channel.permissionsFor(message.client.user);

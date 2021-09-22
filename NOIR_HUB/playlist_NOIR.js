@@ -12,9 +12,9 @@ module.exports = {
 
 
   async execute(message, args) {
-    if (message.author) {
-      message.delete();
-    } 
+    // if (message.author) {
+    //   message.delete();
+    // } 
 
 
     const { channel } = message.member.voice;

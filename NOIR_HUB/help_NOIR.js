@@ -39,9 +39,9 @@ module.exports = {
   name: "help",
 
   execute(message) {
-    if (message.author) {
-      message.delete();
-    } 
+    // if (message.author) {
+    //   message.delete();
+    // } 
 
 
     let helpEmbed = new MessageEmbed()

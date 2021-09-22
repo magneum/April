@@ -9,9 +9,9 @@ module.exports = {
 
 
   execute(message, args) {
-    if (message.author) {
-      message.delete();
-    } 
+    // if (message.author) {
+    //   message.delete();
+    // } 
 
 
     const queue = message.client.queue.get(message.guild.id);
