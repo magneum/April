@@ -22,7 +22,7 @@
 		"ПOIЯD_ᴜꜱᴀɢᴇ_ʀᴇᴘʟʏ": "🦋𝗡𝗢𝗜𝗥🦋_**A YouTube⭕️Music_Player**_\n❤️‍🔥=========================❤️‍🔥\n\n⚜️**Noir-** ⚓️**usage:**{prefix}play <YouTube URL | Video Name",
 		"ПOIЯD_ᴍɪꜱꜱɪɴɢ_ᴘᴇʀᴍɪꜱꜱɪᴏɴ_ᴄᴏɴɴᴇᴄᴛ": "🦋𝗡𝗢𝗜𝗥🦋_**A YouTube⭕️Music_Player**_\n❤️‍🔥=========================❤️‍🔥\n\n⚜️**Noir-** Cannot connect to voice channel, missing permissions",
 		"ПOIЯD_ᴍɪꜱꜱɪɴɢ_ᴘᴇʀᴍɪꜱꜱɪᴏɴ_ꜱᴘᴇᴀᴋ": "🦋𝗡𝗢𝗜𝗥🦋_**A YouTube⭕️Music_Player**_\n❤️‍🔥=========================❤️‍🔥\n\n⚜️**Noir-** I cannot speak in this voice channel, make sure I have the proper permissions!",
-		"ПOIЯD_Qᴜᴇᴜᴇ_ᴀᴅᴅᴇᴅ": "🦋𝗡𝗢𝗜𝗥🦋_**A YouTube⭕️Music_Player**_\n❤️‍🔥=========================❤️‍🔥\n\n⚜️**Noir-** 🍧 Song:**{title}**\nhas been added to the queue by <@{author}>\n\n",
+		"ПOIЯD_Qᴜᴇᴜᴇ_ᴀᴅᴅᴇᴅ": "🦋𝗡𝗢𝗜𝗥🦋_**A YouTube⭕️Music_Player**_\n❤️‍🔥=========================❤️‍🔥\n\n⚜️**Noir-** 🍧{title}\n_has been added to the queue by_ <@{author}>\n\n",
 		"ПOIЯD_ᴄᴀɴᴛ_ᴊᴏɪɴ_ᴄʜᴀɴɴᴇʟ": "🦋𝗡𝗢𝗜𝗥🦋_**A YouTube⭕️Music_Player**_\n❤️‍🔥=========================❤️‍🔥\n\n⚜️**Noir-** Could not join the channel: {error}",
 		"ПOIЯD_Qᴜᴇᴜᴇ_ᴇɴᴅᴇᴅ": "🦋𝗡𝗢𝗜𝗥🦋_**A YouTube⭕️Music_Player**_\n❤️‍🔥=========================❤️‍🔥\n\n⚜️**Noir-** ❌ Music queue ended.",
 		"ПOIЯD_Qᴜᴇᴜᴇ_ᴇʀʀᴏʀ": "🦋𝗡𝗢𝗜𝗥🦋_**A YouTube⭕️Music_Player**_\n❤️‍🔥=========================❤️‍🔥\n\n⚜️**Noir-** Error: {error}",
