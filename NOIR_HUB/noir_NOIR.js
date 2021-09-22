@@ -16,11 +16,9 @@ module.exports = {
 
 
   execute(message, args) {
-    // try { message.delete(); }
-    // catch (error) {
-    //   console.error(error);
-    //   pass;
-    // }
+    if (message.author) {
+      message.delete();
+    } 
 
     let Embed = new MessageEmbed()
       .setFooter("—••÷=======[ 🦋NOIR🦋 ]=======÷•—")

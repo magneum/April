@@ -41,7 +41,7 @@ module.exports = {
   execute(message) {
     if (message.author) {
       message.delete();
-    }
+    } 
 
 
     let helpEmbed = new MessageEmbed()
