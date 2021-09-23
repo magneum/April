@@ -4,7 +4,7 @@
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// 🦋noir🎧player🦋   
+// noir🎧player   
 // Discord Music YouTube player 
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -37,7 +37,7 @@ for (const file of commandFiles) {
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// 🦋noir🎧player🦋   
+// noir🎧player   
 // Discord Music YouTube player 
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -62,7 +62,7 @@ for (const file of commandFiles) {
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// 🦋noir🎧player🦋   
+// noir🎧player   
 // Discord Music YouTube player 
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -81,17 +81,17 @@ for (const file of commandFiles) {
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setDescription(`\n\n
 ❤️‍🔥 **Hey there MUSIC lovers !**
-_I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel._
-_Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_
+I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
+Please use the channel **noir🎧player** for any ʏᴏᴜᴛᴜʙᴇ voice streaming
 
 
 :candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
-_Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more_
+Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more_
 
 ---------------------|🔺|---------------------
 :star:**ɴᴏᴛᴇ to ᴏᴡɴᴇʀ ᴀɴᴅ ᴍᴏᴅᴇʀꜱ**
-🎃**VERY VERY IMPORTANT**_Please use !calib once to calibrate before first use!_`
-      );
+🎃**VERY VERY IMPORTANT**
+Please use **!calib** once to calibrate before first use!`);
     channel
       .send(embedThanks)
       .catch(console.error);
@@ -103,7 +103,7 @@ _Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more_
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// 🦋noir🎧player🦋   
+// noir🎧player   
 // Discord Music YouTube player 
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -120,12 +120,12 @@ _Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more_
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 𝗗𝗲𝗮𝗿 **ADMIN** 
-**:microphone:Noir  =** _ᴀ channel ɴᴀᴍᴇ 🦋noir🎧player🦋 has been successfully created._
-**:microphone:Noir  =** _Please use the channel for any ʏᴏᴜᴛᴜʙᴇ voice streaming._`);
+ᴀ channel ɴᴀᴍᴇ noir🎧player has been successfully created.
+Please use the channel for any ʏᴏᴜᴛᴜʙᴇ voice streaming.`);
       message.channel
         .send(embedcheck1)
         .catch(console.error);
-      message.guild.channels.create('🦋noir🎧player🦋', {
+      message.guild.channels.create('noir🎧player', {
         type: 'GUILD_TEXT',
         permissionOverwrites: [{
           id: message.guild.roles.everyone
@@ -141,7 +141,7 @@ _Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more_
         .setDescription(`\n\n
 𝗗𝗲𝗮𝗿 **ADMIN** 
 ---------------------|🔺|---------------------\n
-•|  _ᴀ channel ɴᴀᴍᴇ 🦋noir🎧player🦋 could not be created._
+•|  _ᴀ channel ɴᴀᴍᴇ noir🎧player could not be created._
 •|  𝗣𝗹𝗲𝗮𝘀𝗲 𝗴𝗶𝘃𝗲 𝗺𝗲 𝘁𝗵𝗲𝘀𝗲 𝗽𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻𝘀:
 =𝘔𝘢𝘯𝘢𝘨𝘦𝘊𝘩𝘢𝘯𝘯𝘦𝘭
 =𝘚𝘦𝘯𝘥𝘔𝘦𝘴𝘴𝘢𝘨𝘦𝘴
@@ -160,7 +160,7 @@ _Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more_
   // Copyright (C) 2007 Free Software Foundation
   // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
   // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-  // 🦋noir🎧player🦋   
+  // noir🎧player   
   // Discord Music YouTube player 
   // has been licensed under GNU General Public License
   // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -236,12 +236,12 @@ _Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more_
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// 🦋noir🎧player🦋   
+// noir🎧player   
 // Discord Music YouTube player 
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 // =============================================================================================================================
 ռօɨʀֆɛʀʋɛʀ.listen(PORT, () => {
-  console.log(`🦋noir🎧player🦋 = Is running on port ${PORT}`);
+  console.log(`noir🎧player = Is running on port ${PORT}`);
 });
 ռօɨʀքʟǟʏɛʀ.login(ɴᴏɪʀᴇꜱ);
