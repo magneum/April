@@ -29,8 +29,8 @@ module.exports = {
             const embedfactor = new MessageEmbed()
                 .setColor(`#32CD32`)
                 .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
-                .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
+                .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                 .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -52,7 +52,7 @@ _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ v
                 const embedshuf1 = new MessageEmbed()
                     .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                    .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                    .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -72,7 +72,7 @@ There is no queue.`);
                 const embedshuf2 = new MessageEmbed()
                     .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                    .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                    .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}

@@ -49,8 +49,8 @@ module.exports = {
 == Change volume of currently playing music.`)
             .setColor(`#32CD32`)
             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-            .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
-            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`);
+            .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
+            .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
         message.channel
             .send(HELPEMBED)
             .catch(console.error);

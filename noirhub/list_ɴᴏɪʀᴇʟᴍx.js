@@ -36,8 +36,8 @@ module.exports = {
                 .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
 
 
-                .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
-                .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
+                .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                 .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -60,7 +60,7 @@ _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ v
                 const embedlist1 = new MessageEmbed()
                     .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                    .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                    .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -81,7 +81,7 @@ You need to join a voice channel first!`);
                 const embedlist2 = new MessageEmbed()
                     .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                    .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                    .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -102,7 +102,7 @@ You need to join a voice channel first!`);
                 const embedlist3 = new MessageEmbed()
                     .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                    .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                    .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -122,7 +122,7 @@ Cannot connect to voice channel, missing permissions`);
                 const embedlist4 = new MessageEmbed()
                     .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                    .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                    .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -142,7 +142,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
                 const embedlist5 = new MessageEmbed()
                     .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                    .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                    .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -183,7 +183,7 @@ You must be in the same channel as ${message.client.user}`);
                     const embedlist6 = new MessageEmbed()
                         .setColor(`#32CD32`)
                         .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                        .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                        .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                         .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -260,7 +260,7 @@ Playlist not found`);
                     const embedlist7 = new MessageEmbed()
                         .setColor(`#32CD32`)
                         .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                        .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                        .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                         .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}

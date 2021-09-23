@@ -57,7 +57,7 @@ module.exports = {
             const embedmusic1 = new MessageEmbed()
                 .setColor(`#32CD32`)
                 .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                 .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -123,7 +123,7 @@ module.exports = {
                         const embedmusic2 = new MessageEmbed()
                             .setColor(`#32CD32`)
                             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                            .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                             .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -150,7 +150,7 @@ module.exports = {
                         const embedmusic3 = new MessageEmbed()
                             .setColor(`#32CD32`)
                             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                            .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                             .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -184,7 +184,7 @@ module.exports = {
                         const embedmusic4 = new MessageEmbed()
                             .setColor(`#32CD32`)
                             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                            .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                             .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -220,7 +220,7 @@ module.exports = {
                         const embedmusic5 = new MessageEmbed()
                             .setColor(`#32CD32`)
                             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                            .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                             .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -251,7 +251,7 @@ module.exports = {
                         const embedmusic6 = new MessageEmbed()
                             .setColor(`#32CD32`)
                             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                            .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                             .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -278,7 +278,7 @@ module.exports = {
                         const embedmusic7 = new MessageEmbed()
                             .setColor(`#32CD32`)
                             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                            .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                             .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -304,7 +304,7 @@ module.exports = {
                         const embedmusic8 = new MessageEmbed()
                             .setColor(`#32CD32`)
                             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                            .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                             .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}

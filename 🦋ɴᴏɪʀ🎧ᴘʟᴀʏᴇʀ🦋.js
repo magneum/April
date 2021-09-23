@@ -76,8 +76,8 @@ for (const file of commandFiles) {
     const embedThanks = new Discord.MessageEmbed()
       .setColor(`#32CD32`)
       .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-      .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
-      .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+      .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
+      .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setDescription(`\n\n
 ❤️‍🔥 **Hey there MUSIC lovers !**
 **:microphone:Noir  =** _I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel._
@@ -118,8 +118,8 @@ for (const file of commandFiles) {
         .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
 
 
-        .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
-        .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+        .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
+        .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 𝗗𝗲𝗮𝗿 **ADMIN** 
 **:microphone:Noir  =** _ᴀ channel ɴᴀᴍᴇ 🦋noir🎧player🦋 has been successfully created._
@@ -138,8 +138,8 @@ for (const file of commandFiles) {
       const embedcheck2 = new Discord.MessageEmbed()
         .setColor(`#32CD32`)
         .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-        .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
-        .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+        .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
+        .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 𝗗𝗲𝗮𝗿 **ADMIN** 
 ---------------------|🔺|---------------------\n
@@ -193,8 +193,8 @@ for (const file of commandFiles) {
       const embedNoir1 = new Discord.MessageEmbed()
         .setColor(`#32CD32`)
         .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-        .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
-        .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+        .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
+        .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -216,8 +216,8 @@ for (const file of commandFiles) {
     const embedNoir2 = new Discord.MessageEmbed()
       .setColor(`#32CD32`)
       .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-      .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
-      .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+      .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
+      .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}

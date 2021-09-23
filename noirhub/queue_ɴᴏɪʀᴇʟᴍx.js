@@ -30,8 +30,8 @@ module.exports = {
             const embedfactor = new MessageEmbed()
                 .setColor(`#32CD32`)
                 .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)               
-                .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
-                .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
+                .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                 .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -53,7 +53,7 @@ _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ v
                 const embedqueue1 = new MessageEmbed()
                     .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                    .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                    .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -74,7 +74,7 @@ Missing permission to manage messages or add reactions`);
                 const embedqueue2 = new MessageEmbed()
                     .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-                    .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                    .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
@@ -143,7 +143,7 @@ function generateQueueEmbed(message, queue) {
         k += 10;
         const info = current.map((track) => `${++j} - [${track.title}](${track.url})`).join(`\n`);
         const embed = new MessageEmbed()
-            .setThumbnail("https://telegra.ph/file/3766d80c69f488d850173.jpg")
+            .setThumbnail("https://i.postimg.cc/D0rM4dhG/image.png")
             .setColor(`#32CD32`)
             .setDescription(`****=========🦋𝗡𝗢𝗜𝗥🦋=========****\n\n⚜️**Current Song** -_[${queue[0].title}]_\n\n⚜️${info}`)
         embeds.push(embed);
