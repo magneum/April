@@ -2,11 +2,11 @@ const { MessageEmbed } = require("discord.js");
 const { ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../NOIR_SYSTEM/noir_env");
 
 module.exports = {
-  name: "help",
+    name: "help",
 
-  execute(message) {
-    let HELPEMBED = new MessageEmbed()
-      .setDescription(`📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪n
+    execute(message) {
+        let HELPEMBED = new MessageEmbed()
+            .setDescription(`📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪n
 • !help
 == Display all commands and descriptions.
 • !loop  
@@ -39,20 +39,18 @@ module.exports = {
 == Stops the music.
 • !vol
 == Change volume of currently playing music.`)
-      .setColor(`0x1f8b4c`)
-      .setAuthor(`Author•— HypeVoidSoul`)
-      .setFooter(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**`)
-      .setTitle(`:sparkles: :butterfly:  **  𝗡𝗢𝗜𝗥  **  :butterfly: :sparkles:`)
-      .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
-      .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`);
-    message.channel
-      .send(HELPEMBED)
-      .catch(console.error)
-      .then((message) => {
-        message.delete({
-          timeout: `${AUTOCLEANER}`
-        });
-      })
-    return;
-  }
+            .setColor(`0x1f8b4c`)
+            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+            .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`);
+        message.channel
+            .send(HELPEMBED)
+            .catch(console.error)
+            .then((message) => {
+                message.delete({
+                    timeout: `${AUTOCLEANER}`
+                });
+            })
+        return;
+    }
 };

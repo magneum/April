@@ -11,10 +11,10 @@ module.exports = {
             setTimeout(function () {
                 if (queue.connection.dispatcher && message.guild.me.voice.channel) return;
                 queue.channel.leave();
-                queue.textChannel.send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Leaving voice channel...");
+                queue.textChannel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > Leaving voice channel...");
             },
                 NOIRWAKE);
-            queue.textChannel.send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > ❌ Music queue ended.")
+            queue.textChannel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > ❌ Music queue ended.")
                 .catch(console.error);
             message.client.queue.delete(message.guild.id)
             return;
@@ -36,7 +36,7 @@ module.exports = {
                 module.exports.play(queue.songs[0], message);
             }
             console.error(error);
-            message.channel.send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Error: ${error}`)
+            message.channel.send(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > Error: ${error}`)
             return;
         };
         queue.connection.on("disconnect", () => message.client.queue.delete(message.guild.id));
@@ -61,7 +61,7 @@ module.exports = {
             });
         dispatcher.setVolumeLogarithmic(queue.volume / 100);
         try {
-            var playingMessage = await queue.textChannel.send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n🍧**Title**: ${song.title}\n⛓**Link**:  ${song.url}`);
+            var playingMessage = await queue.textChannel.send(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n🍧**Title**: ${song.title}\n⛓**Link**:  ${song.url}`);
             await playingMessage.react("👉🏻");
             await playingMessage.react("⏯");
             await playingMessage.react("🤫");
@@ -86,30 +86,30 @@ module.exports = {
                     queue.playing = true;
                     reaction.users.remove(user).catch(console.error);
                     if (!canModifyQueue(member)) {
-                        message.channel.send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > You need to join a voice channel first!")
+                        message.channel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > You need to join a voice channel first!")
                         return;
                     }
                     queue.connection.dispatcher.end();
-                    queue.textChannel.send(`${user}\n\n**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > ⏩ Skipped the song`)
+                    queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > ⏩ Skipped the song`)
                         .catch(console.error);
                     collector.stop();
                     break;
                 case "⏯":
                     reaction.users.remove(user).catch(console.error);
                     if (!canModifyQueue(member)) {
-                        message.channel.send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > You need to join a voice channel first!")
+                        message.channel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > You need to join a voice channel first!")
                         return;
                     }
                     if (queue.playing) {
                         queue.playing = !queue.playing;
                         queue.connection.dispatcher.pause(true);
-                        queue.textChannel.send("<@{author}>\n\n**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > 🚦 Paused the music.",
+                        queue.textChannel.send("<@{author}>\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > 🚦 Paused the music.",
                             { author: user })
                             .catch(console.error);
                     } else {
                         queue.playing = !queue.playing;
                         queue.connection.dispatcher.resume();
-                        queue.textChannel.send("<@{author}>\n\n**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > ▶ Resumed the music!",
+                        queue.textChannel.send("<@{author}>\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > ▶ Resumed the music!",
                             { author: user })
                             .catch(console.error);
                     }
@@ -117,18 +117,18 @@ module.exports = {
                 case "🤫":
                     reaction.users.remove(user).catch(console.error);
                     if (!canModifyQueue(member)) {
-                        message.channel.send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > You need to join a voice channel first!");
+                        message.channel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > You need to join a voice channel first!");
                         return;
                     }
                     queue.muted = !queue.muted;
                     if (queue.muted) {
                         queue.connection.dispatcher.setVolumeLogarithmic(0);
-                        queue.textChannel.send("<@{author}>\n\n**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > 🤫 Muted the music!",
+                        queue.textChannel.send("<@{author}>\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > 🤫 Muted the music!",
                             { author: user })
                             .catch(console.error);
                     } else {
                         queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
-                        queue.textChannel.send("<@{author}>\n\n**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > 🔊 Unmuted the music!",
+                        queue.textChannel.send("<@{author}>\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > 🔊 Unmuted the music!",
                             { author: user })
                             .catch(console.error);
                     }
@@ -139,13 +139,13 @@ module.exports = {
                         return;
                     }
                     if (!canModifyQueue(member)) {
-                        message.channel.send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > You need to join a voice channel first!")
+                        message.channel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > You need to join a voice channel first!")
                         return;
                     }
                     queue.volume = Math.max(queue.volume - 10, 0);
                     queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
                     queue.textChannel
-                        .send("<@{author}>\n\n**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > 🔉 Decreased the volume, the volume is now {volume}%",
+                        .send("<@{author}>\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > 🔉 Decreased the volume, the volume is now {volume}%",
                             { author: user, volume: queue.volume })
                         .catch(console.error);
                     break;
@@ -155,32 +155,32 @@ module.exports = {
                         return;
                     }
                     if (!canModifyQueue(member)) {
-                        message.channel.send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > You need to join a voice channel first!")
+                        message.channel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > You need to join a voice channel first!")
                         return;
                     }
                     queue.volume = Math.min(queue.volume + 10, 100);
                     queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
-                    queue.textChannel.send("<@{author}>\n\n**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > 🔊 Increased the volume, the volume is now {volume}%", { author: user, volume: queue.volume })
+                    queue.textChannel.send("<@{author}>\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > 🔊 Increased the volume, the volume is now {volume}%", { author: user, volume: queue.volume })
                         .catch(console.error);
                     break;
                 case "🔁":
                     reaction.users.remove(user).catch(console.error);
                     if (!canModifyQueue(member)) {
-                        message.channel.send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > You need to join a voice channel first!")
+                        message.channel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > You need to join a voice channel first!")
                         return;
                     }
                     queue.loop = !queue.loop;
-                    queue.textChannel.send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Loop is now ${queue.loop ? noir_loader.__("common.on") : noir_loader.__("common.off")}`)
+                    queue.textChannel.send(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > Loop is now ${queue.loop ? noir_loader.__("common.on") : noir_loader.__("common.off")}`)
                         .catch(console.error);
                     break;
                 case "❌":
                     reaction.users.remove(user).catch(console.error);
                     if (!canModifyQueue(member)) {
-                        message.channel.send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > You need to join a voice channel first!")
+                        message.channel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > You need to join a voice channel first!")
                         return;
                     }
                     queue.songs = [];
-                    queue.textChannel.send(`${user}>\n\n**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > ❌ Stopped the music!`)
+                    queue.textChannel.send(`${user}>\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⚜️Noir > ❌ Stopped the music!`)
                         .catch(console.error);
                     try {
                         queue.connection.dispatcher.end();
