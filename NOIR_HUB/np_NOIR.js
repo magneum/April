@@ -1,13 +1,13 @@
-const { canModifyQueue } = require("../NOIR_SYSTEM/noir_env");
-const { ʙᴏᴛꜰɪx } = require("../NOIR_SYSTEM/noir_env");
 const { MessageEmbed } = require("discord.js");
+const { splitBar } = require("string-progressbar");
+const { ʙᴏᴛꜰɪx } = require("../NOIR_SYSTEM/noir_env");
 
 module.exports = {
-  name: "pause",
+  name: "np",
 
 
   execute(message, args) {
-    if (message.content.startsWith(ʙᴏᴛꜰɪx + "pause") && message.channel.name !== "🦋noir🎧player🦋") {
+    if (message.content.startsWith(ʙᴏᴛꜰɪx + "np") && message.channel.name !== "🦋noir🎧player🦋") {
       const embedfactor = new MessageEmbed()
         .setColor(`0x1f8b4c`)
         .setAuthor(`Author•— HypeVoidSoul`)
@@ -31,7 +31,7 @@ module.exports = {
         });
       return;
     }
-    if (message.content.startsWith(ʙᴏᴛꜰɪx + "pause") && message.channel.name === "🦋noir🎧player🦋") {
+    if (message.content.startsWith(ʙᴏᴛꜰɪx + "np") && message.channel.name === "🦋noir🎧player🦋") {
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         message.channel
@@ -44,22 +44,20 @@ module.exports = {
           })
         return;
       }
-      if (!canModifyQueue(message.member)) {
-        message.channel.send("**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** You need to join a voice channel first!")
-        return;
-      }
-      if (queue.playing) {
-        queue.playing = false;
-        queue.connection.dispatcher.pause(true);
-        queue.textChannel.send(`${message.author}\n**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** 🚦 Paused the music.`)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: 10000
-            });
-          })
-        return;
-      }
+      const song = queue.songs[0];
+      const seek = (queue.connection.dispatcher.streamTime - queue.connection.dispatcher.pausedTime) / 1000;
+      const left = song.duration - seek;
+      let current = new MessageEmbed()
+        .setTitle("**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** Now playing")
+        .setDescription(`${song.title}\n${song.url}`)
+        .setColor(`#F8AA2A`)
+        .setAuthor(message.client.user.username);
+      if (song.duration > 0) {
+        current.addField(`\u200b`, new Date(seek * 1000).toISOString().substr(11, 8) + `[` + splitBar(song.duration == 0 ? seek : song.duration, seek, 20)[0] + `]` + (song.duration == 0 ? ` ◉ LIVE` : new Date(song.duration * 1000).toISOString().substr(11, 8)), false);
+        current.setFooter(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** ⏱Time Remaining: ${new Date(left * 1000).toISOString().substr(11, 8)}`)
+      };
+      return message.channel
+        .send(current);
     }
   }
 };

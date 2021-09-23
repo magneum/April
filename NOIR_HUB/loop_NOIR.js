@@ -1,6 +1,6 @@
-const noir_loader = require("../NOIR_SYSTEM/noir_loader");
 const { canModifyQueue } = require("../NOIR_SYSTEM/noir_env");
-
+const { ʙᴏᴛꜰɪx } = require("../NOIR_SYSTEM/noir_env");
+const { MessageEmbed } = require("discord.js");
 
 module.exports = {
   name: "loop",
@@ -8,27 +8,56 @@ module.exports = {
 
 
   execute(message, args) {
-    // if (message.author) {
-    //   message.delete();
-    // } 
+    if (message.content.startsWith(ʙᴏᴛꜰɪx + "loop") && message.channel.name !== "🦋noir🎧player🦋") {
+      const embedfactor = new MessageEmbed()
+        .setColor(`0x1f8b4c`)
+        .setAuthor(`Author•— HypeVoidSoul`)
+        .setFooter(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**`)
+        .setTitle(`:sparkles: :butterfly:  **  𝗡𝗢𝗜𝗥  **  :butterfly: :sparkles:`)
+        .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+        .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+        .setDescription(`\n\n
+**⚠️WARNING⚠️** 
+**User:** ${message.author}
+**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**
 
-
-    const queue = message.client.queue.get(message.guild.id);
-    if (!queue) return message.reply(noir_loader.__("loop.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_Qᴜᴇᴜᴇ"))
-      .then(message => {
-        message.delete({ timeout: 6000 });
-      })
-      .catch(console.error);
-    if (!canModifyQueue(message.member)) return noir_loader.__("common.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ᴄʜᴀɴɴᴇʟ");
-
-    // toggle from false to true and reverse
-    queue.loop = !queue.loop;
-    return queue.textChannel
-      .send(noir_loader.__mf("loop.ПOIЯD_ʀᴇꜱᴜʟᴛ", { loop: queue.loop ? noir_loader.__("common.on") : noir_loader.__("common.off") }))
-
-      .then(message => {
-        message.delete({ timeout: 6000 });
-      })
-      .catch(console.error);
+•|  _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+      message.channel
+        .send(embedfactor)
+        .catch(console.error)
+        .then((message) => {
+          message.delete({
+            timeout: 10000
+          });
+        });
+      return;
+    }
+    if (message.content.startsWith(ʙᴏᴛꜰɪx + "loop") && message.channel.name === "🦋noir🎧player🦋") {
+      const queue = message.client.queue.get(message.guild.id);
+      if (!queue) {
+        message.channel
+          .send("**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** is not playing anymusic yet.....")
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: 10000
+            });
+          })
+        return;
+      }
+      if (!canModifyQueue(message.member)) {
+        message.channel.send("**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** You need to join a voice channel first!")
+        return;
+      }
+      queue.loop = !queue.loop;
+      queue.textChannel.send(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir -Loop is now turned ${queue.loop ? message.channel.send("ON") : message.channel.send("OFF")}**`)
+        .catch(console.error)
+        .then((message) => {
+          message.delete({
+            timeout: 10000
+          });
+        })
+      return;
+    }
   }
 };

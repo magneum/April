@@ -1,125 +1,198 @@
-const { MessageEmbed } = require("discord.js");
-const noir_loader = require("../NOIR_SYSTEM/noir_loader");
 const { play } = require("./MЦƧIC");
+const { MessageEmbed } = require("discord.js");
 const YouTubeAPI = require("simple-youtube-api");
 const scdl = require("soundcloud-downloader").default;
-const { NOIRYT, notneeded, NOIRMAX, NOIRVOL } = require("../NOIR_SYSTEM/noir_env");
+const { NOIRYT,
+  notneeded,
+  NOIRMAX,
+  NOIRVOL } = require("../NOIR_SYSTEM/noir_env");
 const youtube = new YouTubeAPI(NOIRYT);
+const { ʙᴏᴛꜰɪx } = require("../NOIR_SYSTEM/noir_env");
+
+
 
 module.exports = {
-  name: "playlist",
+  name: "list",
   cooldown: 5,
 
 
   async execute(message, args) {
-    // if (message.author) {
-    //   message.delete();
-    // } 
+    if (message.content.startsWith(ʙᴏᴛꜰɪx + "list") && message.channel.name !== "🦋noir🎧player🦋") {
+      const embedfactor = new MessageEmbed()
+        .setColor(`0x1f8b4c`)
+        .setAuthor(`Author•— HypeVoidSoul`)
+        .setFooter(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**`)
+        .setTitle(`:sparkles: :butterfly:  **  𝗡𝗢𝗜𝗥  **  :butterfly: :sparkles:`)
+        .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+        .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+        .setDescription(`\n\n
+**⚠️WARNING⚠️** 
+**User:** ${message.author}
+**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**
 
-
-    const { channel } = message.member.voice;
-    const serverQueue = message.client.queue.get(message.guild.id);
-
-    if (!args.length)
-      return message
-        .reply(noir_loader.__mf("playlist.usageReply", { prefix: message.client.prefix }))
-        .catch(console.error);
-    if (!channel) return message.reply(noir_loader.__("playlist.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ᴄʜᴀɴɴᴇʟ")).catch(console.error);
-
-    const permissions = channel.permissionsFor(message.client.user);
-    if (!permissions.has("CONNECT")) return message.reply(noir_loader.__("playlist.ПOIЯD_ᴍɪꜱꜱɪɴɢ_ᴘᴇʀᴍɪꜱꜱɪᴏɴ_ᴄᴏɴɴᴇᴄᴛ"));
-    if (!permissions.has("SPEAK")) return message.reply(noir_loader.__("ПOIЯD_ᴍɪꜱꜱɪɴɢ_ᴘᴇʀᴍɪꜱꜱɪᴏɴ_ꜱᴘᴇᴀᴋ"));
-
-    if (serverQueue && channel !== message.guild.me.voice.channel)
-      return message
-        .reply(noir_loader.__mf("play.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ɪɴ_ꜱᴀᴍᴇ_ᴄʜᴀɴɴᴇʟ", { user: message.client.user }))
-        .catch(console.error);
-
-    const search = args.join(" ");
-    const pattern = /^.*(youtu.be\/|list=)([^#\&\?]*).*/gi;
-    const url = args[0];
-    const urlValid = pattern.test(args[0]);
-
-    const queueConstruct = {
-      textChannel: message.channel,
-      channel,
-      connection: null,
-      songs: [],
-      loop: false,
-      volume: NOIRVOL,
-      muted: false,
-      playing: true
-    };
-
-    let playlist = null;
-    let videos = [];
-
-    if (urlValid) {
-      try {
-        playlist = await youtube.getPlaylist(url, { part: "snippet" });
-        videos = await playlist.getVideos(NOIRMAX || 10, { part: "snippet" });
-      } catch (error) {
-        console.error(error);
-        return message.reply(noir_loader.__("playlist.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ꜰᴏᴜɴᴅ_ᴘʟᴀʏʟɪꜱᴛ")).catch(console.error);
-      }
-    } else if (scdl.isValidUrl(args[0])) {
-      if (args[0].includes("/sets/")) {
-        message.channel.send(noir_loader.__("playlist.ПOIЯD_ꜰᴇᴛᴄʜɪɴɢ_ᴘʟᴀʏʟɪꜱᴛ"));
-        playlist = await scdl.getSetInfo(args[0], notneeded);
-        videos = playlist.tracks.map((track) => ({
-          title: track.title,
-          url: track.permalink_url,
-          duration: track.duration / 1000
-        }));
-      }
-    } else {
-      try {
-        const results = await youtube.searchPlaylists(search, 1, { part: "snippet" });
-        playlist = results[0];
-        videos = await playlist.getVideos(NOIRMAX, { part: "snippet" });
-      } catch (error) {
-        console.error(error);
-        return message.reply(error.message).catch(console.error);
-      }
-    }
-
-    const newSongs = videos
-      .filter((video) => video.title != "Private video" && video.title != "Deleted video")
-      .map((video) => {
-        return (song = {
-          title: video.title,
-          url: video.url,
-          duration: video.durationSeconds
+•|  _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+      message.channel
+        .send(embedfactor)
+        .catch(console.error)
+        .then((message) => {
+          message.delete({
+            timeout: 10000
+          });
         });
-      });
+      return;
+    }
+    if (message.content.startsWith(ʙᴏᴛꜰɪx + "list") && message.channel.name === "🦋noir🎧player🦋") {
+      const { channel } = message.member.voice;
+      const serverQueue = message.client.queue.get(message.guild.id);
+      if (!channel) {
+        message.channel
+          .send("**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** You need to join a voice channel first!")
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: 10000
+            });
+          })
+        return;
+      }
 
-    serverQueue ? serverQueue.songs.push(...newSongs) : queueConstruct.songs.push(...newSongs);
+      if (!args.length) {
+        message.channel
+          .send(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** ⚓️**usage:**{ʙᴏᴛꜰɪx}playlist <YouTube Playlist URL | Playlist Name>`)
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: 10000
+            });
+          })
+        return;
+      }
+      const permissions = channel.permissionsFor(message.client.user);
+      if (!permissions.has(`CONNECT`)) {
+        message.channel
+          .send("**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** Cannot connect to voice channel, missing permissions")
+        return;
+      }
+      if (!permissions.has(`SPEAK`)) {
+        message.channel
+          .send("**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** I cannot speak in this voice channel, make sure I have the proper permissions!")
+        return;
+      }
+      if (serverQueue && channel !== message.guild.me.voice.channel) {
+        message.channel
+          .send(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** You must be in the same channel as ${message.client.user}`)
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: 10000
+            });
+          })
+        return;
+      }
 
-    let playlistEmbed = new MessageEmbed()
-      .setTitle(`${playlist.title}`)
-      .setDescription(newSongs.map((song, index) => `${index + 1}. ${song.title}`))
-      .setURL(playlist.url)
-      .setColor("#F8AA2A")
-      .setTimestamp();
-
-    if (playlistEmbed.description.length >= 2048)
-      playlistEmbed.description =
-        playlistEmbed.description.substr(0, 2007) + noir_loader.__("playlist.ПOIЯD_ᴘʟᴀʏʟɪꜱᴛ_ᴄʜᴀʀ_ʟɪᴍɪᴛ");
-
-    message.channel.send(noir_loader.__mf("playlist.ПOIЯD_ꜱᴛᴀʀᴛᴇᴅ_ᴘʟᴀʏʟɪꜱᴛ", { author: message.author }), playlistEmbed);
-
-    if (!serverQueue) {
-      message.client.queue.set(message.guild.id, queueConstruct);
-
-      try {
-        queueConstruct.connection = await channel.join();
-        await queueConstruct.connection.voice.setSelfDeaf(true);
-        play(queueConstruct.songs[0], message);
-      } catch (error) {
-        console.error(error);
-        message.client.queue.delete(message.guild.id);
-        await channel.leave();
-        return message.channel.send(noir_loader.__mf("play.ПOIЯD_ᴄᴀɴᴛ_ᴊᴏɪɴ_ᴄʜᴀɴɴᴇʟ", { error: error })).catch(console.error);
+      const search = args.join(` `);
+      const pattern = /^.*(youtu.be\/|list=)([^#\&\?]*).*/gi;
+      const url = args[0];
+      const urlValid = pattern.test(args[0]);
+      const queueConstruct = {
+        textChannel: message.channel,
+        channel,
+        connection: null,
+        songs: [],
+        loop: false,
+        volume: NOIRVOL,
+        muted: false,
+        playing: true
+      };
+      let playlist = null;
+      let videos = [];
+      if (urlValid) {
+        try {
+          playlist = await youtube.getPlaylist(url, { part: `snippet` });
+          videos = await playlist.getVideos(NOIRMAX || 10, { part: `snippet` });
+        } catch (error) {
+          console.error(error);
+          message.channel
+            .send("**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** Playlist not found")
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: 10000
+              });
+            })
+          return;
+        }
+      } else if (scdl.isValidUrl(args[0])) {
+        if (args[0].includes(`/sets/`)) {
+          message.channel
+            .send("**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** ⌛ Fetching the playlist...");
+          playlist = await scdl.getSetInfo(args[0], notneeded);
+          videos = playlist.tracks.map((track) => ({
+            title: track.title,
+            url: track.permalink_url,
+            duration: track.duration / 1000
+          }));
+        }
+      } else {
+        try {
+          const results = await youtube.searchPlaylists(search, 1, { part: `snippet` });
+          playlist = results[0];
+          videos = await playlist.getVideos(NOIRMAX, { part: `snippet` });
+        } catch (error) {
+          console.error(error);
+          message.channel
+            .send(error.message)
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: 10000
+              });
+            })
+          return;
+        }
+      }
+      const newSongs = videos.filter((video) => video.title != `Private video` && video.title != `Deleted video`)
+        .map((video) => {
+          return (song = {
+            title: video.title,
+            url: video.url,
+            duration: video.durationSeconds
+          });
+        });
+      serverQueue ? serverQueue.songs.push(...newSongs) : queueConstruct.songs.push(...newSongs);
+      let playlistEmbed = new MessageEmbed()
+        .setTitle(`${playlist.title}`)
+        .setDescription(newSongs.map((song, index) => `${index + 1}. ${song.title}`))
+        .setURL(playlist.url)
+        .setColor(`#F8AA2A`)
+        .setTimestamp();
+      if (playlistEmbed.description.length >= 2048)
+        playlistEmbed.description = playlistEmbed.description
+          .substr(0, 2007) +
+          "**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** Playlist larger than character limit...";
+      message.channel
+        .send(`$message.author>\n\n**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** Started a playlist`),
+        playlistEmbed;
+      if (!serverQueue) {
+        message.client.queue.set(message.guild.id, queueConstruct);
+        try {
+          queueConstruct.connection = await channel.join();
+          await queueConstruct.connection.voice.setSelfDeaf(true);
+          play(queueConstruct.songs[0], message);
+        } catch (error) {
+          console.error(error);
+          message.client.queue.delete(message.guild.id);
+          await channel.leave();
+          message.channel
+            .send(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** Could not join the channel: ${error}`)
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: 10000
+              });
+            })
+          return;
+        }
       }
     }
   }

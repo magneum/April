@@ -1,13 +1,19 @@
 const { MessageEmbed } = require("discord.js");
 
-const NOIRHelpQ = `📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪n
+
+module.exports = {
+  name: "help",
+
+  execute(message) {
+    let HELPEMBED = new MessageEmbed()
+      .setDescription(`📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪n
 • !help
 == Display all commands and descriptions.
 • !loop  
 == Toggle music loop.
 • !lyrics
 == Get lyrics for the currently playing song.
-• !nowplaying
+• !np
 == Show now playing song.
 • !pause
 == Pause the currently playing music.
@@ -32,28 +38,21 @@ const NOIRHelpQ = `📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪n
 • !stop
 == Stops the music.
 • !vol
-== Change volume of currently playing music.`;
-
-
-module.exports = {
-  name: "help",
-
-  execute(message) {
-    // if (message.author) {
-    //   message.delete();
-    // } 
-
-
-    let helpEmbed = new MessageEmbed()
-      .setTitle("—••÷[🦋NOIR Discord Music Player🦋]÷•—")
-      .setDescription(NOIRHelpQ)
-      .setAuthor("Author•— HypeVoidSoul")
-      .setFooter("—••÷=======[ 🦋NOIR🦋 ]=======÷•—")
-      .setThumbnail("https://telegra.ph/file/3766d80c69f488d850173.jpg")
-      .setImage("https://telegra.ph/file/3766d80c69f488d850173.jpg")
-      .setColor("0x1f8b4c");
-    helpEmbed.setTimestamp();
-
-    return message.channel.send(helpEmbed).catch(console.error);
+== Change volume of currently playing music.`)
+      .setColor(`0x1f8b4c`)
+      .setAuthor(`Author•— HypeVoidSoul`)
+      .setFooter(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**`)
+      .setTitle(`:sparkles: :butterfly:  **  𝗡𝗢𝗜𝗥  **  :butterfly: :sparkles:`)
+      .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+      .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`);
+    message.channel
+      .send(HELPEMBED)
+      .catch(console.error)
+      .then((message) => {
+        message.delete({
+          timeout: 10000
+        });
+      })
+    return;
   }
 };

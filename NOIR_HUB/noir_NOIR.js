@@ -1,13 +1,5 @@
 const { MessageEmbed } = require("discord.js");
-const { PREFIX } = require("../NOIR_SYSTEM/noir_env");
-
-
-
-const NOIRED = `
-=• **🦋NOIR🦋** is a Discord Music player Bot with YouTube Support and is available on both Discord and Telegram.\n\n
-=• use ${PREFIX}help to learn how to use **🦋NOIR🦋**\n\n
-=• **🦋NOIR🦋** has been licensed under GNU General Public License 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀`
-
+const { ʙᴏᴛꜰɪx } = require("../NOIR_SYSTEM/noir_env");
 
 
 module.exports = {
@@ -16,21 +8,25 @@ module.exports = {
 
 
   execute(message, args) {
-    // if (message.author) {
-    //   message.delete();
-    // } 
-
-    let Embed = new MessageEmbed()
-      .setFooter("—••÷=======[ 🦋NOIR🦋 ]=======÷•—")
-      .setDescription(NOIRED)
-      .setImage("https://telegra.ph/file/805a9684da89a5dcac320.jpg")
-      .setColor("0x1f8b4c");
-    Embed.setTimestamp();
-    try {
-      return message.channel.send(Embed);
-    }
-    catch (error) {
-      console.error(error);
-    }
+    let NOIREMBED = new MessageEmbed()
+      .setDescription(`
+=• **🦋NOIR🦋** is a Discord Music player Bot with YouTube Support and is available on both Discord and Telegram.\n\n
+=• use ${ʙᴏᴛꜰɪx}help to learn how to use **🦋NOIR🦋**\n\n
+=• **🦋NOIR🦋** has been licensed under GNU General Public License 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀`)
+      .setColor(`0x1f8b4c`)
+      .setAuthor(`Author•— HypeVoidSoul`)
+      .setFooter(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**`)
+      .setTitle(`:sparkles: :butterfly:  **  𝗡𝗢𝗜𝗥  **  :butterfly: :sparkles:`)
+      .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+      .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`);
+    message.channel
+      .send(NOIREMBED)
+      .catch(console.error)
+      .then((message) => {
+        message.delete({
+          timeout: 10000
+        });
+      })
+    return;
   }
 };

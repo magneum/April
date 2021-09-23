@@ -1,5 +1,6 @@
-const noir_loader = require("../NOIR_SYSTEM/noir_loader");
 const { canModifyQueue } = require("../NOIR_SYSTEM/noir_env");
+const { ʙᴏᴛꜰɪx } = require("../NOIR_SYSTEM/noir_env");
+const { MessageEmbed } = require("discord.js");
 
 
 module.exports = {
@@ -7,49 +8,97 @@ module.exports = {
 
 
   execute(message, args) {
-    // if (message.author) {
-    //   message.delete();
-    // } 
+    if (message.content.startsWith(ʙᴏᴛꜰɪx + "vol") && message.channel.name !== "🦋noir🎧player🦋") {
+      const embedfactor = new MessageEmbed()
+        .setColor(`0x1f8b4c`)
+        .setAuthor(`Author•— HypeVoidSoul`)
+        .setFooter(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**`)
+        .setTitle(`:sparkles: :butterfly:  **  𝗡𝗢𝗜𝗥  **  :butterfly: :sparkles:`)
+        .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+        .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+        .setDescription(`\n\n
+**⚠️WARNING⚠️** 
+**User:** ${message.author}
+**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**
 
-
-    const queue = message.client.queue.get(message.guild.id);
-
-    if (!queue) return message.reply(noir_loader.__("volume.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_Qᴜᴇᴜᴇ"))
-      .then(message => {
-        message.delete({ timeout: 6000 });
-      })
-      .catch(console.error);
-    if (!canModifyQueue(message.member))
-      return message.reply(noir_loader.__("volume.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ᴄʜᴀɴɴᴇʟ"))
-        .then(message => {
-          message.delete({ timeout: 6000 });
+•|  _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+      message.channel
+        .send(embedfactor)
+        .catch(console.error)
+        .then((message) => {
+          message.delete({
+            timeout: 10000
+          });
+        });
+      return;
+    }
+    if (message.content.startsWith(ʙᴏᴛꜰɪx + "vol") && message.channel.name === "🦋noir🎧player🦋") {
+      const queue = message.client.queue.get(message.guild.id);
+      if (!queue) {
+        message.channel
+          .send("**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** is not playing anymusic yet.....")
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: 10000
+            });
+          })
+        return;
+      }
+      if (!canModifyQueue(message.member)) {
+        message.channel
+          .send("**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** You need to join a voice channel first!")
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: 10000
+            });
+          })
+        return;
+      }
+      if (!args[0]) {
+        message.channel
+          .send(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** 🔊 **The current volume is:** ${queue.volume}%`)
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: 10000
+            });
+          })
+        return;
+      }
+      if (isNaN(args[0])) {
+        message.channel
+          .send("**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** Please use a number to set volume.")
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: 10000
+            });
+          })
+        return;
+      }
+      if (Number(args[0]) > 100 || Number(args[0]) < 0) {
+        message.channel
+          .send("**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** Please use a number between 0 - 100.")
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: 10000
+            });
+          })
+        return;
+      }
+      queue.volume = args[0];
+      queue.connection.dispatcher.setVolumeLogarithmic(args[0] / 100);
+      queue.textChannel.send(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** Volume set to: **${args[0]}%**`)
+        .catch(console.error)
+        .then((message) => {
+          message.delete({
+            timeout: 10000
+          });
         })
-        .catch(console.error);
-
-    if (!args[0])
-      return message.reply(noir_loader.__mf("volume.ПOIЯD_ᴄᴜʀʀᴇɴᴛ_ᴠᴏʟᴜᴍᴇ", { volume: queue.volume }))
-        .then(message => {
-          message.delete({ timeout: 6000 });
-        })
-        .catch(console.error);
-    if (isNaN(args[0])) return message.reply(noir_loader.__("volume.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ɴᴜᴍʙᴇʀ"))
-      .then(message => {
-        message.delete({ timeout: 6000 });
-      })
-      .catch(console.error);
-    if (Number(args[0]) > 100 || Number(args[0]) < 0)
-      return message.reply(noir_loader.__("volume.ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ᴠᴀʟɪᴅ"))
-        .then(message => {
-          message.delete({ timeout: 6000 });
-        })
-        .catch(console.error);
-
-    queue.volume = args[0];
-    queue.connection.dispatcher.setVolumeLogarithmic(args[0] / 100);
-    return queue.textChannel.send(noir_loader.__mf("volume.ПOIЯD_ʀᴇꜱᴜʟᴛ", { arg: args[0] }))
-      .then(message => {
-        message.delete({ timeout: 6000 });
-      })
-      .catch(console.error);
+      return;
+    }
   }
 };

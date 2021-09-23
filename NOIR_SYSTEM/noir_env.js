@@ -12,7 +12,7 @@ exports.canModifyQueue = (member) => {
 require('dotenv').config()
 exports.LOCALE = process.env.LOCALE;
 exports.NOIRYT = process.env.NOIRYT;
-exports.PREFIX = process.env.PREFIX;
+exports.ʙᴏᴛꜰɪx = process.env.BOTFIX;
 exports.NOIRMAX = process.env.NOIRMAX;
 exports.NOIRVOL = process.env.NOIRVOL;
 exports.NOIRDISK = process.env.NOIRDISK;
