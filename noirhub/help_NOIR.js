@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("discord.js");
-const { ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../noirtem/noir_env");
+const { AUTOCLEANER } = require("../noirtem/noir_env");
 
 module.exports = {
     name: "help",
