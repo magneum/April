@@ -1,5 +1,5 @@
 const ytdl = require("ytdl-core-discord");
-const { canModifyQueue, NOIRWAKE } = require("../NOIR_SYSTEM/noir_env");
+const { canModifyQueue, NOIRWAKE } = require("../noirtem/noir_env");
 
 
 

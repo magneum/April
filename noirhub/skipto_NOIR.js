@@ -1,15 +1,12 @@
-const { canModifyQueue } = require("../NOIR_SYSTEM/noir_env");
-const pattern = /^[0-9]{1,2}(\s*,\s*[0-9]{1,2})*$/;
-const { ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../NOIR_SYSTEM/noir_env");
+const { canModifyQueue, ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../noirtem/noir_env");
 const { MessageEmbed } = require("discord.js");
 
-
 module.exports = {
-    name: "remove",
+    name: "skipto",
 
 
     execute(message, args) {
-        if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name !== "🦋noir🎧player🦋") {
+        if (message.content.startsWith(ʙᴏᴛꜰɪx + "skipto") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
                 .setColor(`0x1f8b4c`)
                 .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
@@ -33,10 +30,9 @@ module.exports = {
                 });
             return;
         }
-        if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name === "🦋noir🎧player🦋") {
-            const queue = message.client.queue.get(message.guild.id);
-            if (!queue) {
-                const embedrm1 = new MessageEmbed()
+        if (message.content.startsWith(ʙᴏᴛꜰɪx + "skipto") && message.channel.name === "🦋noir🎧player🦋") {
+            if (!args.length || isNaN(args[0])) {
+                const embedskpto1 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
                     .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -45,9 +41,31 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** There is no queue.`);
+**:microphone:Noir  =** ⚓️**usage:**${ʙᴏᴛꜰɪx}{name} <Queue Number>`);
                 message.channel
-                    .send(embedrm1)
+                    .send(embedskpto1)
+                    .catch(console.error)
+                    .then((message) => {
+                        message.delete({
+                            timeout: `${AUTOCLEANER}`
+                        });
+                    });
+                return;
+            }
+            const queue = message.client.queue.get(message.guild.id);
+            if (!queue) {
+                const embedskpto2 = new MessageEmbed()
+                    .setColor(`0x1f8b4c`)
+                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                    .setDescription(`\n\n
+**⚠️Warning⚠️** 
+**User:** ${message.author}
+
+**=========🦋𝗡𝗢𝗜𝗥🦋=========**
+**:microphone:Noir  =** There is nothing playing that I could skip for you.`);
+                message.channel
+                    .send(embedskpto2)
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
@@ -57,7 +75,7 @@ module.exports = {
                 return;
             }
             if (!canModifyQueue(message.member)) {
-                const embedrm2 = new MessageEmbed()
+                const embedskpto3 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
                     .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -68,7 +86,7 @@ module.exports = {
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
 **:microphone:Noir  =** You need to join a voice channel first!`);
                 message.channel
-                    .send(embedrm2)
+                    .send(embedskpto3)
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
@@ -77,8 +95,8 @@ module.exports = {
                     });
                 return;
             }
-            if (!args.length) {
-                const embedrm3 = new MessageEmbed()
+            if (args[0] > queue.songs.length) {
+                const embedshp1 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
                     .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -87,9 +105,9 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** ⚓️**usage:**${ʙᴏᴛꜰɪx}remove <Queue Number>`);
+**:microphone:Noir  =** There is nothing playing that I could skip for you.`);
                 message.channel
-                    .send(embedrm3)
+                    .send(embedshp1)
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
@@ -98,41 +116,22 @@ module.exports = {
                     });
                 return;
             }
-            const arguments = args.join(``);
-            const songs = arguments.split(`,`).map((arg) => parseInt(arg));
-            let removed = [];
-            if (pattern.test(arguments)) {
-                queue.songs = queue.songs.filter((item, index) => {
-                    if (songs.find((songIndex) => songIndex - 1 === index)) removed.push(item);
-                    else return true;
-                });
-                queue.textChannel
-                    .send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  ❌ Removed **${removed.map((song) => song.title).join(`\n`)}** from the queue.`);
-            } else if (!isNaN(args[0]) && args[0] >= 1 && args[0] <= queue.songs.length) {
-                console.log(`we got elsed!`);
-                return queue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  ❌ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`);
+            queue.playing = true;
+            if (queue.loop) {
+                for (let i = 0; i < args[0] - 2; i++) {
+                    queue.songs.push(queue.songs.shift());
+                }
             } else {
-                console.log(`we got the last one`);
-                const embedrm4 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
-                    .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
-                    .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
-
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** **usage:**${ʙᴏᴛꜰɪx}remove <Queue Number>`);
-                message.channel
-                    .send(embedrm4)
-                    .catch(console.error)
-                    .then((message) => {
-                        message.delete({
-                            timeout: `${AUTOCLEANER}`
-                        });
-                    });
-                return;
+                queue.songs = queue.songs.slice(args[0] - 2);
             }
+            queue.connection.dispatcher.end();
+            queue.textChannel.send(`${message.author}>\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  ❌ stopped the music!`)
+                .catch(console.error)
+                .then((message) => {
+                    message.delete({
+                        timeout: `${AUTOCLEANER}`
+                    });
+                });
         }
     }
 };

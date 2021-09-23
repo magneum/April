@@ -1,15 +1,10 @@
+require('dotenv').config()
 exports.canModifyQueue = (member) => {
   const { channelID } = member.voice;
   const botChannel = member.guild.voice.channelID;
-
-
-
-  if (channelID !== botChannel) {
-    return;
-  } return true;
+  if (channelID !== botChannel) { return; }
+  else { return true; }
 };
-
-require('dotenv').config()
 exports.LOCALE = process.env.LOCALE;
 exports.NOIRYT = process.env.NOIRYT;
 exports.ʙᴏᴛꜰɪx = process.env.BOTFIX;

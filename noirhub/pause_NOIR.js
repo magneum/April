@@ -1,5 +1,5 @@
-const { canModifyQueue } = require("../NOIR_SYSTEM/noir_env");
-const { ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../NOIR_SYSTEM/noir_env");
+const { canModifyQueue } = require("../noirtem/noir_env");
+const { ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../noirtem/noir_env");
 const { MessageEmbed } = require("discord.js");
 
 module.exports = {

@@ -2,7 +2,7 @@ const os = require('os')
 const { join } = require("path");
 const { readdirSync } = require("fs");
 const { Client, Collection } = require("discord.js");
-const { NOIRDISK, ʙᴏᴛꜰɪx, AUTOCLEANER } = require("./NOIR_SYSTEM/noir_env.js");
+const { NOIRDISK, ʙᴏᴛꜰɪx, AUTOCLEANER } = require("./noirtem/noir_env.js");
 
 
 const NOIR = new Client({
@@ -63,9 +63,9 @@ NOIR.on(`guildCreate`,
   });
 
 
-const commandFiles = readdirSync(join(__dirname, "NOIR_HUB")).filter((file) => file.endsWith("_NOIR.js"));
+const commandFiles = readdirSync(join(__dirname, "noirhub")).filter((file) => file.endsWith("_NOIR.js"));
 for (const file of commandFiles) {
-  const command = require(join(__dirname, "NOIR_HUB", `${file}`));
+  const command = require(join(__dirname, "noirhub", `${file}`));
   NOIR.commands.set(command.name, command);
 }
 

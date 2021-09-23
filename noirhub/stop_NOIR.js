@@ -1,14 +1,12 @@
-const { canModifyQueue } = require("../NOIR_SYSTEM/noir_env");
-const { ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../NOIR_SYSTEM/noir_env");
+const { canModifyQueue, ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../noirtem/noir_env");
 const { MessageEmbed } = require("discord.js");
 
-
 module.exports = {
-    name: "shuffle",
+    name: "stop",
 
 
     execute(message, args) {
-        if (message.content.startsWith(ʙᴏᴛꜰɪx + "shuffle") && message.channel.name !== "🦋noir🎧player🦋") {
+        if (message.content.startsWith(ʙᴏᴛꜰɪx + "stop") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
                 .setColor(`0x1f8b4c`)
                 .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
@@ -32,10 +30,10 @@ module.exports = {
                 });
             return;
         }
-        if (message.content.startsWith(ʙᴏᴛꜰɪx + "shuffle") && message.channel.name === "🦋noir🎧player🦋") {
+        if (message.content.startsWith(ʙᴏᴛꜰɪx + "stop") && message.channel.name === "🦋noir🎧player🦋") {
             const queue = message.client.queue.get(message.guild.id);
             if (!queue) {
-                const embedshuf1 = new MessageEmbed()
+                const embedskp1 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
                     .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -44,9 +42,9 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** There is no queue.`);
+**:microphone:Noir  =** is not playing anymusic yet.....`);
                 message.channel
-                    .send(embedshuf1)
+                    .send(embedskp1)
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
@@ -56,7 +54,7 @@ module.exports = {
                 return;
             }
             if (!canModifyQueue(message.member)) {
-                const embedshuf2 = new MessageEmbed()
+                const embedskp2 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
                     .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -67,7 +65,7 @@ module.exports = {
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
 **:microphone:Noir  =** You need to join a voice channel first!`);
                 message.channel
-                    .send(embedshuf2)
+                    .send(embedskp2)
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
@@ -76,14 +74,9 @@ module.exports = {
                     });
                 return;
             }
-            let songs = queue.songs;
-            for (let i = songs.length - 1; i > 1; i--) {
-                let j = 1 + Math.floor(Math.random() * i);
-                [songs[i], songs[j]] = [songs[j], songs[i]];
-            }
-            queue.songs = songs;
-            message.client.queue.set(message.guild.id, queue);
-            queue.textChannel.send(`${message.author}>\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  🔀 Shuffled the queue`)
+            queue.songs = [];
+            queue.connection.dispatcher.end();
+            queue.textChannel.send(`${message.author}\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  ❌ stopped the music!`)
                 .catch(console.error)
                 .then((message) => {
                     message.delete({

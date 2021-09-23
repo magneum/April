@@ -1,13 +1,9 @@
+const { NOIRYT, notneeded, NOIRMAX, NOIRVOL, ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../noirtem/noir_env");
 const { play } = require("./MЦƧIC");
 const { MessageEmbed } = require("discord.js");
 const YouTubeAPI = require("simple-youtube-api");
 const scdl = require("soundcloud-downloader").default;
-const { NOIRYT,
-    notneeded,
-    NOIRMAX,
-    NOIRVOL } = require("../NOIR_SYSTEM/noir_env");
 const youtube = new YouTubeAPI(NOIRYT);
-const { ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../NOIR_SYSTEM/noir_env");
 
 
 
@@ -21,8 +17,8 @@ module.exports = {
             const embedfactor = new MessageEmbed()
                 .setColor(`0x1f8b4c`)
                 .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
-                
-                
+
+
                 .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setDescription(`\n\n

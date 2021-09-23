@@ -1,19 +1,18 @@
-const { canModifyQueue } = require("../NOIR_SYSTEM/noir_env");
-const { ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../NOIR_SYSTEM/noir_env");
+const { canModifyQueue, ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../noirtem/noir_env");
 const { MessageEmbed } = require("discord.js");
 
 
 module.exports = {
-    name: "resume",
+    name: "shuffle",
 
 
     execute(message, args) {
-        if (message.content.startsWith(ʙᴏᴛꜰɪx + "resume") && message.channel.name !== "🦋noir🎧player🦋") {
+        if (message.content.startsWith(ʙᴏᴛꜰɪx + "shuffle") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
                 .setColor(`0x1f8b4c`)
                 .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
-                
-                
+
+
                 .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setDescription(`\n\n
@@ -32,10 +31,10 @@ module.exports = {
                 });
             return;
         }
-        if (message.content.startsWith(ʙᴏᴛꜰɪx + "resume") && message.channel.name === "🦋noir🎧player🦋") {
+        if (message.content.startsWith(ʙᴏᴛꜰɪx + "shuffle") && message.channel.name === "🦋noir🎧player🦋") {
             const queue = message.client.queue.get(message.guild.id);
             if (!queue) {
-                const embedresume1 = new MessageEmbed()
+                const embedshuf1 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
                     .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -44,9 +43,9 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** is not playing anymusic yet.....`);
+**:microphone:Noir  =** There is no queue.`);
                 message.channel
-                    .send(embedresume1)
+                    .send(embedshuf1)
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
@@ -56,7 +55,7 @@ module.exports = {
                 return;
             }
             if (!canModifyQueue(message.member)) {
-                const embedresume2 = new MessageEmbed()
+                const embedshuf2 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
                     .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -65,9 +64,9 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** is not playing anymusic yet.....`);
+**:microphone:Noir  =** You need to join a voice channel first!`);
                 message.channel
-                    .send(embedresume2)
+                    .send(embedshuf2)
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
@@ -76,37 +75,20 @@ module.exports = {
                     });
                 return;
             }
-            if (!queue.playing) {
-                queue.playing = true;
-                queue.connection.dispatcher.resume();
-                queue.textChannel.send(`${message.author}\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  ▶ Resumed the music!`)
-                    .catch(console.error)
-                    .then((message) => {
-                        message.delete({
-                            timeout: `${AUTOCLEANER}`
-                        });
-                    })
-                return;
+            let songs = queue.songs;
+            for (let i = songs.length - 1; i > 1; i--) {
+                let j = 1 + Math.floor(Math.random() * i);
+                [songs[i], songs[j]] = [songs[j], songs[i]];
             }
-            const embedresume3 = new MessageEmbed()
-                .setColor(`0x1f8b4c`)
-                .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
-                .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
-                .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
-
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** The queue is not paused.`);
-            message.channel
-                .send(embedresume3)
+            queue.songs = songs;
+            message.client.queue.set(message.guild.id, queue);
+            queue.textChannel.send(`${message.author}>\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  🔀 Shuffled the queue`)
                 .catch(console.error)
                 .then((message) => {
                     message.delete({
                         timeout: `${AUTOCLEANER}`
                     });
                 });
-            return;
         }
     }
 };
