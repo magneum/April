@@ -17,3 +17,4 @@ exports.NOIRMAX = process.env.NOIRMAX;
 exports.NOIRVOL = process.env.NOIRVOL;
 exports.NOIRDISK = process.env.NOIRDISK;
 exports.NOIRWAKE = process.env.NOIRWAKE;
+exports.AUTOCLEANER = process.env.AUTOCLEANER;

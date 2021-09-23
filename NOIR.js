@@ -2,7 +2,7 @@ const os = require('os')
 const { join } = require("path");
 const { readdirSync } = require("fs");
 const { Client, Collection } = require("discord.js");
-const { NOIRDISK, ʙᴏᴛꜰɪx } = require("./NOIR_SYSTEM/noir_env.js");
+const { NOIRDISK, ʙᴏᴛꜰɪx, AUTOCLEANER  } = require("./NOIR_SYSTEM/noir_env.js");
 
 
 const NOIR = new Client({
@@ -160,7 +160,7 @@ NOIR.on("message", async (message) => {
       .catch(console.error)
       .then((message) => {
         message.delete({
-          timeout: 10000
+          timeout: `${AUTOCLEANER}`
         });
       });
   }

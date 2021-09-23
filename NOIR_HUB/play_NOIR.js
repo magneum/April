@@ -4,7 +4,7 @@ const { play } = require("./MЦƧIC");
 const YouTubeAPI = require("simple-youtube-api");
 const { NOIRYT, notneeded, NOIRVOL } = require("../NOIR_SYSTEM/noir_env");
 const youtube = new YouTubeAPI(NOIRYT);
-const { ʙᴏᴛꜰɪx } = require("../NOIR_SYSTEM/noir_env");
+const { ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../NOIR_SYSTEM/noir_env");
 const playlistPattern = /^.*(list=)([^#\&\?]*).*/gi;
 const scdl = require(`soundcloud-downloader`).default;
 const scRegex = /^https?:\/\/(soundcloud\.com)\/(.*)$/;
@@ -37,7 +37,7 @@ module.exports = {
         .catch(console.error)
         .then((message) => {
           message.delete({
-            timeout: 10000
+            timeout: `${AUTOCLEANER}`
           });
         });
       return;
@@ -51,7 +51,7 @@ module.exports = {
           .catch(console.error)
           .then((message) => {
             message.delete({
-              timeout: 10000
+              timeout: `${AUTOCLEANER}`
             });
           });
         return;
@@ -62,7 +62,7 @@ module.exports = {
           .catch(console.error)
           .then((message) => {
             message.delete({
-              timeout: 10000
+              timeout: `${AUTOCLEANER}`
             });
           })
         return;
@@ -74,7 +74,7 @@ module.exports = {
           .catch(console.error)
           .then((message) => {
             message.delete({
-              timeout: 10000
+              timeout: `${AUTOCLEANER}`
             });
           })
         return;
@@ -111,7 +111,7 @@ module.exports = {
                 .catch(console.error)
                 .then((message) => {
                   message.delete({
-                    timeout: 10000
+                    timeout: `${AUTOCLEANER}`
                   });
                 })
               return;
@@ -124,7 +124,7 @@ module.exports = {
             .catch(console.error)
             .then((message) => {
               message.delete({
-                timeout: 10000
+                timeout: `${AUTOCLEANER}`
               });
             })
           return;
@@ -134,7 +134,7 @@ module.exports = {
           .catch(console.error)
           .then((message) => {
             message.delete({
-              timeout: 10000
+              timeout: `${AUTOCLEANER}`
             });
           })
         return;
@@ -166,7 +166,7 @@ module.exports = {
             .catch(console.error)
             .then((message) => {
               message.delete({
-                timeout: 10000
+                timeout: `${AUTOCLEANER}`
               });
             });
         }
@@ -185,7 +185,7 @@ module.exports = {
             .catch(console.error)
             .then((message) => {
               message.delete({
-                timeout: 10000
+                timeout: `${AUTOCLEANER}`
               });
             });
         }
@@ -198,7 +198,7 @@ module.exports = {
               .catch(console.error)
               .then((message) => {
                 message.delete({
-                  timeout: 10000
+                  timeout: `${AUTOCLEANER}`
                 });
               });
             return;
@@ -216,7 +216,7 @@ module.exports = {
             .catch(console.error)
             .then((message) => {
               message.delete({
-                timeout: 10000
+                timeout: `${AUTOCLEANER}`
               });
             })
           return;
@@ -228,7 +228,7 @@ module.exports = {
           .catch(console.error)
           .then((message) => {
             message.delete({
-              timeout: 10000
+              timeout: `${AUTOCLEANER}`
             });
           })
         return;
@@ -248,7 +248,7 @@ module.exports = {
           .catch(console.error)
           .then((message) => {
             message.delete({
-              timeout: 10000
+              timeout: `${AUTOCLEANER}`
             });
           })
         return;

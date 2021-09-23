@@ -1,5 +1,5 @@
 const { canModifyQueue } = require("../NOIR_SYSTEM/noir_env");
-const { ʙᴏᴛꜰɪx } = require("../NOIR_SYSTEM/noir_env");
+const { ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../NOIR_SYSTEM/noir_env");
 const { MessageEmbed } = require("discord.js");
 
 module.exports = {
@@ -26,7 +26,7 @@ module.exports = {
         .catch(console.error)
         .then((message) => {
           message.delete({
-            timeout: 10000
+            timeout: `${AUTOCLEANER}`
           });
         });
       return;
@@ -38,7 +38,7 @@ module.exports = {
           .catch(console.error)
           .then((message) => {
             message.delete({
-              timeout: 10000
+              timeout: `${AUTOCLEANER}`
             });
           })
         return;
@@ -50,7 +50,7 @@ module.exports = {
           .catch(console.error)
           .then((message) => {
             message.delete({
-              timeout: 10000
+              timeout: `${AUTOCLEANER}`
             });
           })
         return;
@@ -65,7 +65,7 @@ module.exports = {
           .catch(console.error)
           .then((message) => {
             message.delete({
-              timeout: 10000
+              timeout: `${AUTOCLEANER}`
             });
           })
         return;
@@ -83,7 +83,7 @@ module.exports = {
         .catch(console.error)
         .then((message) => {
           message.delete({
-            timeout: 10000
+            timeout: `${AUTOCLEANER}`
           });
         });
     }
