@@ -81,17 +81,16 @@ for (const file of commandFiles) {
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setDescription(`\n\n
 ❤️‍🔥 **Hey there MUSIC lovers !**
-**:microphone:Noir  =** _I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel._
-**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_
+_I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel._
+_Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_
 
 
 :candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
-**:microphone:Noir  =** _Please use ${ʙᴏᴛꜰɪx}play YouTube Url_
-**:microphone:Noir  =** _Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more_
+_Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more_
 
 ---------------------|🔺|---------------------
 :star:**ɴᴏᴛᴇ to ᴏᴡɴᴇʀ ᴀɴᴅ ᴍᴏᴅᴇʀꜱ**
-**:microphone:Noir  =** 🎃**VERY VERY IMPORTANT**🎃_Please use !calib once to calibrate before first use!_`
+🎃**VERY VERY IMPORTANT**_Please use !calib once to calibrate before first use!_`
       );
     channel
       .send(embedThanks)
@@ -117,8 +116,6 @@ for (const file of commandFiles) {
       const embedcheck1 = new MessageEmbed()
         .setColor(`#32CD32`)
         .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-
-
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
