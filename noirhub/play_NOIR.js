@@ -38,7 +38,7 @@ module.exports = {
     async execute(message, args) {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "play") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
-                .setColor(`0x1f8b4c`)
+                .setColor(`#32CD32`)
                 .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                 .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -63,7 +63,7 @@ module.exports = {
             const serverQueue = message.client.queue.get(message.guild.id);
             if (!channel) {
                 const embedplay1 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
@@ -84,7 +84,7 @@ module.exports = {
             }
             if (serverQueue && channel !== message.guild.me.voice.channel) {
                 const embedplay2 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
@@ -106,7 +106,7 @@ module.exports = {
 
             if (!args.length) {
                 const embedplay3 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
@@ -128,7 +128,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
             const permissions = channel.permissionsFor(message.client.user);
             if (!permissions.has(`CONNECT`)) {
                 const embedplay3 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
@@ -149,7 +149,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
             }
             if (!permissions.has(`SPEAK`)) {
                 const embedplay3 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
@@ -185,7 +185,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                             return;
                         } else {
                             const embedplay4 = new MessageEmbed()
-                                .setColor(`0x1f8b4c`)
+                                .setColor(`#32CD32`)
                                 .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                                 .setDescription(`\n\n
@@ -218,7 +218,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                     return;
                 }
                 const embedplay5 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
@@ -292,7 +292,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                     const results = await youtube.searchVideos(search, 1, { part: `snippet` });
                     if (!results.length) {
                         const embedplay6 = new MessageEmbed()
-                            .setColor(`0x1f8b4c`)
+                            .setColor(`#32CD32`)
                             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
 
 
@@ -354,7 +354,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                 message.client.queue.delete(message.guild.id);
                 await channel.leave();
                 const embedplay7 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n

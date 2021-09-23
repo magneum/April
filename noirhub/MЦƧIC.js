@@ -55,7 +55,7 @@ module.exports = {
             }
             console.error(error);
             const embedmusic1 = new MessageEmbed()
-                .setColor(`0x1f8b4c`)
+                .setColor(`#32CD32`)
                 .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setDescription(`\n\n
@@ -122,7 +122,7 @@ module.exports = {
                     reaction.users.remove(user).catch(console.error);
                     if (!canModifyQueue(member)) {
                         const embedmusic2 = new MessageEmbed()
-                            .setColor(`0x1f8b4c`)
+                            .setColor(`#32CD32`)
                             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
@@ -150,7 +150,7 @@ module.exports = {
                     reaction.users.remove(user).catch(console.error);
                     if (!canModifyQueue(member)) {
                         const embedmusic3 = new MessageEmbed()
-                            .setColor(`0x1f8b4c`)
+                            .setColor(`#32CD32`)
                             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
@@ -185,7 +185,7 @@ module.exports = {
                     reaction.users.remove(user).catch(console.error);
                     if (!canModifyQueue(member)) {
                         const embedmusic4 = new MessageEmbed()
-                            .setColor(`0x1f8b4c`)
+                            .setColor(`#32CD32`)
                             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
@@ -222,7 +222,7 @@ module.exports = {
                     }
                     if (!canModifyQueue(member)) {
                         const embedmusic5 = new MessageEmbed()
-                            .setColor(`0x1f8b4c`)
+                            .setColor(`#32CD32`)
                             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
@@ -254,7 +254,7 @@ module.exports = {
                     }
                     if (!canModifyQueue(member)) {
                         const embedmusic6 = new MessageEmbed()
-                            .setColor(`0x1f8b4c`)
+                            .setColor(`#32CD32`)
                             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
@@ -282,7 +282,7 @@ module.exports = {
                     reaction.users.remove(user).catch(console.error);
                     if (!canModifyQueue(member)) {
                         const embedmusic7 = new MessageEmbed()
-                            .setColor(`0x1f8b4c`)
+                            .setColor(`#32CD32`)
                             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
@@ -309,7 +309,7 @@ module.exports = {
                     reaction.users.remove(user).catch(console.error);
                     if (!canModifyQueue(member)) {
                         const embedmusic8 = new MessageEmbed()
-                            .setColor(`0x1f8b4c`)
+                            .setColor(`#32CD32`)
                             .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n

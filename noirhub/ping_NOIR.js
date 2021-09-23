@@ -28,7 +28,7 @@ module.exports = {
     execute(message) {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "ping") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
-                .setColor(`0x1f8b4c`)
+                .setColor(`#32CD32`)
                 .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
 
 
@@ -52,7 +52,7 @@ module.exports = {
         }
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "ping") && message.channel.name === "🦋noir🎧player🦋") {
             const embedping = new MessageEmbed()
-                .setColor(`0x1f8b4c`)
+                .setColor(`#32CD32`)
                 .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
 
 

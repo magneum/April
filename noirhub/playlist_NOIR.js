@@ -32,7 +32,7 @@ module.exports = {
     async execute(message, args) {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "list") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
-                .setColor(`0x1f8b4c`)
+                .setColor(`#32CD32`)
                 .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
 
 
@@ -59,7 +59,7 @@ module.exports = {
             const serverQueue = message.client.queue.get(message.guild.id);
             if (!channel) {
                 const embedlist1 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
@@ -81,7 +81,7 @@ module.exports = {
 
             if (!args.length) {
                 const embedlist2 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
@@ -103,7 +103,7 @@ module.exports = {
             const permissions = channel.permissionsFor(message.client.user);
             if (!permissions.has(`CONNECT`)) {
                 const embedlist3 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
@@ -124,7 +124,7 @@ module.exports = {
             }
             if (!permissions.has(`SPEAK`)) {
                 const embedlist4 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
@@ -145,7 +145,7 @@ module.exports = {
             }
             if (serverQueue && channel !== message.guild.me.voice.channel) {
                 const embedlist5 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
@@ -188,7 +188,7 @@ module.exports = {
                 } catch (error) {
                     console.error(error);
                     const embedlist6 = new MessageEmbed()
-                        .setColor(`0x1f8b4c`)
+                        .setColor(`#32CD32`)
                         .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                         .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                         .setDescription(`\n\n
@@ -249,7 +249,7 @@ module.exports = {
                 .setTitle(`${playlist.title}`)
                 .setDescription(newSongs.map((song, index) => `${index + 1}. ${song.title}`))
                 .setURL(playlist.url)
-                .setColor(`0x1f8b4c`)
+                .setColor(`#32CD32`)
                 .setTimestamp();
             if (playlistEmbed.description.length >= 2048)
                 playlistEmbed.description = playlistEmbed.description
@@ -269,7 +269,7 @@ module.exports = {
                     message.client.queue.delete(message.guild.id);
                     await channel.leave();
                     const embedlist7 = new MessageEmbed()
-                        .setColor(`0x1f8b4c`)
+                        .setColor(`#32CD32`)
                         .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                         .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                         .setDescription(`\n\n

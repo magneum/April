@@ -28,7 +28,7 @@ module.exports = {
     async execute(message) {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "queue") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
-                .setColor(`0x1f8b4c`)
+                .setColor(`#32CD32`)
                 .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)               
                 .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -52,7 +52,7 @@ module.exports = {
             const permissions = message.channel.permissionsFor(message.client.user);
             if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
                 const embedqueue1 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
@@ -74,7 +74,7 @@ module.exports = {
             const queue = message.client.queue.get(message.guild.id);
             if (!queue) {
                 const embedqueue2 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
@@ -147,7 +147,7 @@ function generateQueueEmbed(message, queue) {
         const info = current.map((track) => `${++j} - [${track.title}](${track.url})`).join(`\n`);
         const embed = new MessageEmbed()
             .setThumbnail("https://telegra.ph/file/3766d80c69f488d850173.jpg")
-            .setColor(`0x1f8b4c`)
+            .setColor(`#32CD32`)
             .setDescription(`****=========🦋𝗡𝗢𝗜𝗥🦋=========****\n\n⚜️**Current Song** -_[${queue[0].title}]_\n\n⚜️${info}`)
         embeds.push(embed);
     }

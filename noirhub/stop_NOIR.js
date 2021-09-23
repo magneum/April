@@ -27,7 +27,7 @@ module.exports = {
     execute(message) {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "stop") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
-                .setColor(`0x1f8b4c`)
+                .setColor(`#32CD32`)
                 .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                 
                 
@@ -53,7 +53,7 @@ module.exports = {
             const queue = message.client.queue.get(message.guild.id);
             if (!queue) {
                 const embedskp1 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
@@ -74,7 +74,7 @@ module.exports = {
             }
             if (!canModifyQueue(message.member)) {
                 const embedskp2 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n

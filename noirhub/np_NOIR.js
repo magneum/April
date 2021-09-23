@@ -28,7 +28,7 @@ module.exports = {
     execute(message) {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "np") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
-                .setColor(`0x1f8b4c`)
+                .setColor(`#32CD32`)
                 .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                 .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -52,7 +52,7 @@ module.exports = {
             const queue = message.client.queue.get(message.guild.id);
             if (!queue) {
                 const embednp1 = new MessageEmbed()
-                    .setColor(`0x1f8b4c`)
+                    .setColor(`#32CD32`)
                     .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
@@ -77,7 +77,7 @@ module.exports = {
             let current = new MessageEmbed()
                 .setTitle("🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\n**:microphone:Noir  =**  Now playing")
                 .setDescription(`${song.title}\n${song.url}`)
-                .setColor(`0x1f8b4c`)
+                .setColor(`#32CD32`)
                 .setAuthor(message.client.user.username);
             if (song.duration > 0) {
                 current.addField(`\u200b`, new Date(seek * 1000).toISOString().substr(11, 8) + `[` + splitBar(song.duration == 0 ? seek : song.duration, seek, 20)[0] + `]` + (song.duration == 0 ? ` ◉ LIVE` : new Date(song.duration * 1000).toISOString().substr(11, 8)), false);

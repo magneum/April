@@ -66,7 +66,7 @@ has been licensed under GNU General Public License
         channel.permissionsFor(guild.me).has(`SEND_MESSAGES`)
     );
     const embedThanks = new Discord.MessageEmbed()
-      .setColor(`0x1f8b4c`)
+      .setColor(`#32CD32`)
       .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
       .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
       .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -106,7 +106,7 @@ has been licensed under GNU General Public License
   if (message.content.startsWith(ʙᴏᴛꜰɪx + `calib`)) {
     if (message.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
       const embedcheck1 = new Discord.MessageEmbed()
-        .setColor(`0x1f8b4c`)
+        .setColor(`#32CD32`)
         .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
 
 
@@ -128,7 +128,7 @@ has been licensed under GNU General Public License
       console.log(`•🦋noir🎧player🦋 ©️• has been successfully created.`);
     } else {
       const embedcheck2 = new Discord.MessageEmbed()
-        .setColor(`0x1f8b4c`)
+        .setColor(`#32CD32`)
         .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
         .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
         .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -183,7 +183,7 @@ has been licensed under GNU General Public License
     if (now < expirationTime) {
       const timeLeft = (expirationTime - now) / 1000;
       const embedNoir1 = new Discord.MessageEmbed()
-        .setColor(`0x1f8b4c`)
+        .setColor(`#32CD32`)
         .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
         .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
         .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -207,7 +207,7 @@ has been licensed under GNU General Public License
   } catch (error) {
     console.error(error);
     const embedNoir2 = new Discord.MessageEmbed()
-      .setColor(`0x1f8b4c`)
+      .setColor(`#32CD32`)
       .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
       .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
       .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
