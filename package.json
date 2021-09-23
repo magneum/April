@@ -2,7 +2,7 @@
   "name": "noir_audio",
   "version": "10.0.0",
   "description": "Discord music bot built with discord.js",
-  "main": "🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋.js",
+  "main": "yarn",
   "author": "HypeVoidSoul",
   "private": true,
   "homepage": "https://github.com/HypeVoidSoul/NOIR",
