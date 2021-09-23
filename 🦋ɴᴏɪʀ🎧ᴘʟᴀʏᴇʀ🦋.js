@@ -241,21 +241,21 @@ Discord Music YouTube player
 has been licensed under GNU General Public License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 =============================================================================================================================`
-ռօɨʀֆɛʀʋɛʀ.all('/',
-  (req, res) => {
-    res.send(`
-🦋=======🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋=======🦋
-|🦋•Bot_Name: ${ռօɨʀքʟǟʏɛʀ.user.username}
-|🦋•Bot_Os: ${os.platform().toUpperCase()}
-🦋=======🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋=======🦋`);
-  })
-function ռօɨʀքʟǟʏɛʀֆɛʀʋɛʀ() {
-  ռօɨʀֆɛʀʋɛʀ.listen(8080,
-    () => {
-      console.log(`Server is Ready!`)
-    });
-}
-`=============================================================================================================================
+  // ռօɨʀֆɛʀʋɛʀ.all('/',
+  //   (req, res) => {
+  //     res.send(`
+  // 🦋=======🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋=======🦋
+  // |🦋•Bot_Name: ${ռօɨʀքʟǟʏɛʀ.user.username}
+  // |🦋•Bot_Os: ${os.platform().toUpperCase()}
+  // 🦋=======🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋=======🦋`);
+  //   })
+  // function ռօɨʀքʟǟʏɛʀֆɛʀʋɛʀ() {
+  //   ռօɨʀֆɛʀʋɛʀ.listen(3000,
+  //     () => {
+  //       console.log(`Server is Ready!`)
+  //     });
+  // }
+  `=============================================================================================================================
 GNU GENERAL PUBLIC LICENSE 
 Version 3, 29 June 2007
 Copyright (C) 2007 Free Software Foundation
@@ -266,8 +266,12 @@ Discord Music YouTube player
 has been licensed under GNU General Public License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 =============================================================================================================================`
-const PORT = process.env.PORT || 8080;
-ռօɨʀքʟǟʏɛʀֆɛʀʋɛʀ()
+const PORT = process.env.PORT || 3000;
+// ռօɨʀքʟǟʏɛʀֆɛʀʋɛʀ()
 ռօɨʀֆɛʀʋɛʀ.listen(PORT, () =>
-  console.log(`🦋noir🎧player🦋 HEROKU Server is listening on ${PORT}`));
+  console.log(`🦋noir🎧player🦋 HEROKU Server is listening on ${PORT}
+🦋=======🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋=======🦋
+|🦋•Bot_Name: ${ռօɨʀքʟǟʏɛʀ.user.username}
+|🦋•Bot_Os: ${os.platform().toUpperCase()}
+🦋=======🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋=======🦋`));
 ռօɨʀքʟǟʏɛʀ.login(ɴᴏɪʀᴇꜱ);
