@@ -58,7 +58,6 @@ module.exports = {
 
                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setDescription(`\n\n
-**⚠️Warning⚠️** 
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
