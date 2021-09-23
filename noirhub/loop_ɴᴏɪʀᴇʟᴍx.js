@@ -78,7 +78,7 @@ Noir is not playing anymusic yet.....`);
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
- You need to join a voice channel first!`);
+You need to join a voice channel first!`);
                 message.channel
                     .send(embedloopno2)
                     .catch(console.error)
@@ -90,7 +90,7 @@ Noir is not playing anymusic yet.....`);
                 return;
             }
             queue.loop = !queue.loop;
-            queue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  Loop is now turned ${queue.loop ? message.channel.send("ON") : message.channel.send("OFF")}**`)
+            queue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\nLoop is now turned ${queue.loop ? message.channel.send("ON") : message.channel.send("OFF")}**`)
                 .catch(console.error)
                 .then((message) => {
                     message.delete({

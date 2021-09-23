@@ -29,7 +29,7 @@ module.exports = {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "queue") && message.channel.name !== "noir🎧player") {
             const embedfactor = new MessageEmbed()
                 .setColor(`#32CD32`)
-                .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)               
+                .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                 .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                 .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                 .setDescription(`\n\n
@@ -92,7 +92,7 @@ Missing permission to manage messages or add reactions`);
             }
             let currentPage = 0;
             const embeds = generateQueueEmbed(message, queue.songs);
-            const queueEmbed = await message.channel.send(`"**:microphone:Noir  =**  *Page Num:* - ${currentPage + 1}/${embeds.length}`, embeds[currentPage]);
+            const queueEmbed = await message.channel.send(`"*Page Num:* - ${currentPage + 1}/${embeds.length}`, embeds[currentPage]);
             try {
                 await queueEmbed.react(`⬅️`);
                 await queueEmbed.react(`❌`);
@@ -110,14 +110,14 @@ Missing permission to manage messages or add reactions`);
                     if (reaction.emoji.name === `➡️`) {
                         if (currentPage < embeds.length - 1) {
                             currentPage++;
-                            queueEmbed.edit("**:microphone:Noir  =**  *Page Num:* - ",
+                            queueEmbed.edit("*Page Num:* - ",
                                 { page: currentPage + 1, length: embeds.length }),
                                 embeds[currentPage]
                         };
                     } else if (reaction.emoji.name === `⬅️`) {
                         if (currentPage !== 0) {
                             --currentPage;
-                            queueEmbed.edit("**:microphone:Noir  =**  *Page Num:* - ", { page: currentPage + 1, length: embeds.length }), embeds[currentPage]
+                            queueEmbed.edit("*Page Num:* - ", { page: currentPage + 1, length: embeds.length }), embeds[currentPage]
                         };
                     } else {
                         collector.stop();

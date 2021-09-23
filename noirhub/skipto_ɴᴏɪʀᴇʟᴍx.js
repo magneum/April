@@ -137,7 +137,7 @@ There is nothing playing that I could skip for you.`);
                 queue.songs = queue.songs.slice(args[0] - 2);
             }
             queue.connection.dispatcher.end();
-            queue.textChannel.send(`${message.author}>\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  ❌ stopped the music!`)
+            queue.textChannel.send(`${message.author}>\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n❌ stopped the music!`)
                 .catch(console.error)
                 .then((message) => {
                     message.delete({

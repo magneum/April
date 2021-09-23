@@ -90,7 +90,7 @@ You need to join a voice channel first!`);
             }
             queue.playing = true;
             queue.connection.dispatcher.end();
-            queue.textChannel.send(`${message.author}\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  Skipped the song`,)
+            queue.textChannel.send(`${message.author}\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\nSkipped the song`,)
                 .catch(console.error)
                 .then((message) => {
                     message.delete({

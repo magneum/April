@@ -29,11 +29,22 @@ module.exports = {
             setTimeout(function () {
                 if (queue.connection.dispatcher && message.guild.me.voice.channel) return;
                 queue.channel.leave();
-                queue.textChannel.send("🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\n**:microphone:Noir  =**  Leaving voice channel...");
+                queue.textChannel.send("🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\nLeaving voice channel...")
+                    .catch(console.error)
+                    .then((message) => {
+                        message.delete({
+                            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
+                        });
+                    });
             },
                 ɴᴏɪʀᴡᴀᴋᴇ);
-            queue.textChannel.send("🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\n**:microphone:Noir  =**  ❌ Music queue ended.")
-                .catch(console.error);
+            queue.textChannel.send("🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\n❌ Music queue ended.")
+                .catch(console.error)
+                .then((message) => {
+                    message.delete({
+                        timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
+                    });
+                });
             message.client.queue.delete(message.guild.id)
             return;
         }
@@ -62,7 +73,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
- Error: ${error}`);
+Error: ${error}`);
             message.channel
                 .send(embedmusic1)
                 .catch(console.error)
@@ -73,7 +84,8 @@ module.exports = {
                 });
             return;
         };
-        queue.connection.on("disconnect", () => message.client.queue.delete(message.guild.id));
+        queue.connection.on("disconnect",
+            () => message.client.queue.delete(message.guild.id));
         const dispatcher = queue.connection
             .play(stream, { type: streamType })
             .on("finish", () => {
@@ -128,7 +140,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
- You need to join a voice channel first!`);
+You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic2)
                             .catch(console.error)
@@ -140,8 +152,13 @@ module.exports = {
                         return;
                     }
                     queue.connection.dispatcher.end();
-                    queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  ⏩ Skipped the song`)
-                        .catch(console.error);
+                    queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⏩ Skipped the song`)
+                        .catch(console.error)
+                        .then((message) => {
+                            message.delete({
+                                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
+                            });
+                        });
                     collector.stop();
                     break;
                 case "⏯":
@@ -155,7 +172,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
- You need to join a voice channel first!`);
+You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic3)
                             .catch(console.error)
@@ -169,13 +186,23 @@ module.exports = {
                     if (queue.playing) {
                         queue.playing = !queue.playing;
                         queue.connection.dispatcher.pause(true);
-                        queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  🚦 Paused the music.`)
-                            .catch(console.error);
+                        queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n🚦 Paused the music.`)
+                            .catch(console.error)
+                            .then((message) => {
+                                message.delete({
+                                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
+                                });
+                            });
                     } else {
                         queue.playing = !queue.playing;
                         queue.connection.dispatcher.resume();
-                        queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  ▶ Resumed the music!`)
-                            .catch(console.error);
+                        queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n▶ Resumed the music!`)
+                            .catch(console.error)
+                            .then((message) => {
+                                message.delete({
+                                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
+                                });
+                            });
                     }
                     break;
                 case "🤫":
@@ -189,7 +216,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
- You need to join a voice channel first!`);
+You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic4)
                             .catch(console.error)
@@ -203,12 +230,22 @@ module.exports = {
                     queue.muted = !queue.muted;
                     if (queue.muted) {
                         queue.connection.dispatcher.setVolumeLogarithmic(0);
-                        queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  🤫 Muted the music!`)
-                            .catch(console.error);
+                        queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n🤫 Muted the music!`)
+                            .catch(console.error)
+                            .then((message) => {
+                                message.delete({
+                                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
+                                });
+                            });
                     } else {
                         queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
-                        queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  🔊 Unmuted the music!`)
-                            .catch(console.error);
+                        queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n🔊 Unmuted the music!`)
+                            .catch(console.error)
+                            .then((message) => {
+                                message.delete({
+                                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
+                                });
+                            });
                     }
                     break;
                 case "🔉":
@@ -225,7 +262,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
- You need to join a voice channel first!`);
+You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic5)
                             .catch(console.error)
@@ -239,8 +276,13 @@ module.exports = {
                     queue.volume = Math.max(queue.volume - 10, 0);
                     queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
                     queue.textChannel
-                        .send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  🔉 Decreased the volume, the volume is now ${queue.volume}%`)
-                        .catch(console.error);
+                        .send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n🔉 Decreased the volume, the volume is now ${queue.volume}%`)
+                        .catch(console.error)
+                        .then((message) => {
+                            message.delete({
+                                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
+                            });
+                        });
                     break;
                 case "🔊":
                     reaction.users.remove(user).catch(console.error);
@@ -256,7 +298,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
- You need to join a voice channel first!`);
+You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic6)
                             .catch(console.error)
@@ -269,8 +311,13 @@ module.exports = {
                     }
                     queue.volume = Math.min(queue.volume + 10, 100);
                     queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
-                    queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  🔊 Increased the volume, the volume is now ${queue.volume}%`)
-                        .catch(console.error);
+                    queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n🔊 Increased the volume, the volume is now ${queue.volume}%`)
+                        .catch(console.error)
+                        .then((message) => {
+                            message.delete({
+                                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
+                            });
+                        });
                     break;
                 case "🔁":
                     reaction.users.remove(user).catch(console.error);
@@ -283,7 +330,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
- You need to join a voice channel first!`);
+You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic7)
                             .catch(console.error)
@@ -295,8 +342,13 @@ module.exports = {
                         return;
                     }
                     queue.loop = !queue.loop;
-                    queue.textChannel.send(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\n**:microphone:Noir  =**  Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
-                        .catch(console.error);
+                    queue.textChannel.send(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\nLoop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
+                        .catch(console.error)
+                        .then((message) => {
+                            message.delete({
+                                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
+                            });
+                        });
                     break;
                 case "❌":
                     reaction.users.remove(user).catch(console.error);
@@ -309,7 +361,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
- You need to join a voice channel first!`);
+You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic8)
                             .catch(console.error)
@@ -322,7 +374,12 @@ module.exports = {
                     }
                     queue.songs = [];
                     queue.textChannel.send(`${user} >\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n **: microphone: Noir =**  ❌ Stopped the music!`)
-                        .catch(console.error);
+                        .catch(console.error)
+                        .then((message) => {
+                            message.delete({
+                                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
+                            });
+                        });
                     try {
                         queue.connection.dispatcher.end();
                     } catch (error) {

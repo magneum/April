@@ -95,7 +95,7 @@ You need to join a voice channel first!`);
             }
             queue.songs = songs;
             message.client.queue.set(message.guild.id, queue);
-            queue.textChannel.send(`${message.author}>\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  🔀 Shuffled the queue`)
+            queue.textChannel.send(`${message.author}>\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n🔀 Shuffled the queue`)
                 .catch(console.error)
                 .then((message) => {
                     message.delete({

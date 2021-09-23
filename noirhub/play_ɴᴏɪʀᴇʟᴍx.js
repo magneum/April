@@ -326,7 +326,7 @@ Audio Not Found`);
             }
             if (serverQueue) {
                 serverQueue.songs.push(song);
-                serverQueue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  ${song.title}\n_has been added to the queue by_ ${message.author}\n\n`)
+                serverQueue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n${song.title}\n_has been added to the queue by_ ${message.author}\n\n`)
                     .catch(console.error)
                     .then((message) => {
                         message.delete({

@@ -197,7 +197,7 @@ Please use the channel for any ʏᴏᴜᴛᴜʙᴇ voice streaming.`);
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
- Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${command.name}' command.      `
+Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${command.name}' command.      `
         );
       channel
         .send(embedNoir1)
@@ -220,7 +220,7 @@ Please use the channel for any ʏᴏᴜᴛᴜʙᴇ voice streaming.`);
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
- There was an error executing that command.`    );
+There was an error executing that command.`    );
     channel
       .send(embedNoir2)
       .catch(console.error)

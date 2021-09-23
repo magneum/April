@@ -28,7 +28,7 @@ module.exports = {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "stop") && message.channel.name !== "noir🎧player") {
             const embedfactor = new MessageEmbed()
                 .setColor(`#32CD32`)
-                .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)               
+                .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                 .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                 .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                 .setDescription(`\n\n
@@ -90,7 +90,7 @@ You need to join a voice channel first!`);
             }
             queue.songs = [];
             queue.connection.dispatcher.end();
-            queue.textChannel.send(`${message.author}\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  ❌ stopped the music!`)
+            queue.textChannel.send(`${message.author}\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n❌ stopped the music!`)
                 .catch(console.error)
                 .then((message) => {
                     message.delete({

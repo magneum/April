@@ -150,7 +150,7 @@ Please use a number between 0 - 100."`);
             }
             queue.volume = args[0];
             queue.connection.dispatcher.setVolumeLogarithmic(args[0] / 100);
-            queue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  Volume set to: **${args[0]}%**`)
+            queue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\nVolume set to: **${args[0]}%**`)
                 .catch(console.error)
                 .then((message) => {
                     message.delete({

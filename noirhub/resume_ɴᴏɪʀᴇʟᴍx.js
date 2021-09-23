@@ -91,7 +91,7 @@ is not playing anymusic yet.....`);
             if (!queue.playing) {
                 queue.playing = true;
                 queue.connection.dispatcher.resume();
-                queue.textChannel.send(`${message.author}\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  ▶ Resumed the music!`)
+                queue.textChannel.send(`${message.author}\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n▶ Resumed the music!`)
                     .catch(console.error)
                     .then((message) => {
                         message.delete({

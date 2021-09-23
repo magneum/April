@@ -202,7 +202,7 @@ Playlist not found`);
             } else if (scdl.isValidUrl(args[0])) {
                 if (args[0].includes(`/sets/`)) {
                     message.channel
-                        .send("**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  ⌛ Fetching the playlist...");
+                        .send("**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n⌛ Fetching the playlist...");
                     playlist = await scdl.getSetInfo(args[0], notneeded);
                     videos = playlist.tracks.map((track) => ({
                         title: track.title,
@@ -244,9 +244,24 @@ Playlist not found`);
                 .setColor(`#32CD32`)
                 .setTimestamp();
             if (playlistEmbed.description.length >= 2048)
-                playlistEmbed.description = playlistEmbed.description.substr(0, 2007) + "**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  Playlist larger than character limit...";
-            message.channel.send(`${message.author}\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  Started a playlist`),
-                playlistEmbed;
+                playlistEmbed.description = playlistEmbed.description.substr(0, 2007) + "**=========🦋𝗡𝗢𝗜𝗥🦋=========**\nPlaylist larger than character limit...";
+            const embedlist7 = new MessageEmbed()
+                .setColor(`#32CD32`)
+                .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
+                .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
+                .setDescription(`\n\n
+**User:** ${message.author}
+
+Started a playlist`);
+            message.channel
+                .send(embedlist7)
+                .catch(console.error)
+                .then((message) => {
+                    message.delete({
+                        timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
+                    });
+                });
+            playlistEmbed;
             if (!serverQueue) {
                 message.client.queue.set(message.guild.id, queueConstruct);
                 try {
@@ -257,7 +272,7 @@ Playlist not found`);
                     console.error(error);
                     message.client.queue.delete(message.guild.id);
                     await channel.leave();
-                    const embedlist7 = new MessageEmbed()
+                    const embedlist8 = new MessageEmbed()
                         .setColor(`#32CD32`)
                         .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -267,7 +282,7 @@ Playlist not found`);
 
 Could not join the channel: ${error}`);
                     message.channel
-                        .send(embedlist7)
+                        .send(embedlist8)
                         .catch(console.error)
                         .then((message) => {
                             message.delete({

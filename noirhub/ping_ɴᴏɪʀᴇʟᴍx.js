@@ -59,7 +59,7 @@ _Please use the channel **noir🎧player** for any ʏᴏᴜᴛᴜʙᴇ voice str
                 .setDescription(`\n\n
 **User:** ${message.author}
 
- ⌛️Average ping of noir's Server **${Math.round(message.client.ws.ping)}ms**`);
+⌛️Average ping of noir's Server **${Math.round(message.client.ws.ping)}ms**`);
             message.channel
                 .send(embedping)
                 .catch(console.error)
