@@ -73,7 +73,7 @@ for (const file of commandFiles) {
         channel.type === `text` &&
         channel.permissionsFor(guild.me).has(`SEND_MESSAGES`)
     );
-    const embedThanks = new Discord.MessageEmbed()
+    const embedThanks = new MessageEmbed()
       .setColor(`#32CD32`)
       .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -113,7 +113,7 @@ for (const file of commandFiles) {
   if (!message.guild) return;
   if (message.content.startsWith(ʙᴏᴛꜰɪx + `calib`)) {
     if (message.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
-      const embedcheck1 = new Discord.MessageEmbed()
+      const embedcheck1 = new MessageEmbed()
         .setColor(`#32CD32`)
         .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
 
@@ -135,7 +135,7 @@ for (const file of commandFiles) {
       });
       console.log(`•🦋noir🎧player🦋 ©️• has been successfully created.`);
     } else {
-      const embedcheck2 = new Discord.MessageEmbed()
+      const embedcheck2 = new MessageEmbed()
         .setColor(`#32CD32`)
         .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -190,7 +190,7 @@ for (const file of commandFiles) {
     const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
     if (now < expirationTime) {
       const timeLeft = (expirationTime - now) / 1000;
-      const embedNoir1 = new Discord.MessageEmbed()
+      const embedNoir1 = new MessageEmbed()
         .setColor(`#32CD32`)
         .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -213,7 +213,7 @@ for (const file of commandFiles) {
     command.execute(message, args);
   } catch (error) {
     console.error(error);
-    const embedNoir2 = new Discord.MessageEmbed()
+    const embedNoir2 = new MessageEmbed()
       .setColor(`#32CD32`)
       .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
