@@ -13,7 +13,7 @@
 ```
 
 # 〽️ MΣΣƬ US ӨЯ CΉΣCK ӨƬΉΣЯ BӨƬS   
-- [![Generic badge](https://img.shields.io/badge/NOIR🎧PLAYER-lime_green.svg)](https://discord.com/api/oauth2/authorize?client_id=885784029511696424&permissions=139707468865&scope=bot)
+- [![Generic badge](https://img.shields.io/badge/NOIR🎧PLAYER-darkgreen.svg)](https://discord.com/api/oauth2/authorize?client_id=885784029511696424&permissions=139707468865&scope=bot)
 𝙳𝚒𝚛𝚎𝚌𝚝𝚕𝚢 𝚞𝚜𝚎 𝚃𝚑𝚎 𝙱𝚘𝚝 𝚒𝚗 Discord
 - [![Generic badge](https://img.shields.io/badge/𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙱𝚘𝚝-Vïå_ßð†-orange.svg)](https://t.me/HypeVoidBot) 𝘛𝘶𝘳𝘯 𝘰𝘯 𝘣𝘰𝘵 𝘪𝘯 𝘵𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘢𝘯𝘥 𝘵𝘺𝘱𝘦 /us
 
