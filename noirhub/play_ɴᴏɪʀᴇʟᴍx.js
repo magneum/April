@@ -12,7 +12,7 @@ has been licensed under GNU General Public License
 const { ɴᴏɪʀʏᴛ, notneeded, ɴᴏɪʀᴠᴏʟ, ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
 const https = require("https");
 const ytdl = require("ytdl-core");
-const { play } = require("./MЦƧIC");
+const { play } = require("./noir🎧player");
 const YouTubeAPI = require("simple-youtube-api");
 const youtube = new YouTubeAPI(ɴᴏɪʀʏᴛ);
 const playlistPattern = /^.*(list=)([^#\&\?]*).*/gi;

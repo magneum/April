@@ -9,8 +9,11 @@ Discord Music YouTube player
 has been licensed under GNU General Public License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 =============================================================================================================================`
+console.clear()
 const os = require('os')
+require('dotenv').config()
 const { join } = require("path");
+const express = require('express');
 const { readdirSync } = require("fs");
 const { Client, Collection } = require("discord.js");
 const { ɴᴏɪʀᴇꜱ, ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("./noirtem/noir_env.js");
@@ -18,9 +21,10 @@ const ռօɨʀքʟǟʏɛʀ = new Client({ disableMentions: "everyone", restTimeO
 ռօɨʀքʟǟʏɛʀ.commands = new Collection();
 ռօɨʀքʟǟʏɛʀ.prefix = ʙᴏᴛꜰɪx;
 ռօɨʀքʟǟʏɛʀ.queue = new Map();
+const ռօɨʀֆɛʀʋɛʀ = express();
 const cooldowns = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-const commandFiles = readdirSync(join(__dirname, "noirhub")).filter((file) => file.endsWith("_NOIR.js"));
+const commandFiles = readdirSync(join(__dirname, "noirhub")).filter((file) => file.endsWith("_ɴᴏɪʀᴇʟᴍx.js"));
 for (const file of commandFiles) {
   const command = require(join(__dirname, "noirhub", `${file}`));
   ռօɨʀքʟǟʏɛʀ.commands.set(command.name, command);
@@ -226,5 +230,41 @@ has been licensed under GNU General Public License
       });
   }
 });
+`=============================================================================================================================
+GNU GENERAL PUBLIC LICENSE 
+Version 3, 29 June 2007
+Copyright (C) 2007 Free Software Foundation
+Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+🦋noir🎧player🦋   
+Discord Music YouTube player 
+has been licensed under GNU General Public License
+𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+=============================================================================================================================`
+ռօɨʀֆɛʀʋɛʀ.all('/',
+  (req, res) => {
+    res.send(`
+🦋=======🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋=======🦋
+|🦋•Bot_Name: ${ռօɨʀքʟǟʏɛʀ.user.username}
+|🦋•Bot_Os: ${os.platform().toUpperCase()}
+🦋=======🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋=======🦋`);
+  })
+function ռօɨʀքʟǟʏɛʀֆɛʀʋɛʀ() {
+  ռօɨʀֆɛʀʋɛʀ.listen(3000,
+    () => {
+      console.log(`Server is Ready!`)
+    });
+}
+`=============================================================================================================================
+GNU GENERAL PUBLIC LICENSE 
+Version 3, 29 June 2007
+Copyright (C) 2007 Free Software Foundation
+Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+🦋noir🎧player🦋   
+Discord Music YouTube player 
+has been licensed under GNU General Public License
+𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+=============================================================================================================================`
+ռօɨʀքʟǟʏɛʀֆɛʀʋɛʀ()
 ռօɨʀքʟǟʏɛʀ.login(ɴᴏɪʀᴇꜱ);
-// ==============================================================================================
