@@ -24,6 +24,7 @@ const PORT = process.env.PORT || 3000;
 ռօɨʀքʟǟʏɛʀ.queue = new Map();
 const ռօɨʀֆɛʀʋɛʀ = express();
 const cooldowns = new Collection();
+const { MessageEmbed } = require("discord.js");
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const commandFiles = readdirSync(join(__dirname, "noirhub")).filter((file) => file.endsWith("_ɴᴏɪʀᴇʟᴍx.js"));
 for (const file of commandFiles) {
