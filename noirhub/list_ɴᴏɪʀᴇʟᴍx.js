@@ -42,8 +42,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+_Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -66,8 +65,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** You need to join a voice channel first!`);
+You need to join a voice channel first!`);
                 message.channel
                     .send(embedlist1)
                     .catch(console.error)
@@ -88,8 +86,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** ⚓️**usage:**{ʙᴏᴛꜰɪx}playlist <YouTube Playlist URL | Playlist Name>`);
+⚓️**usage:**{ʙᴏᴛꜰɪx}playlist <YouTube Playlist URL | Playlist Name>`);
                 message.channel
                     .send(embedlist2)
                     .catch(console.error)
@@ -110,8 +107,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** Cannot connect to voice channel, missing permissions`);
+Cannot connect to voice channel, missing permissions`);
                 message.channel
                     .send(embedlist3)
                     .catch(console.error)
@@ -131,8 +127,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** I cannot speak in this voice channel, make sure I have the proper permissions!`);
+I cannot speak in this voice channel, make sure I have the proper permissions!`);
                 message.channel
                     .send(embedlist4)
                     .catch(console.error)
@@ -152,8 +147,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** You must be in the same channel as ${message.client.user}`);
+You must be in the same channel as ${message.client.user}`);
                 message.channel
                     .send(embedlist5)
                     .catch(console.error)
@@ -194,8 +188,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** Playlist not found`);
+Playlist not found`);
                     message.channel
                         .send(embedlist6)
                         .catch(console.error)
@@ -272,8 +265,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** Could not join the channel: ${error}`);
+Could not join the channel: ${error}`);
                     message.channel
                         .send(embedlist7)
                         .catch(console.error)

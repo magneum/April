@@ -46,8 +46,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+_Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -70,8 +69,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** You need to join a voice channel first!`);
+You need to join a voice channel first!`);
                 message.channel
                     .send(embedplay1)
                     .catch(console.error)
@@ -91,8 +89,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** You must be in the same channel as ${message.client.user}`);
+You must be in the same channel as ${message.client.user}`);
                 message.channel
                     .send(embedplay2)
                     .catch(console.error)
@@ -135,8 +132,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** Cannot connect to voice channel, missing permissions`);
+Cannot connect to voice channel, missing permissions`);
                 message.channel
                     .send(embedplay3)
                     .catch(console.error)
@@ -156,8 +152,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** I cannot speak in this voice channel, make sure I have the proper permissions!`);
+I cannot speak in this voice channel, make sure I have the proper permissions!`);
                 message.channel
                     .send(embedplay3)
                     .catch(console.error)
@@ -192,8 +187,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** Audio Not Found`);
+Audio Not Found`);
                             message.channel
                                 .send(embedplay4)
                                 .catch(console.error)
@@ -225,8 +219,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** Following url redirection...`);
+Following url redirection...`);
                 message.channel
                     .send(embedplay5)
                     .catch(console.error)
@@ -301,8 +294,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** Audio Not Found`);
+Audio Not Found`);
                         message.channel
                             .send(embedplay6)
                             .catch(console.error)
@@ -361,8 +353,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** Could not join the channel: ${error}`);
+Could not join the channel: ${error}`);
                 message.channel
                     .send(embedplay7)
                     .catch(console.error)

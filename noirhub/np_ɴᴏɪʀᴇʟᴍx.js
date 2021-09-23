@@ -36,8 +36,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+_Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -59,8 +58,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =**  is not playing anymusic yet....`);
+Noir is not playing anymusic yet....`);
                 message.channel
                     .send(embednp1)
                     .catch(console.error)

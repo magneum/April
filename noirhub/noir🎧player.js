@@ -62,8 +62,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =**  Error: ${error}`);
+ Error: ${error}`);
             message.channel
                 .send(embedmusic1)
                 .catch(console.error)
@@ -129,8 +128,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =**  You need to join a voice channel first!`);
+ You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic2)
                             .catch(console.error)
@@ -157,8 +155,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =**  You need to join a voice channel first!`);
+ You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic3)
                             .catch(console.error)
@@ -192,8 +189,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =**  You need to join a voice channel first!`);
+ You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic4)
                             .catch(console.error)
@@ -229,8 +225,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =**  You need to join a voice channel first!`);
+ You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic5)
                             .catch(console.error)
@@ -261,8 +256,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =**  You need to join a voice channel first!`);
+ You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic6)
                             .catch(console.error)
@@ -289,8 +283,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =**  You need to join a voice channel first!`);
+ You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic7)
                             .catch(console.error)
@@ -316,8 +309,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =**  You need to join a voice channel first!`);
+ You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic8)
                             .catch(console.error)

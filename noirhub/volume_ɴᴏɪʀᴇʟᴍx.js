@@ -35,8 +35,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+_Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -58,8 +57,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** You need to join a voice channel first!`);
+You need to join a voice channel first!`);
                 message.channel
                     .send(embedskp2)
                     .catch(console.error)
@@ -79,8 +77,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** You need to join a voice channel first!`);
+You need to join a voice channel first!`);
                 message.channel
                     .send(embedvol1)
                     .catch(console.error)
@@ -100,8 +97,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** 🔊 **The current volume is:** ${queue.volume}%`);
+🔊 **The current volume is:** ${queue.volume}%`);
                 message.channel
                     .send(embedvol2)
                     .catch(console.error)
@@ -121,8 +117,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** Please use a number to set volume.`);
+Please use a number to set volume.`);
                 message.channel
                     .send(embedvol3)
                     .catch(console.error)
@@ -142,8 +137,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** Please use a number between 0 - 100."`);
+Please use a number between 0 - 100."`);
                 message.channel
                     .send(embedvol4)
                     .catch(console.error)

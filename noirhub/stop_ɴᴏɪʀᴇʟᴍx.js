@@ -35,8 +35,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+_Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -58,8 +57,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** is not playing anymusic yet.....`);
+is not playing anymusic yet.....`);
                 message.channel
                     .send(embedskp1)
                     .catch(console.error)
@@ -79,8 +77,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =** You need to join a voice channel first!`);
+You need to join a voice channel first!`);
                 message.channel
                     .send(embedskp2)
                     .catch(console.error)
