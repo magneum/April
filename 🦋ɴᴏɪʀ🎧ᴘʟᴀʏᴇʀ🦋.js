@@ -268,6 +268,6 @@ has been licensed under GNU General Public License
 =============================================================================================================================`
 const PORT = process.env.PORT || 8080;
 ռօɨʀքʟǟʏɛʀֆɛʀʋɛʀ()
-app.listen(PORT, () =>
+ռօɨʀֆɛʀʋɛʀ.listen(PORT, () =>
   console.log(`🦋noir🎧player🦋 HEROKU Server is listening on ${PORT}`));
 ռօɨʀքʟǟʏɛʀ.login(ɴᴏɪʀᴇꜱ);
