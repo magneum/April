@@ -1,42 +1,65 @@
-`➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕
-          GNU GENERAL PUBLIC LICENSE 
-            Version 3, 29 June 2007
-  Copyright (C) 2007 Free Software Foundation
+`=============================================================================================================================
+GNU GENERAL PUBLIC LICENSE 
+Version 3, 29 June 2007
+Copyright (C) 2007 Free Software Foundation
 Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
-  of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-            🦋noir🎧player🦋   
-      Discord Music YouTube player 
+of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+🦋noir🎧player🦋   
+Discord Music YouTube player 
 has been licensed under GNU General Public License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
-➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕➕`
+=============================================================================================================================`
 const os = require('os')
 const { join } = require("path");
 const { readdirSync } = require("fs");
 const { Client, Collection } = require("discord.js");
 const { ɴᴏɪʀᴇꜱ, ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("./noirtem/noir_env.js");
-const NOIR = new Client({ disableMentions: "everyone", restTimeOffset: 0 });
-NOIR.commands = new Collection();
-NOIR.prefix = ʙᴏᴛꜰɪx;
-NOIR.queue = new Map();
+const ռօɨʀքʟǟʏɛʀ = new Client({ disableMentions: "everyone", restTimeOffset: 0 });
+ռօɨʀքʟǟʏɛʀ.commands = new Collection();
+ռօɨʀքʟǟʏɛʀ.prefix = ʙᴏᴛꜰɪx;
+ռօɨʀքʟǟʏɛʀ.queue = new Map();
 const cooldowns = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-NOIR.on("ready", () => {
+const commandFiles = readdirSync(join(__dirname, "noirhub")).filter((file) => file.endsWith("_NOIR.js"));
+for (const file of commandFiles) {
+  const command = require(join(__dirname, "noirhub", `${file}`));
+  ռօɨʀքʟǟʏɛʀ.commands.set(command.name, command);
+}
+`=============================================================================================================================
+GNU GENERAL PUBLIC LICENSE 
+Version 3, 29 June 2007
+Copyright (C) 2007 Free Software Foundation
+Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+🦋noir🎧player🦋   
+Discord Music YouTube player 
+has been licensed under GNU General Public License
+𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+=============================================================================================================================`
+ռօɨʀքʟǟʏɛʀ.on("ready", () => {
   console.clear();
-  NOIR.user.setActivity(`${ʙᴏᴛꜰɪx}noir/play/help🦋`, { type: "WATCHING" });
+  ռօɨʀքʟǟʏɛʀ.user.setActivity(`${ʙᴏᴛꜰɪx}noir/play/help🦋`, { type: "WATCHING" });
   console.log(`
 🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋
 |🦋••  Bot_Status : Ready! 
-|🦋••  Bot_Name   : ${NOIR.user.username}
+|🦋••  Bot_Name   : ${ռօɨʀքʟǟʏɛʀ.user.username}
 |🦋••  Bot_Os     : ${os.platform().toUpperCase()}
 🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋`);
 });
-NOIR.on("warn", (ɴᴏɪʀ_WARN) => console.log(ɴᴏɪʀ_WARN));
-NOIR.on("error", console.error);
-
-
-
-
-NOIR.on(`guildCreate`,
+ռօɨʀքʟǟʏɛʀ.on("warn", (ɴᴏɪʀ_WARN) => console.log(ɴᴏɪʀ_WARN));
+ռօɨʀքʟǟʏɛʀ.on("error", console.error);
+`=============================================================================================================================
+GNU GENERAL PUBLIC LICENSE 
+Version 3, 29 June 2007
+Copyright (C) 2007 Free Software Foundation
+Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+🦋noir🎧player🦋   
+Discord Music YouTube player 
+has been licensed under GNU General Public License
+𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+=============================================================================================================================`
+ռօɨʀքʟǟʏɛʀ.on(`guildCreate`,
   (guild) => {
     const channel = guild.channels.cache.find(
       (channel) =>
@@ -67,15 +90,18 @@ NOIR.on(`guildCreate`,
       .catch(console.error);
     return;
   });
-
-
-const commandFiles = readdirSync(join(__dirname, "noirhub")).filter((file) => file.endsWith("_NOIR.js"));
-for (const file of commandFiles) {
-  const command = require(join(__dirname, "noirhub", `${file}`));
-  NOIR.commands.set(command.name, command);
-}
-
-NOIR.on("message", async (message) => {
+`=============================================================================================================================
+GNU GENERAL PUBLIC LICENSE 
+Version 3, 29 June 2007
+Copyright (C) 2007 Free Software Foundation
+Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+🦋noir🎧player🦋   
+Discord Music YouTube player 
+has been licensed under GNU General Public License
+𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+=============================================================================================================================`
+ռօɨʀքʟǟʏɛʀ.on("message", async (message) => {
   if (message.author.bot) return;
   if (!message.guild) return;
   if (message.content.startsWith(ʙᴏᴛꜰɪx + `calib`)) {
@@ -105,8 +131,6 @@ NOIR.on("message", async (message) => {
       const embedcheck2 = new Discord.MessageEmbed()
         .setColor(`0x1f8b4c`)
         .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
-
-
         .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
         .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
         .setDescription(`\n\n
@@ -125,8 +149,18 @@ NOIR.on("message", async (message) => {
       return;
     }
   }
-
-  const prefixRegex = new RegExp(`^(<@!?${NOIR.user.id}>|${escapeRegex(ʙᴏᴛꜰɪx)})\\s*`);
+  `=============================================================================================================================
+GNU GENERAL PUBLIC LICENSE 
+Version 3, 29 June 2007
+Copyright (C) 2007 Free Software Foundation
+Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+🦋noir🎧player🦋   
+Discord Music YouTube player 
+has been licensed under GNU General Public License
+𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+=============================================================================================================================`
+  const prefixRegex = new RegExp(`^(<@!?${ռօɨʀքʟǟʏɛʀ.user.id}>|${escapeRegex(ʙᴏᴛꜰɪx)})\\s*`);
   if (!prefixRegex.test(message.content)) {
     return;
   }
@@ -134,8 +168,8 @@ NOIR.on("message", async (message) => {
   const args = message.content.slice(matchedPrefix.length).trim().split(/ +/);
   const commandName = args.shift().toLowerCase();
   const command =
-    NOIR.commands.get(commandName) ||
-    NOIR.commands.find((cmd) => cmd.aliases && cmd.aliases.includes(commandName));
+    ռօɨʀքʟǟʏɛʀ.commands.get(commandName) ||
+    ռօɨʀքʟǟʏɛʀ.commands.find((cmd) => cmd.aliases && cmd.aliases.includes(commandName));
   if (!command) {
     return;
   }
@@ -149,8 +183,21 @@ NOIR.on("message", async (message) => {
     const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
     if (now < expirationTime) {
       const timeLeft = (expirationTime - now) / 1000;
-      message.channel
-        .send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${command.name}' command.`)
+      const embedNoir1 = new Discord.MessageEmbed()
+        .setColor(`0x1f8b4c`)
+        .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+        .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+        .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+        .setDescription(`\n\n
+**⚠️Warning⚠️** 
+**User:** ${message.author}
+
+**=========🦋𝗡𝗢𝗜𝗥🦋=========**
+**:microphone:Noir  =**  Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${command.name}' command.      `
+        );
+      channel
+        .send(embedNoir1)
+        .catch(console.error);
       return;
     }
   }
@@ -160,15 +207,25 @@ NOIR.on("message", async (message) => {
     command.execute(message, args);
   } catch (error) {
     console.error(error);
-    message.channel
-      .send("**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  There was an error executing that command.")
+    const embedNoir2 = new Discord.MessageEmbed()
+      .setColor(`0x1f8b4c`)
+      .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+      .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+      .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+      .setDescription(`\n\n
+**⚠️Warning⚠️** 
+**User:** ${message.author}
+
+**=========🦋𝗡𝗢𝗜𝗥🦋=========**
+**:microphone:Noir  =**  There was an error executing that command.`    );
+    channel
+      .send(embedNoir2)
       .catch(console.error)
       .then((message) => {
-        message.delete({
-          timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
-        });
+        message.delete({ timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}` });
+        return;
       });
   }
 });
-NOIR.login(ɴᴏɪʀᴇꜱ);
+ռօɨʀքʟǟʏɛʀ.login(ɴᴏɪʀᴇꜱ);
 // ==============================================================================================
