@@ -1,9 +1,9 @@
-const { NOIRYT, notneeded, NOIRVOL, ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../noirtem/noir_env");
+const { ɴᴏɪʀʏᴛ, notneeded, ɴᴏɪʀᴠᴏʟ, ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
 const https = require("https");
 const ytdl = require("ytdl-core");
 const { play } = require("./MЦƧIC");
 const YouTubeAPI = require("simple-youtube-api");
-const youtube = new YouTubeAPI(NOIRYT);
+const youtube = new YouTubeAPI(ɴᴏɪʀʏᴛ);
 const playlistPattern = /^.*(list=)([^#\&\?]*).*/gi;
 const scdl = require(`soundcloud-downloader`).default;
 const scRegex = /^https?:\/\/(soundcloud\.com)\/(.*)$/;
@@ -34,7 +34,7 @@ module.exports = {
                 .catch(console.error)
                 .then((message) => {
                     message.delete({
-                        timeout: `${AUTOCLEANER}`
+                        timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                     });
                 });
             return;
@@ -58,7 +58,7 @@ module.exports = {
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
-                            timeout: `${AUTOCLEANER}`
+                            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                         });
                     });
                 return;
@@ -79,7 +79,7 @@ module.exports = {
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
-                            timeout: `${AUTOCLEANER}`
+                            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                         });
                     });
                 return;
@@ -101,7 +101,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
-                            timeout: `${AUTOCLEANER}`
+                            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                         });
                     });
                 return;
@@ -123,7 +123,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
-                            timeout: `${AUTOCLEANER}`
+                            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                         });
                     });
                 return;
@@ -144,7 +144,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
-                            timeout: `${AUTOCLEANER}`
+                            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                         });
                     });
                 return;
@@ -180,7 +180,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                                 .catch(console.error)
                                 .then((message) => {
                                     message.delete({
-                                        timeout: `${AUTOCLEANER}`
+                                        timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                                     });
                                 });
                             return;
@@ -193,7 +193,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                         .catch(console.error)
                         .then((message) => {
                             message.delete({
-                                timeout: `${AUTOCLEANER}`
+                                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                             });
                         })
                     return;
@@ -213,7 +213,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
-                            timeout: `${AUTOCLEANER}`
+                            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                         });
                     });
                 return;
@@ -224,7 +224,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                 connection: null,
                 songs: [],
                 loop: false,
-                volume: NOIRVOL,
+                volume: ɴᴏɪʀᴠᴏʟ,
                 muted: false,
                 playing: true
             };
@@ -245,7 +245,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                         .catch(console.error)
                         .then((message) => {
                             message.delete({
-                                timeout: `${AUTOCLEANER}`
+                                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                             });
                         });
                 }
@@ -264,7 +264,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                         .catch(console.error)
                         .then((message) => {
                             message.delete({
-                                timeout: `${AUTOCLEANER}`
+                                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                             });
                         });
                 }
@@ -289,7 +289,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                             .catch(console.error)
                             .then((message) => {
                                 message.delete({
-                                    timeout: `${AUTOCLEANER}`
+                                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                                 });
                             });
                         return;
@@ -307,7 +307,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                         .catch(console.error)
                         .then((message) => {
                             message.delete({
-                                timeout: `${AUTOCLEANER}`
+                                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                             });
                         })
                     return;
@@ -319,7 +319,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
-                            timeout: `${AUTOCLEANER}`
+                            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                         });
                     })
                 return;
@@ -349,7 +349,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
-                            timeout: `${AUTOCLEANER}`
+                            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                         });
                     });
                 return;

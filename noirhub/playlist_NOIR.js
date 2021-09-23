@@ -1,9 +1,9 @@
-const { NOIRYT, notneeded, NOIRMAX, NOIRVOL, ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../noirtem/noir_env");
+const { ɴᴏɪʀʏᴛ, notneeded, ɴᴏɪʀᴍᴀx, ɴᴏɪʀᴠᴏʟ, ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
 const { play } = require("./MЦƧIC");
 const { MessageEmbed } = require("discord.js");
 const YouTubeAPI = require("simple-youtube-api");
 const scdl = require("soundcloud-downloader").default;
-const youtube = new YouTubeAPI(NOIRYT);
+const youtube = new YouTubeAPI(ɴᴏɪʀʏᴛ);
 
 
 
@@ -32,7 +32,7 @@ module.exports = {
                 .catch(console.error)
                 .then((message) => {
                     message.delete({
-                        timeout: `${AUTOCLEANER}`
+                        timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                     });
                 });
             return;
@@ -56,7 +56,7 @@ module.exports = {
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
-                            timeout: `${AUTOCLEANER}`
+                            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                         });
                     });
                 return;
@@ -78,7 +78,7 @@ module.exports = {
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
-                            timeout: `${AUTOCLEANER}`
+                            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                         });
                     });
                 return;
@@ -100,7 +100,7 @@ module.exports = {
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
-                            timeout: `${AUTOCLEANER}`
+                            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                         });
                     });
                 return;
@@ -121,7 +121,7 @@ module.exports = {
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
-                            timeout: `${AUTOCLEANER}`
+                            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                         });
                     });
                 return;
@@ -142,7 +142,7 @@ module.exports = {
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
-                            timeout: `${AUTOCLEANER}`
+                            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                         });
                     });
                 return;
@@ -158,7 +158,7 @@ module.exports = {
                 connection: null,
                 songs: [],
                 loop: false,
-                volume: NOIRVOL,
+                volume: ɴᴏɪʀᴠᴏʟ,
                 muted: false,
                 playing: true
             };
@@ -167,7 +167,7 @@ module.exports = {
             if (urlValid) {
                 try {
                     playlist = await youtube.getPlaylist(url, { part: `snippet` });
-                    videos = await playlist.getVideos(NOIRMAX || 10, { part: `snippet` });
+                    videos = await playlist.getVideos(ɴᴏɪʀᴍᴀx || 10, { part: `snippet` });
                 } catch (error) {
                     console.error(error);
                     const embedlist6 = new MessageEmbed()
@@ -185,7 +185,7 @@ module.exports = {
                         .catch(console.error)
                         .then((message) => {
                             message.delete({
-                                timeout: `${AUTOCLEANER}`
+                                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                             });
                         });
                     return;
@@ -205,7 +205,7 @@ module.exports = {
                 try {
                     const results = await youtube.searchPlaylists(search, 1, { part: `snippet` });
                     playlist = results[0];
-                    videos = await playlist.getVideos(NOIRMAX, { part: `snippet` });
+                    videos = await playlist.getVideos(ɴᴏɪʀᴍᴀx, { part: `snippet` });
                 } catch (error) {
                     console.error(error);
                     message.channel
@@ -213,7 +213,7 @@ module.exports = {
                         .catch(console.error)
                         .then((message) => {
                             message.delete({
-                                timeout: `${AUTOCLEANER}`
+                                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                             });
                         })
                     return;
@@ -266,7 +266,7 @@ module.exports = {
                         .catch(console.error)
                         .then((message) => {
                             message.delete({
-                                timeout: `${AUTOCLEANER}`
+                                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                             });
                         });
                     return;

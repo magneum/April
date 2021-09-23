@@ -1,5 +1,5 @@
 const ytdl = require("ytdl-core-discord");
-const { canModifyQueue, NOIRWAKE } = require("../noirtem/noir_env");
+const { canModifyQueue, ɴᴏɪʀᴡᴀᴋᴇ } = require("../noirtem/noir_env");
 
 
 
@@ -12,7 +12,7 @@ module.exports = {
                 queue.channel.leave();
                 queue.textChannel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  Leaving voice channel...");
             },
-                NOIRWAKE);
+                ɴᴏɪʀᴡᴀᴋᴇ);
             queue.textChannel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  ❌ Music queue ended.")
                 .catch(console.error);
             message.client.queue.delete(message.guild.id)
@@ -50,7 +50,7 @@ module.exports = {
                 .catch(console.error)
                 .then((message) => {
                     message.delete({
-                        timeout: `${AUTOCLEANER}`
+                        timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                     });
                 });
             return;
@@ -107,17 +107,17 @@ module.exports = {
                             .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
-            **⚠️Warning⚠️** 
-            **User:** ${message.author}
-            
-            **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-            **:microphone:Noir  =**  You need to join a voice channel first!`);
+**⚠️Warning⚠️** 
+**User:** ${message.author}
+
+**=========🦋𝗡𝗢𝗜𝗥🦋=========**
+**:microphone:Noir  =**  You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic2)
                             .catch(console.error)
                             .then((message) => {
                                 message.delete({
-                                    timeout: `${AUTOCLEANER}`
+                                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                                 });
                             });
                         return;
@@ -135,17 +135,17 @@ module.exports = {
                             .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
-            **⚠️Warning⚠️** 
-            **User:** ${message.author}
-            
-            **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-            **:microphone:Noir  =**  You need to join a voice channel first!`);
+**⚠️Warning⚠️** 
+**User:** ${message.author}
+
+**=========🦋𝗡𝗢𝗜𝗥🦋=========**
+**:microphone:Noir  =**  You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic3)
                             .catch(console.error)
                             .then((message) => {
                                 message.delete({
-                                    timeout: `${AUTOCLEANER}`
+                                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                                 });
                             });
                         return;
@@ -170,17 +170,17 @@ module.exports = {
                             .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
-            **⚠️Warning⚠️** 
-            **User:** ${message.author}
-            
-            **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-            **:microphone:Noir  =**  You need to join a voice channel first!`);
+**⚠️Warning⚠️** 
+**User:** ${message.author}
+
+**=========🦋𝗡𝗢𝗜𝗥🦋=========**
+**:microphone:Noir  =**  You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic4)
                             .catch(console.error)
                             .then((message) => {
                                 message.delete({
-                                    timeout: `${AUTOCLEANER}`
+                                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                                 });
                             });
                         return;
@@ -207,17 +207,17 @@ module.exports = {
                             .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
-            **⚠️Warning⚠️** 
-            **User:** ${message.author}
-            
-            **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-            **:microphone:Noir  =**  You need to join a voice channel first!`);
+**⚠️Warning⚠️** 
+**User:** ${message.author}
+
+**=========🦋𝗡𝗢𝗜𝗥🦋=========**
+**:microphone:Noir  =**  You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic5)
                             .catch(console.error)
                             .then((message) => {
                                 message.delete({
-                                    timeout: `${AUTOCLEANER}`
+                                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                                 });
                             });
                         return;
@@ -239,17 +239,17 @@ module.exports = {
                             .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
-            **⚠️Warning⚠️** 
-            **User:** ${message.author}
-            
-            **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-            **:microphone:Noir  =**  You need to join a voice channel first!`);
+**⚠️Warning⚠️** 
+**User:** ${message.author}
+
+**=========🦋𝗡𝗢𝗜𝗥🦋=========**
+**:microphone:Noir  =**  You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic6)
                             .catch(console.error)
                             .then((message) => {
                                 message.delete({
-                                    timeout: `${AUTOCLEANER}`
+                                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                                 });
                             });
                         return;
@@ -267,17 +267,17 @@ module.exports = {
                             .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
-            **⚠️Warning⚠️** 
-            **User:** ${message.author}
-            
-            **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-            **:microphone:Noir  =**  You need to join a voice channel first!`);
+**⚠️Warning⚠️** 
+**User:** ${message.author}
+
+**=========🦋𝗡𝗢𝗜𝗥🦋=========**
+**:microphone:Noir  =**  You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic7)
                             .catch(console.error)
                             .then((message) => {
                                 message.delete({
-                                    timeout: `${AUTOCLEANER}`
+                                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                                 });
                             });
                         return;
@@ -294,17 +294,17 @@ module.exports = {
                             .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
-            **⚠️Warning⚠️** 
-            **User:** ${message.author}
-            
-            **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-            **:microphone:Noir  =**  You need to join a voice channel first!`);
+**⚠️Warning⚠️** 
+**User:** ${message.author}
+
+**=========🦋𝗡𝗢𝗜𝗥🦋=========**
+**:microphone:Noir  =**  You need to join a voice channel first!`);
                         message.channel
                             .send(embedmusic8)
                             .catch(console.error)
                             .then((message) => {
                                 message.delete({
-                                    timeout: `${AUTOCLEANER}`
+                                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                                 });
                             });
                         return;

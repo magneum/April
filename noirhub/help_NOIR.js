@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("discord.js");
-const { AUTOCLEANER } = require("../noirtem/noir_env");
+const { ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
 
 module.exports = {
     name: "help",
@@ -48,7 +48,7 @@ module.exports = {
             .catch(console.error)
             .then((message) => {
                 message.delete({
-                    timeout: `${AUTOCLEANER}`
+                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                 });
             })
         return;

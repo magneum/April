@@ -5,11 +5,10 @@ exports.canModifyQueue = (member) => {
   if (channelID !== botChannel) { return; }
   else { return true; }
 };
-exports.LOCALE = process.env.LOCALE;
-exports.NOIRYT = process.env.NOIRYT;
+exports.ɴᴏɪʀʏᴛ = process.env.NOIRYT;
 exports.ʙᴏᴛꜰɪx = process.env.BOTFIX;
-exports.NOIRMAX = process.env.NOIRMAX;
-exports.NOIRVOL = process.env.NOIRVOL;
-exports.NOIRDISK = process.env.NOIRDISK;
-exports.NOIRWAKE = process.env.NOIRWAKE;
-exports.AUTOCLEANER = process.env.AUTOCLEANER;
+exports.ɴᴏɪʀᴇꜱ = process.env.NOIRES;
+exports.ɴᴏɪʀᴍᴀx = process.env.NOIRMAX;
+exports.ɴᴏɪʀᴠᴏʟ = process.env.NOIRVOL;
+exports.ɴᴏɪʀᴡᴀᴋᴇ = process.env.NOIRWAKE;
+exports.ɴᴏɪʀᴄʟᴇᴀɴᴇʀ = process.env.NOIRCLEANER;

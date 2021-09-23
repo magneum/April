@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 const { splitBar } = require("string-progressbar");
-const { ʙᴏᴛꜰɪx, AUTOCLEANER } = require("../noirtem/noir_env");
+const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
 
 module.exports = {
     name: "np",
@@ -24,7 +24,7 @@ module.exports = {
                 .catch(console.error)
                 .then((message) => {
                     message.delete({
-                        timeout: `${AUTOCLEANER}`
+                        timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                     });
                 });
             return;
@@ -47,7 +47,7 @@ module.exports = {
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
-                            timeout: `${AUTOCLEANER}`
+                            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
                         });
                     });
                 return;
