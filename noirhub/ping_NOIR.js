@@ -61,7 +61,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-**:microphone:Noir  =**  ⌛️Average ping of noir's Server ${Math.round(message.client.ws.ping)}ms`);
+**:microphone:Noir  =**  ⌛️Average ping of noir's Server **${Math.round(message.client.ws.ping)}ms**`);
             message.channel
                 .send(embedping)
                 .catch(console.error)
