@@ -65,12 +65,7 @@ module.exports = {
             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`);
         message.channel
             .send(HELPEMBED)
-            .catch(console.error)
-            .then((message) => {
-                message.delete({
-                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
-                });
-            })
+            .catch(console.error);
         return;
     }
 };
