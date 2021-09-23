@@ -95,7 +95,7 @@ module.exports = {
             if (queue.playing) {
                 queue.playing = false;
                 queue.connection.dispatcher.pause(true);
-                queue.textChannel.send(`${message.author}\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  🚦 Paused the music.`)
+                queue.textChannel.send(`${message.author}\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  🚦 Paused the music.`)
                     .catch(console.error)
                     .then((message) => {
                         message.delete({

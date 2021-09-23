@@ -164,7 +164,6 @@ module.exports = {
                     });
                 return;
             }
-
             const search = args.join(` `);
             const pattern = /^.*(youtu.be\/|list=)([^#\&\?]*).*/gi;
             const url = args[0];
@@ -210,7 +209,7 @@ module.exports = {
             } else if (scdl.isValidUrl(args[0])) {
                 if (args[0].includes(`/sets/`)) {
                     message.channel
-                        .send("**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  ⌛ Fetching the playlist...");
+                        .send("**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  ⌛ Fetching the playlist...");
                     playlist = await scdl.getSetInfo(args[0], notneeded);
                     videos = playlist.tracks.map((track) => ({
                         title: track.title,
@@ -252,11 +251,8 @@ module.exports = {
                 .setColor(`#32CD32`)
                 .setTimestamp();
             if (playlistEmbed.description.length >= 2048)
-                playlistEmbed.description = playlistEmbed.description
-                    .substr(0, 2007) +
-                    "**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  Playlist larger than character limit...";
-            message.channel
-                .send(`$message.author>\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  Started a playlist`),
+                playlistEmbed.description = playlistEmbed.description.substr(0, 2007) + "**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  Playlist larger than character limit...";
+            message.channel.send(`${message.author}\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  Started a playlist`),
                 playlistEmbed;
             if (!serverQueue) {
                 message.client.queue.set(message.guild.id, queueConstruct);

@@ -29,8 +29,6 @@ module.exports = {
             const embedfactor = new MessageEmbed()
                 .setColor(`#32CD32`)
                 .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
-
-
                 .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setDescription(`\n\n
@@ -96,7 +94,7 @@ module.exports = {
             if (!queue.playing) {
                 queue.playing = true;
                 queue.connection.dispatcher.resume();
-                queue.textChannel.send(`${message.author}\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  ▶ Resumed the music!`)
+                queue.textChannel.send(`${message.author}\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  ▶ Resumed the music!`)
                     .catch(console.error)
                     .then((message) => {
                         message.delete({

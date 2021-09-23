@@ -124,10 +124,10 @@ module.exports = {
                     else return true;
                 });
                 queue.textChannel
-                    .send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  ❌ Removed **${removed.map((song) => song.title).join(`\n`)}** from the queue.`);
+                    .send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  ❌ Removed **${removed.map((song) => song.title).join(`\n`)}** from the queue.`);
             } else if (!isNaN(args[0]) && args[0] >= 1 && args[0] <= queue.songs.length) {
                 console.log(`we got elsed!`);
-                return queue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  ❌ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`);
+                return queue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n**:microphone:Noir  =**  ❌ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`);
             } else {
                 console.log(`we got the last one`);
                 const embedrm4 = new MessageEmbed()
