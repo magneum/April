@@ -22,7 +22,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-•|  _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -45,7 +45,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > There is no queue.`);
+**:microphone:Noir  =** There is no queue.`);
                 message.channel
                     .send(embedrm1)
                     .catch(console.error)
@@ -66,7 +66,7 @@ Noir > There is no queue.`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > You need to join a voice channel first!`);
+**:microphone:Noir  =** You need to join a voice channel first!`);
                 message.channel
                     .send(embedrm2)
                     .catch(console.error)
@@ -87,7 +87,7 @@ Noir > You need to join a voice channel first!`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > ⚓️**usage:**${ʙᴏᴛꜰɪx}remove <Queue Number>`);
+**:microphone:Noir  =** ⚓️**usage:**${ʙᴏᴛꜰɪx}remove <Queue Number>`);
                 message.channel
                     .send(embedrm3)
                     .catch(console.error)
@@ -107,10 +107,10 @@ Noir > ⚓️**usage:**${ʙᴏᴛꜰɪx}remove <Queue Number>`);
                     else return true;
                 });
                 queue.textChannel
-                    .send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > ❌ Removed **${removed.map((song) => song.title).join(`\n`)}** from the queue.`);
+                    .send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  ❌ Removed **${removed.map((song) => song.title).join(`\n`)}** from the queue.`);
             } else if (!isNaN(args[0]) && args[0] >= 1 && args[0] <= queue.songs.length) {
                 console.log(`we got elsed!`);
-                return queue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > ❌ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`);
+                return queue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  ❌ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`);
             } else {
                 console.log(`we got the last one`);
                 const embedrm4 = new MessageEmbed()
@@ -122,7 +122,7 @@ Noir > ⚓️**usage:**${ʙᴏᴛꜰɪx}remove <Queue Number>`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > ⚓️**usage:**${ʙᴏᴛꜰɪx}remove <Queue Number>`);
+**:microphone:Noir  =** **usage:**${ʙᴏᴛꜰɪx}remove <Queue Number>`);
                 message.channel
                     .send(embedrm4)
                     .catch(console.error)

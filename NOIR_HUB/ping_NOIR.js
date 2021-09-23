@@ -21,7 +21,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-•|  _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -44,7 +44,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-⚜️Noir > ⌛️Average ping of noir's Server ${Math.round(message.client.ws.ping)}ms`);
+**:microphone:Noir  =**  ⌛️Average ping of noir's Server ${Math.round(message.client.ws.ping)}ms`);
             message.channel
                 .send(embedping)
                 .catch(console.error)

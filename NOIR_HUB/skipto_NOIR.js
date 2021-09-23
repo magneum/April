@@ -20,7 +20,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-•|  _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -42,7 +42,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > ⚓️**usage:**${ʙᴏᴛꜰɪx}{name} <Queue Number>`);
+**:microphone:Noir  =** ⚓️**usage:**${ʙᴏᴛꜰɪx}{name} <Queue Number>`);
                 message.channel
                     .send(embedskpto1)
                     .catch(console.error)
@@ -64,7 +64,7 @@ Noir > ⚓️**usage:**${ʙᴏᴛꜰɪx}{name} <Queue Number>`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > There is nothing playing that I could skip for you.`);
+**:microphone:Noir  =** There is nothing playing that I could skip for you.`);
                 message.channel
                     .send(embedskpto2)
                     .catch(console.error)
@@ -85,7 +85,7 @@ Noir > There is nothing playing that I could skip for you.`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > You need to join a voice channel first!`);
+**:microphone:Noir  =** You need to join a voice channel first!`);
                 message.channel
                     .send(embedskpto3)
                     .catch(console.error)
@@ -106,7 +106,7 @@ Noir > You need to join a voice channel first!`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > There is nothing playing that I could skip for you.`);
+**:microphone:Noir  =** There is nothing playing that I could skip for you.`);
                 message.channel
                     .send(embedshp1)
                     .catch(console.error)
@@ -126,7 +126,7 @@ Noir > There is nothing playing that I could skip for you.`);
                 queue.songs = queue.songs.slice(args[0] - 2);
             }
             queue.connection.dispatcher.end();
-            queue.textChannel.send(`${message.author}>\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > ❌ stopped the music!`)
+            queue.textChannel.send(`${message.author}>\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  ❌ stopped the music!`)
                 .catch(console.error)
                 .then((message) => {
                     message.delete({

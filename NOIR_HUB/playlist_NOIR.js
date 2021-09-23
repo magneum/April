@@ -30,7 +30,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-•|  _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -54,7 +54,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > You need to join a voice channel first!`);
+**:microphone:Noir  =** You need to join a voice channel first!`);
                 message.channel
                     .send(embedlist1)
                     .catch(console.error)
@@ -76,7 +76,7 @@ Noir > You need to join a voice channel first!`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > ⚓️**usage:**{ʙᴏᴛꜰɪx}playlist <YouTube Playlist URL | Playlist Name>`);
+**:microphone:Noir  =** ⚓️**usage:**{ʙᴏᴛꜰɪx}playlist <YouTube Playlist URL | Playlist Name>`);
                 message.channel
                     .send(embedlist2)
                     .catch(console.error)
@@ -98,7 +98,7 @@ Noir > ⚓️**usage:**{ʙᴏᴛꜰɪx}playlist <YouTube Playlist URL | Playlist
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > Cannot connect to voice channel, missing permissions`);
+**:microphone:Noir  =** Cannot connect to voice channel, missing permissions`);
                 message.channel
                     .send(embedlist3)
                     .catch(console.error)
@@ -119,7 +119,7 @@ Noir > Cannot connect to voice channel, missing permissions`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > I cannot speak in this voice channel, make sure I have the proper permissions!`);
+**:microphone:Noir  =** I cannot speak in this voice channel, make sure I have the proper permissions!`);
                 message.channel
                     .send(embedlist4)
                     .catch(console.error)
@@ -140,7 +140,7 @@ Noir > I cannot speak in this voice channel, make sure I have the proper permiss
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > You must be in the same channel as ${message.client.user}`);
+**:microphone:Noir  =** You must be in the same channel as ${message.client.user}`);
                 message.channel
                     .send(embedlist5)
                     .catch(console.error)
@@ -183,7 +183,7 @@ Noir > You must be in the same channel as ${message.client.user}`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > Playlist not found`);
+**:microphone:Noir  =** Playlist not found`);
                     message.channel
                         .send(embedlist6)
                         .catch(console.error)
@@ -197,7 +197,7 @@ Noir > Playlist not found`);
             } else if (scdl.isValidUrl(args[0])) {
                 if (args[0].includes(`/sets/`)) {
                     message.channel
-                        .send("**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > ⌛ Fetching the playlist...");
+                        .send("**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  ⌛ Fetching the playlist...");
                     playlist = await scdl.getSetInfo(args[0], notneeded);
                     videos = playlist.tracks.map((track) => ({
                         title: track.title,
@@ -241,9 +241,9 @@ Noir > Playlist not found`);
             if (playlistEmbed.description.length >= 2048)
                 playlistEmbed.description = playlistEmbed.description
                     .substr(0, 2007) +
-                    "**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > Playlist larger than character limit...";
+                    "**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  Playlist larger than character limit...";
             message.channel
-                .send(`$message.author>\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > Started a playlist`),
+                .send(`$message.author>\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  Started a playlist`),
                 playlistEmbed;
             if (!serverQueue) {
                 message.client.queue.set(message.guild.id, queueConstruct);
@@ -264,7 +264,7 @@ Noir > Playlist not found`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > Could not join the channel: ${error}`);
+**:microphone:Noir  =** Could not join the channel: ${error}`);
                     message.channel
                         .send(embedlist7)
                         .catch(console.error)

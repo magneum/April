@@ -31,7 +31,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-•|  _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -55,7 +55,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > You need to join a voice channel first!`);
+**:microphone:Noir  =** You need to join a voice channel first!`);
                 message.channel
                     .send(embedplay1)
                     .catch(console.error)
@@ -76,7 +76,7 @@ Noir > You need to join a voice channel first!`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > You must be in the same channel as ${message.client.user}`);
+**:microphone:Noir  =** You must be in the same channel as ${message.client.user}`);
                 message.channel
                     .send(embedplay2)
                     .catch(console.error)
@@ -120,7 +120,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > Cannot connect to voice channel, missing permissions`);
+**:microphone:Noir  =** Cannot connect to voice channel, missing permissions`);
                 message.channel
                     .send(embedplay3)
                     .catch(console.error)
@@ -141,7 +141,7 @@ Noir > Cannot connect to voice channel, missing permissions`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > I cannot speak in this voice channel, make sure I have the proper permissions!`);
+**:microphone:Noir  =** I cannot speak in this voice channel, make sure I have the proper permissions!`);
                 message.channel
                     .send(embedplay3)
                     .catch(console.error)
@@ -179,7 +179,7 @@ Noir > I cannot speak in this voice channel, make sure I have the proper permiss
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > Audio Not Found`);
+**:microphone:Noir  =** Audio Not Found`);
                             message.channel
                                 .send(embedplay4)
                                 .catch(console.error)
@@ -212,7 +212,7 @@ Noir > Audio Not Found`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > Following url redirection...`);
+**:microphone:Noir  =** Following url redirection...`);
                 message.channel
                     .send(embedplay5)
                     .catch(console.error)
@@ -288,7 +288,7 @@ Noir > Following url redirection...`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > Audio Not Found`);
+**:microphone:Noir  =** Audio Not Found`);
                         message.channel
                             .send(embedplay6)
                             .catch(console.error)
@@ -320,7 +320,7 @@ Noir > Audio Not Found`);
             }
             if (serverQueue) {
                 serverQueue.songs.push(song);
-                serverQueue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > ${song.title}\n_has been added to the queue by_ ${message.author}\n\n`)
+                serverQueue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  ${song.title}\n_has been added to the queue by_ ${message.author}\n\n`)
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
@@ -348,7 +348,7 @@ Noir > Audio Not Found`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > Could not join the channel: ${error}`);
+**:microphone:Noir  =** Could not join the channel: ${error}`);
                 message.channel
                     .send(embedplay7)
                     .catch(console.error)

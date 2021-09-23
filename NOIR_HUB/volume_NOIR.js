@@ -21,7 +21,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-•|  _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -44,7 +44,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > You need to join a voice channel first!`);
+**:microphone:Noir  =** You need to join a voice channel first!`);
                 message.channel
                     .send(embedskp2)
                     .catch(console.error)
@@ -65,7 +65,7 @@ Noir > You need to join a voice channel first!`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > You need to join a voice channel first!`);
+**:microphone:Noir  =** You need to join a voice channel first!`);
                 message.channel
                     .send(embedvol1)
                     .catch(console.error)
@@ -86,7 +86,7 @@ Noir > You need to join a voice channel first!`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > 🔊 **The current volume is:** ${queue.volume}%`);
+**:microphone:Noir  =** 🔊 **The current volume is:** ${queue.volume}%`);
                 message.channel
                     .send(embedvol2)
                     .catch(console.error)
@@ -107,7 +107,7 @@ Noir > 🔊 **The current volume is:** ${queue.volume}%`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > Please use a number to set volume.`);
+**:microphone:Noir  =** Please use a number to set volume.`);
                 message.channel
                     .send(embedvol3)
                     .catch(console.error)
@@ -128,7 +128,7 @@ Noir > Please use a number to set volume.`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > Please use a number between 0 - 100."`);
+**:microphone:Noir  =** Please use a number between 0 - 100."`);
                 message.channel
                     .send(embedvol4)
                     .catch(console.error)
@@ -141,7 +141,7 @@ Noir > Please use a number between 0 - 100."`);
             }
             queue.volume = args[0];
             queue.connection.dispatcher.setVolumeLogarithmic(args[0] / 100);
-            queue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > Volume set to: **${args[0]}%**`)
+            queue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  Volume set to: **${args[0]}%**`)
                 .catch(console.error)
                 .then((message) => {
                     message.delete({

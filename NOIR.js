@@ -44,17 +44,17 @@ NOIR.on(`guildCreate`,
       .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
       .setDescription(`\n\n
 ❤️‍🔥 **Hey there MUSIC lovers !**
-•|  _I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel._
-•|  _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_
+**:microphone:Noir  =** _I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel._
+**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_
 
 
 :candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
-•|  _Please use ${ʙᴏᴛꜰɪx}play YouTube Url_
-•|  _Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more_
+**:microphone:Noir  =** _Please use ${ʙᴏᴛꜰɪx}play YouTube Url_
+**:microphone:Noir  =** _Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more_
 
 ---------------------|🔺|---------------------
 :star:**ɴᴏᴛᴇ to ᴏᴡɴᴇʀ ᴀɴᴅ ᴍᴏᴅᴇʀꜱ**
-•|  🎃**VERY VERY IMPORTANT**🎃_Please use !calib once to calibrate before first use!_`
+**:microphone:Noir  =** 🎃**VERY VERY IMPORTANT**🎃_Please use !calib once to calibrate before first use!_`
       );
     channel
       .send(embedThanks)
@@ -83,8 +83,8 @@ NOIR.on("message", async (message) => {
         .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
         .setDescription(`\n\n
 𝗗𝗲𝗮𝗿 **ADMIN** 
-•|  _ᴀ channel ɴᴀᴍᴇ 🦋noir🎧player🦋 has been successfully created._
-•|  _Please use the channel for any ʏᴏᴜᴛᴜʙᴇ voice streaming._`);
+**:microphone:Noir  =** _ᴀ channel ɴᴀᴍᴇ 🦋noir🎧player🦋 has been successfully created._
+**:microphone:Noir  =** _Please use the channel for any ʏᴏᴜᴛᴜʙᴇ voice streaming._`);
       message.channel
         .send(embedcheck1)
         .catch(console.error);
@@ -144,7 +144,7 @@ NOIR.on("message", async (message) => {
     if (now < expirationTime) {
       const timeLeft = (expirationTime - now) / 1000;
       message.channel
-        .send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${command.name}' command.`)
+        .send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${command.name}' command.`)
       return;
     }
   }
@@ -155,7 +155,7 @@ NOIR.on("message", async (message) => {
   } catch (error) {
     console.error(error);
     message.channel
-      .send("**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > There was an error executing that command.")
+      .send("**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  There was an error executing that command.")
       .catch(console.error)
       .then((message) => {
         message.delete({

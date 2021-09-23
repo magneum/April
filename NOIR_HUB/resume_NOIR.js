@@ -21,7 +21,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-•|  _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -44,7 +44,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > is not playing anymusic yet.....`);
+**:microphone:Noir  =** is not playing anymusic yet.....`);
                 message.channel
                     .send(embedresume1)
                     .catch(console.error)
@@ -65,7 +65,7 @@ Noir > is not playing anymusic yet.....`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > is not playing anymusic yet.....`);
+**:microphone:Noir  =** is not playing anymusic yet.....`);
                 message.channel
                     .send(embedresume2)
                     .catch(console.error)
@@ -79,7 +79,7 @@ Noir > is not playing anymusic yet.....`);
             if (!queue.playing) {
                 queue.playing = true;
                 queue.connection.dispatcher.resume();
-                queue.textChannel.send(`${message.author}\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > ▶ Resumed the music!`)
+                queue.textChannel.send(`${message.author}\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  ▶ Resumed the music!`)
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
@@ -97,7 +97,7 @@ Noir > is not playing anymusic yet.....`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > The queue is not paused.`);
+**:microphone:Noir  =** The queue is not paused.`);
             message.channel
                 .send(embedresume3)
                 .catch(console.error)

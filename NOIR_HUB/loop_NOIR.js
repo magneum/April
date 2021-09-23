@@ -19,7 +19,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-•|  _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -44,7 +44,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-⚜️Noir > is not playing anymusic yet.....`);
+**:microphone:Noir  =**  is not playing anymusic yet.....`);
                 message.channel
                     .send(embedloopno1)
                     .catch(console.error)
@@ -67,7 +67,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-⚜️Noir > You need to join a voice channel first!`);
+**:microphone:Noir  =**  You need to join a voice channel first!`);
                 message.channel
                     .send(embedloopno2)
                     .catch(console.error)
@@ -79,7 +79,7 @@ module.exports = {
                 return;
             }
             queue.loop = !queue.loop;
-            queue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > Loop is now turned ${queue.loop ? message.channel.send("ON") : message.channel.send("OFF")}**`)
+            queue.textChannel.send(`**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  Loop is now turned ${queue.loop ? message.channel.send("ON") : message.channel.send("OFF")}**`)
                 .catch(console.error)
                 .then((message) => {
                     message.delete({

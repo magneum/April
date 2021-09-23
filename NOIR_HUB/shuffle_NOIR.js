@@ -21,7 +21,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-•|  _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -44,7 +44,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > There is no queue.`);
+**:microphone:Noir  =** There is no queue.`);
                 message.channel
                     .send(embedshuf1)
                     .catch(console.error)
@@ -65,7 +65,7 @@ Noir > There is no queue.`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > You need to join a voice channel first!`);
+**:microphone:Noir  =** You need to join a voice channel first!`);
                 message.channel
                     .send(embedshuf2)
                     .catch(console.error)
@@ -83,7 +83,7 @@ Noir > You need to join a voice channel first!`);
             }
             queue.songs = songs;
             message.client.queue.set(message.guild.id, queue);
-            queue.textChannel.send(`${message.author}>\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > 🔀 Shuffled the queue`)
+            queue.textChannel.send(`${message.author}>\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  🔀 Shuffled the queue`)
                 .catch(console.error)
                 .then((message) => {
                     message.delete({

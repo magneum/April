@@ -20,7 +20,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-•|  _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+**:microphone:Noir  =** _Please use the channel **🦋noir🎧player🦋** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -43,7 +43,7 @@ module.exports = {
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > Missing permission to manage messages or add reactions`);
+**:microphone:Noir  =** Missing permission to manage messages or add reactions`);
                 message.channel
                     .send(embedqueue1)
                     .catch(console.error)
@@ -65,7 +65,7 @@ Noir > Missing permission to manage messages or add reactions`);
 **User:** ${message.author}
 
 **=========🦋𝗡𝗢𝗜𝗥🦋=========**
-Noir > ❌ Nothing playing in this server`);
+**:microphone:Noir  =** ❌ Nothing playing in this server`);
                 message.channel
                     .send(embedqueue2)
                     .catch(console.error)
@@ -78,7 +78,7 @@ Noir > ❌ Nothing playing in this server`);
             }
             let currentPage = 0;
             const embeds = generateQueueEmbed(message, queue.songs);
-            const queueEmbed = await message.channel.send(`"**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > Current Page - ${currentPage + 1}/${embeds.length}`, embeds[currentPage]);
+            const queueEmbed = await message.channel.send(`"**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  Current Page - ${currentPage + 1}/${embeds.length}`, embeds[currentPage]);
             try {
                 await queueEmbed.react(`⬅️`);
                 await queueEmbed.react(`❌`);
@@ -96,14 +96,14 @@ Noir > ❌ Nothing playing in this server`);
                     if (reaction.emoji.name === `➡️`) {
                         if (currentPage < embeds.length - 1) {
                             currentPage++;
-                            queueEmbed.edit("**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > Current Page - ",
+                            queueEmbed.edit("**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  Current Page - ",
                                 { page: currentPage + 1, length: embeds.length }),
                                 embeds[currentPage]
                         };
                     } else if (reaction.emoji.name === `⬅️`) {
                         if (currentPage !== 0) {
                             --currentPage;
-                            queueEmbed.edit("**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n⚜️Noir > Current Page - ", { page: currentPage + 1, length: embeds.length }), embeds[currentPage]
+                            queueEmbed.edit("**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  Current Page - ", { page: currentPage + 1, length: embeds.length }), embeds[currentPage]
                         };
                     } else {
                         collector.stop();
