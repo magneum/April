@@ -1,5 +1,5 @@
 {
-  "name": "noir_audio",
+  "name": "noir_player",
   "version": "10.0.0",
   "description": "Discord music bot built with discord.js",
   "main": "yarn",
