@@ -4,8 +4,8 @@
 		"off": "**Turned Off**",
 		"ПOIЯD_ᴇɴᴀʙʟᴇᴅ": "**Has been enabled**",
 		"ПOIЯD_ᴅɪꜱᴀʙʟᴇᴅ": "**Has been disabled**",
-		"ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ᴄʜᴀɴɴᴇʟ": "**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** You need to join a voice channel first!",
-		"ПOIЯD_ᴄᴏᴏʟᴅᴏᴡɴ_ᴍᴇꜱꜱᴀɢᴇ": "**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** Please wait {time} more second(s) before reusing the `{name}` command.",
-		"ПOIЯD_ᴇʀʀᴏʀ_ᴄᴏᴍᴍᴀɴᴅ": "**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**\n\n⚜️**Noir** There was an error executing that command."
+		"ПOIЯD_ᴇʀʀᴏʀ_ɴᴏᴛ_ᴄʜᴀɴɴᴇʟ": "**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** You need to join a voice channel first!",
+		"ПOIЯD_ᴄᴏᴏʟᴅᴏᴡɴ_ᴍᴇꜱꜱᴀɢᴇ": "**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Please wait {time} more second(s) before reusing the `{name}` command.",
+		"ПOIЯD_ᴇʀʀᴏʀ_ᴄᴏᴍᴍᴀɴᴅ": "**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** There was an error executing that command."
 	}
 }

@@ -19,11 +19,11 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 NOIR.on("ready", () => {
   console.clear();
   NOIR.user.setActivity(`${ʙᴏᴛꜰɪx}noir/play/help🦋`, { type: "WATCHING" });
-  console.log(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**
+  console.log(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**
 |🦋••  Bot_Status : Ready! 
 |🦋••  Bot_Name   : ${NOIR.user.username}
 |🦋••  Bot_Os     : ${os.platform().toUpperCase()}
-**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**`);
+**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**`);
 });
 NOIR.on("warn", (ɴᴏɪʀ_WARN) => console.log(ɴᴏɪʀ_WARN));
 NOIR.on("error", console.error);
@@ -39,7 +39,7 @@ NOIR.on(`guildCreate`,
     const embedThanks = new Discord.MessageEmbed()
       .setColor(`0x1f8b4c`)
       .setAuthor(`Author•— HypeVoidSoul`)
-      .setFooter(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**`)
+      .setFooter(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**`)
       .setTitle(`:sparkles: :butterfly:  **  𝗡𝗢𝗜𝗥  **  :butterfly: :sparkles:`)
       .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
       .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -78,7 +78,7 @@ NOIR.on("message", async (message) => {
       const embedcheck1 = new Discord.MessageEmbed()
         .setColor(`0x1f8b4c`)
         .setAuthor(`Author•— HypeVoidSoul`)
-        .setFooter(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**`)
+        .setFooter(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**`)
         .setTitle(`:sparkles: :butterfly:  **  𝗡𝗢𝗜𝗥  **  :butterfly: :sparkles:`)
         .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
         .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -100,7 +100,7 @@ NOIR.on("message", async (message) => {
       const embedcheck2 = new Discord.MessageEmbed()
         .setColor(`0x1f8b4c`)
         .setAuthor(`Author•— HypeVoidSoul`)
-        .setFooter(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**`)
+        .setFooter(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**`)
         .setTitle(`:sparkles: :butterfly:  **  𝗡𝗢𝗜𝗥  **  :butterfly: :sparkles:`)
         .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
         .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -145,7 +145,7 @@ NOIR.on("message", async (message) => {
     if (now < expirationTime) {
       const timeLeft = (expirationTime - now) / 1000;
       message.channel
-        .send(`🦋𝗡𝗢𝗜𝗥🦋_**A YouTube⭕️Music_Player**_\n\n⚜️**Noir** Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${command.name}' command.`)
+        .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${command.name}' command.`)
       return;
     }
   }
@@ -156,7 +156,7 @@ NOIR.on("message", async (message) => {
   } catch (error) {
     console.error(error);
     message.channel
-      .send("🦋𝗡𝗢𝗜𝗥🦋_**A YouTube⭕️Music_Player**_\n\n⚜️**Noir** There was an error executing that command.")
+      .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** There was an error executing that command.")
       .catch(console.error)
       .then((message) => {
         message.delete({

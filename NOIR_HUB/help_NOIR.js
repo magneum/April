@@ -41,7 +41,7 @@ module.exports = {
 == Change volume of currently playing music.`)
       .setColor(`0x1f8b4c`)
       .setAuthor(`Author•— HypeVoidSoul`)
-      .setFooter(`**🦋------------------  𝗡𝗢𝗜𝗥  ------------------🦋**`)
+      .setFooter(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**`)
       .setTitle(`:sparkles: :butterfly:  **  𝗡𝗢𝗜𝗥  **  :butterfly: :sparkles:`)
       .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
       .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`);
