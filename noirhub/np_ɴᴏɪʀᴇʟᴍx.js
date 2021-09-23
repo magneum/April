@@ -75,13 +75,13 @@ module.exports = {
             const seek = (queue.connection.dispatcher.streamTime - queue.connection.dispatcher.pausedTime) / 1000;
             const left = song.duration - seek;
             let current = new MessageEmbed()
-                .setTitle("🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\n**:microphone:Noir  =**  Now playing")
+                .setTitle("🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n**Now playing**")
                 .setDescription(`${song.title}\n${song.url}`)
                 .setColor(`#32CD32`)
                 .setAuthor(message.client.user.username);
             if (song.duration > 0) {
                 current.addField(`\u200b`, new Date(seek * 1000).toISOString().substr(11, 8) + `[` + splitBar(song.duration == 0 ? seek : song.duration, seek, 20)[0] + `]` + (song.duration == 0 ? ` ◉ LIVE` : new Date(song.duration * 1000).toISOString().substr(11, 8)), false);
-                current.setFooter(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\n**:microphone:Noir  =**  ⏱Time Remaining: ${new Date(left * 1000).toISOString().substr(11, 8)}`)
+                current.setFooter(`⏱Time Remaining: ${new Date(left * 1000).toISOString().substr(11, 8)}`)
             };
             return message.channel
                 .send(current);

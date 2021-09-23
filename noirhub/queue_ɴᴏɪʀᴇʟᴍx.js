@@ -95,7 +95,7 @@ module.exports = {
             }
             let currentPage = 0;
             const embeds = generateQueueEmbed(message, queue.songs);
-            const queueEmbed = await message.channel.send(`"**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  Current Page - ${currentPage + 1}/${embeds.length}`, embeds[currentPage]);
+            const queueEmbed = await message.channel.send(`"**:microphone:Noir  =**  *Page Num:* - ${currentPage + 1}/${embeds.length}`, embeds[currentPage]);
             try {
                 await queueEmbed.react(`⬅️`);
                 await queueEmbed.react(`❌`);
@@ -113,14 +113,14 @@ module.exports = {
                     if (reaction.emoji.name === `➡️`) {
                         if (currentPage < embeds.length - 1) {
                             currentPage++;
-                            queueEmbed.edit("**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  Current Page - ",
+                            queueEmbed.edit("**:microphone:Noir  =**  *Page Num:* - ",
                                 { page: currentPage + 1, length: embeds.length }),
                                 embeds[currentPage]
                         };
                     } else if (reaction.emoji.name === `⬅️`) {
                         if (currentPage !== 0) {
                             --currentPage;
-                            queueEmbed.edit("**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n\n**:microphone:Noir  =**  Current Page - ", { page: currentPage + 1, length: embeds.length }), embeds[currentPage]
+                            queueEmbed.edit("**:microphone:Noir  =**  *Page Num:* - ", { page: currentPage + 1, length: embeds.length }), embeds[currentPage]
                         };
                     } else {
                         collector.stop();
