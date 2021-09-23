@@ -1,6 +1,6 @@
 {
   "name": "noir_audio",
-  "version": "nr.8.9",
+  "version": "10.0.0",
   "description": "Discord music bot built with discord.js",
   "main": "NOIR.js",
   "author": "HypeVoidSoul",
