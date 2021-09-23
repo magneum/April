@@ -25,11 +25,11 @@ has been licensed under GNU General Public License
 module.exports = {
     name: "ping",
     cooldown: 10,
-    execute(message, args) {
+    execute(message) {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "ping") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
                 .setColor(`0x1f8b4c`)
-                .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
 
 
                 .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -53,7 +53,7 @@ module.exports = {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "ping") && message.channel.name === "🦋noir🎧player🦋") {
             const embedping = new MessageEmbed()
                 .setColor(`0x1f8b4c`)
-                .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
 
 
                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)

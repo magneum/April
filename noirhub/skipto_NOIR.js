@@ -18,7 +18,7 @@ module.exports = {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "skipto") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
                 .setColor(`0x1f8b4c`)
-                .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                 
                 
                 .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -43,7 +43,7 @@ module.exports = {
             if (!args.length || isNaN(args[0])) {
                 const embedskpto1 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -65,7 +65,7 @@ module.exports = {
             if (!queue) {
                 const embedskpto2 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -86,7 +86,7 @@ module.exports = {
             if (!canModifyQueue(message.member)) {
                 const embedskpto3 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -107,7 +107,7 @@ module.exports = {
             if (args[0] > queue.songs.length) {
                 const embedshp1 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 

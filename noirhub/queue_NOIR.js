@@ -25,11 +25,11 @@ has been licensed under GNU General Public License
 module.exports = {
     name: "queue",
     cooldown: 5,
-    async execute(message, args) {
+    async execute(message) {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "queue") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
                 .setColor(`0x1f8b4c`)
-                .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)               
+                .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)               
                 .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setDescription(`\n\n
@@ -53,7 +53,7 @@ module.exports = {
             if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
                 const embedqueue1 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -75,7 +75,7 @@ module.exports = {
             if (!queue) {
                 const embedqueue2 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 

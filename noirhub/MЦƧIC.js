@@ -29,10 +29,10 @@ module.exports = {
             setTimeout(function () {
                 if (queue.connection.dispatcher && message.guild.me.voice.channel) return;
                 queue.channel.leave();
-                queue.textChannel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  Leaving voice channel...");
+                queue.textChannel.send("🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\n**:microphone:Noir  =**  Leaving voice channel...");
             },
                 ɴᴏɪʀᴡᴀᴋᴇ);
-            queue.textChannel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  ❌ Music queue ended.")
+            queue.textChannel.send("🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\n**:microphone:Noir  =**  ❌ Music queue ended.")
                 .catch(console.error);
             message.client.queue.delete(message.guild.id)
             return;
@@ -56,7 +56,7 @@ module.exports = {
             console.error(error);
             const embedmusic1 = new MessageEmbed()
                 .setColor(`0x1f8b4c`)
-                .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -96,7 +96,7 @@ module.exports = {
             });
         dispatcher.setVolumeLogarithmic(queue.volume / 100);
         try {
-            var playingMessage = await queue.textChannel.send(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n🍧**Title**: ${song.title}\n⛓**Link**:  ${song.url}`);
+            var playingMessage = await queue.textChannel.send(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\n🍧**Title**: ${song.title}\n⛓**Link**:  ${song.url}`);
             await playingMessage.react("👉🏻");
             await playingMessage.react("⏯");
             await playingMessage.react("🤫");
@@ -123,7 +123,7 @@ module.exports = {
                     if (!canModifyQueue(member)) {
                         const embedmusic2 = new MessageEmbed()
                             .setColor(`0x1f8b4c`)
-                            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                            .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -151,7 +151,7 @@ module.exports = {
                     if (!canModifyQueue(member)) {
                         const embedmusic3 = new MessageEmbed()
                             .setColor(`0x1f8b4c`)
-                            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                            .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -186,7 +186,7 @@ module.exports = {
                     if (!canModifyQueue(member)) {
                         const embedmusic4 = new MessageEmbed()
                             .setColor(`0x1f8b4c`)
-                            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                            .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -223,7 +223,7 @@ module.exports = {
                     if (!canModifyQueue(member)) {
                         const embedmusic5 = new MessageEmbed()
                             .setColor(`0x1f8b4c`)
-                            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                            .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -255,7 +255,7 @@ module.exports = {
                     if (!canModifyQueue(member)) {
                         const embedmusic6 = new MessageEmbed()
                             .setColor(`0x1f8b4c`)
-                            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                            .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -283,7 +283,7 @@ module.exports = {
                     if (!canModifyQueue(member)) {
                         const embedmusic7 = new MessageEmbed()
                             .setColor(`0x1f8b4c`)
-                            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                            .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -302,7 +302,7 @@ module.exports = {
                         return;
                     }
                     queue.loop = !queue.loop;
-                    queue.textChannel.send(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
+                    queue.textChannel.send(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\n**:microphone:Noir  =**  Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                         .catch(console.error);
                     break;
                 case "❌":
@@ -310,7 +310,7 @@ module.exports = {
                     if (!canModifyQueue(member)) {
                         const embedmusic8 = new MessageEmbed()
                             .setColor(`0x1f8b4c`)
-                            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                            .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                             .setDescription(`\n\n
 **⚠️Warning⚠️** 

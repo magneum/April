@@ -68,7 +68,7 @@ has been licensed under GNU General Public License
     );
     const embedThanks = new Discord.MessageEmbed()
       .setColor(`0x1f8b4c`)
-      .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+      .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
       .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
       .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
       .setDescription(`\n\n
@@ -108,7 +108,7 @@ has been licensed under GNU General Public License
     if (message.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
       const embedcheck1 = new Discord.MessageEmbed()
         .setColor(`0x1f8b4c`)
-        .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+        .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
 
 
         .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -130,7 +130,7 @@ has been licensed under GNU General Public License
     } else {
       const embedcheck2 = new Discord.MessageEmbed()
         .setColor(`0x1f8b4c`)
-        .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+        .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
         .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
         .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
         .setDescription(`\n\n
@@ -185,7 +185,7 @@ has been licensed under GNU General Public License
       const timeLeft = (expirationTime - now) / 1000;
       const embedNoir1 = new Discord.MessageEmbed()
         .setColor(`0x1f8b4c`)
-        .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+        .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
         .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
         .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
         .setDescription(`\n\n
@@ -209,7 +209,7 @@ has been licensed under GNU General Public License
     console.error(error);
     const embedNoir2 = new Discord.MessageEmbed()
       .setColor(`0x1f8b4c`)
-      .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+      .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
       .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
       .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
       .setDescription(`\n\n

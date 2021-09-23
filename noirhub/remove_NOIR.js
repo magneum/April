@@ -29,7 +29,7 @@ module.exports = {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
                 .setColor(`0x1f8b4c`)
-                .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
 
 
                 .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -55,7 +55,7 @@ module.exports = {
             if (!queue) {
                 const embedrm1 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -76,7 +76,7 @@ module.exports = {
             if (!canModifyQueue(message.member)) {
                 const embedrm2 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -97,7 +97,7 @@ module.exports = {
             if (!args.length) {
                 const embedrm3 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -132,7 +132,7 @@ module.exports = {
                 console.log(`we got the last one`);
                 const embedrm4 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 

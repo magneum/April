@@ -39,7 +39,7 @@ module.exports = {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "play") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
                 .setColor(`0x1f8b4c`)
-                .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                 .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setDescription(`\n\n
@@ -64,7 +64,7 @@ module.exports = {
             if (!channel) {
                 const embedplay1 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -85,7 +85,7 @@ module.exports = {
             if (serverQueue && channel !== message.guild.me.voice.channel) {
                 const embedplay2 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -107,7 +107,7 @@ module.exports = {
             if (!args.length) {
                 const embedplay3 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -129,7 +129,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
             if (!permissions.has(`CONNECT`)) {
                 const embedplay3 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -150,7 +150,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
             if (!permissions.has(`SPEAK`)) {
                 const embedplay3 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -186,7 +186,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                         } else {
                             const embedplay4 = new MessageEmbed()
                                 .setColor(`0x1f8b4c`)
-                                .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                                .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                                 .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -219,7 +219,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                 }
                 const embedplay5 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -293,7 +293,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                     if (!results.length) {
                         const embedplay6 = new MessageEmbed()
                             .setColor(`0x1f8b4c`)
-                            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                            .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
 
 
                             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -355,7 +355,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                 await channel.leave();
                 const embedplay7 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 

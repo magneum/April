@@ -60,7 +60,7 @@ module.exports = {
 • !vol
 == Change volume of currently playing music.`)
             .setColor(`0x1f8b4c`)
-            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+            .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
             .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
             .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`);
         message.channel

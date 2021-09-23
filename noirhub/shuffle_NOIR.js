@@ -24,11 +24,11 @@ has been licensed under GNU General Public License
 =============================================================================================================================`
 module.exports = {
     name: "shuffle",
-    execute(message, args) {
+    execute(message) {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "shuffle") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
                 .setColor(`0x1f8b4c`)
-                .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
 
 
                 .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
@@ -54,7 +54,7 @@ module.exports = {
             if (!queue) {
                 const embedshuf1 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -75,7 +75,7 @@ module.exports = {
             if (!canModifyQueue(message.member)) {
                 const embedshuf2 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
-                    .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                    .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
                     .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
