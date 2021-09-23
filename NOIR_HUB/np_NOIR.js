@@ -58,7 +58,7 @@ module.exports = {
             let current = new MessageEmbed()
                 .setTitle("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  Now playing")
                 .setDescription(`${song.title}\n${song.url}`)
-                .setColor(`#F8AA2A`)
+                .setColor(`0x1f8b4c`)
                 .setAuthor(message.client.user.username);
             if (song.duration > 0) {
                 current.addField(`\u200b`, new Date(seek * 1000).toISOString().substr(11, 8) + `[` + splitBar(song.duration == 0 ? seek : song.duration, seek, 20)[0] + `]` + (song.duration == 0 ? ` ◉ LIVE` : new Date(song.duration * 1000).toISOString().substr(11, 8)), false);

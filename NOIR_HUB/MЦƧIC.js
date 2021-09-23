@@ -1,5 +1,4 @@
 const ytdl = require("ytdl-core-discord");
-const noir_loader = require("../NOIR_SYSTEM/noir_loader");
 const { canModifyQueue, NOIRWAKE } = require("../NOIR_SYSTEM/noir_env");
 
 
@@ -36,7 +35,24 @@ module.exports = {
                 module.exports.play(queue.songs[0], message);
             }
             console.error(error);
-            message.channel.send(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  Error: ${error}`)
+            const embedmusic1 = new MessageEmbed()
+                .setColor(`0x1f8b4c`)
+                .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                .setDescription(`\n\n
+**⚠️Warning⚠️** 
+**User:** ${message.author}
+
+**=========🦋𝗡𝗢𝗜𝗥🦋=========**
+**:microphone:Noir  =**  Error: ${error}`);
+            message.channel
+                .send(embedmusic1)
+                .catch(console.error)
+                .then((message) => {
+                    message.delete({
+                        timeout: `${AUTOCLEANER}`
+                    });
+                });
             return;
         };
         queue.connection.on("disconnect", () => message.client.queue.delete(message.guild.id));
@@ -86,7 +102,24 @@ module.exports = {
                     queue.playing = true;
                     reaction.users.remove(user).catch(console.error);
                     if (!canModifyQueue(member)) {
-                        message.channel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  You need to join a voice channel first!")
+                        const embedmusic2 = new MessageEmbed()
+                            .setColor(`0x1f8b4c`)
+                            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                            .setDescription(`\n\n
+            **⚠️Warning⚠️** 
+            **User:** ${message.author}
+            
+            **=========🦋𝗡𝗢𝗜𝗥🦋=========**
+            **:microphone:Noir  =**  You need to join a voice channel first!`);
+                        message.channel
+                            .send(embedmusic2)
+                            .catch(console.error)
+                            .then((message) => {
+                                message.delete({
+                                    timeout: `${AUTOCLEANER}`
+                                });
+                            });
                         return;
                     }
                     queue.connection.dispatcher.end();
@@ -97,39 +130,69 @@ module.exports = {
                 case "⏯":
                     reaction.users.remove(user).catch(console.error);
                     if (!canModifyQueue(member)) {
-                        message.channel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  You need to join a voice channel first!")
+                        const embedmusic3 = new MessageEmbed()
+                            .setColor(`0x1f8b4c`)
+                            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                            .setDescription(`\n\n
+            **⚠️Warning⚠️** 
+            **User:** ${message.author}
+            
+            **=========🦋𝗡𝗢𝗜𝗥🦋=========**
+            **:microphone:Noir  =**  You need to join a voice channel first!`);
+                        message.channel
+                            .send(embedmusic3)
+                            .catch(console.error)
+                            .then((message) => {
+                                message.delete({
+                                    timeout: `${AUTOCLEANER}`
+                                });
+                            });
                         return;
                     }
                     if (queue.playing) {
                         queue.playing = !queue.playing;
                         queue.connection.dispatcher.pause(true);
-                        queue.textChannel.send("<@{author}>\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  🚦 Paused the music.",
-                            { author: user })
+                        queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  🚦 Paused the music.`)
                             .catch(console.error);
                     } else {
                         queue.playing = !queue.playing;
                         queue.connection.dispatcher.resume();
-                        queue.textChannel.send("<@{author}>\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  ▶ Resumed the music!",
-                            { author: user })
+                        queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  ▶ Resumed the music!`)
                             .catch(console.error);
                     }
                     break;
                 case "🤫":
                     reaction.users.remove(user).catch(console.error);
                     if (!canModifyQueue(member)) {
-                        message.channel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  You need to join a voice channel first!");
+                        const embedmusic4 = new MessageEmbed()
+                            .setColor(`0x1f8b4c`)
+                            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                            .setDescription(`\n\n
+            **⚠️Warning⚠️** 
+            **User:** ${message.author}
+            
+            **=========🦋𝗡𝗢𝗜𝗥🦋=========**
+            **:microphone:Noir  =**  You need to join a voice channel first!`);
+                        message.channel
+                            .send(embedmusic4)
+                            .catch(console.error)
+                            .then((message) => {
+                                message.delete({
+                                    timeout: `${AUTOCLEANER}`
+                                });
+                            });
                         return;
                     }
                     queue.muted = !queue.muted;
                     if (queue.muted) {
                         queue.connection.dispatcher.setVolumeLogarithmic(0);
-                        queue.textChannel.send("<@{author}>\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  🤫 Muted the music!",
-                            { author: user })
+                        queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  🤫 Muted the music!`)
                             .catch(console.error);
                     } else {
                         queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
-                        queue.textChannel.send("<@{author}>\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  🔊 Unmuted the music!",
-                            { author: user })
+                        queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  🔊 Unmuted the music!`)
                             .catch(console.error);
                     }
                     break;
@@ -139,14 +202,30 @@ module.exports = {
                         return;
                     }
                     if (!canModifyQueue(member)) {
-                        message.channel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  You need to join a voice channel first!")
+                        const embedmusic5 = new MessageEmbed()
+                            .setColor(`0x1f8b4c`)
+                            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                            .setDescription(`\n\n
+            **⚠️Warning⚠️** 
+            **User:** ${message.author}
+            
+            **=========🦋𝗡𝗢𝗜𝗥🦋=========**
+            **:microphone:Noir  =**  You need to join a voice channel first!`);
+                        message.channel
+                            .send(embedmusic5)
+                            .catch(console.error)
+                            .then((message) => {
+                                message.delete({
+                                    timeout: `${AUTOCLEANER}`
+                                });
+                            });
                         return;
                     }
                     queue.volume = Math.max(queue.volume - 10, 0);
                     queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
                     queue.textChannel
-                        .send("<@{author}>\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  🔉 Decreased the volume, the volume is now {volume}%",
-                            { author: user, volume: queue.volume })
+                        .send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  🔉 Decreased the volume, the volume is now ${queue.volume}%`)
                         .catch(console.error);
                     break;
                 case "🔊":
@@ -155,32 +234,83 @@ module.exports = {
                         return;
                     }
                     if (!canModifyQueue(member)) {
-                        message.channel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  You need to join a voice channel first!")
+                        const embedmusic6 = new MessageEmbed()
+                            .setColor(`0x1f8b4c`)
+                            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                            .setDescription(`\n\n
+            **⚠️Warning⚠️** 
+            **User:** ${message.author}
+            
+            **=========🦋𝗡𝗢𝗜𝗥🦋=========**
+            **:microphone:Noir  =**  You need to join a voice channel first!`);
+                        message.channel
+                            .send(embedmusic6)
+                            .catch(console.error)
+                            .then((message) => {
+                                message.delete({
+                                    timeout: `${AUTOCLEANER}`
+                                });
+                            });
                         return;
                     }
                     queue.volume = Math.min(queue.volume + 10, 100);
                     queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
-                    queue.textChannel.send("<@{author}>\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  🔊 Increased the volume, the volume is now {volume}%", { author: user, volume: queue.volume })
+                    queue.textChannel.send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  🔊 Increased the volume, the volume is now ${queue.volume}%`)
                         .catch(console.error);
                     break;
                 case "🔁":
                     reaction.users.remove(user).catch(console.error);
                     if (!canModifyQueue(member)) {
-                        message.channel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  You need to join a voice channel first!")
+                        const embedmusic7 = new MessageEmbed()
+                            .setColor(`0x1f8b4c`)
+                            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                            .setDescription(`\n\n
+            **⚠️Warning⚠️** 
+            **User:** ${message.author}
+            
+            **=========🦋𝗡𝗢𝗜𝗥🦋=========**
+            **:microphone:Noir  =**  You need to join a voice channel first!`);
+                        message.channel
+                            .send(embedmusic7)
+                            .catch(console.error)
+                            .then((message) => {
+                                message.delete({
+                                    timeout: `${AUTOCLEANER}`
+                                });
+                            });
                         return;
                     }
                     queue.loop = !queue.loop;
-                    queue.textChannel.send(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  Loop is now ${queue.loop ? noir_loader.__("common.on") : noir_loader.__("common.off")}`)
+                    queue.textChannel.send(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                         .catch(console.error);
                     break;
                 case "❌":
                     reaction.users.remove(user).catch(console.error);
                     if (!canModifyQueue(member)) {
-                        message.channel.send("🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  You need to join a voice channel first!")
+                        const embedmusic8 = new MessageEmbed()
+                            .setColor(`0x1f8b4c`)
+                            .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
+                            .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
+                            .setDescription(`\n\n
+            **⚠️Warning⚠️** 
+            **User:** ${message.author}
+            
+            **=========🦋𝗡𝗢𝗜𝗥🦋=========**
+            **:microphone:Noir  =**  You need to join a voice channel first!`);
+                        message.channel
+                            .send(embedmusic8)
+                            .catch(console.error)
+                            .then((message) => {
+                                message.delete({
+                                    timeout: `${AUTOCLEANER}`
+                                });
+                            });
                         return;
                     }
                     queue.songs = [];
-                    queue.textChannel.send(`${user}>\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n**:microphone:Noir  =**  ❌ Stopped the music!`)
+                    queue.textChannel.send(`${user} >\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n **: microphone: Noir =**  ❌ Stopped the music!`)
                         .catch(console.error);
                     try {
                         queue.connection.dispatcher.end();

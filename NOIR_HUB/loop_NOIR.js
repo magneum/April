@@ -36,8 +36,6 @@ module.exports = {
                 const embedloopno1 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
                     .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
-                    
-                    
                     .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -59,8 +57,6 @@ module.exports = {
                 const embedloopno2 = new MessageEmbed()
                     .setColor(`0x1f8b4c`)
                     .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
-                    
-                    
                     .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 

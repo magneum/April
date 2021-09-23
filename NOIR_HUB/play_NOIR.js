@@ -21,9 +21,7 @@ module.exports = {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "play") && message.channel.name !== "🦋noir🎧player🦋") {
             const embedfactor = new MessageEmbed()
                 .setColor(`0x1f8b4c`)
-                .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
-                
-                
+                .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)               
                 .setImage(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                 .setDescription(`\n\n
@@ -171,8 +169,6 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
                             const embedplay4 = new MessageEmbed()
                                 .setColor(`0x1f8b4c`)
                                 .setAuthor(`🦋🎧𝗡𝗢𝗜𝗥🎧🦋`)
-                                
-                                
                                 .setThumbnail(`https://telegra.ph/file/3766d80c69f488d850173.jpg`)
                                 .setDescription(`\n\n
 **⚠️Warning⚠️** 
