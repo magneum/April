@@ -78,7 +78,16 @@ Noir is not playing anymusic yet....`);
                 .setColor(`#32CD32`)
                 .setAuthor(message.client.user.username);
             if (song.duration > 0) {
-                current.addField(`\u200b`, new Date(seek * 1000).toISOString().substr(11, 8) + `[` + splitBar(song.duration == 0 ? seek : song.duration, seek, 20)[0] + `]` + (song.duration == 0 ? ` ◉ LIVE` : new Date(song.duration * 1000).toISOString().substr(11, 8)), false);
+                current.addField(`\u200b`, new Date(seek * 1000)
+                    .toISOString()
+                    .substr(11, 8)
+                    + `[`
+                    + splitBar(song.duration == 0 ? seek : song.duration, seek, 20)[0]
+                    + `]`
+                    + (song.duration == 0 ? ` ◉ LIVE` : new Date(song.duration * 1000)
+                        .toISOString()
+                        .substr(11, 8)),
+                    false);
                 current.setFooter(`⏱Time Remaining: ${new Date(left * 1000).toISOString().substr(11, 8)}`)
             };
             return message.channel
