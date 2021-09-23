@@ -17,4 +17,4 @@ RUN git clone https://github.com/HypeVoidSoul/Noir.git
 RUN cd Noir
 RUN npm install
 WORKDIR /Noir
-CMD nodemon NOIR.js
+CMD nodemon 🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋.js

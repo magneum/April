@@ -1,1 +1,1 @@
-worker: node NOIR.js
+worker: node 🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋.js

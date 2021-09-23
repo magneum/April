@@ -40,11 +40,10 @@ has been licensed under GNU General Public License
   console.clear();
   ռօɨʀքʟǟʏɛʀ.user.setActivity(`${ʙᴏᴛꜰɪx}noir/play/help🦋`, { type: "WATCHING" });
   console.log(`
-🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋
-|🦋••  Bot_Status : Ready! 
-|🦋••  Bot_Name   : ${ռօɨʀքʟǟʏɛʀ.user.username}
-|🦋••  Bot_Os     : ${os.platform().toUpperCase()}
-🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋`);
+🦋=======🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋=======🦋
+|🦋•Bot_Name: ${ռօɨʀքʟǟʏɛʀ.user.username}
+|🦋•Bot_Os: ${os.platform().toUpperCase()}
+🦋=======🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋=======🦋`);
 });
 ռօɨʀքʟǟʏɛʀ.on("warn", (ɴᴏɪʀ_WARN) => console.log(ɴᴏɪʀ_WARN));
 ռօɨʀքʟǟʏɛʀ.on("error", console.error);
