@@ -37,7 +37,7 @@ module.exports = {
         .send(`
 **🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**
 
-⚜️**Noir** ⌛️Average ping of 𝗡𝗢𝗜𝗥's Server: 
+⚜️Noir > ⌛️Average ping of 𝗡𝗢𝗜𝗥's Server: 
 ${Math.round(message.client.ws.ping)}ms`)
         .catch(console.error)
         .then((message) => {

@@ -36,7 +36,7 @@ module.exports = {
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         message.channel
-          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** is not playing anymusic yet.....")
+          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > is not playing anymusic yet.....")
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -47,7 +47,7 @@ module.exports = {
       }
       if (!canModifyQueue(message.member)) {
         message.channel
-          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** You need to join a voice channel first!")
+          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > You need to join a voice channel first!")
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -58,7 +58,7 @@ module.exports = {
       }
       if (!args[0]) {
         message.channel
-          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** 🔊 **The current volume is:** ${queue.volume}%`)
+          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > 🔊 **The current volume is:** ${queue.volume}%`)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -69,7 +69,7 @@ module.exports = {
       }
       if (isNaN(args[0])) {
         message.channel
-          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Please use a number to set volume.")
+          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Please use a number to set volume.")
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -80,7 +80,7 @@ module.exports = {
       }
       if (Number(args[0]) > 100 || Number(args[0]) < 0) {
         message.channel
-          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Please use a number between 0 - 100.")
+          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Please use a number between 0 - 100.")
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -91,7 +91,7 @@ module.exports = {
       }
       queue.volume = args[0];
       queue.connection.dispatcher.setVolumeLogarithmic(args[0] / 100);
-      queue.textChannel.send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Volume set to: **${args[0]}%**`)
+      queue.textChannel.send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Volume set to: **${args[0]}%**`)
         .catch(console.error)
         .then((message) => {
           message.delete({

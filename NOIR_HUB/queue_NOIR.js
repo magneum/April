@@ -34,17 +34,17 @@ module.exports = {
     if (message.content.startsWith(ʙᴏᴛꜰɪx + "queue") && message.channel.name === "🦋noir🎧player🦋") {
       const permissions = message.channel.permissionsFor(message.client.user);
       if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
-        message.channel.send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Missing permission to manage messages or add reactions")
+        message.channel.send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Missing permission to manage messages or add reactions")
         return;
       }
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
-        message.channel.send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** ❌ Nothing playing in this server")
+        message.channel.send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > ❌ Nothing playing in this server")
         return;
       }
       let currentPage = 0;
       const embeds = generateQueueEmbed(message, queue.songs);
-      const queueEmbed = await message.channel.send(`"**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Current Page - ${currentPage + 1}/${embeds.length}`, embeds[currentPage]);
+      const queueEmbed = await message.channel.send(`"**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Current Page - ${currentPage + 1}/${embeds.length}`, embeds[currentPage]);
       try {
         await queueEmbed.react(`⬅️`);
         await queueEmbed.react(`❌`);
@@ -62,14 +62,14 @@ module.exports = {
           if (reaction.emoji.name === `➡️`) {
             if (currentPage < embeds.length - 1) {
               currentPage++;
-              queueEmbed.edit("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Current Page - ",
+              queueEmbed.edit("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Current Page - ",
                 { page: currentPage + 1, length: embeds.length }),
                 embeds[currentPage]
             };
           } else if (reaction.emoji.name === `⬅️`) {
             if (currentPage !== 0) {
               --currentPage;
-              queueEmbed.edit("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Current Page - ", { page: currentPage + 1, length: embeds.length }), embeds[currentPage]
+              queueEmbed.edit("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Current Page - ", { page: currentPage + 1, length: embeds.length }), embeds[currentPage]
             };
           } else {
             collector.stop();

@@ -36,7 +36,7 @@ module.exports = {
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         message.channel
-          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** There is nothing playing that I could skip for you.")
+          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > There is nothing playing that I could skip for you.")
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -46,12 +46,12 @@ module.exports = {
         return;
       }
       if (!canModifyQueue(message.member)) {
-        message.channel.send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** You need to join a voice channel first!")
+        message.channel.send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > You need to join a voice channel first!")
         return;
       }
       queue.playing = true;
       queue.connection.dispatcher.end();
-      queue.textChannel.send(`${message.author}\n\n**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Skipped the song`,)
+      queue.textChannel.send(`${message.author}\n\n**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Skipped the song`,)
         .catch(console.error)
         .then((message) => {
           message.delete({

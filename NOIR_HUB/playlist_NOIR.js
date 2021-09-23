@@ -46,7 +46,7 @@ module.exports = {
       const serverQueue = message.client.queue.get(message.guild.id);
       if (!channel) {
         message.channel
-          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** You need to join a voice channel first!")
+          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > You need to join a voice channel first!")
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -58,7 +58,7 @@ module.exports = {
 
       if (!args.length) {
         message.channel
-          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** ⚓️**usage:**{ʙᴏᴛꜰɪx}playlist <YouTube Playlist URL | Playlist Name>`)
+          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > ⚓️**usage:**{ʙᴏᴛꜰɪx}playlist <YouTube Playlist URL | Playlist Name>`)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -70,17 +70,17 @@ module.exports = {
       const permissions = channel.permissionsFor(message.client.user);
       if (!permissions.has(`CONNECT`)) {
         message.channel
-          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Cannot connect to voice channel, missing permissions")
+          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Cannot connect to voice channel, missing permissions")
         return;
       }
       if (!permissions.has(`SPEAK`)) {
         message.channel
-          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** I cannot speak in this voice channel, make sure I have the proper permissions!")
+          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > I cannot speak in this voice channel, make sure I have the proper permissions!")
         return;
       }
       if (serverQueue && channel !== message.guild.me.voice.channel) {
         message.channel
-          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** You must be in the same channel as ${message.client.user}`)
+          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > You must be in the same channel as ${message.client.user}`)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -113,7 +113,7 @@ module.exports = {
         } catch (error) {
           console.error(error);
           message.channel
-            .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Playlist not found")
+            .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Playlist not found")
             .catch(console.error)
             .then((message) => {
               message.delete({
@@ -125,7 +125,7 @@ module.exports = {
       } else if (scdl.isValidUrl(args[0])) {
         if (args[0].includes(`/sets/`)) {
           message.channel
-            .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** ⌛ Fetching the playlist...");
+            .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > ⌛ Fetching the playlist...");
           playlist = await scdl.getSetInfo(args[0], notneeded);
           videos = playlist.tracks.map((track) => ({
             title: track.title,
@@ -169,9 +169,9 @@ module.exports = {
       if (playlistEmbed.description.length >= 2048)
         playlistEmbed.description = playlistEmbed.description
           .substr(0, 2007) +
-          "**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Playlist larger than character limit...";
+          "**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Playlist larger than character limit...";
       message.channel
-        .send(`$message.author>\n\n**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Started a playlist`),
+        .send(`$message.author>\n\n**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Started a playlist`),
         playlistEmbed;
       if (!serverQueue) {
         message.client.queue.set(message.guild.id, queueConstruct);
@@ -184,7 +184,7 @@ module.exports = {
           message.client.queue.delete(message.guild.id);
           await channel.leave();
           message.channel
-            .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Could not join the channel: ${error}`)
+            .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Could not join the channel: ${error}`)
             .catch(console.error)
             .then((message) => {
               message.delete({

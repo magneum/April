@@ -145,7 +145,7 @@ NOIR.on("message", async (message) => {
     if (now < expirationTime) {
       const timeLeft = (expirationTime - now) / 1000;
       message.channel
-        .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${command.name}' command.`)
+        .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${command.name}' command.`)
       return;
     }
   }
@@ -156,7 +156,7 @@ NOIR.on("message", async (message) => {
   } catch (error) {
     console.error(error);
     message.channel
-      .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** There was an error executing that command.")
+      .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > There was an error executing that command.")
       .catch(console.error)
       .then((message) => {
         message.delete({

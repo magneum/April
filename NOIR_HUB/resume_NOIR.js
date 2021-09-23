@@ -36,7 +36,7 @@ module.exports = {
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         message.channel
-          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** is not playing anymusic yet.....`)
+          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > is not playing anymusic yet.....`)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -47,13 +47,13 @@ module.exports = {
       }
       if (!canModifyQueue(message.member)) {
         message.channel
-          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** is not playing anymusic yet.....`)
+          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > is not playing anymusic yet.....`)
         return;
       }
       if (!queue.playing) {
         queue.playing = true;
         queue.connection.dispatcher.resume();
-        queue.textChannel.send(`${message.author}\n\n**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** ▶ Resumed the music!`)
+        queue.textChannel.send(`${message.author}\n\n**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > ▶ Resumed the music!`)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -63,7 +63,7 @@ module.exports = {
         return;
       }
       message.channel
-        .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** The queue is not paused.`)
+        .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > The queue is not paused.`)
         .catch(console.error)
         .then((message) => {
           message.delete({

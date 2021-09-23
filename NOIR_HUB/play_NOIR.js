@@ -47,7 +47,7 @@ module.exports = {
       const serverQueue = message.client.queue.get(message.guild.id);
       if (!channel) {
         message.channel
-          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** You need to join a voice channel first!")
+          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > You need to join a voice channel first!")
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -58,7 +58,7 @@ module.exports = {
       }
       if (serverQueue && channel !== message.guild.me.voice.channel) {
         message.channel
-          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** You must be in the same channel as ${message.client.user}`)
+          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > You must be in the same channel as ${message.client.user}`)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -82,12 +82,12 @@ module.exports = {
       const permissions = channel.permissionsFor(message.client.user);
       if (!permissions.has(`CONNECT`)) {
         message.channel
-          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Cannot connect to voice channel, missing permissions")
+          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Cannot connect to voice channel, missing permissions")
         return;
       }
       if (!permissions.has(`SPEAK`)) {
         message.channel
-          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** I cannot speak in this voice channel, make sure I have the proper permissions!")
+          .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > I cannot speak in this voice channel, make sure I have the proper permissions!")
         return;
       }
       const url = args[0];
@@ -107,7 +107,7 @@ module.exports = {
               return;
             } else {
               message.channel
-                .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Audio Not Found")
+                .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Audio Not Found")
                 .catch(console.error)
                 .then((message) => {
                   message.delete({
@@ -130,7 +130,7 @@ module.exports = {
           return;
         }
         message.channel
-          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Following url redirection...`)
+          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Following url redirection...`)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -194,7 +194,7 @@ module.exports = {
           const results = await youtube.searchVideos(search, 1, { part: `snippet` });
           if (!results.length) {
             message.channel
-              .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Audio Not Found")
+              .send("**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Audio Not Found")
               .catch(console.error)
               .then((message) => {
                 message.delete({
@@ -224,7 +224,7 @@ module.exports = {
       }
       if (serverQueue) {
         serverQueue.songs.push(song);
-        serverQueue.textChannel.send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** ${song.title}\n_has been added to the queue by_ ${message.author}\n\n`)
+        serverQueue.textChannel.send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > ${song.title}\n_has been added to the queue by_ ${message.author}\n\n`)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -244,7 +244,7 @@ module.exports = {
         message.client.queue.delete(message.guild.id);
         await channel.leave();
         message.channel
-          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️**Noir** Could not join the channel: ${error}`)
+          .send(`**🦋=======  𝗡𝗢𝗜𝗥  ======= 🦋**\n\n⚜️Noir > Could not join the channel: ${error}`)
           .catch(console.error)
           .then((message) => {
             message.delete({
