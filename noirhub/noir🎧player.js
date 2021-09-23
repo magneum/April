@@ -107,7 +107,7 @@ Error: ${error}`);
             });
         dispatcher.setVolumeLogarithmic(queue.volume / 100);
         try {
-            var playingMessage = await queue.textChannel.send(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\n🍧**Title**: ${song.title}\n⛓**Link**:  ${song.url}`);
+            var playingMessage = await queue.textChannel.send(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n𝘋𝘪𝘳𝘦𝘤𝘵𝘭𝘺 𝘱𝘭𝘢𝘺𝘪𝘯𝘨 𝘜𝘴𝘪𝘯𝘨 𝘠𝘰𝘶𝘛𝘶𝘣𝘦\n🍧*Title:* **${song.title}****\n*Link:* **${song.url}**`);
             await playingMessage.react("👉🏻");
             await playingMessage.react("⏯");
             await playingMessage.react("🤫");
