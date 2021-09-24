@@ -52,7 +52,7 @@ module.exports = {
 *Get the profile picture of yours of any user's.*`
       )
       .setColor(`#32CD32`)
-      .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+      .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
     message.channel.send(HELPEMBED).catch(console.error);

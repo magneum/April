@@ -32,7 +32,7 @@ module.exports = {
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
-        .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
 
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -40,7 +40,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-_Please use the channel **noir🍀player** for any 🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋 commands._`);
+_Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
       message.channel
         .send(embedfactor)
         .catch(console.error)
@@ -60,7 +60,7 @@ _Please use the channel **noir🍀player** for any 🦋ɴᴏɪʀ🍀ᴘʟᴀʏ�
       if (!channel) {
         const embedlist1 = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -81,7 +81,7 @@ You need to join a voice channel first!`);
       if (!args.length) {
         const embedlist2 = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -102,7 +102,7 @@ You need to join a voice channel first!`);
       if (!permissions.has(`CONNECT`)) {
         const embedlist3 = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -122,7 +122,7 @@ Cannot connect to voice channel, missing permissions`);
       if (!permissions.has(`SPEAK`)) {
         const embedlist4 = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -142,7 +142,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
       if (serverQueue && channel !== message.guild.me.voice.channel) {
         const embedlist5 = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -183,7 +183,7 @@ You must be in the same channel as ${message.client.user}`);
           console.error(error);
           const embedlist6 = new MessageEmbed()
             .setColor(`#32CD32`)
-            .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+            .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
             .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
             .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -261,7 +261,7 @@ Playlist not found`);
           "**=========🦋𝗡𝗢𝗜𝗥🦋=========**\nPlaylist larger than character limit...";
       const embedlist7 = new MessageEmbed()
         .setColor(`#32CD32`)
-        .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 **User:** ${message.author}
@@ -288,7 +288,7 @@ Started a playlist`);
           await channel.leave();
           const embedlist8 = new MessageEmbed()
             .setColor(`#32CD32`)
-            .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+            .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
             .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
             .setDescription(`\n\n
 **⚠️Warning⚠️** 

@@ -24,7 +24,7 @@ module.exports = {
           return;
         queue.channel.leave();
         queue.textChannel
-          .send("**🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋**\n\nLeaving voice channel...")
+          .send("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\nLeaving voice channel...")
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -33,7 +33,7 @@ module.exports = {
           });
       }, ɴᴏɪʀᴡᴀᴋᴇ);
       queue.textChannel
-        .send("**🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋**\n\n❌ Music queue ended.")
+        .send("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\n❌ Music queue ended.")
         .catch(console.error)
         .then((message) => {
           message.delete({
@@ -61,7 +61,7 @@ module.exports = {
       console.error(error);
       const embedmusic1 = new MessageEmbed()
         .setColor(`#32CD32`)
-        .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -103,7 +103,7 @@ Error: ${error}`);
     dispatcher.setVolumeLogarithmic(queue.volume / 100);
     try {
       var playingMessage = await queue.textChannel.send(
-        `**🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋**\n🔥❕𝘋𝘪𝘳𝘦𝘤𝘵𝘭𝘺 𝘴𝘵𝘳𝘦𝘢𝘮𝘪𝘯𝘨 𝘜𝘴𝘪𝘯𝘨 𝘠𝘰𝘶𝘛𝘶𝘣𝘦\n\n🔆**Title:** *${song.title}*\n🔅**Link:** *${song.url}*`
+        `**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n🔥❕𝘋𝘪𝘳𝘦𝘤𝘵𝘭𝘺 𝘴𝘵𝘳𝘦𝘢𝘮𝘪𝘯𝘨 𝘜𝘴𝘪𝘯𝘨 𝘠𝘰𝘶𝘛𝘶𝘣𝘦\n\n🔆**Title:** *${song.title}*\n🔅**Link:** *${song.url}*`
       );
       await playingMessage.react("👉🏻");
       await playingMessage.react("⏯");
@@ -131,7 +131,7 @@ Error: ${error}`);
           if (!canModifyQueue(member)) {
             const embedmusic2 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -164,7 +164,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic3 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -210,7 +210,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic4 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -260,7 +260,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic5 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -298,7 +298,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic6 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -333,7 +333,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic7 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -353,7 +353,7 @@ You need to join a voice channel first!`);
           queue.loop = !queue.loop;
           queue.textChannel
             .send(
-              `**🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋**\n\nLoop is now ${
+              `**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\nLoop is now ${
                 queue.loop ? "**Turned On**" : "**Turned Off**"
               }`
             )
@@ -369,7 +369,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic8 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** 

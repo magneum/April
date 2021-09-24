@@ -21,14 +21,14 @@ module.exports = {
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
-        .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-_Please use the channel **noir🍀player** for any 🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋 commands._`);
+_Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
       message.channel
         .send(embedfactor)
         .catch(console.error)
@@ -47,7 +47,7 @@ _Please use the channel **noir🍀player** for any 🦋ɴᴏɪʀ🍀ᴘʟᴀʏ�
       if (!queue) {
         const embedshp1 = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -67,7 +67,7 @@ There is nothing playing that I could skip for you.`);
       if (!canModifyQueue(message.member)) {
         const embedshp2 = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** 

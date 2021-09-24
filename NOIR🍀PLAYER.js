@@ -52,10 +52,10 @@ for (const file of commandFiles) {
     type: "WATCHING",
   });
   console.log(`
-🦋=======🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋=======🦋
+🦋=======ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ=======🦋
 |🦋•Bot_Name: ${ռօɨʀքʟǟʏɛʀ.user.username}
 |🦋•Bot_Os: ${os.platform().toUpperCase()}
-🦋=======🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋=======🦋`);
+🦋=======ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ=======🦋`);
 });
 ռօɨʀքʟǟʏɛʀ.on("warn", (ɴᴏɪʀ_WARN) => console.log(ɴᴏɪʀ_WARN));
 ռօɨʀքʟǟʏɛʀ.on("error", console.error);
@@ -78,13 +78,13 @@ for (const file of commandFiles) {
   );
   const embedThanks = new MessageEmbed()
     .setColor(`#32CD32`)
-    .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
     .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
     .setDescription(`\n\n
 ❤️‍🔥 **Hey there MUSIC lovers !**
 I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
-Please use the channel **noir🍀player** for any 🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋 commands.
+Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.
 
 
 :candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
@@ -115,13 +115,13 @@ Please use **!calib** once to calibrate before first use!`);
     if (message.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
       const embedcheck1 = new MessageEmbed()
         .setColor(`#32CD32`)
-        .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 𝗗𝗲𝗮𝗿 **ADMIN** 
 ᴀ channel ɴᴀᴍᴇ noir🍀player has been successfully created.
-Please use the channel for any 🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋 commands..`);
+Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`);
       message.channel.send(embedcheck1).catch(console.error);
       message.guild.channels.create("noir🍀player", {
         type: "GUILD_TEXT",
@@ -135,7 +135,7 @@ Please use the channel for any 🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋 commands..`)
     } else {
       const embedcheck2 = new MessageEmbed()
         .setColor(`#32CD32`)
-        .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
@@ -192,7 +192,7 @@ Please use the channel for any 🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋 commands..`)
       const timeLeft = (expirationTime - now) / 1000;
       const embedNoir1 = new MessageEmbed()
         .setColor(`#32CD32`)
-        .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
@@ -214,7 +214,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
     console.error(error);
     const embedNoir2 = new MessageEmbed()
       .setColor(`#32CD32`)
-      .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+      .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setDescription(`\n\n

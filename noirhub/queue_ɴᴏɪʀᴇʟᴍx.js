@@ -21,14 +21,14 @@ module.exports = {
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
-        .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-_Please use the channel **noir🍀player** for any 🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋 commands._`);
+_Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
       message.channel
         .send(embedfactor)
         .catch(console.error)
@@ -47,7 +47,7 @@ _Please use the channel **noir🍀player** for any 🦋ɴᴏɪʀ🍀ᴘʟᴀʏ�
       if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
         const embedqueue1 = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -68,7 +68,7 @@ Missing permission to manage messages or add reactions`);
       if (!queue) {
         const embedqueue2 = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -153,7 +153,7 @@ function generateQueueEmbed(message, queue) {
       .setThumbnail("https://i.postimg.cc/D0rM4dhG/image.png")
       .setColor(`#32CD32`)
       .setDescription(
-        `**🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋**\n\n⚜️**Current Song** -_[${queue[0].title}]_\n\n${info}`
+        `**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\n⚜️**Current Song** -_[${queue[0].title}]_\n\n${info}`
       );
     embeds.push(embed);
   }

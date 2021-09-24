@@ -1,11 +1,11 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="HypeVoidSoul"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 # 🦋『 ᴅɪꜱᴄᴏʀᴅ ᴍᴜꜱɪᴄ ʙᴏᴛ: NOIR🍀PLAYER 』🦋
-<p align="centre"><img  width="100%" height="100%" img src="https://github.com/HypeVoidSoul/Noir/blob/VOID/noirtem/🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋.png" /></p>
-<p align="centre"><img  width="100%" height="100%" img src="https://github.com/HypeVoidSoul/Noir/blob/VOID/noirtem/🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋.JPG" /></p>
+<p align="centre"><img  width="100%" height="100%" img src="https://github.com/HypeVoidSoul/Noir/blob/VOID/noirtem/ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ.png" /></p>
+<p align="centre"><img  width="100%" height="100%" img src="https://github.com/HypeVoidSoul/Noir/blob/VOID/noirtem/ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ.JPG" /></p>
 
 # ❓ WΉY MΛDΣ ƬΉIS BӨƬ?   
 ```sh
-🦋=======🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋=======🦋
+🦋=======ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ=======🦋
 
     💻 𝗪𝗵𝗮𝘁 𝗖𝗮𝗻 𝗕𝗼𝘁 𝗗𝗼???
 ❄️ 𝘗𝘭𝘢𝘺 𝘢𝘯𝘺 𝘮𝘶𝘴𝘪𝘤 𝘪𝘯 𝘺𝘰𝘶𝘳 discord channel. 𝘠𝘰𝘶 𝘸𝘪𝘭𝘭 𝘩𝘢𝘷𝘦 𝘵𝘰 make bot admin 𝘵𝘰 𝘶𝘴𝘦 𝘵𝘩𝘪𝘴 𝘣𝘰𝘵 𝘰𝘳 𝘨𝘦𝘵 𝘦𝘳𝘳𝘰𝘳𝘴.
@@ -21,7 +21,7 @@
 # 📂 CӨMMΛNDS
 ```sh
 📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
-🦋=======🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋=======🦋
+🦋=======ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ=======🦋
 
 • !help
 == Display all commands and descriptions.
@@ -56,7 +56,7 @@
 • !vol
 == Change volume of currently playing music.
 
-🦋=======🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋=======🦋
+🦋=======ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ=======🦋
 ```
 
 # 📜 LICΣПSΣ    

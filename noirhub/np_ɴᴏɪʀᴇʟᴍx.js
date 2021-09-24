@@ -22,14 +22,14 @@ module.exports = {
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
-        .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-_Please use the channel **noir🍀player** for any 🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋 commands._`);
+_Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
       message.channel
         .send(embedfactor)
         .catch(console.error)
@@ -48,7 +48,7 @@ _Please use the channel **noir🍀player** for any 🦋ɴᴏɪʀ🍀ᴘʟᴀʏ�
       if (!queue) {
         const embednp1 = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -72,7 +72,7 @@ Noir is not playing anymusic yet....`);
         1000;
       const left = song.duration - seek;
       let current = new MessageEmbed()
-        .setTitle("**🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋**\n*Now playing*")
+        .setTitle("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n*Now playing*")
         .setDescription(`${song.title}\n${song.url}`)
         .setColor(`#32CD32`)
         .setAuthor(message.client.user.username);

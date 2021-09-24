@@ -19,7 +19,7 @@ module.exports = {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name !== "noir🍀player") {
             const embedfactor = new MessageEmbed()
                 .setColor(`#32CD32`)
-                .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+                .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
 
 
                 .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -28,7 +28,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-_Please use the channel **noir🍀player** for any 🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋 commands._`);
+_Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
             message.channel
                 .send(embedfactor)
                 .catch(console.error)
@@ -44,7 +44,7 @@ _Please use the channel **noir🍀player** for any 🦋ɴᴏɪʀ🍀ᴘʟᴀʏ�
             if (!queue) {
                 const embedrm1 = new MessageEmbed()
                     .setColor(`#32CD32`)
-                    .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
                     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -64,7 +64,7 @@ There is no queue.`);
             if (!canModifyQueue(message.member)) {
                 const embedrm2 = new MessageEmbed()
                     .setColor(`#32CD32`)
-                    .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
                     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -84,7 +84,7 @@ You need to join a voice channel first!`);
             if (!args.length) {
                 const embedrm3 = new MessageEmbed()
                     .setColor(`#32CD32`)
-                    .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
                     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -118,7 +118,7 @@ You need to join a voice channel first!`);
                 console.log(`we got the last one`);
                 const embedrm4 = new MessageEmbed()
                     .setColor(`#32CD32`)
-                    .setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`)
+                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
                     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** 
