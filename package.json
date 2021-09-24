@@ -24,7 +24,7 @@
     "express": "*",
     "ffmpeg-static": "*",
     "lyrics-finder": "^21.0.5",
-    "nodemon": "*",
+    "nodemon": "^2.0.13",
     "simple-youtube-api": "^5.1.1",
     "soundcloud-downloader": "^1.0.0",
     "string-progressbar": "^1.0.4",
