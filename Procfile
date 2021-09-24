@@ -1,1 +1,1 @@
-worker: yarn start NOIR🍀PLAYER.js
+worker: nodemon NOIR🍀PLAYER.js
