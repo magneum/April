@@ -40,7 +40,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-_Please use the channel **noir🎧player** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+_Please use the channel **noir🎧player** for any 🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋 commands._`);
       message.channel
         .send(embedfactor)
         .catch(console.error)

@@ -84,7 +84,7 @@ for (const file of commandFiles) {
     .setDescription(`\n\n
 ❤️‍🔥 **Hey there MUSIC lovers !**
 I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
-Please use the channel **noir🎧player** for any ʏᴏᴜᴛᴜʙᴇ voice streaming
+Please use the channel **noir🎧player** for any 🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋 commands.
 
 
 :candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
@@ -121,7 +121,7 @@ Please use **!calib** once to calibrate before first use!`);
         .setDescription(`\n\n
 𝗗𝗲𝗮𝗿 **ADMIN** 
 ᴀ channel ɴᴀᴍᴇ noir🎧player has been successfully created.
-Please use the channel for any ʏᴏᴜᴛᴜʙᴇ voice streaming.`);
+Please use the channel for any 🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋 commands..`);
       message.channel.send(embedcheck1).catch(console.error);
       message.guild.channels.create("noir🎧player", {
         type: "GUILD_TEXT",

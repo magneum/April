@@ -28,7 +28,7 @@ module.exports = {
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-_Please use the channel **noir🎧player** for any ʏᴏᴜᴛᴜʙᴇ voice streaming_`);
+_Please use the channel **noir🎧player** for any 🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋 commands._`);
       message.channel
         .send(embedfactor)
         .catch(console.error)
@@ -41,18 +41,17 @@ _Please use the channel **noir🎧player** for any ʏᴏᴜᴛᴜʙᴇ voice str
     }
     let AvatarEmbed = new MessageEmbed();
     const user = message.mentions.users.first();
-
     if (!message.mentions.users.first()) {
-      AvatarEmbed.setTitle("Avatar : ");
-      AvatarEmbed.setImage(message.author.displayAvatarURL());
       AvatarEmbed.setColor(`#32CD32`);
+      AvatarEmbed.setImage(message.author.displayAvatarURL());
+      AvatarEmbed.setTitle("🔥**This is your Profile Picture**");
       AvatarEmbed.setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
       message.channel.send(AvatarEmbed);
       return;
     } else {
-      AvatarEmbed.setTitle("Avatar : ");
-      AvatarEmbed.setImage(user.displayAvatarURL());
       AvatarEmbed.setColor(`#32CD32`);
+      AvatarEmbed.setImage(user.displayAvatarURL());
+      AvatarEmbed.setTitle(`🔥**This is {user}'s Profile Picture**`);
       AvatarEmbed.setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
       message.channel.send(AvatarEmbed);
       return;
