@@ -16,7 +16,7 @@ module.exports = {
   cooldown: 3,
   execute(message) {
     if (
-      message.content.startsWith(ʙᴏᴛꜰɪx + "prf") &&
+      message.content.startsWith(ʙᴏᴛꜰɪx + "pfp") &&
       message.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
@@ -39,24 +39,30 @@ _Please use the channel **noir🍀player** for any 🦋ɴᴏɪʀ🍀ᴘʟᴀʏ�
         });
       return;
     }
-    let AvatarEmbed = new MessageEmbed();
-    const user = message.mentions.users.first();
-    if (!message.mentions.users.first()) {
-      AvatarEmbed.setColor(`#32CD32`);
-      AvatarEmbed.setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`);
-      AvatarEmbed.setImage(message.author.displayAvatarURL());
-      AvatarEmbed.setDescription("🔥This is **your** Profile Picture");
-      AvatarEmbed.setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
-      message.channel.send(AvatarEmbed);
-      return;
-    } else {
-      AvatarEmbed.setColor(`#32CD32`);
-      AvatarEmbed.setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`);
-      AvatarEmbed.setImage(user.displayAvatarURL());
-      AvatarEmbed.setDescription(`🔥This is **${user}'s** Profile Picture`);
-      AvatarEmbed.setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
-      message.channel.send(AvatarEmbed);
-      return;
+
+    if (
+      message.content.startsWith(ʙᴏᴛꜰɪx + "pfp") &&
+      message.channel.name === "noir🍀player"
+    ) {
+      let AvatarEmbed = new MessageEmbed();
+      const user = message.mentions.users.first();
+      if (!message.mentions.users.first()) {
+        AvatarEmbed.setColor(`#32CD32`);
+        AvatarEmbed.setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`);
+        AvatarEmbed.setImage(message.author.displayAvatarURL());
+        AvatarEmbed.setDescription("🔥This is **your** Profile Picture");
+        AvatarEmbed.setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
+        message.channel.send(AvatarEmbed);
+        return;
+      } else {
+        AvatarEmbed.setColor(`#32CD32`);
+        AvatarEmbed.setAuthor(`🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋`);
+        AvatarEmbed.setImage(user.displayAvatarURL());
+        AvatarEmbed.setDescription(`🔥This is **${user}'s** Profile Picture`);
+        AvatarEmbed.setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
+        message.channel.send(AvatarEmbed);
+        return;
+      }
     }
   },
 };
