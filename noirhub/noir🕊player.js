@@ -4,7 +4,7 @@
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// noir🎧player
+// noir🕊player
 // Discord Music YouTube player
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -24,7 +24,7 @@ module.exports = {
           return;
         queue.channel.leave();
         queue.textChannel
-          .send("🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\nLeaving voice channel...")
+          .send("🦋ɴᴏɪʀ🕊ᴘʟᴀʏᴇʀ🦋\n\nLeaving voice channel...")
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -33,7 +33,7 @@ module.exports = {
           });
       }, ɴᴏɪʀᴡᴀᴋᴇ);
       queue.textChannel
-        .send("🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\n❌ Music queue ended.")
+        .send("🦋ɴᴏɪʀ🕊ᴘʟᴀʏᴇʀ🦋\n\n❌ Music queue ended.")
         .catch(console.error)
         .then((message) => {
           message.delete({
@@ -61,7 +61,7 @@ module.exports = {
       console.error(error);
       const embedmusic1 = new MessageEmbed()
         .setColor(`#32CD32`)
-        .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
+        .setAuthor(`🦋ɴᴏɪʀ🕊ᴘʟᴀʏᴇʀ🦋`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -103,7 +103,7 @@ Error: ${error}`);
     dispatcher.setVolumeLogarithmic(queue.volume / 100);
     try {
       var playingMessage = await queue.textChannel.send(
-        `🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n𝘋𝘪𝘳𝘦𝘤𝘵𝘭𝘺 𝘱𝘭𝘢𝘺𝘪𝘯𝘨 𝘜𝘴𝘪𝘯𝘨 𝘠𝘰𝘶𝘛𝘶𝘣𝘦\n🍧*Title:* **${song.title}****\n*Link:* **${song.url}**`
+        `🦋ɴᴏɪʀ🕊ᴘʟᴀʏᴇʀ🦋\n𝘋𝘪𝘳𝘦𝘤𝘵𝘭𝘺 𝘱𝘭𝘢𝘺𝘪𝘯𝘨 𝘜𝘴𝘪𝘯𝘨 𝘠𝘰𝘶𝘛𝘶𝘣𝘦\n🍧*Title:* **${song.title}****\n*Link:* **${song.url}**`
       );
       await playingMessage.react("👉🏻");
       await playingMessage.react("⏯");
@@ -131,7 +131,7 @@ Error: ${error}`);
           if (!canModifyQueue(member)) {
             const embedmusic2 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
+              .setAuthor(`🦋ɴᴏɪʀ🕊ᴘʟᴀʏᴇʀ🦋`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -150,7 +150,7 @@ You need to join a voice channel first!`);
           }
           queue.connection.dispatcher.end();
           queue.textChannel
-            .send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n⏩ Skipped the song`)
+            .send(`${user}\n\n🦋🕊𝗡𝗢𝗜𝗥🕊🦋\n\n⏩ Skipped the song`)
             .catch(console.error)
             .then((message) => {
               message.delete({
@@ -164,7 +164,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic3 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
+              .setAuthor(`🦋ɴᴏɪʀ🕊ᴘʟᴀʏᴇʀ🦋`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -185,7 +185,7 @@ You need to join a voice channel first!`);
             queue.playing = !queue.playing;
             queue.connection.dispatcher.pause(true);
             queue.textChannel
-              .send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n🚦 Paused the music.`)
+              .send(`${user}\n\n🦋🕊𝗡𝗢𝗜𝗥🕊🦋\n\n🚦 Paused the music.`)
               .catch(console.error)
               .then((message) => {
                 message.delete({
@@ -196,7 +196,7 @@ You need to join a voice channel first!`);
             queue.playing = !queue.playing;
             queue.connection.dispatcher.resume();
             queue.textChannel
-              .send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n▶ Resumed the music!`)
+              .send(`${user}\n\n🦋🕊𝗡𝗢𝗜𝗥🕊🦋\n\n▶ Resumed the music!`)
               .catch(console.error)
               .then((message) => {
                 message.delete({
@@ -210,7 +210,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic4 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
+              .setAuthor(`🦋ɴᴏɪʀ🕊ᴘʟᴀʏᴇʀ🦋`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -231,7 +231,7 @@ You need to join a voice channel first!`);
           if (queue.muted) {
             queue.connection.dispatcher.setVolumeLogarithmic(0);
             queue.textChannel
-              .send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n🤫 Muted the music!`)
+              .send(`${user}\n\n🦋🕊𝗡𝗢𝗜𝗥🕊🦋\n\n🤫 Muted the music!`)
               .catch(console.error)
               .then((message) => {
                 message.delete({
@@ -243,7 +243,7 @@ You need to join a voice channel first!`);
               queue.volume / 100
             );
             queue.textChannel
-              .send(`${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n🔊 Unmuted the music!`)
+              .send(`${user}\n\n🦋🕊𝗡𝗢𝗜𝗥🕊🦋\n\n🔊 Unmuted the music!`)
               .catch(console.error)
               .then((message) => {
                 message.delete({
@@ -260,7 +260,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic5 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
+              .setAuthor(`🦋ɴᴏɪʀ🕊ᴘʟᴀʏᴇʀ🦋`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -281,7 +281,7 @@ You need to join a voice channel first!`);
           queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
           queue.textChannel
             .send(
-              `${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n🔉 Decreased the volume, the volume is now ${queue.volume}%`
+              `${user}\n\n🦋🕊𝗡𝗢𝗜𝗥🕊🦋\n\n🔉 Decreased the volume, the volume is now ${queue.volume}%`
             )
             .catch(console.error)
             .then((message) => {
@@ -298,7 +298,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic6 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
+              .setAuthor(`🦋ɴᴏɪʀ🕊ᴘʟᴀʏᴇʀ🦋`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -319,7 +319,7 @@ You need to join a voice channel first!`);
           queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
           queue.textChannel
             .send(
-              `${user}\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n🔊 Increased the volume, the volume is now ${queue.volume}%`
+              `${user}\n\n🦋🕊𝗡𝗢𝗜𝗥🕊🦋\n\n🔊 Increased the volume, the volume is now ${queue.volume}%`
             )
             .catch(console.error)
             .then((message) => {
@@ -333,7 +333,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic7 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
+              .setAuthor(`🦋ɴᴏɪʀ🕊ᴘʟᴀʏᴇʀ🦋`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -353,7 +353,7 @@ You need to join a voice channel first!`);
           queue.loop = !queue.loop;
           queue.textChannel
             .send(
-              `🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋\n\nLoop is now ${
+              `🦋ɴᴏɪʀ🕊ᴘʟᴀʏᴇʀ🦋\n\nLoop is now ${
                 queue.loop ? "**Turned On**" : "**Turned Off**"
               }`
             )
@@ -369,7 +369,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic8 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`🦋ɴᴏɪʀ🎧ᴘʟᴀʏᴇʀ🦋`)
+              .setAuthor(`🦋ɴᴏɪʀ🕊ᴘʟᴀʏᴇʀ🦋`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** 
@@ -389,7 +389,7 @@ You need to join a voice channel first!`);
           queue.songs = [];
           queue.textChannel
             .send(
-              `${user} >\n\n🦋🎧𝗡𝗢𝗜𝗥🎧🦋\n\n **: microphone: Noir =**  ❌ Stopped the music!`
+              `${user} >\n\n🦋🕊𝗡𝗢𝗜𝗥🕊🦋\n\n **: microphone: Noir =**  ❌ Stopped the music!`
             )
             .catch(console.error)
             .then((message) => {
