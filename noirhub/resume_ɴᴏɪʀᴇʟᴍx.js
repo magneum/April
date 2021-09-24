@@ -89,7 +89,7 @@ is not playing anymusic yet.....`);
         queue.connection.dispatcher.resume();
         queue.textChannel
           .send(
-            `${message.author}\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n▶ Resumed the music!`
+            `${message.author}\n\n**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n▶ Resumed the music!`
           )
           .catch(console.error)
           .then((message) => {

@@ -203,7 +203,7 @@ Playlist not found`);
       } else if (scdl.isValidUrl(args[0])) {
         if (args[0].includes(`/sets/`)) {
           message.channel.send(
-            "**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n⌛ Fetching the playlist..."
+            "**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n⌛ Fetching the playlist..."
           );
           playlist = await scdl.getSetInfo(args[0], notneeded);
           videos = playlist.tracks.map((track) => ({
@@ -258,7 +258,7 @@ Playlist not found`);
       if (playlistEmbed.description.length >= 2048)
         playlistEmbed.description =
           playlistEmbed.description.substr(0, 2007) +
-          "**=========🦋𝗡𝗢𝗜𝗥🦋=========**\nPlaylist larger than character limit...";
+          "**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\nPlaylist larger than character limit...";
       const embedlist7 = new MessageEmbed()
         .setColor(`#32CD32`)
         .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)

@@ -111,7 +111,6 @@ You must be in the same channel as ${message.client.user}`);
 **⚠️Warning⚠️** 
 **User:** ${message.author}
 
-**=========🦋𝗡𝗢𝗜𝗥🦋=========**
 Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
         message.channel
           .send(embedplay3)
@@ -332,7 +331,7 @@ Audio Not Found`);
         serverQueue.songs.push(song);
         serverQueue.textChannel
           .send(
-            `**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n${song.title}\n_has been added to the queue by_ ${message.author}\n\n`
+            `**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n${song.title}\n_has been added to the queue by_ ${message.author}\n\n`
           )
           .catch(console.error)
           .then((message) => {

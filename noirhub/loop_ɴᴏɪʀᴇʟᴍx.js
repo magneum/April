@@ -88,7 +88,7 @@ You need to join a voice channel first!`);
       queue.loop = !queue.loop;
       queue.textChannel
         .send(
-          `**=========🦋𝗡𝗢𝗜𝗥🦋=========**\nLoop is now turned ${
+          `**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\nLoop is now turned ${
             queue.loop
               ? message.channel.send("ON")
               : message.channel.send("OFF")

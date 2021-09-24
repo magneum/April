@@ -90,7 +90,7 @@ You need to join a voice channel first!`);
         queue.connection.dispatcher.pause(true);
         queue.textChannel
           .send(
-            `${message.author}\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n🚦 Paused the music.`
+            `${message.author}\n**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n🚦 Paused the music.`
           )
           .catch(console.error)
           .then((message) => {

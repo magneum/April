@@ -93,7 +93,7 @@ You need to join a voice channel first!`);
       message.client.queue.set(message.guild.id, queue);
       queue.textChannel
         .send(
-          `${message.author}>\n\n**=========🦋𝗡𝗢𝗜𝗥🦋=========**\n🔀 Shuffled the queue`
+          `${message.author}>\n\n**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n🔀 Shuffled the queue`
         )
         .catch(console.error)
         .then((message) => {
