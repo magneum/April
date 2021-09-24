@@ -153,7 +153,7 @@ function generateQueueEmbed(message, queue) {
       .setThumbnail("https://i.postimg.cc/D0rM4dhG/image.png")
       .setColor(`#32CD32`)
       .setDescription(
-        `****=========🦋𝗡𝗢𝗜𝗥🦋=========****\n\n⚜️**Current Song** -_[${queue[0].title}]_\n\n⚜️${info}`
+        `**🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋**\n\n⚜️**Current Song** -_[${queue[0].title}]_\n\n${info}`
       );
     embeds.push(embed);
   }
