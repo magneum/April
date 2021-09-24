@@ -18,4 +18,4 @@ RUN git clone https://github.com/HypeVoidSoul/Noir.git
 RUN cd Noir
 RUN yarn
 WORKDIR /Noir
-CMD nodemon ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ.js
+CMD nodemon NOIR🍀PLAYER.js

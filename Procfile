@@ -1,1 +1,1 @@
-worker: yarn start ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ.js
+worker: yarn start NOIR🍀PLAYER.js
