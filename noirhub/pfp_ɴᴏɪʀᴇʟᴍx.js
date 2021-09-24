@@ -13,8 +13,8 @@ const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir
 const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "pfp",
-  cooldown: 5,
-  execute(message, args) {
+  cooldown: 3,
+  execute(message) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "prf") &&
       message.channel.name !== "noir🕊player"
@@ -43,15 +43,17 @@ _Please use the channel **noir🕊player** for any 🦋ɴᴏɪʀ🕊ᴘʟᴀʏ�
     const user = message.mentions.users.first();
     if (!message.mentions.users.first()) {
       AvatarEmbed.setColor(`#32CD32`);
+      AvatarEmbed.setAuthor(`🦋ɴᴏɪʀ🕊ᴘʟᴀʏᴇʀ🦋`);
       AvatarEmbed.setImage(message.author.displayAvatarURL());
-      AvatarEmbed.setTitle("🔥**This is your Profile Picture**");
+      AvatarEmbed.setDescription("🔥This is **your** Profile Picture");
       AvatarEmbed.setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
       message.channel.send(AvatarEmbed);
       return;
     } else {
       AvatarEmbed.setColor(`#32CD32`);
+      AvatarEmbed.setAuthor(`🦋ɴᴏɪʀ🕊ᴘʟᴀʏᴇʀ🦋`);
       AvatarEmbed.setImage(user.displayAvatarURL());
-      AvatarEmbed.setTitle(`🔥**This is {user}'s Profile Picture**`);
+      AvatarEmbed.setDescription(`🔥This is **${user}'s** Profile Picture`);
       AvatarEmbed.setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
       message.channel.send(AvatarEmbed);
       return;

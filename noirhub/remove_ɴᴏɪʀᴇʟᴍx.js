@@ -14,6 +14,7 @@ const pattern = /^[0-9]{1,2}(\s*,\s*[0-9]{1,2})*$/;
 const { MessageEmbed } = require("discord.js");
 module.exports = {
     name: "remove",
+    cooldown: 3,
     execute(message, args) {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name !== "noir🕊player") {
             const embedfactor = new MessageEmbed()

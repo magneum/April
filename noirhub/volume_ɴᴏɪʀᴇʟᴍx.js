@@ -13,6 +13,7 @@ const { canModifyQueue, ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require(
 const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "vol",
+  cooldown: 3,
   execute(message, args) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "vol") &&

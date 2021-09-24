@@ -13,6 +13,7 @@ const { MessageEmbed } = require("discord.js");
 const { ʙᴏᴛꜰɪx } = require("../noirtem/noir_env");
 module.exports = {
   name: "noir",
+  cooldown: 3,
   execute(message) {
     let NOIREMBED = new MessageEmbed()
       .setDescription(

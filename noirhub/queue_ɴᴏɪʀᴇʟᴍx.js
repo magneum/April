@@ -13,7 +13,7 @@ const { MessageEmbed } = require("discord.js");
 const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
 module.exports = {
   name: "queue",
-  cooldown: 5,
+  cooldown: 3,
   async execute(message) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "queue") &&

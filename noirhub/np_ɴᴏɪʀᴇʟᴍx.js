@@ -14,6 +14,7 @@ const { splitBar } = require("string-progressbar");
 const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
 module.exports = {
   name: "np",
+  cooldown: 3,
   execute(message) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "np") &&

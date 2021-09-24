@@ -24,7 +24,7 @@ const scdl = require("soundcloud-downloader").default;
 const youtube = new YouTubeAPI(ɴᴏɪʀʏᴛ);
 module.exports = {
   name: "list",
-  cooldown: 5,
+  cooldown: 3,
   async execute(message, args) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "list") &&

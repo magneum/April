@@ -13,7 +13,7 @@ const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir
 const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "ping",
-  cooldown: 10,
+  cooldown: 3,
   execute(message) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "ping") &&

@@ -14,6 +14,7 @@ const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir
 const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "loop",
+  cooldown: 3,
   execute(message) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "loop") &&
