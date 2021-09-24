@@ -72,7 +72,7 @@ Noir is not playing anymusic yet....`);
         1000;
       const left = song.duration - seek;
       let current = new MessageEmbed()
-        .setTitle("🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋\n**Now playing**")
+        .setTitle("**🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋**\n*Now playing*")
         .setDescription(`${song.title}\n${song.url}`)
         .setColor(`#32CD32`)
         .setAuthor(message.client.user.username);

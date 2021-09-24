@@ -24,7 +24,7 @@ module.exports = {
           return;
         queue.channel.leave();
         queue.textChannel
-          .send("🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋\n\nLeaving voice channel...")
+          .send("**🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋**\n\nLeaving voice channel...")
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -33,7 +33,7 @@ module.exports = {
           });
       }, ɴᴏɪʀᴡᴀᴋᴇ);
       queue.textChannel
-        .send("🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋\n\n❌ Music queue ended.")
+        .send("**🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋**\n\n❌ Music queue ended.")
         .catch(console.error)
         .then((message) => {
           message.delete({
@@ -103,7 +103,7 @@ Error: ${error}`);
     dispatcher.setVolumeLogarithmic(queue.volume / 100);
     try {
       var playingMessage = await queue.textChannel.send(
-        `🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋\n𝘋𝘪𝘳𝘦𝘤𝘵𝘭𝘺 𝘱𝘭𝘢𝘺𝘪𝘯𝘨 𝘜𝘴𝘪𝘯𝘨 𝘠𝘰𝘶𝘛𝘶𝘣𝘦\n🍧*Title:* **${song.title}****\n*Link:* **${song.url}**`
+        `**🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋**\n🔥❕𝘋𝘪𝘳𝘦𝘤𝘵𝘭𝘺 𝘴𝘵𝘳𝘦𝘢𝘮𝘪𝘯𝘨 𝘜𝘴𝘪𝘯𝘨 𝘠𝘰𝘶𝘛𝘶𝘣𝘦\n\n**Title:** *${song.title}*\n**Link:** *${song.url}*`
       );
       await playingMessage.react("👉🏻");
       await playingMessage.react("⏯");
@@ -353,7 +353,7 @@ You need to join a voice channel first!`);
           queue.loop = !queue.loop;
           queue.textChannel
             .send(
-              `🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋\n\nLoop is now ${
+              `**🦋ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ🦋**\n\nLoop is now ${
                 queue.loop ? "**Turned On**" : "**Turned Off**"
               }`
             )
