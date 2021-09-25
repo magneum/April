@@ -190,7 +190,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
   // ==================================================================
   // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
   // ==================================================================
-  const [, matchedPrefix] = message.content.match(prefixRegex);
+  const [matchedPrefix] = message.content.match(prefixRegex);
   const args = message.content.slice(matchedPrefix.length).trim().split(/ +/);
   const commandName = args.shift().toLowerCase();
   const command =
@@ -204,7 +204,6 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
   if (!command) {
     return;
   }
-
   if (!cooldowns.has(command.name)) {
     cooldowns.set(command.name, new Collection());
   }
