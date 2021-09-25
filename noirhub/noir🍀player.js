@@ -58,7 +58,7 @@ module.exports = {
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
 
-Only YouTube playing is allowed`);
+Only YouTube playing/streaming is allowed`);
         noirmsg.channel
           .send(embedmusicnot)
           .catch(console.error)
