@@ -69,7 +69,6 @@ Only YouTube playing/streaming is allowed`);
           });
         return;
         // if (song.url.includes("soundcloud.com")) {
-        return;
       }
     } catch (error) {
       if (queue) {
