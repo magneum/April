@@ -33,7 +33,7 @@ module.exports = {
           });
       }, ɴᴏɪʀᴡᴀᴋᴇ);
       queue.textChannel
-        .send("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\n❌ Music queue ended.")
+        .send("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\nMusic queue ended.❌")
         .catch(console.error)
         .then((message) => {
           message.delete({
