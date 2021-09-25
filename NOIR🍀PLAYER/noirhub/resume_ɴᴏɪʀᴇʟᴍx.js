@@ -14,6 +14,9 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "resume",
   cooldown: 3,
+  // ==================================================================
+  // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+  // ==================================================================
   execute(message) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "resume") &&
@@ -38,6 +41,9 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
         });
       return;
     }
+    // ==================================================================
+    // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+    // ==================================================================
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "resume") &&
       message.channel.name === "noir🍀player"
@@ -63,6 +69,9 @@ is not playing anymusic yet.....`);
           });
         return;
       }
+      // ==================================================================
+      // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ==================================================================
       if (!canModifyQueue(message.member)) {
         const embedresume2 = new MessageEmbed()
           .setColor(`#32CD32`)
@@ -83,13 +92,14 @@ is not playing anymusic yet.....`);
           });
         return;
       }
+      // ==================================================================
+      // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ==================================================================
       if (!queue.playing) {
         queue.playing = true;
         queue.connection.dispatcher.resume();
         queue.textChannel
-          .send(
-            `${message.author}\n\n**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n▶ Resumed the music!`
-          )
+          .send(`${message.author}\n\n**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n▶ Resumed the music!`)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -98,6 +108,9 @@ is not playing anymusic yet.....`);
           });
         return;
       }
+      // ==================================================================
+      // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ==================================================================
       const embedresume3 = new MessageEmbed()
         .setColor(`#32CD32`)
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)

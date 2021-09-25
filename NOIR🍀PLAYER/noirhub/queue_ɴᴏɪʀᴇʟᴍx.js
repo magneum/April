@@ -14,6 +14,9 @@ const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir
 module.exports = {
   name: "queue",
   cooldown: 3,
+  // ==================================================================
+  // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+  // ==================================================================
   async execute(message) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "queue") &&
@@ -38,6 +41,9 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
         });
       return;
     }
+    // ==================================================================
+    // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+    // ==================================================================
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "queue") &&
       message.channel.name === "noir🍀player"
@@ -63,6 +69,9 @@ Missing permission to manage messages or add reactions`);
           });
         return;
       }
+      // ==================================================================
+      // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ==================================================================
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embedqueue2 = new MessageEmbed()
@@ -84,12 +93,18 @@ Missing permission to manage messages or add reactions`);
           });
         return;
       }
+      // ==================================================================
+      // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ==================================================================
       let currentPage = 0;
       const embeds = generateQueueEmbed(message, queue.songs);
       const queueEmbed = await message.channel.send(
         `"*Page Num:* - ${currentPage + 1}/${embeds.length}`,
         embeds[currentPage]
       );
+      // ==================================================================
+      // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ==================================================================
       try {
         await queueEmbed.react(`⬅️`);
         await queueEmbed.react(`❌`);
@@ -98,12 +113,18 @@ Missing permission to manage messages or add reactions`);
         console.error(error);
         message.channel.send(error.message).catch(console.error);
       }
+      // ==================================================================
+      // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ==================================================================
       const filter = (reaction, user) =>
         [`⬅️`, `❌`, `➡️`].includes(reaction.emoji.name) &&
         message.author.id === user.id;
       const collector = queueEmbed.createReactionCollector(filter, {
         time: 60000,
       });
+      // ==================================================================
+      // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ==================================================================
       collector.on(`collect`, async (reaction, user) => {
         try {
           if (reaction.emoji.name === `➡️`) {
@@ -115,6 +136,9 @@ Missing permission to manage messages or add reactions`);
               }),
                 embeds[currentPage];
             }
+            // ==================================================================
+            // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+            // ==================================================================
           } else if (reaction.emoji.name === `⬅️`) {
             if (currentPage !== 0) {
               --currentPage;
@@ -124,6 +148,9 @@ Missing permission to manage messages or add reactions`);
               }),
                 embeds[currentPage];
             }
+            // ==================================================================
+            // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+            // ==================================================================
           } else {
             collector.stop();
             reaction.message.reactions.removeAll();
@@ -137,7 +164,9 @@ Missing permission to manage messages or add reactions`);
     }
   },
 };
-
+// ==================================================================
+// ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+// ==================================================================
 function generateQueueEmbed(message, queue) {
   let embeds = [];
   let k = 10;

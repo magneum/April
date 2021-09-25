@@ -14,6 +14,9 @@ const { ʙᴏᴛꜰɪx } = require("../noirtem/noir_env");
 module.exports = {
   name: "noir",
   cooldown: 3,
+  // ==================================================================
+  // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+  // ==================================================================
   execute(message) {
     let NOIREMBED = new MessageEmbed()
       .setDescription(
