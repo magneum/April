@@ -7,7 +7,7 @@ require("dotenv").config();
 const { join } = require("path");
 const express = require("express");
 const { readdirSync } = require("fs");
-const { Client, Collection } = require("discord.js");
+const { Client, Collection } = require("./VoidKrate.js");
 const { ɴᴏɪʀᴇꜱ, ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("./noirtem/noir_env.js");
 const ռօɨʀքʟǟʏɛʀ = new Client({
   disableMentions: "everyone",
@@ -25,7 +25,7 @@ const PORT = process.env.PORT || 3000;
 // ==================================================================
 const ռօɨʀֆɛʀʋɛʀ = express();
 const cooldowns = new Collection();
-const { MessageEmbed } = require("discord.js");
+const { MessageEmbed } = require("./VoidKrate.js");
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const commandFiles = readdirSync(join(__dirname, "noirhub")).filter((file) =>
   file.endsWith("_ɴᴏɪʀᴇʟᴍx.js")

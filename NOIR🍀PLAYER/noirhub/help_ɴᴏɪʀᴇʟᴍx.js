@@ -1,4 +1,4 @@
-const { MessageEmbed } = require("discord.js");
+const { MessageEmbed } = require("../VoidKrate.js");
 // =============================================================================================================================
 // GNU GENERAL PUBLIC LICENSE
 // Version 3, 29 June 2007

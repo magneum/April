@@ -19,7 +19,6 @@
   "dependencies": {
     "@discordjs/opus": "^0.5.3",
     "array-move": "^3.0.1",
-    "discord.js": "^12.5.1",
     "dotenv": "*",
     "express": "*",
     "ffmpeg-static": "*",

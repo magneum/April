@@ -1,4 +1,4 @@
-const { MessageEmbed } = require("discord.js");
+const { MessageEmbed } = require("../VoidKrate.js");
 const { ʙᴏᴛꜰɪx } = require("../noirtem/noir_env");
 // =============================================================================================================================
 // GNU GENERAL PUBLIC LICENSE
