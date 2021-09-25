@@ -24,7 +24,7 @@ module.exports = {
       message.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
-        .setColor(`#32CD32`)
+        .setColor("#32CD32")
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
@@ -52,7 +52,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embednp1 = new MessageEmbed()
-          .setColor(`#32CD32`)
+          .setColor("#32CD32")
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
@@ -85,7 +85,7 @@ Noir is not playing anymusic yet....`);
       let current = new MessageEmbed()
         .setTitle("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n*Now playing*")
         .setDescription(`${song.title}\n${song.url}`)
-        .setColor(`#32CD32`)
+        .setColor("#32CD32")
         .setAuthor(message.client.user.username);
       // ==================================================================
       // ================>  𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================

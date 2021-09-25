@@ -27,7 +27,7 @@ module.exports = {
       message.channel.name !== "noir🍀player"
     ) {
       const embedfilter0 = new MessageEmbed()
-        .setColor(`#32CD32`)
+        .setColor("#32CD32")
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
@@ -52,7 +52,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
     const queue = message.client.queue.get(message.guild.id);
     if (!args.length) {
       const embedfilter1 = new MessageEmbed()
-        .setColor(`#32CD32`)
+        .setColor("#32CD32")
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
@@ -91,7 +91,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
     ) {
       if (!message.member.voice.channel) {
         const embedfilter2 = new MessageEmbed()
-          .setColor(`#32CD32`)
+          .setColor("#32CD32")
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
@@ -114,7 +114,7 @@ Please join a Voice Channel first`);
       // ==================================================================
       if (queue && channel !== message.guild.me.voice.channel) {
         const embedfilter3 = new MessageEmbed()
-          .setColor(`#32CD32`)
+          .setColor("#32CD32")
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
@@ -206,7 +206,7 @@ ID= ${message.client.user}`);
           varforfilter = 404;
           message.channel.send(
             new MessageEmbed()
-              .setColor(`#32CD32`)
+              .setColor("#32CD32")
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setTitle("Not a valid Filter, use one of those:")
@@ -238,7 +238,7 @@ ID= ${message.client.user}`);
         message.channel
           .send(
             new MessageEmbed()
-              .setColor(`#32CD32`)
+              .setColor("#32CD32")
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setAuthor(
@@ -257,7 +257,7 @@ ID= ${message.client.user}`);
         play(song, message, client, choice);
       } catch (error) {
         const embednone = new MessageEmbed()
-          .setColor(`#32CD32`)
+          .setColor("#32CD32")
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n

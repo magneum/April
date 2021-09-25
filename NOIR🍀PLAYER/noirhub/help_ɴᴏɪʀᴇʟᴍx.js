@@ -54,7 +54,7 @@ module.exports = {
 **• !pfp**
 *Get the profile picture of yours of any user's.*`
       )
-      .setColor(`#32CD32`)
+      .setColor("#32CD32")
       .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);

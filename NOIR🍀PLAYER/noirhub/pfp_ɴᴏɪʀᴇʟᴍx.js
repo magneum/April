@@ -23,7 +23,7 @@ module.exports = {
       message.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
-        .setColor(`#32CD32`)
+        .setColor("#32CD32")
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
@@ -51,7 +51,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
       let AvatarEmbed = new MessageEmbed();
       const user = message.mentions.users.first();
       if (!message.mentions.users.first()) {
-        AvatarEmbed.setColor(`#32CD32`);
+        AvatarEmbed.setColor("#32CD32");
         AvatarEmbed.setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`);
         AvatarEmbed.setImage(message.author.displayAvatarURL());
         AvatarEmbed.setDescription("🔥This is **your** Profile Picture");
@@ -59,7 +59,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
         message.channel.send(AvatarEmbed);
         return;
       } else {
-        AvatarEmbed.setColor(`#32CD32`);
+        AvatarEmbed.setColor("#32CD32");
         AvatarEmbed.setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`);
         AvatarEmbed.setImage(user.displayAvatarURL());
         AvatarEmbed.setDescription(`🔥This is **${user}'s** Profile Picture`);
