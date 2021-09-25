@@ -226,13 +226,9 @@ ID= ${message.client.user}`);
               )
           )
           .then((message) => {
-            message.delete({ timeout: 2000 });
-          });
-        message
-          .react("✅")
-          .catch(console.error)
-          .then((message) => {
-            message.delete({ timeout: 2000 });
+            message.delete({
+              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            });
           });
         play(song, message, client, choice);
       } catch (error) {
