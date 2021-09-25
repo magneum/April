@@ -53,7 +53,7 @@ module.exports = {
       } else {
         const embedmusicnot = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
+          .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -79,7 +79,7 @@ Only YouTube playing/streaming is allowed`);
       console.error(error);
       const embedmusic1 = new MessageEmbed()
         .setColor(`#32CD32`)
-        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
+        .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -150,7 +150,7 @@ Only YouTube playing/streaming is allowed`);
           if (!canModifyQueue(member)) {
             const embedmusic2 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
+              .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -183,7 +183,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic3 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
+              .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -229,7 +229,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic4 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
+              .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -279,7 +279,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic5 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
+              .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -317,7 +317,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic6 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
+              .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -352,7 +352,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic7 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
+              .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -388,7 +388,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic8 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
+              .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}

@@ -19,7 +19,7 @@ module.exports = {
         if (noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "remove") && noirmsg.channel.name !== "noir🍀player") {
             const embedfactor = new MessageEmbed()
                 .setColor(`#32CD32`)
-                .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
+                .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
 
 
                 .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -44,7 +44,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
             if (!queue) {
                 const embedrm1 = new MessageEmbed()
                     .setColor(`#32CD32`)
-                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
+                    .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
                     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -64,7 +64,7 @@ There is no queue.`);
             if (!canModifyQueue(noirmsg.member)) {
                 const embedrm2 = new MessageEmbed()
                     .setColor(`#32CD32`)
-                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
+                    .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
                     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -84,7 +84,7 @@ You need to join a voice channel first!`);
             if (!args.length) {
                 const embedrm3 = new MessageEmbed()
                     .setColor(`#32CD32`)
-                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
+                    .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
                     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -118,7 +118,7 @@ You need to join a voice channel first!`);
                 console.log(`we got the last one`);
                 const embedrm4 = new MessageEmbed()
                     .setColor(`#32CD32`)
-                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
+                    .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
                     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
