@@ -14,10 +14,10 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "pfp",
   cooldown: 3,
-  execute(message) {
+  execute(noirmsg) {
     if (
-      message.content.startsWith(ʙᴏᴛꜰɪx + "pfp") &&
-      message.channel.name !== "noir🍀player"
+      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "pfp") &&
+      noirmsg.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
@@ -25,14 +25,14 @@ module.exports = {
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
-      message.channel
+      noirmsg.channel
         .send(embedfactor)
         .catch(console.error)
-        .then((message) => {
-          message.delete({
+        .then((noirmsg) => {
+          noirmsg.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
@@ -40,18 +40,18 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
     }
 
     if (
-      message.content.startsWith(ʙᴏᴛꜰɪx + "pfp") &&
-      message.channel.name === "noir🍀player"
+      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "pfp") &&
+      noirmsg.channel.name === "noir🍀player"
     ) {
       let AvatarEmbed = new MessageEmbed();
-      const user = message.mentions.users.first();
-      if (!message.mentions.users.first()) {
+      const user = noirmsg.mentions.users.first();
+      if (!noirmsg.mentions.users.first()) {
         AvatarEmbed.setColor(`#32CD32`);
         AvatarEmbed.setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`);
-        AvatarEmbed.setImage(message.author.displayAvatarURL());
+        AvatarEmbed.setImage(noirmsg.author.displayAvatarURL());
         AvatarEmbed.setDescription("🔥This is **your** Profile Picture");
         AvatarEmbed.setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
-        message.channel.send(AvatarEmbed);
+        noirmsg.channel.send(AvatarEmbed);
         return;
       } else {
         AvatarEmbed.setColor(`#32CD32`);
@@ -59,7 +59,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
         AvatarEmbed.setImage(user.displayAvatarURL());
         AvatarEmbed.setDescription(`🔥This is **${user}'s** Profile Picture`);
         AvatarEmbed.setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
-        message.channel.send(AvatarEmbed);
+        noirmsg.channel.send(AvatarEmbed);
         return;
       }
     }

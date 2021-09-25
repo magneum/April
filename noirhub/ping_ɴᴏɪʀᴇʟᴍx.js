@@ -14,10 +14,10 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "ping",
   cooldown: 3,
-  execute(message) {
+  execute(noirmsg) {
     if (
-      message.content.startsWith(ʙᴏᴛꜰɪx + "ping") &&
-      message.channel.name !== "noir🍀player"
+      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "ping") &&
+      noirmsg.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
@@ -26,22 +26,22 @@ module.exports = {
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
-      message.channel
+      noirmsg.channel
         .send(embedfactor)
         .catch(console.error)
-        .then((message) => {
-          message.delete({
+        .then((noirmsg) => {
+          noirmsg.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
       return;
     }
     if (
-      message.content.startsWith(ʙᴏᴛꜰɪx + "ping") &&
-      message.channel.name === "noir🍀player"
+      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "ping") &&
+      noirmsg.channel.name === "noir🍀player"
     ) {
       const embedping = new MessageEmbed()
         .setColor(`#32CD32`)
@@ -49,14 +49,14 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
 
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**User:** ${message.author}
+**User:** ${noirmsg.author}
 
-⌛️Average ping of noir's Server **${Math.round(message.client.ws.ping)}ms**`);
-      message.channel
+⌛️Average ping of noir's Server **${Math.round(noirmsg.client.ws.ping)}ms**`);
+      noirmsg.channel
         .send(embedping)
         .catch(console.error)
-        .then((message) => {
-          message.delete({
+        .then((noirmsg) => {
+          noirmsg.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });

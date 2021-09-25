@@ -15,10 +15,10 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "loop",
   cooldown: 3,
-  execute(message) {
+  execute(noirmsg) {
     if (
-      message.content.startsWith(ʙᴏᴛꜰɪx + "loop") &&
-      message.channel.name !== "noir🍀player"
+      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "loop") &&
+      noirmsg.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
@@ -26,57 +26,57 @@ module.exports = {
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
-      message.channel
+      noirmsg.channel
         .send(embedfactor)
         .catch(console.error)
-        .then((message) => {
-          message.delete({
+        .then((noirmsg) => {
+          noirmsg.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
       return;
     }
     if (
-      message.content.startsWith(ʙᴏᴛꜰɪx + "loop") &&
-      message.channel.name === "noir🍀player"
+      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "loop") &&
+      noirmsg.channel.name === "noir🍀player"
     ) {
-      const queue = message.client.queue.get(message.guild.id);
+      const queue = noirmsg.client.queue.get(noirmsg.guild.id);
       if (!queue) {
         const embedloopno1 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 Noir is not playing anymusic yet.....`);
-        message.channel
+        noirmsg.channel
           .send(embedloopno1)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
-      if (!canModifyQueue(message.member)) {
+      if (!canModifyQueue(noirmsg.member)) {
         const embedloopno2 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 You need to join a voice channel first!`);
-        message.channel
+        noirmsg.channel
           .send(embedloopno2)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -87,13 +87,13 @@ You need to join a voice channel first!`);
         .send(
           `**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\nLoop is now turned ${
             queue.loop
-              ? message.channel.send("ON")
-              : message.channel.send("OFF")
+              ? noirmsg.channel.send("ON")
+              : noirmsg.channel.send("OFF")
           }**`
         )
         .catch(console.error)
-        .then((message) => {
-          message.delete({
+        .then((noirmsg) => {
+          noirmsg.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });

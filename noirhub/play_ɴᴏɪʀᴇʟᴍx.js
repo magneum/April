@@ -31,10 +31,10 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "play",
   cooldown: 3,
-  async execute(message, args) {
+  async execute(noirmsg, args) {
     if (
-      message.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
-      message.channel.name !== "noir🍀player"
+      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
+      noirmsg.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
@@ -42,14 +42,14 @@ module.exports = {
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
-      message.channel
+      noirmsg.channel
         .send(embedfactor)
         .catch(console.error)
-        .then((message) => {
-          message.delete({
+        .then((noirmsg) => {
+          noirmsg.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
@@ -61,59 +61,59 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
         .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 This link seems to be a playlist link.
 Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`);
-      message.channel
+      noirmsg.channel
         .send(embedplay1)
         .catch(console.error)
-        .then((message) => {
-          message.delete({
+        .then((noirmsg) => {
+          noirmsg.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
       return;
     }
     if (
-      message.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
-      message.channel.name === "noir🍀player"
+      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
+      noirmsg.channel.name === "noir🍀player"
     ) {
-      const { channel } = message.member.voice;
-      const serverQueue = message.client.queue.get(message.guild.id);
+      const { channel } = noirmsg.member.voice;
+      const serverQueue = noirmsg.client.queue.get(noirmsg.guild.id);
       if (!channel) {
         const embedplay1 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 You need to join a voice channel first!`);
-        message.channel
+        noirmsg.channel
           .send(embedplay1)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
-      if (serverQueue && channel !== message.guild.me.voice.channel) {
+      if (serverQueue && channel !== noirmsg.guild.me.voice.channel) {
         const embedplay2 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
-You must be in the same channel as ${message.client.user}`);
-        message.channel
+You must be in the same channel as ${noirmsg.client.user}`);
+        noirmsg.channel
           .send(embedplay2)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -126,34 +126,34 @@ You must be in the same channel as ${message.client.user}`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
-        message.channel
+        noirmsg.channel
           .send(embedplay3)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
-      const permissions = channel.permissionsFor(message.client.user);
+      const permissions = channel.permissionsFor(noirmsg.client.user);
       if (!permissions.has(`CONNECT`)) {
         const embedplay3 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 Cannot connect to voice channel, missing permissions`);
-        message.channel
+        noirmsg.channel
           .send(embedplay3)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -165,14 +165,14 @@ Cannot connect to voice channel, missing permissions`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`);
-        message.channel
+        noirmsg.channel
           .send(embedplay3)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -182,7 +182,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
       const search = args.join(` `);
       const urlValid = ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0]);
       if (!ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0]) && ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
-        message.client.commands.get(`list`).execute(message, args);
+        noirmsg.client.commands.get(`list`).execute(noirmsg, args);
         return;
       } else if (scdl.isValidUrl(url) && url.includes(`/sets/`)) {
         return;
@@ -191,9 +191,9 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
         try {
           https.get(url, function (res) {
             if (res.statusCode == `302`) {
-              message.client.commands
+              noirmsg.client.commands
                 .get(`play`)
-                .execute(message, [res.headers.location]);
+                .execute(noirmsg, [res.headers.location]);
               return;
             } else {
               const embedplay4 = new MessageEmbed()
@@ -201,14 +201,14 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
                 .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
                 .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                 .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 Audio Not Found`);
-              message.channel
+              noirmsg.channel
                 .send(embedplay4)
                 .catch(console.error)
-                .then((message) => {
-                  message.delete({
+                .then((noirmsg) => {
+                  noirmsg.delete({
                     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                   });
                 });
@@ -217,11 +217,11 @@ Audio Not Found`);
           });
         } catch (error) {
           console.error(error);
-          message.channel
-            .send(error.message)
+          noirmsg.channel
+            .send(error.noirmsg)
             .catch(console.error)
-            .then((message) => {
-              message.delete({
+            .then((noirmsg) => {
+              noirmsg.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -232,21 +232,21 @@ Audio Not Found`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 Following url redirection...`);
-        message.channel
+        noirmsg.channel
           .send(embedplay5)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
       const queueConstruct = {
-        textChannel: message.channel,
+        textChannel: noirmsg.channel,
         channel,
         connection: null,
         songs: [],
@@ -267,11 +267,11 @@ Following url redirection...`);
           };
         } catch (error) {
           console.error(error);
-          return message.channel
-            .send(error.message)
+          return noirmsg.channel
+            .send(error.noirmsg)
             .catch(console.error)
-            .then((message) => {
-              message.delete({
+            .then((noirmsg) => {
+              noirmsg.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -286,11 +286,11 @@ Following url redirection...`);
           };
         } catch (error) {
           console.error(error);
-          return message.channel
-            .send(error.message)
+          return noirmsg.channel
+            .send(error.noirmsg)
             .catch(console.error)
-            .then((message) => {
-              message.delete({
+            .then((noirmsg) => {
+              noirmsg.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -307,14 +307,14 @@ Following url redirection...`);
 
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 Audio Not Found`);
-            message.channel
+            noirmsg.channel
               .send(embedplay6)
               .catch(console.error)
-              .then((message) => {
-                message.delete({
+              .then((noirmsg) => {
+                noirmsg.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -328,11 +328,11 @@ Audio Not Found`);
           };
         } catch (error) {
           console.error(error);
-          message.channel
-            .send(error.message)
+          noirmsg.channel
+            .send(error.noirmsg)
             .catch(console.error)
-            .then((message) => {
-              message.delete({
+            .then((noirmsg) => {
+              noirmsg.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -343,39 +343,39 @@ Audio Not Found`);
         serverQueue.songs.push(song);
         serverQueue.textChannel
           .send(
-            `**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n${song.title}\n_has been added to the queue by_ ${message.author}\n\n`
+            `**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n${song.title}\n_has been added to the queue by_ ${noirmsg.author}\n\n`
           )
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
       queueConstruct.songs.push(song);
-      message.client.queue.set(message.guild.id, queueConstruct);
+      noirmsg.client.queue.set(noirmsg.guild.id, queueConstruct);
       try {
         queueConstruct.connection = await channel.join();
         await queueConstruct.connection.voice.setSelfDeaf(true);
-        play(queueConstruct.songs[0], message);
+        play(queueConstruct.songs[0], noirmsg);
       } catch (error) {
         console.error(error);
-        message.client.queue.delete(message.guild.id);
+        noirmsg.client.queue.delete(noirmsg.guild.id);
         await channel.leave();
         const embedplay7 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 Could not join the channel: ${error}`);
-        message.channel
+        noirmsg.channel
           .send(embedplay7)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });

@@ -14,10 +14,10 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "skipto",
   cooldown: 3,
-  execute(message, args) {
+  execute(noirmsg, args) {
     if (
-      message.content.startsWith(ʙᴏᴛꜰɪx + "skipto") &&
-      message.channel.name !== "noir🍀player"
+      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "skipto") &&
+      noirmsg.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
@@ -25,22 +25,22 @@ module.exports = {
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
-      message.channel
+      noirmsg.channel
         .send(embedfactor)
         .catch(console.error)
-        .then((message) => {
-          message.delete({
+        .then((noirmsg) => {
+          noirmsg.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
       return;
     }
     if (
-      message.content.startsWith(ʙᴏᴛꜰɪx + "skipto") &&
-      message.channel.name === "noir🍀player"
+      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "skipto") &&
+      noirmsg.channel.name === "noir🍀player"
     ) {
       if (!args.length || isNaN(args[0])) {
         const embedskpto1 = new MessageEmbed()
@@ -48,53 +48,53 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 ⚓️**usage:**${ʙᴏᴛꜰɪx}{name} <Queue Number>`);
-        message.channel
+        noirmsg.channel
           .send(embedskpto1)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
-      const queue = message.client.queue.get(message.guild.id);
+      const queue = noirmsg.client.queue.get(noirmsg.guild.id);
       if (!queue) {
         const embedskpto2 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 There is nothing playing that I could skip for you.`);
-        message.channel
+        noirmsg.channel
           .send(embedskpto2)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
-      if (!canModifyQueue(message.member)) {
+      if (!canModifyQueue(noirmsg.member)) {
         const embedskpto3 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 You need to join a voice channel first!`);
-        message.channel
+        noirmsg.channel
           .send(embedskpto3)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -106,14 +106,14 @@ You need to join a voice channel first!`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 There is nothing playing that I could skip for you.`);
-        message.channel
+        noirmsg.channel
           .send(embedshp1)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -130,11 +130,11 @@ There is nothing playing that I could skip for you.`);
       queue.connection.dispatcher.end();
       queue.textChannel
         .send(
-          `${message.author}>\n\n**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n❌ stopped the music!`
+          `${noirmsg.author}>\n\n**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n❌ stopped the music!`
         )
         .catch(console.error)
-        .then((message) => {
-          message.delete({
+        .then((noirmsg) => {
+          noirmsg.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });

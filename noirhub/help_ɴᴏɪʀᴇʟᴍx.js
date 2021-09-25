@@ -12,7 +12,7 @@
 const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "help",
-  execute(message) {
+  execute(noirmsg) {
     let HELPEMBED = new MessageEmbed()
       .setDescription(
         `📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪n
@@ -55,7 +55,7 @@ module.exports = {
       .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
-    message.channel.send(HELPEMBED).catch(console.error);
+    noirmsg.channel.send(HELPEMBED).catch(console.error);
     return;
   },
 };

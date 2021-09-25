@@ -14,7 +14,7 @@ const { ʙᴏᴛꜰɪx } = require("../noirtem/noir_env");
 module.exports = {
   name: "noir",
   cooldown: 3,
-  execute(message) {
+  execute(noirmsg) {
     let NOIREMBED = new MessageEmbed()
       .setDescription(
         `
@@ -26,7 +26,7 @@ module.exports = {
       .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
-    message.channel.send(NOIREMBED).catch(console.error);
+    noirmsg.channel.send(NOIREMBED).catch(console.error);
     return;
   },
 };

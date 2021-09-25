@@ -14,10 +14,10 @@ const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir
 module.exports = {
   name: "queue",
   cooldown: 3,
-  async execute(message) {
+  async execute(noirmsg) {
     if (
-      message.content.startsWith(ʙᴏᴛꜰɪx + "queue") &&
-      message.channel.name !== "noir🍀player"
+      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "queue") &&
+      noirmsg.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
@@ -25,66 +25,66 @@ module.exports = {
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
-      message.channel
+      noirmsg.channel
         .send(embedfactor)
         .catch(console.error)
-        .then((message) => {
-          message.delete({
+        .then((noirmsg) => {
+          noirmsg.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
       return;
     }
     if (
-      message.content.startsWith(ʙᴏᴛꜰɪx + "queue") &&
-      message.channel.name === "noir🍀player"
+      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "queue") &&
+      noirmsg.channel.name === "noir🍀player"
     ) {
-      const permissions = message.channel.permissionsFor(message.client.user);
+      const permissions = noirmsg.channel.permissionsFor(noirmsg.client.user);
       if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
         const embedqueue1 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 Missing permission to manage messages or add reactions`);
-        message.channel
+        noirmsg.channel
           .send(embedqueue1)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
-      const queue = message.client.queue.get(message.guild.id);
+      const queue = noirmsg.client.queue.get(noirmsg.guild.id);
       if (!queue) {
         const embedqueue2 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 ❌ Nothing playing in this server`);
-        message.channel
+        noirmsg.channel
           .send(embedqueue2)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
       let currentPage = 0;
-      const embeds = generateQueueEmbed(message, queue.songs);
-      const queueEmbed = await message.channel.send(
+      const embeds = generateQueueEmbed(noirmsg, queue.songs);
+      const queueEmbed = await noirmsg.channel.send(
         `"*Page Num:* - ${currentPage + 1}/${embeds.length}`,
         embeds[currentPage]
       );
@@ -94,11 +94,11 @@ Missing permission to manage messages or add reactions`);
         await queueEmbed.react(`➡️`);
       } catch (error) {
         console.error(error);
-        message.channel.send(error.message).catch(console.error);
+        noirmsg.channel.send(error.noirmsg).catch(console.error);
       }
       const filter = (reaction, user) =>
         [`⬅️`, `❌`, `➡️`].includes(reaction.emoji.name) &&
-        message.author.id === user.id;
+        noirmsg.author.id === user.id;
       const collector = queueEmbed.createReactionCollector(filter, {
         time: 60000,
       });
@@ -124,19 +124,19 @@ Missing permission to manage messages or add reactions`);
             }
           } else {
             collector.stop();
-            reaction.message.reactions.removeAll();
+            reaction.noirmsg.reactions.removeAll();
           }
-          await reaction.users.remove(message.author.id);
+          await reaction.users.remove(noirmsg.author.id);
         } catch (error) {
           console.error(error);
-          return message.channel.send(error.message).catch(console.error);
+          return noirmsg.channel.send(error.noirmsg).catch(console.error);
         }
       });
     }
   },
 };
 
-function generateQueueEmbed(message, queue) {
+function generateQueueEmbed(noirmsg, queue) {
   let embeds = [];
   let k = 10;
   for (let i = 0; i < queue.length; i += 10) {

@@ -16,18 +16,18 @@ const {
   ɴᴏɪʀᴄʟᴇᴀɴᴇʀ,
 } = require("../noirtem/noir_env");
 module.exports = {
-  async play(song, message) {
-    const queue = message.client.queue.get(message.guild.id);
+  async play(song, noirmsg) {
+    const queue = noirmsg.client.queue.get(noirmsg.guild.id);
     if (!song) {
       setTimeout(function () {
-        if (queue.connection.dispatcher && message.guild.me.voice.channel)
+        if (queue.connection.dispatcher && noirmsg.guild.me.voice.channel)
           return;
         queue.channel.leave();
         queue.textChannel
           .send("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\nLeaving voice channel...")
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -35,12 +35,12 @@ module.exports = {
       queue.textChannel
         .send("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\nMusic queue ended.❌")
         .catch(console.error)
-        .then((message) => {
-          message.delete({
+        .then((noirmsg) => {
+          noirmsg.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
-      message.client.queue.delete(message.guild.id);
+      noirmsg.client.queue.delete(noirmsg.guild.id);
       return;
     }
     let stream = null;
@@ -56,7 +56,7 @@ module.exports = {
     } catch (error) {
       if (queue) {
         queue.songs.shift();
-        module.exports.play(queue.songs[0], message);
+        module.exports.play(queue.songs[0], noirmsg);
       }
       console.error(error);
       const embedmusic1 = new MessageEmbed()
@@ -64,21 +64,21 @@ module.exports = {
         .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 Error: ${error}`);
-      message.channel
+      noirmsg.channel
         .send(embedmusic1)
         .catch(console.error)
-        .then((message) => {
-          message.delete({
+        .then((noirmsg) => {
+          noirmsg.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
       return;
     }
     queue.connection.on("disconnect", () =>
-      message.client.queue.delete(message.guild.id)
+      noirmsg.client.queue.delete(noirmsg.guild.id)
     );
     const dispatcher = queue.connection
       .play(stream, { type: streamType })
@@ -88,16 +88,16 @@ Error: ${error}`);
         if (queue.loop) {
           let lastSong = queue.songs.shift();
           queue.songs.push(lastSong);
-          module.exports.play(queue.songs[0], message);
+          module.exports.play(queue.songs[0], noirmsg);
         } else {
           queue.songs.shift();
-          module.exports.play(queue.songs[0], message);
+          module.exports.play(queue.songs[0], noirmsg);
         }
       })
       .on("error", (err) => {
         console.error(err);
         queue.songs.shift();
-        module.exports.play(queue.songs[0], message);
+        module.exports.play(queue.songs[0], noirmsg);
       });
     dispatcher.setVolumeLogarithmic(queue.volume / 100);
     try {
@@ -114,7 +114,7 @@ Error: ${error}`);
     } catch (error) {
       console.error(error);
     }
-    const filter = (reaction, user) => user.id !== message.client.user.id;
+    const filter = (reaction, user) => user.id !== noirmsg.client.user.id;
     var collector = playingMessage.createReactionCollector(filter, {
       time: song.duration > 0 ? song.duration * 1000 : 600000,
     });
@@ -122,7 +122,7 @@ Error: ${error}`);
       if (!queue) {
         return;
       }
-      const member = message.guild.member(user);
+      const member = noirmsg.guild.member(user);
       switch (reaction.emoji.name) {
         case "👉🏻":
           queue.playing = true;
@@ -133,14 +133,14 @@ Error: ${error}`);
               .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 You need to join a voice channel first!`);
-            message.channel
+            noirmsg.channel
               .send(embedmusic2)
               .catch(console.error)
-              .then((message) => {
-                message.delete({
+              .then((noirmsg) => {
+                noirmsg.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -150,8 +150,8 @@ You need to join a voice channel first!`);
           queue.textChannel
             .send(`${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n⏩ Skipped the song`)
             .catch(console.error)
-            .then((message) => {
-              message.delete({
+            .then((noirmsg) => {
+              noirmsg.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -165,14 +165,14 @@ You need to join a voice channel first!`);
               .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 You need to join a voice channel first!`);
-            message.channel
+            noirmsg.channel
               .send(embedmusic3)
               .catch(console.error)
-              .then((message) => {
-                message.delete({
+              .then((noirmsg) => {
+                noirmsg.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -184,8 +184,8 @@ You need to join a voice channel first!`);
             queue.textChannel
               .send(`${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n🚦 Paused the music.`)
               .catch(console.error)
-              .then((message) => {
-                message.delete({
+              .then((noirmsg) => {
+                noirmsg.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -195,8 +195,8 @@ You need to join a voice channel first!`);
             queue.textChannel
               .send(`${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n▶ Resumed the music!`)
               .catch(console.error)
-              .then((message) => {
-                message.delete({
+              .then((noirmsg) => {
+                noirmsg.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -210,14 +210,14 @@ You need to join a voice channel first!`);
               .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 You need to join a voice channel first!`);
-            message.channel
+            noirmsg.channel
               .send(embedmusic4)
               .catch(console.error)
-              .then((message) => {
-                message.delete({
+              .then((noirmsg) => {
+                noirmsg.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -229,8 +229,8 @@ You need to join a voice channel first!`);
             queue.textChannel
               .send(`${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n🤫 Muted the music!`)
               .catch(console.error)
-              .then((message) => {
-                message.delete({
+              .then((noirmsg) => {
+                noirmsg.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -241,8 +241,8 @@ You need to join a voice channel first!`);
             queue.textChannel
               .send(`${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n🔊 Unmuted the music!`)
               .catch(console.error)
-              .then((message) => {
-                message.delete({
+              .then((noirmsg) => {
+                noirmsg.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -259,14 +259,14 @@ You need to join a voice channel first!`);
               .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 You need to join a voice channel first!`);
-            message.channel
+            noirmsg.channel
               .send(embedmusic5)
               .catch(console.error)
-              .then((message) => {
-                message.delete({
+              .then((noirmsg) => {
+                noirmsg.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -279,8 +279,8 @@ You need to join a voice channel first!`);
               `${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n🔉 Decreased the volume, the volume is now ${queue.volume}%`
             )
             .catch(console.error)
-            .then((message) => {
-              message.delete({
+            .then((noirmsg) => {
+              noirmsg.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -296,14 +296,14 @@ You need to join a voice channel first!`);
               .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 You need to join a voice channel first!`);
-            message.channel
+            noirmsg.channel
               .send(embedmusic6)
               .catch(console.error)
-              .then((message) => {
-                message.delete({
+              .then((noirmsg) => {
+                noirmsg.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -316,8 +316,8 @@ You need to join a voice channel first!`);
               `${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n🔊 Increased the volume, the volume is now ${queue.volume}%`
             )
             .catch(console.error)
-            .then((message) => {
-              message.delete({
+            .then((noirmsg) => {
+              noirmsg.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -330,14 +330,14 @@ You need to join a voice channel first!`);
               .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 You need to join a voice channel first!`);
-            message.channel
+            noirmsg.channel
               .send(embedmusic7)
               .catch(console.error)
-              .then((message) => {
-                message.delete({
+              .then((noirmsg) => {
+                noirmsg.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -351,8 +351,8 @@ You need to join a voice channel first!`);
               }`
             )
             .catch(console.error)
-            .then((message) => {
-              message.delete({
+            .then((noirmsg) => {
+              noirmsg.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -365,14 +365,14 @@ You need to join a voice channel first!`);
               .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 You need to join a voice channel first!`);
-            message.channel
+            noirmsg.channel
               .send(embedmusic8)
               .catch(console.error)
-              .then((message) => {
-                message.delete({
+              .then((noirmsg) => {
+                noirmsg.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -384,8 +384,8 @@ You need to join a voice channel first!`);
               `${user} >\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n **: microphone: Noir =**  ❌ Stopped the music!`
             )
             .catch(console.error)
-            .then((message) => {
-              message.delete({
+            .then((noirmsg) => {
+              noirmsg.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });

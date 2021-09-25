@@ -15,10 +15,10 @@ const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir
 module.exports = {
   name: "np",
   cooldown: 3,
-  execute(message) {
+  execute(noirmsg) {
     if (
-      message.content.startsWith(ʙᴏᴛꜰɪx + "np") &&
-      message.channel.name !== "noir🍀player"
+      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "np") &&
+      noirmsg.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
@@ -26,38 +26,38 @@ module.exports = {
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
-      message.channel
+      noirmsg.channel
         .send(embedfactor)
         .catch(console.error)
-        .then((message) => {
-          message.delete({
+        .then((noirmsg) => {
+          noirmsg.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
       return;
     }
     if (
-      message.content.startsWith(ʙᴏᴛꜰɪx + "np") &&
-      message.channel.name === "noir🍀player"
+      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "np") &&
+      noirmsg.channel.name === "noir🍀player"
     ) {
-      const queue = message.client.queue.get(message.guild.id);
+      const queue = noirmsg.client.queue.get(noirmsg.guild.id);
       if (!queue) {
         const embednp1 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
+**⚠️Warning⚠️** ${noirmsg.author}
 
 Noir is not playing anymusic yet....`);
-        message.channel
+        noirmsg.channel
           .send(embednp1)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
+          .then((noirmsg) => {
+            noirmsg.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -73,7 +73,7 @@ Noir is not playing anymusic yet....`);
         .setTitle("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n*Now playing*")
         .setDescription(`${song.title}\n${song.url}`)
         .setColor(`#32CD32`)
-        .setAuthor(message.client.user.username);
+        .setAuthor(noirmsg.client.user.username);
       if (song.duration > 0) {
         current.addField(
           `\u200b`,
@@ -92,7 +92,7 @@ Noir is not playing anymusic yet....`);
             .substr(11, 8)}`
         );
       }
-      return message.channel.send(current);
+      return noirmsg.channel.send(current);
     }
   },
 };
