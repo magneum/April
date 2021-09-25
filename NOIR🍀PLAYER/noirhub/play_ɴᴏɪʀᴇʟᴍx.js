@@ -1,14 +1,3 @@
-// =============================================================================================================================
-// GNU GENERAL PUBLIC LICENSE
-// Version 3, 29 June 2007
-// Copyright (C) 2007 Free Software Foundation
-// Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
-// of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// noir🍀player
-// Discord Music YouTube player
-// has been licensed under GNU General Public License
-// 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
-// =============================================================================================================================
 const {
   ɴᴏɪʀʏᴛ,
   notneeded,
@@ -28,6 +17,17 @@ const not_needed_scl = /^https?:\/\/(soundcloud\.app\.goo\.gl)\/(.*)$/;
 const ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ =
   /^(https?:\/\/)?(www\.)?(m\.)?(youtube\.com|youtu\.?be)\/.+$/gi;
 const { MessageEmbed } = require("discord.js");
+// =============================================================================================================================
+// GNU GENERAL PUBLIC LICENSE
+// Version 3, 29 June 2007
+// Copyright (C) 2007 Free Software Foundation
+// Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+// of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+// noir🍀player
+// Discord Music YouTube player
+// has been licensed under GNU General Public License
+// 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+// =============================================================================================================================
 module.exports = {
   name: "play",
   cooldown: 3,
@@ -42,7 +42,7 @@ module.exports = {
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
       noirmsg.channel
@@ -62,7 +62,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
 //         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
 //         .setDescription(`\n\n
 // **⚠️Warning⚠️** ${noirmsg.author}
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // Please use only **YouTube** links..`);
 //       noirmsg.channel
@@ -83,7 +83,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This link seems to be a playlist link.
 Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`);
@@ -110,7 +110,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`);
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You need to join a voice channel first!`);
         noirmsg.channel
@@ -130,7 +130,7 @@ You need to join a voice channel first!`);
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You must be in the same channel as ${noirmsg.client.user}`);
         noirmsg.channel
@@ -151,7 +151,7 @@ You must be in the same channel as ${noirmsg.client.user}`);
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
         noirmsg.channel
@@ -172,7 +172,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Cannot connect to voice channel, missing permissions`);
         noirmsg.channel
@@ -192,7 +192,7 @@ Cannot connect to voice channel, missing permissions`);
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`);
         noirmsg.channel
@@ -229,7 +229,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
                 .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                 .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Audio Not Found`);
               noirmsg.channel
@@ -261,7 +261,7 @@ Audio Not Found`);
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Following url redirection...`);
         noirmsg.channel
@@ -336,7 +336,7 @@ Following url redirection...`);
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Audio Not Found`);
             noirmsg.channel
@@ -398,7 +398,7 @@ Audio Not Found`);
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Could not join the channel: ${error}`);
         noirmsg.channel

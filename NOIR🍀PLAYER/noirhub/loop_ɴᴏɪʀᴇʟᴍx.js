@@ -1,3 +1,6 @@
+const { canModifyQueue } = require("../noirtem/noir_env");
+const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
+const { MessageEmbed } = require("discord.js");
 // =============================================================================================================================
 // GNU GENERAL PUBLIC LICENSE
 // Version 3, 29 June 2007
@@ -9,9 +12,6 @@
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 // =============================================================================================================================
-const { canModifyQueue } = require("../noirtem/noir_env");
-const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
-const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "loop",
   cooldown: 3,
@@ -26,7 +26,7 @@ module.exports = {
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
       noirmsg.channel
@@ -51,7 +51,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Noir is not playing anymusic yet.....`);
         noirmsg.channel
@@ -71,7 +71,7 @@ Noir is not playing anymusic yet.....`);
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You need to join a voice channel first!`);
         noirmsg.channel

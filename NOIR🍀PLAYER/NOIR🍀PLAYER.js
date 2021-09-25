@@ -1,14 +1,3 @@
-// =============================================================================================================================
-// GNU GENERAL PUBLIC LICENSE
-// Version 3, 29 June 2007
-// Copyright (C) 2007 Free Software Foundation
-// Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
-// of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// noir🍀player
-// Discord Music YouTube player
-// has been licensed under GNU General Public License
-// 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
-// =============================================================================================================================
 console.clear();
 const os = require("os");
 require("dotenv").config();
@@ -52,10 +41,11 @@ for (const file of commandFiles) {
     type: "WATCHING",
   });
   console.log(`
-🦋=======ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ=======🦋
-|🦋•Bot_Name: ${ռօɨʀքʟǟʏɛʀ.user.username}
-|🦋•Bot_Os: ${os.platform().toUpperCase()}
-🦋=======ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ=======🦋`);
+|=======ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ=======|
+|•Bot_Name: ${ռօɨʀքʟǟʏɛʀ.user.username}
+|•Bot_Os: ${os.platform().toUpperCase()}
+|=======ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ=======|
+`);
 });
 ռօɨʀքʟǟʏɛʀ.on("warn", (ɴᴏɪʀ_WARN) => console.log(ɴᴏɪʀ_WARN));
 ռօɨʀքʟǟʏɛʀ.on("error", console.error);
@@ -126,7 +116,7 @@ Please use **!calib** once to calibrate before first use!`);
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 𝗗𝗲𝗮𝗿 **ADMIN** 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ᴀ channel ɴᴀᴍᴇ noir🍀player has been successfully created.
 Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`);
@@ -148,7 +138,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`);
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 𝗗𝗲𝗮𝗿 **ADMIN** 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 •|  _ᴀ channel ɴᴀᴍᴇ noir🍀player could not be created._
 •|  𝗣𝗹𝗲𝗮𝘀𝗲 𝗴𝗶𝘃𝗲 𝗺𝗲 𝘁𝗵𝗲𝘀𝗲 𝗽𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻𝘀:
@@ -206,7 +196,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`);
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
         command.name
@@ -228,7 +218,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There was an error executing that command.`);
     channel
@@ -240,18 +230,20 @@ There was an error executing that command.`);
       });
   }
 });
-// =============================================================================================================================
-// GNU GENERAL PUBLIC LICENSE
-// Version 3, 29 June 2007
-// Copyright (C) 2007 Free Software Foundation
-// Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
-// of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// noir🍀player
-// Discord Music YouTube player
-// has been licensed under GNU General Public License
-// 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
-// =============================================================================================================================
+LIC = `
+~~~~~~~~~~~~~~~~~~~~~~~NOIR🍀PLAYER~~~~~~~~~~~~~~~~~~~~~~~
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+Copyright (C) 2007 Free Software Foundation
+Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+NOIR🍀PLAYER = Discord Music YouTube player
+has been licensed under GNU General Public License
+𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+~~~~~~~~~~~~~~~~~~~~~~~NOIR🍀PLAYER~~~~~~~~~~~~~~~~~~~~~~~
+`;
+console.log(LIC);
 ռօɨʀֆɛʀʋɛʀ.listen(PORT, () => {
-  console.log(`noir🍀player = Is running on port ${PORT}`);
+  console.log(`NOIR🍀PLAYER = Is running on port ${PORT}`);
 });
 ռօɨʀքʟǟʏɛʀ.login(ɴᴏɪʀᴇꜱ);
