@@ -111,15 +111,12 @@ Please use **!calib** once to calibrate before first use!`);
 ռօɨʀքʟǟʏɛʀ.on("message", async (noirmsg) => {
   if (noirmsg.author.bot) return;
   if (!noirmsg.guild) return;
-  try {
-    noirmsg.delete();
-  } catch (e) {
-    console.log(e.noirmsg);
-    noirmsg.channel.send(e.noirmsg);
-  }
-  if (noirmsg.content.startsWith(ʙᴏᴛꜰɪx + `test`)) {
-    noirmsg.channel.send("yes");
-  }
+  // try {
+  //   noirmsg.delete();
+  // } catch (e) {
+  //   console.log(e.noirmsg);
+  //   noirmsg.channel.send(e.noirmsg);
+  // }
   if (noirmsg.content.startsWith(ʙᴏᴛꜰɪx + `calib`)) {
     if (noirmsg.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
       const embedcheck1 = new MessageEmbed()

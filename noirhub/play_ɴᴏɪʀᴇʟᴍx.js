@@ -55,6 +55,27 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
         });
       return;
     }
+//     if (!ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0]) && !ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0])) {
+//       const embednotplay = new MessageEmbed()
+//         .setColor(`#32CD32`)
+//         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+//         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+//         .setDescription(`\n\n
+// **⚠️Warning⚠️** ${noirmsg.author}
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Please use only **YouTube** links..`);
+//       noirmsg.channel
+//         .send(embednotplay)
+//         .catch(console.error)
+//         .then((noirmsg) => {
+//           noirmsg.delete({
+//             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+//           });
+//         });
+//       return;
+//     }
+
     if (ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
       const embedplay1 = new MessageEmbed()
         .setColor(`#32CD32`)
@@ -312,7 +333,6 @@ Following url redirection...`);
             const embedplay6 = new MessageEmbed()
               .setColor(`#32CD32`)
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
-
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}

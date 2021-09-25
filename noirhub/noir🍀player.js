@@ -408,7 +408,7 @@ You need to join a voice channel first!`);
           queue.songs = [];
           queue.textChannel
             .send(
-              `${user} >\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n **: microphone: Noir =**  ❌ Stopped the music!`
+              `𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹$\n${user}\n\nStopped the music!❌`
             )
             .catch(console.error)
             .then((noirmsg) => {
