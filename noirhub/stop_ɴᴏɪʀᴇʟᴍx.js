@@ -53,7 +53,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
 **⚠️Warning⚠️** ${noirmsg.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-is not playing anymusic yet.....`);
+Not playing anymusic yet.....`);
         noirmsg.channel
           .send(embedskp1)
           .catch(console.error)
