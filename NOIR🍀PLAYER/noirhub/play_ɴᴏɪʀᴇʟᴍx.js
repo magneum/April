@@ -47,7 +47,7 @@ module.exports = {
         .setDescription(
           `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`
         );
@@ -73,7 +73,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
     // .setDescription(
     //  `\n\n
     // **⚠️Warning⚠️** ${message.author}
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // =============:radio_button:=============
 
     // Please use only **YouTube** links..`);
     //       message.channel
@@ -98,7 +98,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
         .setDescription(
           `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 This link seems to be a playlist link.
 Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
@@ -131,7 +131,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 You need to join a voice channel first!`
           );
@@ -157,7 +157,7 @@ You need to join a voice channel first!`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`
@@ -184,7 +184,7 @@ ID= ${message.client.user}`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`
           );
@@ -211,7 +211,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 Cannot connect to voice channel, missing permissions`
           );
@@ -237,7 +237,7 @@ Cannot connect to voice channel, missing permissions`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`
           );
@@ -291,7 +291,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
                 .setDescription(
                   `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 Audio Not Found`
                 );
@@ -332,7 +332,7 @@ Audio Not Found`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 Following url redirection...`
           );
@@ -422,7 +422,7 @@ Following url redirection...`
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 Audio Not Found`
               );
@@ -481,14 +481,31 @@ Audio Not Found`
       queueConstruct.songs.push(song);
       message.client.queue.set(message.guild.id, queueConstruct);
       try {
-        queueConstruct.connection = await channel.join();
+        try {
+          queueConstruct.connection = await channel.join();
+          const embedplay7 = new MessageEmbed()
+            .setColor("#32CD32")
+            .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+            .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+            .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+            .setDescription(
+              `\n\n
+**User:** ${message.author}
+=============:radio_button:=============
+
+**👍 Joined \`${channel.name}\` and is 📄 bound to \`#${message.channel.name}\`**`
+            );
+          message.channel.send(embedplay7).catch(console.error);
+        } catch (e) {
+          console.log(e.message);
+        }
         await queueConstruct.connection.voice.setSelfDeaf(true);
         play(queueConstruct.songs[0], message);
       } catch (error) {
         console.error(error);
         message.client.queue.delete(message.guild.id);
         await channel.leave();
-        const embedplay7 = new MessageEmbed()
+        const embedplay8 = new MessageEmbed()
           .setColor("#32CD32")
           .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -496,12 +513,12 @@ Audio Not Found`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 Could not join the channel: *${error}*`
           );
         message.channel
-          .send(embedplay7)
+          .send(embedplay8)
           .catch(console.error)
           .then((message) => {
             message.delete({

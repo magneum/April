@@ -30,7 +30,7 @@ module.exports = {
         .setDescription(
           `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`
         );
@@ -61,7 +61,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 You need to join a voice channel first!`
           );
@@ -87,7 +87,7 @@ You need to join a voice channel first!`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 You need to join a voice channel first!`
           );
@@ -113,7 +113,7 @@ You need to join a voice channel first!`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 🔊 **The current volume is:** ${queue.volume}%`
           );
@@ -139,7 +139,7 @@ You need to join a voice channel first!`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 Please use a number to set volume.`
           );
@@ -165,7 +165,7 @@ Please use a number to set volume.`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 Please use a number between 0 - 100."`
           );

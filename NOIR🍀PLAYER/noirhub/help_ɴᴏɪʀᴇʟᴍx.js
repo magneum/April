@@ -21,6 +21,8 @@ module.exports = {
         `📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪n
 **• !help**
 *Display all commands and descriptions.*
+**• !filter**
+*Music filters when playing audio.*
 **• !loop**
 *Toggle music loop.*
 **• !lyrics**

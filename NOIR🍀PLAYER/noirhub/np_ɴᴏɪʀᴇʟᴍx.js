@@ -31,7 +31,7 @@ module.exports = {
         .setDescription(
           `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`
         );
@@ -62,7 +62,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 Noir is not playing anymusic yet....`
           );

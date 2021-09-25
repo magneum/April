@@ -30,7 +30,7 @@ module.exports = {
         .setDescription(
           `\n\n
 **⚠️Warning⚠️** ${message.author}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=============:radio_button:=============
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`
         );
