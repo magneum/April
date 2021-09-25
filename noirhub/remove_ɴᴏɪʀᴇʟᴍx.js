@@ -19,7 +19,7 @@ module.exports = {
         if (noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "remove") && noirmsg.channel.name !== "noir🍀player") {
             const embedfactor = new MessageEmbed()
                 .setColor(`#32CD32`)
-                .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+                .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
 
 
                 .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -43,7 +43,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
             if (!queue) {
                 const embedrm1 = new MessageEmbed()
                     .setColor(`#32CD32`)
-                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
                     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -62,7 +62,7 @@ There is no queue.`);
             if (!canModifyQueue(noirmsg.member)) {
                 const embedrm2 = new MessageEmbed()
                     .setColor(`#32CD32`)
-                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
                     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -81,7 +81,7 @@ You need to join a voice channel first!`);
             if (!args.length) {
                 const embedrm3 = new MessageEmbed()
                     .setColor(`#32CD32`)
-                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
                     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -114,7 +114,7 @@ You need to join a voice channel first!`);
                 console.log(`we got the last one`);
                 const embedrm4 = new MessageEmbed()
                     .setColor(`#32CD32`)
-                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+                    .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
                     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
                     .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}

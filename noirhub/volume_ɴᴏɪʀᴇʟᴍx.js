@@ -21,7 +21,7 @@ module.exports = {
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
-        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
@@ -46,7 +46,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
       if (!queue) {
         const embedskp2 = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -65,7 +65,7 @@ You need to join a voice channel first!`);
       if (!canModifyQueue(noirmsg.member)) {
         const embedvol1 = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -84,7 +84,7 @@ You need to join a voice channel first!`);
       if (!args[0]) {
         const embedvol2 = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -103,7 +103,7 @@ You need to join a voice channel first!`);
       if (isNaN(args[0])) {
         const embedvol3 = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -122,7 +122,7 @@ Please use a number to set volume.`);
       if (Number(args[0]) > 100 || Number(args[0]) < 0) {
         const embedvol4 = new MessageEmbed()
           .setColor(`#32CD32`)
-          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}

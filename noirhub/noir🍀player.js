@@ -50,7 +50,25 @@ module.exports = {
         stream = await ytdl(song.url, {
           highWaterMark: 1 << 25,
         });
-      } else if (song.url.includes("soundcloud.com")) {
+      } else {
+        const embedmusicnot = new MessageEmbed()
+          .setColor(`#32CD32`)
+          .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
+          .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+          .setDescription(`\n\n
+**⚠️Warning⚠️** ${noirmsg.author}
+
+Only YouTube playing is allowed`);
+        noirmsg.channel
+          .send(embedmusicnot)
+          .catch(console.error)
+          .then((noirmsg) => {
+            noirmsg.delete({
+              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            });
+          });
+        return;
+        // if (song.url.includes("soundcloud.com")) {
         return;
       }
     } catch (error) {
@@ -61,7 +79,7 @@ module.exports = {
       console.error(error);
       const embedmusic1 = new MessageEmbed()
         .setColor(`#32CD32`)
-        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -101,21 +119,21 @@ Error: ${error}`);
       });
     dispatcher.setVolumeLogarithmic(queue.volume / 100);
     try {
-      var playingMessage = await queue.textChannel.send(
+      var ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel.send(
         `==============================\n**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n🔥❕𝘋𝘪𝘳𝘦𝘤𝘵𝘭𝘺 𝘴𝘵𝘳𝘦𝘢𝘮𝘪𝘯𝘨 𝘜𝘴𝘪𝘯𝘨 𝘠𝘰𝘶𝘛𝘶𝘣𝘦\n==============================\n\n🔆**Title:** *${song.title}*\n🔅**Link:** *${song.url}*`
       );
-      await playingMessage.react("👉🏻");
-      await playingMessage.react("⏯");
-      await playingMessage.react("🤫");
-      await playingMessage.react("🔉");
-      await playingMessage.react("🔊");
-      await playingMessage.react("🔁");
-      await playingMessage.react("❌");
+      await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("👉🏻");
+      await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏯");
+      await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🤫");
+      await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔉");
+      await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔊");
+      await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔁");
+      await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("❌");
     } catch (error) {
       console.error(error);
     }
     const filter = (reaction, user) => user.id !== noirmsg.client.user.id;
-    var collector = playingMessage.createReactionCollector(filter, {
+    var collector = ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.createReactionCollector(filter, {
       time: song.duration > 0 ? song.duration * 1000 : 600000,
     });
     collector.on("collect", (reaction, user) => {
@@ -130,7 +148,7 @@ Error: ${error}`);
           if (!canModifyQueue(member)) {
             const embedmusic2 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -162,7 +180,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic3 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -207,7 +225,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic4 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -256,7 +274,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic5 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -293,7 +311,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic6 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -327,7 +345,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic7 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -362,7 +380,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic8 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
@@ -403,9 +421,9 @@ You need to join a voice channel first!`);
       }
     });
     collector.on("end", () => {
-      playingMessage.reactions.removeAll().catch(console.error);
-      if (playingMessage && !playingMessage.deleted) {
-        playingMessage.delete({ timeout: 3000 }).catch(console.error);
+      ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.reactions.removeAll().catch(console.error);
+      if (ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ && !ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.deleted) {
+        ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.delete({ timeout: 3000 }).catch(console.error);
       }
     });
   },
