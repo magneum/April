@@ -73,11 +73,14 @@ module.exports = {
           .setColor("#32CD32")
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-          .setDescription(`\n\n
+          .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+          .setDescription(
+            `\n\n
 **⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Only YouTube playing/streaming is allowed`);
+Only YouTube playing/streaming is allowed`
+          );
         message.channel
           .send(embedmusicnot)
           .catch(console.error)
@@ -104,12 +107,15 @@ Only YouTube playing/streaming is allowed`);
         .setColor("#32CD32")
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-        .setDescription(`\n\n
+        .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+        .setDescription(
+          `\n\n
 **⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Error:** 
-**${error}**`);
+**${error}**`
+        );
       message.channel
         .send(embedmusic1)
         .catch(console.error)
@@ -199,11 +205,14 @@ Only YouTube playing/streaming is allowed`);
               .setColor("#32CD32")
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-              .setDescription(`\n\n
+              .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+              .setDescription(
+                `\n\n
 **⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You need to join a voice channel first!`);
+You need to join a voice channel first!`
+              );
             message.channel
               .send(embedmusic2)
               .catch(console.error)
@@ -238,11 +247,14 @@ You need to join a voice channel first!`);
               .setColor("#32CD32")
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-              .setDescription(`\n\n
+              .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+              .setDescription(
+                `\n\n
 **⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You need to join a voice channel first!`);
+You need to join a voice channel first!`
+              );
             message.channel
               .send(embedmusic3)
               .catch(console.error)
@@ -293,11 +305,14 @@ You need to join a voice channel first!`);
               .setColor("#32CD32")
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-              .setDescription(`\n\n
+              .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+              .setDescription(
+                `\n\n
 **⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You need to join a voice channel first!`);
+You need to join a voice channel first!`
+              );
             message.channel
               .send(embedmusic4)
               .catch(console.error)
@@ -352,11 +367,14 @@ You need to join a voice channel first!`);
               .setColor("#32CD32")
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-              .setDescription(`\n\n
+              .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+              .setDescription(
+                `\n\n
 **⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You need to join a voice channel first!`);
+You need to join a voice channel first!`
+              );
             message.channel
               .send(embedmusic5)
               .catch(console.error)
@@ -396,11 +414,14 @@ You need to join a voice channel first!`);
               .setColor("#32CD32")
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-              .setDescription(`\n\n
+              .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+              .setDescription(
+                `\n\n
 **⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You need to join a voice channel first!`);
+You need to join a voice channel first!`
+              );
             message.channel
               .send(embedmusic6)
               .catch(console.error)
@@ -437,11 +458,14 @@ You need to join a voice channel first!`);
               .setColor("#32CD32")
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-              .setDescription(`\n\n
+              .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+              .setDescription(
+                `\n\n
 **⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You need to join a voice channel first!`);
+You need to join a voice channel first!`
+              );
             message.channel
               .send(embedmusic7)
               .catch(console.error)
@@ -479,11 +503,14 @@ You need to join a voice channel first!`);
               .setColor("#32CD32")
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-              .setDescription(`\n\n
+              .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+              .setDescription(
+                `\n\n
 **⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You need to join a voice channel first!`);
+You need to join a voice channel first!`
+              );
             message.channel
               .send(embedmusic8)
               .catch(console.error)

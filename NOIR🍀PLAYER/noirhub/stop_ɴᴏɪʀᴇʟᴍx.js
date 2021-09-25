@@ -26,11 +26,14 @@ module.exports = {
         .setColor("#32CD32")
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-        .setDescription(`\n\n
+        .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+        .setDescription(
+          `\n\n
 **⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-_Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
+_Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`
+        );
       message.channel
         .send(embedfactor)
         .catch(console.error)
@@ -54,11 +57,14 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
           .setColor("#32CD32")
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-          .setDescription(`\n\n
+          .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+          .setDescription(
+            `\n\n
 **⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Not playing anymusic yet.....`);
+Not playing anymusic yet.....`
+          );
         message.channel
           .send(embedskp1)
           .catch(console.error)
@@ -77,11 +83,14 @@ Not playing anymusic yet.....`);
           .setColor("#32CD32")
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-          .setDescription(`\n\n
+          .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+          .setDescription(
+            `\n\n
 **⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You need to join a voice channel first!`);
+You need to join a voice channel first!`
+          );
         message.channel
           .send(embedskp2)
           .catch(console.error)

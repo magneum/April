@@ -26,11 +26,14 @@ module.exports = {
         .setColor("#32CD32")
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-        .setDescription(`\n\n
+        .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+        .setDescription(
+          `\n\n
 **⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-_Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
+_Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`
+        );
       message.channel
         .send(embedfactor)
         .catch(console.error)
@@ -52,10 +55,13 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
         .setColor("#32CD32")
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-        .setDescription(`\n\n
+        .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+        .setDescription(
+          `\n\n
 **User:** ${message.author}
 
-⌛️Average ping of noir's Server **${Math.round(message.client.ws.ping)}ms**`);
+⌛️Average ping of noir's Server **${Math.round(message.client.ws.ping)}ms**`
+        );
       message.channel
         .send(embedping)
         .catch(console.error)

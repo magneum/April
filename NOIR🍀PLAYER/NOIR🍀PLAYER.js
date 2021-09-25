@@ -86,7 +86,9 @@ for (const file of commandFiles) {
     .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
     .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-    .setDescription(`\n\n
+    .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+    .setDescription(
+      `\n\n
 ❤️‍🔥 **Hey there MUSIC lovers !**
 I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
 Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.
@@ -98,7 +100,8 @@ Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more_
 ---------------------|🔺|---------------------
 :star:**ɴᴏᴛᴇ to ᴏᴡɴᴇʀ ᴀɴᴅ ᴍᴏᴅᴇʀꜱ**
 🎃**VERY VERY IMPORTANT**
-Please use **!calib** once to calibrate before first use!`);
+Please use **!calib** once to calibrate before first use!`
+    );
   channel.send(embedThanks).catch(console.error);
   return;
 });
@@ -129,12 +132,15 @@ Please use **!calib** once to calibrate before first use!`);
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-        .setDescription(`\n\n
+        .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+        .setDescription(
+          `\n\n
 𝗗𝗲𝗮𝗿 **ADMIN** 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ᴀ channel ɴᴀᴍᴇ noir🍀player has been successfully created.
-Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`);
+Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
+        );
       message.channel.send(embedcheck1).catch(console.error);
       message.guild.channels.create("noir🍀player", {
         type: "GUILD_TEXT",
@@ -151,7 +157,9 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`);
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-        .setDescription(`\n\n
+        .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+        .setDescription(
+          `\n\n
 𝗗𝗲𝗮𝗿 **ADMIN** 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -160,7 +168,8 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`);
 =𝘔𝘢𝘯𝘢𝘨𝘦𝘊𝘩𝘢𝘯𝘯𝘦𝘭
 =𝘚𝘦𝘯𝘥𝘔𝘦𝘴𝘴𝘢𝘨𝘦𝘴
 =𝘈𝘵𝘵𝘢𝘤𝘩𝘔𝘦𝘥𝘪𝘢
-=𝘌𝘮𝘣𝘦𝘥𝘴`);
+=𝘌𝘮𝘣𝘦𝘥𝘴`
+        );
       message.channel.send(embedcheck2).catch(console.error);
       console.log(`•🦋noir🍀player🦋 ©️• could not be created.`);
       return;
@@ -214,13 +223,16 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`);
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-        .setDescription(`\n\n
+        .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+        .setDescription(
+          `\n\n
 **⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
-        command.name
-      }' command.      `);
+            command.name
+          }' command.      `
+        );
       channel.send(embedNoir1).catch(console.error);
       return;
     }
@@ -239,11 +251,14 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
       .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-      .setDescription(`\n\n
+      .setFooter("𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+      .setDescription(
+        `\n\n
 **⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There was an error executing that command.`);
+There was an error executing that command.`
+      );
     channel
       .send(embedNoir2)
       .catch(console.error)
