@@ -225,14 +225,14 @@ ID= ${message.client.user}`);
                 "https://cdn.discordapp.com/emojis/769935094285860894.gif"
               )
           )
-          .then((msg) => {
-            msg.delete({ timeout: 2000 });
+          .then((message) => {
+            message.delete({ timeout: 2000 });
           });
         message
           .react("✅")
           .catch(console.error)
-          .then((msg) => {
-            msg.delete({ timeout: 2000 });
+          .then((message) => {
+            message.delete({ timeout: 2000 });
           });
         play(song, message, client, choice);
       } catch (error) {
