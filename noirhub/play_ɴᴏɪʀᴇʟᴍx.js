@@ -167,7 +167,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
       const search = args.join(` `);
       const urlValid = videoPattern.test(args[0]);
       if (!videoPattern.test(args[0]) && playlistPattern.test(args[0])) {
-        message.client.commands.get(`playlist`).execute(message, args);
+        message.client.commands.get(`list`).execute(message, args);
         return;
       } else if (scdl.isValidUrl(url) && url.includes(`/sets/`)) {
         return;
