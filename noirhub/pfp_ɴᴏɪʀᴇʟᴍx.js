@@ -21,7 +21,7 @@ module.exports = {
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
-        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
+        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
@@ -47,7 +47,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
       const user = message.mentions.users.first();
       if (!message.mentions.users.first()) {
         AvatarEmbed.setColor(`#32CD32`);
-        AvatarEmbed.setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`);
+        AvatarEmbed.setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`);
         AvatarEmbed.setImage(message.author.displayAvatarURL());
         AvatarEmbed.setDescription("🔥This is **your** Profile Picture");
         AvatarEmbed.setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
@@ -55,7 +55,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
         return;
       } else {
         AvatarEmbed.setColor(`#32CD32`);
-        AvatarEmbed.setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`);
+        AvatarEmbed.setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`);
         AvatarEmbed.setImage(user.displayAvatarURL());
         AvatarEmbed.setDescription(`🔥This is **${user}'s** Profile Picture`);
         AvatarEmbed.setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);

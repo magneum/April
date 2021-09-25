@@ -61,7 +61,7 @@ module.exports = {
       console.error(error);
       const embedmusic1 = new MessageEmbed()
         .setColor(`#32CD32`)
-        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
+        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -130,7 +130,7 @@ Error: ${error}`);
           if (!canModifyQueue(member)) {
             const embedmusic2 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -162,7 +162,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic3 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -207,7 +207,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic4 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -256,7 +256,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic5 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -293,7 +293,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic6 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -327,7 +327,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic7 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -362,7 +362,7 @@ You need to join a voice channel first!`);
           if (!canModifyQueue(member)) {
             const embedmusic8 = new MessageEmbed()
               .setColor(`#32CD32`)
-              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
+              .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ ʙʏ ʜʏᴘᴇᴠᴏɪᴅꜱᴏᴜʟl`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
 **⚠️Warning⚠️** ${message.author}
