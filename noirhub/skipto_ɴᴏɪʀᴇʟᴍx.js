@@ -25,8 +25,7 @@ module.exports = {
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
       message.channel
@@ -49,8 +48,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 ⚓️**usage:**${ʙᴏᴛꜰɪx}{name} <Queue Number>`);
         message.channel
@@ -70,8 +68,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 There is nothing playing that I could skip for you.`);
         message.channel
@@ -90,8 +87,7 @@ There is nothing playing that I could skip for you.`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 You need to join a voice channel first!`);
         message.channel
@@ -110,8 +106,7 @@ You need to join a voice channel first!`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 There is nothing playing that I could skip for you.`);
         message.channel

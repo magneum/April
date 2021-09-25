@@ -25,8 +25,7 @@ module.exports = {
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
       message.channel
@@ -50,8 +49,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 You need to join a voice channel first!`);
         message.channel
@@ -70,8 +68,7 @@ You need to join a voice channel first!`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 You need to join a voice channel first!`);
         message.channel
@@ -90,8 +87,7 @@ You need to join a voice channel first!`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 🔊 **The current volume is:** ${queue.volume}%`);
         message.channel
@@ -110,8 +106,7 @@ You need to join a voice channel first!`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 Please use a number to set volume.`);
         message.channel
@@ -130,8 +125,7 @@ Please use a number to set volume.`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 Please use a number between 0 - 100."`);
         message.channel

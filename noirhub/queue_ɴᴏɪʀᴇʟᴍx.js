@@ -25,8 +25,7 @@ module.exports = {
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
       message.channel
@@ -50,8 +49,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 Missing permission to manage messages or add reactions`);
         message.channel
@@ -71,8 +69,7 @@ Missing permission to manage messages or add reactions`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 ❌ Nothing playing in this server`);
         message.channel

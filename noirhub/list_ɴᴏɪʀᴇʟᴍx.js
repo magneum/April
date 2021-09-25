@@ -37,8 +37,7 @@ module.exports = {
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
       message.channel
@@ -63,8 +62,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 You need to join a voice channel first!`);
         message.channel
@@ -84,8 +82,7 @@ You need to join a voice channel first!`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 ⚓️**usage:**{ʙᴏᴛꜰɪx}playlist <YouTube Playlist URL | Playlist Name>`);
         message.channel
@@ -105,8 +102,7 @@ You need to join a voice channel first!`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 Cannot connect to voice channel, missing permissions`);
         message.channel
@@ -125,8 +121,7 @@ Cannot connect to voice channel, missing permissions`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`);
         message.channel
@@ -145,8 +140,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 You must be in the same channel as ${message.client.user}`);
         message.channel
@@ -186,8 +180,7 @@ You must be in the same channel as ${message.client.user}`);
             .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
             .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
             .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 Playlist not found`);
           message.channel
@@ -291,8 +284,7 @@ Started a playlist`);
             .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
             .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
             .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 Could not join the channel: ${error}`);
           message.channel

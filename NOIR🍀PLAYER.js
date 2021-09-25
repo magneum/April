@@ -196,8 +196,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`);
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
         command.name
@@ -218,8 +217,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 There was an error executing that command.`);
     channel

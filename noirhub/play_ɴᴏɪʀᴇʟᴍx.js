@@ -21,11 +21,12 @@ const ytdl = require("ytdl-core");
 const { play } = require("./noir🍀player");
 const YouTubeAPI = require("simple-youtube-api");
 const youtube = new YouTubeAPI(ɴᴏɪʀʏᴛ);
-const playlistPattern = /^.*(list=)([^#\&\?]*).*/gi;
+const ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ = /^.*(list=)([^#\&\?]*).*/gi;
 const scdl = require(`soundcloud-downloader`).default;
 const scRegex = /^https?:\/\/(soundcloud\.com)\/(.*)$/;
 const not_needed_scl = /^https?:\/\/(soundcloud\.app\.goo\.gl)\/(.*)$/;
-const videoPattern =  /^(https?:\/\/)?(www\.)?(m\.)?(youtube\.com|youtu\.?be)\/.+$/gi;
+const ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ =
+  /^(https?:\/\/)?(www\.)?(m\.)?(youtube\.com|youtu\.?be)\/.+$/gi;
 const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "play",
@@ -41,12 +42,31 @@ module.exports = {
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
       message.channel
         .send(embedfactor)
+        .catch(console.error)
+        .then((message) => {
+          message.delete({
+            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          });
+        });
+      return;
+    }
+    if (ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
+      const embedplay1 = new MessageEmbed()
+        .setColor(`#32CD32`)
+        .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
+        .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
+        .setDescription(`\n\n
+**⚠️Warning⚠️** ${message.author}
+
+This link seems to be a playlist link.
+Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`);
+      message.channel
+        .send(embedplay1)
         .catch(console.error)
         .then((message) => {
           message.delete({
@@ -67,8 +87,7 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 You need to join a voice channel first!`);
         message.channel
@@ -87,8 +106,7 @@ You need to join a voice channel first!`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 You must be in the same channel as ${message.client.user}`);
         message.channel
@@ -108,8 +126,7 @@ You must be in the same channel as ${message.client.user}`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
         message.channel
@@ -129,8 +146,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 Cannot connect to voice channel, missing permissions`);
         message.channel
@@ -149,8 +165,7 @@ Cannot connect to voice channel, missing permissions`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`);
         message.channel
@@ -165,8 +180,8 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
       }
       const url = args[0];
       const search = args.join(` `);
-      const urlValid = videoPattern.test(args[0]);
-      if (!videoPattern.test(args[0]) && playlistPattern.test(args[0])) {
+      const urlValid = ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0]);
+      if (!ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0]) && ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
         message.client.commands.get(`list`).execute(message, args);
         return;
       } else if (scdl.isValidUrl(url) && url.includes(`/sets/`)) {
@@ -186,8 +201,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
                 .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
                 .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                 .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 Audio Not Found`);
               message.channel
@@ -218,8 +232,7 @@ Audio Not Found`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 Following url redirection...`);
         message.channel
@@ -294,8 +307,7 @@ Following url redirection...`);
 
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 Audio Not Found`);
             message.channel
@@ -356,8 +368,7 @@ Audio Not Found`);
           .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 Could not join the channel: ${error}`);
         message.channel

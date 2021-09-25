@@ -64,8 +64,7 @@ module.exports = {
         .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 Error: ${error}`);
       message.channel
@@ -134,8 +133,7 @@ Error: ${error}`);
               .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 You need to join a voice channel first!`);
             message.channel
@@ -167,8 +165,7 @@ You need to join a voice channel first!`);
               .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 You need to join a voice channel first!`);
             message.channel
@@ -213,8 +210,7 @@ You need to join a voice channel first!`);
               .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 You need to join a voice channel first!`);
             message.channel
@@ -263,8 +259,7 @@ You need to join a voice channel first!`);
               .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 You need to join a voice channel first!`);
             message.channel
@@ -301,8 +296,7 @@ You need to join a voice channel first!`);
               .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 You need to join a voice channel first!`);
             message.channel
@@ -336,8 +330,7 @@ You need to join a voice channel first!`);
               .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 You need to join a voice channel first!`);
             message.channel
@@ -372,8 +365,7 @@ You need to join a voice channel first!`);
               .setAuthor(`ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** 
-**User:** ${message.author}
+**⚠️Warning⚠️** ${message.author}
 
 You need to join a voice channel first!`);
             message.channel
