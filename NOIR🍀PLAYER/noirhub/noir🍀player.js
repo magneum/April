@@ -16,18 +16,18 @@ const {
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 // =============================================================================================================================
 module.exports = {
-  async play(song, noirmsg) {
-    const queue = noirmsg.client.queue.get(noirmsg.guild.id);
+  async play(song, message) {
+    const queue = message.client.queue.get(message.guild.id);
     if (!song) {
       setTimeout(function () {
-        if (queue.connection.dispatcher && noirmsg.guild.me.voice.channel)
+        if (queue.connection.dispatcher && message.guild.me.voice.channel)
           return;
         queue.channel.leave();
         queue.textChannel
           .send("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\nLeaving voice channel...")
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -35,12 +35,12 @@ module.exports = {
       queue.textChannel
         .send("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\nMusic queue ended.❌")
         .catch(console.error)
-        .then((noirmsg) => {
-          noirmsg.delete({
+        .then((message) => {
+          message.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
-      noirmsg.client.queue.delete(noirmsg.guild.id);
+      message.client.queue.delete(message.guild.id);
       return;
     }
     let stream = null;
@@ -56,25 +56,25 @@ module.exports = {
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Only YouTube playing/streaming is allowed`);
-        noirmsg.channel
+        message.channel
           .send(embedmusicnot)
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
-        // if (song.url.includes("soundcloud.com")) {
+        // if (song.url.includes("soundcloud.com")) {}
       }
     } catch (error) {
       if (queue) {
         queue.songs.shift();
-        module.exports.play(queue.songs[0], noirmsg);
+        module.exports.play(queue.songs[0], message);
       }
       console.error(error);
       const embedmusic1 = new MessageEmbed()
@@ -82,23 +82,23 @@ Only YouTube playing/streaming is allowed`);
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Error:** 
-*${error}*`);
-      noirmsg.channel
+**${error}**`);
+      message.channel
         .send(embedmusic1)
         .catch(console.error)
-        .then((noirmsg) => {
-          noirmsg.delete({
+        .then((message) => {
+          message.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
       return;
     }
     queue.connection.on("disconnect", () =>
-      noirmsg.client.queue.delete(noirmsg.guild.id)
+      message.client.queue.delete(message.guild.id)
     );
     const dispatcher = queue.connection
       .play(stream, { type: streamType })
@@ -108,16 +108,16 @@ Only YouTube playing/streaming is allowed`);
         if (queue.loop) {
           let lastSong = queue.songs.shift();
           queue.songs.push(lastSong);
-          module.exports.play(queue.songs[0], noirmsg);
+          module.exports.play(queue.songs[0], message);
         } else {
           queue.songs.shift();
-          module.exports.play(queue.songs[0], noirmsg);
+          module.exports.play(queue.songs[0], message);
         }
       })
       .on("error", (err) => {
         console.error(err);
         queue.songs.shift();
-        module.exports.play(queue.songs[0], noirmsg);
+        module.exports.play(queue.songs[0], message);
       });
     dispatcher.setVolumeLogarithmic(queue.volume / 100);
     try {
@@ -134,7 +134,7 @@ Only YouTube playing/streaming is allowed`);
     } catch (error) {
       console.error(error);
     }
-    const filter = (reaction, user) => user.id !== noirmsg.client.user.id;
+    const filter = (reaction, user) => user.id !== message.client.user.id;
     var collector = ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.createReactionCollector(filter, {
       time: song.duration > 0 ? song.duration * 1000 : 600000,
     });
@@ -142,7 +142,7 @@ Only YouTube playing/streaming is allowed`);
       if (!queue) {
         return;
       }
-      const member = noirmsg.guild.member(user);
+      const member = message.guild.member(user);
       switch (reaction.emoji.name) {
         case "👉🏻":
           queue.playing = true;
@@ -153,15 +153,15 @@ Only YouTube playing/streaming is allowed`);
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You need to join a voice channel first!`);
-            noirmsg.channel
+            message.channel
               .send(embedmusic2)
               .catch(console.error)
-              .then((noirmsg) => {
-                noirmsg.delete({
+              .then((message) => {
+                message.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -171,8 +171,8 @@ You need to join a voice channel first!`);
           queue.textChannel
             .send(`${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n⏩ Skipped the song`)
             .catch(console.error)
-            .then((noirmsg) => {
-              noirmsg.delete({
+            .then((message) => {
+              message.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -186,15 +186,15 @@ You need to join a voice channel first!`);
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You need to join a voice channel first!`);
-            noirmsg.channel
+            message.channel
               .send(embedmusic3)
               .catch(console.error)
-              .then((noirmsg) => {
-                noirmsg.delete({
+              .then((message) => {
+                message.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -206,8 +206,8 @@ You need to join a voice channel first!`);
             queue.textChannel
               .send(`${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n🚦 Paused the music.`)
               .catch(console.error)
-              .then((noirmsg) => {
-                noirmsg.delete({
+              .then((message) => {
+                message.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -217,8 +217,8 @@ You need to join a voice channel first!`);
             queue.textChannel
               .send(`${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n▶ Resumed the music!`)
               .catch(console.error)
-              .then((noirmsg) => {
-                noirmsg.delete({
+              .then((message) => {
+                message.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -232,15 +232,15 @@ You need to join a voice channel first!`);
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You need to join a voice channel first!`);
-            noirmsg.channel
+            message.channel
               .send(embedmusic4)
               .catch(console.error)
-              .then((noirmsg) => {
-                noirmsg.delete({
+              .then((message) => {
+                message.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -252,8 +252,8 @@ You need to join a voice channel first!`);
             queue.textChannel
               .send(`${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n🤫 Muted the music!`)
               .catch(console.error)
-              .then((noirmsg) => {
-                noirmsg.delete({
+              .then((message) => {
+                message.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -264,8 +264,8 @@ You need to join a voice channel first!`);
             queue.textChannel
               .send(`${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n🔊 Unmuted the music!`)
               .catch(console.error)
-              .then((noirmsg) => {
-                noirmsg.delete({
+              .then((message) => {
+                message.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -282,15 +282,15 @@ You need to join a voice channel first!`);
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You need to join a voice channel first!`);
-            noirmsg.channel
+            message.channel
               .send(embedmusic5)
               .catch(console.error)
-              .then((noirmsg) => {
-                noirmsg.delete({
+              .then((message) => {
+                message.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -303,8 +303,8 @@ You need to join a voice channel first!`);
               `${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n🔉 Decreased the volume, the volume is now ${queue.volume}%`
             )
             .catch(console.error)
-            .then((noirmsg) => {
-              noirmsg.delete({
+            .then((message) => {
+              message.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -320,15 +320,15 @@ You need to join a voice channel first!`);
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You need to join a voice channel first!`);
-            noirmsg.channel
+            message.channel
               .send(embedmusic6)
               .catch(console.error)
-              .then((noirmsg) => {
-                noirmsg.delete({
+              .then((message) => {
+                message.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -341,8 +341,8 @@ You need to join a voice channel first!`);
               `${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n🔊 Increased the volume, the volume is now ${queue.volume}%`
             )
             .catch(console.error)
-            .then((noirmsg) => {
-              noirmsg.delete({
+            .then((message) => {
+              message.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -355,15 +355,15 @@ You need to join a voice channel first!`);
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You need to join a voice channel first!`);
-            noirmsg.channel
+            message.channel
               .send(embedmusic7)
               .catch(console.error)
-              .then((noirmsg) => {
-                noirmsg.delete({
+              .then((message) => {
+                message.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -377,8 +377,8 @@ You need to join a voice channel first!`);
               }`
             )
             .catch(console.error)
-            .then((noirmsg) => {
-              noirmsg.delete({
+            .then((message) => {
+              message.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -391,15 +391,15 @@ You need to join a voice channel first!`);
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You need to join a voice channel first!`);
-            noirmsg.channel
+            message.channel
               .send(embedmusic8)
               .catch(console.error)
-              .then((noirmsg) => {
-                noirmsg.delete({
+              .then((message) => {
+                message.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -411,8 +411,8 @@ You need to join a voice channel first!`);
               `𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹$\n${user}\n\nStopped the music!❌`
             )
             .catch(console.error)
-            .then((noirmsg) => {
-              noirmsg.delete({
+            .then((message) => {
+              message.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });

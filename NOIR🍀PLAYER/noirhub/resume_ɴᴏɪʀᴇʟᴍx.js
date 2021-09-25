@@ -14,70 +14,70 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "resume",
   cooldown: 3,
-  execute(noirmsg) {
+  execute(message) {
     if (
-      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "resume") &&
-      noirmsg.channel.name !== "noir🍀player"
+      message.content.startsWith(ʙᴏᴛꜰɪx + "resume") &&
+      message.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
-      noirmsg.channel
+      message.channel
         .send(embedfactor)
         .catch(console.error)
-        .then((noirmsg) => {
-          noirmsg.delete({
+        .then((message) => {
+          message.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
       return;
     }
     if (
-      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "resume") &&
-      noirmsg.channel.name === "noir🍀player"
+      message.content.startsWith(ʙᴏᴛꜰɪx + "resume") &&
+      message.channel.name === "noir🍀player"
     ) {
-      const queue = noirmsg.client.queue.get(noirmsg.guild.id);
+      const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embedresume1 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 is not playing anymusic yet.....`);
-        noirmsg.channel
+        message.channel
           .send(embedresume1)
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
-      if (!canModifyQueue(noirmsg.member)) {
+      if (!canModifyQueue(message.member)) {
         const embedresume2 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 is not playing anymusic yet.....`);
-        noirmsg.channel
+        message.channel
           .send(embedresume2)
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -88,11 +88,11 @@ is not playing anymusic yet.....`);
         queue.connection.dispatcher.resume();
         queue.textChannel
           .send(
-            `${noirmsg.author}\n\n**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n▶ Resumed the music!`
+            `${message.author}\n\n**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n▶ Resumed the music!`
           )
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -103,15 +103,15 @@ is not playing anymusic yet.....`);
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The queue is not paused.`);
-      noirmsg.channel
+      message.channel
         .send(embedresume3)
         .catch(console.error)
-        .then((noirmsg) => {
-          noirmsg.delete({
+        .then((message) => {
+          message.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });

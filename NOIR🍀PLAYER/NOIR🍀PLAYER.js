@@ -98,17 +98,17 @@ Please use **!calib** once to calibrate before first use!`);
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 // =============================================================================================================================
-ռօɨʀքʟǟʏɛʀ.on("message", async (noirmsg) => {
-  if (noirmsg.author.bot) return;
-  if (!noirmsg.guild) return;
+ռօɨʀքʟǟʏɛʀ.on("message", async (message) => {
+  if (message.author.bot) return;
+  if (!message.guild) return;
   // try {
-  //   noirmsg.delete();
+  //   message.delete();
   // } catch (e) {
-  //   console.log(e.noirmsg);
-  //   noirmsg.channel.send(e.noirmsg);
+  //   console.log(e.message);
+  //   message.channel.send(e.message);
   // }
-  if (noirmsg.content.startsWith(ʙᴏᴛꜰɪx + `calib`)) {
-    if (noirmsg.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
+  if (message.content.startsWith(ʙᴏᴛꜰɪx + `calib`)) {
+    if (message.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
       const embedcheck1 = new MessageEmbed()
         .setColor(`#32CD32`)
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
@@ -120,12 +120,12 @@ Please use **!calib** once to calibrate before first use!`);
 
 ᴀ channel ɴᴀᴍᴇ noir🍀player has been successfully created.
 Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`);
-      noirmsg.channel.send(embedcheck1).catch(console.error);
-      noirmsg.guild.channels.create("noir🍀player", {
+      message.channel.send(embedcheck1).catch(console.error);
+      message.guild.channels.create("noir🍀player", {
         type: "GUILD_TEXT",
         permissionOverwrites: [
           {
-            id: noirmsg.guild.roles.everyone,
+            id: message.guild.roles.everyone,
           },
         ],
       });
@@ -146,7 +146,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`);
 =𝘚𝘦𝘯𝘥𝘔𝘦𝘴𝘴𝘢𝘨𝘦𝘴
 =𝘈𝘵𝘵𝘢𝘤𝘩𝘔𝘦𝘥𝘪𝘢
 =𝘌𝘮𝘣𝘦𝘥𝘴`);
-      noirmsg.channel.send(embedcheck2).catch(console.error);
+      message.channel.send(embedcheck2).catch(console.error);
       console.log(`•🦋noir🍀player🦋 ©️• could not be created.`);
       return;
     }
@@ -165,11 +165,11 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`);
   const prefixRegex = new RegExp(
     `^(<@!?${ռօɨʀքʟǟʏɛʀ.user.id}>|${escapeRegex(ʙᴏᴛꜰɪx)})\\s*`
   );
-  if (!prefixRegex.test(noirmsg.content)) {
+  if (!prefixRegex.test(message.content)) {
     return;
   }
-  const [, matchedPrefix] = noirmsg.content.match(prefixRegex);
-  const args = noirmsg.content.slice(matchedPrefix.length).trim().split(/ +/);
+  const [, matchedPrefix] = message.content.match(prefixRegex);
+  const args = message.content.slice(matchedPrefix.length).trim().split(/ +/);
   const commandName = args.shift().toLowerCase();
   const command =
     ռօɨʀքʟǟʏɛʀ.commands.get(commandName) ||
@@ -185,8 +185,8 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`);
   const now = Date.now();
   const timestamps = cooldowns.get(command.name);
   const cooldownAmount = (command.cooldown || 1) * 1000;
-  if (timestamps.has(noirmsg.author.id)) {
-    const expirationTime = timestamps.get(noirmsg.author.id) + cooldownAmount;
+  if (timestamps.has(message.author.id)) {
+    const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
     if (now < expirationTime) {
       const timeLeft = (expirationTime - now) / 1000;
       const embedNoir1 = new MessageEmbed()
@@ -195,7 +195,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`);
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
@@ -205,10 +205,10 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
       return;
     }
   }
-  timestamps.set(noirmsg.author.id, now);
-  setTimeout(() => timestamps.delete(noirmsg.author.id), cooldownAmount);
+  timestamps.set(message.author.id, now);
+  setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
   try {
-    command.execute(noirmsg, args);
+    command.execute(message, args);
   } catch (error) {
     console.error(error);
     const embedNoir2 = new MessageEmbed()
@@ -217,15 +217,15 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There was an error executing that command.`);
     channel
       .send(embedNoir2)
       .catch(console.error)
-      .then((noirmsg) => {
-        noirmsg.delete({ timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}` });
+      .then((message) => {
+        message.delete({ timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}` });
         return;
       });
   }

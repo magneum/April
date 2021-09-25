@@ -25,51 +25,51 @@ const youtube = new YouTubeAPI(ɴᴏɪʀʏᴛ);
 module.exports = {
   name: "list",
   cooldown: 3,
-  async execute(noirmsg, args) {
+  async execute(message, args) {
     if (
-      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "list") &&
-      noirmsg.channel.name !== "noir🍀player"
+      message.content.startsWith(ʙᴏᴛꜰɪx + "list") &&
+      message.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
-      noirmsg.channel
+      message.channel
         .send(embedfactor)
         .catch(console.error)
-        .then((noirmsg) => {
-          noirmsg.delete({
+        .then((message) => {
+          message.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
       return;
     }
     if (
-      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "list") &&
-      noirmsg.channel.name === "noir🍀player"
+      message.content.startsWith(ʙᴏᴛꜰɪx + "list") &&
+      message.channel.name === "noir🍀player"
     ) {
-      const { channel } = noirmsg.member.voice;
-      const serverQueue = noirmsg.client.queue.get(noirmsg.guild.id);
+      const { channel } = message.member.voice;
+      const serverQueue = message.client.queue.get(message.guild.id);
       if (!channel) {
         const embedlist1 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You need to join a voice channel first!`);
-        noirmsg.channel
+        message.channel
           .send(embedlist1)
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -82,36 +82,36 @@ You need to join a voice channel first!`);
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ⚓️**usage:**{ʙᴏᴛꜰɪx}playlist <YouTube Playlist URL | Playlist Name>`);
-        noirmsg.channel
+        message.channel
           .send(embedlist2)
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
-      const permissions = channel.permissionsFor(noirmsg.client.user);
+      const permissions = channel.permissionsFor(message.client.user);
       if (!permissions.has(`CONNECT`)) {
         const embedlist3 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Cannot connect to voice channel, missing permissions`);
-        noirmsg.channel
+        message.channel
           .send(embedlist3)
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -123,35 +123,36 @@ Cannot connect to voice channel, missing permissions`);
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`);
-        noirmsg.channel
+        message.channel
           .send(embedlist4)
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
-      if (serverQueue && channel !== noirmsg.guild.me.voice.channel) {
+      if (serverQueue && channel !== message.guild.me.voice.channel) {
         const embedlist5 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You must be in the same channel as ${noirmsg.client.user}`);
-        noirmsg.channel
+You must be in the same Voice Channel as **ME**.
+ID= ${message.client.user}`);
+        message.channel
           .send(embedlist5)
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -162,7 +163,7 @@ You must be in the same channel as ${noirmsg.client.user}`);
       const url = args[0];
       const urlValid = pattern.test(args[0]);
       const queueConstruct = {
-        textChannel: noirmsg.channel,
+        textChannel: message.channel,
         channel,
         connection: null,
         songs: [],
@@ -184,15 +185,15 @@ You must be in the same channel as ${noirmsg.client.user}`);
             .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
             .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Playlist not found`);
-          noirmsg.channel
+          message.channel
             .send(embedlist6)
             .catch(console.error)
-            .then((noirmsg) => {
-              noirmsg.delete({
+            .then((message) => {
+              message.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -200,7 +201,7 @@ Playlist not found`);
         }
       } else if (scdl.isValidUrl(args[0])) {
         if (args[0].includes(`/sets/`)) {
-          noirmsg.channel.send(
+          message.channel.send(
             "**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n⌛ Fetching the playlist..."
           );
           playlist = await scdl.getSetInfo(args[0], notneeded);
@@ -219,11 +220,11 @@ Playlist not found`);
           videos = await playlist.getVideos(ɴᴏɪʀᴍᴀx, { part: `snippet` });
         } catch (error) {
           console.error(error);
-          noirmsg.channel
-            .send(error.noirmsg)
+          message.channel
+            .send(error.message)
             .catch(console.error)
-            .then((noirmsg) => {
-              noirmsg.delete({
+            .then((message) => {
+              message.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -262,42 +263,42 @@ Playlist not found`);
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**User:** ${noirmsg.author}
+**User:** ${message.author}
 
 Started a playlist`);
-      noirmsg.channel
+      message.channel
         .send(embedlist7)
         .catch(console.error)
-        .then((noirmsg) => {
-          noirmsg.delete({
+        .then((message) => {
+          message.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
       playlistEmbed;
       if (!serverQueue) {
-        noirmsg.client.queue.set(noirmsg.guild.id, queueConstruct);
+        message.client.queue.set(message.guild.id, queueConstruct);
         try {
           queueConstruct.connection = await channel.join();
           await queueConstruct.connection.voice.setSelfDeaf(true);
-          play(queueConstruct.songs[0], noirmsg);
+          play(queueConstruct.songs[0], message);
         } catch (error) {
           console.error(error);
-          noirmsg.client.queue.delete(noirmsg.guild.id);
+          message.client.queue.delete(message.guild.id);
           await channel.leave();
           const embedlist8 = new MessageEmbed()
             .setColor(`#32CD32`)
             .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
             .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Could not join the channel: ${error}`);
-          noirmsg.channel
+Could not join the channel: *${error}*`);
+          message.channel
             .send(embedlist8)
             .catch(console.error)
-            .then((noirmsg) => {
-              noirmsg.delete({
+            .then((message) => {
+              message.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });

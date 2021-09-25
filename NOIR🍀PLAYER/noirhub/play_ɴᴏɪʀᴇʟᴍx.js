@@ -31,25 +31,25 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "play",
   cooldown: 3,
-  async execute(noirmsg, args) {
+  async execute(message, args) {
     if (
-      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
-      noirmsg.channel.name !== "noir🍀player"
+      message.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
+      message.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
         .setColor(`#32CD32`)
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`);
-      noirmsg.channel
+      message.channel
         .send(embedfactor)
         .catch(console.error)
-        .then((noirmsg) => {
-          noirmsg.delete({
+        .then((message) => {
+          message.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
@@ -61,15 +61,15 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
 //         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
 //         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
 //         .setDescription(`\n\n
-// **⚠️Warning⚠️** ${noirmsg.author}
+// **⚠️Warning⚠️** ${message.author}
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // Please use only **YouTube** links..`);
-//       noirmsg.channel
+//       message.channel
 //         .send(embednotplay)
 //         .catch(console.error)
-//         .then((noirmsg) => {
-//           noirmsg.delete({
+//         .then((message) => {
+//           message.delete({
 //             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
 //           });
 //         });
@@ -82,62 +82,63 @@ _Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ 
         .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This link seems to be a playlist link.
 Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`);
-      noirmsg.channel
+      message.channel
         .send(embedplay1)
         .catch(console.error)
-        .then((noirmsg) => {
-          noirmsg.delete({
+        .then((message) => {
+          message.delete({
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
       return;
     }
     if (
-      noirmsg.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
-      noirmsg.channel.name === "noir🍀player"
+      message.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
+      message.channel.name === "noir🍀player"
     ) {
-      const { channel } = noirmsg.member.voice;
-      const serverQueue = noirmsg.client.queue.get(noirmsg.guild.id);
+      const { channel } = message.member.voice;
+      const serverQueue = message.client.queue.get(message.guild.id);
       if (!channel) {
         const embedplay1 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You need to join a voice channel first!`);
-        noirmsg.channel
+        message.channel
           .send(embedplay1)
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
-      if (serverQueue && channel !== noirmsg.guild.me.voice.channel) {
+      if (serverQueue && channel !== message.guild.me.voice.channel) {
         const embedplay2 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You must be in the same channel as ${noirmsg.client.user}`);
-        noirmsg.channel
+You must be in the same Voice Channel as **ME**.
+ID= ${message.client.user}`);
+        message.channel
           .send(embedplay2)
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -150,36 +151,36 @@ You must be in the same channel as ${noirmsg.client.user}`);
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`);
-        noirmsg.channel
+        message.channel
           .send(embedplay3)
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
-      const permissions = channel.permissionsFor(noirmsg.client.user);
+      const permissions = channel.permissionsFor(message.client.user);
       if (!permissions.has(`CONNECT`)) {
         const embedplay3 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Cannot connect to voice channel, missing permissions`);
-        noirmsg.channel
+        message.channel
           .send(embedplay3)
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -191,15 +192,15 @@ Cannot connect to voice channel, missing permissions`);
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`);
-        noirmsg.channel
+        message.channel
           .send(embedplay3)
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
@@ -209,7 +210,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
       const search = args.join(` `);
       const urlValid = ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0]);
       if (!ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0]) && ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
-        noirmsg.client.commands.get(`list`).execute(noirmsg, args);
+        message.client.commands.get(`list`).execute(message, args);
         return;
       } else if (scdl.isValidUrl(url) && url.includes(`/sets/`)) {
         return;
@@ -218,9 +219,9 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
         try {
           https.get(url, function (res) {
             if (res.statusCode == `302`) {
-              noirmsg.client.commands
+              message.client.commands
                 .get(`play`)
-                .execute(noirmsg, [res.headers.location]);
+                .execute(message, [res.headers.location]);
               return;
             } else {
               const embedplay4 = new MessageEmbed()
@@ -228,15 +229,15 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
                 .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
                 .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                 .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Audio Not Found`);
-              noirmsg.channel
+              message.channel
                 .send(embedplay4)
                 .catch(console.error)
-                .then((noirmsg) => {
-                  noirmsg.delete({
+                .then((message) => {
+                  message.delete({
                     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                   });
                 });
@@ -245,11 +246,11 @@ Audio Not Found`);
           });
         } catch (error) {
           console.error(error);
-          noirmsg.channel
-            .send(error.noirmsg)
+          message.channel
+            .send(error.message)
             .catch(console.error)
-            .then((noirmsg) => {
-              noirmsg.delete({
+            .then((message) => {
+              message.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -260,22 +261,22 @@ Audio Not Found`);
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Following url redirection...`);
-        noirmsg.channel
+        message.channel
           .send(embedplay5)
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
       const queueConstruct = {
-        textChannel: noirmsg.channel,
+        textChannel: message.channel,
         channel,
         connection: null,
         songs: [],
@@ -296,11 +297,11 @@ Following url redirection...`);
           };
         } catch (error) {
           console.error(error);
-          return noirmsg.channel
-            .send(error.noirmsg)
+          return message.channel
+            .send(error.message)
             .catch(console.error)
-            .then((noirmsg) => {
-              noirmsg.delete({
+            .then((message) => {
+              message.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -315,11 +316,11 @@ Following url redirection...`);
           };
         } catch (error) {
           console.error(error);
-          return noirmsg.channel
-            .send(error.noirmsg)
+          return message.channel
+            .send(error.message)
             .catch(console.error)
-            .then((noirmsg) => {
-              noirmsg.delete({
+            .then((message) => {
+              message.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -335,15 +336,15 @@ Following url redirection...`);
               .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Audio Not Found`);
-            noirmsg.channel
+            message.channel
               .send(embedplay6)
               .catch(console.error)
-              .then((noirmsg) => {
-                noirmsg.delete({
+              .then((message) => {
+                message.delete({
                   timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
                 });
               });
@@ -357,11 +358,11 @@ Audio Not Found`);
           };
         } catch (error) {
           console.error(error);
-          noirmsg.channel
-            .send(error.noirmsg)
+          message.channel
+            .send(error.message)
             .catch(console.error)
-            .then((noirmsg) => {
-              noirmsg.delete({
+            .then((message) => {
+              message.delete({
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
@@ -372,40 +373,40 @@ Audio Not Found`);
         serverQueue.songs.push(song);
         serverQueue.textChannel
           .send(
-            `**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n${song.title}\n_has been added to the queue by_ ${noirmsg.author}\n\n`
+            `**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n${song.title}\n_has been added to the queue by_ ${message.author}\n\n`
           )
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
         return;
       }
       queueConstruct.songs.push(song);
-      noirmsg.client.queue.set(noirmsg.guild.id, queueConstruct);
+      message.client.queue.set(message.guild.id, queueConstruct);
       try {
         queueConstruct.connection = await channel.join();
         await queueConstruct.connection.voice.setSelfDeaf(true);
-        play(queueConstruct.songs[0], noirmsg);
+        play(queueConstruct.songs[0], message);
       } catch (error) {
         console.error(error);
-        noirmsg.client.queue.delete(noirmsg.guild.id);
+        message.client.queue.delete(message.guild.id);
         await channel.leave();
         const embedplay7 = new MessageEmbed()
           .setColor(`#32CD32`)
           .setAuthor(`𝗡𝗢𝗜𝗥🍀𝗣𝗟𝗔𝗬𝗘𝗥 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setDescription(`\n\n
-**⚠️Warning⚠️** ${noirmsg.author}
+**⚠️Warning⚠️** ${message.author}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~🍀~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Could not join the channel: ${error}`);
-        noirmsg.channel
+Could not join the channel: *${error}*`);
+        message.channel
           .send(embedplay7)
           .catch(console.error)
-          .then((noirmsg) => {
-            noirmsg.delete({
+          .then((message) => {
+            message.delete({
               timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             });
           });
