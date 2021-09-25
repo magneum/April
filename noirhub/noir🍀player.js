@@ -83,7 +83,8 @@ Only YouTube playing/streaming is allowed`);
         .setDescription(`\n\n
 **⚠️Warning⚠️** ${noirmsg.author}
 
-Error: ${error}`);
+**Error:** 
+*${error}*`);
       noirmsg.channel
         .send(embedmusic1)
         .catch(console.error)
