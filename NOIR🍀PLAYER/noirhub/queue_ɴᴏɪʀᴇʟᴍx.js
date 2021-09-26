@@ -1,22 +1,10 @@
 const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
 const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
-// =============================================================================================================================
-// GNU GENERAL PUBLIC LICENSE
-// Version 3, 29 June 2007
-// Copyright (C) 2007 Free Software Foundation
-// Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
-// of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// noir🎶player
-// Discord Music YouTube player
-// has been licensed under GNU General Public License
-// 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
-// =============================================================================================================================
+
 module.exports = {
   name: "queue",
   cooldown: 3,
-  // ==================================================================
-  // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
-  // ==================================================================
+
   async execute(message) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "queue") &&
@@ -49,9 +37,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
         });
       return;
     }
-    // ==================================================================
-    // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
-    // ==================================================================
+
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "queue") &&
       message.channel.name === "noir🎶player"
@@ -85,9 +71,7 @@ Missing permission to manage messages or add reactions`
           });
         return;
       }
-      // ==================================================================
-      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
-      // ==================================================================
+
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embedqueue2 = new MessageEmbed()
@@ -116,18 +100,14 @@ Missing permission to manage messages or add reactions`
           });
         return;
       }
-      // ==================================================================
-      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
-      // ==================================================================
+
       let currentPage = 0;
       const embeds = generateQueueEmbed(message, queue.songs);
       const queueEmbed = await message.channel.send(
         `"*Page Num:* - ${currentPage + 1}/${embeds.length}`,
         embeds[currentPage]
       );
-      // ==================================================================
-      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
-      // ==================================================================
+
       try {
         await queueEmbed.react(`⬅️`);
         await queueEmbed.react(`🔴`);
@@ -136,18 +116,14 @@ Missing permission to manage messages or add reactions`
         console.error(error);
         message.channel.send(error.message).catch(console.error);
       }
-      // ==================================================================
-      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
-      // ==================================================================
+
       const filter = (reaction, user) =>
         [`⬅️`, `🔴`, `➡️`].includes(reaction.emoji.name) &&
         message.author.id === user.id;
       const collector = queueEmbed.createReactionCollector(filter, {
         time: 60000,
       });
-      // ==================================================================
-      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
-      // ==================================================================
+
       collector.on(`collect`, async (reaction, user) => {
         try {
           if (reaction.emoji.name === `➡️`) {
@@ -159,9 +135,7 @@ Missing permission to manage messages or add reactions`
               }),
                 embeds[currentPage];
             }
-            // ==================================================================
-            // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
-            // ==================================================================
+
           } else if (reaction.emoji.name === `⬅️`) {
             if (currentPage !== 0) {
               --currentPage;
@@ -171,9 +145,7 @@ Missing permission to manage messages or add reactions`
               }),
                 embeds[currentPage];
             }
-            // ==================================================================
-            // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
-            // ==================================================================
+
           } else {
             collector.stop();
             reaction.message.reactions.removeAll();
@@ -187,9 +159,7 @@ Missing permission to manage messages or add reactions`
     }
   },
 };
-// ==================================================================
-// ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
-// ==================================================================
+
 function generateQueueEmbed(message, queue) {
   let embeds = [];
   let k = 10;
