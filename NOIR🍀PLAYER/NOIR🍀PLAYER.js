@@ -40,7 +40,7 @@ for (const file of commandFiles) {
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// noir🍀player
+// noir🎶player
 // Discord Music YouTube player
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -72,7 +72,7 @@ ${CH}`);
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// noir🍀player
+// noir🎶player
 // Discord Music YouTube player
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -92,7 +92,7 @@ ${CH}`);
       "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
     ).setDescription(`❤️‍🔥 **Hey there MUSIC lovers !**
 I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
-Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.
+Please use the channel **noir🎶player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.
 **~~~~~~~~~~~~~~>  NOIR🎶PLΛYΣЯ <~~~~~~~~~~~~~~**
 :candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
 Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more.
@@ -110,7 +110,7 @@ Please use **!calib** once to calibrate before first use!`);
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// noir🍀player
+// noir🎶player
 // Discord Music YouTube player
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -143,11 +143,11 @@ Please use **!calib** once to calibrate before first use!`);
 𝗗𝗲𝗮𝗿 **ADMIN** 
 =========:radio_button:=========
 
-ᴀ channel ɴᴀᴍᴇ noir🍀player has been successfully created.
+ᴀ channel ɴᴀᴍᴇ noir🎶player has been successfully created.
 Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
         );
       message.channel.send(embedcheck1).catch(console.error);
-      message.guild.channels.create("noir🍀player", {
+      message.guild.channels.create("noir🎶player", {
         type: "GUILD_TEXT",
         permissionOverwrites: [
           {
@@ -155,7 +155,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
           },
         ],
       });
-      console.log(`•🦋noir🍀player🦋 ©️• has been successfully created.`);
+      console.log(`•🦋noir🎶player🦋 ©️• has been successfully created.`);
     } else {
       const embedcheck2 = new MessageEmbed()
         .setColor("#20ab40")
@@ -170,7 +170,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
 𝗗𝗲𝗮𝗿 **ADMIN** 
 =========:radio_button:=========
 
-•|  _ᴀ channel ɴᴀᴍᴇ noir🍀player could not be created._
+•|  _ᴀ channel ɴᴀᴍᴇ noir🎶player could not be created._
 •|  𝗣𝗹𝗲𝗮𝘀𝗲 𝗴𝗶𝘃𝗲 𝗺𝗲 𝘁𝗵𝗲𝘀𝗲 𝗽𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻𝘀:
 =𝘔𝘢𝘯𝘢𝘨𝘦𝘊𝘩𝘢𝘯𝘯𝘦𝘭
 =𝘚𝘦𝘯𝘥𝘔𝘦𝘴𝘴𝘢𝘨𝘦𝘴
@@ -178,7 +178,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
 =𝘌𝘮𝘣𝘦𝘥𝘴`
         );
       message.channel.send(embedcheck2).catch(console.error);
-      console.log(`•🦋noir🍀player🦋 ©️• could not be created.`);
+      console.log(`•🦋noir🎶player🦋 ©️• could not be created.`);
       return;
     }
   }
