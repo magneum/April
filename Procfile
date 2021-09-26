@@ -1,0 +1,1 @@
+worker: nodemon NOIR🍀PLAYER/NOIR🍀PLAYER.js
