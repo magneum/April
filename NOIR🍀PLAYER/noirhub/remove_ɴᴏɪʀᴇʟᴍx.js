@@ -16,13 +16,13 @@ module.exports = {
 name: "remove",
 cooldown: 3,
 // ==================================================================
-// ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+// ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================
 execute(message, args) {
 if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name !== "noir🍀player") {
 const embedfactor = new MessageEmbed()
 .setColor("#32CD32")
-.setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+.setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
 .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
 .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
 .setDescription(
@@ -43,14 +43,14 @@ timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
 return;
 }
 // ==================================================================
-// ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+// ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================
 if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name === "noir🍀player") {
 const queue = message.client.queue.get(message.guild.id);
 if (!queue) {
 const embedrm1 = new MessageEmbed()
 .setColor("#32CD32")
-.setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+.setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
 .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
 .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
 .setDescription(
@@ -70,12 +70,12 @@ timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
 return;
 }
 // ==================================================================
-// ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+// ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================
 if (!canModifyQueue(message.member)) {
 const embedrm2 = new MessageEmbed()
 .setColor("#32CD32")
-.setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+.setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
 .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
 .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
 .setDescription(
@@ -95,12 +95,12 @@ timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
 return;
 }
 // ==================================================================
-// ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+// ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================
 if (!args.length) {
 const embedrm3 = new MessageEmbed()
 .setColor("#32CD32")
-.setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+.setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
 .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
 .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
 .setDescription(
@@ -120,13 +120,13 @@ timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`
 return;
 }
 // ==================================================================
-// ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+// ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================
 const arguments = args.join(``);
 const songs = arguments.split(`,`).map((arg) => parseInt(arg));
 let removed = [];
 // ==================================================================
-// ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+// ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================
 if (pattern.test(arguments)) {
 queue.songs = queue.songs.filter((item, index) => {
@@ -136,19 +136,19 @@ else return true;
 queue.textChannel
 .send(`**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n❌ Removed **${removed.map((song) => song.title).join(`\n`)}** from the queue.`);
 // ==================================================================
-// ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+// ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================
 } else if (!isNaN(args[0]) && args[0] >= 1 && args[0] <= queue.songs.length) {
 console.log(`we got elsed!`);
 return queue.textChannel.send(`**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n❌ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`);
 // ==================================================================
-// ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+// ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================
 } else {
 console.log(`we got the last one`);
 const embedrm4 = new MessageEmbed()
 .setColor("#32CD32")
-.setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+.setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
 .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
 .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
 .setDescription(

@@ -15,7 +15,7 @@ module.exports = {
   name: "resume",
   cooldown: 3,
   // ==================================================================
-  // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+  // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   execute(message) {
     if (
@@ -24,7 +24,7 @@ module.exports = {
     ) {
       const embedfactor = new MessageEmbed()
         .setColor("#32CD32")
-        .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+        .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
         .setDescription(
@@ -46,7 +46,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
       return;
     }
     // ==================================================================
-    // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+    // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "resume") &&
@@ -56,7 +56,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
       if (!queue) {
         const embedresume1 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
           .setDescription(
@@ -77,12 +77,12 @@ is not playing anymusic yet.....`
         return;
       }
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (!canModifyQueue(message.member)) {
         const embedresume2 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
           .setDescription(
@@ -103,7 +103,7 @@ is not playing anymusic yet.....`
         return;
       }
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (!queue.playing) {
         queue.playing = true;
@@ -119,11 +119,11 @@ is not playing anymusic yet.....`
         return;
       }
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       const embedresume3 = new MessageEmbed()
         .setColor("#32CD32")
-        .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+        .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
         .setDescription(

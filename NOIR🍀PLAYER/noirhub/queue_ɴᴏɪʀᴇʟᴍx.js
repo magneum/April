@@ -15,7 +15,7 @@ module.exports = {
   name: "queue",
   cooldown: 3,
   // ==================================================================
-  // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+  // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   async execute(message) {
     if (
@@ -24,7 +24,7 @@ module.exports = {
     ) {
       const embedfactor = new MessageEmbed()
         .setColor("#32CD32")
-        .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+        .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
         .setDescription(
@@ -46,7 +46,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
       return;
     }
     // ==================================================================
-    // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+    // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "queue") &&
@@ -56,7 +56,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
       if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
         const embedqueue1 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
           .setDescription(
@@ -77,13 +77,13 @@ Missing permission to manage messages or add reactions`
         return;
       }
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embedqueue2 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
           .setDescription(
@@ -104,7 +104,7 @@ Missing permission to manage messages or add reactions`
         return;
       }
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       let currentPage = 0;
       const embeds = generateQueueEmbed(message, queue.songs);
@@ -113,7 +113,7 @@ Missing permission to manage messages or add reactions`
         embeds[currentPage]
       );
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       try {
         await queueEmbed.react(`⬅️`);
@@ -124,7 +124,7 @@ Missing permission to manage messages or add reactions`
         message.channel.send(error.message).catch(console.error);
       }
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       const filter = (reaction, user) =>
         [`⬅️`, `❌`, `➡️`].includes(reaction.emoji.name) &&
@@ -133,7 +133,7 @@ Missing permission to manage messages or add reactions`
         time: 60000,
       });
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       collector.on(`collect`, async (reaction, user) => {
         try {
@@ -147,7 +147,7 @@ Missing permission to manage messages or add reactions`
                 embeds[currentPage];
             }
             // ==================================================================
-            // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+            // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
           } else if (reaction.emoji.name === `⬅️`) {
             if (currentPage !== 0) {
@@ -159,7 +159,7 @@ Missing permission to manage messages or add reactions`
                 embeds[currentPage];
             }
             // ==================================================================
-            // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+            // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
           } else {
             collector.stop();
@@ -175,7 +175,7 @@ Missing permission to manage messages or add reactions`
   },
 };
 // ==================================================================
-// ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+// ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================
 function generateQueueEmbed(message, queue) {
   let embeds = [];

@@ -13,7 +13,7 @@ const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
 module.exports = {
   name: "help",
   // ==================================================================
-  // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+  // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   execute(message) {
     let HELPEMBED = new MessageEmbed()
@@ -57,7 +57,7 @@ module.exports = {
 *Get the profile picture of yours of any user's.*`
       )
       .setColor("#32CD32")
-      .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+      .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀");

@@ -16,7 +16,7 @@ module.exports = {
   name: "filter",
   cooldown: 3,
   // ==================================================================
-  // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+  // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   async execute(message, args, client) {
     if (!message.guild) {
@@ -28,7 +28,7 @@ module.exports = {
     ) {
       const embedfilter0 = new MessageEmbed()
         .setColor("#32CD32")
-        .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+        .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter(
           "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -49,14 +49,14 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`);
       return;
     }
     // ==================================================================
-    // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+    // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     const { channel } = message.member.voice;
     const queue = message.client.queue.get(message.guild.id);
     if (!args.length) {
       const embedfilter1 = new MessageEmbed()
         .setColor("#32CD32")
-        .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+        .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter(
           "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -82,7 +82,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`);
       return;
     }
     // ==================================================================
-    // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+    // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "filter") &&
@@ -91,7 +91,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`);
       if (!message.member.voice.channel) {
         const embedfilter2 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -111,12 +111,12 @@ Please join a Voice Channel first`);
         return;
       }
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (queue && channel !== message.guild.me.voice.channel) {
         const embedfilter3 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -138,7 +138,7 @@ ID= ${message.client.user}`);
         return;
       }
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       const filters = [
         "bass=g=20,dynaudnorm=f=200",
@@ -149,7 +149,7 @@ ID= ${message.client.user}`);
         "remove",
       ];
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       let NoirEffectNum;
       let NoirSelected;
@@ -176,7 +176,7 @@ ID= ${message.client.user}`);
           NoirEffectNum = 404;
           const embedfilter4 = new MessageEmbed()
             .setColor("#32CD32")
-            .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+            .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
             .setFooter(`**Example:** ${ʙᴏᴛꜰɪx}filter bassboost`)
             .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
             .setFooter(
@@ -203,7 +203,7 @@ ID= ${message.client.user}`);
           break;
       }
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       NoirSelected = filters[NoirEffectNum];
       if (NoirEffectNum === 404) {
@@ -215,7 +215,7 @@ ID= ${message.client.user}`);
           .send(
             new MessageEmbed()
               .setColor("#32CD32")
-              .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+              .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setFooter(
                 "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -231,12 +231,12 @@ ID= ${message.client.user}`);
             });
           });
         // ==================================================================
-        // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+        // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         play(song, message, client, NoirSelected);
         const embedfiltersongend = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -257,7 +257,7 @@ Restarted queue and filter is applied.`);
       } catch (error) {
         const embednone = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"

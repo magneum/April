@@ -19,14 +19,14 @@ module.exports = {
   async play(song, message) {
     const queue = message.client.queue.get(message.guild.id);
     // ==================================================================
-    // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+    // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     if (!song) {
       setTimeout(function () {
         if (queue.connection.dispatcher && message.guild.me.voice.channel)
           return;
         // ==================================================================
-        // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+        // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         queue.channel.leave();
         queue.textChannel
@@ -39,7 +39,7 @@ module.exports = {
           });
       }, ɴᴏɪʀᴡᴀᴋᴇ);
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       queue.textChannel
         .send("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\nMusic queue ended.❌")
@@ -53,12 +53,12 @@ module.exports = {
       return;
     }
     // ==================================================================
-    // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+    // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     let stream = null;
     let streamType = song.url.includes("youtube.com") ? "opus" : "ogg/opus";
     // ==================================================================
-    // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+    // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     try {
       if (song.url.includes("youtube.com")) {
@@ -66,14 +66,16 @@ module.exports = {
           highWaterMark: 1 << 25,
         });
         // ==================================================================
-        // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+        // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
       } else {
         const embedmusicnot = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-          .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+          .setFooter(
+            "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+          )
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -92,7 +94,7 @@ Only YouTube playing/streaming is allowed`
         return;
       }
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
     } catch (error) {
       if (queue) {
@@ -100,14 +102,16 @@ Only YouTube playing/streaming is allowed`
         module.exports.play(queue.songs[0], message);
       }
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       console.error(error);
       const embedmusic1 = new MessageEmbed()
         .setColor("#32CD32")
-        .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+        .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-        .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+        .setFooter(
+          "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+        )
         .setDescription(
           `\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -127,13 +131,13 @@ Only YouTube playing/streaming is allowed`
       return;
     }
     // ==================================================================
-    // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+    // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     queue.connection.on("disconnect", () =>
       message.client.queue.delete(message.guild.id)
     );
     // ==================================================================
-    // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+    // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     const dispatcher = queue.connection
       .play(stream, { type: streamType })
@@ -156,15 +160,17 @@ Only YouTube playing/streaming is allowed`
       });
     dispatcher.setVolumeLogarithmic(queue.volume / 100);
     // ==================================================================
-    // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+    // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     try {
-      var ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel
-        .send(
-          `ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹\n🔥❕𝘋𝘪𝘳𝘦𝘤𝘵𝘭𝘺 𝘴𝘵𝘳𝘦𝘢𝘮𝘪𝘯𝘨 𝘜𝘴𝘪𝘯𝘨 𝘠𝘰𝘶𝘛𝘶𝘣𝘦\n==============================\n\n🔆**Title:** *${song.title}*\n🔅**Link:** *${song.url}*`
-        )
+      var ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel.send(`===============⭕️===============
+**ПӨIЯ🍀PLΛYΣЯ**          
+💯𝘋𝘪𝘳𝘦𝘤𝘵𝘭𝘺 𝘴𝘵𝘳𝘦𝘢𝘮𝘪𝘯𝘨 𝘜𝘴𝘪𝘯𝘨 YouTube
+===============⭕️===============
+**🏷Title-** *${song.title}*
+**🔗Link-** *${song.url}*`);
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("👉🏻");
       await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏯");
@@ -174,13 +180,13 @@ Only YouTube playing/streaming is allowed`
       await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔁");
       await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("❌");
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
     } catch (error) {
       console.error(error);
     }
     // ==================================================================
-    // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+    // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     const filter = (reaction, user) => user.id !== message.client.user.id;
     var collector = ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.createReactionCollector(filter, {
@@ -191,12 +197,12 @@ Only YouTube playing/streaming is allowed`
         return;
       }
       // ==================================================================
-      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       const member = message.guild.member(user);
       switch (reaction.emoji.name) {
         // ==================================================================
-        // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+        // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         case "👉🏻":
           queue.playing = true;
@@ -204,9 +210,11 @@ Only YouTube playing/streaming is allowed`
           if (!canModifyQueue(member)) {
             const embedmusic2 = new MessageEmbed()
               .setColor("#32CD32")
-              .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+              .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-              .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+              .setFooter(
+                "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+              )
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -225,7 +233,7 @@ You need to join a voice channel first!`
             return;
           }
           // ==================================================================
-          // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+          // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
           queue.connection.dispatcher.end();
           queue.textChannel
@@ -239,16 +247,18 @@ You need to join a voice channel first!`
           collector.stop();
           break;
         // ==================================================================
-        // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+        // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         case "⏯":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic3 = new MessageEmbed()
               .setColor("#32CD32")
-              .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+              .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-              .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+              .setFooter(
+                "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+              )
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -267,7 +277,7 @@ You need to join a voice channel first!`
             return;
           }
           // ==================================================================
-          // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+          // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
           if (queue.playing) {
             queue.playing = !queue.playing;
@@ -281,7 +291,7 @@ You need to join a voice channel first!`
                 });
               });
             // ==================================================================
-            // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+            // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
           } else {
             queue.playing = !queue.playing;
@@ -297,16 +307,18 @@ You need to join a voice channel first!`
           }
           break;
         // ==================================================================
-        // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+        // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         case "🤫":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic4 = new MessageEmbed()
               .setColor("#32CD32")
-              .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+              .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-              .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+              .setFooter(
+                "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+              )
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -325,7 +337,7 @@ You need to join a voice channel first!`
             return;
           }
           // ==================================================================
-          // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+          // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
           queue.muted = !queue.muted;
           if (queue.muted) {
@@ -339,7 +351,7 @@ You need to join a voice channel first!`
                 });
               });
             // ==================================================================
-            // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+            // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
           } else {
             queue.connection.dispatcher.setVolumeLogarithmic(
@@ -356,7 +368,7 @@ You need to join a voice channel first!`
           }
           break;
         // ==================================================================
-        // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+        // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         case "🔉":
           reaction.users.remove(user).catch(console.error);
@@ -366,9 +378,11 @@ You need to join a voice channel first!`
           if (!canModifyQueue(member)) {
             const embedmusic5 = new MessageEmbed()
               .setColor("#32CD32")
-              .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+              .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-              .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+              .setFooter(
+                "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+              )
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -387,7 +401,7 @@ You need to join a voice channel first!`
             return;
           }
           // ==================================================================
-          // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+          // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
           queue.volume = Math.max(queue.volume - 10, 0);
           queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
@@ -403,7 +417,7 @@ You need to join a voice channel first!`
             });
           break;
         // ==================================================================
-        // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+        // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         case "🔊":
           reaction.users.remove(user).catch(console.error);
@@ -413,9 +427,11 @@ You need to join a voice channel first!`
           if (!canModifyQueue(member)) {
             const embedmusic6 = new MessageEmbed()
               .setColor("#32CD32")
-              .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+              .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-              .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+              .setFooter(
+                "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+              )
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -434,7 +450,7 @@ You need to join a voice channel first!`
             return;
           }
           // ==================================================================
-          // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+          // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
           queue.volume = Math.min(queue.volume + 10, 100);
           queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
@@ -450,16 +466,18 @@ You need to join a voice channel first!`
             });
           break;
         // ==================================================================
-        // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+        // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         case "🔁":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic7 = new MessageEmbed()
               .setColor("#32CD32")
-              .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+              .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-              .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+              .setFooter(
+                "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+              )
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -478,7 +496,7 @@ You need to join a voice channel first!`
             return;
           }
           // ==================================================================
-          // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+          // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
           queue.loop = !queue.loop;
           queue.textChannel
@@ -495,16 +513,18 @@ You need to join a voice channel first!`
             });
           break;
         // ==================================================================
-        // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+        // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         case "❌":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic8 = new MessageEmbed()
               .setColor("#32CD32")
-              .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+              .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-              .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+              .setFooter(
+                "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+              )
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
@@ -523,12 +543,12 @@ You need to join a voice channel first!`
             return;
           }
           // ==================================================================
-          // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+          // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
           queue.songs = [];
           queue.textChannel
             .send(
-              `ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹$\n${user}\n\nStopped the music!❌`
+              `🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul$\n${user}\n\nStopped the music!❌`
             )
             .catch(console.error)
             .then((message) => {
@@ -537,7 +557,7 @@ You need to join a voice channel first!`
               });
             });
           // ==================================================================
-          // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+          // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
           try {
             queue.connection.dispatcher.end();
@@ -548,7 +568,7 @@ You need to join a voice channel first!`
           collector.stop();
           break;
         // ==================================================================
-        // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+        // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         default:
           reaction.users.remove(user).catch(console.error);
