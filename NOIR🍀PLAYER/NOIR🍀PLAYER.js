@@ -123,6 +123,23 @@ Please use **!calib** once to calibrate before first use!`);
   // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   if (!message.guild) {
+    const checkdm = new MessageEmbed()
+      .setColor("#20ab40")
+      .setTitle("⚠️Warning⚠️")
+      .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
+      .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
+      .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+      .setFooter(
+        "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+      ).setDescription(`
+**User:** ${message.author}
+=========:radio_button:=========
+
+• You are currently in a **DMChannel** and so you have been **restricted** using any **NOIR 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀**
+
+• Add me in your channel and then all commands will be automatically accepted.`);
+    message.reply(checkdm);
+    message.react("✅");
     return;
   }
   // ==================================================================
