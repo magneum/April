@@ -5,7 +5,7 @@ require("dotenv").config();
 const { join } = require("path");
 const express = require("express");
 const { readdirSync } = require("fs");
-const { Client, Collection } = require("./VoidKrate.js");
+const { Client, Collection } = require("./ᴋʟᴀᴡᴠᴏɪᴅ");
 const { ɴᴏɪʀᴇꜱ, ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("./noirtem/noir_env.js");
 const ռօɨʀքʟǟʏɛʀ = new Client({
   disableMentions: "everyone",
@@ -25,7 +25,7 @@ const PORT = process.env.PORT || 3000;
 // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
 // ==================================================================
 const NoirEngineOil = new Collection();
-const { MessageEmbed } = require("./VoidKrate.js");
+const { MessageEmbed } = require("./ᴋʟᴀᴡᴠᴏɪᴅ");
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const commandFiles = readdirSync(join(__dirname, "noirhub")).filter((file) =>
   file.endsWith("_ɴᴏɪʀᴇʟᴍx.js")

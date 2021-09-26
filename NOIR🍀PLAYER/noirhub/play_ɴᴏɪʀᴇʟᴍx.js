@@ -16,7 +16,7 @@ const scRegex = /^https?:\/\/(soundcloud\.com)\/(.*)$/;
 const not_needed_scl = /^https?:\/\/(soundcloud\.app\.goo\.gl)\/(.*)$/;
 const ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ =
   /^(https?:\/\/)?(www\.)?(m\.)?(youtube\.com|youtu\.?be)\/.+$/gi;
-const { MessageEmbed } = require("../VoidKrate.js");
+const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
 // =============================================================================================================================
 // GNU GENERAL PUBLIC LICENSE
 // Version 3, 29 June 2007

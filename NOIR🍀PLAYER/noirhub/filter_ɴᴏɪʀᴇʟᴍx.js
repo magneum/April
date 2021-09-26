@@ -1,4 +1,4 @@
-const { MessageEmbed } = require("../VoidKrate.js");
+const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
 const { play } = require("./noir🍀player");
 const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
 // =============================================================================================================================

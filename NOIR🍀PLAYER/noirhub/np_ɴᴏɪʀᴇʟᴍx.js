@@ -1,4 +1,4 @@
-const { MessageEmbed } = require("../VoidKrate.js");
+const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
 const { splitBar } = require("string-progressbar");
 const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
 // =============================================================================================================================

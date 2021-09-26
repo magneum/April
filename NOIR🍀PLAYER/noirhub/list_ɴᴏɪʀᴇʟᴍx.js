@@ -7,7 +7,7 @@ const {
   ɴᴏɪʀᴄʟᴇᴀɴᴇʀ,
 } = require("../noirtem/noir_env");
 const { play } = require("./noir🍀player");
-const { MessageEmbed } = require("../VoidKrate.js");
+const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
 const YouTubeAPI = require("simple-youtube-api");
 const scdl = require("soundcloud-downloader").default;
 const youtube = new YouTubeAPI(ɴᴏɪʀʏᴛ);
