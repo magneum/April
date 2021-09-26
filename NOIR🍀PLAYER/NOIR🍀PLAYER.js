@@ -85,7 +85,7 @@ ${CH}`);
   );
   const embedThanks = new MessageEmbed()
     .setColor("#20ab40")
-    .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+    .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
     .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
     .setFooter(
@@ -132,7 +132,7 @@ Please use **!calib** once to calibrate before first use!`);
     if (message.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
       const embedcheck1 = new MessageEmbed()
         .setColor("#20ab40")
-        .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+        .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter(
@@ -159,7 +159,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
     } else {
       const embedcheck2 = new MessageEmbed()
         .setColor("#20ab40")
-        .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+        .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter(
@@ -227,7 +227,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const embedNoir1 = new MessageEmbed()
         .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
-        .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+        .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter(
@@ -255,7 +255,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
     const embedNoir2 = new MessageEmbed()
       .setColor("#20ab40")
       .setTitle("⚠️Warning⚠️")
-      .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+      .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setFooter(

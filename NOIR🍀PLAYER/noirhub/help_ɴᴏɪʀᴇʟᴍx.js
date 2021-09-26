@@ -43,7 +43,7 @@ module.exports = {
 `
       )
       .setColor("#20ab40")
-      .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+      .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setFooter(
@@ -66,7 +66,7 @@ module.exports = {
       .send(
         new MessageEmbed()
           .setColor("#20ab40")
-          .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+          .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
