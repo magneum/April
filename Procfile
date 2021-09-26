@@ -1,1 +1,1 @@
-worker: npm run noir
+worker: nodemon
