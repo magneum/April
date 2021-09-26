@@ -113,11 +113,20 @@ You need to join a voice channel first!`);
       queue.loop = !queue.loop;
       queue.textChannel
         .send(
-          `**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\nLoop is now turned ${
+          new MessageEmbed()
+            .setColor("#20ab40")
+            .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+            .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+            .setFooter(
+              "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+            ).setDescription(`**User:** ${message.author}
+=========:radio_button:=========
+
+Queue Loop is now turned ${
             queue.loop
-              ? message.channel.send("ON")
-              : message.channel.send("OFF")
-          }**`
+              ? message.channel.send("On")
+              : message.channel.send("Off")
+          }**`)
         )
         .catch(console.error)
         .then((message) => {

@@ -25,6 +25,7 @@
     "dotenv": "*",
     "express": "*",
     "ffmpeg-static": "*",
+    "get-video-id": "^3.4.1",
     "lyrics-finder": "^21.0.5",
     "node-fetch": "^2.6.1",
     "nodemon": "^2.0.13",

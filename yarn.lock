@@ -712,6 +712,11 @@ get-stream@^5.1.0:
   dependencies:
     pump "^3.0.0"
 
+get-video-id@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/get-video-id/-/get-video-id-3.4.1.tgz#ea4e03288e4be6f89fac7516f23717c558203bc8"
+  integrity sha512-2MkfbzofPQ7YsW0mrShmGEvnGrNzjXzAwJEePYwoi1dDqTpghHDMq5+T61Stmez8X4I+I8phT+unuttw/AB36w==
+
 glob-parent@~5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"

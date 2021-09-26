@@ -4,6 +4,8 @@ const {
   ɴᴏɪʀᴡᴀᴋᴇ,
   ɴᴏɪʀᴄʟᴇᴀɴᴇʀ,
 } = require("../noirtem/noir_env");
+const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
+const getVideoId = require("get-video-id");
 // =============================================================================================================================
 // GNU GENERAL PUBLIC LICENSE
 // Version 3, 29 June 2007
@@ -30,7 +32,16 @@ module.exports = {
         // ==================================================================
         queue.channel.leave();
         queue.textChannel
-          .send("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\nLeaving voice channel...")
+          .send(
+            new MessageEmbed()
+              .setColor("#20ab40")
+              .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+              .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+              .setFooter(
+                "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+              )
+              .setDescription("🤎**NOIR** has left the voice channel!")
+          )
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -42,7 +53,16 @@ module.exports = {
       // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       queue.textChannel
-        .send("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\nMusic queue ended.❌")
+        .send(
+          new MessageEmbed()
+            .setColor("#20ab40")
+            .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+            .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+            .setFooter(
+              "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+            )
+            .setDescription("💚**NOIR's** MusicQueue has ended!")
+        )
         .catch(console.error)
         .then((message) => {
           message.delete({
@@ -162,13 +182,23 @@ Only YouTube playing/streaming is allowed`);
     // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     try {
-      var ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel
-        .send(`===============⭕️===============
-**NOIR🍀PLΛYΣЯ**          
+      const { id } = getVideoId(`${song.url}`);
+      var ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel.send(
+        new MessageEmbed()
+          .setColor("#20ab40")
+          .setTitle(" Now Playing ")
+          .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+          .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+          .setImage(`https://img.youtube.com/vi/${id}/sddefault.jpg`)
+          .setFooter(
+            "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+          ).setDescription(`
 💯𝘋𝘪𝘳𝘦𝘤𝘵𝘭𝘺 𝘴𝘵𝘳𝘦𝘢𝘮𝘪𝘯𝘨 𝘜𝘴𝘪𝘯𝘨 YouTube
-===============⭕️===============
-**🏷Title-** *${song.title}*
-**🔗Link-** *${song.url}*`);
+=========:radio_button:=========
+
+**🏷Title-** ${song.title}
+**🔗Link-** ${song.url}`)
+      );
       // ==================================================================
       // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
@@ -238,7 +268,18 @@ You need to join a voice channel first!`
           // ==================================================================
           queue.connection.dispatcher.end();
           queue.textChannel
-            .send(`${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n⏩ Skipped the song`)
+            .send(
+              new MessageEmbed()
+                .setColor("#20ab40")
+                .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+                .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+                .setFooter(
+                  "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+                ).setDescription(`**User:** ${message.author}
+=========:radio_button:=========
+
+⏩ Skipped the song`)
+            )
             .catch(console.error)
             .then((message) => {
               message.delete({
@@ -285,13 +326,19 @@ You need to join a voice channel first!`
             queue.playing = !queue.playing;
             queue.connection.dispatcher.pause(true);
             queue.textChannel
-              .send(`${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n🚦 Paused the music.`)
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                });
-              });
+              .send(
+                new MessageEmbed()
+                  .setColor("#20ab40")
+                  .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+                  .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+                  .setFooter(
+                    "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+                  ).setDescription(`**User:** ${message.author}
+=========:radio_button:=========
+
+🚦 Paused the music.`)
+              )
+              .catch(console.error);
             // ==================================================================
             // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
@@ -299,7 +346,18 @@ You need to join a voice channel first!`
             queue.playing = !queue.playing;
             queue.connection.dispatcher.resume();
             queue.textChannel
-              .send(`${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n▶ Resumed the music!`)
+              .send(
+                new MessageEmbed()
+                  .setColor("#20ab40")
+                  .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+                  .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+                  .setFooter(
+                    "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+                  ).setDescription(`**User:** ${message.author}
+=========:radio_button:=========
+
+▶ Resumed the music!`)
+              )
               .catch(console.error)
               .then((message) => {
                 message.delete({
@@ -346,7 +404,18 @@ You need to join a voice channel first!`
           if (queue.muted) {
             queue.connection.dispatcher.setVolumeLogarithmic(0);
             queue.textChannel
-              .send(`${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n🤫 Muted the music!`)
+              .send(
+                new MessageEmbed()
+                  .setColor("#20ab40")
+                  .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+                  .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+                  .setFooter(
+                    "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+                  ).setDescription(`**User:** ${message.author}
+=========:radio_button:=========
+
+🤫 Muted the music!`)
+              )
               .catch(console.error)
               .then((message) => {
                 message.delete({
@@ -361,7 +430,18 @@ You need to join a voice channel first!`
               queue.volume / 100
             );
             queue.textChannel
-              .send(`${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n🔊 Unmuted the music!`)
+              .send(
+                new MessageEmbed()
+                  .setColor("#20ab40")
+                  .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+                  .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+                  .setFooter(
+                    "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+                  ).setDescription(`**User:** ${message.author}
+=========:radio_button:=========
+
+🔊 Unmuted the music!`)
+              )
               .catch(console.error)
               .then((message) => {
                 message.delete({
@@ -411,7 +491,16 @@ You need to join a voice channel first!`
           queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
           queue.textChannel
             .send(
-              `${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n🔉 Decreased the volume, the volume is now ${queue.volume}%`
+              new MessageEmbed()
+                .setColor("#20ab40")
+                .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+                .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+                .setFooter(
+                  "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+                ).setDescription(`**User:** ${message.author}
+=========:radio_button:=========
+
+🔉 Decreased the volume, the volume is now ${queue.volume}%`)
             )
             .catch(console.error)
             .then((message) => {
@@ -461,7 +550,16 @@ You need to join a voice channel first!`
           queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
           queue.textChannel
             .send(
-              `${user}\n\n🦋🍀𝗡𝗢𝗜𝗥🍀🦋\n\n🔊 Increased the volume, the volume is now ${queue.volume}%`
+              new MessageEmbed()
+                .setColor("#20ab40")
+                .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+                .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+                .setFooter(
+                  "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+                ).setDescription(`**User:** ${message.author}
+=========:radio_button:=========
+
+🔊 Increased the volume, the volume is now ${queue.volume}%`)
             )
             .catch(console.error)
             .then((message) => {
@@ -507,9 +605,16 @@ You need to join a voice channel first!`
           queue.loop = !queue.loop;
           queue.textChannel
             .send(
-              `**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\nLoop is now ${
-                queue.loop ? "**Turned On**" : "**Turned Off**"
-              }`
+              new MessageEmbed()
+                .setColor("#20ab40")
+                .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+                .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+                .setFooter(
+                  "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+                ).setDescription(`**User:** ${message.author}
+=========:radio_button:=========
+
+Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
             )
             .catch(console.error)
             .then((message) => {
@@ -517,6 +622,7 @@ You need to join a voice channel first!`
                 timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
               });
             });
+          message.client.queue.delete(message.guild.id);
           break;
         // ==================================================================
         // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
@@ -555,7 +661,15 @@ You need to join a voice channel first!`
           queue.songs = [];
           queue.textChannel
             .send(
-              `🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul$\n${user}\n\nStopped the music!❌`
+              new MessageEmbed()
+                .setColor("#20ab40")
+                .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+                .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+                .setImage(`https://img.youtube.com/vi/${id}/sddefault.jpg`)
+                .setFooter(
+                  "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+                )
+                .setDescription(`❤️MusicQueue has been successfully ended`)
             )
             .catch(console.error)
             .then((message) => {
