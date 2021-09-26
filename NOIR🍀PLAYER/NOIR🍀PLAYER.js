@@ -90,11 +90,10 @@ ${CH}`);
     ).setDescription(`❤️‍🔥 **Hey there MUSIC lovers !**
 I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
 Please use the channel **noir🎶player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.
-**~~~~~~~~~~~~~~>  NOIR🎶PLΛYΣЯ <~~~~~~~~~~~~~~**
+
 :candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
 Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more.
 
-**~~~~~~~~~~~~~~>  NOIR🎶PLΛYΣЯ <~~~~~~~~~~~~~~**
 :star:**ɴᴏᴛᴇ to ᴏᴡɴᴇʀ ᴀɴᴅ ᴍᴏᴅᴇʀꜱ**
 🎃**VERY VERY IMPORTANT**
 Please use **!calib** once to calibrate before first use!`);
