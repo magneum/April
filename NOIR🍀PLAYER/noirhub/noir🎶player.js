@@ -205,7 +205,7 @@ Only YouTube playing/streaming is allowed`);
       // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏭");
-      await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏯");
+      await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏸");
       await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔇");
       await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔉");
       await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔊");
@@ -293,7 +293,7 @@ You need to join a voice channel first!`
         // ==================================================================
         // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        case "⏯":
+        case "⏸":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic3 = new MessageEmbed()
