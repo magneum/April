@@ -1,4 +1,4 @@
-CH = `~~~~~~~~~~~~~~~~~~~~~~~>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <~~~~~~~~~~~~~~~~~~~~~~~`;
+CH = `~~~~~~~~~~~~~~~~~~~~~~~>  ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul <~~~~~~~~~~~~~~~~~~~~~~~`;
 console.clear();
 const os = require("os");
 require("dotenv").config();
@@ -54,7 +54,7 @@ ${CH}
 |••••🍀    Bot-Name: ${ռօɨʀքʟǟʏɛʀ.user.username}
 |••••🍀    Bot-Os: ${os.platform().toUpperCase()}
 |••••🍀    Bot-Port: ${PORT}
-~~~~~~~~~~~~~~~~~~~~~~~>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~>  ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul <~~~~~~~~~~~~~~~~~~~~~~~
 ${LIC}
 ${CH}`);
 });
