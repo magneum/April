@@ -28,7 +28,7 @@ const embedfactor = new MessageEmbed()
 .setDescription(
 `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 **Channel:** \`noir🍀player\`
 Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`);
@@ -56,7 +56,7 @@ const embedrm1 = new MessageEmbed()
 .setDescription(
 `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 There is no queue.`);
 message.channel
@@ -81,7 +81,7 @@ const embedrm2 = new MessageEmbed()
 .setDescription(
 `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 You need to join a voice channel first!`);
 message.channel
@@ -106,7 +106,7 @@ const embedrm3 = new MessageEmbed()
 .setDescription(
 `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 ⚓️**usage:**${ʙᴏᴛꜰɪx}remove <Queue Number>`);
 message.channel
@@ -154,7 +154,7 @@ const embedrm4 = new MessageEmbed()
 .setDescription(
 `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 **usage:**${ʙᴏᴛꜰɪx}remove <Queue Number>`);
 message.channel

@@ -138,7 +138,7 @@ Please use **!calib** once to calibrate before first use!`
         .setDescription(
           `\n\n
 𝗗𝗲𝗮𝗿 **ADMIN** 
-=============:radio_button:=============
+=========:radio_button:=========
 
 ᴀ channel ɴᴀᴍᴇ noir🍀player has been successfully created.
 Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
@@ -163,7 +163,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
         .setDescription(
           `\n\n
 𝗗𝗲𝗮𝗿 **ADMIN** 
-=============:radio_button:=============
+=========:radio_button:=========
 
 •|  _ᴀ channel ɴᴀᴍᴇ noir🍀player could not be created._
 •|  𝗣𝗹𝗲𝗮𝘀𝗲 𝗴𝗶𝘃𝗲 𝗺𝗲 𝘁𝗵𝗲𝘀𝗲 𝗽𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻𝘀:
@@ -228,7 +228,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
         .setDescription(
           `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
             command.name
@@ -256,7 +256,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
       .setDescription(
         `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 There was an error executing that command.`
       );

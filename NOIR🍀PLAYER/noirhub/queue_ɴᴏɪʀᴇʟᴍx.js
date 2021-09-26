@@ -30,7 +30,7 @@ module.exports = {
         .setDescription(
           `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 **Channel:** \`noir🍀player\`
 Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
@@ -62,7 +62,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 Missing permission to manage messages or add reactions`
           );
@@ -89,7 +89,7 @@ Missing permission to manage messages or add reactions`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 ❌ Nothing playing in this server`
           );

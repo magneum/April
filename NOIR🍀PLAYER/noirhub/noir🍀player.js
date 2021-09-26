@@ -77,7 +77,7 @@ module.exports = {
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 Only YouTube playing/streaming is allowed`
           );
@@ -111,7 +111,7 @@ Only YouTube playing/streaming is allowed`
         .setDescription(
           `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 **Error:** 
 **${error}**`
@@ -210,7 +210,7 @@ Only YouTube playing/streaming is allowed`
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 You need to join a voice channel first!`
               );
@@ -252,7 +252,7 @@ You need to join a voice channel first!`
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 You need to join a voice channel first!`
               );
@@ -310,7 +310,7 @@ You need to join a voice channel first!`
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 You need to join a voice channel first!`
               );
@@ -372,7 +372,7 @@ You need to join a voice channel first!`
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 You need to join a voice channel first!`
               );
@@ -419,7 +419,7 @@ You need to join a voice channel first!`
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 You need to join a voice channel first!`
               );
@@ -463,7 +463,7 @@ You need to join a voice channel first!`
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 You need to join a voice channel first!`
               );
@@ -508,7 +508,7 @@ You need to join a voice channel first!`
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 You need to join a voice channel first!`
               );

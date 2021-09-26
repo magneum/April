@@ -47,7 +47,7 @@ module.exports = {
         .setDescription(
           `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 **Channel:** \`noir🍀player\`
 Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
@@ -74,7 +74,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
     // .setDescription(
     //  `\n\n
     // **⚠️Warning⚠️** ${message.author}
-    // =============:radio_button:=============
+    // =========:radio_button:=========
 
     // Please use only **YouTube** links..`);
     //       message.channel
@@ -99,7 +99,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
         .setDescription(
           `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 This link seems to be a playlist link.
 Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
@@ -132,7 +132,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 You need to join a voice channel first!`
           );
@@ -158,7 +158,7 @@ You need to join a voice channel first!`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`
@@ -185,7 +185,7 @@ ID= ${message.client.user}`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`
           );
@@ -212,7 +212,7 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 Cannot connect to voice channel, missing permissions`
           );
@@ -238,7 +238,7 @@ Cannot connect to voice channel, missing permissions`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`
           );
@@ -292,7 +292,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
                 .setDescription(
                   `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 Audio Not Found`
                 );
@@ -333,7 +333,7 @@ Audio Not Found`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 Following url redirection...`
           );
@@ -423,7 +423,7 @@ Following url redirection...`
               .setDescription(
                 `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 Audio Not Found`
               );
@@ -492,7 +492,7 @@ Audio Not Found`
             .setDescription(
               `\n\n
 **User:** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 **👍 Joined \`${channel.name}\` and is 📄 bound to \`#${message.channel.name}\`**`
             );
@@ -514,7 +514,7 @@ Audio Not Found`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 Could not join the channel: *${error}*`
           );

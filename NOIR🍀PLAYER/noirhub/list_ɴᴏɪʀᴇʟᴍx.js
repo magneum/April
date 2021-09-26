@@ -41,7 +41,7 @@ module.exports = {
         .setDescription(
           `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 **Channel:** \`noir🍀player\`
 Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
@@ -74,7 +74,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 You need to join a voice channel first!`
           );
@@ -100,7 +100,7 @@ You need to join a voice channel first!`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 ⚓️**usage:**{ʙᴏᴛꜰɪx}playlist <YouTube Playlist URL | Playlist Name>`
           );
@@ -127,7 +127,7 @@ You need to join a voice channel first!`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 Cannot connect to voice channel, missing permissions`
           );
@@ -153,7 +153,7 @@ Cannot connect to voice channel, missing permissions`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`
           );
@@ -176,7 +176,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
           .setDescription(
             `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`
@@ -230,7 +230,7 @@ ID= ${message.client.user}`
             .setDescription(
               `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 Playlist not found`
             );
@@ -362,7 +362,7 @@ Started a playlist`
             .setDescription(
               `\n\n
 **⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
+=========:radio_button:=========
 
 Could not join the channel: *${error}*`
             );
