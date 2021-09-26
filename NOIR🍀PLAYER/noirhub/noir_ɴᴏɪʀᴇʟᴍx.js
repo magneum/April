@@ -15,19 +15,24 @@ module.exports = {
   name: "noir",
   cooldown: 3,
   // ==================================================================
-  // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+  // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   execute(message) {
     let NOIREMBED = new MessageEmbed()
-      .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+      .setFooter(
+        "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+      )
       .setDescription(
-        `
-=• **ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ** is a Discord Music player Bot with YouTube Support and is available on both Discord and Telegram.\n\n
-=• use ${ʙᴏᴛꜰɪx}help to learn how to use **ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\n
-=• **ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ** has been licensed under GNU General Public License 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀`
+        `**User:** ${message.author}
+=========:radio_button:=========
+
+•> **NOIR** is a Discord Music player Bot with YouTube Support and is available on both Discord and Telegram.\n
+•> **NOIR** has been licensed under GNU General Public License 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀\n
+•> use **${ʙᴏᴛꜰɪx}help** to learn how to use **NOIR**
+`
       )
       .setColor("#32CD32")
-      .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+      .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
     message.channel.send(NOIREMBED).catch(console.error);

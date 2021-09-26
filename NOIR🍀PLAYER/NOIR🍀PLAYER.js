@@ -1,4 +1,4 @@
-CH = `~~~~~~~~~~~~~~~~~~~~~~~>  ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul <~~~~~~~~~~~~~~~~~~~~~~~`;
+CH = `~~~~~~~~~~~~~~~~~~~~~~~>  NOIR🎶PLΛYΣЯ by HypeVoidSoul <~~~~~~~~~~~~~~~~~~~~~~~`;
 console.clear();
 const os = require("os");
 require("dotenv").config();
@@ -14,7 +14,7 @@ const ռօɨʀքʟǟʏɛʀ = new Client({
 const ռօɨʀֆɛʀʋɛʀ = express();
 const PORT = process.env.PORT || 3000;
 // ==================================================================
-// ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+// ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================
 ռօɨʀֆɛʀʋɛʀ.listen(PORT);
 ռօɨʀքʟǟʏɛʀ.login(ɴᴏɪʀᴇꜱ);
@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 3000;
 ռօɨʀքʟǟʏɛʀ.queue = new Map();
 ռօɨʀքʟǟʏɛʀ.commands = new Collection();
 // ==================================================================
-// ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+// ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================
 const NoirEngineOil = new Collection();
 const { MessageEmbed } = require("./ᴋʟᴀᴡᴠᴏɪᴅ");
@@ -54,16 +54,16 @@ ${CH}
 |••••🍀    Bot-Name: ${ռօɨʀքʟǟʏɛʀ.user.username}
 |••••🍀    Bot-Os: ${os.platform().toUpperCase()}
 |••••🍀    Bot-Port: ${PORT}
-~~~~~~~~~~~~~~~~~~~~~~~>  ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul <~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~>  NOIR🎶PLΛYΣЯ by HypeVoidSoul <~~~~~~~~~~~~~~~~~~~~~~~
 ${LIC}
 ${CH}`);
 });
 // ==================================================================
-// ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+// ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================
 ռօɨʀքʟǟʏɛʀ.on("warn", (ɴᴏɪʀ_WARN) => console.log(ɴᴏɪʀ_WARN));
 // ==================================================================
-// ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+// ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================
 ռօɨʀքʟǟʏɛʀ.on("error", console.error);
 // =============================================================================================================================
@@ -85,7 +85,7 @@ ${CH}`);
   );
   const embedThanks = new MessageEmbed()
     .setColor("#32CD32")
-    .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+    .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
     .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
     .setFooter(
@@ -93,11 +93,11 @@ ${CH}`);
     ).setDescription(`❤️‍🔥 **Hey there MUSIC lovers !**
 I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
 Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.
-**~~~~~~~~~~~~~~>  ПӨIЯ🎶PLΛYΣЯ <~~~~~~~~~~~~~~**
+**~~~~~~~~~~~~~~>  NOIR🎶PLΛYΣЯ <~~~~~~~~~~~~~~**
 :candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
 Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more.
 
-**~~~~~~~~~~~~~~>  ПӨIЯ🎶PLΛYΣЯ <~~~~~~~~~~~~~~**
+**~~~~~~~~~~~~~~>  NOIR🎶PLΛYΣЯ <~~~~~~~~~~~~~~**
 :star:**ɴᴏᴛᴇ to ᴏᴡɴᴇʀ ᴀɴᴅ ᴍᴏᴅᴇʀꜱ**
 🎃**VERY VERY IMPORTANT**
 Please use **!calib** once to calibrate before first use!`);
@@ -118,17 +118,17 @@ Please use **!calib** once to calibrate before first use!`);
 ռօɨʀքʟǟʏɛʀ.on("message", async (message) => {
   if (message.author.bot) return;
   // ==================================================================
-  // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+  // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   if (!message.guild) return;
   // ==================================================================
-  // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+  // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   if (message.content.startsWith(ʙᴏᴛꜰɪx + `calib`)) {
     if (message.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
       const embedcheck1 = new MessageEmbed()
         .setColor("#32CD32")
-        .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+        .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter(
@@ -155,7 +155,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
     } else {
       const embedcheck2 = new MessageEmbed()
         .setColor("#32CD32")
-        .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+        .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter(
@@ -179,19 +179,19 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
     }
   }
   // ==================================================================
-  // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+  // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   const prefixRegex = new RegExp(
     `^(<@!?${ռօɨʀքʟǟʏɛʀ.user.id}>|${escapeRegex(ʙᴏᴛꜰɪx)})\\s*`
   );
   // ==================================================================
-  // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+  // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   if (!prefixRegex.test(message.content)) {
     return;
   }
   // ==================================================================
-  // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+  // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   const [matchedPrefix] = message.content.match(prefixRegex);
   const args = message.content.slice(matchedPrefix.length).trim().split(/ +/);
@@ -202,7 +202,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       (cmd) => cmd.aliases && cmd.aliases.includes(commandName)
     );
   // ==================================================================
-  // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+  // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   if (!command) {
     return;
@@ -211,7 +211,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
     NoirEngineOil.set(command.name, new Collection());
   }
   // ==================================================================
-  // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+  // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   const now = Date.now();
   const timestamps = NoirEngineOil.get(command.name);
@@ -223,7 +223,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const embedNoir1 = new MessageEmbed()
         .setColor("#32CD32")
         .setTitle("⚠️Warning⚠️")
-        .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+        .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter(
@@ -242,7 +242,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
   timestamps.set(message.author.id, now);
   setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
   // ==================================================================
-  // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+  // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   try {
     command.execute(message, args);
@@ -251,7 +251,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
     const embedNoir2 = new MessageEmbed()
       .setColor("#32CD32")
       .setTitle("⚠️Warning⚠️")
-      .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+      .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setFooter(
@@ -274,7 +274,7 @@ There was an error executing that command.`
   }
 });
 // ==================================================================
-// ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+// ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================
 LIC = `GNU GENERAL PUBLIC LICENSE
 Version 3, 29 June 2007
@@ -285,5 +285,5 @@ NOIR🍀PLAYER = Discord Music YouTube player
 has been licensed under GNU General Public License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀`;
 // ==================================================================
-// ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+// ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================

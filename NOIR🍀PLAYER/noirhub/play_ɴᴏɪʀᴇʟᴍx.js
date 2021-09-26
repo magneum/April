@@ -32,7 +32,7 @@ module.exports = {
   name: "play",
   cooldown: 3,
   // ==================================================================
-  // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+  // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   async execute(message, args) {
     if (
@@ -42,7 +42,7 @@ module.exports = {
       const embedfactor = new MessageEmbed()
         .setColor("#32CD32")
         .setTitle("⚠️Warning⚠️")
-        .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+        .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter(
           "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -66,12 +66,12 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
       return;
     }
     // ==================================================================
-    // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     //     if (!ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0]) && !ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0])) {
     //       const embednotplay = new MessageEmbed()
     //         .setColor("#32CD32")
-    //         .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+    //         .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
     //         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
     //              .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
     // .setDescription(
@@ -91,13 +91,13 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
     //       return;
     //     }
     // ==================================================================
-    // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     if (ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
       const embedplay1 = new MessageEmbed()
         .setColor("#32CD32")
         .setTitle("⚠️Warning⚠️")
-        .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+        .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter(
           "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -121,7 +121,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
       return;
     }
     // ==================================================================
-    // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
@@ -133,7 +133,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
         const embedplay1 = new MessageEmbed()
           .setColor("#32CD32")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+          .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -156,13 +156,13 @@ You need to join a voice channel first!`
         return;
       }
       // ==================================================================
-      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (serverQueue && channel !== message.guild.me.voice.channel) {
         const embedplay2 = new MessageEmbed()
           .setColor("#32CD32")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+          .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -186,13 +186,13 @@ ID= ${message.client.user}`
         return;
       }
       // ==================================================================
-      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (!args.length) {
         const embedplay3 = new MessageEmbed()
           .setColor("#32CD32")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+          .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -215,14 +215,14 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`
         return;
       }
       // ==================================================================
-      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       const permissions = channel.permissionsFor(message.client.user);
       if (!permissions.has(`CONNECT`)) {
         const embedplay3 = new MessageEmbed()
           .setColor("#32CD32")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+          .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -245,13 +245,13 @@ Cannot connect to voice channel, missing permissions`
         return;
       }
       // ==================================================================
-      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (!permissions.has(`SPEAK`)) {
         const embedplay3 = new MessageEmbed()
           .setColor("#32CD32")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+          .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -274,13 +274,13 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
         return;
       }
       // ==================================================================
-      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       const url = args[0];
       const search = args.join(` `);
       const urlValid = ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0]);
       // ==================================================================
-      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (!ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0]) && ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
         message.client.commands.get(`list`).execute(message, args);
@@ -289,7 +289,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
         return;
       }
       // ==================================================================
-      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (not_needed_scl.test(url)) {
         try {
@@ -300,13 +300,13 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
                 .execute(message, [res.headers.location]);
               return;
               // ==================================================================
-              // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+              // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
               // ==================================================================
             } else {
               const embedplay4 = new MessageEmbed()
                 .setColor("#32CD32")
                 .setTitle("⚠️Warning⚠️")
-                .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+                .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                 .setFooter(
                   "𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -330,7 +330,7 @@ Audio Not Found`
             }
           });
           // ==================================================================
-          // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+          // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
         } catch (error) {
           console.error(error);
@@ -345,12 +345,12 @@ Audio Not Found`
           return;
         }
         // ==================================================================
-        // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         const embedplay5 = new MessageEmbed()
           .setColor("#32CD32")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+          .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -373,7 +373,7 @@ Following url redirection...`
         return;
       }
       // ==================================================================
-      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       const queueConstruct = {
         textChannel: message.channel,
@@ -407,7 +407,7 @@ Following url redirection...`
             });
         }
         // ==================================================================
-        // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
       } else if (scRegex.test(url)) {
         try {
@@ -429,7 +429,7 @@ Following url redirection...`
             });
         }
         // ==================================================================
-        // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
       } else {
         try {
@@ -437,13 +437,13 @@ Following url redirection...`
             part: `snippet`,
           });
           // ==================================================================
-          // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+          // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
           if (!results.length) {
             const embedplay6 = new MessageEmbed()
               .setColor("#32CD32")
               .setTitle("⚠️Warning⚠️")
-              .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+              .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setFooter(
                 "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -466,7 +466,7 @@ Audio Not Found`
             return;
           }
           // ==================================================================
-          // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+          // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
           songInfo = await ytdl.getInfo(results[0].url);
           song = {
@@ -488,7 +488,7 @@ Audio Not Found`
         }
       }
       // ==================================================================
-      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (serverQueue) {
         serverQueue.songs.push(song);
@@ -505,7 +505,7 @@ Audio Not Found`
         return;
       }
       // ==================================================================
-      // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       queueConstruct.songs.push(song);
       message.client.queue.set(message.guild.id, queueConstruct);
@@ -514,7 +514,7 @@ Audio Not Found`
           queueConstruct.connection = await channel.join();
           const embedplay7 = new MessageEmbed()
             .setColor("#32CD32")
-            .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+            .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
             .setFooter(
               "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -546,7 +546,7 @@ Audio Not Found`
         const embedplay8 = new MessageEmbed()
           .setColor("#32CD32")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+          .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"

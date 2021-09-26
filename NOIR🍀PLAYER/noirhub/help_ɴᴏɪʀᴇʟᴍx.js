@@ -14,12 +14,14 @@ const { ʙᴏᴛꜰɪx } = require("../noirtem/noir_env");
 module.exports = {
   name: "help",
   // ==================================================================
-  // ================>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <================
+  // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   execute(message) {
     let HELPEMBED = new MessageEmbed()
-      .setDescription(
-        `📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
+      .setDescription(`**User:** ${message.author}
+=========:radio_button:=========
+      
+      📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
 • **${ʙᴏᴛꜰɪx}filter** = Music filters when playing audio.
 • **${ʙᴏᴛꜰɪx}help** = Display all commands and descriptions.
 • **${ʙᴏᴛꜰɪx}noir** = Display the  license and a few more info.
@@ -40,7 +42,7 @@ module.exports = {
 `
       )
       .setColor("#32CD32")
-      .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
+      .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setFooter(
