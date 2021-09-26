@@ -133,8 +133,8 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
 You need to join a voice channel first!`
           );
         message.react("❌");
-        message
-          .lineReplyNoMention(embedplay1)
+        message.channel
+          .send(embedplay1)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -162,8 +162,8 @@ You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`
           );
         message.react("❌");
-        message
-          .lineReplyNoMention(embedplay2)
+        message.channel
+          .send(embedplay2)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -191,8 +191,8 @@ ID= ${message.client.user}`
 ${ʙᴏᴛꜰɪx}play **YouTube URL** or **Video Name**`
           );
         message.react("❌");
-        message
-          .lineReplyNoMention(embedplay3)
+        message.channel
+          .send(embedplay3)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -220,8 +220,8 @@ ${ʙᴏᴛꜰɪx}play **YouTube URL** or **Video Name**`
 Cannot connect to voice channel, missing permissions`
           );
         message.react("❌");
-        message
-          .lineReplyNoMention(embedplay3)
+        message.channel
+          .send(embedplay3)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -248,8 +248,8 @@ Cannot connect to voice channel, missing permissions`
 I cannot speak in this voice channel, make sure I have the proper permissions!`
           );
         message.react("❌");
-        message
-          .lineReplyNoMention(embedplay3)
+        message.channel
+          .send(embedplay3)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -278,6 +278,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
                 .get(`play`)
                 .execute(message, [res.headers.location]);
               return;
+
             } else {
               const embedplay4 = new MessageEmbed()
                 .setColor("#20ab40")
@@ -306,6 +307,7 @@ Audio Not Found`
               return;
             }
           });
+
         } catch (error) {
           console.error(error);
           message.channel
@@ -335,8 +337,8 @@ Audio Not Found`
 Following url redirection...`
           );
         message.react("❌");
-        message
-          .lineReplyNoMention(embedplay5)
+        message.channel
+          .send(embedplay5)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -377,6 +379,7 @@ Following url redirection...`
               });
             });
         }
+
       } else if (scRegex.test(url)) {
         try {
           const trackInfo = await scdl.getInfo(url, notneeded);
@@ -396,6 +399,7 @@ Following url redirection...`
               });
             });
         }
+
       } else {
         try {
           const results = await youtube.searchVideos(search, 1, {
@@ -517,8 +521,8 @@ Audio Not Found`
 Could not join the channel: *${error}*`
           );
         message.react("❌");
-        message
-          .lineReplyNoMention(embedplay8)
+        message.channel
+          .send(embedplay8)
           .catch(console.error)
           .then((message) => {
             message.delete({

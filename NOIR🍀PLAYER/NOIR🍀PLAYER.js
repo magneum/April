@@ -1,5 +1,5 @@
 CH = `~~~~~~~~~~~~~~~~~~~~~~~>  NOIR🎶PLΛYΣЯ by HypeVoidSoul <~~~~~~~~~~~~~~~~~~~~~~~`;
-console.clear();
+// console.clear();
 const os = require("os");
 require("dotenv").config();
 const { join } = require("path");

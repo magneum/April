@@ -1,1 +1,1 @@
-worker: nodemon NOIR🍀PLAYER/NOIR🍀PLAYER.js
+worker: npm run noir
