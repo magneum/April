@@ -63,6 +63,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`);
 =========:radio_button:=========
 
 There is no queue.`);
+                message.react("❌")
                 message.channel
                     .send(embedrm1)
                     .catch(console.error)
@@ -89,6 +90,7 @@ There is no queue.`);
 =========:radio_button:=========
 
 You need to join a voice channel first!`);
+                message.react("❌")
                 message.channel
                     .send(embedrm2)
                     .catch(console.error)
@@ -115,6 +117,7 @@ You need to join a voice channel first!`);
 =========:radio_button:=========
 
 ⚓️**usage:**${ʙᴏᴛꜰɪx}remove <Queue Number>`);
+                message.react("❌")
                 message.channel
                     .send(embedrm3)
                     .catch(console.error)
@@ -200,6 +203,7 @@ You need to join a voice channel first!`);
 =========:radio_button:=========
 
 **usage:**${ʙᴏᴛꜰɪx}remove <Queue Number>`);
+                message.react("❌")
                 message.channel
                     .send(embedrm4)
                     .catch(console.error)

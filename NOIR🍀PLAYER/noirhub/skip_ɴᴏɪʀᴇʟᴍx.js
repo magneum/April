@@ -22,7 +22,7 @@ module.exports = {
       message.content.startsWith(ʙᴏᴛꜰɪx + "skip") &&
       message.channel.name !== "noir🎶player"
     ) {
-      message.react("❌")
+      message.react("❌");
       const embedfactor = new MessageEmbed()
         .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
@@ -74,6 +74,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
 
 There is nothing playing that I could skip for you.`
           );
+        message.react("❌");
         message.channel
           .send(embedshp1)
           .catch(console.error)
@@ -103,6 +104,7 @@ There is nothing playing that I could skip for you.`
 
 You need to join a voice channel first!`
           );
+        message.react("❌");
         message.channel
           .send(embedshp2)
           .catch(console.error)

@@ -23,7 +23,7 @@ module.exports = {
       message.content.startsWith(ʙᴏᴛꜰɪx + "filter") &&
       message.channel.name !== "noir🎶player"
     ) {
-      message.react("❌")
+      message.react("❌");
       const embedfilter0 = new MessageEmbed()
         .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
@@ -66,6 +66,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`);
 
 **Nothing in Queue!**
 *Add music in Queue first!*`);
+      message.react("❌");
       message.channel
         .send(embednone1)
         .catch(console.error)
@@ -96,6 +97,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`);
 ▫️ nightcore
 ▫️ surrounding
 ▫️ clear [Clean all applied filter(s)]`);
+        message.react("❌");
         message.channel.send(embedfilter1).catch(console.error);
         // .then((message) => {
         //   message.delete({
@@ -126,6 +128,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`);
 =========:radio_button:=========
 
 Please join a Voice Channel first`);
+        message.react("❌");
         message.channel
           .send(embedfilter2)
           .catch(console.error)
@@ -153,6 +156,7 @@ Please join a Voice Channel first`);
 
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`);
+        message.react("❌");
         message.channel
           .send(embedfilter3)
           .catch(console.error)
@@ -220,6 +224,7 @@ ID= ${message.client.user}`);
 ▫️ nightcore
 ▫️ surrounding
 ▫️ clear [Clean all applied filter(s)]`);
+          message.react("❌");
           message.channel
             .send(embedfilter4)
             .catch(console.error)
@@ -275,6 +280,7 @@ ID= ${message.client.user}`);
 
 Song Queue has been cleaned up.
 Restarted queue and filter is applied.`);
+        message.react("❌");
         message.channel
           .send(embedfiltersongend)
           .catch(console.error)
@@ -297,6 +303,7 @@ Restarted queue and filter is applied.`);
 
 **Nothing in Queue!**
 *Add music in Queue first!*`);
+        message.react("❌");
         message.channel
           .send(embednone2)
           .catch(console.error)

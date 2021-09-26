@@ -107,6 +107,7 @@ module.exports = {
 =========:radio_button:=========
 
 Only YouTube playing/streaming is allowed`);
+        message.react("❌");
         message.channel
           .send(embedmusicnot)
           .catch(console.error)
@@ -145,6 +146,7 @@ Only YouTube playing/streaming is allowed`);
 **Error:** 
 **${error}**`
         );
+      message.react("❌");
       message.channel
         .send(embedmusic1)
         .catch(console.error)
@@ -258,6 +260,7 @@ Only YouTube playing/streaming is allowed`);
 
 You need to join a voice channel first!`
               );
+            message.react("❌");
             message.channel
               .send(embedmusic2)
               .catch(console.error)
@@ -314,6 +317,7 @@ You need to join a voice channel first!`
 
 You need to join a voice channel first!`
               );
+            message.react("❌");
             message.channel
               .send(embedmusic3)
               .catch(console.error)
@@ -392,6 +396,7 @@ You need to join a voice channel first!`
 
 You need to join a voice channel first!`
               );
+            message.react("❌");
             message.channel
               .send(embedmusic4)
               .catch(console.error)
@@ -479,6 +484,7 @@ You need to join a voice channel first!`
 
 You need to join a voice channel first!`
               );
+            message.react("❌");
             message.channel
               .send(embedmusic5)
               .catch(console.error)
@@ -538,6 +544,7 @@ You need to join a voice channel first!`
 
 You need to join a voice channel first!`
               );
+            message.react("❌");
             message.channel
               .send(embedmusic6)
               .catch(console.error)
@@ -594,6 +601,7 @@ You need to join a voice channel first!`
 
 You need to join a voice channel first!`
               );
+            message.react("❌");
             message.channel
               .send(embedmusic7)
               .catch(console.error)
@@ -650,6 +658,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
 
 You need to join a voice channel first!`
               );
+            message.react("❌");
             message.channel
               .send(embedmusic8)
               .catch(console.error)

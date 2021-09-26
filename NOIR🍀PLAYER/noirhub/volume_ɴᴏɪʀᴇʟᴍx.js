@@ -22,7 +22,7 @@ module.exports = {
       message.content.startsWith(ʙᴏᴛꜰɪx + "vol") &&
       message.channel.name !== "noir🎶player"
     ) {
-      message.react("❌")
+      message.react("❌");
       const embedfactor = new MessageEmbed()
         .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
@@ -74,6 +74,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
 
 You need to join a voice channel first!`
           );
+        message.react("❌");
         message.channel
           .send(embedskp2)
           .catch(console.error)
@@ -103,6 +104,7 @@ You need to join a voice channel first!`
 
 You need to join a voice channel first!`
           );
+        message.react("❌");
         message.channel
           .send(embedvol1)
           .catch(console.error)
@@ -132,6 +134,7 @@ You need to join a voice channel first!`
 
 🔊 **The current volume is:** ${queue.volume}%`
           );
+        message.react("❌");
         message.channel
           .send(embedvol2)
           .catch(console.error)
@@ -161,6 +164,7 @@ You need to join a voice channel first!`
 
 Please use a number to set volume.`
           );
+        message.react("❌");
         message.channel
           .send(embedvol3)
           .catch(console.error)
@@ -187,6 +191,7 @@ Please use a number to set volume.`
 =========:radio_button:=========
 
 Please use a number between 0 - 100."`);
+        message.react("❌");
         message.channel
           .send(embedvol4)
           .catch(console.error)

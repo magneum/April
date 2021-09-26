@@ -22,7 +22,7 @@ module.exports = {
       message.content.startsWith(ʙᴏᴛꜰɪx + "resume") &&
       message.channel.name !== "noir🎶player"
     ) {
-      message.react("❌")
+      message.react("❌");
       const embedfactor = new MessageEmbed()
         .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
@@ -74,6 +74,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
 
 is not playing anymusic yet.....`
           );
+        message.react("❌");
         message.channel
           .send(embedresume1)
           .catch(console.error)
@@ -103,6 +104,7 @@ is not playing anymusic yet.....`
 
 is not playing anymusic yet.....`
           );
+        message.react("❌");
         message.channel
           .send(embedresume2)
           .catch(console.error)
@@ -158,6 +160,7 @@ is not playing anymusic yet.....`
 
 The queue is not paused.`
         );
+      message.react("❌");
       message.channel
         .send(embedresume3)
         .catch(console.error)

@@ -39,7 +39,7 @@ module.exports = {
       message.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
       message.channel.name !== "noir🎶player"
     ) {
-      message.react("❌")
+      message.react("❌");
       const embedfactor = new MessageEmbed()
         .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
@@ -111,6 +111,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
 This link seems to be a playlist link.
 Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
         );
+      message.react("❌");
       message.channel
         .send(embedplay1)
         .catch(console.error)
@@ -147,6 +148,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
 
 You need to join a voice channel first!`
           );
+        message.react("❌");
         message.channel
           .send(embedplay1)
           .catch(console.error)
@@ -177,6 +179,7 @@ You need to join a voice channel first!`
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`
           );
+        message.react("❌");
         message.channel
           .send(embedplay2)
           .catch(console.error)
@@ -207,6 +210,7 @@ ID= ${message.client.user}`
 **usage:**
 ${ʙᴏᴛꜰɪx}play **YouTube URL** or **Video Name**`
           );
+        message.react("❌");
         message.channel
           .send(embedplay3)
           .catch(console.error)
@@ -237,6 +241,7 @@ ${ʙᴏᴛꜰɪx}play **YouTube URL** or **Video Name**`
 
 Cannot connect to voice channel, missing permissions`
           );
+        message.react("❌");
         message.channel
           .send(embedplay3)
           .catch(console.error)
@@ -266,6 +271,7 @@ Cannot connect to voice channel, missing permissions`
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`
           );
+        message.react("❌");
         message.channel
           .send(embedplay3)
           .catch(console.error)
@@ -321,6 +327,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
 
 Audio Not Found`
                 );
+              message.react("❌");
               message.channel
                 .send(embedplay4)
                 .catch(console.error)
@@ -365,6 +372,7 @@ Audio Not Found`
 
 Following url redirection...`
           );
+        message.react("❌");
         message.channel
           .send(embedplay5)
           .catch(console.error)
@@ -458,6 +466,7 @@ Following url redirection...`
 
 Audio Not Found`
               );
+            message.react("❌");
             message.channel
               .send(embedplay6)
               .catch(console.error)
@@ -561,6 +570,7 @@ Audio Not Found`
 
 Could not join the channel: *${error}*`
           );
+        message.react("❌");
         message.channel
           .send(embedplay8)
           .catch(console.error)

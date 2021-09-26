@@ -22,7 +22,7 @@ module.exports = {
       message.content.startsWith(ʙᴏᴛꜰɪx + "queue") &&
       message.channel.name !== "noir🎶player"
     ) {
-      message.react("❌")
+      message.react("❌");
       const embedfactor = new MessageEmbed()
         .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
@@ -74,6 +74,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
 
 Missing permission to manage messages or add reactions`
           );
+        message.react("❌");
         message.channel
           .send(embedqueue1)
           .catch(console.error)
@@ -104,6 +105,7 @@ Missing permission to manage messages or add reactions`
 
 🔴 Nothing playing in this server`
           );
+        message.react("❌");
         message.channel
           .send(embedqueue2)
           .catch(console.error)

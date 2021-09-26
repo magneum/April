@@ -22,7 +22,7 @@ module.exports = {
       message.content.startsWith(ʙᴏᴛꜰɪx + "stop") &&
       message.channel.name !== "noir🎶player"
     ) {
-      message.react("❌")
+      message.react("❌");
       const embedfactor = new MessageEmbed()
         .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
@@ -74,6 +74,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
 
 Not playing anymusic yet.....`
           );
+        message.react("❌");
         message.channel
           .send(embedskp1)
           .catch(console.error)
@@ -103,6 +104,7 @@ Not playing anymusic yet.....`
 
 You need to join a voice channel first!`
           );
+        message.react("❌");
         message.channel
           .send(embedskp2)
           .catch(console.error)

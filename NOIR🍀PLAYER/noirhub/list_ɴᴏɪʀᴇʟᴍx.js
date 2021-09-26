@@ -33,7 +33,7 @@ module.exports = {
       message.content.startsWith(ʙᴏᴛꜰɪx + "list") &&
       message.channel.name !== "noir🎶player"
     ) {
-      message.react("❌")
+      message.react("❌");
       const embedfactor = new MessageEmbed()
         .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
@@ -50,6 +50,7 @@ module.exports = {
 **Channel:** \`noir🎶player\`
 Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
         );
+
       message.channel
         .send(embedfactor)
         .catch(console.error)
@@ -83,6 +84,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
 =========:radio_button:=========
 
 You need to join a voice channel first!`);
+        message.react("❌");
         message.channel
           .send(embedlist1)
           .catch(console.error)
@@ -110,6 +112,7 @@ You need to join a voice channel first!`);
 
 **usage:**
 ${ʙᴏᴛꜰɪx}playlist **YouTube Playlist URL** or **Valid Playlist Name**`);
+        message.react("❌");
         message.channel
           .send(embedlist2)
           .catch(console.error)
@@ -137,6 +140,7 @@ ${ʙᴏᴛꜰɪx}playlist **YouTube Playlist URL** or **Valid Playlist Name**`);
 =========:radio_button:=========
 
 Cannot connect to voice channel, missing permissions`);
+        message.react("❌");
         message.channel
           .send(embedlist3)
           .catch(console.error)
@@ -163,6 +167,7 @@ Cannot connect to voice channel, missing permissions`);
 =========:radio_button:=========
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`);
+        message.react("❌");
         message.channel
           .send(embedlist4)
           .catch(console.error)
@@ -187,6 +192,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
 
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`);
+        message.react("❌");
         message.channel
           .send(embedlist5)
           .catch(console.error)
@@ -243,6 +249,7 @@ ID= ${message.client.user}`);
 
 Playlist not found`
             );
+          message.react("❌");
           message.channel
             .send(embedlist6)
             .catch(console.error)
@@ -384,6 +391,7 @@ Started a playlist`
 
 Could not join the channel: *${error}*`
             );
+          message.react("❌");
           message.channel
             .send(embedlist8)
             .catch(console.error)

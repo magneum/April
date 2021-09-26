@@ -136,7 +136,7 @@ Please use **!calib** once to calibrate before first use!`);
 
   • Add me in your channel and then all commands will be automatically accepted.`);
     message.reply(checkdm);
-    message.react("❌")
+    message.react("❌");
     return;
   }
   // =============================================================================================================================
@@ -261,7 +261,8 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
 Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
         command.name
       }' command.      `);
-      channel.send(embedNoir1).catch(console.error);
+      message.react("❌");
+      message.channel.send(embedNoir1).catch(console.error);
       return;
     }
   }
@@ -290,7 +291,8 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
 
 There was an error executing that command.`
       );
-    channel
+    message.react("❌");
+    message.channel
       .send(embedNoir2)
       .catch(console.error)
       .then((message) => {
