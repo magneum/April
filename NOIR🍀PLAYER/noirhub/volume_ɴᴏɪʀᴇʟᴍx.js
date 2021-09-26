@@ -27,7 +27,7 @@ module.exports = {
         .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
-        .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+        .setThumbnail(`https://i.postimg.cc/xT8GcmMZ/image.png`)
         .setFooter(
           "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
         )
@@ -63,7 +63,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
           .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
-          .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+          .setThumbnail(`https://i.postimg.cc/xT8GcmMZ/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
           )
@@ -92,7 +92,7 @@ You need to join a voice channel first!`
           .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
-          .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+          .setThumbnail(`https://i.postimg.cc/xT8GcmMZ/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
           )
@@ -121,7 +121,7 @@ You need to join a voice channel first!`
           .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
-          .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+          .setThumbnail(`https://i.postimg.cc/xT8GcmMZ/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
           )
@@ -150,7 +150,7 @@ You need to join a voice channel first!`
           .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
-          .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+          .setThumbnail(`https://i.postimg.cc/xT8GcmMZ/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
           )
@@ -179,7 +179,7 @@ Please use a number to set volume.`
           .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
-          .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+          .setThumbnail(`https://i.postimg.cc/xT8GcmMZ/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
           ).setDescription(`
@@ -207,7 +207,7 @@ Please use a number between 0 - 100."`);
           new MessageEmbed()
             .setColor("#20ab40")
             .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
-            .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+            .setThumbnail(`https://i.postimg.cc/xT8GcmMZ/image.png`)
             .setFooter(
               "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
             ).setDescription(`**User:** ${message.author}
