@@ -60,13 +60,19 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`);
 **⚠️Warning⚠️** ${message.author}
 =============:radio_button:=============
 
-**usage:** \`${ʙᴏᴛꜰɪx}filter\`
-▫️ 8D
-▫️ subboost
-▫️ bassboost
-▫️ nightcore
-▫️ surrounding
-▫️ clear [Clean all applied filter(s)]`);
+**usage:** ${ʙᴏᴛꜰɪx}filter
+
+- bassboost
+- 8D
+- vaporwave
+- nightcore
+- phaser
+- tremolo
+- vibrato
+- surrounding
+- pulsator
+- subboost
+- clear   ---  removes all filter(s) applied`);
       message.channel
         .send(embedfilter1)
         .catch(console.error)
@@ -133,72 +139,101 @@ ID= ${message.client.user}`);
       // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
       // ==================================================================
       const filters = [
+        //bassboost
         "bass=g=20,dynaudnorm=f=200",
+        //8D
         "apulsator=hz=0.08",
+        //vaporwave
+        "aresample=48000,asetrate=48000*0.8",
+        //nightcore
         "aresample=48000,asetrate=48000*1.25",
+        //phaser
+        "aphaser=in_gain=0.4",
+        //tremolo
+        "tremolo",
+        //vibrato
+        "vibrato=f=6.5",
+        //surrounding
         "surround",
+        //pulsator
+        "apulsator=hz=1",
+        //subboost
         "asubboost",
         "remove",
       ];
       // ==================================================================
       // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
       // ==================================================================
-      let NoirEffectNum;
-      let NoirSelected;
+      let varforfilter;
+      let choice;
+      // ==================================================================
+      // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
+      // ==================================================================
       switch (args[0]) {
         case "bassboost":
-          NoirEffectNum = 0;
+          varforfilter = 0;
           break;
         case "8D":
-          NoirEffectNum = 1;
+          varforfilter = 1;
+          break;
+        case "vaporwave":
+          varforfilter = 2;
           break;
         case "nightcore":
-          NoirEffectNum = 2;
+          varforfilter = 3;
+          break;
+        case "phaser":
+          varforfilter = 4;
+          break;
+        case "tremolo":
+          varforfilter = 5;
+          break;
+        case "vibrato":
+          varforfilter = 6;
           break;
         case "surrounding":
-          NoirEffectNum = 3;
+          varforfilter = 7;
+          break;
+        case "pulsator":
+          varforfilter = 8;
           break;
         case "subboost":
-          NoirEffectNum = 4;
+          varforfilter = 9;
           break;
         case "clear":
-          NoirEffectNum = 5;
+          varforfilter = 10;
           break;
         default:
-          NoirEffectNum = 404;
-          const embedfilter4 = new MessageEmbed()
-            .setColor("#32CD32")
-            .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
-            .setFooter(`**Example:** ${ʙᴏᴛꜰɪx}filter bassboost`)
-            .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-            .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
-**That was not a valid filter!**
-
-▫️ 8D
-▫️ subboost
-▫️ bassboost
-▫️ nightcore
-▫️ surrounding
-▫️ clear [Clean all applied filter(s)]`);
-          message.channel
-            .send(embedfilter4)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          varforfilter = 404;
+          message.channel.send(
+            new MessageEmbed()
+              .setColor("#32CD32")
+              .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
+              .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+              .setTitle("Not a valid Filter, use one of those:")
+              .setDescription(
+                `
+- bassboost
+- 8D
+- vaporwave
+- nightcore
+- phaser
+- tremolo
+- vibrato
+- surrounding
+- pulsator
+- subboost
+- clear   ---  removes all filters`
+              )
+              .setFooter(`**Example:** ${ʙᴏᴛꜰɪx}filter bassboost`)
+          );
           break;
       }
       // ==================================================================
       // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
       // ==================================================================
-      NoirSelected = filters[NoirEffectNum];
-      if (NoirEffectNum === 404) {
-        return;
-      }
+      choice = filters[varforfilter];
+      if (varforfilter === 404) return;
       try {
         const song = queue.songs[0];
         message.channel
@@ -220,25 +255,7 @@ ID= ${message.client.user}`);
         // ==================================================================
         // ================>  ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 <================
         // ==================================================================
-        // play(song, message, client, NoirSelected);
-        const embedfiltersongend = new MessageEmbed()
-          .setColor("#32CD32")
-          .setAuthor(`ПӨIЯ🍀PLΛYΣЯ 𝗯𝘆 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹`)
-          .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-          .setDescription(`\n\n
-**⚠️Warning⚠️** ${message.author}
-=============:radio_button:=============
-
-Song Queue has been cleaned up.
-Please re-add music to the queue and filter will be applied.`);
-        message.channel
-          .send(embedfiltersongend)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+        play(song, message, client, choice);
       } catch (error) {
         const embednone = new MessageEmbed()
           .setColor("#32CD32")

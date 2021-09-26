@@ -43,7 +43,8 @@ module.exports = {
 **⚠️Warning⚠️** ${message.author}
 =============:radio_button:=============
 
-_Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands._`
+**Channel:** \`noir🍀player\`
+Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
         );
       message.channel
         .send(embedfactor)
