@@ -25,8 +25,9 @@ module.exports = {
     // ==================================================================
     if (!song) {
       setTimeout(function () {
-        if (queue.connection.dispatcher && message.guild.me.voice.channel)
+        if (queue.connection.dispatcher && message.guild.me.voice.channel) {
           return;
+        }
         // ==================================================================
         // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
@@ -40,7 +41,7 @@ module.exports = {
               .setFooter(
                 "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
               )
-              .setDescription("🤎**NOIR** has left the voice channel!")
+              .setDescription("=========:radio_button:=========\n\n🤎**NOIR** has left the voice channel!")
           )
           .catch(console.error)
           .then((message) => {
@@ -52,6 +53,7 @@ module.exports = {
       // ==================================================================
       // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
+      const queue = message.client.queue.get(message.guild.id);
       queue.textChannel
         .send(
           new MessageEmbed()
@@ -61,7 +63,7 @@ module.exports = {
             .setFooter(
               "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
             )
-            .setDescription("💚**NOIR's** MusicQueue has ended!")
+            .setDescription("=========:radio_button:=========\n\n💚**NOIR's** MusicQueue has ended!")
         )
         .catch(console.error)
         .then((message) => {
@@ -202,9 +204,9 @@ Only YouTube playing/streaming is allowed`);
       // ==================================================================
       // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
-      await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("👉🏻");
+      await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏭");
       await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏯");
-      await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🤫");
+      await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔇");
       await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔉");
       await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔊");
       await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔁");
@@ -234,7 +236,7 @@ Only YouTube playing/streaming is allowed`);
         // ==================================================================
         // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        case "👉🏻":
+        case "⏭":
           queue.playing = true;
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
@@ -369,7 +371,7 @@ You need to join a voice channel first!`
         // ==================================================================
         // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        case "🤫":
+        case "🔇":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic4 = new MessageEmbed()
@@ -414,7 +416,7 @@ You need to join a voice channel first!`
                   ).setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-🤫 Muted the music!`)
+🔇 Muted the music!`)
               )
               .catch(console.error)
               .then((message) => {
@@ -669,7 +671,7 @@ You need to join a voice channel first!`
                 .setFooter(
                   "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
                 )
-                .setDescription(`❤️MusicQueue has been successfully ended`)
+                .setDescription("=========:radio_button:=========\n\n❤️MusicQueue has been successfully ended")
             )
             .catch(console.error)
             .then((message) => {
