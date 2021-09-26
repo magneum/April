@@ -55,6 +55,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
       message.content.startsWith(ʙᴏᴛꜰɪx + "queue") &&
       message.channel.name === "noir🍀player"
     ) {
+      message.react("✅");
       const permissions = message.channel.permissionsFor(message.client.user);
       if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
         const embedqueue1 = new MessageEmbed()

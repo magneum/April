@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
-const { ʙᴏᴛꜰɪx } = require("../noirtem/noir_env");
+const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
 // =============================================================================================================================
 // GNU GENERAL PUBLIC LICENSE
 // Version 3, 29 June 2007
@@ -33,9 +33,41 @@ module.exports = {
       )
       .setColor("#32CD32")
       .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
-      .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
-      .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`);
-    message.channel.send(NOIREMBED).catch(console.error);
+      .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`);
+    // ==================================================================
+    // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ==================================================================
+    message.react("✅");
+    message.author.send(
+      new MessageEmbed()
+        .setColor("#32F590")
+        .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
+    );
+    // ==================================================================
+    // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ==================================================================
+    message.author.send(NOIREMBED).catch(console.error);
+    message.channel
+      .send(
+        new MessageEmbed()
+          .setColor("#32CD32")
+          .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+          .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
+          .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+          .setFooter(
+            "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+          ).setDescription(`**👍 ${message.author} 
+=========:radio_button:=========
+
+Check your \`direct messages\` 
+for extra info on *NOIR* **
+`)
+      )
+      .then((message) => {
+        message.delete({
+          timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        });
+      });
     return;
   },
 };

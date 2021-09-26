@@ -127,6 +127,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
       message.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
       message.channel.name === "noir🍀player"
     ) {
+      message.react("✅");
       const { channel } = message.member.voice;
       const serverQueue = message.client.queue.get(message.guild.id);
       if (!channel) {

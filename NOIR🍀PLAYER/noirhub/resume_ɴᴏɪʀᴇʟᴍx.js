@@ -55,6 +55,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
       message.content.startsWith(ʙᴏᴛꜰɪx + "resume") &&
       message.channel.name === "noir🍀player"
     ) {
+      message.react("✅");
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embedresume1 = new MessageEmbed()

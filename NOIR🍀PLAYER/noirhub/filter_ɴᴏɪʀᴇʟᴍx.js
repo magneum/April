@@ -39,14 +39,12 @@ module.exports = {
 
 **Channel:** \`noir🍀player\`
 Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`);
-      message.channel
-        .send(embedfilter0)
-        .catch(console.error)
-        .then((message) => {
-          message.delete({
-            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-          });
-        });
+      message.channel.send(embedfilter0).catch(console.error);
+      // .then((message) => {
+      //   message.delete({
+      //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+      //   });
+      // });
       return;
     }
     // ==================================================================
@@ -73,14 +71,12 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`);
 ▫️ nightcore
 ▫️ surrounding
 ▫️ clear [Clean all applied filter(s)]`);
-      message.channel
-        .send(embedfilter1)
-        .catch(console.error)
-        .then((message) => {
-          message.delete({
-            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-          });
-        });
+      message.channel.send(embedfilter1).catch(console.error);
+      // .then((message) => {
+      //   message.delete({
+      //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+      //   });
+      // });
       return;
     }
     // ==================================================================
@@ -90,6 +86,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`);
       message.content.startsWith(ʙᴏᴛꜰɪx + "filter") &&
       message.channel.name === "noir🍀player"
     ) {
+      message.react("✅");
       if (!message.member.voice.channel) {
         const embedfilter2 = new MessageEmbed()
           .setColor("#32CD32")

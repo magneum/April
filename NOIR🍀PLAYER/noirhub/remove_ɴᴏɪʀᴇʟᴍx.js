@@ -47,6 +47,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`);
         // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name === "noir🍀player") {
+            message.react("✅");
             const queue = message.client.queue.get(message.guild.id);
             if (!queue) {
                 const embedrm1 = new MessageEmbed()

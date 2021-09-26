@@ -55,6 +55,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
       message.content.startsWith(ʙᴏᴛꜰɪx + "ping") &&
       message.channel.name === "noir🍀player"
     ) {
+      message.react("✅");
       const embedping = new MessageEmbed()
         .setColor("#32CD32")
         .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)

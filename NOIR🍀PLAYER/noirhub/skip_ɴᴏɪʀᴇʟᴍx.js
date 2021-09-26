@@ -55,6 +55,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
       message.content.startsWith(ʙᴏᴛꜰɪx + "skip") &&
       message.channel.name === "noir🍀player"
     ) {
+      message.react("✅");
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embedshp1 = new MessageEmbed()
