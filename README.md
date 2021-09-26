@@ -2,7 +2,7 @@
 
 # 🦋『 ᴅɪꜱᴄᴏʀᴅ ᴍᴜꜱɪᴄ ʙᴏᴛ: NOIR🍀PLAYER 』🦋
 
-<p align="centre"><img  width="100%" height="100%" img src="https://github.com/HypeVoidSoul/Noir/blob/VOID/NOIR%F0%9F%8D%80PLAYER/noirtem/%C9%B4%E1%B4%8F%C9%AA%CA%80%F0%9F%8D%80%E1%B4%98%CA%9F%E1%B4%80%CA%8F%E1%B4%87%CA%80.png" /></p>
+<p align="centre"><img  width="100%" height="100%" img src="https://github.com/HypeVoidSoul/Noir/blob/VOID/NOIR%F0%9F%8D%80PLAYER/noirtem/_%C9%B4%E1%B4%8F%C9%AA%CA%80%F0%9F%8D%80%E1%B4%98%CA%9F%E1%B4%80%CA%8F%E1%B4%87%CA%80_.jpeg" /></p>
 <p align="centre"><img  width="100%" height="100%" img src="https://github.com/HypeVoidSoul/Noir/blob/VOID/NOIR%F0%9F%8D%80PLAYER/noirtem/%C9%B4%E1%B4%8F%C9%AA%CA%80%F0%9F%8D%80%E1%B4%98%CA%9F%E1%B4%80%CA%8F%E1%B4%87%CA%80.JPG" /></p>
 
 # ❓ WΉY MΛDΣ ƬΉIS BӨƬ?
