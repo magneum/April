@@ -19,14 +19,11 @@ module.exports = {
   // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   async execute(message, args, client) {
-    if (!message.guild) {
-      return;
-    }
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "filter") &&
       message.channel.name !== "noir🎶player"
     ) {
-      message.react("💢");
+      message.react("❌")
       const embedfilter0 = new MessageEmbed()
         .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")

@@ -62,9 +62,6 @@ ${CH}`);
 // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
 // ==================================================================
 ռօɨʀքʟǟʏɛʀ.on("warn", (ɴᴏɪʀ_WARN) => console.log(ɴᴏɪʀ_WARN));
-// ==================================================================
-// ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
-// ==================================================================
 ռօɨʀքʟǟʏɛʀ.on("error", console.error);
 // =============================================================================================================================
 // GNU GENERAL PUBLIC LICENSE
@@ -132,19 +129,27 @@ Please use **!calib** once to calibrate before first use!`);
       .setFooter(
         "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
       ).setDescription(`
-**User:** ${message.author}
-=========:radio_button:=========
+  **User:** ${message.author}
+  =========:radio_button:=========
 
-• You are currently in a **DMChannel** and so you have been **restricted** using any **NOIR 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀**
+  • You are currently in a **DMChannel** and so you have been **restricted** using any **NOIR 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀**
 
-• Add me in your channel and then all commands will be automatically accepted.`);
+  • Add me in your channel and then all commands will be automatically accepted.`);
     message.reply(checkdm);
-    message.react("✅");
+    message.react("❌")
     return;
   }
-  // ==================================================================
-  // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
-  // ==================================================================
+  // =============================================================================================================================
+  // GNU GENERAL PUBLIC LICENSE
+  // Version 3, 29 June 2007
+  // Copyright (C) 2007 Free Software Foundation
+  // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
+  // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
+  // noir🎶player
+  // Discord Music YouTube player
+  // has been licensed under GNU General Public License
+  // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
+  // =============================================================================================================================
   if (message.content.startsWith(ʙᴏᴛꜰɪx + `calib`)) {
     if (message.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
       const embedcheck1 = new MessageEmbed()

@@ -20,7 +20,7 @@ module.exports = {
     // ==================================================================
     execute(message, args) {
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name !== "noir🎶player") {
-            message.react("💢")
+            message.react("❌")
             const embedfactor = new MessageEmbed()
                 .setColor("#20ab40")
                 .setTitle("⚠️Warning⚠️")
