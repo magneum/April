@@ -84,7 +84,7 @@ ${CH}`);
       channel.permissionsFor(guild.me).has(`SEND_MESSAGES`)
   );
   const embedThanks = new MessageEmbed()
-    .setColor("#32CD32")
+    .setColor("#20ab40")
     .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
     .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -131,7 +131,7 @@ Please use **!calib** once to calibrate before first use!`);
   if (message.content.startsWith(ʙᴏᴛꜰɪx + `calib`)) {
     if (message.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
       const embedcheck1 = new MessageEmbed()
-        .setColor("#32CD32")
+        .setColor("#20ab40")
         .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -158,7 +158,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       console.log(`•🦋noir🍀player🦋 ©️• has been successfully created.`);
     } else {
       const embedcheck2 = new MessageEmbed()
-        .setColor("#32CD32")
+        .setColor("#20ab40")
         .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -225,7 +225,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
     if (now < expirationTime) {
       const timeLeft = (expirationTime - now) / 1000;
       const embedNoir1 = new MessageEmbed()
-        .setColor("#32CD32")
+        .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -253,7 +253,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
   } catch (error) {
     console.error(error);
     const embedNoir2 = new MessageEmbed()
-      .setColor("#32CD32")
+      .setColor("#20ab40")
       .setTitle("⚠️Warning⚠️")
       .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)

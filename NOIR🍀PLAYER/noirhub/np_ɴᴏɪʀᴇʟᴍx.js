@@ -24,7 +24,7 @@ module.exports = {
       message.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
-        .setColor("#32CD32")
+        .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -61,7 +61,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embednp1 = new MessageEmbed()
-          .setColor("#32CD32")
+          .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -103,7 +103,7 @@ Noir is not playing anymusic yet....`
           "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
         )
         .setDescription(`${song.title}\n${song.url}`)
-        .setColor("#32CD32")
+        .setColor("#20ab40")
         .setAuthor(message.client.user.username);
       // ==================================================================
       // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================

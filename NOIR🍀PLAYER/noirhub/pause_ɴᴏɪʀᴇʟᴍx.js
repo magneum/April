@@ -23,7 +23,7 @@ module.exports = {
       message.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
-        .setColor("#32CD32")
+        .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -59,7 +59,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embedpause1 = new MessageEmbed()
-          .setColor("#32CD32")
+          .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -88,7 +88,7 @@ is not playing anymusic yet.....`
       // ==================================================================
       if (!canModifyQueue(message.member)) {
         const embedpause2 = new MessageEmbed()
-          .setColor("#32CD32")
+          .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)

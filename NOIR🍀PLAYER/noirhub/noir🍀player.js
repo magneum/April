@@ -70,7 +70,7 @@ module.exports = {
         // ==================================================================
       } else {
         const embedmusicnot = new MessageEmbed()
-          .setColor("#32CD32")
+          .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -104,7 +104,7 @@ Only YouTube playing/streaming is allowed`);
       // ==================================================================
       console.error(error);
       const embedmusic1 = new MessageEmbed()
-        .setColor("#32CD32")
+        .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -209,7 +209,7 @@ Only YouTube playing/streaming is allowed`);
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic2 = new MessageEmbed()
-              .setColor("#32CD32")
+              .setColor("#20ab40")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -254,7 +254,7 @@ You need to join a voice channel first!`
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic3 = new MessageEmbed()
-              .setColor("#32CD32")
+              .setColor("#20ab40")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -315,7 +315,7 @@ You need to join a voice channel first!`
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic4 = new MessageEmbed()
-              .setColor("#32CD32")
+              .setColor("#20ab40")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -380,7 +380,7 @@ You need to join a voice channel first!`
           }
           if (!canModifyQueue(member)) {
             const embedmusic5 = new MessageEmbed()
-              .setColor("#32CD32")
+              .setColor("#20ab40")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -430,7 +430,7 @@ You need to join a voice channel first!`
           }
           if (!canModifyQueue(member)) {
             const embedmusic6 = new MessageEmbed()
-              .setColor("#32CD32")
+              .setColor("#20ab40")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -477,7 +477,7 @@ You need to join a voice channel first!`
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic7 = new MessageEmbed()
-              .setColor("#32CD32")
+              .setColor("#20ab40")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -525,7 +525,7 @@ You need to join a voice channel first!`
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic8 = new MessageEmbed()
-              .setColor("#32CD32")
+              .setColor("#20ab40")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)

@@ -31,7 +31,7 @@ module.exports = {
 •> use **${ʙᴏᴛꜰɪx}help** to learn how to use **NOIR**
 `
       )
-      .setColor("#32CD32")
+      .setColor("#20ab40")
       .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`);
     // ==================================================================
@@ -40,7 +40,7 @@ module.exports = {
     message.react("✅");
     message.author.send(
       new MessageEmbed()
-        .setColor("#32F590")
+        .setColor("#20ab40")
         .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
     );
     // ==================================================================
@@ -50,7 +50,7 @@ module.exports = {
     message.channel
       .send(
         new MessageEmbed()
-          .setColor("#32CD32")
+          .setColor("#20ab40")
           .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)

@@ -34,7 +34,7 @@ module.exports = {
       message.channel.name !== "noir🍀player"
     ) {
       const embedfactor = new MessageEmbed()
-        .setColor("#32CD32")
+        .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -71,7 +71,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
       const serverQueue = message.client.queue.get(message.guild.id);
       if (!channel) {
         const embedlist1 = new MessageEmbed()
-          .setColor("#32CD32")
+          .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -97,7 +97,7 @@ You need to join a voice channel first!`);
       // ==================================================================
       if (!args.length) {
         const embedlist2 = new MessageEmbed()
-          .setColor("#32CD32")
+          .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -124,7 +124,7 @@ You need to join a voice channel first!`);
       const permissions = channel.permissionsFor(message.client.user);
       if (!permissions.has(`CONNECT`)) {
         const embedlist3 = new MessageEmbed()
-          .setColor("#32CD32")
+          .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -150,7 +150,7 @@ Cannot connect to voice channel, missing permissions`);
       // ==================================================================
       if (!permissions.has(`SPEAK`)) {
         const embedlist4 = new MessageEmbed()
-          .setColor("#32CD32")
+          .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -173,7 +173,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
       }
       if (serverQueue && channel !== message.guild.me.voice.channel) {
         const embedlist5 = new MessageEmbed()
-          .setColor("#32CD32")
+          .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -227,7 +227,7 @@ ID= ${message.client.user}`);
         } catch (error) {
           console.error(error);
           const embedlist6 = new MessageEmbed()
-            .setColor("#32CD32")
+            .setColor("#20ab40")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -317,7 +317,7 @@ Playlist not found`
           newSongs.map((song, index) => `${index + 1}. ${song.title}`)
         )
         .setURL(playlist.url)
-        .setColor("#32CD32")
+        .setColor("#20ab40")
         .setTimestamp();
       // ==================================================================
       // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
@@ -327,7 +327,7 @@ Playlist not found`
           playlistEmbed.description.substr(0, 2007) +
           "**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\nPlaylist larger than character limit...";
       const embedlist7 = new MessageEmbed()
-        .setColor("#32CD32")
+        .setColor("#20ab40")
         .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter(
@@ -368,7 +368,7 @@ Started a playlist`
           message.client.queue.delete(message.guild.id);
           await channel.leave();
           const embedlist8 = new MessageEmbed()
-            .setColor("#32CD32")
+            .setColor("#20ab40")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)

@@ -27,7 +27,7 @@ module.exports = {
       message.channel.name !== "noir🍀player"
     ) {
       const embedfilter0 = new MessageEmbed()
-        .setColor("#32CD32")
+        .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -52,15 +52,40 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`);
     // ==================================================================
     const { channel } = message.member.voice;
     const queue = message.client.queue.get(message.guild.id);
-    if (!args.length) {
-      const embedfilter1 = new MessageEmbed()
-        .setColor("#32CD32")
+    if (!queue) {
+      const embednone1 = new MessageEmbed()
+        .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter(
           "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
         ).setDescription(`
+**User:** ${message.author}
+=========:radio_button:=========
+
+**Nothing in Queue!**
+*Add music in Queue first!*`);
+      message.channel
+        .send(embednone1)
+        .catch(console.error)
+        .then((message) => {
+          message.delete({
+            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          });
+        });
+      return;
+    }
+    if (queue.length !== 0) {
+      if (!args.length) {
+        const embedfilter1 = new MessageEmbed()
+          .setColor("#20ab40")
+          .setTitle("⚠️Warning⚠️")
+          .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
+          .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
+          .setFooter(
+            "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+          ).setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
 
@@ -71,13 +96,14 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`);
 ▫️ nightcore
 ▫️ surrounding
 ▫️ clear [Clean all applied filter(s)]`);
-      message.channel.send(embedfilter1).catch(console.error);
-      // .then((message) => {
-      //   message.delete({
-      //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-      //   });
-      // });
-      return;
+        message.channel.send(embedfilter1).catch(console.error);
+        // .then((message) => {
+        //   message.delete({
+        //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        //   });
+        // });
+        return;
+      }
     }
     // ==================================================================
     // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
@@ -89,7 +115,7 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`);
       message.react("✅");
       if (!message.member.voice.channel) {
         const embedfilter2 = new MessageEmbed()
-          .setColor("#32CD32")
+          .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -115,7 +141,7 @@ Please join a Voice Channel first`);
       // ==================================================================
       if (queue && channel !== message.guild.me.voice.channel) {
         const embedfilter3 = new MessageEmbed()
-          .setColor("#32CD32")
+          .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -176,7 +202,7 @@ ID= ${message.client.user}`);
         default:
           NoirEffectNum = 404;
           const embedfilter4 = new MessageEmbed()
-            .setColor("#32CD32")
+            .setColor("#20ab40")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
             .setFooter(`**Example:** ${ʙᴏᴛꜰɪx}filter bassboost`)
@@ -216,7 +242,7 @@ ID= ${message.client.user}`);
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#32CD32")
+              .setColor("#20ab40")
               .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setFooter(
@@ -237,7 +263,7 @@ ID= ${message.client.user}`);
         // ==================================================================
         play(song, message, client, NoirSelected);
         const embedfiltersongend = new MessageEmbed()
-          .setColor("#32CD32")
+          .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -258,8 +284,8 @@ Restarted queue and filter is applied.`);
             });
           });
       } catch (error) {
-        const embednone = new MessageEmbed()
-          .setColor("#32CD32")
+        const embednone2 = new MessageEmbed()
+          .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`NOIR🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
@@ -272,7 +298,7 @@ Restarted queue and filter is applied.`);
 **Nothing in Queue!**
 *Add music in Queue first!*`);
         message.channel
-          .send(embednone)
+          .send(embednone2)
           .catch(console.error)
           .then((message) => {
             message.delete({
