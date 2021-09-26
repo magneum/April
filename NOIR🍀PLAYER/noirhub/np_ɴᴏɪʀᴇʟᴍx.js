@@ -37,7 +37,7 @@ module.exports = {
 =========:radio_button:=========
 
 **Channel:** \`noir🎶player\`
-Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
+Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
         );
       message.channel
         .send(embedfactor)
