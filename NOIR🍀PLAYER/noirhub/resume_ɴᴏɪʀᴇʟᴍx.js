@@ -22,6 +22,7 @@ module.exports = {
       message.content.startsWith(ʙᴏᴛꜰɪx + "resume") &&
       message.channel.name !== "noir🎶player"
     ) {
+      message.react("💢");
       const embedfactor = new MessageEmbed()
         .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")

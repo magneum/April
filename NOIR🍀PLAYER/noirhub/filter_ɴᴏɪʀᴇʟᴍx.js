@@ -26,6 +26,7 @@ module.exports = {
       message.content.startsWith(ʙᴏᴛꜰɪx + "filter") &&
       message.channel.name !== "noir🎶player"
     ) {
+      message.react("💢");
       const embedfilter0 = new MessageEmbed()
         .setColor("#20ab40")
         .setTitle("⚠️Warning⚠️")
