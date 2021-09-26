@@ -90,22 +90,17 @@ ${CH}`);
     .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
     .setFooter(
       "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
-    )
-    .setDescription(
-      `\n\n
-❤️‍🔥 **Hey there MUSIC lovers !**
+    ).setDescription(`❤️‍🔥 **Hey there MUSIC lovers !**
 I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
 Please use the channel **noir🍀player** for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.
-
-
+**~~~~~~~~~~~~~~>  ПӨIЯ🎶PLΛYΣЯ <~~~~~~~~~~~~~~**
 :candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
-Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more_
+Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more.
 
----------------------|🔺|---------------------
+**~~~~~~~~~~~~~~>  ПӨIЯ🎶PLΛYΣЯ <~~~~~~~~~~~~~~**
 :star:**ɴᴏᴛᴇ to ᴏᴡɴᴇʀ ᴀɴᴅ ᴍᴏᴅᴇʀꜱ**
 🎃**VERY VERY IMPORTANT**
-Please use **!calib** once to calibrate before first use!`
-    );
+Please use **!calib** once to calibrate before first use!`);
   channel.send(embedThanks).catch(console.error);
   return;
 });
@@ -140,7 +135,7 @@ Please use **!calib** once to calibrate before first use!`
           "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
         )
         .setDescription(
-          `\n\n
+          `
 𝗗𝗲𝗮𝗿 **ADMIN** 
 =========:radio_button:=========
 
@@ -167,7 +162,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
           "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
         )
         .setDescription(
-          `\n\n
+          `
 𝗗𝗲𝗮𝗿 **ADMIN** 
 =========:radio_button:=========
 
@@ -233,7 +228,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter(
           "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
-        ).setDescription(`\n\n
+        ).setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
 
@@ -263,7 +258,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
         "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
       )
       .setDescription(
-        `\n\n
+        `
 **User:** ${message.author}
 =========:radio_button:=========
 
