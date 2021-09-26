@@ -134,7 +134,7 @@ You need to join a voice channel first!`
           );
         message.react("❌");
         message
-          .reply(embedplay1)
+          .lineReplyNoMention(embedplay1)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -163,7 +163,7 @@ ID= ${message.client.user}`
           );
         message.react("❌");
         message
-          .reply(embedplay2)
+          .lineReplyNoMention(embedplay2)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -192,7 +192,7 @@ ${ʙᴏᴛꜰɪx}play **YouTube URL** or **Video Name**`
           );
         message.react("❌");
         message
-          .reply(embedplay3)
+          .lineReplyNoMention(embedplay3)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -221,7 +221,7 @@ Cannot connect to voice channel, missing permissions`
           );
         message.react("❌");
         message
-          .reply(embedplay3)
+          .lineReplyNoMention(embedplay3)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -249,7 +249,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
           );
         message.react("❌");
         message
-          .reply(embedplay3)
+          .lineReplyNoMention(embedplay3)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -336,7 +336,7 @@ Following url redirection...`
           );
         message.react("❌");
         message
-          .reply(embedplay5)
+          .lineReplyNoMention(embedplay5)
           .catch(console.error)
           .then((message) => {
             message.delete({
@@ -518,7 +518,7 @@ Could not join the channel: *${error}*`
           );
         message.react("❌");
         message
-          .reply(embedplay8)
+          .lineReplyNoMention(embedplay8)
           .catch(console.error)
           .then((message) => {
             message.delete({
