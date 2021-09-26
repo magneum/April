@@ -39,12 +39,14 @@ module.exports = {
 
 **Channel:** \`noir🎶player\`
 Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`);
-      message.channel.send(embedfilter0).catch(console.error);
-      // .then((message) => {
-      //   message.delete({
-      //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-      //   });
-      // });
+      message.channel
+        .send(embedfilter0)
+        .catch(console.error)
+        .then((message) => {
+          message.delete({
+            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          });
+        });
       return;
     }
     // ==================================================================
