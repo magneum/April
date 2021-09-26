@@ -41,14 +41,15 @@ module.exports = {
     ) {
       const embedfactor = new MessageEmbed()
         .setColor("#32CD32")
-        .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+        .setTitle("⚠️Warning⚠️")
+        .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter(
           "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
         )
         .setDescription(
           `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 **Channel:** \`noir🍀player\`
@@ -70,12 +71,12 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
     //     if (!ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0]) && !ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0])) {
     //       const embednotplay = new MessageEmbed()
     //         .setColor("#32CD32")
-    //         .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+    //         .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
     //         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
     //              .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
     // .setDescription(
     //  `\n\n
-    // **⚠️Warning⚠️** ${message.author}
+    // **User:** ${message.author}
     // =========:radio_button:=========
 
     // Please use only **YouTube** links..`);
@@ -95,14 +96,15 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
     if (ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
       const embedplay1 = new MessageEmbed()
         .setColor("#32CD32")
-        .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+        .setTitle("⚠️Warning⚠️")
+        .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter(
           "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
         )
         .setDescription(
           `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 This link seems to be a playlist link.
@@ -130,14 +132,15 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
       if (!channel) {
         const embedplay1 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+          .setTitle("⚠️Warning⚠️")
+          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
           )
           .setDescription(
             `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 You need to join a voice channel first!`
@@ -158,14 +161,15 @@ You need to join a voice channel first!`
       if (serverQueue && channel !== message.guild.me.voice.channel) {
         const embedplay2 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+          .setTitle("⚠️Warning⚠️")
+          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
           )
           .setDescription(
             `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 You must be in the same Voice Channel as **ME**.
@@ -187,14 +191,15 @@ ID= ${message.client.user}`
       if (!args.length) {
         const embedplay3 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+          .setTitle("⚠️Warning⚠️")
+          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
           )
           .setDescription(
             `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`
@@ -216,14 +221,15 @@ Noir⚓️**usage:** ${ʙᴏᴛꜰɪx}play _YouTube URL or Video Name`
       if (!permissions.has(`CONNECT`)) {
         const embedplay3 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+          .setTitle("⚠️Warning⚠️")
+          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
           )
           .setDescription(
             `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 Cannot connect to voice channel, missing permissions`
@@ -244,14 +250,15 @@ Cannot connect to voice channel, missing permissions`
       if (!permissions.has(`SPEAK`)) {
         const embedplay3 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+          .setTitle("⚠️Warning⚠️")
+          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
           )
           .setDescription(
             `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`
@@ -298,14 +305,15 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
             } else {
               const embedplay4 = new MessageEmbed()
                 .setColor("#32CD32")
-                .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+                .setTitle("⚠️Warning⚠️")
+                .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
                 .setFooter(
                   "𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
                 )
                 .setDescription(
                   `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 Audio Not Found`
@@ -341,14 +349,15 @@ Audio Not Found`
         // ==================================================================
         const embedplay5 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+          .setTitle("⚠️Warning⚠️")
+          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
           )
           .setDescription(
             `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 Following url redirection...`
@@ -433,14 +442,15 @@ Following url redirection...`
           if (!results.length) {
             const embedplay6 = new MessageEmbed()
               .setColor("#32CD32")
-              .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+              .setTitle("⚠️Warning⚠️")
+              .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
               .setFooter(
                 "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
               )
               .setDescription(
                 `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 Audio Not Found`
@@ -504,7 +514,7 @@ Audio Not Found`
           queueConstruct.connection = await channel.join();
           const embedplay7 = new MessageEmbed()
             .setColor("#32CD32")
-            .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+            .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
             .setFooter(
               "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -535,14 +545,15 @@ Audio Not Found`
         await channel.leave();
         const embedplay8 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+          .setTitle("⚠️Warning⚠️")
+          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter(
             "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
           )
           .setDescription(
             `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 Could not join the channel: *${error}*`

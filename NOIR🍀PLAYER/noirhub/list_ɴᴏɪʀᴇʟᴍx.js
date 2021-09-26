@@ -35,12 +35,13 @@ module.exports = {
     ) {
       const embedfactor = new MessageEmbed()
         .setColor("#32CD32")
-        .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+        .setTitle("⚠️Warning⚠️")
+        .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
         .setDescription(
           `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 **Channel:** \`noir🍀player\`
@@ -68,12 +69,13 @@ Please use 👆🏻 channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands.`
       if (!channel) {
         const embedlist1 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+          .setTitle("⚠️Warning⚠️")
+          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
           .setDescription(
             `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 You need to join a voice channel first!`
@@ -94,12 +96,13 @@ You need to join a voice channel first!`
       if (!args.length) {
         const embedlist2 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+          .setTitle("⚠️Warning⚠️")
+          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
           .setDescription(
             `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 ⚓️**usage:**{ʙᴏᴛꜰɪx}playlist <YouTube Playlist URL | Playlist Name>`
@@ -121,12 +124,13 @@ You need to join a voice channel first!`
       if (!permissions.has(`CONNECT`)) {
         const embedlist3 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+          .setTitle("⚠️Warning⚠️")
+          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
           .setDescription(
             `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 Cannot connect to voice channel, missing permissions`
@@ -147,12 +151,13 @@ Cannot connect to voice channel, missing permissions`
       if (!permissions.has(`SPEAK`)) {
         const embedlist4 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+          .setTitle("⚠️Warning⚠️")
+          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
           .setDescription(
             `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`
@@ -170,12 +175,13 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
       if (serverQueue && channel !== message.guild.me.voice.channel) {
         const embedlist5 = new MessageEmbed()
           .setColor("#32CD32")
-          .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+          .setTitle("⚠️Warning⚠️")
+          .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
           .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
           .setDescription(
             `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 You must be in the same Voice Channel as **ME**.
@@ -224,12 +230,13 @@ ID= ${message.client.user}`
           console.error(error);
           const embedlist6 = new MessageEmbed()
             .setColor("#32CD32")
-            .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+            .setTitle("⚠️Warning⚠️")
+            .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
             .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
             .setDescription(
               `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 Playlist not found`
@@ -319,7 +326,7 @@ Playlist not found`
           "**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\nPlaylist larger than character limit...";
       const embedlist7 = new MessageEmbed()
         .setColor("#32CD32")
-        .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+        .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
         .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
@@ -356,12 +363,13 @@ Started a playlist`
           await channel.leave();
           const embedlist8 = new MessageEmbed()
             .setColor("#32CD32")
-            .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+            .setTitle("⚠️Warning⚠️")
+            .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
             .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
             .setDescription(
               `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 Could not join the channel: *${error}*`

@@ -1,4 +1,4 @@
-CH =`~~~~~~~~~~~~~~~~~~~~~~~>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <~~~~~~~~~~~~~~~~~~~~~~~`;
+CH = `~~~~~~~~~~~~~~~~~~~~~~~>  🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul <~~~~~~~~~~~~~~~~~~~~~~~`;
 console.clear();
 const os = require("os");
 require("dotenv").config();
@@ -85,10 +85,12 @@ ${CH}`);
   );
   const embedThanks = new MessageEmbed()
     .setColor("#32CD32")
-    .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+    .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
     .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
     .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-    .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+    .setFooter(
+      "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+    )
     .setDescription(
       `\n\n
 ❤️‍🔥 **Hey there MUSIC lovers !**
@@ -131,10 +133,12 @@ Please use **!calib** once to calibrate before first use!`
     if (message.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
       const embedcheck1 = new MessageEmbed()
         .setColor("#32CD32")
-        .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+        .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-        .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+        .setFooter(
+          "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+        )
         .setDescription(
           `\n\n
 𝗗𝗲𝗮𝗿 **ADMIN** 
@@ -156,10 +160,12 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
     } else {
       const embedcheck2 = new MessageEmbed()
         .setColor("#32CD32")
-        .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+        .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-        .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+        .setFooter(
+          "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+        )
         .setDescription(
           `\n\n
 𝗗𝗲𝗮𝗿 **ADMIN** 
@@ -221,19 +227,19 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const timeLeft = (expirationTime - now) / 1000;
       const embedNoir1 = new MessageEmbed()
         .setColor("#32CD32")
-        .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+        .setTitle("⚠️Warning⚠️")
+        .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
         .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-        .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
-        .setDescription(
-          `\n\n
-**⚠️Warning⚠️** ${message.author}
+        .setFooter(
+          "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+        ).setDescription(`\n\n
+**User:** ${message.author}
 =========:radio_button:=========
 
 Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
-            command.name
-          }' command.      `
-        );
+        command.name
+      }' command.      `);
       channel.send(embedNoir1).catch(console.error);
       return;
     }
@@ -249,13 +255,16 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
     console.error(error);
     const embedNoir2 = new MessageEmbed()
       .setColor("#32CD32")
-      .setAuthor(`🎶ПӨIЯ🍀PLΛYΣЯ by HypeVoidSoul`)
+      .setTitle("⚠️Warning⚠️")
+      .setAuthor(`ПӨIЯ🎶PLΛYΣЯ by HypeVoidSoul`)
       .setImage(`https://i.postimg.cc/D0rM4dhG/image.png`)
       .setThumbnail(`https://i.postimg.cc/D0rM4dhG/image.png`)
-      .setFooter("🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀")
+      .setFooter(
+        "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+      )
       .setDescription(
         `\n\n
-**⚠️Warning⚠️** ${message.author}
+**User:** ${message.author}
 =========:radio_button:=========
 
 There was an error executing that command.`
