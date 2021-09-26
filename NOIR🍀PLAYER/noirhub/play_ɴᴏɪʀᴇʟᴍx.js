@@ -278,7 +278,6 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
                 .get(`play`)
                 .execute(message, [res.headers.location]);
               return;
-
             } else {
               const embedplay4 = new MessageEmbed()
                 .setColor("#20ab40")
@@ -307,7 +306,6 @@ Audio Not Found`
               return;
             }
           });
-
         } catch (error) {
           console.error(error);
           message.channel
@@ -379,7 +377,6 @@ Following url redirection...`
               });
             });
         }
-
       } else if (scRegex.test(url)) {
         try {
           const trackInfo = await scdl.getInfo(url, notneeded);
@@ -399,7 +396,6 @@ Following url redirection...`
               });
             });
         }
-
       } else {
         try {
           const results = await youtube.searchVideos(search, 1, {
