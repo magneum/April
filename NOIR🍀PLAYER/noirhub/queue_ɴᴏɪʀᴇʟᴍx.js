@@ -101,7 +101,7 @@ Missing permission to manage messages or add reactions`
 **User:** ${message.author}
 =========:radio_button:=========
 
-❌ Nothing playing in this server`
+🔴 Nothing playing in this server`
           );
         message.channel
           .send(embedqueue2)
@@ -127,7 +127,7 @@ Missing permission to manage messages or add reactions`
       // ==================================================================
       try {
         await queueEmbed.react(`⬅️`);
-        await queueEmbed.react(`❌`);
+        await queueEmbed.react(`🔴`);
         await queueEmbed.react(`➡️`);
       } catch (error) {
         console.error(error);
@@ -137,7 +137,7 @@ Missing permission to manage messages or add reactions`
       // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       const filter = (reaction, user) =>
-        [`⬅️`, `❌`, `➡️`].includes(reaction.emoji.name) &&
+        [`⬅️`, `🔴`, `➡️`].includes(reaction.emoji.name) &&
         message.author.id === user.id;
       const collector = queueEmbed.createReactionCollector(filter, {
         time: 60000,

@@ -210,7 +210,7 @@ Only YouTube playing/streaming is allowed`);
       await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔉");
       await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔊");
       await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔁");
-      await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("❌");
+      await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔴");
       // ==================================================================
       // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
@@ -629,7 +629,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
         // ==================================================================
         // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        case "❌":
+        case "🔴":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic8 = new MessageEmbed()

@@ -128,7 +128,7 @@ You need to join a voice channel first!`
           ).setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-❌ stopped the music!`)
+🔴 stopped the music!`)
       )
       .catch(console.error)
       .then((message) => {

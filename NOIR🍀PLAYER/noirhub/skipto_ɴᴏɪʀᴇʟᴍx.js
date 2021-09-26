@@ -193,7 +193,7 @@ There is nothing playing that I could skip for you.`
             ).setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-❌ stopped the music!`)
+🔴 stopped the music!`)
         )
         .catch(console.error)
         .then((message) => {

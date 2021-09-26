@@ -149,7 +149,7 @@ You need to join a voice channel first!`);
                             ).setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-❌ Removed **${removed.map((song) => song.title).join(`\n`)}** from the queue.`)
+🔴 Removed **${removed.map((song) => song.title).join(`\n`)}** from the queue.`)
                     )
                     .catch(console.error)
                     .then((message) => {
@@ -173,7 +173,7 @@ You need to join a voice channel first!`);
                             ).setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-❌ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`)
+🔴 Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`)
                     )
                     .catch(console.error)
                     .then((message) => {
