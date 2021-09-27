@@ -35,9 +35,9 @@ module.exports = {
         queue.textChannel
           .send(
             new MessageEmbed()
-              .setColor("#20ab40")
+              .setColor("#563ac6")
               .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-              .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(`=========:radio_button:=========
 🤎**Noir** *has left the voice channel!*`)
@@ -56,9 +56,9 @@ module.exports = {
       // queue.textChannel
       //   .send(
       //     new MessageEmbed()
-      //       .setColor("#20ab40")
+      //       .setColor("#563ac6")
       //       .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-      //       .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+      //       .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
       //       .setFooter(
       //         "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
       //       )
@@ -76,9 +76,9 @@ module.exports = {
       message.channel
         .send(
           new MessageEmbed()
-            .setColor("#20ab40")
+            .setColor("#563ac6")
             .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-            .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+            .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
             .setDescription(`=========:radio_button:=========
 *Previous Queue has been cleaned!*
@@ -106,10 +106,10 @@ module.exports = {
         // ==================================================================
       } else {
         const embedmusicnot = new MessageEmbed()
-          .setColor("#20ab40")
+          .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-          .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
           .setDescription(`
 **User:** ${message.author}
@@ -140,10 +140,10 @@ module.exports = {
       // ==================================================================
       console.error(error);
       const embedmusic1 = new MessageEmbed()
-        .setColor("#20ab40")
+        .setColor("#563ac6")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-        .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
         .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
         .setDescription(
           `
@@ -200,10 +200,10 @@ module.exports = {
       const { id } = getVideoId(`${song.url}`);
       var ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel.send(
         new MessageEmbed()
-          .setColor("#20ab40")
+          .setColor("#563ac6")
           .setTitle("💯ᴅɪʀᴇᴄᴛʟʏ ꜱᴛʀᴇᴀᴍɪɴɢ ᴜꜱɪɴɢ-𝐘𝐨𝐮𝐓𝐮𝐛𝐞")
           .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-          .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setImage(`https://img.youtube.com/vi/${id}/sddefault.jpg`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
           .setDescription(`
@@ -253,10 +253,10 @@ module.exports = {
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic2 = new MessageEmbed()
-              .setColor("#20ab40")
+              .setColor("#563ac6")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-              .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(
                 `
@@ -283,9 +283,9 @@ module.exports = {
           queue.textChannel
             .send(
               new MessageEmbed()
-                .setColor("#20ab40")
+                .setColor("#563ac6")
                 .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-                .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+                .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
                 .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
@@ -307,10 +307,10 @@ module.exports = {
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic3 = new MessageEmbed()
-              .setColor("#20ab40")
+              .setColor("#563ac6")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-              .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(
                 `
@@ -339,9 +339,9 @@ module.exports = {
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#20ab40")
+                  .setColor("#563ac6")
                   .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-                  .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+                  .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
                   .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
@@ -358,9 +358,9 @@ module.exports = {
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#20ab40")
+                  .setColor("#563ac6")
                   .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-                  .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+                  .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
                   .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
@@ -382,10 +382,10 @@ module.exports = {
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic4 = new MessageEmbed()
-              .setColor("#20ab40")
+              .setColor("#563ac6")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-              .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(
                 `
@@ -414,9 +414,9 @@ module.exports = {
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#20ab40")
+                  .setColor("#563ac6")
                   .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-                  .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+                  .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
                   .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
@@ -439,9 +439,9 @@ module.exports = {
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#20ab40")
+                  .setColor("#563ac6")
                   .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-                  .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+                  .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
                   .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
@@ -466,10 +466,10 @@ module.exports = {
           }
           if (!canModifyQueue(member)) {
             const embedmusic5 = new MessageEmbed()
-              .setColor("#20ab40")
+              .setColor("#563ac6")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-              .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(
                 `
@@ -497,9 +497,9 @@ module.exports = {
           queue.textChannel
             .send(
               new MessageEmbed()
-                .setColor("#20ab40")
+                .setColor("#563ac6")
                 .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-                .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+                .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
                 .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
@@ -523,10 +523,10 @@ module.exports = {
           }
           if (!canModifyQueue(member)) {
             const embedmusic6 = new MessageEmbed()
-              .setColor("#20ab40")
+              .setColor("#563ac6")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-              .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(
                 `
@@ -554,9 +554,9 @@ module.exports = {
           queue.textChannel
             .send(
               new MessageEmbed()
-                .setColor("#20ab40")
+                .setColor("#563ac6")
                 .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-                .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+                .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
                 .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
@@ -577,10 +577,10 @@ module.exports = {
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic7 = new MessageEmbed()
-              .setColor("#20ab40")
+              .setColor("#563ac6")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-              .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(
                 `
@@ -607,9 +607,9 @@ module.exports = {
           queue.textChannel
             .send(
               new MessageEmbed()
-                .setColor("#20ab40")
+                .setColor("#563ac6")
                 .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-                .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+                .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
                 .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
@@ -631,10 +631,10 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) {
             const embedmusic8 = new MessageEmbed()
-              .setColor("#20ab40")
+              .setColor("#563ac6")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-              .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(
                 `
@@ -662,9 +662,9 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
           queue.textChannel
             .send(
               new MessageEmbed()
-                .setColor("#20ab40")
+                .setColor("#563ac6")
                 .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-                .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+                .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                 .setImage(`https://img.youtube.com/vi/${id}/sddefault.jpg`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
                 .setDescription(

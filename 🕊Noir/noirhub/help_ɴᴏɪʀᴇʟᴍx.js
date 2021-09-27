@@ -46,10 +46,10 @@ module.exports = {
 • **${ʙᴏᴛꜰɪx}vol** = Change volume of currently playing music.
 `
         )
-        .setColor("#20ab40")
+        .setColor("#563ac6")
         .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-        .setImage(`https://i.postimg.cc/159gtVVq/image.jpg`)
-        .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+        .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
         .setFooter(
           "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
         );
@@ -92,10 +92,10 @@ module.exports = {
 • **${ʙᴏᴛꜰɪx}vol** = Change volume of currently playing music.
 `
         )
-        .setColor("#20ab40")
+        .setColor("#563ac6")
         .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-        .setImage(`https://i.postimg.cc/159gtVVq/image.jpg`)
-        .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+        .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
         .setFooter(
           "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
         );
@@ -105,7 +105,7 @@ module.exports = {
       message.react("✅");
       message.author.send(
         new MessageEmbed()
-          .setColor("#20ab40")
+          .setColor("#563ac6")
           .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
       );
       // ==================================================================
@@ -115,10 +115,10 @@ module.exports = {
       message.channel
         .send(
           new MessageEmbed()
-            .setColor("#20ab40")
+            .setColor("#563ac6")
             .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-            .setImage(`https://i.postimg.cc/159gtVVq/image.jpg`)
-            .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+            .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+            .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
             .setFooter(
               "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
             ).setDescription(`**👍 ${message.author} 

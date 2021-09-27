@@ -25,10 +25,10 @@ module.exports = {
     ) {
       message.react("❌");
       const embedfactor = new MessageEmbed()
-        .setColor("#20ab40")
+        .setColor("#563ac6")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-        .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
         .setFooter(
           "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
         )
@@ -61,10 +61,10 @@ module.exports = {
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embedloopno1 = new MessageEmbed()
-          .setColor("#20ab40")
+          .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-          .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter(
             "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
           ).setDescription(`
@@ -88,10 +88,10 @@ Noir is not playing anymusic yet.....`);
       // ==================================================================
       if (!canModifyQueue(message.member)) {
         const embedloopno2 = new MessageEmbed()
-          .setColor("#20ab40")
+          .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-          .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter(
             "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
           ).setDescription(`
@@ -117,9 +117,9 @@ Noir is not playing anymusic yet.....`);
       queue.textChannel
         .send(
           new MessageEmbed()
-            .setColor("#20ab40")
+            .setColor("#563ac6")
             .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-            .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+            .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
             .setFooter(
               "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
             ).setDescription(`**User:** ${message.author}

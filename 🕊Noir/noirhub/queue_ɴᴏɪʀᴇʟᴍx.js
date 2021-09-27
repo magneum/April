@@ -24,10 +24,10 @@ module.exports = {
     ) {
       message.react("❌");
       const embedfactor = new MessageEmbed()
-        .setColor("#20ab40")
+        .setColor("#563ac6")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-        .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
         .setFooter(
           "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
         )
@@ -60,10 +60,10 @@ module.exports = {
       const permissions = message.channel.permissionsFor(message.client.user);
       if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
         const embedqueue1 = new MessageEmbed()
-          .setColor("#20ab40")
+          .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-          .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter(
             "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
           )
@@ -91,10 +91,10 @@ Missing permission to manage messages or add reactions`
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embedqueue2 = new MessageEmbed()
-          .setColor("#20ab40")
+          .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
-          .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter(
             "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
           )
@@ -201,8 +201,8 @@ function generateQueueEmbed(message, queue) {
       .map((track) => `${++j} - [${track.title}](${track.url})`)
       .join(`\n`);
     const embed = new MessageEmbed()
-      .setThumbnail("https://i.postimg.cc/159gtVVq/image.jpg")
-      .setColor("#20ab40")
+      .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
+      .setColor("#563ac6")
       .setFooter(
         "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
       )
