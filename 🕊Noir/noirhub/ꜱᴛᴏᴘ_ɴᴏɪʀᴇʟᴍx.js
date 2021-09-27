@@ -4,6 +4,7 @@ try {
     ʙᴏᴛꜰɪx,
     ɴᴏɪʀᴄʟᴇᴀɴᴇʀ,
   } = require("../noirtem/noir_env");
+  const getVideoId = require("get-video-id");
   const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ/src");
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
@@ -117,19 +118,6 @@ Not playing anymusic yet.....`
         queue.connection.dispatcher.end();
         message.react("✅");
         message.react("🍧");
-        const { id } = getVideoId(`${song.url}`);
-        const ClearEmbed = new MessageEmbed()
-          .setColor("#bd93f9")
-          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
-          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-          .setDescription(
-            `=========:radio_button:=========
-
-Last Song was 👇🏻*${song.title}*`
-          );
-        queue.textChannel.send(ClearEmbed).catch(console.error);
         const exitembeder = new MessageEmbed()
           .setColor("#6272a4")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
