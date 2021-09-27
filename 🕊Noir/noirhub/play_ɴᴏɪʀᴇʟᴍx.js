@@ -165,9 +165,16 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
 **User:** ${message.author}
 =========:radio_button:=========
 
-Searching and Playing in less then 3secs!`
+*Searching and Playing in less then* **3secs!**`
           );
-        message.channel.send(embedplaying).catch(console.error);
+        message.channel
+          .send(embedplaying)
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: 3000,
+            });
+          });
       }
       // ==================================================================
       // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
