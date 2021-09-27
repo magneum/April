@@ -658,6 +658,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
           // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
           queue.songs = [];
+          const { id } = getVideoId(`${song.url}`);
           queue.textChannel
             .send(
               new MessageEmbed()
