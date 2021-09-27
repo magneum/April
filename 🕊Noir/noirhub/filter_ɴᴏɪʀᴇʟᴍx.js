@@ -266,6 +266,7 @@ ID= ${message.client.user}`);
           // ==================================================================
           // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
+          queue.connection.dispatcher.end();
           // play(song, message, client, NoirSelected);
           const embedfiltersongend = new MessageEmbed()
             .setColor("#AE4A3B")
@@ -278,15 +279,14 @@ ID= ${message.client.user}`);
 =========:radio_button:=========
 
 Song Queue has been cleaned up.
-Restarted queue and filter is applied.`);
-          message.channel
-            .send(embedfiltersongend)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: 20000,
-              });
-            });
+Restart **queue** and **filter** will be applied.`);
+          message.channel.send(embedfiltersongend).catch(console.error);
+          return;
+          // .then((message) => {
+          //   message.delete({
+          //     timeout: 20000,
+          //   });
+          // });
         } catch (error) {
           const embednone2 = new MessageEmbed()
             .setColor("#FFD900")
