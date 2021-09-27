@@ -7,7 +7,7 @@ const {
 } = require("../noirtem/noir_env");
 const https = require("https");
 const ytdl = require("ytdl-core");
-const { play } = require("./🕊Noir");
+const { play } = require("./🤍Noir");
 const YouTubeAPI = require("simple-youtube-api");
 const youtube = new YouTubeAPI(ɴᴏɪʀʏᴛ);
 const ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ = /^.*(list=)([^#\&\?]*).*/gi;
@@ -23,7 +23,7 @@ const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// 🕊Noir
+// 🤍Noir
 // Discord Music YouTube player
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -37,13 +37,14 @@ module.exports = {
   async execute(message, args) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
-      message.channel.name !== "🕊noir"
+      message.channel.name !== "🤍noir"
     ) {
       message.react("❌");
+      message.react("🔥");
       const embedfactor = new MessageEmbed()
         .setColor("#563ac6")
         .setTitle("⚠️Warning⚠️")
-        .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
         .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
         .setDescription(
@@ -51,7 +52,7 @@ module.exports = {
 **User:** ${message.author}
 =========:radio_button:=========
 
-**Channel:** \`🕊Noir\`
+**Channel:** \`🤍Noir\`
 *Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`
         );
       message.channel
@@ -70,7 +71,7 @@ module.exports = {
     //     if (!ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0]) && !ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0])) {
     //       const embednotplay = new MessageEmbed()
     //         .setColor("#563ac6")
-    //         .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+    //         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
     //         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
     //              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
     // .setDescription(
@@ -96,7 +97,7 @@ module.exports = {
       const embedplay1 = new MessageEmbed()
         .setColor("#563ac6")
         .setTitle("⚠️Warning⚠️")
-        .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
         .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
         .setDescription(
@@ -108,6 +109,7 @@ This link seems to be a playlist link.
 Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
         );
       message.react("❌");
+      message.react("🔥");
       message.channel
         .send(embedplay1)
         .catch(console.error)
@@ -123,7 +125,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
     // ==================================================================
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
-      message.channel.name === "🕊noir"
+      message.channel.name === "🤍noir"
     ) {
       const { channel } = message.member.voice;
       const serverQueue = message.client.queue.get(message.guild.id);
@@ -131,7 +133,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
         const embedplay1 = new MessageEmbed()
           .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
           .setDescription(
@@ -142,6 +144,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
 *You need to* **join** *a voice channel first!*`
           );
         message.react("❌");
+        message.react("🔥");
         message.channel
           .send(embedplay1)
           .catch(console.error)
@@ -154,10 +157,11 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
       }
       if (channel) {
         message.react("✅");
+        message.react("🍧");
         const embedplaying = new MessageEmbed()
           .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
           .setDescription(
@@ -183,7 +187,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
         const embedplay2 = new MessageEmbed()
           .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
           .setDescription(
@@ -195,6 +199,7 @@ You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`
           );
         message.react("❌");
+        message.react("🔥");
         message.channel
           .send(embedplay2)
           .catch(console.error)
@@ -212,7 +217,7 @@ ID= ${message.client.user}`
         const embedplay3 = new MessageEmbed()
           .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
           .setDescription(
@@ -224,6 +229,7 @@ ID= ${message.client.user}`
 ${ʙᴏᴛꜰɪx}play **YouTube URL** or **Video Name**`
           );
         message.react("❌");
+        message.react("🔥");
         message.channel
           .send(embedplay3)
           .catch(console.error)
@@ -242,7 +248,7 @@ ${ʙᴏᴛꜰɪx}play **YouTube URL** or **Video Name**`
         const embedplay3 = new MessageEmbed()
           .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
           .setDescription(
@@ -253,6 +259,7 @@ ${ʙᴏᴛꜰɪx}play **YouTube URL** or **Video Name**`
 Cannot connect to voice channel, missing permissions`
           );
         message.react("❌");
+        message.react("🔥");
         message.channel
           .send(embedplay3)
           .catch(console.error)
@@ -270,7 +277,7 @@ Cannot connect to voice channel, missing permissions`
         const embedplay3 = new MessageEmbed()
           .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
           .setDescription(
@@ -281,6 +288,7 @@ Cannot connect to voice channel, missing permissions`
 I cannot speak in this voice channel, make sure I have the proper permissions!`
           );
         message.react("❌");
+        message.react("🔥");
         message.channel
           .send(embedplay3)
           .catch(console.error)
@@ -324,7 +332,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
               const embedplay4 = new MessageEmbed()
                 .setColor("#563ac6")
                 .setTitle("⚠️Warning⚠️")
-                .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+                .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                 .setFooter(
                   "𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -337,6 +345,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
 Audio Not Found`
                 );
               message.react("❌");
+              message.react("🔥");
               message.channel
                 .send(embedplay4)
                 .catch(console.error)
@@ -369,7 +378,7 @@ Audio Not Found`
         const embedplay5 = new MessageEmbed()
           .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
           .setDescription(
@@ -380,6 +389,7 @@ Audio Not Found`
 Following url redirection...`
           );
         message.react("❌");
+        message.react("🔥");
         message.channel
           .send(embedplay5)
           .catch(console.error)
@@ -461,7 +471,7 @@ Following url redirection...`
             const embedplay6 = new MessageEmbed()
               .setColor("#563ac6")
               .setTitle("⚠️Warning⚠️")
-              .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+              .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(
@@ -472,6 +482,7 @@ Following url redirection...`
 Audio Not Found`
               );
             message.react("❌");
+            message.react("🔥");
             message.channel
               .send(embedplay6)
               .catch(console.error)
@@ -531,7 +542,7 @@ Audio Not Found`
           queueConstruct.connection = await channel.join();
           const embedplay7 = new MessageEmbed()
             .setColor("#563ac6")
-            .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+            .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
             .setDescription(
@@ -561,7 +572,7 @@ Audio Not Found`
         const embedplay8 = new MessageEmbed()
           .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
           .setDescription(
@@ -572,6 +583,7 @@ Audio Not Found`
 Could not join the channel: *${error}*`
           );
         message.react("❌");
+        message.react("🔥");
         message.channel
           .send(embedplay8)
           .catch(console.error)

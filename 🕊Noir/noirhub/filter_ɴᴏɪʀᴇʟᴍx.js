@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
-const { play } = require("./🕊Noir");
+const { play } = require("./🤍Noir");
 const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
 // =============================================================================================================================
 // GNU GENERAL PUBLIC LICENSE
@@ -7,7 +7,7 @@ const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// 🕊Noir
+// 🤍Noir
 // Discord Music YouTube player
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -21,13 +21,14 @@ module.exports = {
   async execute(message, args, client) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "filter") &&
-      message.channel.name !== "🕊noir"
+      message.channel.name !== "🤍noir"
     ) {
       message.react("❌");
+message.react("🔥");
       const embedfilter0 = new MessageEmbed()
         .setColor("#563ac6")
         .setTitle("⚠️Warning⚠️")
-        .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
         .setFooter(
           "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
@@ -35,7 +36,7 @@ module.exports = {
 **User:** ${message.author}
 =========:radio_button:=========
 
-**Channel:** \`🕊Noir\`
+**Channel:** \`🤍Noir\`
 *Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`);
       message.channel
         .send(embedfilter0)
@@ -56,7 +57,7 @@ module.exports = {
       const embednone1 = new MessageEmbed()
         .setColor("#563ac6")
         .setTitle("⚠️Warning⚠️")
-        .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
         .setFooter(
           "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
@@ -67,6 +68,7 @@ module.exports = {
 **Nothing in Queue!**
 *Add music in Queue first!*`);
       message.react("❌");
+message.react("🔥");
       message.channel
         .send(embednone1)
         .catch(console.error)
@@ -82,7 +84,7 @@ module.exports = {
         const embedfilter1 = new MessageEmbed()
           .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter(
             "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
@@ -98,6 +100,7 @@ module.exports = {
 ▫️ surrounding
 ▫️ clear [Clean all applied filter(s)]`);
         message.react("❌");
+message.react("🔥");
         message.channel.send(embedfilter1).catch(console.error);
         // .then((message) => {
         //   message.delete({
@@ -112,14 +115,14 @@ module.exports = {
     // ==================================================================
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "filter") &&
-      message.channel.name === "🕊noir"
+      message.channel.name === "🤍noir"
     ) {
       // message.react("✅");
       if (!message.member.voice.channel) {
         const embedfilter2 = new MessageEmbed()
           .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter(
             "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
@@ -129,6 +132,7 @@ module.exports = {
 
 *Please join a* **Voice Channel** *first*`);
         message.react("❌");
+message.react("🔥");
         message.channel
           .send(embedfilter2)
           .catch(console.error)
@@ -146,7 +150,7 @@ module.exports = {
         const embedfilter3 = new MessageEmbed()
           .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter(
             "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
@@ -157,6 +161,7 @@ module.exports = {
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`);
         message.react("❌");
+message.react("🔥");
         message.channel
           .send(embedfilter3)
           .catch(console.error)
@@ -208,7 +213,7 @@ ID= ${message.client.user}`);
           const embedfilter4 = new MessageEmbed()
             .setColor("#563ac6")
             .setTitle("⚠️Warning⚠️")
-            .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+            .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setFooter(`**Example:** ${ʙᴏᴛꜰɪx}filter bassboost`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
             .setFooter(
@@ -225,6 +230,7 @@ ID= ${message.client.user}`);
 ▫️ surrounding
 ▫️ clear [Clean all applied filter(s)]`);
           message.react("❌");
+message.react("🔥");
           message.channel
             .send(embedfilter4)
             .catch(console.error)
@@ -248,7 +254,7 @@ ID= ${message.client.user}`);
           .send(
             new MessageEmbed()
               .setColor("#563ac6")
-              .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+              .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setFooter(
                 "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
@@ -270,7 +276,7 @@ ID= ${message.client.user}`);
         const embedfiltersongend = new MessageEmbed()
           .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter(
             "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
@@ -281,6 +287,7 @@ ID= ${message.client.user}`);
 Song Queue has been cleaned up.
 Restarted queue and filter is applied.`);
         message.react("❌");
+message.react("🔥");
         message.channel
           .send(embedfiltersongend)
           .catch(console.error)
@@ -293,7 +300,7 @@ Restarted queue and filter is applied.`);
         const embednone2 = new MessageEmbed()
           .setColor("#563ac6")
           .setTitle("⚠️Warning⚠️")
-          .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
+          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter(
             "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
@@ -304,6 +311,7 @@ Restarted queue and filter is applied.`);
 **Nothing in Queue!**
 *Add music in Queue first!*`);
         message.react("❌");
+message.react("🔥");
         message.channel
           .send(embednone2)
           .catch(console.error)
