@@ -671,8 +671,10 @@ Loop is now ${NoirQueue.loop ? "**Turned On**" : "**Turned Off**"}`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                   .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-                  .setDescription(
-                    "=========:radio_button:=========\n\n❤️*MusicQueue has been successfully* **ended**"
+                  .setDescription(`=========:radio_button:=========
+
+❤️MusicQueue has been successfully ended.
+**Last Song was 👇🏻**`
                   )
               )
               .catch(console.error);
