@@ -117,24 +117,6 @@ Not playing anymusic yet.....`
         queue.connection.dispatcher.end();
         message.react("✅");
         message.react("🍧");
-        queue.textChannel
-          .send(
-            new MessageEmbed()
-              .setColor("#6272a4")
-              .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
-              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-              .setDescription(`**User:** ${message.author}
-=========:radio_button:=========
-
-⏺ stopped the music!`)
-          )
-          .catch(console.error);
-        // .then((message) => {
-        // message.delete({
-        // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-        // });
-        // });
         const { id } = getVideoId(`${song.url}`);
         const ClearEmbed = new MessageEmbed()
           .setColor("#bd93f9")
@@ -145,10 +127,19 @@ Not playing anymusic yet.....`
           .setDescription(
             `=========:radio_button:=========
 
-Last Song was 👇🏻
-*${song.title}*`
+Last Song was 👇🏻*${song.title}*`
           );
         queue.textChannel.send(ClearEmbed).catch(console.error);
+        const exitembeder = new MessageEmbed()
+          .setColor("#6272a4")
+          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
+          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+          .setDescription(`**User:** ${message.author}
+=========:radio_button:=========
+
+⏺ stopped the music!`);
+        queue.textChannel.send(exitembeder).catch(console.error);
       }
     },
   };
