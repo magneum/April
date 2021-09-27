@@ -56,7 +56,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
       message.content.startsWith(ʙᴏᴛꜰɪx + "pause") &&
       message.channel.name === "noir🎶player"
     ) {
-      message.react("✅");
+      // message.react("✅");
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embedpause1 = new MessageEmbed()

@@ -56,7 +56,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
       message.content.startsWith(ʙᴏᴛꜰɪx + "skipto") &&
       message.channel.name === "noir🎶player"
     ) {
-      message.react("✅");
+      // message.react("✅");
       if (!args.length || isNaN(args[0])) {
         const embedskpto1 = new MessageEmbed()
           .setColor("#20ab40")

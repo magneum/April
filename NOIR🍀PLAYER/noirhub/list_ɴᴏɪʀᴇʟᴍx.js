@@ -68,7 +68,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
       message.content.startsWith(ʙᴏᴛꜰɪx + "list") &&
       message.channel.name === "noir🎶player"
     ) {
-      message.react("✅");
+      // message.react("✅");
       const { channel } = message.member.voice;
       const serverQueue = message.client.queue.get(message.guild.id);
       if (!channel) {

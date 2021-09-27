@@ -114,7 +114,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`);
       message.content.startsWith(ʙᴏᴛꜰɪx + "filter") &&
       message.channel.name === "noir🎶player"
     ) {
-      message.react("✅");
+      // message.react("✅");
       if (!message.member.voice.channel) {
         const embedfilter2 = new MessageEmbed()
           .setColor("#20ab40")

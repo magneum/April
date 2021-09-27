@@ -56,7 +56,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
       message.content.startsWith(ʙᴏᴛꜰɪx + "pfp") &&
       message.channel.name === "noir🎶player"
     ) {
-      message.react("✅");
+      // message.react("✅");
       let AvatarEmbed = new MessageEmbed();
       const user = message.mentions.users.first();
       if (!message.mentions.users.first()) {
