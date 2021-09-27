@@ -160,9 +160,9 @@ Only YouTube playing/streaming is allowed`);
     // ==================================================================
     // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
-    queue.connection.on("disconnect", () =>
-      message.client.queue.delete(message.guild.id)
-    );
+    // queue.connection.on("disconnect", () =>
+    //   message.client.queue.delete(message.guild.id)
+    // );
     // ==================================================================
     // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
