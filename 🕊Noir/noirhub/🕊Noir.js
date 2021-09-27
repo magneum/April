@@ -72,7 +72,7 @@ module.exports = {
       //       timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
       //     });
       //   });
-      message.client.queue.delete(message.guild.id);
+      // message.client.queue.delete(message.guild.id);
       message.channel
         .send(
           new MessageEmbed()
