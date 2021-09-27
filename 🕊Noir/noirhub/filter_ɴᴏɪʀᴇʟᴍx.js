@@ -277,7 +277,7 @@ ID= ${message.client.user}`);
 **User:** ${message.author}
 =========:radio_button:=========
 
-Song Queue has been cleaned up.
+*Song Queue has been cleaned up.*
 Restart **queue** and **filter** will be applied.`);
           message.channel.send(embedfiltersongend).catch(console.error);
           return;
