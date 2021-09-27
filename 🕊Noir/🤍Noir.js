@@ -199,6 +199,193 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
         return;
       }
     }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "pause") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "filter") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "help") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "list") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "loop") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "noir") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "np") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "pfp") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "ping") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "queue") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "remove") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "shuffle") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "skip") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "skipto") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "stop") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
+    if (
+      !message.content.startsWith(ʙᴏᴛꜰɪx + "vol") &&
+      message.channel.name === "🤍noir"
+    ) {
+      const CmdError = new MessageEmbed()
+        .setColor("#ED944D")
+        .setTitle("💀 Wrong Command")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
+      message.channel.send(CmdError);
+      return;
+    }
     // ==================================================================
     // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
