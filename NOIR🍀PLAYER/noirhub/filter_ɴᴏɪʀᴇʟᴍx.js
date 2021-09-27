@@ -36,7 +36,7 @@ module.exports = {
 =========:radio_button:=========
 
 **Channel:** \`noir🎶player\`
-Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`);
+*Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`);
       message.channel
         .send(embedfilter0)
         .catch(console.error)
@@ -127,7 +127,7 @@ Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`);
 **User:** ${message.author}
 =========:radio_button:=========
 
-Please join a Voice Channel first`);
+*Please join a* **Voice Channel** *first*`);
         message.react("❌");
         message.channel
           .send(embedfilter2)

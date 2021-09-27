@@ -37,7 +37,7 @@ module.exports = {
 =========:radio_button:=========
 
 **Channel:** \`noir🎶player\`
-Please use 👆🏻 channel for any **ɴᴏɪʀ** commands.`
+*Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`
         );
       message.channel
         .send(embedfactor)
@@ -102,7 +102,7 @@ There is nothing playing that I could skip for you.`
 **User:** ${message.author}
 =========:radio_button:=========
 
-You need to join a voice channel first!`
+*You need to* **join** *a voice channel first!*`
           );
         message.react("❌");
         message.channel
@@ -131,7 +131,7 @@ You need to join a voice channel first!`
             ).setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-Skipped the song`)
+*Skipped the song*`)
         )
         .catch(console.error)
         .then((message) => {

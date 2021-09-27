@@ -38,12 +38,9 @@ module.exports = {
               .setColor("#20ab40")
               .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-              .setFooter(
-                "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-              )
-              .setDescription(
-                "=========:radio_button:=========\n\n🤎**NOIR** has left the voice channel!"
-              )
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+              .setDescription(`=========:radio_button:=========
+🤎**NOIR** *has left the voice channel!*`)
           )
           .catch(console.error)
           .then((message) => {
@@ -56,25 +53,25 @@ module.exports = {
       // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       const queue = message.client.queue.get(message.guild.id);
-      queue.textChannel
-        .send(
-          new MessageEmbed()
-            .setColor("#20ab40")
-            .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
-            .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-            .setFooter(
-              "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-            )
-            .setDescription(
-              "=========:radio_button:=========\n\n💚**NOIR's** MusicQueue has ended!"
-            )
-        )
-        .catch(console.error)
-        .then((message) => {
-          message.delete({
-            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-          });
-        });
+      // queue.textChannel
+      //   .send(
+      //     new MessageEmbed()
+      //       .setColor("#20ab40")
+      //       .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
+      //       .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
+      //       .setFooter(
+      //         "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
+      //       )
+      //       .setDescription(
+      //         "=========:radio_button:=========\n\n💚**NOIR's** MusicQueue has ended!"
+      //       )
+      //   )
+      //   .catch(console.error)
+      //   .then((message) => {
+      //     message.delete({
+      //       timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+      //     });
+      //   });
       message.client.queue.delete(message.guild.id);
       message.channel
         .send(
@@ -82,12 +79,11 @@ module.exports = {
             .setColor("#20ab40")
             .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-            .setFooter(
-              "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-            ).setDescription(`=========:radio_button:=========
-**Previous Queue has been cleaned!**
-
-**Noir🎶Player** is ready for new queues.`)
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+            .setDescription(`=========:radio_button:=========
+*Previous Queue has been cleaned!*
+🍀**Noir** *is ready for new queues.*
+`)
         )
         .catch(console.error);
       return;
@@ -114,13 +110,12 @@ module.exports = {
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-          .setFooter(
-            "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-          ).setDescription(`
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+          .setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
 
-Only YouTube playing/streaming is allowed`);
+*Only* **YouTube** *playing/streaming is allowed*`);
         message.react("❌");
         message.channel
           .send(embedmusicnot)
@@ -149,16 +144,14 @@ Only YouTube playing/streaming is allowed`);
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-        .setFooter(
-          "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-        )
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
         .setDescription(
           `
 **User:** ${message.author}
 =========:radio_button:=========
 
 **Error:** 
-**${error}**`
+*${error}*`
         );
       message.react("❌");
       message.channel
@@ -212,13 +205,13 @@ Only YouTube playing/streaming is allowed`);
           .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
           .setImage(`https://img.youtube.com/vi/${id}/sddefault.jpg`)
-          .setFooter(
-            "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-          ).setDescription(`
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+          .setDescription(`
 =========:radio_button:=========
 
-**🏷Title-** ${song.title}
-**🔗Link-** ${song.url}`)
+**🏷Title-** *${song.title}*
+**🔗Link-** *${song.url}*
+`)
       );
       // ==================================================================
       // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
@@ -264,15 +257,13 @@ Only YouTube playing/streaming is allowed`);
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-              .setFooter(
-                "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-              )
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(
                 `
 **User:** ${message.author}
 =========:radio_button:=========
 
-You need to join a voice channel first!`
+*You need to* ***join** *a voice channel first!*`
               );
             message.react("❌");
             message.channel
@@ -295,12 +286,11 @@ You need to join a voice channel first!`
                 .setColor("#20ab40")
                 .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-                .setFooter(
-                  "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-                ).setDescription(`**User:** ${message.author}
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+                .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-⏩ Skipped the song`)
+⏩ *Skipped the song*`)
             )
             .catch(console.error)
             .then((message) => {
@@ -321,15 +311,13 @@ You need to join a voice channel first!`
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-              .setFooter(
-                "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-              )
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(
                 `
 **User:** ${message.author}
 =========:radio_button:=========
 
-You need to join a voice channel first!`
+*You need to* **join** *a voice channel first!*`
               );
             message.react("❌");
             message.channel
@@ -354,12 +342,11 @@ You need to join a voice channel first!`
                   .setColor("#20ab40")
                   .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
                   .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-                  .setFooter(
-                    "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-                  ).setDescription(`**User:** ${message.author}
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+                  .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-🚦 Paused the music.`)
+🚦 *Paused the music.*`)
               )
               .catch(console.error);
             // ==================================================================
@@ -374,12 +361,11 @@ You need to join a voice channel first!`
                   .setColor("#20ab40")
                   .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
                   .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-                  .setFooter(
-                    "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-                  ).setDescription(`**User:** ${message.author}
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+                  .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-▶ Resumed the music!`)
+▶ *Resumed the music!*`)
               )
               .catch(console.error)
               .then((message) => {
@@ -400,15 +386,13 @@ You need to join a voice channel first!`
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-              .setFooter(
-                "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-              )
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(
                 `
 **User:** ${message.author}
 =========:radio_button:=========
 
-You need to join a voice channel first!`
+*You need to* **join** *a voice channel first!*`
               );
             message.react("❌");
             message.channel
@@ -433,9 +417,8 @@ You need to join a voice channel first!`
                   .setColor("#20ab40")
                   .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
                   .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-                  .setFooter(
-                    "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-                  ).setDescription(`**User:** ${message.author}
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+                  .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
 🔇 Muted the music!`)
@@ -459,9 +442,8 @@ You need to join a voice channel first!`
                   .setColor("#20ab40")
                   .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
                   .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-                  .setFooter(
-                    "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-                  ).setDescription(`**User:** ${message.author}
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+                  .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
 🔊 Unmuted the music!`)
@@ -488,15 +470,13 @@ You need to join a voice channel first!`
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-              .setFooter(
-                "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-              )
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(
                 `
 **User:** ${message.author}
 =========:radio_button:=========
 
-You need to join a voice channel first!`
+*You need to* **join** *a voice channel first!*`
               );
             message.react("❌");
             message.channel
@@ -520,9 +500,8 @@ You need to join a voice channel first!`
                 .setColor("#20ab40")
                 .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-                .setFooter(
-                  "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-                ).setDescription(`**User:** ${message.author}
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+                .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
 🔉 Decreased the volume, the volume is now ${queue.volume}%`)
@@ -548,15 +527,13 @@ You need to join a voice channel first!`
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-              .setFooter(
-                "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-              )
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(
                 `
 **User:** ${message.author}
 =========:radio_button:=========
 
-You need to join a voice channel first!`
+*You need to* **join** *a voice channel first!*`
               );
             message.react("❌");
             message.channel
@@ -580,9 +557,8 @@ You need to join a voice channel first!`
                 .setColor("#20ab40")
                 .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-                .setFooter(
-                  "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-                ).setDescription(`**User:** ${message.author}
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+                .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
 🔊 Increased the volume, the volume is now ${queue.volume}%`)
@@ -605,15 +581,13 @@ You need to join a voice channel first!`
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-              .setFooter(
-                "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-              )
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(
                 `
 **User:** ${message.author}
 =========:radio_button:=========
 
-You need to join a voice channel first!`
+*You need to* **join** *a voice channel first!*`
               );
             message.react("❌");
             message.channel
@@ -636,9 +610,8 @@ You need to join a voice channel first!`
                 .setColor("#20ab40")
                 .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-                .setFooter(
-                  "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-                ).setDescription(`**User:** ${message.author}
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+                .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
 Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
@@ -662,15 +635,13 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
-              .setFooter(
-                "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-              )
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(
                 `
 **User:** ${message.author}
 =========:radio_button:=========
 
-You need to join a voice channel first!`
+*You need to* **join** *a voice channel first!*`
               );
             message.react("❌");
             message.channel
@@ -694,11 +665,9 @@ You need to join a voice channel first!`
                 .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
                 .setImage(`https://img.youtube.com/vi/${id}/sddefault.jpg`)
-                .setFooter(
-                  "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-                )
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
                 .setDescription(
-                  "=========:radio_button:=========\n\n❤️MusicQueue has been successfully ended"
+                  "=========:radio_button:=========\n\n❤️*MusicQueue has been successfully* **ended**"
                 )
             )
             .catch(console.error)
