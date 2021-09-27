@@ -43,14 +43,12 @@ try {
 **Channel:** \`🤍Noir\`
 *Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`
           );
-        message.channel
-          .send(embedfactor)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+        message.channel.send(embedfactor).catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        // });
+        // });
         return;
       }
       // ==================================================================
@@ -77,14 +75,12 @@ try {
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedskp2)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedskp2).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         // ==================================================================
@@ -106,14 +102,12 @@ try {
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedvol1)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedvol1).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         // ==================================================================
@@ -135,14 +129,12 @@ try {
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedvol2)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedvol2).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         // ==================================================================
@@ -164,14 +156,12 @@ Please use a number to set volume.`
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedvol3)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedvol3).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         // ==================================================================
@@ -191,14 +181,12 @@ Please use a number to set volume.`
 Please use a number between 0 - 100."`);
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedvol4)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedvol4).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         // ==================================================================
@@ -220,12 +208,12 @@ Please use a number between 0 - 100."`);
 
 Volume set to: **${args[0]}%**`)
           )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        // });
+        // });
         return;
       }
     },

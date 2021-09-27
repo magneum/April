@@ -41,14 +41,12 @@ try {
 **Channel:** \`🤍Noir\`
 *Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`
           );
-        message.channel
-          .send(embedfactor)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+        message.channel.send(embedfactor).catch(console.error);
+        // .then((message) => {
+        //   message.delete({
+        //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        //   });
+        // });
         return;
       }
       // ==================================================================
@@ -75,14 +73,12 @@ Noir is not playing anymusic yet....`
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embednp1)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embednp1).catch(console.error);
+          // .then((message) => {
+          //   message.delete({
+          //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          //   });
+          // });
           return;
         }
         // ==================================================================

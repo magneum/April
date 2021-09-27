@@ -271,14 +271,12 @@ Playlist not found`
             videos = await playlist.getVideos(ɴᴏɪʀᴍᴀx, { part: `snippet` });
           } catch (error) {
             console.error(error);
-            message.channel
-              .send(error.message)
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                });
-              });
+            message.channel.send(error.message).catch(console.error);
+            // .then((message) => {
+            // message.delete({
+            // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            // });
+            // });
             return;
           }
         }

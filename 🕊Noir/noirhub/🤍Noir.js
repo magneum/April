@@ -43,12 +43,12 @@ try {
                 .setDescription(`=========:radio_button:=========
 🤎**Noir** *has left the voice channel!*`)
             )
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
         }, ɴᴏɪʀᴡᴀᴋᴇ);
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
@@ -425,12 +425,12 @@ try {
 
 🔇 Muted the music!`)
                 )
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                  });
-                });
+                .catch(console.error);
+              // .then((message) => {
+              // message.delete({
+              // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+              // });
+              // });
               // ==================================================================
               // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
               // ==================================================================
@@ -542,14 +542,12 @@ try {
                 );
               message.react("❌");
               message.react("🔥");
-              message.channel
-                .send(embedmusic6)
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                  });
-                });
+              message.channel.send(embedmusic6).catch(console.error);
+              // .then((message) => {
+              // message.delete({
+              // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+              // });
+              // });
               return;
             }
             // ==================================================================

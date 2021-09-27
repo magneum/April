@@ -45,14 +45,12 @@ try {
 **Channel:** \`🤍Noir\`
 *Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`
           );
-        message.channel
-          .send(embedfactor)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+        message.channel.send(embedfactor).catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        // });
+        // });
         return;
       }
       // ==================================================================
@@ -81,14 +79,12 @@ There is no queue.`
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedshuf1)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedshuf1).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         // ==================================================================
@@ -112,14 +108,12 @@ There is no queue.`
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedshuf2)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedshuf2).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         // ==================================================================
@@ -150,12 +144,12 @@ There is no queue.`
 
 🔀 Shuffled the queue`)
           )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        // });
+        // });
       }
     },
   };

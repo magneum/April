@@ -125,12 +125,12 @@ Queue Loop is now turned ${
                 : message.channel.send("Off")
             }**`)
           )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        // });
+        // });
         return;
       }
     },

@@ -43,14 +43,12 @@ try {
 **Channel:** \`🤍Noir\`
 *Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`
           );
-        message.channel
-          .send(embedfactor)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+        message.channel.send(embedfactor).catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        // });
+        // });
         return;
       }
       // ==================================================================
@@ -77,14 +75,12 @@ Not playing anymusic yet.....`
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedskp1)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedskp1).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         // ==================================================================
@@ -106,14 +102,12 @@ Not playing anymusic yet.....`
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedskp2)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedskp2).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         // ==================================================================
@@ -135,12 +129,12 @@ Not playing anymusic yet.....`
 
 🔴 stopped the music!`)
           )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        // });
+        // });
       }
     },
   };

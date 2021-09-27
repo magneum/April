@@ -56,14 +56,12 @@ try {
 **Channel:** \`🤍Noir\`
 *Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`
           );
-        message.channel
-          .send(embedfactor)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+        message.channel.send(embedfactor).catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        // });
+        // });
         return;
       }
       // ==================================================================
@@ -112,14 +110,12 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
           );
         message.react("❌");
         message.react("🔥");
-        message.channel
-          .send(embedplay1)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+        message.channel.send(embedplay1).catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        // });
+        // });
         return;
       }
       // ==================================================================
@@ -147,14 +143,12 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedplay1)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedplay1).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         if (channel && !args.length) {
@@ -202,14 +196,12 @@ ID= ${message.client.user}`
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedplay2)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedplay2).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         // ==================================================================
@@ -232,14 +224,12 @@ ${ʙᴏᴛꜰɪx}play **YouTube URL** or **Video Name**`
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedplay3)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedplay3).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         // ==================================================================
@@ -262,14 +252,12 @@ Cannot connect to voice channel, missing permissions`
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedplay3)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedplay3).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         // ==================================================================
@@ -291,14 +279,12 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedplay3)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedplay3).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         // ==================================================================
@@ -348,14 +334,12 @@ Audio Not Found`
                   );
                 message.react("❌");
                 message.react("🔥");
-                message.channel
-                  .send(embedplay4)
-                  .catch(console.error)
-                  .then((message) => {
-                    message.delete({
-                      timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                    });
-                  });
+                message.channel.send(embedplay4).catch(console.error);
+                // .then((message) => {
+                // message.delete({
+                // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+                // });
+                // });
                 return;
               }
             });
@@ -364,14 +348,12 @@ Audio Not Found`
             // ==================================================================
           } catch (error) {
             console.error(error);
-            message.channel
-              .send(error.message)
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                });
-              });
+            message.channel.send(error.message).catch(console.error);
+            // .then((message) => {
+            // message.delete({
+            // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            // });
+            // });
             return;
           }
           // ==================================================================
@@ -392,14 +374,12 @@ Following url redirection...`
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedplay5)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedplay5).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         // ==================================================================
@@ -427,14 +407,12 @@ Following url redirection...`
             };
           } catch (error) {
             console.error(error);
-            return message.channel
-              .send(error.message)
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                });
-              });
+            return message.channel.send(error.message).catch(console.error);
+            // .then((message) => {
+            // message.delete({
+            // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            // });
+            // });
           }
           // ==================================================================
           // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
@@ -449,14 +427,12 @@ Following url redirection...`
             };
           } catch (error) {
             console.error(error);
-            return message.channel
-              .send(error.message)
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                });
-              });
+            return message.channel.send(error.message).catch(console.error);
+            // .then((message) => {
+            // message.delete({
+            // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            // });
+            // });
           }
           // ==================================================================
           // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
@@ -485,14 +461,12 @@ Audio Not Found`
                 );
               message.react("❌");
               message.react("🔥");
-              message.channel
-                .send(embedplay6)
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                  });
-                });
+              message.channel.send(embedplay6).catch(console.error);
+              // .then((message) => {
+              // message.delete({
+              // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+              // });
+              // });
               return;
             }
             // ==================================================================
@@ -506,14 +480,12 @@ Audio Not Found`
             };
           } catch (error) {
             console.error(error);
-            message.channel
-              .send(error.message)
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                });
-              });
+            message.channel.send(error.message).catch(console.error);
+            // .then((message) => {
+            // message.delete({
+            // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            // });
+            // });
             return;
           }
         }
@@ -526,12 +498,12 @@ Audio Not Found`
             .send(
               `**🤍Noir**\n${song.title}\n_has been added to the queue by_ ${message.author}\n\n`
             )
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
         // ==================================================================
@@ -554,14 +526,12 @@ Audio Not Found`
 
 **👍 Joined \`${channel.name}\` and is 📄 bound to \`#${message.channel.name}\`**`
               );
-            message.channel
-              .send(embedplay7)
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                });
-              });
+            message.channel.send(embedplay7).catch(console.error);
+            // .then((message) => {
+            // message.delete({
+            // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            // });
+            // });
           } catch (e) {
             console.log(e.message);
           }
@@ -586,14 +556,12 @@ Could not join the channel: *${error}*`
             );
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedplay8)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedplay8).catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
+          // });
           return;
         }
       }

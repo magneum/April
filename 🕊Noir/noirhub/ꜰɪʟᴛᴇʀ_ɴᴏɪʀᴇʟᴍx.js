@@ -40,9 +40,9 @@ try {
 *Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`);
         message.channel.send(embedfilter0).catch(console.error);
         // .then((message) => {
-        //   message.delete({
-        //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-        //   });
+        // message.delete({
+        // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        // });
         // });
         return;
       }
@@ -68,9 +68,9 @@ try {
         message.react("🔥");
         message.channel.send(embednone1).catch(console.error);
         // .then((message) => {
-        //   message.delete({
-        //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-        //   });
+        // message.delete({
+        // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        // });
         // });
         return;
       }
@@ -268,13 +268,15 @@ ID= ${message.client.user}`);
 
 *Song Queue has been cleaned up.*
 Restart **queue** and **filter** will be applied.`);
-          message.channel.send(embedfiltersongend).catch(console.error);
+          message.channel
+            .send(embedfiltersongend)
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: 20000,
+              });
+            });
           return;
-          // .then((message) => {
-          //   message.delete({
-          //     timeout: 20000,
-          //   });
-          // });
         } catch (error) {
           const embednone2 = new MessageEmbed()
             .setColor("#FFD900")
@@ -292,9 +294,9 @@ Restart **queue** and **filter** will be applied.`);
           message.react("🔥");
           message.channel.send(embednone2).catch(console.error);
           // .then((message) => {
-          //   message.delete({
-          //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-          //   });
+          // message.delete({
+          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          // });
           // });
           return;
         }

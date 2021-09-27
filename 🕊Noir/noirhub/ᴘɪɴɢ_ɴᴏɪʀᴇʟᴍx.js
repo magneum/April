@@ -38,14 +38,12 @@ try {
 **Channel:** \`🤍Noir\`
 *Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`
           );
-        message.channel
-          .send(embedfactor)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+        message.channel.send(embedfactor).catch(console.error);
+        // .then((message) => {
+        //   message.delete({
+        //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        //   });
+        // });
         return;
       }
       // ==================================================================
@@ -68,14 +66,12 @@ try {
 
 ⌛️Average ping of noir's Server **${Math.round(message.client.ws.ping)}ms**`
           );
-        message.channel
-          .send(embedping)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+        message.channel.send(embedping).catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        // });
+        // });
         return;
       }
     },
