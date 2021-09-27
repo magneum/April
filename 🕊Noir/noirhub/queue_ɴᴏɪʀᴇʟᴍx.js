@@ -1,9 +1,6 @@
 try {
   const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
   const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
-  if (message.author.bot) {
-    return;
-  }
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007
@@ -29,7 +26,7 @@ try {
         message.react("❌");
         message.react("🔥");
         const embedfactor = new MessageEmbed()
-          .setColor("#d698bc")
+          .setColor("#FFD900")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -62,7 +59,7 @@ try {
         const permissions = message.channel.permissionsFor(message.client.user);
         if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
           const embedqueue1 = new MessageEmbed()
-            .setColor("#d698bc")
+            .setColor("#FFD900")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -92,7 +89,7 @@ Missing permission to manage messages or add reactions`
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
           const embedqueue2 = new MessageEmbed()
-            .setColor("#d698bc")
+            .setColor("#FFD900")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

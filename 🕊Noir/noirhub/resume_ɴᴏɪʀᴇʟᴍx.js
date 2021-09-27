@@ -5,9 +5,6 @@ try {
     canModifyQueue,
   } = require("../noirtem/noir_env");
   const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
-  if (message.author.bot) {
-    return;
-  }
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007
@@ -33,7 +30,7 @@ try {
         message.react("❌");
         message.react("🔥");
         const embedfactor = new MessageEmbed()
-          .setColor("#d698bc")
+          .setColor("#FFD900")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -66,7 +63,7 @@ try {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
           const embedresume1 = new MessageEmbed()
-            .setColor("#d698bc")
+            .setColor("#FFD900")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -95,7 +92,7 @@ is not playing anymusic yet.....`
         // ==================================================================
         if (!canModifyQueue(message.member)) {
           const embedresume2 = new MessageEmbed()
-            .setColor("#d698bc")
+            .setColor("#FFD900")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -151,7 +148,7 @@ is not playing anymusic yet.....`
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         const embedresume3 = new MessageEmbed()
-          .setColor("#d698bc")
+          .setColor("#FFD900")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

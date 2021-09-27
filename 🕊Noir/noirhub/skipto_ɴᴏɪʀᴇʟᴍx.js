@@ -5,9 +5,6 @@ try {
     ɴᴏɪʀᴄʟᴇᴀɴᴇʀ,
   } = require("../noirtem/noir_env");
   const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
-  if (message.author.bot) {
-    return;
-  }
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007
@@ -33,7 +30,7 @@ try {
         message.react("❌");
         message.react("🔥");
         const embedfactor = new MessageEmbed()
-          .setColor("#d698bc")
+          .setColor("#FFD900")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -65,7 +62,7 @@ try {
       ) {
         if (!args.length || isNaN(args[0])) {
           const embedskpto1 = new MessageEmbed()
-            .setColor("#d698bc")
+            .setColor("#FFD900")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -95,7 +92,7 @@ try {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
           const embedskpto2 = new MessageEmbed()
-            .setColor("#d698bc")
+            .setColor("#FFD900")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -124,7 +121,7 @@ There is nothing playing that I could skip for you.`
         // ==================================================================
         if (!canModifyQueue(message.member)) {
           const embedskpto3 = new MessageEmbed()
-            .setColor("#d698bc")
+            .setColor("#FFD900")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -153,7 +150,7 @@ There is nothing playing that I could skip for you.`
         // ==================================================================
         if (args[0] > queue.songs.length) {
           const embedshp1 = new MessageEmbed()
-            .setColor("#d698bc")
+            .setColor("#FFD900")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

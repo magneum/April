@@ -2,9 +2,6 @@ try {
   const { canModifyQueue } = require("../noirtem/noir_env");
   const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
   const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
-  if (message.author.bot) {
-    return;
-  }
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007
@@ -30,7 +27,7 @@ try {
         message.react("❌");
         message.react("🔥");
         const embedfactor = new MessageEmbed()
-          .setColor("#d698bc")
+          .setColor("#FFD900")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -63,7 +60,7 @@ try {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
           const embedloopno1 = new MessageEmbed()
-            .setColor("#d698bc")
+            .setColor("#FFD900")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -90,7 +87,7 @@ Noir is not playing anymusic yet.....`);
         // ==================================================================
         if (!canModifyQueue(message.member)) {
           const embedloopno2 = new MessageEmbed()
-            .setColor("#d698bc")
+            .setColor("#FFD900")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

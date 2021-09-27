@@ -2,9 +2,6 @@ try {
     const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ, canModifyQueue } = require("../noirtem/noir_env");
     const pattern = /^[0-9]{1,2}(\s*,\s*[0-9]{1,2})*$/;
     const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
-    if (message.author.bot) {
-        return;
-      }
     // =============================================================================================================================
     // GNU GENERAL PUBLIC LICENSE
     // Version 3, 29 June 2007
@@ -27,7 +24,7 @@ try {
                 message.react("❌");
                 message.react("🔥");
                 const embedfactor = new MessageEmbed()
-                    .setColor("#d698bc")
+                    .setColor("#FFD900")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                     .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -56,7 +53,7 @@ try {
                 const queue = message.client.queue.get(message.guild.id);
                 if (!queue) {
                     const embedrm1 = new MessageEmbed()
-                        .setColor("#d698bc")
+                        .setColor("#FFD900")
                         .setTitle("⚠️Warning⚠️")
                         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -84,7 +81,7 @@ There is no queue.`);
                 // ==================================================================
                 if (!canModifyQueue(message.member)) {
                     const embedrm2 = new MessageEmbed()
-                        .setColor("#d698bc")
+                        .setColor("#FFD900")
                         .setTitle("⚠️Warning⚠️")
                         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -112,7 +109,7 @@ There is no queue.`);
                 // ==================================================================
                 if (!args.length) {
                     const embedrm3 = new MessageEmbed()
-                        .setColor("#d698bc")
+                        .setColor("#FFD900")
                         .setTitle("⚠️Warning⚠️")
                         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -203,7 +200,7 @@ There is no queue.`);
                 } else {
                     console.log(`we got the last one`);
                     const embedrm4 = new MessageEmbed()
-                        .setColor("#d698bc")
+                        .setColor("#FFD900")
                         .setTitle("⚠️Warning⚠️")
                         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

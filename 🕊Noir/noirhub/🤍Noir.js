@@ -7,9 +7,6 @@ try {
   } = require("../noirtem/noir_env");
   const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ/src");
   const getVideoId = require("get-video-id");
-  if (message.author.bot) {
-    return;
-  }
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007
@@ -110,7 +107,7 @@ try {
           // ==================================================================
         } else {
           const embedmusicnot = new MessageEmbed()
-            .setColor("#d698bc")
+            .setColor("#FFD900")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -145,7 +142,7 @@ try {
         // ==================================================================
         console.error(error);
         const embedmusic1 = new MessageEmbed()
-          .setColor("#d698bc")
+          .setColor("#FFD900")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -259,7 +256,7 @@ try {
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               const embedmusic2 = new MessageEmbed()
-                .setColor("#d698bc")
+                .setColor("#FFD900")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -314,7 +311,7 @@ try {
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               const embedmusic3 = new MessageEmbed()
-                .setColor("#d698bc")
+                .setColor("#FFD900")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -394,7 +391,7 @@ try {
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               const embedmusic4 = new MessageEmbed()
-                .setColor("#d698bc")
+                .setColor("#FFD900")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -483,7 +480,7 @@ try {
             }
             if (!canModifyQueue(member)) {
               const embedmusic5 = new MessageEmbed()
-                .setColor("#d698bc")
+                .setColor("#FFD900")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -543,7 +540,7 @@ try {
             }
             if (!canModifyQueue(member)) {
               const embedmusic6 = new MessageEmbed()
-                .setColor("#d698bc")
+                .setColor("#FFD900")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -600,7 +597,7 @@ try {
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               const embedmusic7 = new MessageEmbed()
-                .setColor("#d698bc")
+                .setColor("#FFD900")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -655,7 +652,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               const embedmusic8 = new MessageEmbed()
-                .setColor("#d698bc")
+                .setColor("#FFD900")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

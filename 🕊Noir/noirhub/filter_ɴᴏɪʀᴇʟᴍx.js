@@ -2,9 +2,6 @@ try {
   const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
   const { play } = require("./🤍Noir");
   const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
-  if (message.author.bot) {
-    return;
-  }
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007
@@ -30,7 +27,7 @@ try {
         message.react("❌");
         message.react("🔥");
         const embedfilter0 = new MessageEmbed()
-          .setColor("#d698bc")
+          .setColor("#FFD900")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -58,7 +55,7 @@ try {
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embednone1 = new MessageEmbed()
-          .setColor("#d698bc")
+          .setColor("#FFD900")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -84,7 +81,7 @@ try {
       if (queue.length !== 0) {
         if (!args.length) {
           const embedfilter1 = new MessageEmbed()
-            .setColor("#d698bc")
+            .setColor("#FFD900")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -120,7 +117,7 @@ try {
       ) {
         if (!message.member.voice.channel) {
           const embedfilter2 = new MessageEmbed()
-            .setColor("#d698bc")
+            .setColor("#FFD900")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -147,7 +144,7 @@ try {
         // ==================================================================
         if (queue && channel !== message.guild.me.voice.channel) {
           const embedfilter3 = new MessageEmbed()
-            .setColor("#d698bc")
+            .setColor("#FFD900")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -209,7 +206,7 @@ ID= ${message.client.user}`);
           default:
             NoirEffectNum = 404;
             const embedfilter4 = new MessageEmbed()
-              .setColor("#d698bc")
+              .setColor("#FFD900")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
               .setFooter(`**Example:** ${ʙᴏᴛꜰɪx}filter bassboost`)
@@ -292,7 +289,7 @@ Restarted queue and filter is applied.`);
             });
         } catch (error) {
           const embednone2 = new MessageEmbed()
-            .setColor("#d698bc")
+            .setColor("#FFD900")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
