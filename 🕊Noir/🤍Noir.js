@@ -206,13 +206,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -225,13 +225,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -244,13 +244,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -263,13 +263,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -282,13 +282,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -301,13 +301,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -320,13 +320,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -339,13 +339,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -358,13 +358,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -377,13 +377,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -396,13 +396,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -415,13 +415,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -434,13 +434,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -453,13 +453,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -472,13 +472,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -491,13 +491,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
@@ -510,13 +510,13 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       const CmdError = new MessageEmbed()
         .setColor("#ED944D")
         .setTitle("💀 Wrong Command")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setDescription(
           `**User:** ${message.author}
 *Use* 
 **${ʙᴏᴛꜰɪx}help** *or* **${ʙᴏᴛꜰɪx}noir**.`
         )
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
       message.react("💀");
       message.react("🔴");
       message.channel.send(CmdError);
