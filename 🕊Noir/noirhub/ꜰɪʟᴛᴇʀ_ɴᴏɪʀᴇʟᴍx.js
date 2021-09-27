@@ -27,7 +27,7 @@ try {
         message.react("❌");
         message.react("🔥");
         const embedfilter0 = new MessageEmbed()
-          .setColor("#FFD900")
+          .setColor("#E0D268")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -53,7 +53,7 @@ try {
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embednone1 = new MessageEmbed()
-          .setColor("#FFD900")
+          .setColor("#E0D268")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -77,7 +77,7 @@ try {
       if (queue.length !== 0) {
         if (!args.length) {
           const embedfilter1 = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -113,7 +113,7 @@ try {
       ) {
         if (!message.member.voice.channel) {
           const embedfilter2 = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -138,7 +138,7 @@ try {
         // ==================================================================
         if (queue && channel !== message.guild.me.voice.channel) {
           const embedfilter3 = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -198,7 +198,7 @@ ID= ${message.client.user}`);
           default:
             NoirEffectNum = 404;
             const embedfilter4 = new MessageEmbed()
-              .setColor("#FFD900")
+              .setColor("#E0D268")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
               .setFooter(`**Example:** ${ʙᴏᴛꜰɪx}filter bassboost`)
@@ -279,7 +279,7 @@ Restart **queue** and **filter** will be applied.`);
           return;
         } catch (error) {
           const embednone2 = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

@@ -43,7 +43,7 @@ try {
         message.react("❌");
         message.react("🔥");
         const embedfactor = new MessageEmbed()
-          .setColor("#FFD900")
+          .setColor("#E0D268")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -95,7 +95,7 @@ try {
       // ==================================================================
       if (ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
         const embedplay1 = new MessageEmbed()
-          .setColor("#FFD900")
+          .setColor("#E0D268")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -129,7 +129,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
         const serverQueue = message.client.queue.get(message.guild.id);
         if (!channel) {
           const embedplay1 = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -153,7 +153,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
         }
         if (channel && !args.length) {
           const embedplaying = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -181,7 +181,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
         // ==================================================================
         if (serverQueue && channel !== message.guild.me.voice.channel) {
           const embedplay2 = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -209,7 +209,7 @@ ID= ${message.client.user}`
         // ==================================================================
         if (!args.length) {
           const embedplay3 = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -238,7 +238,7 @@ ${ʙᴏᴛꜰɪx}play **YouTube URL** or **Video Name**`
         const permissions = channel.permissionsFor(message.client.user);
         if (!permissions.has(`CONNECT`)) {
           const embedplay3 = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -265,7 +265,7 @@ Cannot connect to voice channel, missing permissions`
         // ==================================================================
         if (!permissions.has(`SPEAK`)) {
           const embedplay3 = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -318,7 +318,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
                 // ==================================================================
               } else {
                 const embedplay4 = new MessageEmbed()
-                  .setColor("#FFD900")
+                  .setColor("#E0D268")
                   .setTitle("⚠️Warning⚠️")
                   .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -360,7 +360,7 @@ Audio Not Found`
           // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
           const embedplay5 = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -447,7 +447,7 @@ Following url redirection...`
             // ==================================================================
             if (!results.length) {
               const embedplay6 = new MessageEmbed()
-                .setColor("#FFD900")
+                .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -542,7 +542,7 @@ Audio Not Found`
           message.client.queue.delete(message.guild.id);
           await channel.leave();
           const embedplay8 = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

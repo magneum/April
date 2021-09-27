@@ -27,7 +27,7 @@ try {
         message.react("❌");
         message.react("🔥");
         const embedfactor = new MessageEmbed()
-          .setColor("#FFD900")
+          .setColor("#E0D268")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -58,7 +58,7 @@ try {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
           const embedloopno1 = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -83,7 +83,7 @@ Noir is not playing anymusic yet.....`);
         // ==================================================================
         if (!canModifyQueue(message.member)) {
           const embedloopno2 = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

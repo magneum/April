@@ -30,7 +30,7 @@ try {
         message.react("❌");
         message.react("🔥");
         const embedfactor = new MessageEmbed()
-          .setColor("#FFD900")
+          .setColor("#E0D268")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -63,7 +63,7 @@ try {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
           const embedshuf1 = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -92,7 +92,7 @@ There is no queue.`
         // ==================================================================
         if (!canModifyQueue(message.member)) {
           const embedshuf2 = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

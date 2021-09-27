@@ -24,7 +24,7 @@ try {
                 message.react("❌");
                 message.react("🔥");
                 const embedfactor = new MessageEmbed()
-                    .setColor("#FFD900")
+                    .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                     .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -53,7 +53,7 @@ try {
                 const queue = message.client.queue.get(message.guild.id);
                 if (!queue) {
                     const embedrm1 = new MessageEmbed()
-                        .setColor("#FFD900")
+                        .setColor("#E0D268")
                         .setTitle("⚠️Warning⚠️")
                         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -81,7 +81,7 @@ There is no queue.`);
                 // ==================================================================
                 if (!canModifyQueue(message.member)) {
                     const embedrm2 = new MessageEmbed()
-                        .setColor("#FFD900")
+                        .setColor("#E0D268")
                         .setTitle("⚠️Warning⚠️")
                         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -109,7 +109,7 @@ There is no queue.`);
                 // ==================================================================
                 if (!args.length) {
                     const embedrm3 = new MessageEmbed()
-                        .setColor("#FFD900")
+                        .setColor("#E0D268")
                         .setTitle("⚠️Warning⚠️")
                         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -200,7 +200,7 @@ There is no queue.`);
                 } else {
                     console.log(`we got the last one`);
                     const embedrm4 = new MessageEmbed()
-                        .setColor("#FFD900")
+                        .setColor("#E0D268")
                         .setTitle("⚠️Warning⚠️")
                         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

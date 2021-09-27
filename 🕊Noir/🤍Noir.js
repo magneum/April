@@ -120,7 +120,7 @@ Please use **!calib** once to calibrate before first use!`);
     // ==================================================================
     if (!message.guild) {
       const checkdm = new MessageEmbed()
-        .setColor("#FFD900")
+        .setColor("#E0D268")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -242,7 +242,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       if (now < expirationTime) {
         const timeLeft = (expirationTime - now) / 1000;
         const embedNoir1 = new MessageEmbed()
-          .setColor("#FFD900")
+          .setColor("#E0D268")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -271,7 +271,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
     } catch (error) {
       console.error(error);
       const embedNoir2 = new MessageEmbed()
-        .setColor("#FFD900")
+        .setColor("#E0D268")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

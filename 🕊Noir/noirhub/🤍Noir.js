@@ -107,7 +107,7 @@ try {
           // ==================================================================
         } else {
           const embedmusicnot = new MessageEmbed()
-            .setColor("#FFD900")
+            .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -140,7 +140,7 @@ try {
         // ==================================================================
         console.error(error);
         const embedmusic1 = new MessageEmbed()
-          .setColor("#FFD900")
+          .setColor("#E0D268")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -252,7 +252,7 @@ try {
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               const embedmusic2 = new MessageEmbed()
-                .setColor("#FFD900")
+                .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -305,7 +305,7 @@ try {
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               const embedmusic3 = new MessageEmbed()
-                .setColor("#FFD900")
+                .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -383,7 +383,7 @@ try {
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               const embedmusic4 = new MessageEmbed()
-                .setColor("#FFD900")
+                .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -470,7 +470,7 @@ try {
             }
             if (!canModifyQueue(member)) {
               const embedmusic5 = new MessageEmbed()
-                .setColor("#FFD900")
+                .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -528,7 +528,7 @@ try {
             }
             if (!canModifyQueue(member)) {
               const embedmusic6 = new MessageEmbed()
-                .setColor("#FFD900")
+                .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -583,7 +583,7 @@ try {
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               const embedmusic7 = new MessageEmbed()
-                .setColor("#FFD900")
+                .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -636,7 +636,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               const embedmusic8 = new MessageEmbed()
-                .setColor("#FFD900")
+                .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
