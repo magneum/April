@@ -82,7 +82,7 @@ ${CH}`);
         channel.permissionsFor(guild.me).has(`SEND_MESSAGES`)
     );
     const embedThanks = new MessageEmbed()
-      .setColor("#4b73c1")
+      .setColor("#6272a4")
       .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
       .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
       .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -152,7 +152,7 @@ Please use **!calib** once to calibrate before first use!`);
     if (message.content.startsWith(ʙᴏᴛꜰɪx + `calib`)) {
       if (message.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
         const embedcheck1 = new MessageEmbed()
-          .setColor("#4b73c1")
+          .setColor("#6272a4")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -177,7 +177,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
         console.log(`•🤍noir ©️• has been successfully created.`);
       } else {
         const embedcheck2 = new MessageEmbed()
-          .setColor("#4b73c1")
+          .setColor("#6272a4")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

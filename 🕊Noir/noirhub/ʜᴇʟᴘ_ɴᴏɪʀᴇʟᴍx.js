@@ -47,7 +47,7 @@ try {
 • **${ʙᴏᴛꜰɪx}vol** = Change volume of currently playing music.
 `
           )
-          .setColor("#4b73c1")
+          .setColor("#6272a4")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -92,7 +92,7 @@ try {
 • **${ʙᴏᴛꜰɪx}vol** = Change volume of currently playing music.
 `
           )
-          .setColor("#4b73c1")
+          .setColor("#6272a4")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -104,7 +104,7 @@ try {
         message.react("🍧");
         message.author.send(
           new MessageEmbed()
-            .setColor("#4b73c1")
+            .setColor("#6272a4")
             .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
         );
         // ==================================================================
@@ -114,7 +114,7 @@ try {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#4b73c1")
+              .setColor("#6272a4")
               .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
               .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

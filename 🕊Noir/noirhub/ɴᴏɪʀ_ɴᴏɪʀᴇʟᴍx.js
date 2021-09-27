@@ -34,7 +34,7 @@ try {
 •> use **${ʙᴏᴛꜰɪx}help** to learn how to use **Noir**
 `
           )
-          .setColor("#4b73c1")
+          .setColor("#6272a4")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
         // ==================================================================
@@ -44,7 +44,7 @@ try {
         message.react("🍧");
         message.author.send(
           new MessageEmbed()
-            .setColor("#4b73c1")
+            .setColor("#6272a4")
             .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
         );
         // ==================================================================
@@ -54,7 +54,7 @@ try {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#4b73c1")
+              .setColor("#6272a4")
               .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
               .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -88,7 +88,7 @@ for extra info on *Noir* **
 •> use **${ʙᴏᴛꜰɪx}help** to learn how to use **Noir**
 `
           )
-          .setColor("#4b73c1")
+          .setColor("#6272a4")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
         // ==================================================================

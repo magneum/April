@@ -69,7 +69,7 @@ try {
       // ==================================================================
       //     if (!ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0]) && !ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0])) {
       //       const embednotplay = new MessageEmbed()
-      //         .setColor("#4b73c1")
+      //         .setColor("#6272a4")
       //         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
       //         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
       //         .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
@@ -515,7 +515,7 @@ Audio Not Found`
           try {
             queueConstruct.connection = await channel.join();
             const embedplay7 = new MessageEmbed()
-              .setColor("#4b73c1")
+              .setColor("#6272a4")
               .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")

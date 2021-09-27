@@ -308,7 +308,7 @@ Playlist not found`
             newSongs.map((song, index) => `${index + 1}. ${song.title}`)
           )
           .setURL(playlist.url)
-          .setColor("#4b73c1")
+          .setColor("#6272a4")
           .setTimestamp();
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
@@ -318,7 +318,7 @@ Playlist not found`
             playlistEmbed.description.substr(0, 2007) +
             "**🤍Noir**\nPlaylist larger than character limit...";
         const embedlist7 = new MessageEmbed()
-          .setColor("#4b73c1")
+          .setColor("#6272a4")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")

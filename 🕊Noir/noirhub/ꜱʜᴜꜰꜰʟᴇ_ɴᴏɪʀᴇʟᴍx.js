@@ -134,7 +134,7 @@ There is no queue.`
         queue.textChannel
           .send(
             new MessageEmbed()
-              .setColor("#4b73c1")
+              .setColor("#6272a4")
               .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setFooter(

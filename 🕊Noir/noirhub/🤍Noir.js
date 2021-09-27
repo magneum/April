@@ -36,7 +36,7 @@ try {
           queue.textChannel
             .send(
               new MessageEmbed()
-                .setColor("#4b73c1")
+                .setColor("#6272a4")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
@@ -57,7 +57,7 @@ try {
         // queue.textChannel
         //   .send(
         //     new MessageEmbed()
-        //       .setColor("#4b73c1")
+        //       .setColor("#6272a4")
         //       .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         //       .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
         //       .setFooter(
@@ -77,7 +77,7 @@ try {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#4b73c1")
+              .setColor("#6272a4")
               .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
@@ -199,7 +199,7 @@ try {
         const { id } = getVideoId(`${song.url}`);
         var ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel.send(
           new MessageEmbed()
-            .setColor("#4b73c1")
+            .setColor("#6272a4")
             .setTitle("💯ᴅɪʀᴇᴄᴛʟʏ ꜱᴛʀᴇᴀᴍɪɴɢ ᴜꜱɪɴɢ-𝐘𝐨𝐮𝐓𝐮𝐛𝐞")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -281,7 +281,7 @@ try {
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#4b73c1")
+                  .setColor("#6272a4")
                   .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
@@ -336,7 +336,7 @@ try {
               queue.textChannel
                 .send(
                   new MessageEmbed()
-                    .setColor("#4b73c1")
+                    .setColor("#6272a4")
                     .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
@@ -357,7 +357,7 @@ try {
               queue.textChannel
                 .send(
                   new MessageEmbed()
-                    .setColor("#4b73c1")
+                    .setColor("#6272a4")
                     .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
@@ -414,7 +414,7 @@ try {
               queue.textChannel
                 .send(
                   new MessageEmbed()
-                    .setColor("#4b73c1")
+                    .setColor("#6272a4")
                     .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
@@ -441,7 +441,7 @@ try {
               queue.textChannel
                 .send(
                   new MessageEmbed()
-                    .setColor("#4b73c1")
+                    .setColor("#6272a4")
                     .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
@@ -502,7 +502,7 @@ try {
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#4b73c1")
+                  .setColor("#6272a4")
                   .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
@@ -560,7 +560,7 @@ try {
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#4b73c1")
+                  .setColor("#6272a4")
                   .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
@@ -612,7 +612,7 @@ try {
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#4b73c1")
+                  .setColor("#6272a4")
                   .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
@@ -666,7 +666,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#4b73c1")
+                  .setColor("#6272a4")
                   .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                   .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)

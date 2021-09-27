@@ -58,7 +58,7 @@ try {
         let AvatarEmbed = new MessageEmbed();
         const user = message.mentions.users.first();
         if (!message.mentions.users.first()) {
-          AvatarEmbed.setColor("#4b73c1");
+          AvatarEmbed.setColor("#6272a4");
           AvatarEmbed.setAuthor(`•> 🤍Noir by HypeVoidSoul`);
           AvatarEmbed.setImage(message.author.displayAvatarURL());
           AvatarEmbed.setFooter(
@@ -71,7 +71,7 @@ try {
           message.channel.send(AvatarEmbed);
           return;
         } else {
-          AvatarEmbed.setColor("#4b73c1");
+          AvatarEmbed.setColor("#6272a4");
           AvatarEmbed.setAuthor(`•> 🤍Noir by HypeVoidSoul`);
           AvatarEmbed.setImage(user.displayAvatarURL());
           AvatarEmbed.setFooter(
