@@ -128,12 +128,12 @@ Please use **!calib** once to calibrate before first use!`);
       .setFooter(
         "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
       ).setDescription(`
-  **User:** ${message.author}
-  =========:radio_button:=========
+**User:** ${message.author}
+=========:radio_button:=========
 
-  • You are currently in a **DMChannel** and so you have been **restricted** using any **NOIR 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀**
+• You are currently in a **DMChannel** and so you have been **restricted** using any **NOIR 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀**
 
-  • Add me in your channel and then all commands will be automatically accepted.`);
+• Add me in your channel and then all commands will be automatically accepted.`);
     message.reply(checkdm);
     message.react("❌");
     return;
