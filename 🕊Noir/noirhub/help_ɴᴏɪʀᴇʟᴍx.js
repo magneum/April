@@ -6,7 +6,7 @@ const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// noir🎶player
+// 🕊Noir
 // Discord Music YouTube player
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -14,12 +14,12 @@ const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir
 module.exports = {
   name: "help",
   // ==================================================================
-  // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
+  // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
   execute(message) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "help") &&
-      message.channel.name !== "noir🎶player"
+      message.channel.name !== "🕊Noir"
     ) {
       let HELPEMBED = new MessageEmbed()
         .setDescription(
@@ -47,25 +47,25 @@ module.exports = {
 `
         )
         .setColor("#20ab40")
-        .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
+        .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/159gtVVq/image.jpg`)
         .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
         .setFooter(
           "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
         );
       // ==================================================================
-      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       message.react("✅");
       // ==================================================================
-      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       message.channel.send(HELPEMBED).catch(console.error);
       return;
     }
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "help") &&
-      message.channel.name === "noir🎶player"
+      message.channel.name === "🕊Noir"
     ) {
       let HELPEMBED = new MessageEmbed()
         .setDescription(
@@ -93,14 +93,14 @@ module.exports = {
 `
         )
         .setColor("#20ab40")
-        .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
+        .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/159gtVVq/image.jpg`)
         .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
         .setFooter(
           "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
         );
       // ==================================================================
-      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       message.react("✅");
       message.author.send(
@@ -109,14 +109,14 @@ module.exports = {
           .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
       );
       // ==================================================================
-      // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       message.author.send(HELPEMBED).catch(console.error);
       message.channel
         .send(
           new MessageEmbed()
             .setColor("#20ab40")
-            .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
+            .setAuthor(`•> 🕊Noir by HypeVoidSoul`)
             .setImage(`https://i.postimg.cc/159gtVVq/image.jpg`)
             .setThumbnail(`https://i.postimg.cc/159gtVVq/image.jpg`)
             .setFooter(
@@ -125,7 +125,7 @@ module.exports = {
 =========:radio_button:=========
 
 Check your \`direct messages\` 
-for a list of *NOIR's* Commands!**
+for a list of *Noir's* Commands!**
 `)
         )
         .then((message) => {
