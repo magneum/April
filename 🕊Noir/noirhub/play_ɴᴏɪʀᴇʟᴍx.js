@@ -156,9 +156,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
           });
         return;
       }
-      if (channel) {
-        message.react("✅");
-        message.react("🍧");
+      if (channel && !args.length) {
         const embedplaying = new MessageEmbed()
           .setColor("#d698bc")
           .setTitle("⚠️Warning⚠️")
@@ -172,6 +170,8 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
 
 *Searching and Playing in less then* **3secs!**`
           );
+        message.react("✅");
+        message.react("🍧");
         message.channel
           .send(embedplaying)
           .catch(console.error)
