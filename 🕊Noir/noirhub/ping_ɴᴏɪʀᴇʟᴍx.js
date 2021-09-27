@@ -12,70 +12,70 @@ const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 // =============================================================================================================================
 module.exports = {
-name: "ping",
-cooldown: 3,
-// ==================================================================
-// ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
-// ==================================================================
-execute(message) {
-if (
-message.content.startsWith(ʙᴏᴛꜰɪx + "ping") &&
-message.channel.name !== "🤍noir"
-) {
-message.react("❌");
-const embedfactor = new MessageEmbed()
-.setColor("#d698bc")
-.setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 🤍Noir by HypeVoidSoul`)
-.setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-.setDescription(
-`
+  name: "ping",
+  cooldown: 3,
+  // ==================================================================
+  // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+  // ==================================================================
+  execute(message) {
+    if (
+      message.content.startsWith(ʙᴏᴛꜰɪx + "ping") &&
+      message.channel.name !== "🤍noir"
+    ) {
+      message.react("❌");
+      const embedfactor = new MessageEmbed()
+        .setColor("#d698bc")
+        .setTitle("⚠️Warning⚠️")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
+        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+        .setDescription(
+          `
 **User:** ${message.author}
 =========:radio_button:=========
 
 **Channel:** \`🤍Noir\`
 *Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`
-);
-message.channel
-.send(embedfactor)
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-});
-});
-return;
-}
-// ==================================================================
-// ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
-// ==================================================================
-if (
-message.content.startsWith(ʙᴏᴛꜰɪx + "ping") &&
-message.channel.name === "🤍noir"
-) {
-message.react("✅");
-message.react("🍧");
-const embedping = new MessageEmbed()
-.setColor("#4b73c1")
-.setAuthor(`•> 🤍Noir by HypeVoidSoul`)
-.setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-.setDescription(
-`
+        );
+      message.channel
+        .send(embedfactor)
+        .catch(console.error)
+        .then((message) => {
+          message.delete({
+            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          });
+        });
+      return;
+    }
+    // ==================================================================
+    // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ==================================================================
+    if (
+      message.content.startsWith(ʙᴏᴛꜰɪx + "ping") &&
+      message.channel.name === "🤍noir"
+    ) {
+      message.react("✅");
+      message.react("🍧");
+      const embedping = new MessageEmbed()
+        .setColor("#4b73c1")
+        .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
+        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+        .setDescription(
+          `
 **User:** ${message.author}
 
 ⌛️Average ping of noir's Server **${Math.round(message.client.ws.ping)}ms**`
-);
-message.channel
-.send(embedping)
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-});
-});
-return;
-}
-},
+        );
+      message.channel
+        .send(embedping)
+        .catch(console.error)
+        .then((message) => {
+          message.delete({
+            timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          });
+        });
+      return;
+    }
+  },
 };
