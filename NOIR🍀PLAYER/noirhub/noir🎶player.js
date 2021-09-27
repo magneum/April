@@ -75,7 +75,8 @@ module.exports = {
             timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
           });
         });
-      // message.client.queue.delete(message.guild.id);
+      message.client.queue.delete(message.guild.id);
+      message.channel.send("Previous Queue has been cleaned and ready for new Queue!");
       return;
     }
     // ==================================================================
