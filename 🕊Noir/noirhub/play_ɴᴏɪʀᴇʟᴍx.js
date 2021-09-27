@@ -523,7 +523,7 @@ Audio Not Found`
         serverQueue.songs.push(song);
         serverQueue.textChannel
           .send(
-            `**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n${song.title}\n_has been added to the queue by_ ${message.author}\n\n`
+            `**🤍Noir**\n${song.title}\n_has been added to the queue by_ ${message.author}\n\n`
           )
           .catch(console.error)
           .then((message) => {

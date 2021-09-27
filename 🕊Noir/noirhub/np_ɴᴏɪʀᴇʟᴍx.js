@@ -1,3 +1,4 @@
+const getVideoId = require("get-video-id");
 const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
 const { splitBar } = require("string-progressbar");
 const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
@@ -95,9 +96,11 @@ Noir is not playing anymusic yet....`
       // ==================================================================
       // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
+      const { id } = getVideoId(`${song.url}`);
       let current = new MessageEmbed()
-        .setTitle("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n*Now playing*")
+        .setTitle("**🤍Noir**\n*Now playing*")
         .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+        .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
         .setDescription(`${song.title}\n${song.url}`)
         .setColor("#4b73c1")
         .setAuthor(message.client.user.username);

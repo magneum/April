@@ -118,7 +118,7 @@ Missing permission to manage messages or add reactions`
       let currentPage = 0;
       const embeds = generateQueueEmbed(message, queue.songs);
       const queueEmbed = await message.channel.send(
-        `"*Page Num:* - ${currentPage + 1}/${embeds.length}`,
+        `**🏷Page Num:** - ${currentPage + 1}/${embeds.length}`,
         embeds[currentPage]
       );
       // ==================================================================
@@ -151,7 +151,7 @@ Missing permission to manage messages or add reactions`
           if (reaction.emoji.name === `➡️`) {
             if (currentPage < embeds.length - 1) {
               currentPage++;
-              queueEmbed.edit("*Page Num:* - ", {
+              queueEmbed.edit("**🏷Page Num:** - ", {
                 page: currentPage + 1,
                 length: embeds.length,
               }),
@@ -163,7 +163,7 @@ Missing permission to manage messages or add reactions`
           } else if (reaction.emoji.name === `⬅️`) {
             if (currentPage !== 0) {
               --currentPage;
-              queueEmbed.edit("*Page Num:* - ", {
+              queueEmbed.edit("**🏷Page Num:** - ", {
                 page: currentPage + 1,
                 length: embeds.length,
               }),
@@ -203,7 +203,7 @@ function generateQueueEmbed(message, queue) {
       .setColor("#4b73c1")
       .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
       .setDescription(
-        `**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n\n⚜️**Current Song** -_[${queue[0].title}]_\n\n${info}`
+        `**🤍Noir**\n\n⚜️**Current Song** -_[${queue[0].title}]_\n\n${info}`
       );
     embeds.push(embed);
   }

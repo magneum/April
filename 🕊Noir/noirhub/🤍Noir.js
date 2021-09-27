@@ -206,7 +206,7 @@ module.exports = {
           .setTitle("💯ᴅɪʀᴇᴄᴛʟʏ ꜱᴛʀᴇᴀᴍɪɴɢ ᴜꜱɪɴɢ-𝐘𝐨𝐮𝐓𝐮𝐛𝐞")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setImage(`https://img.youtube.com/vi/${id}/sddefault.jpg`)
+          .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
           .setDescription(`
 =========:radio_button:=========
@@ -674,7 +674,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                 .setColor("#4b73c1")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                .setImage(`https://img.youtube.com/vi/${id}/sddefault.jpg`)
+                .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
                 .setDescription(
                   "=========:radio_button:=========\n\n❤️*MusicQueue has been successfully* **ended**"

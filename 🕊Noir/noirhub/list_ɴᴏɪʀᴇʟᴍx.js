@@ -262,7 +262,7 @@ Playlist not found`
         // ==================================================================
       } else if (scdl.isValidUrl(args[0])) {
         if (args[0].includes(`/sets/`)) {
-          message.channel.send("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n⌛ Fetching the playlist...");
+          message.channel.send("**🤍Noir**\n⌛ Fetching the playlist...");
           playlist = await scdl.getSetInfo(args[0], notneeded);
           videos = playlist.tracks.map((track) => ({
             title: track.title,
@@ -329,7 +329,7 @@ Playlist not found`
       if (playlistEmbed.description.length >= 2048)
         playlistEmbed.description =
           playlistEmbed.description.substr(0, 2007) +
-          "**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\nPlaylist larger than character limit...";
+          "**🤍Noir**\nPlaylist larger than character limit...";
       const embedlist7 = new MessageEmbed()
         .setColor("#4b73c1")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
