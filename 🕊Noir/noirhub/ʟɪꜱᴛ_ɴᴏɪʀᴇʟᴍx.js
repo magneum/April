@@ -67,7 +67,7 @@ try {
         message.channel.name === "🤍noir"
       ) {
         const { channel } = message.member.voice;
-        const serverQueue = message.client.queue.get(message.guild.id);
+        const serverQueue = message.client.NoirQueue.get(message.guild.id);
         if (!channel) {
           const embedlist1 = new MessageEmbed()
             .setColor("#E0D268")
@@ -345,14 +345,14 @@ Started a playlist`
         // ==================================================================
         playlistEmbed;
         if (!serverQueue) {
-          message.client.queue.set(message.guild.id, queueConstruct);
+          message.client.NoirQueue.set(message.guild.id, queueConstruct);
           try {
             queueConstruct.connection = await channel.join();
             await queueConstruct.connection.voice.setSelfDeaf(true);
             play(queueConstruct.songs[0], message);
           } catch (error) {
             console.error(error);
-            message.client.queue.delete(message.guild.id);
+            message.client.NoirQueue.delete(message.guild.id);
             await channel.leave();
             const embedlist8 = new MessageEmbed()
               .setColor("#E0D268")

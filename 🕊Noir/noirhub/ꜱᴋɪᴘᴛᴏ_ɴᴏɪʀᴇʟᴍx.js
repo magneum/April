@@ -85,8 +85,8 @@ try {
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        const queue = message.client.queue.get(message.guild.id);
-        if (!queue) {
+        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
+        if (!NoirQueue) {
           const embedskpto2 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -140,7 +140,7 @@ There is nothing playing that I could skip for you.`
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        if (args[0] > queue.songs.length) {
+        if (args[0] > NoirQueue.songs.length) {
           const embedshp1 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -167,18 +167,18 @@ There is nothing playing that I could skip for you.`
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        queue.playing = true;
-        if (queue.loop) {
+        NoirQueue.playing = true;
+        if (NoirQueue.loop) {
           for (let i = 0; i < args[0] - 2; i++) {
-            queue.songs.push(queue.songs.shift());
+            NoirQueue.songs.push(NoirQueue.songs.shift());
           }
         } else {
-          queue.songs = queue.songs.slice(args[0] - 2);
+          NoirQueue.songs = NoirQueue.songs.slice(args[0] - 2);
         }
-        queue.connection.dispatcher.end();
+        NoirQueue.connection.NoirDispatcher.end();
         message.react("✅");
         message.react("🍧");
-        queue.textChannel
+        NoirQueue.textChannel
           .send(
             new MessageEmbed()
               .setColor("#6272a4")

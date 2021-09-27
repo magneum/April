@@ -56,8 +56,8 @@ try {
         message.content.startsWith(ʙᴏᴛꜰɪx + "np") &&
         message.channel.name === "🤍noir"
       ) {
-        const queue = message.client.queue.get(message.guild.id);
-        if (!queue) {
+        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
+        if (!NoirQueue) {
           const embednp1 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -84,10 +84,10 @@ Noir is not playing anymusic yet....`
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        const song = queue.songs[0];
+        const song = NoirQueue.songs[0];
         const seek =
-          (queue.connection.dispatcher.streamTime -
-            queue.connection.dispatcher.pausedTime) /
+          (NoirQueue.connection.NoirDispatcher.streamTime -
+            NoirQueue.connection.NoirDispatcher.pausedTime) /
           1000;
         const left = song.duration - seek;
         // ==================================================================

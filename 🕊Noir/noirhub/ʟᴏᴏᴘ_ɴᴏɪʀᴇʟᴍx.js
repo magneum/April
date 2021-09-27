@@ -55,8 +55,8 @@ try {
         message.content.startsWith(ʙᴏᴛꜰɪx + "loop") &&
         message.channel.name === "🤍noir"
       ) {
-        const queue = message.client.queue.get(message.guild.id);
-        if (!queue) {
+        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
+        if (!NoirQueue) {
           const embedloopno1 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -106,10 +106,10 @@ Noir is not playing anymusic yet.....`);
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        queue.loop = !queue.loop;
+        NoirQueue.loop = !NoirQueue.loop;
         message.react("✅");
         message.react("🍧");
-        queue.textChannel
+        NoirQueue.textChannel
           .send(
             new MessageEmbed()
               .setColor("#6272a4")
@@ -120,7 +120,7 @@ Noir is not playing anymusic yet.....`);
 =========:radio_button:=========
 
 Queue Loop is now turned ${
-              queue.loop
+              NoirQueue.loop
                 ? message.channel.send("On")
                 : message.channel.send("Off")
             }**`)

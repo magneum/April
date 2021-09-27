@@ -20,7 +20,7 @@ try {
   ռօɨʀֆɛʀʋɛʀ.listen(PORT);
   ռօɨʀքʟǟʏɛʀ.login(ɴᴏɪʀᴇꜱ);
   ռօɨʀքʟǟʏɛʀ.prefix = ʙᴏᴛꜰɪx;
-  ռօɨʀքʟǟʏɛʀ.queue = new Map();
+  ռօɨʀքʟǟʏɛʀ.NoirQueue = new Map();
   ռօɨʀքʟǟʏɛʀ.commands = new Collection();
   // ==================================================================
   // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================

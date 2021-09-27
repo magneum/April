@@ -20,20 +20,20 @@ try {
   // =============================================================================================================================
   module.exports = {
     async play(song, message) {
-      const queue = message.client.queue.get(message.guild.id);
+      const NoirQueue = message.client.NoirQueue.get(message.guild.id);
       // ==================================================================
       // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (!song) {
         setTimeout(function () {
-          if (queue.connection.dispatcher && message.guild.me.voice.channel) {
+          if (NoirQueue.connection.NoirDispatcher && message.guild.me.voice.channel) {
             return;
           }
           // ==================================================================
           // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
-          queue.channel.leave();
-          queue.textChannel
+          NoirQueue.channel.leave();
+          NoirQueue.textChannel
             .send(
               new MessageEmbed()
                 .setColor("#6272a4")
@@ -41,20 +41,21 @@ try {
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
                 .setDescription(`=========:radio_button:=========
+
 🤎**Noir** *has left the voice channel!*`)
             )
-            .catch(console.error);
-          // .then((message) => {
-          // message.delete({
-          // timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-          // });
-          // });
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+              });
+            });
         }, ɴᴏɪʀᴡᴀᴋᴇ);
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        const queue = message.client.queue.get(message.guild.id);
-        // queue.textChannel
+        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
+        // NoirQueue.textChannel
         //   .send(
         //     new MessageEmbed()
         //       .setColor("#6272a4")
@@ -73,7 +74,7 @@ try {
         //       timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
         //     });
         //   });
-        message.client.queue.delete(message.guild.id);
+        message.client.NoirQueue.delete(message.guild.id);
         message.channel
           .send(
             new MessageEmbed()
@@ -82,8 +83,9 @@ try {
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setDescription(`=========:radio_button:=========
-*Previous Queue has been cleaned!*
-🍀**Noir** *is ready for new queues.*
+
+Previous Queue has been cleaned!
+**Noir** is ready for new queues.
 `)
           )
           .catch(console.error);
@@ -111,12 +113,11 @@ try {
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-            .setDescription(`
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋").setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
 
-*Only* **YouTube** *playing/streaming is allowed*`);
+Only **YouTube** playing/streaming is allowed`);
           message.react("❌");
           message.react("🔥");
           message.channel.send(embedmusicnot).catch(console.error);
@@ -131,9 +132,9 @@ try {
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
       } catch (error) {
-        if (queue) {
-          queue.songs.shift();
-          module.exports.play(queue.songs[0], message);
+        if (NoirQueue) {
+          NoirQueue.songs.shift();
+          module.exports.play(NoirQueue.songs[0], message);
         }
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
@@ -166,50 +167,49 @@ try {
       // ==================================================================
       // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
-      // queue.connection.on("disconnect", () =>
-      //   message.client.queue.delete(message.guild.id)
+      // NoirQueue.connection.on("disconnect", () =>
+      //   message.client.NoirQueue.delete(message.guild.id)
       // );
       // ==================================================================
       // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
-      const dispatcher = queue.connection
+      const NoirDispatcher = NoirQueue.connection
         .play(stream, { type: streamType })
         .on("finish", () => {
           if (collector && !collector.ended) collector.stop();
-          queue.connection.removeAllListeners("disconnect");
-          if (queue.loop) {
-            let lastSong = queue.songs.shift();
-            queue.songs.push(lastSong);
-            module.exports.play(queue.songs[0], message);
+          NoirQueue.connection.removeAllListeners("disconnect");
+          if (NoirQueue.loop) {
+            let lastSong = NoirQueue.songs.shift();
+            NoirQueue.songs.push(lastSong);
+            module.exports.play(NoirQueue.songs[0], message);
           } else {
-            queue.songs.shift();
-            module.exports.play(queue.songs[0], message);
+            NoirQueue.songs.shift();
+            module.exports.play(NoirQueue.songs[0], message);
           }
         })
         .on("error", (err) => {
           console.error(err);
-          queue.songs.shift();
-          module.exports.play(queue.songs[0], message);
+          NoirQueue.songs.shift();
+          module.exports.play(NoirQueue.songs[0], message);
         });
-      dispatcher.setVolumeLogarithmic(queue.volume / 100);
+      NoirDispatcher.setVolumeLogarithmic(NoirQueue.volume / 100);
       // ==================================================================
       // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       try {
         const { id } = getVideoId(`${song.url}`);
-        var ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel.send(
+        var ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await NoirQueue.textChannel.send(
           new MessageEmbed()
             .setColor("#6272a4")
             .setTitle("💯ᴅɪʀᴇᴄᴛʟʏ ꜱᴛʀᴇᴀᴍɪɴɢ ᴜꜱɪɴɢ-𝐘𝐨𝐮𝐓𝐮𝐛𝐞")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
             .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-            .setDescription(`
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋").setDescription(`
 =========:radio_button:=========
 
-**🏷Title-** *${song.title}*
-**🔗Link-** *${song.url}*
+**🏷Title-** ${song.title}
+**🔗Link-** ${song.url}
 `)
         );
         // ==================================================================
@@ -236,7 +236,7 @@ try {
         time: song.duration > 0 ? song.duration * 1000 : 600000,
       });
       collector.on("collect", (reaction, user) => {
-        if (!queue) {
+        if (!NoirQueue) {
           return;
         }
         // ==================================================================
@@ -248,7 +248,7 @@ try {
           // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
           case "⏭":
-            queue.playing = true;
+            NoirQueue.playing = true;
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               const embedmusic2 = new MessageEmbed()
@@ -277,8 +277,8 @@ try {
             // ==================================================================
             // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
-            queue.connection.dispatcher.end();
-            queue.textChannel
+            NoirQueue.connection.NoirDispatcher.end();
+            NoirQueue.textChannel
               .send(
                 new MessageEmbed()
                   .setColor("#6272a4")
@@ -330,10 +330,10 @@ try {
             // ==================================================================
             // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
-            if (queue.playing) {
-              queue.playing = !queue.playing;
-              queue.connection.dispatcher.pause(true);
-              queue.textChannel
+            if (NoirQueue.playing) {
+              NoirQueue.playing = !NoirQueue.playing;
+              NoirQueue.connection.NoirDispatcher.pause(true);
+              NoirQueue.textChannel
                 .send(
                   new MessageEmbed()
                     .setColor("#6272a4")
@@ -352,9 +352,9 @@ try {
               // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
               // ==================================================================
             } else {
-              queue.playing = !queue.playing;
-              queue.connection.dispatcher.resume();
-              queue.textChannel
+              NoirQueue.playing = !NoirQueue.playing;
+              NoirQueue.connection.NoirDispatcher.resume();
+              NoirQueue.textChannel
                 .send(
                   new MessageEmbed()
                     .setColor("#6272a4")
@@ -408,10 +408,10 @@ try {
             // ==================================================================
             // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
-            queue.muted = !queue.muted;
-            if (queue.muted) {
-              queue.connection.dispatcher.setVolumeLogarithmic(0);
-              queue.textChannel
+            NoirQueue.muted = !NoirQueue.muted;
+            if (NoirQueue.muted) {
+              NoirQueue.connection.NoirDispatcher.setVolumeLogarithmic(0);
+              NoirQueue.textChannel
                 .send(
                   new MessageEmbed()
                     .setColor("#6272a4")
@@ -435,10 +435,10 @@ try {
               // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
               // ==================================================================
             } else {
-              queue.connection.dispatcher.setVolumeLogarithmic(
-                queue.volume / 100
+              NoirQueue.connection.NoirDispatcher.setVolumeLogarithmic(
+                NoirQueue.volume / 100
               );
-              queue.textChannel
+              NoirQueue.textChannel
                 .send(
                   new MessageEmbed()
                     .setColor("#6272a4")
@@ -465,7 +465,7 @@ try {
           // ==================================================================
           case "🔉":
             reaction.users.remove(user).catch(console.error);
-            if (queue.volume == 0) {
+            if (NoirQueue.volume == 0) {
               return;
             }
             if (!canModifyQueue(member)) {
@@ -495,11 +495,11 @@ try {
             // ==================================================================
             // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
-            queue.volume = Math.max(queue.volume - 10, 0);
-            queue.connection.dispatcher.setVolumeLogarithmic(
-              queue.volume / 100
+            NoirQueue.volume = Math.max(NoirQueue.volume - 10, 0);
+            NoirQueue.connection.NoirDispatcher.setVolumeLogarithmic(
+              NoirQueue.volume / 100
             );
-            queue.textChannel
+            NoirQueue.textChannel
               .send(
                 new MessageEmbed()
                   .setColor("#6272a4")
@@ -509,7 +509,7 @@ try {
                   .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-🔉 Decreased the volume, the volume is now ${queue.volume}%`)
+🔉 Decreased the volume, the volume is now ${NoirQueue.volume}%`)
               )
               .catch(console.error);
             // .then((message) => {
@@ -523,7 +523,7 @@ try {
           // ==================================================================
           case "🔊":
             reaction.users.remove(user).catch(console.error);
-            if (queue.volume == 100) {
+            if (NoirQueue.volume == 100) {
               return;
             }
             if (!canModifyQueue(member)) {
@@ -553,11 +553,11 @@ try {
             // ==================================================================
             // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
-            queue.volume = Math.min(queue.volume + 10, 100);
-            queue.connection.dispatcher.setVolumeLogarithmic(
-              queue.volume / 100
+            NoirQueue.volume = Math.min(NoirQueue.volume + 10, 100);
+            NoirQueue.connection.NoirDispatcher.setVolumeLogarithmic(
+              NoirQueue.volume / 100
             );
-            queue.textChannel
+            NoirQueue.textChannel
               .send(
                 new MessageEmbed()
                   .setColor("#6272a4")
@@ -567,7 +567,7 @@ try {
                   .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-🔊 Increased the volume, the volume is now ${queue.volume}%`)
+🔊 Increased the volume, the volume is now ${NoirQueue.volume}%`)
               )
               .catch(console.error);
             // .then((message) => {
@@ -608,8 +608,8 @@ try {
             // ==================================================================
             // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
-            queue.loop = !queue.loop;
-            queue.textChannel
+            NoirQueue.loop = !NoirQueue.loop;
+            NoirQueue.textChannel
               .send(
                 new MessageEmbed()
                   .setColor("#6272a4")
@@ -619,7 +619,7 @@ try {
                   .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
+Loop is now ${NoirQueue.loop ? "**Turned On**" : "**Turned Off**"}`)
               )
               .catch(console.error);
             // .then((message) => {
@@ -627,7 +627,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
             //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
             //   });
             // });
-            message.client.queue.delete(message.guild.id);
+            message.client.NoirQueue.delete(message.guild.id);
             break;
           // ==================================================================
           // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
@@ -661,9 +661,9 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
             // ==================================================================
             // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
-            queue.songs = [];
+            NoirQueue.songs = [];
             const { id } = getVideoId(`${song.url}`);
-            queue.textChannel
+            NoirQueue.textChannel
               .send(
                 new MessageEmbed()
                   .setColor("#6272a4")
@@ -685,10 +685,10 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
             // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
             try {
-              queue.connection.dispatcher.end();
+              NoirQueue.connection.NoirDispatcher.end();
             } catch (error) {
               console.error(error);
-              queue.connection.disconnect();
+              NoirQueue.connection.disconnect();
             }
             collector.stop();
             break;

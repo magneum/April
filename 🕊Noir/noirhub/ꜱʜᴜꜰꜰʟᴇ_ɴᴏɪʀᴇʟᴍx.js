@@ -60,8 +60,8 @@ try {
         message.content.startsWith(ʙᴏᴛꜰɪx + "shuffle") &&
         message.channel.name === "🤍noir"
       ) {
-        const queue = message.client.queue.get(message.guild.id);
-        if (!queue) {
+        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
+        if (!NoirQueue) {
           const embedshuf1 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -75,7 +75,7 @@ try {
 **User:** ${message.author}
 =========:radio_button:=========
 
-There is no queue.`
+There is no NoirQueue.`
             );
           message.react("❌");
           message.react("🔥");
@@ -119,7 +119,7 @@ There is no queue.`
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        let songs = queue.songs;
+        let songs = NoirQueue.songs;
         for (let i = songs.length - 1; i > 1; i--) {
           let j = 1 + Math.floor(Math.random() * i);
           [songs[i], songs[j]] = [songs[j], songs[i]];
@@ -127,11 +127,11 @@ There is no queue.`
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        queue.songs = songs;
-        message.client.queue.set(message.guild.id, queue);
+        NoirQueue.songs = songs;
+        message.client.NoirQueue.set(message.guild.id, NoirQueue);
         message.react("✅");
         message.react("🍧");
-        queue.textChannel
+        NoirQueue.textChannel
           .send(
             new MessageEmbed()
               .setColor("#6272a4")
@@ -142,7 +142,7 @@ There is no queue.`
               ).setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-🔀 Shuffled the queue`)
+🔀 Shuffled the NoirQueue`)
           )
           .catch(console.error);
         // .then((message) => {

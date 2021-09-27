@@ -58,8 +58,8 @@ try {
         message.content.startsWith(ʙᴏᴛꜰɪx + "vol") &&
         message.channel.name === "🤍noir"
       ) {
-        const queue = message.client.queue.get(message.guild.id);
-        if (!queue) {
+        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
+        if (!NoirQueue) {
           const embedskp2 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -125,7 +125,7 @@ try {
 **User:** ${message.author}
 =========:radio_button:=========
 
-🔊 **The current volume is:** ${queue.volume}%`
+🔊 **The current volume is:** ${NoirQueue.volume}%`
             );
           message.react("❌");
           message.react("🔥");
@@ -192,11 +192,11 @@ Please use a number between 0 - 100."`);
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        queue.volume = args[0];
-        queue.connection.dispatcher.setVolumeLogarithmic(args[0] / 100);
+        NoirQueue.volume = args[0];
+        NoirQueue.connection.NoirDispatcher.setVolumeLogarithmic(args[0] / 100);
         message.react("✅");
         message.react("🍧");
-        queue.textChannel
+        NoirQueue.textChannel
           .send(
             new MessageEmbed()
               .setColor("#6272a4")

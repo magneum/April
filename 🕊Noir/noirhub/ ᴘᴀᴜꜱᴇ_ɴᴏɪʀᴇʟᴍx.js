@@ -58,8 +58,8 @@ try {
         message.content.startsWith(ʙᴏᴛꜰɪx + "pause") &&
         message.channel.name === "🤍noir"
       ) {
-        const queue = message.client.queue.get(message.guild.id);
-        if (!queue) {
+        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
+        if (!NoirQueue) {
           const embedpause1 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -113,12 +113,12 @@ is not playing anymusic yet.....`
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        if (queue.playing) {
-          queue.playing = false;
-          queue.connection.dispatcher.pause(true);
+        if (NoirQueue.playing) {
+          NoirQueue.playing = false;
+          NoirQueue.connection.NoirDispatcher.pause(true);
           message.react("✅");
           message.react("🍧");
-          queue.textChannel
+          NoirQueue.textChannel
             .send(
               new MessageEmbed()
                 .setColor("#6272a4")

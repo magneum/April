@@ -126,7 +126,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
         message.channel.name === "🤍noir"
       ) {
         const { channel } = message.member.voice;
-        const serverQueue = message.client.queue.get(message.guild.id);
+        const serverQueue = message.client.NoirQueue.get(message.guild.id);
         if (!channel) {
           const embedplay1 = new MessageEmbed()
             .setColor("#E0D268")
@@ -496,7 +496,7 @@ Audio Not Found`
           serverQueue.songs.push(song);
           serverQueue.textChannel
             .send(
-              `**🤍Noir**\n${song.title}\n_has been added to the queue by_ ${message.author}\n\n`
+              `**🤍Noir**\n${song.title}\n_has been added to the NoirQueue by_ ${message.author}\n\n`
             )
             .catch(console.error);
           // .then((message) => {
@@ -510,7 +510,7 @@ Audio Not Found`
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         queueConstruct.songs.push(song);
-        message.client.queue.set(message.guild.id, queueConstruct);
+        message.client.NoirQueue.set(message.guild.id, queueConstruct);
         try {
           try {
             queueConstruct.connection = await channel.join();
@@ -539,7 +539,7 @@ Audio Not Found`
           play(queueConstruct.songs[0], message);
         } catch (error) {
           console.error(error);
-          message.client.queue.delete(message.guild.id);
+          message.client.NoirQueue.delete(message.guild.id);
           await channel.leave();
           const embedplay8 = new MessageEmbed()
             .setColor("#E0D268")

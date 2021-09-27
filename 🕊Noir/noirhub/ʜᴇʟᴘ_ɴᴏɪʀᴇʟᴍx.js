@@ -37,12 +37,12 @@ try {
 • **${ʙᴏᴛꜰɪx}ping** = Check server ping of client.
 • **${ʙᴏᴛꜰɪx}play** = Plays audio from YouTube.
 • **${ʙᴏᴛꜰɪx}list** = Play a playlist from YouTube.
-• **${ʙᴏᴛꜰɪx}queue** = Show the music queue and now playing.
-• **${ʙᴏᴛꜰɪx}remove** = Remove song from the queue.
+• **${ʙᴏᴛꜰɪx}NoirQueue** = Show the music NoirQueue and now playing.
+• **${ʙᴏᴛꜰɪx}remove** = Remove song from the NoirQueue.
 • **${ʙᴏᴛꜰɪx}resume** = Resume currently playing music.
-• **${ʙᴏᴛꜰɪx}shuffle** = Shuffle music queue.
+• **${ʙᴏᴛꜰɪx}shuffle** = Shuffle music NoirQueue.
 • **${ʙᴏᴛꜰɪx}next** = Skip the currently playing song.
-• **${ʙᴏᴛꜰɪx}skip** = Skip to the selected queue number.
+• **${ʙᴏᴛꜰɪx}skip** = Skip to the selected NoirQueue number.
 • **${ʙᴏᴛꜰɪx}stop** = Stops the music.
 • **${ʙᴏᴛꜰɪx}vol** = Change volume of currently playing music.
 `
@@ -82,12 +82,12 @@ try {
 • **${ʙᴏᴛꜰɪx}ping** = Check server ping of client.
 • **${ʙᴏᴛꜰɪx}play** = Plays audio from YouTube.
 • **${ʙᴏᴛꜰɪx}list** = Play a playlist from YouTube.
-• **${ʙᴏᴛꜰɪx}queue** = Show the music queue and now playing.
-• **${ʙᴏᴛꜰɪx}remove** = Remove song from the queue.
+• **${ʙᴏᴛꜰɪx}queue** = Show the music Queue and now playing.
+• **${ʙᴏᴛꜰɪx}remove** = Remove song from the NoirQueue.
 • **${ʙᴏᴛꜰɪx}resume** = Resume currently playing music.
-• **${ʙᴏᴛꜰɪx}shuffle** = Shuffle music queue.
+• **${ʙᴏᴛꜰɪx}shuffle** = Shuffle music NoirQueue.
 • **${ʙᴏᴛꜰɪx}next** = Skip the currently playing song.
-• **${ʙᴏᴛꜰɪx}skip** = Skip to the selected queue number.
+• **${ʙᴏᴛꜰɪx}skip** = Skip to the selected NoirQueue number.
 • **${ʙᴏᴛꜰɪx}stop** = Stops the music.
 • **${ʙᴏᴛꜰɪx}vol** = Change volume of currently playing music.
 `

@@ -82,8 +82,8 @@ Missing permission to manage messages or add reactions`
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        const queue = message.client.queue.get(message.guild.id);
-        if (!queue) {
+        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
+        if (!NoirQueue) {
           const embedqueue2 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -113,7 +113,7 @@ Missing permission to manage messages or add reactions`
         let currentPage = 0;
         message.react("✅");
         message.react("🍧");
-        const embeds = generateQueueEmbed(message, queue.songs);
+        const embeds = generateQueueEmbed(message, NoirQueue.songs);
         const queueEmbed = await message.channel.send(
           `**🏷Page Num:** - ${currentPage + 1}/${embeds.length}`,
           embeds[currentPage]
@@ -183,11 +183,11 @@ Missing permission to manage messages or add reactions`
   // ==================================================================
   // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
   // ==================================================================
-  function generateQueueEmbed(message, queue) {
+  function generateQueueEmbed(message, NoirQueue) {
     let embeds = [];
     let k = 10;
-    for (let i = 0; i < queue.length; i += 10) {
-      const current = queue.slice(i, k);
+    for (let i = 0; i < NoirQueue.length; i += 10) {
+      const current = NoirQueue.slice(i, k);
       let j = i;
       k += 10;
       const info = current
@@ -198,7 +198,7 @@ Missing permission to manage messages or add reactions`
         .setColor("#6272a4")
         .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
         .setDescription(
-          `**🤍Noir**\n\n⚜️**Current Song** -_[${queue[0].title}]_\n\n${info}`
+          `**🤍Noir**\n\n⚜️**Current Song** -_[${NoirQueue[0].title}]_\n\n${info}`
         );
       embeds.push(embed);
     }

@@ -58,8 +58,8 @@ try {
         message.content.startsWith(ʙᴏᴛꜰɪx + "skip") &&
         message.channel.name === "🤍noir"
       ) {
-        const queue = message.client.queue.get(message.guild.id);
-        if (!queue) {
+        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
+        if (!NoirQueue) {
           const embedshp1 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -113,11 +113,11 @@ There is nothing playing that I could skip for you.`
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        queue.playing = true;
-        queue.connection.dispatcher.end();
+        NoirQueue.playing = true;
+        NoirQueue.connection.NoirDispatcher.end();
         message.react("✅");
         message.react("🍧");
-        queue.textChannel
+        NoirQueue.textChannel
           .send(
             new MessageEmbed()
               .setColor("#6272a4")

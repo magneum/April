@@ -50,8 +50,8 @@ try {
       // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       const { channel } = message.member.voice;
-      const queue = message.client.queue.get(message.guild.id);
-      if (!queue) {
+      const NoirQueue = message.client.NoirQueue.get(message.guild.id);
+      if (!NoirQueue) {
         const embednone1 = new MessageEmbed()
           .setColor("#E0D268")
           .setTitle("⚠️Warning⚠️")
@@ -74,7 +74,7 @@ try {
         // });
         return;
       }
-      if (queue.length !== 0) {
+      if (NoirQueue.length !== 0) {
         if (!args.length) {
           const embedfilter1 = new MessageEmbed()
             .setColor("#E0D268")
@@ -136,7 +136,7 @@ try {
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        if (queue && channel !== message.guild.me.voice.channel) {
+        if (NoirQueue && channel !== message.guild.me.voice.channel) {
           const embedfilter3 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -233,7 +233,7 @@ ID= ${message.client.user}`);
           return;
         }
         try {
-          const song = queue.songs[0];
+          const song = NoirQueue.songs[0];
           message.react("✅");
           message.react("🍧");
           message.channel.send(
@@ -267,7 +267,7 @@ ID= ${message.client.user}`);
 =========:radio_button:=========
 
 *Song Queue has been cleaned up.*
-Restart **queue** and **filter** will be applied.`);
+Restart **NoirQueue** and **filter** will be applied.`);
           message.channel
             .send(embedfiltersongend)
             .catch(console.error)
