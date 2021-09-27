@@ -26,7 +26,7 @@ module.exports = {
       message.react("❌");
       message.react("🔥");
       const embedfactor = new MessageEmbed()
-        .setColor("#563ac6")
+        .setColor("#d698bc")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -56,12 +56,10 @@ module.exports = {
       message.content.startsWith(ʙᴏᴛꜰɪx + "np") &&
       message.channel.name === "🤍noir"
     ) {
-      // message.react("✅");
-      // message.react("🍧");
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embednp1 = new MessageEmbed()
-          .setColor("#563ac6")
+          .setColor("#d698bc")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -101,7 +99,7 @@ Noir is not playing anymusic yet....`
         .setTitle("**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\n*Now playing*")
         .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
         .setDescription(`${song.title}\n${song.url}`)
-        .setColor("#563ac6")
+        .setColor("#4b73c1")
         .setAuthor(message.client.user.username);
       // ==================================================================
       // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
@@ -124,7 +122,10 @@ Noir is not playing anymusic yet....`
             .substr(11, 8)}`
         );
       }
-      return message.channel.send(current);
+      message.react("✅");
+      message.react("🍧");
+      message.channel.send(current).catch(console.error);
+      return;
     }
   },
 };

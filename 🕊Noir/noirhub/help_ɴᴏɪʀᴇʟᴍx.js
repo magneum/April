@@ -25,8 +25,8 @@ module.exports = {
         .setDescription(
           `**User:** ${message.author}
 =========:radio_button:=========
-      
-      📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
+
+📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
 • **${ʙᴏᴛꜰɪx}filter** = Music filters when playing audio.
 • **${ʙᴏᴛꜰɪx}help** = Display all commands and descriptions.
 • **${ʙᴏᴛꜰɪx}noir** = Display the  license and a few more info.
@@ -46,7 +46,7 @@ module.exports = {
 • **${ʙᴏᴛꜰɪx}vol** = Change volume of currently playing music.
 `
         )
-        .setColor("#563ac6")
+        .setColor("#4b73c1")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -70,8 +70,8 @@ module.exports = {
         .setDescription(
           `**User:** ${message.author}
 =========:radio_button:=========
-      
-      📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
+
+📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
 • **${ʙᴏᴛꜰɪx}filter** = Music filters when playing audio.
 • **${ʙᴏᴛꜰɪx}help** = Display all commands and descriptions.
 • **${ʙᴏᴛꜰɪx}noir** = Display the  license and a few more info.
@@ -91,7 +91,7 @@ module.exports = {
 • **${ʙᴏᴛꜰɪx}vol** = Change volume of currently playing music.
 `
         )
-        .setColor("#563ac6")
+        .setColor("#4b73c1")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -103,7 +103,7 @@ module.exports = {
       message.react("🍧");
       message.author.send(
         new MessageEmbed()
-          .setColor("#563ac6")
+          .setColor("#4b73c1")
           .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
       );
       // ==================================================================
@@ -113,7 +113,7 @@ module.exports = {
       message.channel
         .send(
           new MessageEmbed()
-            .setColor("#563ac6")
+            .setColor("#4b73c1")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

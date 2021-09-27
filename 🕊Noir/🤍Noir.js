@@ -81,7 +81,7 @@ ${CH}`);
       channel.permissionsFor(guild.me).has(`SEND_MESSAGES`)
   );
   const embedThanks = new MessageEmbed()
-    .setColor("#563ac6")
+    .setColor("#4b73c1")
     .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
     .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
     .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -119,7 +119,7 @@ Please use **!calib** once to calibrate before first use!`);
   // ==================================================================
   if (!message.guild) {
     const checkdm = new MessageEmbed()
-      .setColor("#563ac6")
+      .setColor("#d698bc")
       .setTitle("⚠️Warning⚠️")
       .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
       .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -150,7 +150,7 @@ Please use **!calib** once to calibrate before first use!`);
   if (message.content.startsWith(ʙᴏᴛꜰɪx + `calib`)) {
     if (message.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
       const embedcheck1 = new MessageEmbed()
-        .setColor("#563ac6")
+        .setColor("#4b73c1")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -175,7 +175,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
       console.log(`•🤍noir ©️• has been successfully created.`);
     } else {
       const embedcheck2 = new MessageEmbed()
-        .setColor("#563ac6")
+        .setColor("#4b73c1")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -240,7 +240,7 @@ Please use the channel for any ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ commands..`
     if (now < expirationTime) {
       const timeLeft = (expirationTime - now) / 1000;
       const embedNoir1 = new MessageEmbed()
-        .setColor("#563ac6")
+        .setColor("#d698bc")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -269,7 +269,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
   } catch (error) {
     console.error(error);
     const embedNoir2 = new MessageEmbed()
-      .setColor("#563ac6")
+      .setColor("#d698bc")
       .setTitle("⚠️Warning⚠️")
       .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
       .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

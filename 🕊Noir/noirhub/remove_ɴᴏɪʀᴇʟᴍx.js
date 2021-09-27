@@ -23,7 +23,7 @@ module.exports = {
             message.react("❌");
             message.react("🔥");
             const embedfactor = new MessageEmbed()
-                .setColor("#563ac6")
+                .setColor("#d698bc")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -49,12 +49,10 @@ module.exports = {
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name === "🤍noir") {
-            // message.react("✅");
-            // message.react("🍧");
             const queue = message.client.queue.get(message.guild.id);
             if (!queue) {
                 const embedrm1 = new MessageEmbed()
-                    .setColor("#563ac6")
+                    .setColor("#d698bc")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                     .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -82,7 +80,7 @@ There is no queue.`);
             // ==================================================================
             if (!canModifyQueue(message.member)) {
                 const embedrm2 = new MessageEmbed()
-                    .setColor("#563ac6")
+                    .setColor("#d698bc")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                     .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -110,7 +108,7 @@ There is no queue.`);
             // ==================================================================
             if (!args.length) {
                 const embedrm3 = new MessageEmbed()
-                    .setColor("#563ac6")
+                    .setColor("#d698bc")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                     .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -147,10 +145,12 @@ There is no queue.`);
                     if (songs.find((songIndex) => songIndex - 1 === index)) removed.push(item);
                     else return true;
                 });
+                message.react("✅");
+                message.react("🍧");
                 queue.textChannel
                     .send(
                         new MessageEmbed()
-                            .setColor("#563ac6")
+                            .setColor("#4b73c1")
                             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                             .setFooter(
@@ -171,10 +171,12 @@ There is no queue.`);
                 // ==================================================================
             } else if (!isNaN(args[0]) && args[0] >= 1 && args[0] <= queue.songs.length) {
                 console.log(`we got elsed!`);
+                message.react("✅");
+                message.react("🍧");
                 queue.textChannel
                     .send(
                         new MessageEmbed()
-                            .setColor("#563ac6")
+                            .setColor("#4b73c1")
                             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                             .setFooter(
@@ -197,7 +199,7 @@ There is no queue.`);
             } else {
                 console.log(`we got the last one`);
                 const embedrm4 = new MessageEmbed()
-                    .setColor("#563ac6")
+                    .setColor("#d698bc")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
                     .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

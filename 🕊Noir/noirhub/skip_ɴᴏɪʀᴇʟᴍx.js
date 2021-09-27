@@ -25,7 +25,7 @@ module.exports = {
       message.react("❌");
       message.react("🔥");
       const embedfactor = new MessageEmbed()
-        .setColor("#563ac6")
+        .setColor("#d698bc")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -55,12 +55,10 @@ module.exports = {
       message.content.startsWith(ʙᴏᴛꜰɪx + "skip") &&
       message.channel.name === "🤍noir"
     ) {
-      // message.react("✅");
-      // message.react("🍧");
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
         const embedshp1 = new MessageEmbed()
-          .setColor("#563ac6")
+          .setColor("#d698bc")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -89,7 +87,7 @@ There is nothing playing that I could skip for you.`
       // ==================================================================
       if (!canModifyQueue(message.member)) {
         const embedshp2 = new MessageEmbed()
-          .setColor("#563ac6")
+          .setColor("#d698bc")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -118,10 +116,12 @@ There is nothing playing that I could skip for you.`
       // ==================================================================
       queue.playing = true;
       queue.connection.dispatcher.end();
+      message.react("✅");
+      message.react("🍧");
       queue.textChannel
         .send(
           new MessageEmbed()
-            .setColor("#563ac6")
+            .setColor("#4b73c1")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")

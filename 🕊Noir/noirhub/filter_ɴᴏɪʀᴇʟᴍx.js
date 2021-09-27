@@ -24,15 +24,14 @@ module.exports = {
       message.channel.name !== "🤍noir"
     ) {
       message.react("❌");
-message.react("🔥");
+      message.react("🔥");
       const embedfilter0 = new MessageEmbed()
-        .setColor("#563ac6")
+        .setColor("#d698bc")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-        .setFooter(
-          "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-        ).setDescription(`
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+        .setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
 
@@ -55,20 +54,19 @@ message.react("🔥");
     const queue = message.client.queue.get(message.guild.id);
     if (!queue) {
       const embednone1 = new MessageEmbed()
-        .setColor("#563ac6")
+        .setColor("#d698bc")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-        .setFooter(
-          "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-        ).setDescription(`
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+        .setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
 
 **Nothing in Queue!**
 *Add music in Queue first!*`);
       message.react("❌");
-message.react("🔥");
+      message.react("🔥");
       message.channel
         .send(embednone1)
         .catch(console.error)
@@ -82,13 +80,12 @@ message.react("🔥");
     if (queue.length !== 0) {
       if (!args.length) {
         const embedfilter1 = new MessageEmbed()
-          .setColor("#563ac6")
+          .setColor("#d698bc")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setFooter(
-            "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-          ).setDescription(`
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+          .setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
 
@@ -100,7 +97,7 @@ message.react("🔥");
 ▫️ surrounding
 ▫️ clear [Clean all applied filter(s)]`);
         message.react("❌");
-message.react("🔥");
+        message.react("🔥");
         message.channel.send(embedfilter1).catch(console.error);
         // .then((message) => {
         //   message.delete({
@@ -117,22 +114,20 @@ message.react("🔥");
       message.content.startsWith(ʙᴏᴛꜰɪx + "filter") &&
       message.channel.name === "🤍noir"
     ) {
-      // message.react("✅");
       if (!message.member.voice.channel) {
         const embedfilter2 = new MessageEmbed()
-          .setColor("#563ac6")
+          .setColor("#d698bc")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setFooter(
-            "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-          ).setDescription(`
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+          .setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
 
 *Please join a* **Voice Channel** *first*`);
         message.react("❌");
-message.react("🔥");
+        message.react("🔥");
         message.channel
           .send(embedfilter2)
           .catch(console.error)
@@ -148,20 +143,19 @@ message.react("🔥");
       // ==================================================================
       if (queue && channel !== message.guild.me.voice.channel) {
         const embedfilter3 = new MessageEmbed()
-          .setColor("#563ac6")
+          .setColor("#d698bc")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setFooter(
-            "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-          ).setDescription(`
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+          .setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
 
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`);
         message.react("❌");
-message.react("🔥");
+        message.react("🔥");
         message.channel
           .send(embedfilter3)
           .catch(console.error)
@@ -211,14 +205,13 @@ message.react("🔥");
         default:
           NoirEffectNum = 404;
           const embedfilter4 = new MessageEmbed()
-            .setColor("#563ac6")
+            .setColor("#d698bc")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setFooter(`**Example:** ${ʙᴏᴛꜰɪx}filter bassboost`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-            .setFooter(
-              "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-            ).setDescription(`
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+            .setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
 **That was not a valid filter!**
@@ -230,7 +223,7 @@ message.react("🔥");
 ▫️ surrounding
 ▫️ clear [Clean all applied filter(s)]`);
           message.react("❌");
-message.react("🔥");
+          message.react("🔥");
           message.channel
             .send(embedfilter4)
             .catch(console.error)
@@ -250,17 +243,17 @@ message.react("🔥");
       }
       try {
         const song = queue.songs[0];
+        message.react("✅");
+        message.react("🍧");
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#563ac6")
+              .setColor("#4b73c1")
               .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setFooter(
-                "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-              )
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
               .setAuthor(
-                "Applying: " + args[0],
+                "Applied Filter = " + args[0],
                 "https://cdn.discordapp.com/emojis/769935094285860894.gif"
               )
           )
@@ -274,20 +267,19 @@ message.react("🔥");
         // ==================================================================
         play(song, message, client, NoirSelected);
         const embedfiltersongend = new MessageEmbed()
-          .setColor("#563ac6")
+          .setColor("#d698bc")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setFooter(
-            "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-          ).setDescription(`
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+          .setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
 
 Song Queue has been cleaned up.
 Restarted queue and filter is applied.`);
         message.react("❌");
-message.react("🔥");
+        message.react("🔥");
         message.channel
           .send(embedfiltersongend)
           .catch(console.error)
@@ -298,20 +290,19 @@ message.react("🔥");
           });
       } catch (error) {
         const embednone2 = new MessageEmbed()
-          .setColor("#563ac6")
+          .setColor("#d698bc")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setFooter(
-            "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋"
-          ).setDescription(`
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+          .setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
 
 **Nothing in Queue!**
 *Add music in Queue first!*`);
         message.react("❌");
-message.react("🔥");
+        message.react("🔥");
         message.channel
           .send(embednone2)
           .catch(console.error)

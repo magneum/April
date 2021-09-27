@@ -36,7 +36,7 @@ module.exports = {
       message.react("❌");
       message.react("🔥");
       const embedfactor = new MessageEmbed()
-        .setColor("#563ac6")
+        .setColor("#d698bc")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -67,13 +67,11 @@ module.exports = {
       message.content.startsWith(ʙᴏᴛꜰɪx + "list") &&
       message.channel.name === "🤍noir"
     ) {
-      // message.react("✅");
-      // message.react("🍧");
       const { channel } = message.member.voice;
       const serverQueue = message.client.queue.get(message.guild.id);
       if (!channel) {
         const embedlist1 = new MessageEmbed()
-          .setColor("#563ac6")
+          .setColor("#d698bc")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -100,7 +98,7 @@ module.exports = {
       // ==================================================================
       if (!args.length) {
         const embedlist2 = new MessageEmbed()
-          .setColor("#563ac6")
+          .setColor("#d698bc")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -129,7 +127,7 @@ ${ʙᴏᴛꜰɪx}playlist **YouTube Playlist URL** or **Valid Playlist Name**`);
       const permissions = channel.permissionsFor(message.client.user);
       if (!permissions.has(`CONNECT`)) {
         const embedlist3 = new MessageEmbed()
-          .setColor("#563ac6")
+          .setColor("#d698bc")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -156,7 +154,7 @@ Cannot connect to voice channel, missing permissions`);
       // ==================================================================
       if (!permissions.has(`SPEAK`)) {
         const embedlist4 = new MessageEmbed()
-          .setColor("#563ac6")
+          .setColor("#d698bc")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -180,7 +178,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
       }
       if (serverQueue && channel !== message.guild.me.voice.channel) {
         const embedlist5 = new MessageEmbed()
-          .setColor("#563ac6")
+          .setColor("#d698bc")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -235,7 +233,7 @@ ID= ${message.client.user}`);
         } catch (error) {
           console.error(error);
           const embedlist6 = new MessageEmbed()
-            .setColor("#563ac6")
+            .setColor("#d698bc")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -323,7 +321,7 @@ Playlist not found`
           newSongs.map((song, index) => `${index + 1}. ${song.title}`)
         )
         .setURL(playlist.url)
-        .setColor("#563ac6")
+        .setColor("#4b73c1")
         .setTimestamp();
       // ==================================================================
       // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
@@ -333,7 +331,7 @@ Playlist not found`
           playlistEmbed.description.substr(0, 2007) +
           "**ɴᴏɪʀ🍀ᴘʟᴀʏᴇʀ**\nPlaylist larger than character limit...";
       const embedlist7 = new MessageEmbed()
-        .setColor("#563ac6")
+        .setColor("#4b73c1")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
         .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
@@ -347,6 +345,8 @@ Started a playlist`
       // ==================================================================
       // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
+      message.react("✅");
+      message.react("🍧");
       message.channel
         .send(embedlist7)
         .catch(console.error)
@@ -370,7 +370,7 @@ Started a playlist`
           message.client.queue.delete(message.guild.id);
           await channel.leave();
           const embedlist8 = new MessageEmbed()
-            .setColor("#563ac6")
+            .setColor("#d698bc")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)

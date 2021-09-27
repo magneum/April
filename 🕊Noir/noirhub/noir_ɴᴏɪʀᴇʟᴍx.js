@@ -33,7 +33,7 @@ module.exports = {
 •> use **${ʙᴏᴛꜰɪx}help** to learn how to use **Noir**
 `
         )
-        .setColor("#563ac6")
+        .setColor("#4b73c1")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
       // ==================================================================
@@ -43,7 +43,7 @@ module.exports = {
       message.react("🍧");
       message.author.send(
         new MessageEmbed()
-          .setColor("#563ac6")
+          .setColor("#4b73c1")
           .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
       );
       // ==================================================================
@@ -53,7 +53,7 @@ module.exports = {
       message.channel
         .send(
           new MessageEmbed()
-            .setColor("#563ac6")
+            .setColor("#4b73c1")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -87,7 +87,7 @@ for extra info on *Noir* **
 •> use **${ʙᴏᴛꜰɪx}help** to learn how to use **Noir**
 `
         )
-        .setColor("#563ac6")
+        .setColor("#4b73c1")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
       // ==================================================================

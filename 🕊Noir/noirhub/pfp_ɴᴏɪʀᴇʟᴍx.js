@@ -24,7 +24,7 @@ module.exports = {
     ) {
       message.react("❌");
       const embedfactor = new MessageEmbed()
-        .setColor("#563ac6")
+        .setColor("#d698bc")
         .setTitle("⚠️Warning⚠️")
         .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
@@ -54,12 +54,12 @@ module.exports = {
       message.content.startsWith(ʙᴏᴛꜰɪx + "pfp") &&
       message.channel.name === "🤍noir"
     ) {
-      // message.react("✅");
-      // message.react("🍧");
+      message.react("✅");
+      message.react("🍧");
       let AvatarEmbed = new MessageEmbed();
       const user = message.mentions.users.first();
       if (!message.mentions.users.first()) {
-        AvatarEmbed.setColor("#563ac6");
+        AvatarEmbed.setColor("#4b73c1");
         AvatarEmbed.setAuthor(`•> 🤍Noir by HypeVoidSoul`);
         AvatarEmbed.setImage(message.author.displayAvatarURL());
         AvatarEmbed.setFooter(
@@ -72,7 +72,7 @@ module.exports = {
         message.channel.send(AvatarEmbed);
         return;
       } else {
-        AvatarEmbed.setColor("#563ac6");
+        AvatarEmbed.setColor("#4b73c1");
         AvatarEmbed.setAuthor(`•> 🤍Noir by HypeVoidSoul`);
         AvatarEmbed.setImage(user.displayAvatarURL());
         AvatarEmbed.setFooter(
