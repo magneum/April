@@ -1,6 +1,6 @@
 try {
   const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
-  const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
+  const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ/src");
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007
@@ -13,14 +13,14 @@ try {
   // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
   // =============================================================================================================================
   module.exports = {
-    name: "ping",
+    name: "pfp",
     cooldown: 3,
     // ==================================================================
     // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     execute(message) {
       if (
-        message.content.startsWith(ʙᴏᴛꜰɪx + "ping") &&
+        message.content.startsWith(ʙᴏᴛꜰɪx + "pfp") &&
         message.channel.name !== "🤍noir"
       ) {
         message.react("❌");
@@ -52,31 +52,40 @@ try {
       // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (
-        message.content.startsWith(ʙᴏᴛꜰɪx + "ping") &&
+        message.content.startsWith(ʙᴏᴛꜰɪx + "pfp") &&
         message.channel.name === "🤍noir"
       ) {
         message.react("✅");
         message.react("🍧");
-        const embedping = new MessageEmbed()
-          .setColor("#4b73c1")
-          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
-          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-          .setDescription(
-            `
-**User:** ${message.author}
-
-⌛️Average ping of noir's Server **${Math.round(message.client.ws.ping)}ms**`
+        let AvatarEmbed = new MessageEmbed();
+        const user = message.mentions.users.first();
+        if (!message.mentions.users.first()) {
+          AvatarEmbed.setColor("#4b73c1");
+          AvatarEmbed.setAuthor(`•> 🤍Noir by HypeVoidSoul`);
+          AvatarEmbed.setImage(message.author.displayAvatarURL());
+          AvatarEmbed.setFooter(
+            "𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
           );
-        message.channel
-          .send(embedping)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
-        return;
+          AvatarEmbed.setDescription("🔥This is **your** Profile Picture");
+          AvatarEmbed.setThumbnail(
+            `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
+          );
+          message.channel.send(AvatarEmbed);
+          return;
+        } else {
+          AvatarEmbed.setColor("#4b73c1");
+          AvatarEmbed.setAuthor(`•> 🤍Noir by HypeVoidSoul`);
+          AvatarEmbed.setImage(user.displayAvatarURL());
+          AvatarEmbed.setFooter(
+            "𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
+          );
+          AvatarEmbed.setDescription(`🔥This is **${user}'s** Profile Picture`);
+          AvatarEmbed.setThumbnail(
+            `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
+          );
+          message.channel.send(AvatarEmbed);
+          return;
+        }
       }
     },
   };

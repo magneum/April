@@ -1,5 +1,5 @@
 try {
-  const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
+  const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ/src");
   const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE

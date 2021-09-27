@@ -1,6 +1,6 @@
 try {
   const getVideoId = require("get-video-id");
-  const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
+  const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ/src");
   const { splitBar } = require("string-progressbar");
   const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
   // =============================================================================================================================

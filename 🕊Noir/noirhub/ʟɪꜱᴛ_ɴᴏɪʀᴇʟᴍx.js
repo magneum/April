@@ -8,7 +8,7 @@ try {
   ɴᴏɪʀᴄʟᴇᴀɴᴇʀ,
 } = require("../noirtem/noir_env");
 const { play } = require("./🤍Noir");
-const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
+const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ/src");
 const YouTubeAPI = require("simple-youtube-api");
 const scdl = require("soundcloud-downloader").default;
 const youtube = new YouTubeAPI(ɴᴏɪʀʏᴛ);

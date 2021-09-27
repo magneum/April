@@ -1,7 +1,7 @@
 try {
     const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ, canModifyQueue } = require("../noirtem/noir_env");
     const pattern = /^[0-9]{1,2}(\s*,\s*[0-9]{1,2})*$/;
-    const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
+    const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ/src");
     // =============================================================================================================================
     // GNU GENERAL PUBLIC LICENSE
     // Version 3, 29 June 2007

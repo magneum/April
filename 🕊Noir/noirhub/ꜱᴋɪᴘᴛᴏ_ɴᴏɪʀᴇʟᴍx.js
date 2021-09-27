@@ -4,7 +4,7 @@ try {
     ʙᴏᴛꜰɪx,
     ɴᴏɪʀᴄʟᴇᴀɴᴇʀ,
   } = require("../noirtem/noir_env");
-  const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
+  const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ/src");
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007
