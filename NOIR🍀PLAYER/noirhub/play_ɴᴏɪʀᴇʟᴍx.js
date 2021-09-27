@@ -154,7 +154,7 @@ You need to join a voice channel first!`
       }
       if (channel) {
         message.react("✅");
-        const embedplay1 = new MessageEmbed()
+        const embedplaying = new MessageEmbed()
           .setColor("#20ab40")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`•> Noir🎶Player by HypeVoidSoul`)
@@ -167,8 +167,7 @@ You need to join a voice channel first!`
 
 Searching and Playing in less then 3secs!`
           );
-        message.channel.send(embedplay1).catch(console.error);
-        return;
+        message.channel.send(embedplaying).catch(console.error);
       }
       // ==================================================================
       // ================>  🎶NOIR🍀PLΛYΣЯ by HypeVoidSoul <================
