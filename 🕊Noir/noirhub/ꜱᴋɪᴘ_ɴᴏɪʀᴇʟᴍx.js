@@ -20,7 +20,7 @@ try {
     name: "skip",
     cooldown: 3,
     // ==================================================================
-    // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     execute(message) {
       if (
@@ -52,14 +52,14 @@ try {
         return;
       }
       // ==================================================================
-      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (
         message.content.startsWith(ʙᴏᴛꜰɪx + "skip") &&
         message.channel.name === "🤍noir"
       ) {
-        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
-        if (!NoirQueue) {
+        const queue = message.client.queue.get(message.guild.id);
+        if (!queue) {
           const embedshp1 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -84,7 +84,7 @@ There is nothing playing that I could skip for you.`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (!canModifyQueue(message.member)) {
           const embedshp2 = new MessageEmbed()
@@ -111,13 +111,13 @@ There is nothing playing that I could skip for you.`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        NoirQueue.playing = true;
-        NoirQueue.connection.NoirDispatcher.end();
+        queue.playing = true;
+        queue.connection.dispatcher.end();
         message.react("✅");
         message.react("🍧");
-        NoirQueue.textChannel
+        queue.textChannel
           .send(
             new MessageEmbed()
               .setColor("#6272a4")

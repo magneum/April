@@ -20,7 +20,7 @@ try {
     name: "resume",
     cooldown: 3,
     // ==================================================================
-    // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     execute(message) {
       if (
@@ -52,14 +52,14 @@ try {
         return;
       }
       // ==================================================================
-      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (
         message.content.startsWith(ʙᴏᴛꜰɪx + "resume") &&
         message.channel.name === "🤍noir"
       ) {
-        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
-        if (!NoirQueue) {
+        const queue = message.client.queue.get(message.guild.id);
+        if (!queue) {
           const embedresume1 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -84,7 +84,7 @@ is not playing anymusic yet.....`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (!canModifyQueue(message.member)) {
           const embedresume2 = new MessageEmbed()
@@ -111,14 +111,14 @@ is not playing anymusic yet.....`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        if (!NoirQueue.playing) {
-          NoirQueue.playing = true;
-          NoirQueue.connection.NoirDispatcher.resume();
+        if (!queue.playing) {
+          queue.playing = true;
+          queue.connection.dispatcher.resume();
           message.react("✅");
           message.react("🍧");
-          NoirQueue.textChannel
+          queue.textChannel
             .send(
               new MessageEmbed()
                 .setColor("#6272a4")
@@ -139,7 +139,7 @@ is not playing anymusic yet.....`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         const embedresume3 = new MessageEmbed()
           .setColor("#E0D268")
@@ -152,7 +152,7 @@ is not playing anymusic yet.....`
 **User:** ${message.author}
 =========:radio_button:=========
 
-The NoirQueue is not paused.`
+The queue is not paused.`
           );
         message.react("❌");
         message.react("🔥");

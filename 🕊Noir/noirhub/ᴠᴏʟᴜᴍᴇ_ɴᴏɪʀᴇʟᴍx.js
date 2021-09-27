@@ -20,7 +20,7 @@ try {
     name: "vol",
     cooldown: 3,
     // ==================================================================
-    // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     execute(message, args) {
       if (
@@ -52,14 +52,14 @@ try {
         return;
       }
       // ==================================================================
-      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (
         message.content.startsWith(ʙᴏᴛꜰɪx + "vol") &&
         message.channel.name === "🤍noir"
       ) {
-        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
-        if (!NoirQueue) {
+        const queue = message.client.queue.get(message.guild.id);
+        if (!queue) {
           const embedskp2 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -84,7 +84,7 @@ try {
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (!canModifyQueue(message.member)) {
           const embedvol1 = new MessageEmbed()
@@ -111,7 +111,7 @@ try {
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (!args[0]) {
           const embedvol2 = new MessageEmbed()
@@ -125,7 +125,7 @@ try {
 **User:** ${message.author}
 =========:radio_button:=========
 
-🔊 **The current volume is:** ${NoirQueue.volume}%`
+🔊 **The current volume is:** ${queue.volume}%`
             );
           message.react("❌");
           message.react("🔥");
@@ -138,7 +138,7 @@ try {
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (isNaN(args[0])) {
           const embedvol3 = new MessageEmbed()
@@ -165,7 +165,7 @@ Please use a number to set volume.`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (Number(args[0]) > 100 || Number(args[0]) < 0) {
           const embedvol4 = new MessageEmbed()
@@ -190,13 +190,13 @@ Please use a number between 0 - 100."`);
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        NoirQueue.volume = args[0];
-        NoirQueue.connection.NoirDispatcher.setVolumeLogarithmic(args[0] / 100);
+        queue.volume = args[0];
+        queue.connection.dispatcher.setVolumeLogarithmic(args[0] / 100);
         message.react("✅");
         message.react("🍧");
-        NoirQueue.textChannel
+        queue.textChannel
           .send(
             new MessageEmbed()
               .setColor("#6272a4")

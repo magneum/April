@@ -17,7 +17,7 @@ try {
     name: "filter",
     cooldown: 3,
     // ==================================================================
-    // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     async execute(message, args, client) {
       if (
@@ -47,11 +47,11 @@ try {
         return;
       }
       // ==================================================================
-      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       const { channel } = message.member.voice;
-      const NoirQueue = message.client.NoirQueue.get(message.guild.id);
-      if (!NoirQueue) {
+      const queue = message.client.queue.get(message.guild.id);
+      if (!queue) {
         const embednone1 = new MessageEmbed()
           .setColor("#E0D268")
           .setTitle("⚠️Warning⚠️")
@@ -74,7 +74,7 @@ try {
         // });
         return;
       }
-      if (NoirQueue.length !== 0) {
+      if (queue.length !== 0) {
         if (!args.length) {
           const embedfilter1 = new MessageEmbed()
             .setColor("#E0D268")
@@ -105,7 +105,7 @@ try {
         }
       }
       // ==================================================================
-      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (
         message.content.startsWith(ʙᴏᴛꜰɪx + "filter") &&
@@ -134,9 +134,9 @@ try {
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        if (NoirQueue && channel !== message.guild.me.voice.channel) {
+        if (queue && channel !== message.guild.me.voice.channel) {
           const embedfilter3 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -161,7 +161,7 @@ ID= ${message.client.user}`);
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         const filters = [
           "bass=g=20,dynaudnorm=f=200",
@@ -172,7 +172,7 @@ ID= ${message.client.user}`);
           "remove",
         ];
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         let NoirEffectNum;
         let NoirSelected;
@@ -226,14 +226,14 @@ ID= ${message.client.user}`);
             break;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         NoirSelected = filters[NoirEffectNum];
         if (NoirEffectNum === 404) {
           return;
         }
         try {
-          const song = NoirQueue.songs[0];
+          const song = queue.songs[0];
           message.react("✅");
           message.react("🍧");
           message.channel.send(
@@ -253,7 +253,7 @@ ID= ${message.client.user}`);
           //   });
           // });
           // ==================================================================
-          // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+          // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
           play(song, message, client, NoirSelected);
           const embedfiltersongend = new MessageEmbed()
@@ -267,7 +267,7 @@ ID= ${message.client.user}`);
 =========:radio_button:=========
 
 *Song Queue has been cleaned up.*
-Restart **NoirQueue** and **filter** will be applied.`);
+Restart **queue** and **filter** will be applied.`);
           message.channel
             .send(embedfiltersongend)
             .catch(console.error)

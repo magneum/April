@@ -20,7 +20,7 @@ try {
     name: "stop",
     cooldown: 3,
     // ==================================================================
-    // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     execute(message) {
       if (
@@ -52,14 +52,14 @@ try {
         return;
       }
       // ==================================================================
-      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (
         message.content.startsWith(ʙᴏᴛꜰɪx + "stop") &&
         message.channel.name === "🤍noir"
       ) {
-        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
-        if (!NoirQueue) {
+        const queue = message.client.queue.get(message.guild.id);
+        if (!queue) {
           const embedskp1 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -84,7 +84,7 @@ Not playing anymusic yet.....`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (!canModifyQueue(message.member)) {
           const embedskp2 = new MessageEmbed()
@@ -111,13 +111,13 @@ Not playing anymusic yet.....`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        NoirQueue.songs = [];
-        NoirQueue.connection.NoirDispatcher.end();
+        queue.songs = [];
+        queue.connection.dispatcher.end();
         message.react("✅");
         message.react("🍧");
-        NoirQueue.textChannel
+        queue.textChannel
           .send(
             new MessageEmbed()
               .setColor("#6272a4")
@@ -127,7 +127,7 @@ Not playing anymusic yet.....`
               .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-🔴 stopped the music!`)
+⏺ stopped the music!`)
           )
           .catch(console.error);
         // .then((message) => {

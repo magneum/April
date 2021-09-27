@@ -17,7 +17,7 @@ try {
     name: "loop",
     cooldown: 3,
     // ==================================================================
-    // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     execute(message) {
       if (
@@ -49,14 +49,14 @@ try {
         return;
       }
       // ==================================================================
-      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (
         message.content.startsWith(ʙᴏᴛꜰɪx + "loop") &&
         message.channel.name === "🤍noir"
       ) {
-        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
-        if (!NoirQueue) {
+        const queue = message.client.queue.get(message.guild.id);
+        if (!queue) {
           const embedloopno1 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -79,7 +79,7 @@ Noir is not playing anymusic yet.....`);
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (!canModifyQueue(message.member)) {
           const embedloopno2 = new MessageEmbed()
@@ -104,12 +104,12 @@ Noir is not playing anymusic yet.....`);
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        NoirQueue.loop = !NoirQueue.loop;
+        queue.loop = !queue.loop;
         message.react("✅");
         message.react("🍧");
-        NoirQueue.textChannel
+        queue.textChannel
           .send(
             new MessageEmbed()
               .setColor("#6272a4")
@@ -120,7 +120,7 @@ Noir is not playing anymusic yet.....`);
 =========:radio_button:=========
 
 Queue Loop is now turned ${
-              NoirQueue.loop
+              queue.loop
                 ? message.channel.send("On")
                 : message.channel.send("Off")
             }**`)

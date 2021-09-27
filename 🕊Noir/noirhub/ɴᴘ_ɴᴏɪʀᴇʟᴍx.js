@@ -18,7 +18,7 @@ try {
     name: "np",
     cooldown: 3,
     // ==================================================================
-    // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     execute(message) {
       if (
@@ -50,14 +50,14 @@ try {
         return;
       }
       // ==================================================================
-      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (
         message.content.startsWith(ʙᴏᴛꜰɪx + "np") &&
         message.channel.name === "🤍noir"
       ) {
-        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
-        if (!NoirQueue) {
+        const queue = message.client.queue.get(message.guild.id);
+        if (!queue) {
           const embednp1 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -82,16 +82,16 @@ Noir is not playing anymusic yet....`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        const song = NoirQueue.songs[0];
+        const song = queue.songs[0];
         const seek =
-          (NoirQueue.connection.NoirDispatcher.streamTime -
-            NoirQueue.connection.NoirDispatcher.pausedTime) /
+          (queue.connection.dispatcher.streamTime -
+            queue.connection.dispatcher.pausedTime) /
           1000;
         const left = song.duration - seek;
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         const { id } = getVideoId(`${song.url}`);
         let current = new MessageEmbed()
@@ -102,7 +102,7 @@ Noir is not playing anymusic yet....`
           .setColor("#6272a4")
           .setAuthor(message.client.user.username);
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (song.duration > 0) {
           current.addField(

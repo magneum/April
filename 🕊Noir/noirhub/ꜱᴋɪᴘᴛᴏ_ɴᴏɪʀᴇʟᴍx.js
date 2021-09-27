@@ -20,7 +20,7 @@ try {
     name: "skipto",
     cooldown: 3,
     // ==================================================================
-    // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     execute(message, args) {
       if (
@@ -52,7 +52,7 @@ try {
         return;
       }
       // ==================================================================
-      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (
         message.content.startsWith(ʙᴏᴛꜰɪx + "skipto") &&
@@ -83,10 +83,10 @@ try {
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
-        if (!NoirQueue) {
+        const queue = message.client.queue.get(message.guild.id);
+        if (!queue) {
           const embedskpto2 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -111,7 +111,7 @@ There is nothing playing that I could skip for you.`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (!canModifyQueue(message.member)) {
           const embedskpto3 = new MessageEmbed()
@@ -138,9 +138,9 @@ There is nothing playing that I could skip for you.`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        if (args[0] > NoirQueue.songs.length) {
+        if (args[0] > queue.songs.length) {
           const embedshp1 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -165,20 +165,20 @@ There is nothing playing that I could skip for you.`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        NoirQueue.playing = true;
-        if (NoirQueue.loop) {
+        queue.playing = true;
+        if (queue.loop) {
           for (let i = 0; i < args[0] - 2; i++) {
-            NoirQueue.songs.push(NoirQueue.songs.shift());
+            queue.songs.push(queue.songs.shift());
           }
         } else {
-          NoirQueue.songs = NoirQueue.songs.slice(args[0] - 2);
+          queue.songs = queue.songs.slice(args[0] - 2);
         }
-        NoirQueue.connection.NoirDispatcher.end();
+        queue.connection.dispatcher.end();
         message.react("✅");
         message.react("🍧");
-        NoirQueue.textChannel
+        queue.textChannel
           .send(
             new MessageEmbed()
               .setColor("#6272a4")
@@ -188,7 +188,7 @@ There is nothing playing that I could skip for you.`
               .setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-🔴 stopped the music!`)
+⏺ stopped the music!`)
           )
           .catch(console.error);
         // .then((message) => {

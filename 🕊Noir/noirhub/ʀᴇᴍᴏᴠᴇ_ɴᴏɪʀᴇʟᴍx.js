@@ -17,7 +17,7 @@ try {
         name: "remove",
         cooldown: 3,
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         execute(message, args) {
             if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name !== "🤍noir") {
@@ -47,11 +47,11 @@ try {
                 return;
             }
             // ==================================================================
-            // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+            // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
             if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name === "🤍noir") {
-                const NoirQueue = message.client.NoirQueue.get(message.guild.id);
-                if (!NoirQueue) {
+                const queue = message.client.queue.get(message.guild.id);
+                if (!queue) {
                     const embedrm1 = new MessageEmbed()
                         .setColor("#E0D268")
                         .setTitle("⚠️Warning⚠️")
@@ -63,7 +63,7 @@ try {
 **User:** ${message.author}
 =========:radio_button:=========
 
-There is no NoirQueue.`);
+There is no queue.`);
                     message.react("❌");
                     message.react("🔥");
                     message.channel
@@ -77,7 +77,7 @@ There is no NoirQueue.`);
                     return;
                 }
                 // ==================================================================
-                // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+                // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
                 // ==================================================================
                 if (!canModifyQueue(message.member)) {
                     const embedrm2 = new MessageEmbed()
@@ -105,7 +105,7 @@ There is no NoirQueue.`);
                     return;
                 }
                 // ==================================================================
-                // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+                // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
                 // ==================================================================
                 if (!args.length) {
                     const embedrm3 = new MessageEmbed()
@@ -133,22 +133,22 @@ There is no NoirQueue.`);
                     return;
                 }
                 // ==================================================================
-                // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+                // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
                 // ==================================================================
                 const arguments = args.join(``);
                 const songs = arguments.split(`,`).map((arg) => parseInt(arg));
                 let removed = [];
                 // ==================================================================
-                // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+                // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
                 // ==================================================================
                 if (pattern.test(arguments)) {
-                    NoirQueue.songs = NoirQueue.songs.filter((item, index) => {
+                    queue.songs = queue.songs.filter((item, index) => {
                         if (songs.find((songIndex) => songIndex - 1 === index)) removed.push(item);
                         else return true;
                     });
                     message.react("✅");
                     message.react("🍧");
-                    NoirQueue.textChannel
+                    queue.textChannel
                         .send(
                             new MessageEmbed()
                                 .setColor("#6272a4")
@@ -159,7 +159,7 @@ There is no NoirQueue.`);
                                 ).setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-🔴 Removed **${removed.map((song) => song.title).join(`\n`)}** from the NoirQueue.`)
+⏺ Removed **${removed.map((song) => song.title).join(`\n`)}** from the queue.`)
                         )
                         .catch(console.error)
                     // .then((message) => {
@@ -168,13 +168,13 @@ There is no NoirQueue.`);
                     // });
                     // });
                     // ==================================================================
-                    // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+                    // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
                     // ==================================================================
-                } else if (!isNaN(args[0]) && args[0] >= 1 && args[0] <= NoirQueue.songs.length) {
+                } else if (!isNaN(args[0]) && args[0] >= 1 && args[0] <= queue.songs.length) {
                     console.log(`we got elsed!`);
                     message.react("✅");
                     message.react("🍧");
-                    NoirQueue.textChannel
+                    queue.textChannel
                         .send(
                             new MessageEmbed()
                                 .setColor("#6272a4")
@@ -185,7 +185,7 @@ There is no NoirQueue.`);
                                 ).setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-🔴 Removed **${NoirQueue.songs.splice(args[0] - 1, 1)[0].title}** from the NoirQueue.`)
+⏺ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`)
                         )
                         .catch(console.error)
                     // .then((message) => {
@@ -195,7 +195,7 @@ There is no NoirQueue.`);
                     // });
                     return;
                     // ==================================================================
-                    // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+                    // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
                     // ==================================================================
                 } else {
                     console.log(`we got the last one`);

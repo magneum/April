@@ -33,7 +33,7 @@ try {
     name: "play",
     cooldown: 3,
     // ==================================================================
-    // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     async execute(message, args) {
       if (
@@ -65,7 +65,7 @@ try {
         return;
       }
       // ==================================================================
-      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       //     if (!ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0]) && !ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0])) {
       //       const embednotplay = new MessageEmbed()
@@ -91,7 +91,7 @@ try {
       //       return;
       //     }
       // ==================================================================
-      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
         const embedplay1 = new MessageEmbed()
@@ -119,14 +119,14 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
         return;
       }
       // ==================================================================
-      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (
         message.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
         message.channel.name === "🤍noir"
       ) {
         const { channel } = message.member.voice;
-        const serverQueue = message.client.NoirQueue.get(message.guild.id);
+        const serverQueue = message.client.queue.get(message.guild.id);
         if (!channel) {
           const embedplay1 = new MessageEmbed()
             .setColor("#E0D268")
@@ -177,7 +177,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
             });
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (serverQueue && channel !== message.guild.me.voice.channel) {
           const embedplay2 = new MessageEmbed()
@@ -205,7 +205,7 @@ ID= ${message.client.user}`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (!args.length) {
           const embedplay3 = new MessageEmbed()
@@ -233,7 +233,7 @@ ${ʙᴏᴛꜰɪx}play **YouTube URL** or **Video Name**`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         const permissions = channel.permissionsFor(message.client.user);
         if (!permissions.has(`CONNECT`)) {
@@ -261,7 +261,7 @@ Cannot connect to voice channel, missing permissions`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (!permissions.has(`SPEAK`)) {
           const embedplay3 = new MessageEmbed()
@@ -288,13 +288,13 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         const url = args[0];
         const search = args.join(` `);
         const urlValid = ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0]);
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (!ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0]) && ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
           message.client.commands.get(`list`).execute(message, args);
@@ -303,7 +303,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (not_needed_scl.test(url)) {
           try {
@@ -314,7 +314,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
                   .execute(message, [res.headers.location]);
                 return;
                 // ==================================================================
-                // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+                // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
                 // ==================================================================
               } else {
                 const embedplay4 = new MessageEmbed()
@@ -344,7 +344,7 @@ Audio Not Found`
               }
             });
             // ==================================================================
-            // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+            // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
           } catch (error) {
             console.error(error);
@@ -357,7 +357,7 @@ Audio Not Found`
             return;
           }
           // ==================================================================
-          // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+          // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
           const embedplay5 = new MessageEmbed()
             .setColor("#E0D268")
@@ -383,7 +383,7 @@ Following url redirection...`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         const queueConstruct = {
           textChannel: message.channel,
@@ -415,7 +415,7 @@ Following url redirection...`
             // });
           }
           // ==================================================================
-          // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+          // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
         } else if (scRegex.test(url)) {
           try {
@@ -435,7 +435,7 @@ Following url redirection...`
             // });
           }
           // ==================================================================
-          // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+          // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
         } else {
           try {
@@ -443,7 +443,7 @@ Following url redirection...`
               part: `snippet`,
             });
             // ==================================================================
-            // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+            // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
             if (!results.length) {
               const embedplay6 = new MessageEmbed()
@@ -470,7 +470,7 @@ Audio Not Found`
               return;
             }
             // ==================================================================
-            // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+            // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================
             songInfo = await ytdl.getInfo(results[0].url);
             song = {
@@ -490,13 +490,13 @@ Audio Not Found`
           }
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (serverQueue) {
           serverQueue.songs.push(song);
           serverQueue.textChannel
             .send(
-              `**🤍Noir**\n${song.title}\n_has been added to the NoirQueue by_ ${message.author}\n\n`
+              `**🤍Noir**\n${song.title}\n_has been added to the queue by_ ${message.author}\n\n`
             )
             .catch(console.error);
           // .then((message) => {
@@ -507,10 +507,10 @@ Audio Not Found`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         queueConstruct.songs.push(song);
-        message.client.NoirQueue.set(message.guild.id, queueConstruct);
+        message.client.queue.set(message.guild.id, queueConstruct);
         try {
           try {
             queueConstruct.connection = await channel.join();
@@ -539,7 +539,7 @@ Audio Not Found`
           play(queueConstruct.songs[0], message);
         } catch (error) {
           console.error(error);
-          message.client.NoirQueue.delete(message.guild.id);
+          message.client.queue.delete(message.guild.id);
           await channel.leave();
           const embedplay8 = new MessageEmbed()
             .setColor("#E0D268")

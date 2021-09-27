@@ -16,7 +16,7 @@ try {
     name: "noir",
     cooldown: 3,
     // ==================================================================
-    // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     execute(message) {
       if (
@@ -38,7 +38,7 @@ try {
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         message.react("✅");
         message.react("🍧");
@@ -48,7 +48,7 @@ try {
             .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
         );
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         message.author.send(NoirEMBED).catch(console.error);
         message.channel
@@ -92,7 +92,7 @@ for extra info on *Noir* **
           .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         message.react("✅");
         message.react("🍧");

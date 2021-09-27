@@ -20,7 +20,7 @@ try {
     name: "shuffle",
     cooldown: 3,
     // ==================================================================
-    // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     execute(message) {
       if (
@@ -54,14 +54,14 @@ try {
         return;
       }
       // ==================================================================
-      // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+      // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
       // ==================================================================
       if (
         message.content.startsWith(ʙᴏᴛꜰɪx + "shuffle") &&
         message.channel.name === "🤍noir"
       ) {
-        const NoirQueue = message.client.NoirQueue.get(message.guild.id);
-        if (!NoirQueue) {
+        const queue = message.client.queue.get(message.guild.id);
+        if (!queue) {
           const embedshuf1 = new MessageEmbed()
             .setColor("#E0D268")
             .setTitle("⚠️Warning⚠️")
@@ -75,7 +75,7 @@ try {
 **User:** ${message.author}
 =========:radio_button:=========
 
-There is no NoirQueue.`
+There is no queue.`
             );
           message.react("❌");
           message.react("🔥");
@@ -88,7 +88,7 @@ There is no NoirQueue.`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         if (!canModifyQueue(message.member)) {
           const embedshuf2 = new MessageEmbed()
@@ -117,21 +117,21 @@ There is no NoirQueue.`
           return;
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        let songs = NoirQueue.songs;
+        let songs = queue.songs;
         for (let i = songs.length - 1; i > 1; i--) {
           let j = 1 + Math.floor(Math.random() * i);
           [songs[i], songs[j]] = [songs[j], songs[i]];
         }
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        NoirQueue.songs = songs;
-        message.client.NoirQueue.set(message.guild.id, NoirQueue);
+        queue.songs = songs;
+        message.client.queue.set(message.guild.id, queue);
         message.react("✅");
         message.react("🍧");
-        NoirQueue.textChannel
+        queue.textChannel
           .send(
             new MessageEmbed()
               .setColor("#6272a4")
@@ -142,7 +142,7 @@ There is no NoirQueue.`
               ).setDescription(`**User:** ${message.author}
 =========:radio_button:=========
 
-🔀 Shuffled the NoirQueue`)
+🔀 Shuffled the queue`)
           )
           .catch(console.error);
         // .then((message) => {

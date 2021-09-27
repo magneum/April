@@ -15,7 +15,7 @@ try {
   module.exports = {
     name: "help",
     // ==================================================================
-    // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+    // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     execute(message) {
       if (
@@ -37,12 +37,12 @@ try {
 • **${ʙᴏᴛꜰɪx}ping** = Check server ping of client.
 • **${ʙᴏᴛꜰɪx}play** = Plays audio from YouTube.
 • **${ʙᴏᴛꜰɪx}list** = Play a playlist from YouTube.
-• **${ʙᴏᴛꜰɪx}NoirQueue** = Show the music NoirQueue and now playing.
-• **${ʙᴏᴛꜰɪx}remove** = Remove song from the NoirQueue.
+• **${ʙᴏᴛꜰɪx}queue** = Show the music queue and now playing.
+• **${ʙᴏᴛꜰɪx}remove** = Remove song from the queue.
 • **${ʙᴏᴛꜰɪx}resume** = Resume currently playing music.
-• **${ʙᴏᴛꜰɪx}shuffle** = Shuffle music NoirQueue.
+• **${ʙᴏᴛꜰɪx}shuffle** = Shuffle music queue.
 • **${ʙᴏᴛꜰɪx}next** = Skip the currently playing song.
-• **${ʙᴏᴛꜰɪx}skip** = Skip to the selected NoirQueue number.
+• **${ʙᴏᴛꜰɪx}skip** = Skip to the selected queue number.
 • **${ʙᴏᴛꜰɪx}stop** = Stops the music.
 • **${ʙᴏᴛꜰɪx}vol** = Change volume of currently playing music.
 `
@@ -53,12 +53,12 @@ try {
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         message.react("✅");
         message.react("🍧");
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         message.channel.send(HELPEMBED).catch(console.error);
         return;
@@ -83,11 +83,11 @@ try {
 • **${ʙᴏᴛꜰɪx}play** = Plays audio from YouTube.
 • **${ʙᴏᴛꜰɪx}list** = Play a playlist from YouTube.
 • **${ʙᴏᴛꜰɪx}queue** = Show the music Queue and now playing.
-• **${ʙᴏᴛꜰɪx}remove** = Remove song from the NoirQueue.
+• **${ʙᴏᴛꜰɪx}remove** = Remove song from the queue.
 • **${ʙᴏᴛꜰɪx}resume** = Resume currently playing music.
-• **${ʙᴏᴛꜰɪx}shuffle** = Shuffle music NoirQueue.
+• **${ʙᴏᴛꜰɪx}shuffle** = Shuffle music queue.
 • **${ʙᴏᴛꜰɪx}next** = Skip the currently playing song.
-• **${ʙᴏᴛꜰɪx}skip** = Skip to the selected NoirQueue number.
+• **${ʙᴏᴛꜰɪx}skip** = Skip to the selected queue number.
 • **${ʙᴏᴛꜰɪx}stop** = Stops the music.
 • **${ʙᴏᴛꜰɪx}vol** = Change volume of currently playing music.
 `
@@ -98,7 +98,7 @@ try {
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋");
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         message.react("✅");
         message.react("🍧");
@@ -108,7 +108,7 @@ try {
             .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
         );
         // ==================================================================
-        // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
+        // ================>  🎶Noir🤍PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
         message.author.send(HELPEMBED).catch(console.error);
         message.channel
