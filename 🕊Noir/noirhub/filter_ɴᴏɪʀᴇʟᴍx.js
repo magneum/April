@@ -266,7 +266,7 @@ ID= ${message.client.user}`);
           // ==================================================================
           // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
-          play(song, message, client, NoirSelected);
+          // play(song, message, client, NoirSelected);
           const embedfiltersongend = new MessageEmbed()
             .setColor("#AE4A3B")
             .setTitle("PLEASE RESTART MUSIC QUEUE !")
