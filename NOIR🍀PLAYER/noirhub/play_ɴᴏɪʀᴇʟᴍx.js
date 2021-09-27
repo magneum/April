@@ -167,14 +167,7 @@ You need to join a voice channel first!`
 
 Searching and Playing in less then 3secs!`
           );
-        message.channel
-          .send(embedplay1)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+        message.channel.send(embedplay1).catch(console.error);
         return;
       }
       // ==================================================================
