@@ -119,14 +119,12 @@ try {
 *Only* **YouTube** *playing/streaming is allowed*`);
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedmusicnot)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedmusicnot).catch(console.error);
+          // .then((message) => {
+          //   message.delete({
+          //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          //   });
+          // });
           return;
         }
         // ==================================================================
@@ -157,14 +155,12 @@ try {
           );
         message.react("❌");
         message.react("🔥");
-        message.channel
-          .send(embedmusic1)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+        message.channel.send(embedmusic1).catch(console.error);
+        // .then((message) => {
+        //   message.delete({
+        //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        //   });
+        // });
         return;
       }
       // ==================================================================
@@ -270,14 +266,12 @@ try {
                 );
               message.react("❌");
               message.react("🔥");
-              message.channel
-                .send(embedmusic2)
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                  });
-                });
+              message.channel.send(embedmusic2).catch(console.error);
+              // .then((message) => {
+              //   message.delete({
+              //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+              //   });
+              // });
               return;
             }
             // ==================================================================
@@ -296,12 +290,12 @@ try {
 
 ⏩ *Skipped the song*`)
               )
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                });
-              });
+              .catch(console.error);
+            // .then((message) => {
+            //   message.delete({
+            //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            //   });
+            // });
             collector.stop();
             break;
           // ==================================================================
@@ -325,14 +319,12 @@ try {
                 );
               message.react("❌");
               message.react("🔥");
-              message.channel
-                .send(embedmusic3)
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                  });
-                });
+              message.channel.send(embedmusic3).catch(console.error);
+              // .then((message) => {
+              //   message.delete({
+              //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+              //   });
+              // });
               return;
             }
             // ==================================================================
@@ -376,12 +368,12 @@ try {
 
 ▶ *Resumed the music!*`)
                 )
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                  });
-                });
+                .catch(console.error);
+              // .then((message) => {
+              //   message.delete({
+              //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+              //   });
+              // });
             }
             break;
           // ==================================================================
@@ -405,14 +397,12 @@ try {
                 );
               message.react("❌");
               message.react("🔥");
-              message.channel
-                .send(embedmusic4)
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                  });
-                });
+              message.channel.send(embedmusic4).catch(console.error);
+              // .then((message) => {
+              //   message.delete({
+              //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+              //   });
+              // });
               return;
             }
             // ==================================================================
@@ -462,12 +452,12 @@ try {
 
 🔊 Unmuted the music!`)
                 )
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                  });
-                });
+                .catch(console.error);
+              // .then((message) => {
+              //   message.delete({
+              //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+              //   });
+              // });
             }
             break;
           // ==================================================================
@@ -494,14 +484,12 @@ try {
                 );
               message.react("❌");
               message.react("🔥");
-              message.channel
-                .send(embedmusic5)
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                  });
-                });
+              message.channel.send(embedmusic5).catch(console.error);
+              // .then((message) => {
+              //   message.delete({
+              //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+              //   });
+              // });
               return;
             }
             // ==================================================================
@@ -523,12 +511,12 @@ try {
 
 🔉 Decreased the volume, the volume is now ${queue.volume}%`)
               )
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                });
-              });
+              .catch(console.error);
+            // .then((message) => {
+            //   message.delete({
+            //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            //   });
+            // });
             break;
           // ==================================================================
           // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
@@ -583,12 +571,12 @@ try {
 
 🔊 Increased the volume, the volume is now ${queue.volume}%`)
               )
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                });
-              });
+              .catch(console.error);
+            // .then((message) => {
+            //   message.delete({
+            //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            //   });
+            // });
             break;
           // ==================================================================
           // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
@@ -611,14 +599,12 @@ try {
                 );
               message.react("❌");
               message.react("🔥");
-              message.channel
-                .send(embedmusic7)
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                  });
-                });
+              message.channel.send(embedmusic7).catch(console.error);
+              // .then((message) => {
+              //   message.delete({
+              //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+              //   });
+              // });
               return;
             }
             // ==================================================================
@@ -637,12 +623,12 @@ try {
 
 Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
               )
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                });
-              });
+              .catch(console.error);
+            // .then((message) => {
+            //   message.delete({
+            //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            //   });
+            // });
             message.client.queue.delete(message.guild.id);
             break;
           // ==================================================================
@@ -666,14 +652,12 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                 );
               message.react("❌");
               message.react("🔥");
-              message.channel
-                .send(embedmusic8)
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                  });
-                });
+              message.channel.send(embedmusic8).catch(console.error);
+              // .then((message) => {
+              //   message.delete({
+              //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+              //   });
+              // });
               return;
             }
             // ==================================================================
@@ -693,12 +677,12 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                     "=========:radio_button:=========\n\n❤️*MusicQueue has been successfully* **ended**"
                   )
               )
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                });
-              });
+              .catch(console.error);
+            // .then((message) => {
+            //   message.delete({
+            //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            //   });
+            // });
             // ==================================================================
             // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
             // ==================================================================

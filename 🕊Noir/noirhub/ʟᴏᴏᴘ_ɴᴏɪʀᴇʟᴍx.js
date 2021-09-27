@@ -40,14 +40,12 @@ try {
 **Channel:** \`🤍Noir\`
 *Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`
           );
-        message.channel
-          .send(embedfactor)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+        message.channel.send(embedfactor).catch(console.error);
+        // .then((message) => {
+        //   message.delete({
+        //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        //   });
+        // });
         return;
       }
       // ==================================================================
@@ -72,14 +70,12 @@ try {
 Noir is not playing anymusic yet.....`);
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedloopno1)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedloopno1).catch(console.error);
+          // .then((message) => {
+          //   message.delete({
+          //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          //   });
+          // });
           return;
         }
         // ==================================================================
@@ -99,14 +95,12 @@ Noir is not playing anymusic yet.....`);
 *You need to* **join** *a voice channel first!*`);
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedloopno2)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedloopno2).catch(console.error);
+          // .then((message) => {
+          //   message.delete({
+          //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          //   });
+          // });
           return;
         }
         // ==================================================================

@@ -38,14 +38,12 @@ try {
 
 **Channel:** \`🤍Noir\`
 *Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`);
-        message.channel
-          .send(embedfilter0)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+        message.channel.send(embedfilter0).catch(console.error);
+        // .then((message) => {
+        //   message.delete({
+        //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        //   });
+        // });
         return;
       }
       // ==================================================================
@@ -68,14 +66,12 @@ try {
 *Add music in Queue first!*`);
         message.react("❌");
         message.react("🔥");
-        message.channel
-          .send(embednone1)
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+        message.channel.send(embednone1).catch(console.error);
+        // .then((message) => {
+        //   message.delete({
+        //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+        //   });
+        // });
         return;
       }
       if (queue.length !== 0) {
@@ -129,14 +125,12 @@ try {
 *Please join a* **Voice Channel** *first*`);
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedfilter2)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedfilter2).catch(console.error);
+          // .then((message) => {
+          //   message.delete({
+          //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          //   });
+          // });
           return;
         }
         // ==================================================================
@@ -157,14 +151,12 @@ You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`);
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embedfilter3)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embedfilter3).catch(console.error);
+          // .then((message) => {
+          //   message.delete({
+          //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          //   });
+          // });
 
           return;
         }
@@ -225,14 +217,12 @@ ID= ${message.client.user}`);
 ▫️ clear [Clean all applied filter(s)]`);
             message.react("❌");
             message.react("🔥");
-            message.channel
-              .send(embedfilter4)
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-                });
-              });
+            message.channel.send(embedfilter4).catch(console.error);
+            // .then((message) => {
+            //   message.delete({
+            //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            //   });
+            // });
             break;
         }
         // ==================================================================
@@ -246,23 +236,22 @@ ID= ${message.client.user}`);
           const song = queue.songs[0];
           message.react("✅");
           message.react("🍧");
-          message.channel
-            .send(
-              new MessageEmbed()
-                .setColor("#4b73c1")
-                .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
-                .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
-                .setAuthor(
-                  "Applied Filter = " + args[0],
-                  "https://cdn.discordapp.com/emojis/769935094285860894.gif"
-                )
-            )
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(
+            new MessageEmbed()
+              .setColor("#4b73c1")
+              .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
+              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+              .setAuthor(
+                "Applied Filter = " + args[0],
+                "https://cdn.discordapp.com/emojis/769935094285860894.gif"
+              )
+          );
+          // .then((message) => {
+          //   message.delete({
+          //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          //   });
+          // });
           // ==================================================================
           // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
           // ==================================================================
@@ -301,14 +290,12 @@ Restart **queue** and **filter** will be applied.`);
 *Add music in Queue first!*`);
           message.react("❌");
           message.react("🔥");
-          message.channel
-            .send(embednone2)
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+          message.channel.send(embednone2).catch(console.error);
+          // .then((message) => {
+          //   message.delete({
+          //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          //   });
+          // });
           return;
         }
       }

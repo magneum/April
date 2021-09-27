@@ -46,11 +46,11 @@ try {
         message.channel
           .send(embedfactor)
           .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-            });
-          });
+          // .then((message) => {
+          //   message.delete({
+          //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+          //   });
+          // });
         return;
       }
       // ==================================================================
@@ -80,11 +80,11 @@ is not playing anymusic yet.....`
           message.channel
             .send(embedpause1)
             .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+            // .then((message) => {
+            //   message.delete({
+            //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            //   });
+            // });
           return;
         }
         // ==================================================================
@@ -109,11 +109,11 @@ is not playing anymusic yet.....`
           message.channel
             .send(embedpause2)
             .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
-              });
-            });
+            // .then((message) => {
+            //   message.delete({
+            //     timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}`,
+            //   });
+            // });
           return;
         }
         // ==================================================================
