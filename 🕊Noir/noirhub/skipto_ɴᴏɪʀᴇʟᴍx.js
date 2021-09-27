@@ -20,7 +20,7 @@ module.exports = {
   execute(message, args) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "skipto") &&
-      message.channel.name !== "🕊Noir"
+      message.channel.name !== "🕊noir"
     ) {
       message.react("❌");
       const embedfactor = new MessageEmbed()
@@ -54,7 +54,7 @@ module.exports = {
     // ==================================================================
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "skipto") &&
-      message.channel.name === "🕊Noir"
+      message.channel.name === "🕊noir"
     ) {
       // message.react("✅");
       if (!args.length || isNaN(args[0])) {

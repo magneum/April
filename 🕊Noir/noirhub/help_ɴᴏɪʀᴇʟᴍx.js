@@ -19,7 +19,7 @@ module.exports = {
   execute(message) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "help") &&
-      message.channel.name !== "🕊Noir"
+      message.channel.name !== "🕊noir"
     ) {
       let HELPEMBED = new MessageEmbed()
         .setDescription(
@@ -65,7 +65,7 @@ module.exports = {
     }
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "help") &&
-      message.channel.name === "🕊Noir"
+      message.channel.name === "🕊noir"
     ) {
       let HELPEMBED = new MessageEmbed()
         .setDescription(

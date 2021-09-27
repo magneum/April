@@ -31,7 +31,7 @@ module.exports = {
   async execute(message, args) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "list") &&
-      message.channel.name !== "🕊Noir"
+      message.channel.name !== "🕊noir"
     ) {
       message.react("❌");
       const embedfactor = new MessageEmbed()
@@ -66,7 +66,7 @@ module.exports = {
     // ==================================================================
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "list") &&
-      message.channel.name === "🕊Noir"
+      message.channel.name === "🕊noir"
     ) {
       // message.react("✅");
       const { channel } = message.member.voice;

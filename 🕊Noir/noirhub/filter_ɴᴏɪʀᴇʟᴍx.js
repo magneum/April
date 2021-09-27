@@ -21,7 +21,7 @@ module.exports = {
   async execute(message, args, client) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "filter") &&
-      message.channel.name !== "🕊Noir"
+      message.channel.name !== "🕊noir"
     ) {
       message.react("❌");
       const embedfilter0 = new MessageEmbed()
@@ -112,7 +112,7 @@ module.exports = {
     // ==================================================================
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "filter") &&
-      message.channel.name === "🕊Noir"
+      message.channel.name === "🕊noir"
     ) {
       // message.react("✅");
       if (!message.member.voice.channel) {

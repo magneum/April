@@ -20,7 +20,7 @@ module.exports = {
   async execute(message) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "queue") &&
-      message.channel.name !== "🕊Noir"
+      message.channel.name !== "🕊noir"
     ) {
       message.react("❌");
       const embedfactor = new MessageEmbed()
@@ -54,7 +54,7 @@ module.exports = {
     // ==================================================================
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "queue") &&
-      message.channel.name === "🕊Noir"
+      message.channel.name === "🕊noir"
     ) {
       // message.react("✅");
       const permissions = message.channel.permissionsFor(message.client.user);

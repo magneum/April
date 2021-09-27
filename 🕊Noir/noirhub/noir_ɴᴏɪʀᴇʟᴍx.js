@@ -20,7 +20,7 @@ module.exports = {
   execute(message) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "noir") &&
-      message.channel.name === "🕊Noir"
+      message.channel.name === "🕊noir"
     ) {
       let NoirEMBED = new MessageEmbed()
         .setFooter(
@@ -76,7 +76,7 @@ for extra info on *Noir* **
     }
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "noir") &&
-      message.channel.name !== "🕊Noir"
+      message.channel.name !== "🕊noir"
     ) {
       let NoirEMBED = new MessageEmbed()
         .setFooter(

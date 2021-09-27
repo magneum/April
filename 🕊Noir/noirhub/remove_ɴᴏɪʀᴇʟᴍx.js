@@ -19,7 +19,7 @@ module.exports = {
     // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
     // ==================================================================
     execute(message, args) {
-        if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name !== "🕊Noir") {
+        if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name !== "🕊noir") {
             message.react("❌")
             const embedfactor = new MessageEmbed()
                 .setColor("#20ab40")
@@ -47,7 +47,7 @@ module.exports = {
         // ==================================================================
         // ================>  🎶Noir🍀PLΛYΣЯ by HypeVoidSoul <================
         // ==================================================================
-        if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name === "🕊Noir") {
+        if (message.content.startsWith(ʙᴏᴛꜰɪx + "remove") && message.channel.name === "🕊noir") {
             // message.react("✅");
             const queue = message.client.queue.get(message.guild.id);
             if (!queue) {

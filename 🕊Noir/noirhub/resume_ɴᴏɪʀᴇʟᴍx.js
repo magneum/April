@@ -20,7 +20,7 @@ module.exports = {
   execute(message) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "resume") &&
-      message.channel.name !== "🕊Noir"
+      message.channel.name !== "🕊noir"
     ) {
       message.react("❌");
       const embedfactor = new MessageEmbed()
@@ -54,7 +54,7 @@ module.exports = {
     // ==================================================================
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "resume") &&
-      message.channel.name === "🕊Noir"
+      message.channel.name === "🕊noir"
     ) {
       // message.react("✅");
       const queue = message.client.queue.get(message.guild.id);

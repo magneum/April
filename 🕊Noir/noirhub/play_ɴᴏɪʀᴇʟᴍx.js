@@ -37,7 +37,7 @@ module.exports = {
   async execute(message, args) {
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
-      message.channel.name !== "🕊Noir"
+      message.channel.name !== "🕊noir"
     ) {
       message.react("❌");
       const embedfactor = new MessageEmbed()
@@ -123,7 +123,7 @@ Please use **${ʙᴏᴛꜰɪx}list** command for any YouTube playlists..`
     // ==================================================================
     if (
       message.content.startsWith(ʙᴏᴛꜰɪx + "play") &&
-      message.channel.name === "🕊Noir"
+      message.channel.name === "🕊noir"
     ) {
       const { channel } = message.member.voice;
       const serverQueue = message.client.queue.get(message.guild.id);
