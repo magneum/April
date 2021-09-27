@@ -268,8 +268,8 @@ ID= ${message.client.user}`);
           // ==================================================================
           play(song, message, client, NoirSelected);
           const embedfiltersongend = new MessageEmbed()
-            .setColor("#d698bc")
-            .setTitle("⚠️Warning⚠️")
+            .setColor("#AE4A3B")
+            .setTitle("PLEASE RESTART MUSIC QUEUE !")
             .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄 𝙲𝚘𝚙𝚢𝚛𝚒𝚐𝚑𝚝(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
@@ -279,8 +279,6 @@ ID= ${message.client.user}`);
 
 Song Queue has been cleaned up.
 Restarted queue and filter is applied.`);
-          message.react("❌");
-          message.react("🔥");
           message.channel
             .send(embedfiltersongend)
             .catch(console.error)
