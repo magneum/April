@@ -18,6 +18,9 @@ try {
   const ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ =
     /^(https?:\/\/)?(www\.)?(m\.)?(youtube\.com|youtu\.?be)\/.+$/gi;
   const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
+  if (message.author.bot) {
+    return;
+  }
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007

@@ -12,6 +12,9 @@ const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
 const YouTubeAPI = require("simple-youtube-api");
 const scdl = require("soundcloud-downloader").default;
 const youtube = new YouTubeAPI(ɴᴏɪʀʏᴛ);
+if (message.author.bot) {
+  return;
+}
 // =============================================================================================================================
 // GNU GENERAL PUBLIC LICENSE
 // Version 3, 29 June 2007

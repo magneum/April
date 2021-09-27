@@ -2,6 +2,9 @@ try {
   const { canModifyQueue } = require("../noirtem/noir_env");
   const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
   const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
+  if (message.author.bot) {
+    return;
+  }
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007

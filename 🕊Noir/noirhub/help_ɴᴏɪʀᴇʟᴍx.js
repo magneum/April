@@ -1,6 +1,9 @@
 try {
   const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ");
   const { ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("../noirtem/noir_env");
+  if (message.author.bot) {
+    return;
+  }
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007

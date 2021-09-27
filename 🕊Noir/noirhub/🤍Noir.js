@@ -7,6 +7,9 @@ try {
   } = require("../noirtem/noir_env");
   const { MessageEmbed } = require("../ᴋʟᴀᴡᴠᴏɪᴅ/src");
   const getVideoId = require("get-video-id");
+  if (message.author.bot) {
+    return;
+  }
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007
