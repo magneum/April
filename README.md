@@ -1,6 +1,6 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="HypeVoidSoul"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-# 🤍『 ᴅɪꜱᴄᴏʀᴅ ᴍᴜꜱɪᴄ ʙᴏᴛ: NOIR 』🤍
+# 💜『 ᴅɪꜱᴄᴏʀᴅ ᴍᴜꜱɪᴄ ʙᴏᴛ: NOIR 』💜
 
 <p align="centre"><img  width="100%" height="100%" img src="https://github.com/HypeVoidSoul/Noir/blob/VOID/%F0%9F%95%8ANoir/noirtem/Noir%F0%9F%A4%8DPlayer.jpeg" /></p>
 
@@ -8,7 +8,7 @@
 # ❓ WΉY MΛDΣ ƬΉIS BӨƬ?
 
 ```sh
-🦋=======ɴᴏɪʀ🤍ᴘʟᴀʏᴇʀ=======🦋
+🦋=======ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ=======🦋
 
     💻 𝗪𝗵𝗮𝘁 𝗖𝗮𝗻 𝗕𝗼𝘁 𝗗𝗼???
 ❄️ 𝘗𝘭𝘢𝘺 𝘢𝘯𝘺 𝘮𝘶𝘴𝘪𝘤 𝘪𝘯 𝘺𝘰𝘶𝘳 discord channel.
@@ -20,7 +20,7 @@ rather i will make a new bot with Discord.js-V13.
 
 # 〽️ MΣΣƬ US ӨЯ CΉΣCK ӨƬΉΣЯ BӨƬS
 
-- [![Generic badge](https://img.shields.io/badge/🕊Noir-purple.svg)](https://discord.com/api/oauth2/authorize?client_id=885784029511696424&permissions=137442618448&scope=bot)
+- [![Generic badge](https://img.shields.io/badge/💜Noir_Priority_Speaker💜-purple.svg)](https://discord.com/api/oauth2/authorize?client_id=885784029511696424&permissions=139623655760&scope=bot%20applications.commands)
   𝙳𝚒𝚛𝚎𝚌𝚝𝚕𝚢 𝚞𝚜𝚎 𝚃𝚑𝚎 𝙱𝚘𝚝 𝚒𝚗 Discord
 - [![Generic badge](https://img.shields.io/badge/𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙱𝚘𝚝-Vïå_ßð†-orange.svg)](https://t.me/HypeVoidBot) 𝘛𝘶𝘳𝘯 𝘰𝘯 𝘣𝘰𝘵 𝘪𝘯 𝘵𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘢𝘯𝘥 𝘵𝘺𝘱𝘦 /us
 
@@ -28,7 +28,7 @@ rather i will make a new bot with Discord.js-V13.
 
 ```sh
 📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
-🦋=======ɴᴏɪʀ🤍ᴘʟᴀʏᴇʀ=======🦋
+🦋=======ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ=======🦋
 • !filter = Music filters when playing audio.
 • !help = Display all commands and descriptions.
 • !noir = Display the  license and a few more info.
@@ -47,7 +47,7 @@ rather i will make a new bot with Discord.js-V13.
 • !stop = Stops the music.
 • !vol = Change volume of currently playing music.
 
-🦋=======ɴᴏɪʀ🤍ᴘʟᴀʏᴇʀ=======🦋
+🦋=======ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ=======🦋
 ```
 
 # 📜 LICΣПSΣ
