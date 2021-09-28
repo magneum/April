@@ -63,7 +63,7 @@ ${CH}`);
         channel.permissionsFor(guild.me).has(`SEND_MESSAGES`)
     );
     guild.channels
-      .create("😈Krakinz", {
+      .create("🔱Krakinz", {
         type: "category",
         permissionOverwrites: [
           { id: guild.id, deny: ["VIEW_CHANNEL"] },
@@ -131,7 +131,7 @@ ${CH}`);
 𝗗𝗲𝗮𝗿: @everyone
 =========:radio_button:=========
 
-ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **😈Krakinz** has been successfully created.
+ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **🔱Krakinz** has been successfully created.
 Please use the channel for any **ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ** commands..`
           )
       )
@@ -152,7 +152,7 @@ Please use the channel **💜Noir** for any ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ command
 Please user ${ռօɨʀʄɨӼ}noir/play/help🦋 to know more.
 
 :star:**ɴᴏᴛᴇ to** @everyone:
-ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **😈Krakinz** has been successfully created.
+ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **🔱Krakinz** has been successfully created.
 Please use the channel for any **ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ** commands..`)
       )
       .catch(console.error);
@@ -200,7 +200,7 @@ Please use the channel for any **ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ** commands..`)
     // 𝗗𝗲𝗮𝗿: @everyone
     // =========:radio_button:=========
 
-    // ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **😈Krakinz** has been successfully created.
+    // ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **🔱Krakinz** has been successfully created.
     // Please use the channel for any **ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ** commands..`
     //           );
     //         message.channel.send(embedcheck1).catch(console.error);

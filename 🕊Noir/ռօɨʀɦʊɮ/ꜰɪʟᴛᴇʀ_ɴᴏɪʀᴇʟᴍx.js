@@ -32,8 +32,9 @@ try {
 **User:** ${message.author}
 =========:radio_button:=========
 
+**Category:** \`🔱Krakinz\`
 **Channel:** \`💜Noir\`
-*Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`);
+⚠️Please use 👆🏻 for any **ɴᴏɪʀ** commands.`);
         message.channel.send(embedfilter0).catch(console.error);
         // .then((message) => {
         // message.delete({

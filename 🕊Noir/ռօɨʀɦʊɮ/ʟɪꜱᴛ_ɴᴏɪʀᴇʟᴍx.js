@@ -43,8 +43,9 @@ try {
 **User:** ${message.author}
 =========:radio_button:=========
 
+**Category:** \`🔱Krakinz\`
 **Channel:** \`💜Noir\`
-*Please use 👆🏻 channel for any* **ɴᴏɪʀ** *commands.*`
+⚠️Please use 👆🏻 for any **ɴᴏɪʀ** commands.`
           );
 
         message.channel.send(embedfactor).catch(console.error);
