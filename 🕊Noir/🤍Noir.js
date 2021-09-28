@@ -1,4 +1,4 @@
-CH = `~~~~~~~~~~~~~~~~~~~~~~~>  🤍Noir by HypeVoidSoul <~~~~~~~~~~~~~~~~~~~~~~~`;
+CH = `~~~~~~~~~~~~~~~~~~~~~~~>  💜Noir by HypeVoidSoul <~~~~~~~~~~~~~~~~~~~~~~~`;
 console.clear();
 const os = require("os");
 require("dotenv").config();
@@ -43,21 +43,21 @@ const command = require(join(__dirname, "noirhub", `${file}`));
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// 🤍Noir
+// 💜Noir
 // Discord Music YouTube player
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
 // =============================================================================================================================
 ռօɨʀքʟǟʏɛʀ.on("ready", () => {
-ռօɨʀքʟǟʏɛʀ.user.setActivity(`🤍 ${ʙᴏᴛꜰɪx}noir/play/help`, {
+ռօɨʀքʟǟʏɛʀ.user.setActivity(`💜 ${ʙᴏᴛꜰɪx}noir/play/help`, {
 type: "WATCHING",
 });
 console.log(`
 ${CH}
-|••••🤍    Bot-Name: ${ռօɨʀքʟǟʏɛʀ.user.username}
-|••••🤍    Bot-Os: ${os.platform().toUpperCase()}
-|••••🤍    Bot-Port: ${PORT}
-~~~~~~~~~~~~~~~~~~~~~~~>  🤍Noir by HypeVoidSoul <~~~~~~~~~~~~~~~~~~~~~~~
+|••••💜    Bot-Name: ${ռօɨʀքʟǟʏɛʀ.user.username}
+|••••💜    Bot-Os: ${os.platform().toUpperCase()}
+|••••💜    Bot-Port: ${PORT}
+~~~~~~~~~~~~~~~~~~~~~~~>  💜Noir by HypeVoidSoul <~~~~~~~~~~~~~~~~~~~~~~~
 ${LIC}
 ${CH}`);
 });
@@ -73,7 +73,7 @@ ${CH}`);
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// 🤍Noir
+// 💜Noir
 // Discord Music YouTube player
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -86,13 +86,13 @@ channel.permissionsFor(guild.me).has(`SEND_MESSAGES`)
 );
 const embedThanks = new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 🤍Noir by HypeVoidSoul`)
+.setAuthor(`•> 💜Noir by HypeVoidSoul`)
 .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(`❤️‍🔥 **Hey there MUSIC lovers !**
 I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
-Please use the channel **🤍Noir** for any ɴᴏɪʀ🤍ᴘʟᴀʏᴇʀ commands.
+Please use the channel **💜Noir** for any ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ commands.
 
 :candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
 Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more.
@@ -109,7 +109,7 @@ return;
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// 🤍Noir
+// 💜Noir
 // Discord Music YouTube player
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -126,10 +126,10 @@ if (!message.guild) {
 const checkdm = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 🤍Noir by HypeVoidSoul`)
+.setAuthor(`•> 💜Noir by HypeVoidSoul`)
 .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
@@ -148,7 +148,7 @@ return;
 // Copyright (C) 2007 Free Software Foundation
 // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-// 🤍Noir
+// 💜Noir
 // Discord Music YouTube player
 // has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀
@@ -157,20 +157,20 @@ if (message.content.startsWith(ʙᴏᴛꜰɪx + `calib`)) {
 if (message.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
 const embedcheck1 = new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 🤍Noir by HypeVoidSoul`)
+.setAuthor(`•> 💜Noir by HypeVoidSoul`)
 .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
 `
 𝗗𝗲𝗮𝗿 **ADMIN** 
 =========:radio_button:=========
 
-ᴀ channel ɴᴀᴍᴇ 🤍Noir has been successfully created.
-Please use the channel for any ɴᴏɪʀ🤍ᴘʟᴀʏᴇʀ commands..`
+ᴀ channel ɴᴀᴍᴇ 💜Noir has been successfully created.
+Please use the channel for any ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ commands..`
 );
 message.channel.send(embedcheck1).catch(console.error);
-message.guild.channels.create("🤍noir", {
+message.guild.channels.create("💜noir", {
 type: "GUILD_TEXT",
 permissionOverwrites: [
 {
@@ -178,20 +178,20 @@ id: message.guild.roles.everyone,
 },
 ],
 });
-console.log(`•🤍noir ©️• has been successfully created.`);
+console.log(`•💜noir ©️• has been successfully created.`);
 } else {
 const embedcheck2 = new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 🤍Noir by HypeVoidSoul`)
+.setAuthor(`•> 💜Noir by HypeVoidSoul`)
 .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
 `
 𝗗𝗲𝗮𝗿 **ADMIN** 
 =========:radio_button:=========
 
-•|  _ᴀ channel ɴᴀᴍᴇ 🤍Noir could not be created._
+•|  _ᴀ channel ɴᴀᴍᴇ 💜Noir could not be created._
 •|  𝗣𝗹𝗲𝗮𝘀𝗲 𝗴𝗶𝘃𝗲 𝗺𝗲 𝘁𝗵𝗲𝘀𝗲 𝗽𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻𝘀:
 =𝘔𝘢𝘯𝘢𝘨𝘦𝘊𝘩𝘢𝘯𝘯𝘦𝘭
 =𝘚𝘦𝘯𝘥𝘔𝘦𝘴𝘴𝘢𝘨𝘦𝘴
@@ -199,7 +199,7 @@ const embedcheck2 = new MessageEmbed()
 =𝘌𝘮𝘣𝘦𝘥𝘴`
 );
 message.channel.send(embedcheck2).catch(console.error);
-console.log(`•🤍noir ©️• could not be created.`);
+console.log(`•💜noir ©️• could not be created.`);
 return;
 }
 }
@@ -253,10 +253,10 @@ const timeLeft = (expirationTime - now) / 1000;
 const embedNoir1 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 🤍Noir by HypeVoidSoul`)
+.setAuthor(`•> 💜Noir by HypeVoidSoul`)
 .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
@@ -283,10 +283,10 @@ console.error(error);
 const embedNoir2 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 🤍Noir by HypeVoidSoul`)
+.setAuthor(`•> 💜Noir by HypeVoidSoul`)
 .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
 `
 **User:** ${message.author}
@@ -314,7 +314,7 @@ Version 3, 29 June 2007
 Copyright (C) 2007 Free Software Foundation
 Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
 of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-Noir🤍PLAYER = Discord Music YouTube player
+Noir💜PLAYER = Discord Music YouTube player
 has been licensed under GNU General Public License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯 | 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀`;
 
@@ -325,7 +325,7 @@ has been licensed under GNU General Public License
 const ErrorInNoir = new MessageEmbed()
 .setColor("#DB4434")
 .setTitle("🔺ERROR CAUGHT🔻")
-.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
 .setDescription(`
 **Noir** has encountered an error.
