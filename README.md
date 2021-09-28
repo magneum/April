@@ -1,6 +1,6 @@
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="HypeVoidSoul"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
-# 🦋『 ᴅɪꜱᴄᴏʀᴅ ᴍᴜꜱɪᴄ ʙᴏᴛ: NOIR 』🦋
+# 🤍『 ᴅɪꜱᴄᴏʀᴅ ᴍᴜꜱɪᴄ ʙᴏᴛ: NOIR 』🤍
 
 <p align="centre"><img  width="100%" height="100%" img src="https://github.com/HypeVoidSoul/Noir/blob/VOID/%F0%9F%95%8ANoir/noirtem/Noir%F0%9F%A4%8DPlayer.jpeg" /></p>
 
