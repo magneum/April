@@ -172,83 +172,28 @@ Please use only that channel for any **ɴᴏɪʀ_ᴘʟᴀʏᴇʀ** commands..`)
       return;
     }
     if (!message.guild) {
-      const checkdm = new MessageEmbed()
-        .setColor("#E0D268")
-        .setTitle("⚠️Warning⚠️")
-        .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
-        .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
-        .setDescription(`
+      message.react("❌");
+      message.react("🔥");
+      message.reply(
+        new MessageEmbed()
+          .setColor("#E0D268")
+          .setTitle("⚠️Warning⚠️")
+          .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+          .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+          .setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
 
 • You are currently in a **DMChannel** and so you have been **restricted** using any **Noir 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀**
 
-• Add me in your channel and then all commands will be automatically accepted.`);
-      message.reply(checkdm);
-      message.react("❌");
-      message.react("🔥");
+• Add me in your channel and then all commands will be automatically accepted.`)
+      );
+
       return;
     }
-    //     if (message.content.startsWith(ռօɨʀʄɨӼ + `calib`)) {
-    //       if (guild.me.hasPermission(`MANAGE_CHANNELS`)) {
-    //         const embedcheck1 = new MessageEmbed()
-    //           .setColor("#6272a4")
-    //           .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
-    //           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-    //           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-    //           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
-    //           .setDescription(
-    //             `
-    // 𝗗𝗲𝗮𝗿: @everyone
-    // =========:radio_button:=========
 
-    // ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **🔱Krakinz** has been successfully created.
-    // Please use the channel for any **ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ** commands..`
-    //           );
-    //         message.channel.send(embedcheck1).catch(console.error);
-    //         guild.channels.create("💜noir", {
-    //           type: "GUILD_TEXT",
-    //           permissionOverwrites: [
-    //             {
-    //               id: guild.roles.everyone,
-    //               allow: ["VIEW_CHANNEL", "SEND_MESSAGES", "READ_MESSAGE_HISTORY"],
-    //               deny: [
-    //                 "MANAGE_ROLES",
-    //                 "MANAGE_NICKNAMES",
-    //                 "MANAGE_CHANNELS",
-    //                 "KICK_MEMBERS",
-    //                 "BAN_MEMBERS",
-    //               ],
-    //             },
-    //           ],
-    //         });
-    //         console.log(`•💜noir ©️• has been successfully created.`);
-    //       } else {
-    //         const embedcheck2 = new MessageEmbed()
-    //           .setColor("#6272a4")
-    //           .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
-    //           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-    //           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-    //           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
-    //           .setDescription(
-    //             `
-    // 𝗗𝗲𝗮𝗿 **ADMIN**
-    // =========:radio_button:=========
-
-    // •|  _ᴀ channel ɴᴀᴍᴇ 💜Noir could not be created._
-    // •|  𝗣𝗹𝗲𝗮𝘀𝗲 𝗴𝗶𝘃𝗲 𝗺𝗲 𝘁𝗵𝗲𝘀𝗲 𝗽𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻𝘀:
-    // =𝘔𝘢𝘯𝘢𝘨𝘦𝘊𝘩𝘢𝘯𝘯𝘦𝘭
-    // =𝘚𝘦𝘯𝘥𝘔𝘦𝘴𝘴𝘢𝘨𝘦𝘴
-    // =𝘈𝘵𝘵𝘢𝘤𝘩𝘔𝘦𝘥𝘪𝘢
-    // =𝘌𝘮𝘣𝘦𝘥𝘴`
-    //           );
-    //         message.channel.send(embedcheck2).catch(console.error);
-    //         console.log(`•💜noir ©️• could not be created.`);
-    //         return;
-    //       }
-    //     }
     const prefixRegex = new RegExp(
       `^(<@!?${ռօɨʀքʟǟʏɛʀ.user.id}>|${escapeRegex(ռօɨʀʄɨӼ)})\\s*`
     );
@@ -277,23 +222,26 @@ Please use only that channel for any **ɴᴏɪʀ_ᴘʟᴀʏᴇʀ** commands..`)
       const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
       if (now < expirationTime) {
         const timeLeft = (expirationTime - now) / 1000;
-        const embedNoir1 = new MessageEmbed()
-          .setColor("#E0D268")
-          .setTitle("⚠️Warning⚠️")
-          .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
-          .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
-          .setDescription(`
+        message.react("❌");
+        message.react("🔥");
+        message.channel
+          .send(
+            new MessageEmbed()
+              .setColor("#E0D268")
+              .setTitle("⚠️Warning⚠️")
+              .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+              .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+              .setDescription(`
 **User:** ${message.author}
 =========:radio_button:=========
 
 Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
-          command.name
-        }' command.      `);
-        message.react("❌");
-        message.react("🔥");
-        message.channel.send(embedNoir1).catch(console.error);
+              command.name
+            }' command.      `)
+          )
+          .catch(console.error);
         return;
       }
     }
@@ -304,24 +252,25 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
       command.execute(message, args);
     } catch (error) {
       console.error(error);
-      const embedNoir2 = new MessageEmbed()
-        .setColor("#E0D268")
-        .setTitle("⚠️Warning⚠️")
-        .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
-        .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
-        .setDescription(
-          `
+      message.react("❌");
+      message.react("🔥");
+      message.channel
+        .send(
+          new MessageEmbed()
+            .setColor("#E0D268")
+            .setTitle("⚠️Warning⚠️")
+            .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+            .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+            .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+            .setDescription(
+              `
 **User:** ${message.author}
 =========:radio_button:=========
 
 There was an error executing that command.`
-        );
-      message.react("❌");
-      message.react("🔥");
-      message.channel
-        .send(embedNoir2)
+            )
+        )
         .catch(console.error)
         .then((message) => {
           message.delete({ timeout: `${ռօɨʀքʊʀɢɛʀ}` });

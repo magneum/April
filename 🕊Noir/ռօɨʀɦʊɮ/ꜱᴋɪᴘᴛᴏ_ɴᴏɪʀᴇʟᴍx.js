@@ -13,11 +13,11 @@ try {
   module.exports = {
     name: "skipto",
     cooldown: 3,
-  // =============================================================================================================================
-  // GNU GENERAL PUBLIC LICENSE
-  // Version 3, 29 June 2007
-  // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-  // =============================================================================================================================
+    // =============================================================================================================================
+    // GNU GENERAL PUBLIC LICENSE
+    // Version 3, 29 June 2007
+    // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
+    // =============================================================================================================================
     execute(message, args) {
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "skipto") &&
@@ -25,22 +25,25 @@ try {
       ) {
         message.react("❌");
         message.react("🔥");
-        const embedfactor = new MessageEmbed()
-          .setColor("#E0D268")
-          .setTitle("⚠️Warning⚠️")
-          .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
-          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
-          .setDescription(
-            `
+        message.channel
+          .send(
+            new MessageEmbed()
+              .setColor("#E0D268")
+              .setTitle("⚠️Warning⚠️")
+              .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+              .setDescription(
+                `
 **User:** ${message.author}
 =========:radio_button:=========
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`💜Noir\`
 ⚠️Please use 👆🏻 for any **ɴᴏɪʀ** commands.`
-          );
-        message.channel.send(embedfactor).catch(console.error);
+              )
+          )
+          .catch(console.error);
         // .then((message) => {
         // message.delete({
         // timeout: `${ռօɨʀքʊʀɢɛʀ}`,
@@ -54,22 +57,25 @@ try {
         message.channel.name === "💜noir"
       ) {
         if (!args.length || isNaN(args[0])) {
-          const embedskpto1 = new MessageEmbed()
-            .setColor("#E0D268")
-            .setTitle("⚠️Warning⚠️")
-            .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
-            .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
-            .setDescription(
-              `
+          message.react("❌");
+          message.react("🔥");
+          message.channel
+            .send(
+              new MessageEmbed()
+                .setColor("#E0D268")
+                .setTitle("⚠️Warning⚠️")
+                .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+                .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                .setDescription(
+                  `
 **User:** ${message.author}
 =========:radio_button:=========
 
 ⚓️**usage:**${ռօɨʀʄɨӼ}{name} <Queue Number>`
-            );
-          message.react("❌");
-          message.react("🔥");
-          message.channel.send(embedskpto1).catch(console.error);
+                )
+            )
+            .catch(console.error);
           // .then((message) => {
           // message.delete({
           // timeout: `${ռօɨʀքʊʀɢɛʀ}`,
@@ -80,22 +86,25 @@ try {
 
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
-          const embedskpto2 = new MessageEmbed()
-            .setColor("#E0D268")
-            .setTitle("⚠️Warning⚠️")
-            .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
-            .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
-            .setDescription(
-              `
+          message.react("❌");
+          message.react("🔥");
+          message.channel
+            .send(
+              new MessageEmbed()
+                .setColor("#E0D268")
+                .setTitle("⚠️Warning⚠️")
+                .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+                .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                .setDescription(
+                  `
 **User:** ${message.author}
 =========:radio_button:=========
 
 There is nothing playing that I could skip for you.`
-            );
-          message.react("❌");
-          message.react("🔥");
-          message.channel.send(embedskpto2).catch(console.error);
+                )
+            )
+            .catch(console.error);
           // .then((message) => {
           // message.delete({
           // timeout: `${ռօɨʀքʊʀɢɛʀ}`,
@@ -105,22 +114,25 @@ There is nothing playing that I could skip for you.`
         }
 
         if (!canModifyQueue(message.member)) {
-          const embedskpto3 = new MessageEmbed()
-            .setColor("#E0D268")
-            .setTitle("⚠️Warning⚠️")
-            .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
-            .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
-            .setDescription(
-              `
+          message.react("❌");
+          message.react("🔥");
+          message.channel
+            .send(
+              new MessageEmbed()
+                .setColor("#E0D268")
+                .setTitle("⚠️Warning⚠️")
+                .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+                .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                .setDescription(
+                  `
 **User:** ${message.author}
 =========:radio_button:=========
 
 *You need to* **join** *a voice channel first!*`
-            );
-          message.react("❌");
-          message.react("🔥");
-          message.channel.send(embedskpto3).catch(console.error);
+                )
+            )
+            .catch(console.error);
           // .then((message) => {
           // message.delete({
           // timeout: `${ռօɨʀքʊʀɢɛʀ}`,
@@ -130,22 +142,25 @@ There is nothing playing that I could skip for you.`
         }
 
         if (args[0] > queue.songs.length) {
-          const embedshp1 = new MessageEmbed()
-            .setColor("#E0D268")
-            .setTitle("⚠️Warning⚠️")
-            .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
-            .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
-            .setDescription(
-              `
+          message.react("❌");
+          message.react("🔥");
+          message.channel
+            .send(
+              new MessageEmbed()
+                .setColor("#E0D268")
+                .setTitle("⚠️Warning⚠️")
+                .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+                .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                .setDescription(
+                  `
 **User:** ${message.author}
 =========:radio_button:=========
 
 There is nothing playing that I could skip for you.`
-            );
-          message.react("❌");
-          message.react("🔥");
-          message.channel.send(embedshp1).catch(console.error);
+                )
+            )
+            .catch(console.error);
           // .then((message) => {
           // message.delete({
           // timeout: `${ռօɨʀքʊʀɢɛʀ}`,
