@@ -31,7 +31,7 @@ try {
 `
           )
           .setColor("#6272a4")
-          .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+          .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
 
         message.react("✅");
@@ -47,7 +47,7 @@ try {
           .send(
             new MessageEmbed()
               .setColor("#6272a4")
-              .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+              .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
               .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -81,7 +81,7 @@ for extra info on *Noir* **
 `
           )
           .setColor("#6272a4")
-          .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+          .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
 
         message.react("✅");
