@@ -19,10 +19,10 @@ exports.canModifyQueue = (member) => {
     return true;
   }
 };
-exports.ɴᴏɪʀʏᴛ = process.env.NOIRYT;
-exports.ʙᴏᴛꜰɪx = process.env.BOTFIX;
-exports.ɴᴏɪʀᴇꜱ = process.env.NOIRES;
+exports.ռօɨʀȶʊɮɛ = process.env.NOIRYT;
+exports.ռօɨʀʄɨӼ = process.env.BOTFIX;
+exports.ռօɨʀӄɛռ = process.env.NOIRES;
 exports.ɴᴏɪʀᴍᴀx = process.env.NOIRMAX;
 exports.ɴᴏɪʀᴠᴏʟ = process.env.NOIRVOL;
 exports.ɴᴏɪʀᴡᴀᴋᴇ = process.env.NOIRWAKE;
-exports.ɴᴏɪʀᴄʟᴇᴀɴᴇʀ = process.env.NOIRCLEANER;
+exports.ռօɨʀքʊʀɢɛʀ = process.env.NOIRCLEANER;

@@ -5,8 +5,8 @@ require("dotenv").config();
 const { join } = require("path");
 const express = require("express");
 const { readdirSync } = require("fs");
-const { Client, Collection } = require("./ᴋʟᴀᴡᴠᴏɪᴅ/src");
-const { ɴᴏɪʀᴇꜱ, ʙᴏᴛꜰɪx, ɴᴏɪʀᴄʟᴇᴀɴᴇʀ } = require("./noirtem/noir_env.js");
+const { Client, Collection } = require("./ӄʀǟӄɨռʐʟǟɮ/src");
+const { ռօɨʀӄɛռ, ռօɨʀʄɨӼ, ռօɨʀքʊʀɢɛʀ } = require("./noirtem/noir_env.js");
 const ռօɨʀքʟǟʏɛʀ = new Client({
   disableMentions: "everyone",
   restTimeOffset: 0,
@@ -14,20 +14,9 @@ const ռօɨʀքʟǟʏɛʀ = new Client({
 const ռօɨʀֆɛʀʋɛʀ = express();
 const PORT = process.env.PORT || 3000;
 try {
-  //   =============================================================================================================================
-  //   GNU GENERAL PUBLIC LICENSE
-  //   Version 3, 29 June 2007
-  //   Copyright (C) 2007 Free Software Foundation
-  //   Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
-  //   of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-  //   💜Noir
-  //   Discord Music YouTube player
-  //   has been licensed under GNU General Public License
-  //   𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-  //   =============================================================================================================================
   ռօɨʀֆɛʀʋɛʀ.listen(PORT);
-  ռօɨʀքʟǟʏɛʀ.login(ɴᴏɪʀᴇꜱ);
-  ռօɨʀքʟǟʏɛʀ.prefix = ʙᴏᴛꜰɪx;
+  ռօɨʀքʟǟʏɛʀ.login(ռօɨʀӄɛռ);
+  ռօɨʀքʟǟʏɛʀ.prefix = ռօɨʀʄɨӼ;
   ռօɨʀքʟǟʏɛʀ.queue = new Map();
   ռօɨʀքʟǟʏɛʀ.commands = new Collection();
   // =============================================================================================================================
@@ -42,13 +31,13 @@ try {
   // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
   // =============================================================================================================================
   const NoirEngineOil = new Collection();
-  const { MessageEmbed } = require("./ᴋʟᴀᴡᴠᴏɪᴅ/src");
+  const { MessageEmbed } = require("./ӄʀǟӄɨռʐʟǟɮ/src");
   const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const commandFiles = readdirSync(join(__dirname, "noirhub")).filter((file) =>
+  const commandFiles = readdirSync(join(__dirname, "ռօɨʀɦʊɮ")).filter((file) =>
     file.endsWith("_ɴᴏɪʀᴇʟᴍx.js")
   );
   for (const file of commandFiles) {
-    const command = require(join(__dirname, "noirhub", `${file}`));
+    const command = require(join(__dirname, "ռօɨʀɦʊɮ", `${file}`));
     ռօɨʀքʟǟʏɛʀ.commands.set(command.name, command);
   }
   // =============================================================================================================================
@@ -63,7 +52,7 @@ try {
   // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
   // =============================================================================================================================
   ռօɨʀքʟǟʏɛʀ.on("ready", () => {
-    ռօɨʀքʟǟʏɛʀ.user.setActivity(`💜 ${ʙᴏᴛꜰɪx}noir/play/help`, {
+    ռօɨʀքʟǟʏɛʀ.user.setActivity(`💜 ${ռօɨʀʄɨӼ}noir/play/help`, {
       type: "WATCHING",
     });
     console.log(`
@@ -105,7 +94,7 @@ I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to di
 Please use the channel **💜Noir** for any ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ commands.
 
 :candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
-Please user ${ʙᴏᴛꜰɪx}noir/play/help🦋 to know more.
+Please user ${ռօɨʀʄɨӼ}noir/play/help🦋 to know more.
 
 :star:**ɴᴏᴛᴇ to ᴏᴡɴᴇʀ ᴀɴᴅ ᴍᴏᴅᴇʀꜱ**
 🎃**VERY VERY IMPORTANT**
@@ -148,7 +137,7 @@ Please use **!calib** once to calibrate before first use!`);
       message.react("🔥");
       return;
     }
-    if (message.content.startsWith(ʙᴏᴛꜰɪx + `calib`)) {
+    if (message.content.startsWith(ռօɨʀʄɨӼ + `calib`)) {
       if (message.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
         const embedcheck1 = new MessageEmbed()
           .setColor("#6272a4")
@@ -199,7 +188,7 @@ Please use the channel for any ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ commands..`
       }
     }
     const prefixRegex = new RegExp(
-      `^(<@!?${ռօɨʀքʟǟʏɛʀ.user.id}>|${escapeRegex(ʙᴏᴛꜰɪx)})\\s*`
+      `^(<@!?${ռօɨʀքʟǟʏɛʀ.user.id}>|${escapeRegex(ռօɨʀʄɨӼ)})\\s*`
     );
 
     if (!prefixRegex.test(message.content)) {
@@ -273,7 +262,7 @@ There was an error executing that command.`
         .send(embedNoir2)
         .catch(console.error)
         .then((message) => {
-          message.delete({ timeout: `${ɴᴏɪʀᴄʟᴇᴀɴᴇʀ}` });
+          message.delete({ timeout: `${ռօɨʀքʊʀɢɛʀ}` });
           return;
         });
     }
