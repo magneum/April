@@ -6,11 +6,8 @@ const { join } = require("path");
 const express = require("express");
 const { readdirSync } = require("fs");
 const { Client, Collection } = require("./ӄʀǟӄɨռʐʟǟɮ/src");
+const ռօɨʀքʟǟʏɛʀ = new Client({ disableEveryone: false });
 const { ռօɨʀӄɛռ, ռօɨʀʄɨӼ, ռօɨʀքʊʀɢɛʀ } = require("./noirtem/noir_env.js");
-const ռօɨʀքʟǟʏɛʀ = new Client({
-  disableMentions: "everyone",
-  restTimeOffset: 0,
-});
 const ռօɨʀֆɛʀʋɛʀ = express();
 const PORT = process.env.PORT || 3000;
 try {
@@ -22,12 +19,6 @@ try {
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007
-  // Copyright (C) 2007 Free Software Foundation
-  // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
-  // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-  // 💜Noir
-  // Discord Music YouTube player
-  // has been licensed under GNU General Public License
   // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
   // =============================================================================================================================
   const NoirEngineOil = new Collection();
@@ -43,12 +34,6 @@ try {
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007
-  // Copyright (C) 2007 Free Software Foundation
-  // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
-  // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-  // 💜Noir
-  // Discord Music YouTube player
-  // has been licensed under GNU General Public License
   // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
   // =============================================================================================================================
   ռօɨʀքʟǟʏɛʀ.on("ready", () => {
@@ -69,12 +54,6 @@ ${CH}`);
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007
-  // Copyright (C) 2007 Free Software Foundation
-  // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
-  // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-  // 💜Noir
-  // Discord Music YouTube player
-  // has been licensed under GNU General Public License
   // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
   // =============================================================================================================================
   ռօɨʀքʟǟʏɛʀ.on(`guildCreate`, (guild) => {
@@ -83,34 +62,105 @@ ${CH}`);
         channel.type === `text` &&
         channel.permissionsFor(guild.me).has(`SEND_MESSAGES`)
     );
-    const embedThanks = new MessageEmbed()
-      .setColor("#6272a4")
-      .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
-      .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-      .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
-      .setDescription(`❤️‍🔥 **Hey there MUSIC lovers !**
+    guild.channels
+      .create("😈Krakinz", {
+        type: "category",
+        permissionOverwrites: [
+          { id: guild.id, deny: ["VIEW_CHANNEL"] },
+          { id: guild.id, allow: ["VIEW_CHANNEL"] },
+        ],
+      })
+      .then((parent) => {
+        guild.channels
+          .create("💜noir", {
+            type: "text",
+            parent,
+            permissionOverwrites: [
+              {
+                id: guild.id,
+                deny: [
+                  "MANAGE_ROLES",
+                  "MANAGE_NICKNAMES",
+                  "MANAGE_CHANNELS",
+                  "KICK_MEMBERS",
+                  "BAN_MEMBERS",
+                ],
+              },
+              {
+                id: guild.id,
+                allow: [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES",
+                  "READ_MESSAGE_HISTORY",
+                ],
+              },
+            ],
+          })
+          .catch(console.error);
+        guild.channels
+          .create("🎤noir", {
+            type: "voice",
+            parent,
+            permissionOverwrites: [
+              {
+                id: guild.id,
+                deny: [
+                  "MANAGE_ROLES",
+                  "MANAGE_NICKNAMES",
+                  "MANAGE_CHANNELS",
+                  "KICK_MEMBERS",
+                  "BAN_MEMBERS",
+                ],
+              },
+              { id: guild.id, allow: ["VIEW_CHANNEL"] },
+            ],
+          })
+          .catch(console.error);
+      });
+    channel.send("@everyone");
+    channel
+      .send(
+        new MessageEmbed()
+          .setColor("#6272a4")
+          .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+          .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+          .setDescription(
+            `
+𝗗𝗲𝗮𝗿: @everyone
+=========:radio_button:=========
+
+ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **😈Krakinz** has been successfully created.
+Please use the channel for any **ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ** commands..`
+          )
+      )
+      .catch(console.error);
+    channel
+      .send(
+        new MessageEmbed()
+          .setColor("#6272a4")
+          .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+          .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+          .setDescription(`❤️‍🔥 **Hey there MUSIC lovers !**
 I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
 Please use the channel **💜Noir** for any ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ commands.
 
 :candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
 Please user ${ռօɨʀʄɨӼ}noir/play/help🦋 to know more.
 
-:star:**ɴᴏᴛᴇ to ᴏᴡɴᴇʀ ᴀɴᴅ ᴍᴏᴅᴇʀꜱ**
-🎃**VERY VERY IMPORTANT**
-Please use **!calib** once to calibrate before first use!`);
-    channel.send(embedThanks).catch(console.error);
+:star:**ɴᴏᴛᴇ to** @everyone:
+ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **😈Krakinz** has been successfully created.
+Please use the channel for any **ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ** commands..`)
+      )
+      .catch(console.error);
     return;
   });
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007
-  // Copyright (C) 2007 Free Software Foundation
-  // Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
-  // of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-  // 💜Noir
-  // Discord Music YouTube player
-  // has been licensed under GNU General Public License
   // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
   // =============================================================================================================================
   ռօɨʀքʟǟʏɛʀ.on("message", async (message) => {
@@ -137,56 +187,64 @@ Please use **!calib** once to calibrate before first use!`);
       message.react("🔥");
       return;
     }
-    if (message.content.startsWith(ռօɨʀʄɨӼ + `calib`)) {
-      if (message.guild.me.hasPermission(`MANAGE_CHANNELS`)) {
-        const embedcheck1 = new MessageEmbed()
-          .setColor("#6272a4")
-          .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
-          .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
-          .setDescription(
-            `
-𝗗𝗲𝗮𝗿 **ADMIN** 
-=========:radio_button:=========
+    //     if (message.content.startsWith(ռօɨʀʄɨӼ + `calib`)) {
+    //       if (guild.me.hasPermission(`MANAGE_CHANNELS`)) {
+    //         const embedcheck1 = new MessageEmbed()
+    //           .setColor("#6272a4")
+    //           .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+    //           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+    //           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+    //           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+    //           .setDescription(
+    //             `
+    // 𝗗𝗲𝗮𝗿: @everyone
+    // =========:radio_button:=========
 
-ᴀ channel ɴᴀᴍᴇ 💜Noir has been successfully created.
-Please use the channel for any ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ commands..`
-          );
-        message.channel.send(embedcheck1).catch(console.error);
-        message.guild.channels.create("💜noir", {
-          type: "GUILD_TEXT",
-          permissionOverwrites: [
-            {
-              id: message.guild.roles.everyone,
-            },
-          ],
-        });
-        console.log(`•💜noir ©️• has been successfully created.`);
-      } else {
-        const embedcheck2 = new MessageEmbed()
-          .setColor("#6272a4")
-          .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
-          .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
-          .setDescription(
-            `
-𝗗𝗲𝗮𝗿 **ADMIN** 
-=========:radio_button:=========
+    // ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **😈Krakinz** has been successfully created.
+    // Please use the channel for any **ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ** commands..`
+    //           );
+    //         message.channel.send(embedcheck1).catch(console.error);
+    //         guild.channels.create("💜noir", {
+    //           type: "GUILD_TEXT",
+    //           permissionOverwrites: [
+    //             {
+    //               id: guild.roles.everyone,
+    //               allow: ["VIEW_CHANNEL", "SEND_MESSAGES", "READ_MESSAGE_HISTORY"],
+    //               deny: [
+    //                 "MANAGE_ROLES",
+    //                 "MANAGE_NICKNAMES",
+    //                 "MANAGE_CHANNELS",
+    //                 "KICK_MEMBERS",
+    //                 "BAN_MEMBERS",
+    //               ],
+    //             },
+    //           ],
+    //         });
+    //         console.log(`•💜noir ©️• has been successfully created.`);
+    //       } else {
+    //         const embedcheck2 = new MessageEmbed()
+    //           .setColor("#6272a4")
+    //           .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+    //           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+    //           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+    //           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+    //           .setDescription(
+    //             `
+    // 𝗗𝗲𝗮𝗿 **ADMIN**
+    // =========:radio_button:=========
 
-•|  _ᴀ channel ɴᴀᴍᴇ 💜Noir could not be created._
-•|  𝗣𝗹𝗲𝗮𝘀𝗲 𝗴𝗶𝘃𝗲 𝗺𝗲 𝘁𝗵𝗲𝘀𝗲 𝗽𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻𝘀:
-=𝘔𝘢𝘯𝘢𝘨𝘦𝘊𝘩𝘢𝘯𝘯𝘦𝘭
-=𝘚𝘦𝘯𝘥𝘔𝘦𝘴𝘴𝘢𝘨𝘦𝘴
-=𝘈𝘵𝘵𝘢𝘤𝘩𝘔𝘦𝘥𝘪𝘢
-=𝘌𝘮𝘣𝘦𝘥𝘴`
-          );
-        message.channel.send(embedcheck2).catch(console.error);
-        console.log(`•💜noir ©️• could not be created.`);
-        return;
-      }
-    }
+    // •|  _ᴀ channel ɴᴀᴍᴇ 💜Noir could not be created._
+    // •|  𝗣𝗹𝗲𝗮𝘀𝗲 𝗴𝗶𝘃𝗲 𝗺𝗲 𝘁𝗵𝗲𝘀𝗲 𝗽𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻𝘀:
+    // =𝘔𝘢𝘯𝘢𝘨𝘦𝘊𝘩𝘢𝘯𝘯𝘦𝘭
+    // =𝘚𝘦𝘯𝘥𝘔𝘦𝘴𝘴𝘢𝘨𝘦𝘴
+    // =𝘈𝘵𝘵𝘢𝘤𝘩𝘔𝘦𝘥𝘪𝘢
+    // =𝘌𝘮𝘣𝘦𝘥𝘴`
+    //           );
+    //         message.channel.send(embedcheck2).catch(console.error);
+    //         console.log(`•💜noir ©️• could not be created.`);
+    //         return;
+    //       }
+    //     }
     const prefixRegex = new RegExp(
       `^(<@!?${ռօɨʀքʟǟʏɛʀ.user.id}>|${escapeRegex(ռօɨʀʄɨӼ)})\\s*`
     );
