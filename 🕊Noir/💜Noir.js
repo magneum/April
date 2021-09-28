@@ -149,11 +149,7 @@ I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to di
 Please use the channel **💜Noir** for any **ɴᴏɪʀ_ᴘʟᴀʏᴇʀ** commands.
 
 :candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
-*Please use*
-${ռօɨʀʄɨӼ}noir 
-${ռօɨʀʄɨӼ}play 
-${ռօɨʀʄɨӼ}help 
-*to know more.*
+*Please use* = **${ռօɨʀʄɨӼ}noir**  | **${ռօɨʀʄɨӼ}play** | **${ռօɨʀʄɨӼ}help** *to know more.*
 
 :star:**ɴᴏᴛᴇ to** @everyone:
 ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **🔱Krakinz** has been successfully created.
