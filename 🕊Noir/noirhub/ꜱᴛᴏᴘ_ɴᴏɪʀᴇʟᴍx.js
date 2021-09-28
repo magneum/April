@@ -128,6 +128,20 @@ Not playing anymusic yet.....`
 
 ⏺ stopped the music!`);
         queue.textChannel.send(exitembeder).catch(console.error);
+        const { id } = getVideoId(`${song.url}`);
+        const ClearEmbedDone = new MessageEmbed()
+          .setColor("#bd93f9")
+          .setAuthor(`•> 🤍Noir by HypeVoidSoul`)
+          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+          .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 𝙶𝙽𝚄(𝙲)𝟸𝟶𝟸𝟷 𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙻𝚊𝚋")
+          .setDescription(
+            `=========:radio_button:=========
+
+Last Song was 👇🏻
+*${song.title}*`
+          );
+        queue.textChannel.send(ClearEmbedDone).catch(console.error);
       }
     },
   };
