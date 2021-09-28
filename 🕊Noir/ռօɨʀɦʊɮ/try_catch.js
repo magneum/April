@@ -9,7 +9,7 @@ try {
     new MessageEmbed()
       .setColor("#DB4434")
       .setTitle("🔺ERROR CAUGHT🔻")
-      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
       .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
       .setDescription(`
 **Noir** has encountered an error.

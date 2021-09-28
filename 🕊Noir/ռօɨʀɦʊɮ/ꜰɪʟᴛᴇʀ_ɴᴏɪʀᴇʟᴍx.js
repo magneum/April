@@ -29,10 +29,10 @@ try {
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`💜Noir\`
@@ -59,10 +59,10 @@ try {
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 **Nothing in Queue!**
 *Add music in Queue first!*`)
@@ -86,10 +86,10 @@ try {
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 **usage:** \`${ռօɨʀʄɨӼ}filter\`
 ▫️ 8D
@@ -123,10 +123,10 @@ try {
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 *Please join a* **Voice Channel** *first*`)
             )
@@ -149,10 +149,10 @@ try {
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`)
@@ -209,10 +209,10 @@ ID= ${message.client.user}`)
                   .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                   .setFooter(`**Example:** ${ռօɨʀʄɨӼ}filter bassboost`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 **That was not a valid filter!**
 
 ▫️ 8D
@@ -244,7 +244,7 @@ ID= ${message.client.user}`)
               .setColor("#6272a4")
               .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setAuthor(
                 "Applied Filter = " + args[0],
                 "https://cdn.discordapp.com/emojis/769935094285860894.gif"
@@ -264,10 +264,10 @@ ID= ${message.client.user}`)
                 .setTitle("PLEASE RESTART MUSIC QUEUE !")
                 .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 *Song Queue has been cleaned up.*
 Restart **queue** and **filter** will be applied.`)
@@ -289,10 +289,10 @@ Restart **queue** and **filter** will be applied.`)
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 **Nothing in Queue!**
 *Add music in Queue first!*`)
@@ -313,7 +313,7 @@ Restart **queue** and **filter** will be applied.`)
     new MessageEmbed()
       .setColor("#DB4434")
       .setTitle("🔺ERROR CAUGHT🔻")
-      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
       .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
       .setDescription(`
 **Noir** has encountered an error.

@@ -38,7 +38,7 @@ try {
               .setDescription(
                 `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`💜Noir\`
@@ -75,7 +75,7 @@ try {
                 .setDescription(
                   `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 There is no queue.`
                 )
@@ -105,7 +105,7 @@ There is no queue.`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 *You need to* **join** *a voice channel first!*`
                 )
@@ -138,7 +138,7 @@ There is no queue.`
               .setFooter(
                 "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
               ).setDescription(`**User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 🔀 Shuffled the queue`)
           )
@@ -156,7 +156,7 @@ There is no queue.`
     new MessageEmbed()
       .setColor("#DB4434")
       .setTitle("🔺ERROR CAUGHT🔻")
-      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
       .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
       .setDescription(`
 **Noir** has encountered an error.

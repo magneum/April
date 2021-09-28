@@ -32,8 +32,8 @@ try {
                 .setColor("#6272a4")
                 .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
-                .setDescription(`=========:radio_button:=========
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+                .setDescription(`=========⚜️=========
 
 **💜Noir** *has left the voice channel!*`)
             )
@@ -68,10 +68,10 @@ try {
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 Only **YouTube** playing/streaming is allowed`)
             )
@@ -99,11 +99,11 @@ Only **YouTube** playing/streaming is allowed`)
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(
                 `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 **Error:** 
 *${error}*`
@@ -152,9 +152,9 @@ Only **YouTube** playing/streaming is allowed`)
             .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
             .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
             .setDescription(`
-=========:radio_button:=========
+=========⚜️=========
 
 **🏷Title-** ${song.title}
 **🔗Link-** ${song.url}
@@ -198,11 +198,11 @@ Only **YouTube** playing/streaming is allowed`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 *You need to* ***join** *a voice channel first!*`
                     )
@@ -223,9 +223,9 @@ Only **YouTube** playing/streaming is allowed`)
                   .setColor("#6272a4")
                   .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 ⏩ *Skipped the song*`)
               )
@@ -252,11 +252,11 @@ Only **YouTube** playing/streaming is allowed`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -281,9 +281,9 @@ Only **YouTube** playing/streaming is allowed`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 🚦 *Paused the music.*`)
                 )
@@ -299,9 +299,9 @@ Only **YouTube** playing/streaming is allowed`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 ▶ *Resumed the music!*`)
                 )
@@ -328,11 +328,11 @@ Only **YouTube** playing/streaming is allowed`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -357,9 +357,9 @@ Only **YouTube** playing/streaming is allowed`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 🔇 Muted the music!`)
                 )
@@ -381,9 +381,9 @@ Only **YouTube** playing/streaming is allowed`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 🔊 Unmuted the music!`)
                 )
@@ -413,11 +413,11 @@ Only **YouTube** playing/streaming is allowed`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -441,9 +441,9 @@ Only **YouTube** playing/streaming is allowed`)
                   .setColor("#6272a4")
                   .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 🔉 Decreased the volume, 
 Volume now at = **${queue.volume}%**`)
@@ -473,11 +473,11 @@ Volume now at = **${queue.volume}%**`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -501,9 +501,9 @@ Volume now at = **${queue.volume}%**`)
                   .setColor("#6272a4")
                   .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 🔊 Increased the volume, the volume is now ${queue.volume}%`)
               )
@@ -529,11 +529,11 @@ Volume now at = **${queue.volume}%**`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -554,9 +554,9 @@ Volume now at = **${queue.volume}%**`)
                   .setColor("#6272a4")
                   .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
               )
@@ -583,11 +583,11 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -610,9 +610,9 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                   .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                   .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
-                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(
-                    `=========:radio_button:=========
+                    `=========⚜️=========
 
 Last Song was 👇🏻
 *${song.title}*`
@@ -647,7 +647,7 @@ Last Song was 👇🏻
     new MessageEmbed()
       .setColor("#DB4434")
       .setTitle("🔺ERROR CAUGHT🔻")
-      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
       .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
       .setDescription(`
 **Noir** has encountered an error.

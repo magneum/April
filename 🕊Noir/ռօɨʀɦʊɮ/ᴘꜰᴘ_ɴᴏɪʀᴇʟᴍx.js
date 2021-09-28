@@ -25,11 +25,11 @@ try {
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
           .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           .setDescription(
             `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`💜Noir\`
@@ -56,7 +56,7 @@ try {
           AvatarEmbed.setColor("#6272a4");
           AvatarEmbed.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`);
           AvatarEmbed.setImage(message.author.displayAvatarURL());
-          AvatarEmbed.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ");
+          AvatarEmbed.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab");
           AvatarEmbed.setDescription("🔥This is **your** Profile Picture");
           AvatarEmbed.setThumbnail(
             `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
@@ -85,7 +85,7 @@ try {
     new MessageEmbed()
       .setColor("#DB4434")
       .setTitle("🔺ERROR CAUGHT🔻")
-      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
       .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
       .setDescription(`
 **Noir** has encountered an error.

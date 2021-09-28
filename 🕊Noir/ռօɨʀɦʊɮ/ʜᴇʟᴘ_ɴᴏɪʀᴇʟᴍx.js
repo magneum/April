@@ -26,7 +26,7 @@ try {
             new MessageEmbed()
               .setDescription(
                 `**User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
 • **${ռօɨʀʄɨӼ}filter** = Music filters when playing audio.
@@ -52,7 +52,7 @@ try {
               .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
               .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           )
           .catch(console.error);
         return;
@@ -74,7 +74,7 @@ try {
             new MessageEmbed()
               .setDescription(
                 `**User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
 • **${ռօɨʀʄɨӼ}filter** = Music filters when playing audio.
@@ -100,7 +100,7 @@ try {
               .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
               .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           )
           .catch(console.error);
         message.channel
@@ -110,9 +110,9 @@ try {
               .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
               .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`**👍 ${message.author} 
-=========:radio_button:=========
+=========⚜️=========
 
 Check your \`direct messages\` 
 for a list of *Noir's* Commands!**
@@ -132,7 +132,7 @@ for a list of *Noir's* Commands!**
     new MessageEmbed()
       .setColor("#DB4434")
       .setTitle("🔺ERROR CAUGHT🔻")
-      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
       .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
       .setDescription(`
 **Noir** has encountered an error.

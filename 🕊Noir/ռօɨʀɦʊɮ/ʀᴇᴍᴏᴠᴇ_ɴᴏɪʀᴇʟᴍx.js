@@ -25,11 +25,11 @@ try {
                         .setTitle("⚠️Warning⚠️")
                         .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                         .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                         .setDescription(
                             `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`💜Noir\`
@@ -53,11 +53,11 @@ try {
                             .setTitle("⚠️Warning⚠️")
                             .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                             .setDescription(
                                 `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 There is no queue.`))
                         .catch(console.error)
@@ -77,11 +77,11 @@ There is no queue.`))
                             .setTitle("⚠️Warning⚠️")
                             .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                             .setDescription(
                                 `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 *You need to* **join** *a voice channel first!*`))
                         .catch(console.error)
@@ -101,11 +101,11 @@ There is no queue.`))
                             .setTitle("⚠️Warning⚠️")
                             .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                             .setDescription(
                                 `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 ⚓️**usage:**${ռօɨʀʄɨӼ}remove <Queue Number>`))
                         .catch(console.error)
@@ -133,9 +133,9 @@ There is no queue.`))
                                 .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                                 .setFooter(
-                                    "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ"
+                                    "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab"
                                 ).setDescription(`**User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 ⏺ Removed **${removed.map((song) => song.title).join(`\n`)}** from the queue.`)
                         )
@@ -156,9 +156,9 @@ There is no queue.`))
                                 .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                                 .setFooter(
-                                    "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ"
+                                    "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab"
                                 ).setDescription(`**User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 ⏺ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`)
                         )
@@ -179,11 +179,11 @@ There is no queue.`))
                             .setTitle("⚠️Warning⚠️")
                             .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
                             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+                            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                             .setDescription(
                                 `
 **User:** ${message.author}
-=========:radio_button:=========
+=========⚜️=========
 
 **usage:**${ռօɨʀʄɨӼ}remove <Queue Number>`))
                         .catch(console.error)
@@ -202,7 +202,7 @@ There is no queue.`))
         new MessageEmbed()
             .setColor("#DB4434")
             .setTitle("🔺ERROR CAUGHT🔻")
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
             .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
             .setDescription(`
   **Noir** has encountered an error.
