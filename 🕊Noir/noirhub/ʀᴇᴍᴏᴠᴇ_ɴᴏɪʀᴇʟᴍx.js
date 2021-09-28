@@ -27,7 +27,7 @@ message.react("🔥");
 const embedfactor = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
@@ -57,7 +57,7 @@ if (!queue) {
 const embedrm1 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
@@ -86,7 +86,7 @@ if (!canModifyQueue(message.member)) {
 const embedrm2 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
@@ -115,7 +115,7 @@ if (!args.length) {
 const embedrm3 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
@@ -158,7 +158,7 @@ queue.textChannel
 .send(
 new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter(
 "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ"
@@ -185,7 +185,7 @@ queue.textChannel
 .send(
 new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter(
 "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ"
@@ -210,7 +210,7 @@ console.log(`we got the last one`);
 const embedrm4 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(

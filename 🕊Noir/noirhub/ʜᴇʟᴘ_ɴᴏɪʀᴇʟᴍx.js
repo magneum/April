@@ -49,7 +49,7 @@ let HELPEMBED = new MessageEmbed()
 `
 )
 .setColor("#6272a4")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ");
@@ -96,7 +96,7 @@ let HELPEMBED = new MessageEmbed()
 `
 )
 .setColor("#6272a4")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ");
@@ -120,7 +120,7 @@ message.channel
 .send(
 new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")

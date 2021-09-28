@@ -39,7 +39,7 @@ queue.textChannel
 .send(
 new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(`=========:radio_button:=========
@@ -62,7 +62,7 @@ const queue = message.client.queue.get(message.guild.id);
 //   .send(
 //     new MessageEmbed()
 //       .setColor("#6272a4")
-//       .setAuthor(`•> 💜Noir by HypeVoidSoul`)
+//       .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 //       .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 //       .setFooter(
 //         "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ"
@@ -82,7 +82,7 @@ message.client.queue.delete(message.guild.id);
 //           .send(
 //             new MessageEmbed()
 //               .setColor("#6272a4")
-//               .setAuthor(`•> 💜Noir by HypeVoidSoul`)
+//               .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 //               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 //               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 //               .setDescription(`=========:radio_button:=========
@@ -117,7 +117,7 @@ highWaterMark: 1 << 25,
 const embedmusicnot = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ").setDescription(`
 **User:** ${message.author}
@@ -151,7 +151,7 @@ console.error(error);
 const embedmusic1 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
@@ -213,7 +213,7 @@ var ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel.send
 new MessageEmbed()
 .setColor("#6272a4")
 .setTitle("💯ᴅɪʀᴇᴄᴛʟʏ ꜱᴛʀᴇᴀᴍɪɴɢ ᴜꜱɪɴɢ-𝐘𝐨𝐮𝐓𝐮𝐛𝐞")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ").setDescription(`
@@ -270,7 +270,7 @@ if (!canModifyQueue(member)) {
 const embedmusic2 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
@@ -299,7 +299,7 @@ queue.textChannel
 .send(
 new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(`**User:** ${message.author}
@@ -325,7 +325,7 @@ if (!canModifyQueue(member)) {
 const embedmusic3 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
@@ -356,7 +356,7 @@ queue.textChannel
 .send(
 new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(
 `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
 )
@@ -378,7 +378,7 @@ queue.textChannel
 .send(
 new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(
 `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
 )
@@ -406,7 +406,7 @@ if (!canModifyQueue(member)) {
 const embedmusic4 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
@@ -437,7 +437,7 @@ queue.textChannel
 .send(
 new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(
 `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
 )
@@ -465,7 +465,7 @@ queue.textChannel
 .send(
 new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(
 `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
 )
@@ -496,7 +496,7 @@ if (!canModifyQueue(member)) {
 const embedmusic5 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
@@ -528,7 +528,7 @@ queue.textChannel
 .send(
 new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(`**User:** ${message.author}
@@ -557,7 +557,7 @@ if (!canModifyQueue(member)) {
 const embedmusic6 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
@@ -589,7 +589,7 @@ queue.textChannel
 .send(
 new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(`**User:** ${message.author}
@@ -614,7 +614,7 @@ if (!canModifyQueue(member)) {
 const embedmusic7 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
@@ -643,7 +643,7 @@ queue.textChannel
 .send(
 new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(`**User:** ${message.author}
@@ -669,7 +669,7 @@ if (!canModifyQueue(member)) {
 const embedmusic8 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
@@ -698,7 +698,7 @@ queue.songs = [];
 //               .send(
 //                 new MessageEmbed()
 //                   .setColor("#bd93f9")
-//                   .setAuthor(`•> 💜Noir by HypeVoidSoul`)
+//                   .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 //                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 //                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 //                   .setDescription(`=========:radio_button:=========
@@ -714,7 +714,7 @@ queue.songs = [];
 const { id } = getVideoId(`${song.url}`);
 const ClearEmbed = new MessageEmbed()
 .setColor("#bd93f9")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")

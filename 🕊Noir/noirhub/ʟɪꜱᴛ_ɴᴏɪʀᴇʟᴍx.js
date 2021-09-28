@@ -40,7 +40,7 @@ message.react("🔥");
 const embedfactor = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
@@ -74,7 +74,7 @@ if (!channel) {
 const embedlist1 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(`
@@ -100,7 +100,7 @@ if (!args.length) {
 const embedlist2 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(`
@@ -128,7 +128,7 @@ if (!permissions.has(`CONNECT`)) {
 const embedlist3 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(`
@@ -154,7 +154,7 @@ if (!permissions.has(`SPEAK`)) {
 const embedlist4 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(`
@@ -176,7 +176,7 @@ if (serverQueue && channel !== message.guild.me.voice.channel) {
 const embedlist5 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(`
@@ -234,7 +234,7 @@ console.error(error);
 const embedlist6 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
@@ -332,7 +332,7 @@ playlistEmbed.description.substr(0, 2007) +
 "**💜Noir**\nPlaylist larger than character limit...";
 const embedlist7 = new MessageEmbed()
 .setColor("#6272a4")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
@@ -372,7 +372,7 @@ await channel.leave();
 const embedlist8 = new MessageEmbed()
 .setColor("#E0D268")
 .setTitle("⚠️Warning⚠️")
-.setAuthor(`•> 💜Noir by HypeVoidSoul`)
+.setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
 .setDescription(
