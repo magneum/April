@@ -8,19 +8,24 @@ try {
   // =============================================================================================================================
   module.exports = {
     name: "help",
-  // =============================================================================================================================
-  // GNU GENERAL PUBLIC LICENSE
-  // Version 3, 29 June 2007
-  // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-  // =============================================================================================================================
+    // =============================================================================================================================
+    // GNU GENERAL PUBLIC LICENSE
+    // Version 3, 29 June 2007
+    // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
+    // =============================================================================================================================
     execute(message) {
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "help") &&
         message.channel.name !== "💜noir"
       ) {
-        let HELPEMBED = new MessageEmbed()
-          .setDescription(
-            `**User:** ${message.author}
+        message.react("✅");
+        message.react("🍧");
+
+        message.channel
+          .send(
+            new MessageEmbed()
+              .setDescription(
+                `**User:** ${message.author}
 =========:radio_button:=========
 
 📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
@@ -42,26 +47,33 @@ try {
 • **${ռօɨʀʄɨӼ}stop** = Stops the music.
 • **${ռօɨʀʄɨӼ}vol** = Change volume of currently playing music.
 `
+              )
+              .setColor("#6272a4")
+              .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+              .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
           )
-          .setColor("#6272a4")
-          .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
-          .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ");
-
-        message.react("✅");
-        message.react("🍧");
-
-        message.channel.send(HELPEMBED).catch(console.error);
+          .catch(console.error);
         return;
       }
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "help") &&
         message.channel.name === "💜noir"
       ) {
-        let HELPEMBED = new MessageEmbed()
-          .setDescription(
-            `**User:** ${message.author}
+        message.react("✅");
+        message.react("🍧");
+        message.author.send(
+          new MessageEmbed()
+            .setColor("#6272a4")
+            .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
+        );
+
+        message.author
+          .send(
+            new MessageEmbed()
+              .setDescription(
+                `**User:** ${message.author}
 =========:radio_button:=========
 
 📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
@@ -83,22 +95,14 @@ try {
 • **${ռօɨʀʄɨӼ}stop** = Stops the music.
 • **${ռօɨʀʄɨӼ}vol** = Change volume of currently playing music.
 `
+              )
+              .setColor("#6272a4")
+              .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
+              .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ")
           )
-          .setColor("#6272a4")
-          .setAuthor(`💜Nօɨʀ-ɮʏ-ӄʀǟӄɨռʐ💜`)
-          .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 ӄʀǟӄɨռʐ & ӄʀǟӄɨռʐʟǟɮ");
-
-        message.react("✅");
-        message.react("🍧");
-        message.author.send(
-          new MessageEmbed()
-            .setColor("#6272a4")
-            .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
-        );
-
-        message.author.send(HELPEMBED).catch(console.error);
+          .catch(console.error);
         message.channel
           .send(
             new MessageEmbed()
