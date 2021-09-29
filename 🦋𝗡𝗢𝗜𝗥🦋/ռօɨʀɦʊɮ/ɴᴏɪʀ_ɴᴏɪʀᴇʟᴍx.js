@@ -41,7 +41,6 @@ module.exports = {
           .setColor("#6272a4")
           .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
           .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`);
-
         message.react("✅");
         message.react("🍧");
         message.author.send(
@@ -49,7 +48,6 @@ module.exports = {
             .setColor("#6272a4")
             .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
         );
-
         message.author.send(NoirEMBED).catch(console.error);
         message.channel
           .send(
@@ -73,6 +71,11 @@ for extra info on *Noir* **
           });
         return;
       }
+      // =============================================================================================================================
+      // GNU GENERAL PUBLIC LICENSE
+      // Version 3, 29 June 2007
+      // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
+      // =============================================================================================================================
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "noir") &&
         message.channel.name !== "💜noir"
@@ -97,6 +100,11 @@ for extra info on *Noir* **
         message.channel.send(NoirEMBED).catch(console.error);
         return;
       }
+      // =============================================================================================================================
+      // GNU GENERAL PUBLIC LICENSE
+      // Version 3, 29 June 2007
+      // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
+      // =============================================================================================================================
     } catch (ErrorNoir) {
       message.channel.send(
         new MessageEmbed()
