@@ -8,7 +8,7 @@ try {
   const ռօɨʀքʟǟʏɛʀ = new Client({ disableEveryone: false });
   const { ռօɨʀӄɛռ, ռօɨʀʄɨӼ, ռօɨʀքʊʀɢɛʀ } = require("./noirtem/noir_env.js");
   const ռօɨʀֆɛʀʋɛʀ = express();
-  const PORT = process.env.PORT || 3000;
+  const PORT = process.env.PORT || 8080;
   ռօɨʀֆɛʀʋɛʀ.listen(PORT);
   ռօɨʀքʟǟʏɛʀ.login(ռօɨʀӄɛռ);
   ռօɨʀքʟǟʏɛʀ.prefix = ռօɨʀʄɨӼ;
