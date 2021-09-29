@@ -1,11 +1,15 @@
 try {
   const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
-  const { play } = require("./💜Noir");
+  const { ռօɨʀքʟǟʏɛʀ } = require("./ռօɨʀքʟǟʏɛʀ");
   const { ռօɨʀʄɨӼ, ռօɨʀքʊʀɢɛʀ } = require("../noirtem/noir_env");
   // =============================================================================================================================
+  //
+  //
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007
   // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
+  //
+  //
   // =============================================================================================================================
   module.exports = {
     name: "filter",
@@ -256,7 +260,7 @@ ID= ${message.client.user}`)
           //   });
           // });
 
-          play(song, message, client, NoirSelected);
+          ռօɨʀքʟǟʏɛʀ(song, message, client, NoirSelected);
           message.channel
             .send(
               new MessageEmbed()

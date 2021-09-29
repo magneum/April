@@ -8,7 +8,7 @@ try {
   } = require("../noirtem/noir_env");
   const https = require("https");
   const ytdl = require("ytdl-core");
-  const { play } = require("./💜Noir");
+  const { ռօɨʀքʟǟʏɛʀ } = require("./ռօɨʀքʟǟʏɛʀ");
   const YouTubeAPI = require("simple-youtube-api");
   const youtube = new YouTubeAPI(ռօɨʀȶʊɮɛ);
   const ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ = /^.*(list=)([^#\&\?]*).*/gi;
@@ -19,9 +19,13 @@ try {
     /^(https?:\/\/)?(www\.)?(m\.)?(youtube\.com|youtu\.?be)\/.+$/gi;
   const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
   // =============================================================================================================================
+  //
+  //
   // GNU GENERAL PUBLIC LICENSE
   // Version 3, 29 June 2007
   // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
+  //
+  //
   // =============================================================================================================================
   module.exports = {
     name: "play",
@@ -503,7 +507,7 @@ Audio Not Found`
             console.log(e.message);
           }
           await queueConstruct.connection.voice.setSelfDeaf(true);
-          play(queueConstruct.songs[0], message);
+          ռօɨʀքʟǟʏɛʀ(queueConstruct.songs[0], message);
         } catch (error) {
           console.error(error);
           message.client.queue.delete(message.guild.id);
