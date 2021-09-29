@@ -161,15 +161,16 @@ There is nothing playing that I could skip for you.`
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
           .setDescription(`
-  **Noir** has encountered an error.
-  
-  Please either report to 🔰**https://discord.gg/ucPpXWFK**  in discord channel
-  or
-  Report to 🔰**@Krakns** in telegram group
-  
-  
-  **🔺Error Caught🔻**
-  *${ErrorNoir}*`)
+**Noir** has encountered an error.
+
+Please report to either 
+🔰**In Discord channel** = https://discord.gg/ucPpXWFK
+or
+🔰**In telegram group** = https://t.me/Krakns
+
+
+**🔺Error Caught🔻**
+*${ErrorNoir}*`)
       );
       console.error(ErrorNoir);
     }

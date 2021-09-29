@@ -161,9 +161,10 @@ is not playing anymusic yet.....`
           .setDescription(`
 **Noir** has encountered an error.
 
-Please either report to 🔰**https://discord.gg/ucPpXWFK**  in discord channel
+Please report to either 
+🔰**In Discord channel** = https://discord.gg/ucPpXWFK
 or
-Report to 🔰**@Krakns** in telegram group
+🔰**In telegram group** = https://t.me/Krakns
 
 
 **🔺Error Caught🔻**
