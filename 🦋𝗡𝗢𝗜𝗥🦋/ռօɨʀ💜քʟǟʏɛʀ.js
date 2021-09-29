@@ -77,6 +77,55 @@ has been licensed under GNU General Public License
           channel.type === `text` &&
           channel.permissionsFor(guild.me).has(`SEND_MESSAGES`)
       );
+      channel.send("@everyone");
+      channel
+        .send(
+          new MessageEmbed()
+            .setColor("#6272a4")
+            .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
+            .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+            .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+            .setDescription(
+              `
+𝗗𝗲𝗮𝗿: @everyone
+=========⚜️=========
+
+ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **🔱Krakinz** has been successfully created.
+Please use the channel for any **ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ** commands..`
+            )
+        )
+        .catch(console.error);
+      // =============================================================================================================================
+      // GNU GENERAL PUBLIC LICENSE
+      // Version 3, 29 June 2007
+      // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
+      // ============================================================================================================================
+      channel
+        .send(
+          new MessageEmbed()
+            .setColor("#6272a4")
+            .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
+            .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+            .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+            .setDescription(`❤️‍🔥 **Hey there MUSIC lovers !**
+I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
+Please use the channel **💜Noir** for any **ɴᴏɪʀ_ᴘʟᴀʏᴇʀ** commands.
+
+:candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
+*Please use* = **${ռօɨʀʄɨӼ}noir**  | **${ռօɨʀʄɨӼ}play** | **${ռօɨʀʄɨӼ}help** *to know more.*
+
+:star:**ɴᴏᴛᴇ to** @everyone:
+ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **🔱Krakinz** has been successfully created.
+Please use only that channel for any **ɴᴏɪʀ_ᴘʟᴀʏᴇʀ** commands..`)
+        )
+        .catch(console.error);
+      // =============================================================================================================================
+      // GNU GENERAL PUBLIC LICENSE
+      // Version 3, 29 June 2007
+      // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
+      // ============================================================================================================================
       guild.channels
         .create("🔱KRAKINZ", {
           type: "category",
@@ -112,52 +161,8 @@ has been licensed under GNU General Public License
               ],
             })
             .catch(console.error);
+          return;
         });
-      // =============================================================================================================================
-      // GNU GENERAL PUBLIC LICENSE
-      // Version 3, 29 June 2007
-      // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ============================================================================================================================
-      channel.send("@everyone");
-      channel
-        .send(
-          new MessageEmbed()
-            .setColor("#6272a4")
-            .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
-            .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-            .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-            .setDescription(
-              `
-𝗗𝗲𝗮𝗿: @everyone
-=========⚜️=========
-
-ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **🔱Krakinz** has been successfully created.
-Please use the channel for any **ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ** commands..`
-            )
-        )
-        .catch(console.error);
-      channel
-        .send(
-          new MessageEmbed()
-            .setColor("#6272a4")
-            .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
-            .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-            .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-            .setDescription(`❤️‍🔥 **Hey there MUSIC lovers !**
-I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
-Please use the channel **💜Noir** for any **ɴᴏɪʀ_ᴘʟᴀʏᴇʀ** commands.
-
-:candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
-*Please use* = **${ռօɨʀʄɨӼ}noir**  | **${ռօɨʀʄɨӼ}play** | **${ռօɨʀʄɨӼ}help** *to know more.*
-
-:star:**ɴᴏᴛᴇ to** @everyone:
-ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **🔱Krakinz** has been successfully created.
-Please use only that channel for any **ɴᴏɪʀ_ᴘʟᴀʏᴇʀ** commands..`)
-        )
-        .catch(console.error);
-      return;
     });
     // =============================================================================================================================
     // GNU GENERAL PUBLIC LICENSE
