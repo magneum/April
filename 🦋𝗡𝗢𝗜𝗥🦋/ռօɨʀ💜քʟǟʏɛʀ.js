@@ -112,25 +112,25 @@ has been licensed under GNU General Public License
               ],
             })
             .catch(console.error);
-          guild.channels
-            .create("🎤noir", {
-              type: "voice",
-              parent,
-              permissionOverwrites: [
-                {
-                  id: guild.id,
-                  deny: [
-                    "MANAGE_ROLES",
-                    "MANAGE_NICKNAMES",
-                    "MANAGE_CHANNELS",
-                    "KICK_MEMBERS",
-                    "BAN_MEMBERS",
-                  ],
-                },
-                { id: guild.id, allow: ["VIEW_CHANNEL"] },
-              ],
-            })
-            .catch(console.error);
+          // guild.channels
+          //   .create("🎤noir", {
+          //     type: "voice",
+          //     parent,
+          //     permissionOverwrites: [
+          //       {
+          //         id: guild.id,
+          //         deny: [
+          //           "MANAGE_ROLES",
+          //           "MANAGE_NICKNAMES",
+          //           "MANAGE_CHANNELS",
+          //           "KICK_MEMBERS",
+          //           "BAN_MEMBERS",
+          //         ],
+          //       },
+          //       { id: guild.id, allow: ["VIEW_CHANNEL"] },
+          //     ],
+          //   })
+          //   .catch(console.error);
         });
       // =============================================================================================================================
       // GNU GENERAL PUBLIC LICENSE
