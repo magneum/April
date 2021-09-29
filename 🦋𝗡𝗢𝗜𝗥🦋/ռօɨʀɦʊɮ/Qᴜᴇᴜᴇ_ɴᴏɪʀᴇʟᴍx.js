@@ -18,156 +18,177 @@ module.exports = {
   // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
   // =============================================================================================================================
   async execute(message) {
-    if (
-      message.content.startsWith(ռօɨʀʄɨӼ + "queue") &&
-      message.channel.name !== "💜noir"
-    ) {
-      message.react("❌");
-      message.react("🔥");
-      message.channel
-        .send(
-          new MessageEmbed()
-            .setColor("#E0D268")
-            .setTitle("⚠️Warning⚠️")
-            .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
-            .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-            .setDescription(
-              `
+    try {
+      if (
+        message.content.startsWith(ռօɨʀʄɨӼ + "queue") &&
+        message.channel.name !== "💜noir"
+      ) {
+        message.react("❌");
+        message.react("🔥");
+        message.channel
+          .send(
+            new MessageEmbed()
+              .setColor("#E0D268")
+              .setTitle("⚠️Warning⚠️")
+              .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
+              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+              .setDescription(
+                `
 **User:** ${message.author}
 =========⚜️=========
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`💜Noir\`
 ⚠️Please use 👆🏻 for any **ɴᴏɪʀ** commands.`
-            )
-        )
-        .catch(console.error);
-      // .then((message) => {
-      // message.delete({
-      // timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-      // });
-      // });
-      return;
-    }
+              )
+          )
+          .catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+        // });
+        // });
+        return;
+      }
 
-    if (
-      message.content.startsWith(ռօɨʀʄɨӼ + "queue") &&
-      message.channel.name === "💜noir"
-    ) {
-      const permissions = message.channel.permissionsFor(message.client.user);
-      if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
-        message.react("❌");
-        message.react("🔥");
-        message.channel
-          .send(
-            new MessageEmbed()
-              .setColor("#E0D268")
-              .setTitle("⚠️Warning⚠️")
-              .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
-              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-              .setDescription(
-                `
+      if (
+        message.content.startsWith(ռօɨʀʄɨӼ + "queue") &&
+        message.channel.name === "💜noir"
+      ) {
+        const permissions = message.channel.permissionsFor(message.client.user);
+        if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
+          message.react("❌");
+          message.react("🔥");
+          message.channel
+            .send(
+              new MessageEmbed()
+                .setColor("#E0D268")
+                .setTitle("⚠️Warning⚠️")
+                .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
+                .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+                .setDescription(
+                  `
 **User:** ${message.author}
 =========⚜️=========
 
 Missing permission to manage messages or add reactions`
-              )
-          )
-          .catch(console.error);
-        // .then((message) => {
-        // message.delete({
-        // timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-        // });
-        // });
-        return;
-      }
+                )
+            )
+            .catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+          // });
+          // });
+          return;
+        }
 
-      const queue = message.client.queue.get(message.guild.id);
-      if (!queue) {
-        message.react("❌");
-        message.react("🔥");
-        message.channel
-          .send(
-            new MessageEmbed()
-              .setColor("#E0D268")
-              .setTitle("⚠️Warning⚠️")
-              .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
-              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-              .setDescription(
-                `
+        const queue = message.client.queue.get(message.guild.id);
+        if (!queue) {
+          message.react("❌");
+          message.react("🔥");
+          message.channel
+            .send(
+              new MessageEmbed()
+                .setColor("#E0D268")
+                .setTitle("⚠️Warning⚠️")
+                .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
+                .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+                .setDescription(
+                  `
 **User:** ${message.author}
 =========⚜️=========
 
 ⏺ Nothing playing in this server`
-              )
-          )
-          .catch(console.error);
-        // .then((message) => {
-        // message.delete({
-        // timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-        // });
-        // });
-        return;
-      }
+                )
+            )
+            .catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+          // });
+          // });
+          return;
+        }
 
-      let currentPage = 0;
-      message.react("✅");
-      message.react("🍧");
-      const embeds = generateQueueEmbed(message, queue.songs);
-      const queueEmbed = await message.channel.send(
-        `**🏷Page Num:** - ${currentPage + 1}/${embeds.length}`,
-        embeds[currentPage]
-      );
+        let currentPage = 0;
+        message.react("✅");
+        message.react("🍧");
+        const embeds = generateQueueEmbed(message, queue.songs);
+        const queueEmbed = await message.channel.send(
+          `**🏷Page Num:** - ${currentPage + 1}/${embeds.length}`,
+          embeds[currentPage]
+        );
 
-      try {
-        await queueEmbed.react(`⬅️`);
-        await queueEmbed.react(`⏺`);
-        await queueEmbed.react(`➡️`);
-      } catch (error) {
-        console.error(error);
-        message.channel.send(error.message).catch(console.error);
-      }
-
-      const filter = (reaction, user) =>
-        [`⬅️`, `⏺`, `➡️`].includes(reaction.emoji.name) &&
-        message.author.id === user.id;
-      const collector = queueEmbed.createReactionCollector(filter, {
-        time: 60000,
-      });
-
-      collector.on(`collect`, async (reaction, user) => {
         try {
-          if (reaction.emoji.name === `➡️`) {
-            if (currentPage < embeds.length - 1) {
-              currentPage++;
-              queueEmbed.edit("**🏷Page Num:** - ", {
-                page: currentPage + 1,
-                length: embeds.length,
-              }),
-                embeds[currentPage];
-            }
-          } else if (reaction.emoji.name === `⬅️`) {
-            if (currentPage !== 0) {
-              --currentPage;
-              queueEmbed.edit("**🏷Page Num:** - ", {
-                page: currentPage + 1,
-                length: embeds.length,
-              }),
-                embeds[currentPage];
-            }
-          } else {
-            collector.stop();
-            reaction.message.reactions.removeAll();
-          }
-          await reaction.users.remove(message.author.id);
+          await queueEmbed.react(`⬅️`);
+          await queueEmbed.react(`⏺`);
+          await queueEmbed.react(`➡️`);
         } catch (error) {
           console.error(error);
-          return message.channel.send(error.message).catch(console.error);
+          message.channel.send(error.message).catch(console.error);
         }
-      });
+
+        const filter = (reaction, user) =>
+          [`⬅️`, `⏺`, `➡️`].includes(reaction.emoji.name) &&
+          message.author.id === user.id;
+        const collector = queueEmbed.createReactionCollector(filter, {
+          time: 60000,
+        });
+
+        collector.on(`collect`, async (reaction, user) => {
+          try {
+            if (reaction.emoji.name === `➡️`) {
+              if (currentPage < embeds.length - 1) {
+                currentPage++;
+                queueEmbed.edit("**🏷Page Num:** - ", {
+                  page: currentPage + 1,
+                  length: embeds.length,
+                }),
+                  embeds[currentPage];
+              }
+            } else if (reaction.emoji.name === `⬅️`) {
+              if (currentPage !== 0) {
+                --currentPage;
+                queueEmbed.edit("**🏷Page Num:** - ", {
+                  page: currentPage + 1,
+                  length: embeds.length,
+                }),
+                  embeds[currentPage];
+              }
+            } else {
+              collector.stop();
+              reaction.message.reactions.removeAll();
+            }
+            await reaction.users.remove(message.author.id);
+          } catch (error) {
+            console.error(error);
+            return message.channel.send(error.message).catch(console.error);
+          }
+        });
+      }
+    } catch (ErrorNoir) {
+      message.channel.send(
+        new MessageEmbed()
+          .setColor("#DB4434")
+          .setTitle("🔺ERROR CAUGHT🔻")
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+          .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
+          .setDescription(`
+  **Noir** has encountered an error.
+  
+  Please either report to 🔰**https://discord.gg/ucPpXWFK**  in discord channel
+  or
+  Report to 🔰**@Krakns** in telegram group
+  
+  
+  **🔺Error Caught🔻**
+  *${ErrorNoir}*`)
+      );
+      console.error(ErrorNoir);
     }
   },
 };
