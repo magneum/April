@@ -78,7 +78,7 @@ has been licensed under GNU General Public License
           channel.permissionsFor(guild.me).has(`SEND_MESSAGES`)
       );
       guild.channels
-        .create("🔱Krakinz", {
+        .create("🔱KRAKINZ", {
           type: "category",
           permissionOverwrites: [
             { id: guild.id, deny: ["VIEW_CHANNEL"] },

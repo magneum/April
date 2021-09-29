@@ -36,7 +36,6 @@ module.exports = {
                 `
 **User:** ${message.author}
 =========⚜️=========
-
 **Category:** \`🔱Krakinz\`
 **Channel:** \`💜Noir\`
 ⚠️Please use 👆🏻 for any **ɴᴏɪʀ** commands.`
@@ -71,7 +70,6 @@ module.exports = {
               .setDescription(
                 `
 **User:** ${message.author}
-
 ⌛️Average ping of noir's Server **${Math.round(message.client.ws.ping)}ms**`
               )
           )
@@ -97,13 +95,10 @@ module.exports = {
           .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
           .setDescription(`
 **Noir** has encountered an error.
-
 Please report to either 
 🔰**In Discord channel** = https://discord.gg/ucPpXWFK
 or
 🔰**In telegram group** = https://t.me/Krakns
-
-
 **🔺Error Caught🔻**
 *${ErrorNoir}*`)
       );
