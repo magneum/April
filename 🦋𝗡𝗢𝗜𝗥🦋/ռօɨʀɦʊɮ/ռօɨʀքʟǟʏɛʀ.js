@@ -93,7 +93,7 @@ Only **YouTube** playing/streaming is allowed`)
       } catch (error) {
         if (queue) {
           queue.songs.shift();
-          module.exports.ռօɨʀքʟǟʏɛʀ(queue.songs[0], message);
+          module.exports.play(queue.songs[0], message);
         }
         // =============================================================================================================================
         // GNU GENERAL PUBLIC LICENSE
@@ -142,23 +142,23 @@ Only **YouTube** playing/streaming is allowed`)
       // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
       // ============================================================================================================================
       const dispatcher = queue.connection
-        .ռօɨʀքʟǟʏɛʀ(stream, { type: streamType })
+        .play(stream, { type: streamType })
         .on("finish", () => {
           if (collector && !collector.ended) collector.stop();
           queue.connection.removeAllListeners("disconnect");
           if (queue.loop) {
             let lastSong = queue.songs.shift();
             queue.songs.push(lastSong);
-            module.exports.ռօɨʀքʟǟʏɛʀ(queue.songs[0], message);
+            module.exports.play(queue.songs[0], message);
           } else {
             queue.songs.shift();
-            module.exports.ռօɨʀքʟǟʏɛʀ(queue.songs[0], message);
+            module.exports.play(queue.songs[0], message);
           }
         })
         .on("error", (err) => {
           console.error(err);
           queue.songs.shift();
-          module.exports.ռօɨʀքʟǟʏɛʀ(queue.songs[0], message);
+          module.exports.play(queue.songs[0], message);
         });
       dispatcher.setVolumeLogarithmic(queue.volume / 100);
       // =============================================================================================================================
