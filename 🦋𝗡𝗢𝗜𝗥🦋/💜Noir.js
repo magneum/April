@@ -192,23 +192,23 @@ Please use only that channel for any **ɴᴏɪʀ_ᴘʟᴀʏᴇʀ** commands..`)
 //
 //
 // =============================================================================================================================
-try {
-  ռօɨʀքʟǟʏɛʀ.on("message", async (message) => {
-    if (message.author.bot) {
-      return;
-    }
-    if (!message.guild) {
-      message.react("❌");
-      message.react("🔥");
-      message.reply(
-        new MessageEmbed()
-          .setColor("#E0D268")
-          .setTitle("⚠️Warning⚠️")
-          .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
-          .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-          .setDescription(`
+
+ռօɨʀքʟǟʏɛʀ.on("message", async (message) => {
+  if (message.author.bot) {
+    return;
+  }
+  if (!message.guild) {
+    message.react("❌");
+    message.react("🔥");
+    message.reply(
+      new MessageEmbed()
+        .setColor("#E0D268")
+        .setTitle("⚠️Warning⚠️")
+        .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
+        .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+        .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+        .setDescription(`
 **User:** ${message.author}
 =========⚜️=========
 
@@ -219,69 +219,66 @@ try {
 • You are currently in a **DMChannel** and so you have been **restricted** using any **Noir 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀**
 • Add me in your channel and then all commands will be automatically accepted.
 🔰- https://github.com/HypeVoidSoul/Noir`)
-      );
-
-      return;
-    }
-
-    const prefixRegex = new RegExp(
-      `^(<@!?${ռօɨʀքʟǟʏɛʀ.user.id}>|${escapeRegex(ռօɨʀʄɨӼ)})\\s*`
     );
 
-    if (!prefixRegex.test(message.content)) {
-      return;
-    }
-    const [matchedPrefix] = message.content.match(prefixRegex);
-    const args = message.content.slice(matchedPrefix.length).trim().split(/ +/);
-    const commandName = args.shift().toLowerCase();
-    const command =
-      ռօɨʀքʟǟʏɛʀ.commands.get(commandName) ||
-      ռօɨʀքʟǟʏɛʀ.commands.find(
-        (cmd) => cmd.aliases && cmd.aliases.includes(commandName)
-      );
-    if (!command) {
-      return;
-    }
-    if (!NoirEngineOil.has(command.name)) {
-      NoirEngineOil.set(command.name, new Collection());
-    }
-    const now = Date.now();
-    const timestamps = NoirEngineOil.get(command.name);
-    const cooldownAmount = (command.cooldown || 1) * 1000;
-    if (timestamps.has(message.author.id)) {
-      const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
-      if (now < expirationTime) {
-        const timeLeft = (expirationTime - now) / 1000;
-        message.react("❌");
-        message.react("🔥");
-        message.channel
-          .send(
-            new MessageEmbed()
-              .setColor("#E0D268")
-              .setTitle("⚠️Warning⚠️")
-              .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
-              .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-              .setDescription(`
-**User:** ${message.author}
-=========⚜️=========
+    return;
+  }
+  // =============================================================================================================================
+  //
+  //
+  // GNU GENERAL PUBLIC LICENSE
+  // Version 3, 29 June 2007
+  // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
+  //
+  //
+  // =============================================================================================================================
+  const prefixRegex = new RegExp(
+    `^(<@!?${ռօɨʀքʟǟʏɛʀ.user.id}>|${escapeRegex(ռօɨʀʄɨӼ)})\\s*`
+  );
 
-Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
-              command.name
-            }' command.      `)
-          )
-          .catch(console.error);
-        return;
-      }
-    }
-    timestamps.set(message.author.id, now);
-    setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
+  if (!prefixRegex.test(message.content)) {
+    return;
+  }
+  // =============================================================================================================================
+  //
+  //
+  // GNU GENERAL PUBLIC LICENSE
+  // Version 3, 29 June 2007
+  // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
+  //
+  //
+  // =============================================================================================================================
+  const [matchedPrefix] = message.content.match(prefixRegex);
+  const args = message.content.slice(matchedPrefix.length).trim().split(/ +/);
+  const commandName = args.shift().toLowerCase();
+  const command =
+    ռօɨʀքʟǟʏɛʀ.commands.get(commandName) ||
+    ռօɨʀքʟǟʏɛʀ.commands.find(
+      (cmd) => cmd.aliases && cmd.aliases.includes(commandName)
+    );
+  if (!command) {
+    return;
+  }
 
-    try {
-      command.execute(message, args);
-    } catch (error) {
-      console.error(error);
+  if (!NoirEngineOil.has(command.name)) {
+    NoirEngineOil.set(command.name, new Collection());
+  }
+  // =============================================================================================================================
+  //
+  //
+  // GNU GENERAL PUBLIC LICENSE
+  // Version 3, 29 June 2007
+  // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
+  //
+  //
+  // =============================================================================================================================
+  const now = Date.now();
+  const timestamps = NoirEngineOil.get(command.name);
+  const cooldownAmount = (command.cooldown || 1) * 1000;
+  if (timestamps.has(message.author.id)) {
+    const expirationTime = timestamps.get(message.author.id) + cooldownAmount;
+    if (now < expirationTime) {
+      const timeLeft = (expirationTime - now) / 1000;
       message.react("❌");
       message.react("🔥");
       message.channel
@@ -293,38 +290,56 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
             .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-            .setDescription(
-              `
+            .setDescription(`
+**User:** ${message.author}
+=========⚜️=========
+
+Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
+            command.name
+          }' command.      `)
+        )
+        .catch(console.error);
+      return;
+    }
+  }
+  // =============================================================================================================================
+  //
+  //
+  // GNU GENERAL PUBLIC LICENSE
+  // Version 3, 29 June 2007
+  // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
+  //
+  //
+  // =============================================================================================================================
+  timestamps.set(message.author.id, now);
+  setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
+  try {
+    command.execute(message, args);
+  } catch (error) {
+    console.error(error);
+    message.react("❌");
+    message.react("🔥");
+    message.channel
+      .send(
+        new MessageEmbed()
+          .setColor("#E0D268")
+          .setTitle("⚠️Warning⚠️")
+          .setAuthor(`𝐍𝐨𝐢𝐫💜𝐛𝐲🔱𝐊𝐫𝐚𝐤𝐢𝐧𝐳`)
+          .setImage(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+          .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+          .setDescription(
+            `
 **User:** ${message.author}
 =========⚜️=========
 
 There was an error executing that command.`
-            )
-        )
-        .catch(console.error)
-        .then((message) => {
-          message.delete({ timeout: `${ռօɨʀքʊʀɢɛʀ}` });
-          return;
-        });
-    }
-  });
-} catch (ErrorNoir) {
-  message.channel.send(
-    new MessageEmbed()
-      .setColor("#DB4434")
-      .setTitle("🔺ERROR CAUGHT🔻")
-      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-      .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
-      .setDescription(`
-**Noir** has encountered an error.
-
-Please either report to 🔰**https://discord.gg/ucPpXWFK**  in discord channel
-or
-Report to 🔰**@Krakns** in telegram group
-
-
-**🔺Error Caught🔻**
-*${ErrorNoir}*`)
-  );
-  console.error(ErrorNoir);
-}
+          )
+      )
+      .catch(console.error)
+      .then((message) => {
+        message.delete({ timeout: `${ռօɨʀքʊʀɢɛʀ}` });
+        return;
+      });
+  }
+});
