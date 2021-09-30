@@ -18,9 +18,8 @@ module.exports = {
   // =============================================================================================================================
   execute(message) {
     try {
-      const NoirHelper = `˜”*°• =========⚜️========= •°*”˜.
-
-**📌•♪•♪𝐌𝐚𝐧𝐮𝐚𝐥-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•**
+      const NoirHelper = `
+*📌•♪•♪𝐌𝐚𝐧𝐮𝐚𝐥-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•*
 • **${ռօɨʀʄɨӼ}filter** = Music filters when playing audio.
 • **${ռօɨʀʄɨӼ}help** = Display this commands and descriptions.
 • **${ռօɨʀʄɨӼ}noir** = Display the  license and a few more info.
@@ -34,7 +33,7 @@ module.exports = {
 • **${ռօɨʀʄɨӼ}shuffle** = Shuffle music queue.
 • **${ռօɨʀʄɨӼ}skipto** =Skip to the selected queue number.
 
-**📌•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•**
+*📌•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•*
 • **⏭** = Skip the currently playing song.
 • **⏸** = Pause/Resume the currently playing music.
 • **🔇** = Mute/Unmute the currently playing music.
