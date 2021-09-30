@@ -38,7 +38,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "play") &&
-        message.channel.name !== "💜noir"
+        message.channel.name !== "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -56,7 +56,7 @@ module.exports = {
 =========⚜️=========
 
 **Category:** \`🔱Krakinz\`
-**Channel:** \`💜Noir\`
+**Channel:** \`ռօɨʀ💜քʟǟʏɛʀ\`
 ⚠️Please use 👆🏻 for any **ɴᴏɪʀ** commands.`
               )
           )
@@ -108,7 +108,7 @@ Please use **${ռօɨʀʄɨӼ}list** command for any YouTube playlists..`
       // ============================================================================================================================
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "play") &&
-        message.channel.name === "💜noir"
+        message.channel.name === "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
         const { channel } = message.member.voice;
         const serverQueue = message.client.queue.get(message.guild.id);
@@ -529,7 +529,7 @@ Audio Not Found`
           serverQueue.songs.push(song);
           serverQueue.textChannel
             .send(
-              `**💜Noir**\n${song.title}\n_has been added to the queue by_ ${message.author}\n\n`
+              `**ռօɨʀ💜քʟǟʏɛʀ**\n${song.title}\n_has been added to the queue by_ ${message.author}\n\n`
             )
             .catch(console.error);
           // .then((message) => {

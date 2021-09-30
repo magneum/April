@@ -21,7 +21,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "ping") &&
-        message.channel.name !== "💜noir"
+        message.channel.name !== "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
         message.react("❌");
         message.channel
@@ -37,7 +37,7 @@ module.exports = {
 **User:** ${message.author}
 =========⚜️=========
 **Category:** \`🔱Krakinz\`
-**Channel:** \`💜Noir\`
+**Channel:** \`ռօɨʀ💜քʟǟʏɛʀ\`
 ⚠️Please use 👆🏻 for any **ɴᴏɪʀ** commands.`
               )
           )
@@ -56,7 +56,7 @@ module.exports = {
       // ============================================================================================================================
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "ping") &&
-        message.channel.name === "💜noir"
+        message.channel.name === "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
         message.react("✅");
         message.react("🍧");

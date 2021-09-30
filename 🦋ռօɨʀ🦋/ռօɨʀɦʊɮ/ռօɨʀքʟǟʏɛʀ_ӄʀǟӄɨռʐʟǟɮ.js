@@ -35,7 +35,7 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`=========⚜️=========
 
-**💜Noir** *has left the voice channel!*`)
+**ռօɨʀ💜քʟǟʏɛʀ** *has left the voice channel!*`)
             )
             .catch(console.error)
             .then((message) => {

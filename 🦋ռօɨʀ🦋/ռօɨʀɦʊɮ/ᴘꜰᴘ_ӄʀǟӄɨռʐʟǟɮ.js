@@ -25,7 +25,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "pfp") &&
-        message.channel.name !== "💜noir"
+        message.channel.name !== "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
         message.react("❌");
         const embedfactor = new MessageEmbed()
@@ -40,7 +40,7 @@ module.exports = {
 =========⚜️=========
 
 **Category:** \`🔱Krakinz\`
-**Channel:** \`💜Noir\`
+**Channel:** \`ռօɨʀ💜քʟǟʏɛʀ\`
 ⚠️Please use 👆🏻 for any **ɴᴏɪʀ** commands.`
           );
         message.channel.send(embedfactor).catch(console.error);
@@ -58,7 +58,7 @@ module.exports = {
       // ============================================================================================================================
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "pfp") &&
-        message.channel.name === "💜noir"
+        message.channel.name === "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
         message.react("✅");
         message.react("🍧");

@@ -23,7 +23,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "np") &&
-        message.channel.name !== "💜noir"
+        message.channel.name !== "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -41,7 +41,7 @@ module.exports = {
 =========⚜️=========
 
 **Category:** \`🔱Krakinz\`
-**Channel:** \`💜Noir\`
+**Channel:** \`ռօɨʀ💜քʟǟʏɛʀ\`
 ⚠️Please use 👆🏻 for any **ɴᴏɪʀ** commands.`
               )
           )
@@ -60,7 +60,7 @@ module.exports = {
       // =============================================================================================================================
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "np") &&
-        message.channel.name === "💜noir"
+        message.channel.name === "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
@@ -108,7 +108,7 @@ Noir is not playing anymusic yet....`
         // =============================================================================================================================
         const { id } = getVideoId(`${song.url}`);
         let current = new MessageEmbed()
-          .setTitle("**💜Noir**\n*Now playing*")
+          .setTitle("**ռօɨʀ💜քʟǟʏɛʀ**\n*Now playing*")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
           .setDescription(`${song.title}\n${song.url}`)

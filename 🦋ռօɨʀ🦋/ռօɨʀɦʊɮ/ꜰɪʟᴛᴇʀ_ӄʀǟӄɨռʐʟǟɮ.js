@@ -22,7 +22,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "filter") &&
-        message.channel.name !== "💜noir"
+        message.channel.name !== "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -39,7 +39,7 @@ module.exports = {
 =========⚜️=========
 
 **Category:** \`🔱Krakinz\`
-**Channel:** \`💜Noir\`
+**Channel:** \`ռօɨʀ💜քʟǟʏɛʀ\`
 ⚠️Please use 👆🏻 for any **ɴᴏɪʀ** commands.`)
           )
           .catch(console.error);
@@ -128,7 +128,7 @@ module.exports = {
       // =============================================================================================================================
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "filter") &&
-        message.channel.name === "💜noir"
+        message.channel.name === "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
         if (!message.member.voice.channel) {
           message.react("❌");

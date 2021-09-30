@@ -89,7 +89,7 @@ try {
             `
 𝗗𝗲𝗮𝗿: @everyone
 =========⚜️=========
-ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **🔱Krakinz** has been successfully created.
+ᴀ channel ɴᴀᴍᴇ **ռօɨʀ💜քʟǟʏɛʀ** inside **🔱Krakinz** has been successfully created.
 Please use the channel for any **ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ** commands..`
           )
       )
@@ -109,11 +109,11 @@ Please use the channel for any **ɴᴏɪʀ💜ᴘʟᴀʏᴇʀ** commands..`
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           .setDescription(`❤️‍🔥 **Hey there MUSIC lovers !**
 I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
-Please use the channel **💜Noir** for any **ɴᴏɪʀ_ᴘʟᴀʏᴇʀ** commands.
+Please use the channel **ռօɨʀ💜քʟǟʏɛʀ** for any **ɴᴏɪʀ_ᴘʟᴀʏᴇʀ** commands.
 :candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
 *Please use* = **${ռօɨʀʄɨӼ}noir**  | **${ռօɨʀʄɨӼ}play** | **${ռօɨʀʄɨӼ}help** *to know more.*
 :star:**ɴᴏᴛᴇ to** @everyone:
-ᴀ channel ɴᴀᴍᴇ **💜Noir** inside **🔱Krakinz** has been successfully created.
+ᴀ channel ɴᴀᴍᴇ **ռօɨʀ💜քʟǟʏɛʀ** inside **🔱Krakinz** has been successfully created.
 Please use only that channel for any **ɴᴏɪʀ_ᴘʟᴀʏᴇʀ** commands..`)
       )
       .catch(console.error);
@@ -132,7 +132,7 @@ Please use only that channel for any **ɴᴏɪʀ_ᴘʟᴀʏᴇʀ** commands..`)
       })
       .then((parent) => {
         guild.channels
-          .create("💜noir", {
+          .create("ռօɨʀ💜քʟǟʏɛʀ", {
             type: "text",
             parent,
             permissionOverwrites: [

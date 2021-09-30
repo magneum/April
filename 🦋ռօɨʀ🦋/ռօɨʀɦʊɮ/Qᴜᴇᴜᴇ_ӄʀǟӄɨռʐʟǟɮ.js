@@ -21,7 +21,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "queue") &&
-        message.channel.name !== "💜noir"
+        message.channel.name !== "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -39,7 +39,7 @@ module.exports = {
 =========⚜️=========
 
 **Category:** \`🔱Krakinz\`
-**Channel:** \`💜Noir\`
+**Channel:** \`ռօɨʀ💜քʟǟʏɛʀ\`
 ⚠️Please use 👆🏻 for any **ɴᴏɪʀ** commands.`
               )
           )
@@ -58,7 +58,7 @@ module.exports = {
       // ============================================================================================================================
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "queue") &&
-        message.channel.name === "💜noir"
+        message.channel.name === "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
         const permissions = message.channel.permissionsFor(message.client.user);
         if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
@@ -234,7 +234,7 @@ function generateQueueEmbed(message, queue) {
       .setColor("#6272a4")
       .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
       .setDescription(
-        `**💜Noir**\n\n⚜️**Current Song** -_[${queue[0].title}]_\n\n${info}`
+        `**ռօɨʀ💜քʟǟʏɛʀ**\n\n⚜️**Current Song** -_[${queue[0].title}]_\n\n${info}`
       );
     embeds.push(embed);
   }

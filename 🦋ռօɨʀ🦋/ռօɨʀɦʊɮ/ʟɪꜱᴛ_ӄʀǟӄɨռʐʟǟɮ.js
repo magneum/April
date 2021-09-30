@@ -32,7 +32,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "list") &&
-        message.channel.name !== "💜noir"
+        message.channel.name !== "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -50,7 +50,7 @@ module.exports = {
 =========⚜️=========
 
 **Category:** \`🔱Krakinz\`
-**Channel:** \`💜Noir\`
+**Channel:** \`ռօɨʀ💜քʟǟʏɛʀ\`
 ⚠️Please use 👆🏻 for any **ɴᴏɪʀ** commands.`
               )
           )
@@ -69,7 +69,7 @@ module.exports = {
       // =============================================================================================================================
       if (
         message.content.startsWith(ռօɨʀʄɨӼ + "list") &&
-        message.channel.name === "💜noir"
+        message.channel.name === "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
         const { channel } = message.member.voice;
         const serverQueue = message.client.queue.get(message.guild.id);
@@ -288,7 +288,7 @@ Playlist not found`
           // =============================================================================================================================
         } else if (scdl.isValidUrl(args[0])) {
           if (args[0].includes(`/sets/`)) {
-            message.channel.send("**💜Noir**\n⌛ Fetching the playlist...");
+            message.channel.send("**ռօɨʀ💜քʟǟʏɛʀ**\n⌛ Fetching the playlist...");
             playlist = await scdl.getSetInfo(args[0], notneeded);
             videos = playlist.tracks.map((track) => ({
               title: track.title,
@@ -361,7 +361,7 @@ Playlist not found`
         if (playlistEmbed.description.length >= 2048)
           playlistEmbed.description =
             playlistEmbed.description.substr(0, 2007) +
-            "**💜Noir**\nPlaylist larger than character limit...";
+            "**ռօɨʀ💜քʟǟʏɛʀ**\nPlaylist larger than character limit...";
         message.react("✅");
         message.react("🍧");
         message.channel

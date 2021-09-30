@@ -20,7 +20,7 @@ module.exports = {
     // =============================================================================================================================
     execute(message, args) {
         try {
-            if (message.content.startsWith(ռօɨʀʄɨӼ + "remove") && message.channel.name !== "💜noir") {
+            if (message.content.startsWith(ռօɨʀʄɨӼ + "remove") && message.channel.name !== "ռօɨʀ💜քʟǟʏɛʀ") {
                 message.react("❌");
                 message.react("🔥");
                 message.channel
@@ -36,7 +36,7 @@ module.exports = {
 =========⚜️=========
 
 **Category:** \`🔱Krakinz\`
-**Channel:** \`💜Noir\`
+**Channel:** \`ռօɨʀ💜քʟǟʏɛʀ\`
 ⚠️Please use 👆🏻 for any **ɴᴏɪʀ** commands.`))
                     .catch(console.error)
                 // .then((message) => {
@@ -51,7 +51,7 @@ module.exports = {
             // Version 3, 29 June 2007
             // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
             // ============================================================================================================================
-            if (message.content.startsWith(ռօɨʀʄɨӼ + "remove") && message.channel.name === "💜noir") {
+            if (message.content.startsWith(ռօɨʀʄɨӼ + "remove") && message.channel.name === "ռօɨʀ💜քʟǟʏɛʀ") {
                 const queue = message.client.queue.get(message.guild.id);
                 if (!queue) {
                     message.react("❌");
