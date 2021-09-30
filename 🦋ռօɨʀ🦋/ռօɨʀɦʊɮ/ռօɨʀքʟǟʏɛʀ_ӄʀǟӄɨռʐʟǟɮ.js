@@ -1,6 +1,6 @@
 const ytdl = require("ytdl-core-discord");
-const { canModifyQueue, ɴᴏɪʀᴡᴀᴋᴇ, ռօɨʀքʊʀɢɛʀ } = require("../🦋ռօɨʀ🦋/noirtem/noir_env");
-const { MessageEmbed } = require("../🦋ռօɨʀ🦋/ӄʀǟӄɨռʐʟǟɮ/src");
+const { canModifyQueue, ɴᴏɪʀᴡᴀᴋᴇ, ռօɨʀքʊʀɢɛʀ } = require("../noirtem/noir_env");
+const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const getVideoId = require("get-video-id");
 // =============================================================================================================================
 //

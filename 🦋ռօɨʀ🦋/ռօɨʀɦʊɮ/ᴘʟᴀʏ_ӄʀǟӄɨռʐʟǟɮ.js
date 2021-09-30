@@ -7,7 +7,7 @@ const {
 } = require("../noirtem/noir_env");
 const https = require("https");
 const ytdl = require("ytdl-core");
-const { play } = require("../ռօɨʀ🦋ʟǟȶɛʀ/ռօɨʀքʟǟʏɛʀ_ӄʀǟӄɨռʐʟǟɮ");
+const { play } = require("./ռօɨʀքʟǟʏɛʀ_ӄʀǟӄɨռʐʟǟɮ");
 const YouTubeAPI = require("simple-youtube-api");
 const youtube = new YouTubeAPI(ռօɨʀȶʊɮɛ);
 const ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ = /^.*(list=)([^#\&\?]*).*/gi;
