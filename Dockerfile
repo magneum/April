@@ -18,7 +18,7 @@ RUN git clone https://github.com/Krakinz/Noir.git
 RUN cd Noir
 RUN yarn
 WORKDIR /Noir
-CMD nodemon 🦋𝗡𝗢𝗜𝗥🦋/ռօɨʀ💜քʟǟʏɛʀ.js
+CMD nodemon 🦋ռօɨʀ🦋/ռօɨʀ💜քʟǟʏɛʀ.js
 #   =============================================================================================================================
 #   GNU GENERAL PUBLIC LICENSE
 #   Version 3, 29 June 2007
