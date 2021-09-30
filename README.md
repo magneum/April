@@ -2,7 +2,7 @@
 
 # 💜『 ᴅɪꜱᴄᴏʀᴅ ᴍᴜꜱɪᴄ ʙᴏᴛ: NOIR 』💜
 
-<p align="centre"><img  width="100%" height="100%" img src="https://github.com/Krakinz/Noir/blob/VOID/%F0%9F%A6%8B%F0%9D%97%A1%F0%9D%97%A2%F0%9D%97%9C%F0%9D%97%A5%F0%9F%A6%8B/noirtem/Noir%F0%9F%A4%8DPlayer.jpeg" /></p>
+<p align="centre"><img  width="100%" height="100%" img src="https://github.com/Krakinz/Noir/blob/KrakinzLab/%F0%9F%A6%8B%F0%9D%97%A1%F0%9D%97%A2%F0%9D%97%9C%F0%9D%97%A5%F0%9F%A6%8B/noirtem/Noir%F0%9F%A4%8DPlayer.jpeg" /></p>
 
 
 # ❓ WΉY MΛDΣ ƬΉIS BӨƬ?
