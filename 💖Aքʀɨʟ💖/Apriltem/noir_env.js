@@ -20,7 +20,7 @@ exports.canModifyQueue = (member) => {
   }
 };
 exports.Aքʀɨʟȶʊɮɛ = process.env.AprilYT;
-exports.AքʀɨʟʄɨӼ = process.env.BOTFIX;
+exports.AքʀɨʟʄɨӼ = process.env.AprilFIX;
 exports.Aքʀɨʟӄɛռ = process.env.AprilES;
 exports.ᴀᴘʀɪʟᴍᴀx = process.env.AprilMAX;
 exports.ᴀᴘʀɪʟᴠᴏʟ = process.env.AprilVOL;
