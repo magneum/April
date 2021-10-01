@@ -132,7 +132,7 @@ message.react("🍧");
 queue.textChannel
 .send(
 new MessageEmbed()
-.setColor("#6272a4")
+.setColor("#660000")
 .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/April-Player.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")

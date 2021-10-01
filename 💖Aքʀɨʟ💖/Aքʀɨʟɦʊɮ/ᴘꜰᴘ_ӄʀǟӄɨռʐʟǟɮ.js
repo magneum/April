@@ -67,7 +67,7 @@ module.exports = {
         let AvatarEmbed = new MessageEmbed();
         const user = message.mentions.users.first();
         if (!message.mentions.users.first()) {
-          AvatarEmbed.setColor("#6272a4");
+          AvatarEmbed.setColor("#660000");
           AvatarEmbed.setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`);
           AvatarEmbed.setImage(message.author.displayAvatarURL());
           AvatarEmbed.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab");
@@ -78,7 +78,7 @@ module.exports = {
           message.channel.send(AvatarEmbed);
           return;
         } else {
-          AvatarEmbed.setColor("#6272a4");
+          AvatarEmbed.setColor("#660000");
           AvatarEmbed.setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`);
           AvatarEmbed.setImage(user.displayAvatarURL());
           AvatarEmbed.setFooter(

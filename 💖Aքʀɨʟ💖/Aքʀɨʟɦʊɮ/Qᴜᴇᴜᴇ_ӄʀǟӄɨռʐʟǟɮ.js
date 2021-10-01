@@ -231,7 +231,7 @@ function generateQueueEmbed(message, queue) {
       .join(`\n`);
     const embed = new MessageEmbed()
       .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-      .setColor("#6272a4")
+      .setColor("#660000")
       .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
       .setDescription(
         `**Aքʀɨʟ❣️քʟǟʏɛʀ**\n\n⚜️**Current Song** -_[${queue[0].title}]_\n\n${info}`

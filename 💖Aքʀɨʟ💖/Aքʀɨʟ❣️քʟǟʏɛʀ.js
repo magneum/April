@@ -80,7 +80,7 @@ try {
     channel
       .send(
         new MessageEmbed()
-          .setColor("#6272a4")
+          .setColor("#660000")
           .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -102,7 +102,7 @@ Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..`
     channel
       .send(
         new MessageEmbed()
-          .setColor("#6272a4")
+          .setColor("#660000")
           .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)

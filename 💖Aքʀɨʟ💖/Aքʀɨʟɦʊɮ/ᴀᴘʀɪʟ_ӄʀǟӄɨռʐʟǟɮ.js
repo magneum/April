@@ -35,14 +35,14 @@ module.exports = {
         message.react("🍧");
         message.author.send(
           new MessageEmbed()
-            .setColor("#6272a4")
+            .setColor("#660000")
             .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
         );
         message.author
           .send(
             new MessageEmbed()
               .setDescription(`**User:** ${message.author}\n${AprilNore}`)
-              .setColor("#6272a4")
+              .setColor("#660000")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -53,7 +53,7 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setDescription(`**User:** ${message.author}\n${AprilNore}`)
-              .setColor("#6272a4")
+              .setColor("#660000")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
