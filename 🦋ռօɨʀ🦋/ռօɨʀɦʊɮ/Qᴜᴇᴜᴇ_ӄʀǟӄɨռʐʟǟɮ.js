@@ -1,5 +1,5 @@
-const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
-const { ռօɨʀʄɨӼ, ռօɨʀքʊʀɢɛʀ } = require("../noirtem/noir_env");
+const { MessageEmbed } = require('../ӄʀǟӄɨռʐʟǟɮ/src');
+const { ռօɨʀʄɨӼ, ռօɨʀքʊʀɢɛʀ } = require('../noirtem/noir_env');
 // =============================================================================================================================
 //
 //
@@ -10,7 +10,7 @@ const { ռօɨʀʄɨӼ, ռօɨʀքʊʀɢɛʀ } = require("../noirtem/noir_env");
 //
 // =============================================================================================================================
 module.exports = {
-  name: "queue",
+  name: 'queue',
   cooldown: 3,
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
@@ -20,19 +20,19 @@ module.exports = {
   async execute(message) {
     try {
       if (
-        message.content.startsWith(ռօɨʀʄɨӼ + "queue") &&
-        message.channel.name !== "ռօɨʀ💜քʟǟʏɛʀ"
+        message.content.startsWith(ռօɨʀʄɨӼ + 'queue') &&
+        message.channel.name !== 'ռօɨʀ💜քʟǟʏɛʀ'
       ) {
-        message.react("❌");
-        message.react("🔥");
+        message.react('❌');
+        message.react('🔥');
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#E0D268")
-              .setTitle("⚠️Warning⚠️")
+              .setColor('#E0D268')
+              .setTitle('⚠️Warning⚠️')
               .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+              .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
               .setDescription(
                 `
 **User:** ${message.author}
@@ -57,21 +57,21 @@ module.exports = {
       // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
       // ============================================================================================================================
       if (
-        message.content.startsWith(ռօɨʀʄɨӼ + "queue") &&
-        message.channel.name === "ռօɨʀ💜քʟǟʏɛʀ"
+        message.content.startsWith(ռօɨʀʄɨӼ + 'queue') &&
+        message.channel.name === 'ռօɨʀ💜քʟǟʏɛʀ'
       ) {
         const permissions = message.channel.permissionsFor(message.client.user);
         if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
-          message.react("❌");
-          message.react("🔥");
+          message.react('❌');
+          message.react('🔥');
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#E0D268")
-                .setTitle("⚠️Warning⚠️")
+                .setColor('#E0D268')
+                .setTitle('⚠️Warning⚠️')
                 .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+                .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
                 .setDescription(
                   `
 **User:** ${message.author}
@@ -95,16 +95,16 @@ Missing permission to manage messages or add reactions`
         // ============================================================================================================================
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
-          message.react("❌");
-          message.react("🔥");
+          message.react('❌');
+          message.react('🔥');
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#E0D268")
-                .setTitle("⚠️Warning⚠️")
+                .setColor('#E0D268')
+                .setTitle('⚠️Warning⚠️')
                 .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+                .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
                 .setDescription(
                   `
 **User:** ${message.author}
@@ -127,8 +127,8 @@ Missing permission to manage messages or add reactions`
         // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
         // ============================================================================================================================
         let currentPage = 0;
-        message.react("✅");
-        message.react("🍧");
+        message.react('✅');
+        message.react('🍧');
         const embeds = generateQueueEmbed(message, queue.songs);
         const queueEmbed = await message.channel.send(
           `**🏷Page Num:** - ${currentPage + 1}/${embeds.length}`,
@@ -164,7 +164,7 @@ Missing permission to manage messages or add reactions`
             if (reaction.emoji.name === `➡️`) {
               if (currentPage < embeds.length - 1) {
                 currentPage++;
-                queueEmbed.edit("**🏷Page Num:** - ", {
+                queueEmbed.edit('**🏷Page Num:** - ', {
                   page: currentPage + 1,
                   length: embeds.length,
                 }),
@@ -173,7 +173,7 @@ Missing permission to manage messages or add reactions`
             } else if (reaction.emoji.name === `⬅️`) {
               if (currentPage !== 0) {
                 --currentPage;
-                queueEmbed.edit("**🏷Page Num:** - ", {
+                queueEmbed.edit('**🏷Page Num:** - ', {
                   page: currentPage + 1,
                   length: embeds.length,
                 }),
@@ -198,10 +198,10 @@ Missing permission to manage messages or add reactions`
     } catch (ErrorNoir) {
       message.channel.send(
         new MessageEmbed()
-          .setColor("#DB4434")
-          .setTitle("🔺ERROR CAUGHT🔻")
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-          .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
+          .setColor('#DB4434')
+          .setTitle('🔺ERROR CAUGHT🔻')
+          .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+          .setThumbnail('https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg')
           .setDescription(`
 **Noir** has encountered an error.
 
@@ -230,9 +230,9 @@ function generateQueueEmbed(message, queue) {
       .map((track) => `${++j} - [${track.title}](${track.url})`)
       .join(`\n`);
     const embed = new MessageEmbed()
-      .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
-      .setColor("#6272a4")
-      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+      .setThumbnail('https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg')
+      .setColor('#6272a4')
+      .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
       .setDescription(
         `**ռօɨʀ💜քʟǟʏɛʀ**\n\n⚜️**Current Song** -_[${queue[0].title}]_\n\n${info}`
       );
