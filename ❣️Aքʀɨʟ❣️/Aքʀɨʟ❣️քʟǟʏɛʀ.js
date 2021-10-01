@@ -132,7 +132,7 @@ Please use only that channel for any **ᴀᴘʀɪʟ_ᴘʟᴀʏᴇʀ** commands..
       })
       .then((parent) => {
         guild.channels
-          .create("aքʀɨʟ💖քʟǟʏɛʀ™️", {
+          .create("april💖player", {
             type: "text",
             parent,
             permissionOverwrites: [

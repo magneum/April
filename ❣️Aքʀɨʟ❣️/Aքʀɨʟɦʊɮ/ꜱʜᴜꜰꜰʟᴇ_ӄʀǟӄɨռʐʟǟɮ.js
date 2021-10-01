@@ -21,7 +21,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "shuffle") &&
-        message.channel.name !== "aքʀɨʟ💖քʟǟʏɛʀ™️"
+        message.channel.name !== "april💖player"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -60,7 +60,7 @@ module.exports = {
       // ============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "shuffle") &&
-        message.channel.name === "aքʀɨʟ💖քʟǟʏɛʀ™️"
+        message.channel.name === "april💖player"
       ) {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {

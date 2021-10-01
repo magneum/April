@@ -38,7 +38,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "play") &&
-        message.channel.name !== "aքʀɨʟ💖քʟǟʏɛʀ™️"
+        message.channel.name !== "april💖player"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -108,7 +108,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`
       // ============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "play") &&
-        message.channel.name === "aքʀɨʟ💖քʟǟʏɛʀ™️"
+        message.channel.name === "april💖player"
       ) {
         const { channel } = message.member.voice;
         const serverQueue = message.client.queue.get(message.guild.id);

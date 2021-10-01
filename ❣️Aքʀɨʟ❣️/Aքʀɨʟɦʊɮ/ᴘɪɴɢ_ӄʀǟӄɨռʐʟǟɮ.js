@@ -21,7 +21,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "ping") &&
-        message.channel.name !== "aքʀɨʟ💖քʟǟʏɛʀ™️"
+        message.channel.name !== "april💖player"
       ) {
         message.react("❌");
         message.channel
@@ -56,7 +56,7 @@ module.exports = {
       // ============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "ping") &&
-        message.channel.name === "aքʀɨʟ💖քʟǟʏɛʀ™️"
+        message.channel.name === "april💖player"
       ) {
         message.react("✅");
         message.react("🍧");

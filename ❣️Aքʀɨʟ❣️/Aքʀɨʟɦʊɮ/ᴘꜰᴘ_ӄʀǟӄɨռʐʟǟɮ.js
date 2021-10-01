@@ -25,7 +25,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "pfp") &&
-        message.channel.name !== "aքʀɨʟ💖քʟǟʏɛʀ™️"
+        message.channel.name !== "april💖player"
       ) {
         message.react("❌");
         const embedfactor = new MessageEmbed()
@@ -60,7 +60,7 @@ module.exports = {
       // ============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "pfp") &&
-        message.channel.name === "aքʀɨʟ💖քʟǟʏɛʀ™️"
+        message.channel.name === "april💖player"
       ) {
         message.react("✅");
         message.react("🍧");
