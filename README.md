@@ -2,7 +2,7 @@
 
 # ❣️『 ᴅɪꜱᴄᴏʀᴅ ᴍᴜꜱɪᴄ ʙᴏᴛ: April 』❣️
 
-<p align="centre"><img  width="100%" height="100%" img src="https://github.com/Krakinz/April/blob/KrakinzLab/%F0%9F%92%96A%D6%84%CA%80%C9%A8%CA%9F%F0%9F%92%96/A%D6%84%CA%80%C9%A8%CA%9F%D5%BC%C9%9B%CA%8B/A%D6%84%CA%80%C9%A8%CA%9F%D6%84%CA%9F%C7%9F%CA%8F%C9%9B%CA%80.png" /></p>
+<p align="centre"><img  width="100%" height="100%" img src="https://github.com/Krakinz/April/blob/KrakinzLab/%E2%9D%A3%EF%B8%8FA%D6%84%CA%80%C9%A8%CA%9F%E2%9D%A3%EF%B8%8F/A%D6%84%CA%80%C9%A8%CA%9F%D5%BC%C9%9B%CA%8B/A%D6%84%CA%80%C9%A8%CA%9F%D6%84%CA%9F%C7%9F%CA%8F%C9%9B%CA%80.png" /></p>
 
 # ❓ WΉY MΛDΣ ƬΉIS BӨƬ?
 
@@ -19,7 +19,7 @@ rather i will make a new bot with Discord.js-V13.
 
 # 〽️ MΣΣƬ US ӨЯ CΉΣCK ӨƬΉΣЯ BӨƬS
 
-- [![Generic badge](https://img.shields.io/badge/❣️April_Priority_Speaker❣️-purple.svg)](https://discord.com/api/oauth2/authorize?client_id=885784029511696424&permissions=8&scope=bot)
+- [![Generic badge](https://img.shields.io/badge/❣️April_Priority_Speaker❣️-red.svg)](https://discord.com/api/oauth2/authorize?client_id=893513011627692072&permissions=8&scope=bot)
   𝙳𝚒𝚛𝚎𝚌𝚝𝚕𝚢 𝚞𝚜𝚎 𝚃𝚑𝚎 𝙱𝚘𝚝 𝚒𝚗 Discord
 - [![Generic badge](https://img.shields.io/badge/𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙱𝚘𝚝-Vïå_ßð†-orange.svg)](https://t.me/HypeVoidBot) 𝘛𝘶𝘳𝘯 𝘰𝘯 𝘣𝘰𝘵 𝘪𝘯 𝘵𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘢𝘯𝘥 𝘵𝘺𝘱𝘦 /us
 
