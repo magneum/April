@@ -1,5 +1,5 @@
-const { MessageEmbed } = require("../🦋ռօɨʀ🦋/ӄʀǟӄɨռʐʟǟɮ/src");
-const { ռօɨʀʄɨӼ, ռօɨʀքʊʀɢɛʀ } = require("../🦋ռօɨʀ🦋/noirtem/noir_env");
+const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
+const { ռօɨʀʄɨӼ, ռօɨʀքʊʀɢɛʀ } = require("../noirtem/noir_env");
 // =============================================================================================================================
 //
 //
