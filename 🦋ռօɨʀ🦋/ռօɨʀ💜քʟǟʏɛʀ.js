@@ -4,9 +4,9 @@
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
 // ============================================================================================================================
 const os = require("os");
-const { join } = require("path");
 const express = require("express");
 const { readdirSync } = require("fs");
+const { join } = require("path");
 const { Client, Collection } = require("./ӄʀǟӄɨռʐʟǟɮ/src");
 const ռօɨʀքʟǟʏɛʀ = new Client({ disableEveryone: false });
 const { ռօɨʀӄɛռ, ռօɨʀʄɨӼ, ռօɨʀքʊʀɢɛʀ } = require("./noirtem/noir_env.js");

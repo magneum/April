@@ -1,15 +1,20 @@
 try:
     import disnake
     import asyncio
+    import logging
+    from loguru import *
     from os import getenv
+    from dotenv import load_dotenv
     from disnake.ext import commands
     # ===========================================================================================================================
     # GNU GENERAL PUBLIC LICENSE
     # Version 3, 29 June 2007
     # 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
     # ============================================================================================================================
-    ռօɨʀʄɨӼ = "!"
-    ռօɨʀքʟǟʏɛʀ = commands.Bot(command_prefix=">",
+    load_dotenv("./.env")
+    NOIRES = getenv("NOIRES")
+    ռօɨʀʄɨӼ = getenv("BOTFIX")
+    ռօɨʀքʟǟʏɛʀ = commands.Bot(command_prefix=ռօɨʀʄɨӼ,
                               test_guilds=[889786523426373632])
     # ===========================================================================================================================
     # GNU GENERAL PUBLIC LICENSE
@@ -17,8 +22,8 @@ try:
     # 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
     # ============================================================================================================================
     @ռօɨʀքʟǟʏɛʀ.slash_command(name="ping", description="𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️")
-    async def ping(inter):
-        await inter.response.send_message(
+    async def ping(speaker):
+        await speaker.response.send_message(
             f"Pong! {round(ռօɨʀքʟǟʏɛʀ.latency * 1000)}ms")
 
     # ===========================================================================================================================
@@ -27,7 +32,7 @@ try:
     # 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
     # ============================================================================================================================
     @ռօɨʀքʟǟʏɛʀ.slash_command(name="help", description="𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️")
-    async def help(inter):
+    async def help(speaker):
         embed = disnake.Embed(
             title="𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️",
             description=f"""
@@ -62,10 +67,10 @@ try:
             url="https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
         embed.set_image(url="https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
         embed.set_footer(text="🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-        if inter.channel.name == "ռօɨʀ💜քʟǟʏɛʀ":
-            await inter.response.send_message(embed=embed)
+        if speaker.channel.name == "ռօɨʀ💜քʟǟʏɛʀ":
+            await speaker.response.send_message(embed=embed)
         else:
-            await inter.author.send(embed=embed)
+            await speaker.author.send(embed=embed)
 
     # ===========================================================================================================================
     # GNU GENERAL PUBLIC LICENSE
@@ -73,7 +78,7 @@ try:
     # 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
     # ============================================================================================================================
     @ռօɨʀքʟǟʏɛʀ.slash_command(name="noir", description="𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️")
-    async def noir(inter):
+    async def noir(speaker):
         embed = disnake.Embed(
             title="𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️",
             description=f"""=========⚜️=========
@@ -93,21 +98,49 @@ try:
             url="https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
         embed.set_image(url="https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
         embed.set_footer(text="🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-        if inter.channel.name == "ռօɨʀ💜քʟǟʏɛʀ":
-            await inter.response.send_message(embed=embed)
+        if speaker.channel.name == "ռօɨʀ💜քʟǟʏɛʀ":
+            await speaker.response.send_message(embed=embed)
         else:
-            await inter.author.send(embed=embed)
+            await speaker.author.send(embed=embed)
 
     # ===========================================================================================================================
     # GNU GENERAL PUBLIC LICENSE
     # Version 3, 29 June 2007
     # 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
     # ============================================================================================================================
-    ռօɨʀքʟǟʏɛʀ.run()
+    class InterceptHandler(logging.Handler):
+        LEVELS_MAP = {
+            logging.CRITICAL: "CRITICAL",
+            logging.ERROR: "ERROR",
+            logging.WARNING: "WARNING",
+            logging.INFO: "INFO",
+            logging.DEBUG: "DEBUG"
+        }
+
+        def _get_level(self, record):
+            return self.LEVELS_MAP.get(record.levelno, record.levelno)
+
+        def emit(self, record):
+            logger_opt = logger.opt(depth=6,
+                                    exception=record.exc_info,
+                                    ansi=True,
+                                    lazy=True)
+            logger_opt.log(self._get_level(record), record.getMessage())
+
+    logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
+    NoirLog = logging.getLogger(__name__)
     # ===========================================================================================================================
     # GNU GENERAL PUBLIC LICENSE
     # Version 3, 29 June 2007
     # 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
     # ============================================================================================================================
+    NoirLog.info(
+        "~~~~~~~~~~~~~~~~~~~~~~~>  𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️ <~~~~~~~~~~~~~~~~~~~~~~~"
+    )
+    NoirLog.info("💜Noir Discord Handler Started")
+    NoirLog.info(
+        "~~~~~~~~~~~~~~~~~~~~~~~>  𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️ <~~~~~~~~~~~~~~~~~~~~~~~"
+    )
+    ռօɨʀքʟǟʏɛʀ.run(NOIRES)
 except Exception as e:
     print(e)
