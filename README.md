@@ -19,7 +19,7 @@ rather i will make a new bot with Discord.js-V13.
 
 # 〽️ MΣΣƬ US ӨЯ CΉΣCK ӨƬΉΣЯ BӨƬS
 
-- [![Generic badge](https://img.shields.io/badge/❣️April_Priority_Speaker❣️-purple.svg)](https://discord.com/api/oauth2/authorize?client_id=885784029511696424&permissions=8&scope=bot)
+- [![Generic badge](https://img.shields.io/badge/❣️April_Priority_Speaker❣️-purple.svg)](https://discord.com/api/oauth2/authorize?client_id=893513011627692072&permissions=8&scope=bot)
   𝙳𝚒𝚛𝚎𝚌𝚝𝚕𝚢 𝚞𝚜𝚎 𝚃𝚑𝚎 𝙱𝚘𝚝 𝚒𝚗 Discord
 - [![Generic badge](https://img.shields.io/badge/𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙱𝚘𝚝-Vïå_ßð†-orange.svg)](https://t.me/HypeVoidBot) 𝘛𝘶𝘳𝘯 𝘰𝘯 𝘣𝘰𝘵 𝘪𝘯 𝘵𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘢𝘯𝘥 𝘵𝘺𝘱𝘦 /us
 
