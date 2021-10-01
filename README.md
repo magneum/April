@@ -16,7 +16,7 @@
 📌 By The way i might not update this bot to Discord.js-V13
 rather i will make a new bot with Discord.js-V13.
 ```
-<p align="right"><img  width="50%" height="50%" img src="https://i.postimg.cc/SQTtSp2p/3.jpg" /></p>
+<p align="left"><img  width="50%" height="50%" img src="https://i.postimg.cc/SQTtSp2p/3.jpg" /></p>
 
 
 # 〽️ MΣΣƬ US ӨЯ CΉΣCK ӨƬΉΣЯ BӨƬS
