@@ -10,7 +10,7 @@ const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/A
 //
 // =============================================================================================================================
 module.exports = {
-  name: "April",
+  name: "april",
   cooldown: 3,
   // =============================================================================================================================
   //
@@ -30,7 +30,7 @@ module.exports = {
 •> **April** has been licensed under GNU General Public License 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁\n
 •> use **${AքʀɨʟʄɨӼ}help** to learn how to use **April**
 `;
-      if (message.content.startsWith(AքʀɨʟʄɨӼ + "April")) {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "april")) {
         message.react("✅");
         message.react("🍧");
         message.author.send(
@@ -43,7 +43,7 @@ module.exports = {
             new MessageEmbed()
               .setDescription(`**User:** ${message.author}\n${AprilNore}`)
               .setColor("#6272a4")
-              .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+              .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -54,7 +54,7 @@ module.exports = {
             new MessageEmbed()
               .setDescription(`**User:** ${message.author}\n${AprilNore}`)
               .setColor("#6272a4")
-              .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+              .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")

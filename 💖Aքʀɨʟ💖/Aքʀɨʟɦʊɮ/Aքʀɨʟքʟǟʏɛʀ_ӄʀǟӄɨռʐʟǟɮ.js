@@ -30,7 +30,7 @@ module.exports = {
             .send(
               new MessageEmbed()
                 .setColor("#6272a4")
-                .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`=========⚜️=========
@@ -75,7 +75,7 @@ module.exports = {
               new MessageEmbed()
                 .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
-                .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
@@ -110,7 +110,7 @@ Only **YouTube** playing/streaming is allowed`)
             new MessageEmbed()
               .setColor("#E0D268")
               .setTitle("⚠️Warning⚠️")
-              .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+              .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(
@@ -168,7 +168,7 @@ Only **YouTube** playing/streaming is allowed`)
           new MessageEmbed()
             .setColor("#6272a4")
             .setTitle("💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞")
-            .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+            .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -221,7 +221,7 @@ Only **YouTube** playing/streaming is allowed`)
                   new MessageEmbed()
                     .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
-                    .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                    .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/5tgjvj1y/A.png`
                     )
@@ -252,7 +252,7 @@ Only **YouTube** playing/streaming is allowed`)
               .send(
                 new MessageEmbed()
                   .setColor("#6272a4")
-                  .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                  .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
@@ -283,7 +283,7 @@ Only **YouTube** playing/streaming is allowed`)
                   new MessageEmbed()
                     .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
-                    .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                    .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/5tgjvj1y/A.png`
                     )
@@ -316,7 +316,7 @@ Only **YouTube** playing/streaming is allowed`)
                 .send(
                   new MessageEmbed()
                     .setColor("#6272a4")
-                    .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                    .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/5tgjvj1y/A.png`
                     )
@@ -334,7 +334,7 @@ Only **YouTube** playing/streaming is allowed`)
                 .send(
                   new MessageEmbed()
                     .setColor("#6272a4")
-                    .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                    .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/5tgjvj1y/A.png`
                     )
@@ -367,7 +367,7 @@ Only **YouTube** playing/streaming is allowed`)
                   new MessageEmbed()
                     .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
-                    .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                    .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/5tgjvj1y/A.png`
                     )
@@ -400,7 +400,7 @@ Only **YouTube** playing/streaming is allowed`)
                 .send(
                   new MessageEmbed()
                     .setColor("#6272a4")
-                    .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                    .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/5tgjvj1y/A.png`
                     )
@@ -424,7 +424,7 @@ Only **YouTube** playing/streaming is allowed`)
                 .send(
                   new MessageEmbed()
                     .setColor("#6272a4")
-                    .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                    .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/5tgjvj1y/A.png`
                     )
@@ -460,7 +460,7 @@ Only **YouTube** playing/streaming is allowed`)
                   new MessageEmbed()
                     .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
-                    .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                    .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/5tgjvj1y/A.png`
                     )
@@ -494,7 +494,7 @@ Only **YouTube** playing/streaming is allowed`)
               .send(
                 new MessageEmbed()
                   .setColor("#6272a4")
-                  .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                  .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
@@ -528,7 +528,7 @@ Volume now at = **${queue.volume}%**`)
                   new MessageEmbed()
                     .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
-                    .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                    .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/5tgjvj1y/A.png`
                     )
@@ -562,7 +562,7 @@ Volume now at = **${queue.volume}%**`)
               .send(
                 new MessageEmbed()
                   .setColor("#6272a4")
-                  .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                  .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
@@ -592,7 +592,7 @@ Volume now at = **${queue.volume}%**`)
                   new MessageEmbed()
                     .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
-                    .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                    .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/5tgjvj1y/A.png`
                     )
@@ -623,7 +623,7 @@ Volume now at = **${queue.volume}%**`)
               .send(
                 new MessageEmbed()
                   .setColor("#6272a4")
-                  .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                  .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
@@ -654,7 +654,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                   new MessageEmbed()
                     .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
-                    .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                    .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/5tgjvj1y/A.png`
                     )
@@ -686,7 +686,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
               .send(
                 new MessageEmbed()
                   .setColor("#bd93f9")
-                  .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                  .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")

@@ -21,7 +21,7 @@ try:
     # Version 3, 29 June 2007
     # 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
     # ============================================================================================================================
-    @Aքʀɨʟքʟǟʏɛʀ.slash_command(name="ping", description="𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️")
+    @Aքʀɨʟքʟǟʏɛʀ.slash_command(name="ping", description="𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️")
     async def ping(speaker):
         await speaker.response.send_message(
             f"Pong! {round(Aքʀɨʟքʟǟʏɛʀ.latency * 1000)}ms")
@@ -31,15 +31,15 @@ try:
     # Version 3, 29 June 2007
     # 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
     # ============================================================================================================================
-    @Aքʀɨʟքʟǟʏɛʀ.slash_command(name="help", description="𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️")
+    @Aքʀɨʟքʟǟʏɛʀ.slash_command(name="help", description="𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️")
     async def help(speaker):
         embed = disnake.Embed(
-            title="𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️",
+            title="𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️",
             description=f"""
 *📌•♪•♪𝐌𝐚𝐧𝐮𝐚𝐥-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•*
 • **{AքʀɨʟʄɨӼ}filter** = Music filters when playing audio.
 • **{AքʀɨʟʄɨӼ}help** = Display this commands and descriptions.
-• **{AքʀɨʟʄɨӼ}April** = Display the  license and a few more info.
+• **{AքʀɨʟʄɨӼ}april** = Display the  license and a few more info.
 • **{AքʀɨʟʄɨӼ}np** = Show now playing song.
 • **{AքʀɨʟʄɨӼ}ping** = Check server ping of Aքʀɨʟքʟǟʏɛʀ.
 • **{AքʀɨʟʄɨӼ}play** = Plays audio from YouTube.
@@ -77,10 +77,10 @@ try:
     # Version 3, 29 June 2007
     # 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
     # ============================================================================================================================
-    @Aքʀɨʟքʟǟʏɛʀ.slash_command(name="April", description="𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️")
+    @Aքʀɨʟքʟǟʏɛʀ.slash_command(name="April", description="𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️")
     async def April(speaker):
         embed = disnake.Embed(
-            title="𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️",
+            title="𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️",
             description=f"""=========⚜️=========
 
 •> **April** is a Discord Music player Bot with YouTube Support and is available on both Discord and Telegram.
@@ -135,11 +135,11 @@ try:
     # 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
     # ============================================================================================================================
     AprilLog.info(
-        "~~~~~~~~~~~~~~~~~~~~~~~>  𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️ <~~~~~~~~~~~~~~~~~~~~~~~"
+        "~~~~~~~~~~~~~~~~~~~~~~~>  𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️ <~~~~~~~~~~~~~~~~~~~~~~~"
     )
     AprilLog.info("❣️April Discord Handler Started")
     AprilLog.info(
-        "~~~~~~~~~~~~~~~~~~~~~~~>  𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️ <~~~~~~~~~~~~~~~~~~~~~~~"
+        "~~~~~~~~~~~~~~~~~~~~~~~>  𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️ <~~~~~~~~~~~~~~~~~~~~~~~"
     )
     Aքʀɨʟքʟǟʏɛʀ.run(AprilES)
 except Exception as e:

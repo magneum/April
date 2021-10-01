@@ -47,7 +47,7 @@ module.exports = {
             new MessageEmbed()
               .setColor("#E0D268")
               .setTitle("⚠️Warning⚠️")
-              .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+              .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(
@@ -81,7 +81,7 @@ module.exports = {
             new MessageEmbed()
               .setColor("#E0D268")
               .setTitle("⚠️Warning⚠️")
-              .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+              .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(
@@ -120,7 +120,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`
               new MessageEmbed()
                 .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
-                .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
@@ -152,7 +152,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`
               new MessageEmbed()
                 .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
-                .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
@@ -183,7 +183,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`
               new MessageEmbed()
                 .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
-                .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
@@ -216,7 +216,7 @@ ID= ${message.client.user}`
               new MessageEmbed()
                 .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
-                .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
@@ -250,7 +250,7 @@ ${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**`
               new MessageEmbed()
                 .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
-                .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
@@ -282,7 +282,7 @@ Cannot connect to voice channel, missing permissions`
               new MessageEmbed()
                 .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
-                .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
@@ -341,7 +341,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
                     new MessageEmbed()
                       .setColor("#E0D268")
                       .setTitle("⚠️Warning⚠️")
-                      .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                      .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                       .setThumbnail(
                         `https://i.postimg.cc/5tgjvj1y/A.png`
                       )
@@ -385,7 +385,7 @@ Audio Not Found`)
               new MessageEmbed()
                 .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
-                .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
@@ -483,7 +483,7 @@ Following url redirection...`
                   new MessageEmbed()
                     .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
-                    .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                    .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/5tgjvj1y/A.png`
                     )
@@ -564,7 +564,7 @@ ${message.author}`
               .send(
                 new MessageEmbed()
                   .setColor("#6272a4")
-                  .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                  .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(
@@ -598,7 +598,7 @@ and is 📄 bound to \`#${message.channel.name}\`**`
               new MessageEmbed()
                 .setColor("#E0D268")
                 .setTitle("⚠️Warning⚠️")
-                .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(

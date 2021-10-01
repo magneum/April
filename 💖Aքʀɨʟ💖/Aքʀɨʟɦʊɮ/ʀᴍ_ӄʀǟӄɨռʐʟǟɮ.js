@@ -27,7 +27,7 @@ module.exports = {
                     .send(new MessageEmbed()
                         .setColor('#E0D268')
                         .setTitle('⚠️Warning⚠️')
-                        .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                        .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                         .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                         .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
                         .setDescription(
@@ -60,7 +60,7 @@ module.exports = {
                         .send(new MessageEmbed()
                             .setColor('#E0D268')
                             .setTitle('⚠️Warning⚠️')
-                            .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                            .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                             .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
                             .setDescription(
@@ -89,7 +89,7 @@ There is no queue.`))
                         .send(new MessageEmbed()
                             .setColor('#E0D268')
                             .setTitle('⚠️Warning⚠️')
-                            .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                            .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                             .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
                             .setDescription(
@@ -118,7 +118,7 @@ There is no queue.`))
                         .send(new MessageEmbed()
                             .setColor('#E0D268')
                             .setTitle('⚠️Warning⚠️')
-                            .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                            .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                             .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
                             .setDescription(
@@ -154,7 +154,7 @@ There is no queue.`))
                         .send(
                             new MessageEmbed()
                                 .setColor('#6272a4')
-                                .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                                 .setFooter(
                                     '🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab'
@@ -182,7 +182,7 @@ There is no queue.`))
                         .send(
                             new MessageEmbed()
                                 .setColor('#6272a4')
-                                .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                                 .setFooter(
                                     '🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab'
@@ -211,7 +211,7 @@ There is no queue.`))
                         .send(new MessageEmbed()
                             .setColor('#E0D268')
                             .setTitle('⚠️Warning⚠️')
-                            .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+                            .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                             .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
                             .setDescription(

@@ -30,7 +30,7 @@ rather i will make a new bot with Discord.js-V13.
 💖=======ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ=======💖
 • !filter = Music filters when playing audio.
 • !help = Display all commands and descriptions.
-• !April = Display the  license and a few more info.
+• !april = Display the  license and a few more info.
 • !loop = Toggle music loop.
 • !np = Show now playing song.
 • !pause = Pause the currently playing music.

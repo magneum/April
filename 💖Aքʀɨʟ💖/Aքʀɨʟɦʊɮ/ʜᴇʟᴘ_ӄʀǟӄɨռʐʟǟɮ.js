@@ -22,7 +22,7 @@ module.exports = {
 *📌•♪•♪𝐌𝐚𝐧𝐮𝐚𝐥-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•*
 • **${AքʀɨʟʄɨӼ}filter** = Music filters when playing audio.
 • **${AքʀɨʟʄɨӼ}help** = Display this commands and descriptions.
-• **${AքʀɨʟʄɨӼ}April** = Display the  license and a few more info.
+• **${AքʀɨʟʄɨӼ}april** = Display the  license and a few more info.
 • **${AքʀɨʟʄɨӼ}np** = Show now playing music.
 • **${AքʀɨʟʄɨӼ}ping** = Check server ping of client.
 • **${AքʀɨʟʄɨӼ}play** = Plays audio from YouTube.
@@ -58,7 +58,7 @@ module.exports = {
             new MessageEmbed()
               .setDescription(`**User:** ${message.author}\n${AprilHelper}`)
               .setColor("#6272a4")
-              .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+              .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -69,7 +69,7 @@ module.exports = {
             new MessageEmbed()
               .setDescription(`**User:** ${message.author}\n${AprilHelper}`)
               .setColor("#6272a4")
-              .setAuthor(`𝐍𝐨𝐢𝐫❣️by🔱KrakinzLab™️`)
+              .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
