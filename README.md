@@ -2,7 +2,7 @@
 
 # ❣️『 ᴅɪꜱᴄᴏʀᴅ ᴍᴜꜱɪᴄ ʙᴏᴛ: April 』❣️
 
-<p align="centre"><img  width="100%" height="100%" img src="https://github.com/Krakinz/Noir/blob/KrakinzLab/%F0%9F%92%96A%D6%84%CA%80%C9%A8%CA%9F%F0%9F%92%96/Apriltem/A%D6%84%CA%80%C9%A8%CA%9F%D6%84%CA%9F%C7%9F%CA%8F%C9%9B%CA%80.png" /></p>
+<p align="centre"><img  width="100%" height="100%" img src="https://github.com/Krakinz/April/blob/KrakinzLab/%F0%9F%92%96A%D6%84%CA%80%C9%A8%CA%9F%F0%9F%92%96/A%D6%84%CA%80%C9%A8%CA%9F%D5%BC%C9%9B%CA%8B/A%D6%84%CA%80%C9%A8%CA%9F%D6%84%CA%9F%C7%9F%CA%8F%C9%9B%CA%80.png" /></p>
 
 # ❓ WΉY MΛDΣ ƬΉIS BӨƬ?
 
