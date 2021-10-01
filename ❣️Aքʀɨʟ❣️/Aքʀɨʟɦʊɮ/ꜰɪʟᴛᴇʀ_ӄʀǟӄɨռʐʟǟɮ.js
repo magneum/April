@@ -38,6 +38,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
@@ -72,6 +73,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 **Nothing in Queue!**
 *Add music in Queue first!*`)
           )
@@ -103,6 +105,7 @@ module.exports = {
                 .setDescription(`
 **User:** ${message.author}
 =========♥️=========
+
 
 **usage:** \`${AքʀɨʟʄɨӼ}filter\`
 ▫️ 8D
@@ -145,6 +148,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 *Please join a* **Voice Channel** *first*`)
             )
             .catch(console.error)
@@ -174,6 +178,7 @@ module.exports = {
                 .setDescription(`
 **User:** ${message.author}
 =========♥️=========
+
 
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`)
@@ -237,6 +242,7 @@ ID= ${message.client.user}`)
                   .setDescription(`
 **User:** ${message.author}
 =========♥️=========
+
 **That was not a valid filter!**
 
 ▫️ 8D
@@ -301,6 +307,7 @@ ID= ${message.client.user}`)
 **User:** ${message.author}
 =========♥️=========
 
+
 *Song Queue has been cleaned up.*
 Restart **queue** and **filter** will be applied.`)
             )
@@ -325,6 +332,7 @@ Restart **queue** and **filter** will be applied.`)
                 .setDescription(`
 **User:** ${message.author}
 =========♥️=========
+
 
 **Nothing in Queue!**
 *Add music in Queue first!*`)

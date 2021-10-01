@@ -39,6 +39,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`

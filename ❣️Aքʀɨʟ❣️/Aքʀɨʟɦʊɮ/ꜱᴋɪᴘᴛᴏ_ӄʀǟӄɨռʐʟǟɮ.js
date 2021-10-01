@@ -38,6 +38,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`
@@ -76,6 +77,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 ⚓️**usage:**
 ${AքʀɨʟʄɨӼ}{name} <Queue Number>`
                 )
@@ -110,6 +112,7 @@ ${AքʀɨʟʄɨӼ}{name} <Queue Number>`
 **User:** ${message.author}
 =========♥️=========
 
+
 There is nothing playing that I could skip for you.`
                 )
             )
@@ -142,6 +145,7 @@ There is nothing playing that I could skip for you.`
 **User:** ${message.author}
 =========♥️=========
 
+
 *You need to* **join** *a voice channel first!*`
                 )
             )
@@ -173,6 +177,7 @@ There is nothing playing that I could skip for you.`
                   `
 **User:** ${message.author}
 =========♥️=========
+
 
 There is nothing playing that I could skip for you.`
                 )
@@ -210,6 +215,7 @@ There is nothing playing that I could skip for you.`
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`**User:** ${message.author}
 =========♥️=========
+
 
 ⏺ stopped the music!`)
           )

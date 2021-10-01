@@ -38,6 +38,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`
@@ -77,6 +78,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 *You need to* **join** *a voice channel first!*`
                 )
             )
@@ -108,6 +110,7 @@ module.exports = {
                   `
 **User:** ${message.author}
 =========♥️=========
+
 
 *You need to* **join** *a voice channel first!*`
                 )
@@ -141,6 +144,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 🔊 **The current volume is:** ${queue.volume}%`
                 )
             )
@@ -173,6 +177,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 Please use a number to set volume.`
                 )
             )
@@ -204,6 +209,7 @@ Please use a number to set volume.`
 **User:** ${message.author}
 =========♥️=========
 
+
 Please use a number between 0 - 100.'`)
             )
             .catch(console.error)
@@ -232,6 +238,7 @@ Please use a number between 0 - 100.'`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`**User:** ${message.author}
 =========♥️=========
+
 
 Volume set to: **${args[0]}%**`)
           )

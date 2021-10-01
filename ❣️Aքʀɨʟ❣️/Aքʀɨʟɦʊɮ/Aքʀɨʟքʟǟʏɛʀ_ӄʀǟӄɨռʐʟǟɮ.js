@@ -1,5 +1,9 @@
 const ytdl = require("ytdl-core-discord");
-const { canModifyQueue, ᴀᴘʀɪʟᴡᴀᴋᴇ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/April_env");
+const {
+  canModifyQueue,
+  ᴀᴘʀɪʟᴡᴀᴋᴇ,
+  Aքʀɨʟքʊʀɢɛʀ,
+} = require("../Aքʀɨʟռɛʋ/April_env");
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const getVideoId = require("get-video-id");
 // =============================================================================================================================
@@ -34,6 +38,7 @@ module.exports = {
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`=========♥️=========
+
 
 **Aքʀɨʟ❣️քʟǟʏɛʀ** *has left the voice channel!*`)
             )
@@ -82,6 +87,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 Only **YouTube** playing/streaming is allowed`)
             )
             .catch(console.error)
@@ -117,6 +123,7 @@ Only **YouTube** playing/streaming is allowed`)
                 `
 **User:** ${message.author}
 =========♥️=========
+
 
 **Error:** 
 *${error}*`
@@ -172,14 +179,14 @@ Only **YouTube** playing/streaming is allowed`)
             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-            .setDescription(`
-=========♥️=========
+            .setDescription(`=========♥️=========
 
 **🏷Title-** ${music.title}
 **🔗Link-** ${music.url}
-`)
-        );
+=========♥️=========
 
+**Song Requested by** ${message.author}`)
+        );
         await AprilPlayingMessage.react("⏭");
         await AprilPlayingMessage.react("⏸");
         await AprilPlayingMessage.react("🔇");
@@ -222,14 +229,13 @@ Only **YouTube** playing/streaming is allowed`)
                     .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-                    .setThumbnail(
-                      `https://i.postimg.cc/5tgjvj1y/A.png`
-                    )
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
 =========♥️=========
+
 
 *You need to* ***join** *a voice channel first!*`
                     )
@@ -258,6 +264,7 @@ Only **YouTube** playing/streaming is allowed`)
                   .setDescription(`**User:** ${message.author}
 =========♥️=========
 
+
 ⏩ *Skipped the music*`)
               )
               .catch(console.error)
@@ -284,14 +291,13 @@ Only **YouTube** playing/streaming is allowed`)
                     .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-                    .setThumbnail(
-                      `https://i.postimg.cc/5tgjvj1y/A.png`
-                    )
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
 =========♥️=========
+
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -317,12 +323,11 @@ Only **YouTube** playing/streaming is allowed`)
                   new MessageEmbed()
                     .setColor("#660000")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-                    .setThumbnail(
-                      `https://i.postimg.cc/5tgjvj1y/A.png`
-                    )
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
 =========♥️=========
+
 
 🚦 *Paused the music.*`)
                 )
@@ -335,12 +340,11 @@ Only **YouTube** playing/streaming is allowed`)
                   new MessageEmbed()
                     .setColor("#660000")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-                    .setThumbnail(
-                      `https://i.postimg.cc/5tgjvj1y/A.png`
-                    )
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
 =========♥️=========
+
 
 ▶ *Resumed the music!*`)
                 )
@@ -368,14 +372,13 @@ Only **YouTube** playing/streaming is allowed`)
                     .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-                    .setThumbnail(
-                      `https://i.postimg.cc/5tgjvj1y/A.png`
-                    )
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
 =========♥️=========
+
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -401,12 +404,11 @@ Only **YouTube** playing/streaming is allowed`)
                   new MessageEmbed()
                     .setColor("#660000")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-                    .setThumbnail(
-                      `https://i.postimg.cc/5tgjvj1y/A.png`
-                    )
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
 =========♥️=========
+
 
 🔇 Muted the music!`)
                 )
@@ -425,12 +427,11 @@ Only **YouTube** playing/streaming is allowed`)
                   new MessageEmbed()
                     .setColor("#660000")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-                    .setThumbnail(
-                      `https://i.postimg.cc/5tgjvj1y/A.png`
-                    )
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
 =========♥️=========
+
 
 🔊 Unmuted the music!`)
                 )
@@ -461,14 +462,13 @@ Only **YouTube** playing/streaming is allowed`)
                     .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-                    .setThumbnail(
-                      `https://i.postimg.cc/5tgjvj1y/A.png`
-                    )
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
 =========♥️=========
+
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -500,6 +500,7 @@ Only **YouTube** playing/streaming is allowed`)
                   .setDescription(`**User:** ${message.author}
 =========♥️=========
 
+
 🔉 Decreased the volume, 
 Volume now at = **${queue.volume}%**`)
               )
@@ -529,14 +530,13 @@ Volume now at = **${queue.volume}%**`)
                     .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-                    .setThumbnail(
-                      `https://i.postimg.cc/5tgjvj1y/A.png`
-                    )
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
 =========♥️=========
+
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -568,6 +568,7 @@ Volume now at = **${queue.volume}%**`)
                   .setDescription(`**User:** ${message.author}
 =========♥️=========
 
+
 🔊 Increased the volume, the volume is now ${queue.volume}%`)
               )
               .catch(console.error)
@@ -593,14 +594,13 @@ Volume now at = **${queue.volume}%**`)
                     .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-                    .setThumbnail(
-                      `https://i.postimg.cc/5tgjvj1y/A.png`
-                    )
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
 =========♥️=========
+
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -629,6 +629,7 @@ Volume now at = **${queue.volume}%**`)
                   .setDescription(`**User:** ${message.author}
 =========♥️=========
 
+
 Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
               )
               .catch(console.error)
@@ -655,14 +656,13 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                     .setColor("#E0D268")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-                    .setThumbnail(
-                      `https://i.postimg.cc/5tgjvj1y/A.png`
-                    )
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
 =========♥️=========
+
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -692,6 +692,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(
                     `=========♥️=========
+
 
 Last Song was 👇🏻
 **${music.title}**`
@@ -730,8 +731,7 @@ Last Song was 👇🏻
           .setColor("#DB4434")
           .setTitle("🔺ERROR CAUGHT🔻")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-          .setDescription(`
+          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png").setDescription(`
 **April** has encountered an error.
 
 Please report to either 

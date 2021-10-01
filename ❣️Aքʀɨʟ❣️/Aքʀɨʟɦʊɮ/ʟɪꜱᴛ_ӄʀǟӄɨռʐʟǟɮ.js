@@ -49,6 +49,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`
@@ -88,6 +89,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 *You need to* **join** *a voice channel first!*`)
             )
             .catch(console.error)
@@ -117,6 +119,7 @@ module.exports = {
                 .setDescription(`
 **User:** ${message.author}
 =========♥️=========
+
 
 **usage:**
 ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
@@ -150,6 +153,7 @@ ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
 **User:** ${message.author}
 =========♥️=========
 
+
 Cannot connect to voice channel, missing permissions`)
             )
             .catch(console.error)
@@ -180,6 +184,7 @@ Cannot connect to voice channel, missing permissions`)
 **User:** ${message.author}
 =========♥️=========
 
+
 I cannot speak in this voice channel, make sure I have the proper permissions!`)
             )
             .catch(console.error)
@@ -209,6 +214,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
                 .setDescription(`
 **User:** ${message.author}
 =========♥️=========
+
 
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`)
@@ -269,6 +275,7 @@ ID= ${message.client.user}`)
                     `\n\n
 **User:** ${message.author}
 =========♥️=========
+
 
 Playlist not found`
                   )
@@ -419,6 +426,7 @@ Started a playlist`
                     `\n\n
 **User:** ${message.author}
 =========♥️=========
+
 
 Could not join the channel: *${error}*`
                   )

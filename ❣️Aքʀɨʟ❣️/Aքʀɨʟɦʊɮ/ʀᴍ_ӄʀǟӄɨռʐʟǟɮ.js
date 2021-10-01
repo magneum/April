@@ -35,6 +35,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`))
@@ -68,6 +69,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 There is no queue.`))
                         .catch(console.error)
                         .then((message) => {
@@ -97,6 +99,7 @@ There is no queue.`))
 **User:** ${message.author}
 =========♥️=========
 
+
 *You need to* **join** *a voice channel first!*`))
                         .catch(console.error)
                         .then((message) => {
@@ -125,6 +128,7 @@ There is no queue.`))
                                 `
 **User:** ${message.author}
 =========♥️=========
+
 
 ⚓️**usage:**${AքʀɨʟʄɨӼ}rm <Queue Number>`))
                         .catch(console.error)
@@ -161,6 +165,7 @@ There is no queue.`))
                                 ).setDescription(`**User:** ${message.author}
 =========♥️=========
 
+
 ⏺ Removed **${removed.map((music) => music.title).join(`\n`)}** from the queue.`)
                         )
                         .catch(console.error)
@@ -188,6 +193,7 @@ There is no queue.`))
                                     '🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab'
                                 ).setDescription(`**User:** ${message.author}
 =========♥️=========
+
 
 ⏺ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`)
                         )
@@ -218,6 +224,7 @@ There is no queue.`))
                                 `
 **User:** ${message.author}
 =========♥️=========
+
 
 **usage:**${AքʀɨʟʄɨӼ}rm <Queue Number>`))
                         .catch(console.error)

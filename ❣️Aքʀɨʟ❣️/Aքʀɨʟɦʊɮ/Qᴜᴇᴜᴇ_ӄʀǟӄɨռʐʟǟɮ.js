@@ -38,6 +38,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`
@@ -77,6 +78,7 @@ module.exports = {
 **User:** ${message.author}
 =========♥️=========
 
+
 Missing permission to manage messages or add reactions`
                 )
             )
@@ -109,6 +111,7 @@ Missing permission to manage messages or add reactions`
                   `
 **User:** ${message.author}
 =========♥️=========
+
 
 ⏺ Nothing playing in this server`
                 )
