@@ -82,12 +82,12 @@ new MessageEmbed()
 
 Only **YouTube** playing/streaming is allowed`)
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 return;
 }
 } catch (error) {
@@ -120,12 +120,12 @@ new MessageEmbed()
 *${error}*`
 )
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 return;
 }
 // =============================================================================================================================
@@ -230,12 +230,12 @@ new MessageEmbed()
 *You need to* ***join** *a voice channel first!*`
 )
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 return;
 }
 // =============================================================================================================================
@@ -256,12 +256,12 @@ new MessageEmbed()
 
 ⏩ *Skipped the song*`)
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 collector.stop();
 break;
 
@@ -288,12 +288,12 @@ new MessageEmbed()
 *You need to* **join** *a voice channel first!*`
 )
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 return;
 }
 // =============================================================================================================================
@@ -336,12 +336,12 @@ new MessageEmbed()
 
 ▶ *Resumed the music!*`)
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 }
 break;
 // =============================================================================================================================
@@ -372,12 +372,12 @@ new MessageEmbed()
 *You need to* **join** *a voice channel first!*`
 )
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 return;
 }
 // =============================================================================================================================
@@ -402,12 +402,12 @@ new MessageEmbed()
 
 🔇 Muted the music!`)
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 } else {
 queue.connection.dispatcher.setVolumeLogarithmic(
 queue.volume / 100
@@ -426,12 +426,12 @@ new MessageEmbed()
 
 🔊 Unmuted the music!`)
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 }
 break;
 // =============================================================================================================================
@@ -465,12 +465,12 @@ new MessageEmbed()
 *You need to* **join** *a voice channel first!*`
 )
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 return;
 }
 // =============================================================================================================================
@@ -495,12 +495,12 @@ new MessageEmbed()
 🔉 Decreased the volume, 
 Volume now at = **${queue.volume}%**`)
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 break;
 // =============================================================================================================================
 // GNU GENERAL PUBLIC LICENSE
@@ -533,12 +533,12 @@ new MessageEmbed()
 *You need to* **join** *a voice channel first!*`
 )
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 return;
 }
 // =============================================================================================================================
@@ -562,12 +562,12 @@ new MessageEmbed()
 
 🔊 Increased the volume, the volume is now ${queue.volume}%`)
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 break;
 // =============================================================================================================================
 // GNU GENERAL PUBLIC LICENSE
@@ -597,12 +597,12 @@ new MessageEmbed()
 *You need to* **join** *a voice channel first!*`
 )
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 return;
 }
 // =============================================================================================================================
@@ -623,12 +623,12 @@ new MessageEmbed()
 
 Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 message.client.queue.delete(message.guild.id);
 break;
 // =============================================================================================================================
@@ -659,12 +659,12 @@ new MessageEmbed()
 *You need to* **join** *a voice channel first!*`
 )
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${ռօɨʀքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${ռօɨʀքʊʀɢɛʀ}`,
+});
+});
 return;
 }
 // =============================================================================================================================
