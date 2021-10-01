@@ -7,7 +7,7 @@
 # ❓ WΉY MΛDΣ ƬΉIS BӨƬ?
 
 ```sh
-💖=======ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ=======💖
+❣️=======ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ=======❣️
 
     💻 𝗪𝗵𝗮𝘁 𝗖𝗮𝗻 𝗕𝗼𝘁 𝗗𝗼???
 ❄️ 𝘗𝘭𝘢𝘺 𝘢𝘯𝘺 𝘮𝘶𝘴𝘪𝘤 𝘪𝘯 𝘺𝘰𝘶𝘳 discord channel.
@@ -27,7 +27,7 @@ rather i will make a new bot with Discord.js-V13.
 
 ```sh
 📌•♪•♪𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀•♪•♪
-💖=======ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ=======💖
+❣️=======ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ=======❣️
 • !filter = Music filters when playing audio.
 • !help = Display all commands and descriptions.
 • !april = Display the  license and a few more info.
@@ -46,7 +46,7 @@ rather i will make a new bot with Discord.js-V13.
 • !stop = Stops the music.
 • !vol = Change volume of currently playing music.
 
-💖=======ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ=======💖
+❣️=======ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ=======❣️
 ```
 
 # 📜 LICΣПSΣ
@@ -60,7 +60,7 @@ rather i will make a new bot with Discord.js-V13.
         Copyright (C) 2007 Free Software Foundation
 Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶𝗯𝘂𝘁𝗲 verbatim copies
     of this license document, 𝗯𝘂𝘁 𝗰𝗵𝗮𝗻𝗴𝗶𝗻𝗴 𝗶𝘁 𝗶𝘀 𝗻𝗼𝘁 𝗮𝗹𝗹𝗼𝘄𝗲𝗱.
-                💖April💖
+                ❣️April❣️
             Discord Music YouTube player
     has been licensed under GNU General Public License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁

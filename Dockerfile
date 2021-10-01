@@ -18,7 +18,7 @@ RUN git clone https://github.com/Krakinz/April.git
 RUN cd April
 RUN yarn
 WORKDIR /April
-CMD nodemon 💖ռօɨʀ💖/ռօɨʀ❣️քʟǟʏɛʀ.js
+CMD nodemon ❣️Aքʀɨʟ❣️/Aքʀɨʟ❣️քʟǟʏɛʀ.js
 #   =============================================================================================================================
 #   GNU GENERAL PUBLIC LICENSE
 #   Version 3, 29 June 2007
