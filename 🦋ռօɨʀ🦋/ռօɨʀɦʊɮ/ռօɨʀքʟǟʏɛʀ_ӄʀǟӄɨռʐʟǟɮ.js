@@ -12,10 +12,10 @@ const getVideoId = require('get-video-id');
 //
 // =============================================================================================================================
 module.exports = {
-  async play(song, message) {
+  async play(music, message) {
     try {
       const queue = message.client.queue.get(message.guild.id);
-      if (!song) {
+      if (!music) {
         setTimeout(function () {
           if (queue.connection.dispatcher && message.guild.me.voice.channel) {
             return;
@@ -53,16 +53,16 @@ module.exports = {
         message.client.queue.delete(message.guild.id);
         return;
       }
-      let stream = null;
-      let streamType = song.url.includes('youtube.com') ? 'opus' : 'ogg/opus';
+      let musicfetcher = null;
+      let musicfetchergenre = music.url.includes('youtube.com') ? 'opus' : 'ogg/opus';
       // =============================================================================================================================
       // GNU GENERAL PUBLIC LICENSE
       // Version 3, 29 June 2007
       // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
       // ============================================================================================================================
       try {
-        if (song.url.includes('youtube.com')) {
-          stream = await ytdl(song.url, {
+        if (music.url.includes('youtube.com')) {
+          musicfetcher = await ytdl(music.url, {
             highWaterMark: 1 << 25,
           });
         } else {
@@ -134,7 +134,7 @@ Only **YouTube** playing/streaming is allowed`)
       // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
       // ============================================================================================================================
       const dispatcher = queue.connection
-        .play(stream, { type: streamType })
+        .play(musicfetcher, { type: musicfetchergenre })
         .on('finish', () => {
           if (collector && !collector.ended) collector.stop();
           queue.connection.removeAllListeners('disconnect');
@@ -159,7 +159,7 @@ Only **YouTube** playing/streaming is allowed`)
       // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
       // ============================================================================================================================
       try {
-        const { id } = getVideoId(`${song.url}`);
+        const { id } = getVideoId(`${music.url}`);
         var NoirPlayingMessage = await queue.textChannel.send(
           new MessageEmbed()
             .setColor('#6272a4')
@@ -171,8 +171,8 @@ Only **YouTube** playing/streaming is allowed`)
             .setDescription(`
 =========⚜️=========
 
-**🏷Title-** ${song.title}
-**🔗Link-** ${song.url}
+**🏷Title-** ${music.title}
+**🔗Link-** ${music.url}
 `)
         );
 
@@ -193,7 +193,7 @@ Only **YouTube** playing/streaming is allowed`)
       // ============================================================================================================================
       const filter = (reaction, user) => user.id !== message.client.user.id;
       var collector = NoirPlayingMessage.createReactionCollector(filter, {
-        time: song.duration > 0 ? song.duration * 1000 : 600000,
+        time: music.duration > 0 ? music.duration * 1000 : 600000,
       });
       collector.on('collect', (reaction, user) => {
         if (!queue) {
@@ -254,7 +254,7 @@ Only **YouTube** playing/streaming is allowed`)
                   .setDescription(`**User:** ${message.author}
 =========⚜️=========
 
-⏩ *Skipped the song*`)
+⏩ *Skipped the music*`)
               )
               .catch(console.error)
               .then((message) => {
@@ -677,7 +677,7 @@ Loop is now ${queue.loop ? '**Turned On**' : '**Turned Off**'}`)
             // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
             // ============================================================================================================================
             queue.songs = [];
-            const { id } = getVideoId(`${song.url}`);
+            const { id } = getVideoId(`${music.url}`);
             queue.textChannel
               .send(
                 new MessageEmbed()
@@ -690,7 +690,7 @@ Loop is now ${queue.loop ? '**Turned On**' : '**Turned Off**'}`)
                     `=========⚜️=========
 
 Last Song was 👇🏻
-*${song.title}*`
+*${music.title}*`
                   )
               )
               .catch(console.error);

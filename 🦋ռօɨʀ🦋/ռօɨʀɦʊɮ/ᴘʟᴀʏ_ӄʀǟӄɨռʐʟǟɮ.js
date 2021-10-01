@@ -420,11 +420,11 @@ Following url redirection...`
           playing: true,
         };
         let songInfo = null;
-        let song = null;
+        let music = null;
         if (urlValid) {
           try {
             songInfo = await ytdl.getInfo(url);
-            song = {
+            music = {
               title: songInfo.videoDetails.title,
               url: songInfo.videoDetails.video_url,
               duration: songInfo.videoDetails.lengthSeconds,
@@ -448,7 +448,7 @@ Following url redirection...`
         } else if (scRegex.test(url)) {
           try {
             const trackInfo = await scdl.getInfo(url, notneeded);
-            song = {
+            music = {
               title: trackInfo.title,
               url: trackInfo.permalink_url,
               duration: Math.ceil(trackInfo.duration / 1000),
@@ -510,7 +510,7 @@ Audio Not Found`
             // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
             // ============================================================================================================================
             songInfo = await ytdl.getInfo(results[0].url);
-            song = {
+            music = {
               title: songInfo.videoDetails.title,
               url: songInfo.videoDetails.video_url,
               duration: songInfo.videoDetails.lengthSeconds,
@@ -534,10 +534,10 @@ Audio Not Found`
         // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
         // ============================================================================================================================
         if (serverQueue) {
-          serverQueue.songs.push(song);
+          serverQueue.songs.push(music);
           serverQueue.textChannel
             .send(
-              `**ռօɨʀ💜քʟǟʏɛʀ**\n${song.title}\n_has been added to the queue by_ ${message.author}\n\n`
+              `**ռօɨʀ💜քʟǟʏɛʀ**\n${music.title}\n_has been added to the queue by_ ${message.author}\n\n`
             )
             .catch(console.error)
             .then((message) => {
@@ -552,7 +552,7 @@ Audio Not Found`
         // Version 3, 29 June 2007
         // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
         // ============================================================================================================================
-        queueConstruct.songs.push(song);
+        queueConstruct.songs.push(music);
         message.client.queue.set(message.guild.id, queueConstruct);
         try {
           try {

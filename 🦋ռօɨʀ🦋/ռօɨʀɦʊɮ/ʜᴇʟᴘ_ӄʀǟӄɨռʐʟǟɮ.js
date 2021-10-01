@@ -23,18 +23,18 @@ module.exports = {
 • **${ռօɨʀʄɨӼ}filter** = Music filters when playing audio.
 • **${ռօɨʀʄɨӼ}help** = Display this commands and descriptions.
 • **${ռօɨʀʄɨӼ}noir** = Display the  license and a few more info.
-• **${ռօɨʀʄɨӼ}np** = Show now playing song.
+• **${ռօɨʀʄɨӼ}np** = Show now playing music.
 • **${ռօɨʀʄɨӼ}ping** = Check server ping of client.
 • **${ռօɨʀʄɨӼ}play** = Plays audio from YouTube.
 • **${ռօɨʀʄɨӼ}list** = Play a playlist from YouTube.
 • **${ռօɨʀʄɨӼ}queue** = Show the music queue and now playing.
-• **${ռօɨʀʄɨӼ}rm** = Remove song from the queue.
+• **${ռօɨʀʄɨӼ}rm** = Remove music from the queue.
 • **${ռօɨʀʄɨӼ}resume** = Resume currently playing music.
 • **${ռօɨʀʄɨӼ}shuffle** = Shuffle music queue.
 • **${ռօɨʀʄɨӼ}skipto** =Skip to the selected queue number.
 
 *📌•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•*
-• **⏭** = Skip the currently playing song.
+• **⏭** = Skip the currently playing music.
 • **⏸** = Pause/Resume the currently playing music.
 • **🔇** = Mute/Unmute the currently playing music.
 • **🔁** = Toggle music loop.

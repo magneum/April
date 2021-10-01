@@ -161,7 +161,7 @@ There is no queue.`))
                                 ).setDescription(`**User:** ${message.author}
 =========⚜️=========
 
-⏺ Removed **${removed.map((song) => song.title).join(`\n`)}** from the queue.`)
+⏺ Removed **${removed.map((music) => music.title).join(`\n`)}** from the queue.`)
                         )
                         .catch(console.error)
                         .then((message) => {

@@ -334,7 +334,7 @@ Playlist not found`
               video.title != `Private video` && video.title != `Deleted video`
           )
           .map((video) => {
-            return (song = {
+            return (music = {
               title: video.title,
               url: video.url,
               duration: video.durationSeconds,
@@ -352,7 +352,7 @@ Playlist not found`
           .setTitle(`${playlist.title}`)
           .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
           .setDescription(
-            newSongs.map((song, index) => `${index + 1}. ${song.title}`)
+            newSongs.map((music, index) => `${index + 1}. ${music.title}`)
           )
           .setURL(playlist.url)
           .setColor('#6272a4')
