@@ -685,7 +685,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#bd93f9")
+                  .setColor("#FAA0A0")
                   .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
