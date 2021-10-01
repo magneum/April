@@ -719,9 +719,6 @@ Last Song was 👇🏻
       // ============================================================================================================================
       collector.on("end", () => {
         NoirPlayingMessage.reactions.removeAll().catch(console.error);
-        if (NoirPlayingMessage && !NoirPlayingMessage.deleted) {
-          NoirPlayingMessage.delete({ timeout: 3000 }).catch(console.error);
-        }
       });
     } catch (ErrorNoir) {
       message.channel.send(
