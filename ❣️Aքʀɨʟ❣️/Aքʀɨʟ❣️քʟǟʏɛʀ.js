@@ -123,7 +123,7 @@ Please use only that channel for any **ᴀᴘʀɪʟ_ᴘʟᴀʏᴇʀ** commands..
     // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
     // ============================================================================================================================
     guild.channels
-      .create("🔱KRAKINZ", {
+      .create("🔱KRAKINZ™️", {
         type: "category",
         permissionOverwrites: [
           { id: guild.id, deny: ["VIEW_CHANNEL"] },
@@ -132,7 +132,7 @@ Please use only that channel for any **ᴀᴘʀɪʟ_ᴘʟᴀʏᴇʀ** commands..
       })
       .then((parent) => {
         guild.channels
-          .create("Aքʀɨʟ❣️քʟǟʏɛʀ", {
+          .create("aքʀɨʟ💖քʟǟʏɛʀ™️", {
             type: "text",
             parent,
             permissionOverwrites: [

@@ -23,7 +23,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "np") &&
-        message.channel.name !== "Aքʀɨʟ❣️քʟǟʏɛʀ"
+        message.channel.name !== "aքʀɨʟ💖քʟǟʏɛʀ™️"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -60,7 +60,7 @@ module.exports = {
       // =============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "np") &&
-        message.channel.name === "Aքʀɨʟ❣️քʟǟʏɛʀ"
+        message.channel.name === "aքʀɨʟ💖քʟǟʏɛʀ™️"
       ) {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {

@@ -21,7 +21,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "skipto") &&
-        message.channel.name !== "Aքʀɨʟ❣️քʟǟʏɛʀ"
+        message.channel.name !== "aքʀɨʟ💖քʟǟʏɛʀ™️"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -58,7 +58,7 @@ module.exports = {
       // ============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "skipto") &&
-        message.channel.name === "Aքʀɨʟ❣️քʟǟʏɛʀ"
+        message.channel.name === "aքʀɨʟ💖քʟǟʏɛʀ™️"
       ) {
         if (!args.length || isNaN(args[0])) {
           message.react("❌");

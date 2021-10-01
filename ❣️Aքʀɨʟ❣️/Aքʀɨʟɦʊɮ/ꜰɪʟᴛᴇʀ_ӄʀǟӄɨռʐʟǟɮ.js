@@ -22,7 +22,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "filter") &&
-        message.channel.name !== "Aքʀɨʟ❣️քʟǟʏɛʀ"
+        message.channel.name !== "aքʀɨʟ💖քʟǟʏɛʀ™️"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -128,7 +128,7 @@ module.exports = {
       // =============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "filter") &&
-        message.channel.name === "Aքʀɨʟ❣️քʟǟʏɛʀ"
+        message.channel.name === "aքʀɨʟ💖քʟǟʏɛʀ™️"
       ) {
         if (!message.member.voice.channel) {
           message.react("❌");
