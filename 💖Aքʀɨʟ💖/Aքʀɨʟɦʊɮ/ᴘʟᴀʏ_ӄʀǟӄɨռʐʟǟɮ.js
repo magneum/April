@@ -4,7 +4,7 @@ const {
   ᴀᴘʀɪʟᴠᴏʟ,
   AքʀɨʟʄɨӼ,
   Aքʀɨʟքʊʀɢɛʀ,
-} = require("../Apriltem/April_env");
+} = require("../Aքʀɨʟռɛʋ/April_env");
 const https = require("https");
 const ytdl = require("ytdl-core");
 const { play } = require("./Aքʀɨʟքʟǟʏɛʀ_ӄʀǟӄɨռʐʟǟɮ");

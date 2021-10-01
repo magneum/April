@@ -1,7 +1,7 @@
 const getVideoId = require("get-video-id");
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const { splitBar } = require("string-progressbar");
-const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Apriltem/April_env");
+const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/April_env");
 // =============================================================================================================================
 //
 //

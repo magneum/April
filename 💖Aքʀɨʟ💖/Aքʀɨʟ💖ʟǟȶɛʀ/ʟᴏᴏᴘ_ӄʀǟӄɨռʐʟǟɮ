@@ -1,5 +1,5 @@
-const { canModifyQueue } = require("../Apriltem/April_env");
-const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Apriltem/April_env");
+const { canModifyQueue } = require("../Aքʀɨʟռɛʋ/April_env");
+const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/April_env");
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 // =============================================================================================================================
 //

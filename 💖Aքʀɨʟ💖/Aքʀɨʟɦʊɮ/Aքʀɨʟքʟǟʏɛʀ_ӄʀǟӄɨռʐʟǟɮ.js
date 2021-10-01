@@ -1,5 +1,5 @@
 const ytdl = require("ytdl-core-discord");
-const { canModifyQueue, ᴀᴘʀɪʟᴡᴀᴋᴇ, Aքʀɨʟքʊʀɢɛʀ } = require("../Apriltem/April_env");
+const { canModifyQueue, ᴀᴘʀɪʟᴡᴀᴋᴇ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/April_env");
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const getVideoId = require("get-video-id");
 // =============================================================================================================================
