@@ -160,7 +160,7 @@ Only **YouTube** playing/streaming is allowed`)
       // ============================================================================================================================
       try {
         const { id } = getVideoId(`${song.url}`);
-        var ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel.send(
+        var NoirPlayingMessage = await queue.textChannel.send(
           new MessageEmbed()
             .setColor("#6272a4")
             .setTitle("💯ᴅɪʀᴇᴄᴛʟʏ ꜱᴛʀᴇᴀᴍɪɴɢ ᴜꜱɪɴɢ-𝐘𝐨𝐮𝐓𝐮𝐛𝐞")
@@ -176,13 +176,13 @@ Only **YouTube** playing/streaming is allowed`)
 `)
         );
 
-        await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏭");
-        await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏸");
-        await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔇");
-        await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔉");
-        await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔊");
-        await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔁");
-        await ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏺");
+        await NoirPlayingMessage.react("⏭");
+        await NoirPlayingMessage.react("⏸");
+        await NoirPlayingMessage.react("🔇");
+        await NoirPlayingMessage.react("🔉");
+        await NoirPlayingMessage.react("🔊");
+        await NoirPlayingMessage.react("🔁");
+        await NoirPlayingMessage.react("⏺");
       } catch (error) {
         console.error(error);
       }
@@ -192,7 +192,7 @@ Only **YouTube** playing/streaming is allowed`)
       // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
       // ============================================================================================================================
       const filter = (reaction, user) => user.id !== message.client.user.id;
-      var collector = ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.createReactionCollector(filter, {
+      var collector = NoirPlayingMessage.createReactionCollector(filter, {
         time: song.duration > 0 ? song.duration * 1000 : 600000,
       });
       collector.on("collect", (reaction, user) => {
@@ -264,7 +264,11 @@ Only **YouTube** playing/streaming is allowed`)
               });
             collector.stop();
             break;
-
+          // =============================================================================================================================
+          // GNU GENERAL PUBLIC LICENSE
+          // Version 3, 29 June 2007
+          // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
+          // ============================================================================================================================
           case "⏸":
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
@@ -690,11 +694,6 @@ Last Song was 👇🏻
                   )
               )
               .catch(console.error);
-            // =============================================================================================================================
-            // GNU GENERAL PUBLIC LICENSE
-            // Version 3, 29 June 2007
-            // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-            // ============================================================================================================================
             try {
               queue.connection.dispatcher.end();
             } catch (error) {
@@ -703,7 +702,11 @@ Last Song was 👇🏻
             }
             collector.stop();
             break;
-
+          // =============================================================================================================================
+          // GNU GENERAL PUBLIC LICENSE
+          // Version 3, 29 June 2007
+          // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
+          // ============================================================================================================================
           default:
             reaction.users.remove(user).catch(console.error);
             break;
@@ -715,16 +718,11 @@ Last Song was 👇🏻
       // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
       // ============================================================================================================================
       collector.on("end", () => {
-        ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.reactions.removeAll().catch(console.error);
-        if (ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ && !ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.deleted) {
-          ɴᴏɪʀᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.delete({ timeout: 3000 }).catch(console.error);
+        NoirPlayingMessage.reactions.removeAll().catch(console.error);
+        if (NoirPlayingMessage && !NoirPlayingMessage.deleted) {
+          NoirPlayingMessage.delete({ timeout: 3000 }).catch(console.error);
         }
       });
-      // =============================================================================================================================
-      // GNU GENERAL PUBLIC LICENSE
-      // Version 3, 29 June 2007
-      // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ============================================================================================================================
     } catch (ErrorNoir) {
       message.channel.send(
         new MessageEmbed()
