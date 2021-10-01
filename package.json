@@ -1,17 +1,17 @@
 {
-  "name": "noir_player",
+  "name": "april_player",
   "version": "14.0.0",
   "description": "Discord music bot built with discord.js",
-  "main": "🦋ռօɨʀ🦋/ռօɨʀ💜քʟǟʏɛʀ.js",
+  "main": "💖Aքʀɨʟ💖/Aքʀɨʟ❣️քʟǟʏɛʀ.js",
   "author": "Krakinz",
   "private": true,
-  "homepage": "https://github.com/Krakinz/NOIR",
+  "homepage": "https://github.com/Krakinz/April",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Krakinz/NOIR.git"
+    "url": "git+https://github.com/Krakinz/April.git"
   },
   "bugs": {
-    "url": "https://github.com/Krakinz/NOIR/issues"
+    "url": "https://github.com/Krakinz/April/issues"
   },
   "engines": {
     "node": ">=16.0.0"
@@ -43,7 +43,7 @@
     "ytdl-core-discord": "^1.3.1"
   },
   "scripts": {
-    "start": "🦋ռօɨʀ🦋/ռօɨʀ💜քʟǟʏɛʀ.js"
+    "start": "💖Aքʀɨʟ💖/Aքʀɨʟ❣️քʟǟʏɛʀ.js"
   },
   "keywords": [
     "discord",
