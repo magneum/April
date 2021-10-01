@@ -24,7 +24,7 @@ module.exports = {
   execute(message) {
     try {
       const AprilNore = `
-=========⚜️=========
+=========♥️=========
 
 •> **April** is a Discord Music player Bot with YouTube Support and is available on both Discord and Telegram.\n
 •> **April** has been licensed under GNU General Public License 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁\n

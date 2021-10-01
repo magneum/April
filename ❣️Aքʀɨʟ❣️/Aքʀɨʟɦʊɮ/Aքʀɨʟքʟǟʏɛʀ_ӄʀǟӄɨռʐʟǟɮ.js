@@ -33,7 +33,7 @@ module.exports = {
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                .setDescription(`=========⚜️=========
+                .setDescription(`=========♥️=========
 
 **Aքʀɨʟ❣️քʟǟʏɛʀ** *has left the voice channel!*`)
             )
@@ -80,7 +80,7 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 Only **YouTube** playing/streaming is allowed`)
             )
@@ -116,7 +116,7 @@ Only **YouTube** playing/streaming is allowed`)
               .setDescription(
                 `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 **Error:** 
 *${error}*`
@@ -173,7 +173,7 @@ Only **YouTube** playing/streaming is allowed`)
             .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
             .setDescription(`
-=========⚜️=========
+=========♥️=========
 
 **🏷Title-** ${music.title}
 **🔗Link-** ${music.url}
@@ -229,7 +229,7 @@ Only **YouTube** playing/streaming is allowed`)
                     .setDescription(
                       `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 *You need to* ***join** *a voice channel first!*`
                     )
@@ -256,7 +256,7 @@ Only **YouTube** playing/streaming is allowed`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 ⏩ *Skipped the music*`)
               )
@@ -291,7 +291,7 @@ Only **YouTube** playing/streaming is allowed`)
                     .setDescription(
                       `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -322,7 +322,7 @@ Only **YouTube** playing/streaming is allowed`)
                     )
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 🚦 *Paused the music.*`)
                 )
@@ -340,7 +340,7 @@ Only **YouTube** playing/streaming is allowed`)
                     )
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 ▶ *Resumed the music!*`)
                 )
@@ -375,7 +375,7 @@ Only **YouTube** playing/streaming is allowed`)
                     .setDescription(
                       `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -406,7 +406,7 @@ Only **YouTube** playing/streaming is allowed`)
                     )
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 🔇 Muted the music!`)
                 )
@@ -430,7 +430,7 @@ Only **YouTube** playing/streaming is allowed`)
                     )
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 🔊 Unmuted the music!`)
                 )
@@ -468,7 +468,7 @@ Only **YouTube** playing/streaming is allowed`)
                     .setDescription(
                       `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -498,7 +498,7 @@ Only **YouTube** playing/streaming is allowed`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 🔉 Decreased the volume, 
 Volume now at = **${queue.volume}%**`)
@@ -536,7 +536,7 @@ Volume now at = **${queue.volume}%**`)
                     .setDescription(
                       `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -566,7 +566,7 @@ Volume now at = **${queue.volume}%**`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 🔊 Increased the volume, the volume is now ${queue.volume}%`)
               )
@@ -600,7 +600,7 @@ Volume now at = **${queue.volume}%**`)
                     .setDescription(
                       `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -627,7 +627,7 @@ Volume now at = **${queue.volume}%**`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
               )
@@ -662,7 +662,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                     .setDescription(
                       `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 *You need to* **join** *a voice channel first!*`
                     )
@@ -691,10 +691,10 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                   .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(
-                    `=========⚜️=========
+                    `=========♥️=========
 
 Last Song was 👇🏻
-*${music.title}*`
+**${music.title}**`
                   )
               )
               .catch(console.error);

@@ -38,7 +38,7 @@ module.exports = {
               .setDescription(
                 `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
@@ -77,7 +77,7 @@ module.exports = {
                 .setDescription(
                   `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 April is not playing anymusic yet....`
                 )

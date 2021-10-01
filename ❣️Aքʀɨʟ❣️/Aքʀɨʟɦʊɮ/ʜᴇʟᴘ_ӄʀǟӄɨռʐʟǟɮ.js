@@ -19,7 +19,7 @@ module.exports = {
   execute(message) {
     try {
       const AprilHelper = `
-*📌•♪•♪𝐌𝐚𝐧𝐮𝐚𝐥-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•*
+* ♥️•♪•♪𝐌𝐚𝐧𝐮𝐚𝐥-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•*
 • **${AքʀɨʟʄɨӼ}filter** = Music filters when playing audio.
 • **${AքʀɨʟʄɨӼ}help** = Display this commands and descriptions.
 • **${AքʀɨʟʄɨӼ}april** = Display the  license and a few more info.
@@ -33,7 +33,7 @@ module.exports = {
 • **${AքʀɨʟʄɨӼ}shuffle** = Shuffle music queue.
 • **${AքʀɨʟʄɨӼ}skipto** =Skip to the selected queue number.
 
-*📌•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•*
+* ♥️•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•*
 • **⏭** = Skip the currently playing music.
 • **⏸** = Pause/Resume the currently playing music.
 • **🔇** = Mute/Unmute the currently playing music.

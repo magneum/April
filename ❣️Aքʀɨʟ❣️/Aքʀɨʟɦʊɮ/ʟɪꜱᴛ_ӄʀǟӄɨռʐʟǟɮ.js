@@ -47,7 +47,7 @@ module.exports = {
               .setDescription(
                 `\n\n
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
@@ -86,7 +86,7 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 *You need to* **join** *a voice channel first!*`)
             )
@@ -116,7 +116,7 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 **usage:**
 ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
@@ -148,7 +148,7 @@ ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 Cannot connect to voice channel, missing permissions`)
             )
@@ -178,7 +178,7 @@ Cannot connect to voice channel, missing permissions`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`)
             )
@@ -208,7 +208,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`)
@@ -268,7 +268,7 @@ ID= ${message.client.user}`)
                   .setDescription(
                     `\n\n
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 Playlist not found`
                   )
@@ -418,7 +418,7 @@ Started a playlist`
                   .setDescription(
                     `\n\n
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 Could not join the channel: *${error}*`
                   )

@@ -36,7 +36,7 @@ module.exports = {
               .setDescription(
                 `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
@@ -74,7 +74,7 @@ module.exports = {
                 .setDescription(
                   `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 ⚓️**usage:**
 ${AքʀɨʟʄɨӼ}{name} <Queue Number>`
@@ -108,7 +108,7 @@ ${AքʀɨʟʄɨӼ}{name} <Queue Number>`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 There is nothing playing that I could skip for you.`
                 )
@@ -140,7 +140,7 @@ There is nothing playing that I could skip for you.`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 *You need to* **join** *a voice channel first!*`
                 )
@@ -172,7 +172,7 @@ There is nothing playing that I could skip for you.`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 There is nothing playing that I could skip for you.`
                 )
@@ -209,7 +209,7 @@ There is nothing playing that I could skip for you.`
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`**User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 ⏺ stopped the music!`)
           )

@@ -36,7 +36,7 @@ module.exports = {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
@@ -70,7 +70,7 @@ module.exports = {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 **Nothing in Queue!**
 *Add music in Queue first!*`)
@@ -102,7 +102,7 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 **usage:** \`${AքʀɨʟʄɨӼ}filter\`
 ▫️ 8D
@@ -143,7 +143,7 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 *Please join a* **Voice Channel** *first*`)
             )
@@ -173,7 +173,7 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`)
@@ -236,7 +236,7 @@ ID= ${message.client.user}`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 **That was not a valid filter!**
 
 ▫️ 8D
@@ -299,7 +299,7 @@ ID= ${message.client.user}`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 *Song Queue has been cleaned up.*
 Restart **queue** and **filter** will be applied.`)
@@ -324,7 +324,7 @@ Restart **queue** and **filter** will be applied.`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 **Nothing in Queue!**
 *Add music in Queue first!*`)

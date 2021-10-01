@@ -36,7 +36,7 @@ module.exports = {
               .setDescription(
                 `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
@@ -75,7 +75,7 @@ module.exports = {
                 .setDescription(
                   `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 Missing permission to manage messages or add reactions`
                 )
@@ -108,7 +108,7 @@ Missing permission to manage messages or add reactions`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 
 ⏺ Nothing playing in this server`
                 )
@@ -234,7 +234,7 @@ function generateQueueEmbed(message, queue) {
       .setColor("#660000")
       .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
       .setDescription(
-        `**Aքʀɨʟ❣️քʟǟʏɛʀ**\n\n⚜️**Current Song** -_[${queue[0].title}]_\n\n${info}`
+        `**Aքʀɨʟ❣️քʟǟʏɛʀ**\n\n♥️**Current Song** -_[${queue[0].title}]_\n\n${info}`
       );
     embeds.push(embed);
   }

@@ -88,7 +88,7 @@ try {
           .setDescription(
             `
 𝗗𝗲𝗮𝗿: @everyone
-=========⚜️=========
+=========♥️=========
 ᴀ channel ɴᴀᴍᴇ **Aքʀɨʟ❣️քʟǟʏɛʀ** inside **🔱Krakinz** has been successfully created.
 Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..`
           )
@@ -191,7 +191,7 @@ Aքʀɨʟքʟǟʏɛʀ.on("message", async (message) => {
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️
 🔆-𝘔𝘶𝘴𝘪𝘤 𝘉𝘰𝘵 𝘧𝘰𝘳 𝘋𝘪𝘴𝘤𝘰𝘳𝘥 𝘸𝘪𝘵𝘩 𝘠𝘰𝘶𝘛𝘶𝘣𝘦_𝘋𝘭, 𝘣𝘶𝘪𝘭𝘵 𝘸𝘪𝘵𝘩 𝘋𝘪𝘴𝘤𝘰𝘳𝘥.𝘫𝘴
 • You are currently in a **DMChannel** and so you have been **restricted** using any **April 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀**
@@ -258,7 +258,7 @@ Aքʀɨʟքʟǟʏɛʀ.on("message", async (message) => {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
               command.name
             }' command.      `)
@@ -292,7 +292,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
             .setDescription(
               `
 **User:** ${message.author}
-=========⚜️=========
+=========♥️=========
 There was an error executing that command.`
             )
         )
