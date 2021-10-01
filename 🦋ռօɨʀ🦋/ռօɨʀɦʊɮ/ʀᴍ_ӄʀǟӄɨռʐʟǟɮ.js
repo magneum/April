@@ -128,11 +128,11 @@ There is no queue.`))
 
 ⚓️**usage:**${ռօɨʀʄɨӼ}rm <Queue Number>`))
                         .catch(console.error)
-                    // .then((message) => {
-                    // message.delete({
-                    // timeout: `${ռօɨʀքʊʀɢɛʀ}`
-                    // });
-                    // });
+                        .then((message) => {
+                            message.delete({
+                                timeout: `${ռօɨʀքʊʀɢɛʀ}`
+                            });
+                        });
                     return;
                 }
                 // =============================================================================================================================
@@ -221,11 +221,11 @@ There is no queue.`))
 
 **usage:**${ռօɨʀʄɨӼ}rm <Queue Number>`))
                         .catch(console.error)
-                    // .then((message) => {
-                    // message.delete({
-                    // timeout: `${ռօɨʀքʊʀɢɛʀ}`
-                    // });
-                    // });
+                        .then((message) => {
+                            message.delete({
+                                timeout: `${ռօɨʀքʊʀɢɛʀ}`
+                            });
+                        });
                     return;
                 }
             }

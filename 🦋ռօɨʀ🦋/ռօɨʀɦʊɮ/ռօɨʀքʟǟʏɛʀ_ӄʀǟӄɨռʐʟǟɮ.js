@@ -1,7 +1,7 @@
-const ytdl = require('ytdl-core-discord');
-const { canModifyQueue, ɴᴏɪʀᴡᴀᴋᴇ, ռօɨʀքʊʀɢɛʀ } = require('../noirtem/noir_env');
-const { MessageEmbed } = require('../ӄʀǟӄɨռʐʟǟɮ/src');
-const getVideoId = require('get-video-id');
+const ytdl = require("ytdl-core-discord");
+const { canModifyQueue, ɴᴏɪʀᴡᴀᴋᴇ, ռօɨʀքʊʀɢɛʀ } = require("../noirtem/noir_env");
+const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
+const getVideoId = require("get-video-id");
 // =============================================================================================================================
 //
 //
@@ -29,10 +29,10 @@ module.exports = {
           queue.textChannel
             .send(
               new MessageEmbed()
-                .setColor('#6272a4')
+                .setColor("#6272a4")
                 .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`=========⚜️=========
 
 **ռօɨʀ💜քʟǟʏɛʀ** *has left the voice channel!*`)
@@ -54,28 +54,30 @@ module.exports = {
         return;
       }
       let musicfetcher = null;
-      let musicfetchergenre = music.url.includes('youtube.com') ? 'opus' : 'ogg/opus';
+      let musicfetchergenre = music.url.includes("youtube.com")
+        ? "opus"
+        : "ogg/opus";
       // =============================================================================================================================
       // GNU GENERAL PUBLIC LICENSE
       // Version 3, 29 June 2007
       // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
       // ============================================================================================================================
       try {
-        if (music.url.includes('youtube.com')) {
+        if (music.url.includes("youtube.com")) {
           musicfetcher = await ytdl(music.url, {
             highWaterMark: 1 << 25,
           });
         } else {
-          message.react('❌');
-          message.react('🔥');
+          message.react("❌");
+          message.react("🔥");
           message.channel
             .send(
               new MessageEmbed()
-                .setColor('#E0D268')
-                .setTitle('⚠️Warning⚠️')
+                .setColor("#E0D268")
+                .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
 =========⚜️=========
@@ -101,16 +103,16 @@ Only **YouTube** playing/streaming is allowed`)
         // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
         // ============================================================================================================================
         console.error(error);
-        message.react('❌');
-        message.react('🔥');
+        message.react("❌");
+        message.react("🔥");
         message.channel
           .send(
             new MessageEmbed()
-              .setColor('#E0D268')
-              .setTitle('⚠️Warning⚠️')
+              .setColor("#E0D268")
+              .setTitle("⚠️Warning⚠️")
               .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(
                 `
 **User:** ${message.author}
@@ -135,9 +137,9 @@ Only **YouTube** playing/streaming is allowed`)
       // ============================================================================================================================
       const dispatcher = queue.connection
         .play(musicfetcher, { type: musicfetchergenre })
-        .on('finish', () => {
+        .on("finish", () => {
           if (collector && !collector.ended) collector.stop();
-          queue.connection.removeAllListeners('disconnect');
+          queue.connection.removeAllListeners("disconnect");
           if (queue.loop) {
             let lastSong = queue.songs.shift();
             queue.songs.push(lastSong);
@@ -147,7 +149,7 @@ Only **YouTube** playing/streaming is allowed`)
             module.exports.play(queue.songs[0], message);
           }
         })
-        .on('error', (err) => {
+        .on("error", (err) => {
           console.error(err);
           queue.songs.shift();
           module.exports.play(queue.songs[0], message);
@@ -160,14 +162,16 @@ Only **YouTube** playing/streaming is allowed`)
       // ============================================================================================================================
       try {
         const { id } = getVideoId(`${music.url}`);
+        message.react("✅");
+        message.react("🍧");
         var NoirPlayingMessage = await queue.textChannel.send(
           new MessageEmbed()
-            .setColor('#6272a4')
-            .setTitle('💯ᴅɪʀᴇᴄᴛʟʏ ꜱᴛʀᴇᴀᴍɪɴɢ ᴜꜱɪɴɢ-𝐘𝐨𝐮𝐓𝐮𝐛𝐞')
+            .setColor("#6272a4")
+            .setTitle("💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞")
             .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
             .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
             .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
-            .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
             .setDescription(`
 =========⚜️=========
 
@@ -176,13 +180,13 @@ Only **YouTube** playing/streaming is allowed`)
 `)
         );
 
-        await NoirPlayingMessage.react('⏭');
-        await NoirPlayingMessage.react('⏸');
-        await NoirPlayingMessage.react('🔇');
-        await NoirPlayingMessage.react('🔉');
-        await NoirPlayingMessage.react('🔊');
-        await NoirPlayingMessage.react('🔁');
-        await NoirPlayingMessage.react('⏺');
+        await NoirPlayingMessage.react("⏭");
+        await NoirPlayingMessage.react("⏸");
+        await NoirPlayingMessage.react("🔇");
+        await NoirPlayingMessage.react("🔉");
+        await NoirPlayingMessage.react("🔊");
+        await NoirPlayingMessage.react("🔁");
+        await NoirPlayingMessage.react("⏺");
       } catch (error) {
         console.error(error);
       }
@@ -195,7 +199,7 @@ Only **YouTube** playing/streaming is allowed`)
       var collector = NoirPlayingMessage.createReactionCollector(filter, {
         time: music.duration > 0 ? music.duration * 1000 : 600000,
       });
-      collector.on('collect', (reaction, user) => {
+      collector.on("collect", (reaction, user) => {
         if (!queue) {
           return;
         }
@@ -206,22 +210,22 @@ Only **YouTube** playing/streaming is allowed`)
         // ============================================================================================================================
         const member = message.guild.member(user);
         switch (reaction.emoji.name) {
-          case '⏭':
+          case "⏭":
             queue.playing = true;
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
-              message.react('❌');
-              message.react('🔥');
+              message.react("❌");
+              message.react("🔥");
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor('#E0D268')
-                    .setTitle('⚠️Warning⚠️')
+                    .setColor("#E0D268")
+                    .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
@@ -247,10 +251,10 @@ Only **YouTube** playing/streaming is allowed`)
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor('#6272a4')
+                  .setColor("#6272a4")
                   .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                  .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
 =========⚜️=========
 
@@ -269,21 +273,21 @@ Only **YouTube** playing/streaming is allowed`)
           // Version 3, 29 June 2007
           // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
           // ============================================================================================================================
-          case '⏸':
+          case "⏸":
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
-              message.react('❌');
-              message.react('🔥');
+              message.react("❌");
+              message.react("🔥");
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor('#E0D268')
-                    .setTitle('⚠️Warning⚠️')
+                    .setColor("#E0D268")
+                    .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
@@ -311,12 +315,12 @@ Only **YouTube** playing/streaming is allowed`)
               queue.textChannel
                 .send(
                   new MessageEmbed()
-                    .setColor('#6272a4')
+                    .setColor("#6272a4")
                     .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
 =========⚜️=========
 
@@ -329,12 +333,12 @@ Only **YouTube** playing/streaming is allowed`)
               queue.textChannel
                 .send(
                   new MessageEmbed()
-                    .setColor('#6272a4')
+                    .setColor("#6272a4")
                     .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
 =========⚜️=========
 
@@ -353,21 +357,21 @@ Only **YouTube** playing/streaming is allowed`)
           // Version 3, 29 June 2007
           // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
           // ============================================================================================================================
-          case '🔇':
+          case "🔇":
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
-              message.react('❌');
-              message.react('🔥');
+              message.react("❌");
+              message.react("🔥");
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor('#E0D268')
-                    .setTitle('⚠️Warning⚠️')
+                    .setColor("#E0D268")
+                    .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
@@ -395,12 +399,12 @@ Only **YouTube** playing/streaming is allowed`)
               queue.textChannel
                 .send(
                   new MessageEmbed()
-                    .setColor('#6272a4')
+                    .setColor("#6272a4")
                     .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
 =========⚜️=========
 
@@ -419,12 +423,12 @@ Only **YouTube** playing/streaming is allowed`)
               queue.textChannel
                 .send(
                   new MessageEmbed()
-                    .setColor('#6272a4')
+                    .setColor("#6272a4")
                     .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
 =========⚜️=========
 
@@ -443,24 +447,24 @@ Only **YouTube** playing/streaming is allowed`)
           // Version 3, 29 June 2007
           // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
           // ============================================================================================================================
-          case '🔉':
+          case "🔉":
             reaction.users.remove(user).catch(console.error);
             if (queue.volume == 0) {
               return;
             }
             if (!canModifyQueue(member)) {
-              message.react('❌');
-              message.react('🔥');
+              message.react("❌");
+              message.react("🔥");
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor('#E0D268')
-                    .setTitle('⚠️Warning⚠️')
+                    .setColor("#E0D268")
+                    .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
@@ -489,10 +493,10 @@ Only **YouTube** playing/streaming is allowed`)
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor('#6272a4')
+                  .setColor("#6272a4")
                   .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                  .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
 =========⚜️=========
 
@@ -511,24 +515,24 @@ Volume now at = **${queue.volume}%**`)
           // Version 3, 29 June 2007
           // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
           // ============================================================================================================================
-          case '🔊':
+          case "🔊":
             reaction.users.remove(user).catch(console.error);
             if (queue.volume == 100) {
               return;
             }
             if (!canModifyQueue(member)) {
-              message.react('❌');
-              message.react('🔥');
+              message.react("❌");
+              message.react("🔥");
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor('#E0D268')
-                    .setTitle('⚠️Warning⚠️')
+                    .setColor("#E0D268")
+                    .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
@@ -557,10 +561,10 @@ Volume now at = **${queue.volume}%**`)
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor('#6272a4')
+                  .setColor("#6272a4")
                   .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                  .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
 =========⚜️=========
 
@@ -578,21 +582,21 @@ Volume now at = **${queue.volume}%**`)
           // Version 3, 29 June 2007
           // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
           // ============================================================================================================================
-          case '🔁':
+          case "🔁":
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
-              message.react('❌');
-              message.react('🔥');
+              message.react("❌");
+              message.react("🔥");
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor('#E0D268')
-                    .setTitle('⚠️Warning⚠️')
+                    .setColor("#E0D268")
+                    .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
@@ -618,14 +622,14 @@ Volume now at = **${queue.volume}%**`)
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor('#6272a4')
+                  .setColor("#6272a4")
                   .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                  .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
 =========⚜️=========
 
-Loop is now ${queue.loop ? '**Turned On**' : '**Turned Off**'}`)
+Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
               )
               .catch(console.error)
               .then((message) => {
@@ -640,21 +644,21 @@ Loop is now ${queue.loop ? '**Turned On**' : '**Turned Off**'}`)
           // Version 3, 29 June 2007
           // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
           // ============================================================================================================================
-          case '⏺':
+          case "⏺":
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
-              message.react('❌');
-              message.react('🔥');
+              message.react("❌");
+              message.react("🔥");
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor('#E0D268')
-                    .setTitle('⚠️Warning⚠️')
+                    .setColor("#E0D268")
+                    .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                     .setThumbnail(
                       `https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`
                     )
-                    .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
 **User:** ${message.author}
@@ -681,11 +685,11 @@ Loop is now ${queue.loop ? '**Turned On**' : '**Turned Off**'}`)
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor('#bd93f9')
+                  .setColor("#bd93f9")
                   .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
                   .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
-                  .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(
                     `=========⚜️=========
 
@@ -717,16 +721,16 @@ Last Song was 👇🏻
       // Version 3, 29 June 2007
       // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
       // ============================================================================================================================
-      collector.on('end', () => {
+      collector.on("end", () => {
         NoirPlayingMessage.reactions.removeAll().catch(console.error);
       });
     } catch (ErrorNoir) {
       message.channel.send(
         new MessageEmbed()
-          .setColor('#DB4434')
-          .setTitle('🔺ERROR CAUGHT🔻')
-          .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
-          .setThumbnail('https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg')
+          .setColor("#DB4434")
+          .setTitle("🔺ERROR CAUGHT🔻")
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+          .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
           .setDescription(`
 **Noir** has encountered an error.
 

@@ -1,7 +1,7 @@
-const getVideoId = require('get-video-id');
-const { MessageEmbed } = require('../ӄʀǟӄɨռʐʟǟɮ/src');
-const { splitBar } = require('string-progressbar');
-const { ռօɨʀʄɨӼ, ռօɨʀքʊʀɢɛʀ } = require('../noirtem/noir_env');
+const getVideoId = require("get-video-id");
+const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
+const { splitBar } = require("string-progressbar");
+const { ռօɨʀʄɨӼ, ռօɨʀքʊʀɢɛʀ } = require("../noirtem/noir_env");
 // =============================================================================================================================
 //
 //
@@ -12,7 +12,7 @@ const { ռօɨʀʄɨӼ, ռօɨʀքʊʀɢɛʀ } = require('../noirtem/noir_env');
 //
 // =============================================================================================================================
 module.exports = {
-  name: 'np',
+  name: "np",
   cooldown: 3,
   // =============================================================================================================================
   // GNU GENERAL PUBLIC LICENSE
@@ -22,19 +22,19 @@ module.exports = {
   execute(message) {
     try {
       if (
-        message.content.startsWith(ռօɨʀʄɨӼ + 'np') &&
-        message.channel.name !== 'ռօɨʀ💜քʟǟʏɛʀ'
+        message.content.startsWith(ռօɨʀʄɨӼ + "np") &&
+        message.channel.name !== "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
-        message.react('❌');
-        message.react('🔥');
+        message.react("❌");
+        message.react("🔥");
         message.channel
           .send(
             new MessageEmbed()
-              .setColor('#E0D268')
-              .setTitle('⚠️Warning⚠️')
+              .setColor("#E0D268")
+              .setTitle("⚠️Warning⚠️")
               .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-              .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(
                 `
 **User:** ${message.author}
@@ -59,21 +59,21 @@ module.exports = {
       // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
       // =============================================================================================================================
       if (
-        message.content.startsWith(ռօɨʀʄɨӼ + 'np') &&
-        message.channel.name === 'ռօɨʀ💜քʟǟʏɛʀ'
+        message.content.startsWith(ռօɨʀʄɨӼ + "np") &&
+        message.channel.name === "ռօɨʀ💜քʟǟʏɛʀ"
       ) {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
-          message.react('❌');
-          message.react('🔥');
+          message.react("❌");
+          message.react("🔥");
           message.channel
             .send(
               new MessageEmbed()
-                .setColor('#E0D268')
-                .setTitle('⚠️Warning⚠️')
+                .setColor("#E0D268")
+                .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐍𝐨𝐢𝐫💜by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg`)
-                .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
                   `
 **User:** ${message.author}
@@ -108,11 +108,11 @@ Noir is not playing anymusic yet....`
         // =============================================================================================================================
         const { id } = getVideoId(`${music.url}`);
         let current = new MessageEmbed()
-          .setTitle('**ռօɨʀ💜քʟǟʏɛʀ**\n*Now playing*')
-          .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
+          .setTitle("**ռօɨʀ💜քʟǟʏɛʀ**\n*Now playing*")
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
           .setDescription(`${music.title}\n${music.url}`)
-          .setColor('#6272a4')
+          .setColor("#6272a4")
           .setAuthor(message.client.user.username);
         // =============================================================================================================================
         // GNU GENERAL PUBLIC LICENSE
@@ -124,7 +124,11 @@ Noir is not playing anymusic yet....`
             `\u200b`,
             new Date(seek * 1000).toISOString().substr(11, 8) +
               `[` +
-              splitBar(music.duration == 0 ? seek : music.duration, seek, 20)[0] +
+              splitBar(
+                music.duration == 0 ? seek : music.duration,
+                seek,
+                20
+              )[0] +
               `]` +
               (music.duration == 0
                 ? ` ◉ LIVE`
@@ -137,8 +141,8 @@ Noir is not playing anymusic yet....`
               .substr(11, 8)}`
           );
         }
-        message.react('✅');
-        message.react('🍧');
+        message.react("✅");
+        message.react("🍧");
         message.channel.send(current).catch(console.error);
         return;
       }
@@ -150,10 +154,10 @@ Noir is not playing anymusic yet....`
     } catch (ErrorNoir) {
       message.channel.send(
         new MessageEmbed()
-          .setColor('#DB4434')
-          .setTitle('🔺ERROR CAUGHT🔻')
-          .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
-          .setThumbnail('https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg')
+          .setColor("#DB4434")
+          .setTitle("🔺ERROR CAUGHT🔻")
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+          .setThumbnail("https://i.postimg.cc/fTKfYqx0/Noir-Player.jpg")
           .setDescription(`
 **Noir** has encountered an error.
 
