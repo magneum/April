@@ -36,7 +36,7 @@ module.exports = {
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           .setDescription(
             `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 **Category:** \`🔱Krakinz\`

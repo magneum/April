@@ -41,7 +41,7 @@ module.exports = {
               )
               .setDescription(
                 `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 **Category:** \`🔱Krakinz\`
@@ -84,7 +84,7 @@ module.exports = {
                 )
                 .setDescription(
                   `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 There is no queue.
@@ -120,7 +120,7 @@ There is no queue.
                 )
                 .setDescription(
                   `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
@@ -163,7 +163,7 @@ There is no queue.
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter(
                 "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
-              ).setDescription(`**User:** ${message.author}
+              ).setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 🔀 Shuffled the queue

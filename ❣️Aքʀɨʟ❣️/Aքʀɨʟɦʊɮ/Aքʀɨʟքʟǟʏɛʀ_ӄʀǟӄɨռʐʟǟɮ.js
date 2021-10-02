@@ -39,6 +39,7 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 ---------------:lady_beetle:---------------
+
 **Aքʀɨʟ❣️ʍʊֆɨƈ** *has left the voice channel!*
 
 ---------------:lady_beetle:---------------`)
@@ -85,8 +86,9 @@ module.exports = {
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
+
 Only **YouTube** playing/streaming is allowed
 
 ---------------:lady_beetle:---------------`)
@@ -122,8 +124,9 @@ Only **YouTube** playing/streaming is allowed
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(
                 `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
+
 **Error:** 
 *${error}*`
               )
@@ -181,8 +184,8 @@ Only **YouTube** playing/streaming is allowed
             .setDescription(`
 ---------------:lady_beetle:---------------
 
-**🏷Title-** [${music.title}](${music.url})
-**Song Requested by** ${message.author}
+🏷𝕋𝕚𝕥𝕝𝕖: **[${music.title}](${music.url})**
+🎂ℝ𝕖𝕢𝕦𝕖𝕤𝕥𝕖𝕕 𝕓𝕪: ${message.author}
 
 ---------------:lady_beetle:---------------`)
         );
@@ -232,8 +235,9 @@ Only **YouTube** playing/streaming is allowed
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
+
 *You need to* ***join** *a voice channel first!*
 
 ---------------:lady_beetle:---------------`
@@ -260,7 +264,7 @@ Only **YouTube** playing/streaming is allowed
                   .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                  .setDescription(`**User:** ${message.author}
+                  .setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 ⏩ *Skipped the music*
@@ -295,7 +299,7 @@ Only **YouTube** playing/streaming is allowed
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
@@ -326,7 +330,7 @@ Only **YouTube** playing/streaming is allowed
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                    .setDescription(`**User:** ${message.author}
+                    .setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 🚦 *Paused the music.*
@@ -344,7 +348,7 @@ Only **YouTube** playing/streaming is allowed
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                    .setDescription(`**User:** ${message.author}
+                    .setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 ▶ *Resumed the music!*
@@ -379,7 +383,7 @@ Only **YouTube** playing/streaming is allowed
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
@@ -410,7 +414,7 @@ Only **YouTube** playing/streaming is allowed
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                    .setDescription(`**User:** ${message.author}
+                    .setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 🔇 Muted the music!
@@ -434,7 +438,7 @@ Only **YouTube** playing/streaming is allowed
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                    .setDescription(`**User:** ${message.author}
+                    .setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 🔊 Unmuted the music!
@@ -472,7 +476,7 @@ Only **YouTube** playing/streaming is allowed
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
@@ -504,7 +508,7 @@ Only **YouTube** playing/streaming is allowed
                   .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                  .setDescription(`**User:** ${message.author}
+                  .setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 🔉 Decreased the volume, 
@@ -542,7 +546,7 @@ Volume now at = **${queue.volume}%**
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
@@ -574,7 +578,7 @@ Volume now at = **${queue.volume}%**
                   .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                  .setDescription(`**User:** ${message.author}
+                  .setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 🔊 Increased the volume, the volume is now ${queue.volume}%
@@ -608,7 +612,7 @@ Volume now at = **${queue.volume}%**
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
@@ -637,7 +641,7 @@ Volume now at = **${queue.volume}%**
                   .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                  .setDescription(`**User:** ${message.author}
+                  .setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}
@@ -672,7 +676,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
                       `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*

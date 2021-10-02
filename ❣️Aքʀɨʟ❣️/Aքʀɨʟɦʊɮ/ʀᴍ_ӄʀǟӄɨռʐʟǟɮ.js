@@ -32,7 +32,7 @@ module.exports = {
                         .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
                         .setDescription(
                             `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 **Category:** \`🔱Krakinz\`
@@ -67,7 +67,7 @@ module.exports = {
                             .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
                             .setDescription(
                                 `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 There is no queue.
@@ -98,7 +98,7 @@ There is no queue.
                             .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
                             .setDescription(
                                 `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
@@ -129,7 +129,7 @@ There is no queue.
                             .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
                             .setDescription(
                                 `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 ⚓️**usage:**${AքʀɨʟʄɨӼ}rm <Queue Number>
@@ -166,7 +166,7 @@ There is no queue.
                                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                                 .setFooter(
                                     '🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab'
-                                ).setDescription(`**User:** ${message.author}
+                                ).setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 ⏺ Removed **${removed.map((music) => music.title).join(`\n`)}** from the queue.
@@ -196,7 +196,7 @@ There is no queue.
                                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                                 .setFooter(
                                     '🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab'
-                                ).setDescription(`**User:** ${message.author}
+                                ).setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 ⏺ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.
@@ -228,7 +228,7 @@ There is no queue.
                             .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab')
                             .setDescription(
                                 `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 **usage:**${AքʀɨʟʄɨӼ}rm <Queue Number>

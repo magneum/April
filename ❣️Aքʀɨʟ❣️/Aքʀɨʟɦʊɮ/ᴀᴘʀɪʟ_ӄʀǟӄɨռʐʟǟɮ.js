@@ -42,7 +42,7 @@ module.exports = {
         message.author
           .send(
             new MessageEmbed()
-              .setDescription(`**User:** ${message.author}\n${AprilNore}`)
+              .setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}\n${AprilNore}`)
               .setColor("#ff0000")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -53,7 +53,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setDescription(`**User:** ${message.author}\n${AprilNore}`)
+              .setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}\n${AprilNore}`)
               .setColor("#ff0000")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

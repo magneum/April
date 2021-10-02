@@ -32,7 +32,7 @@ module.exports = {
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-              .setDescription(`**User:** ${message.author}
+              .setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 **Category:** \`🔱Krakinz\`
@@ -69,7 +69,7 @@ module.exports = {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(
                 `
-**User:** ${message.author}
+**𝕌𝕤𝕖𝕣:** ${message.author}
 ---------------:lady_beetle:---------------
 
 ⌛️Average ping of April's Server **${Math.round(message.client.ws.ping)}ms**
