@@ -131,24 +131,28 @@ module.exports = {
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
             .setDescription(`*💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞*
 
-**🏷TƬIƬILΣ**==*[${music.title}](${music.url})*
-**🎂RΣQUΣSƬΣD_BY**==${message.author}`)
+-----------:lady_beetle:**TƬIƬILΣ**
+🏷• [${music.title}](${music.url})
+
+*-----------:lady_beetle:**RΣQUΣSƬΣD_BY**
+🎂• ${message.author}`)
         );
         var ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel
           .send(
             new MessageEmbed()
               .setColor("#ff0000")
+              .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
               .setImage(`https://i.postimg.cc/NGn094BR/A-M.gif`)
-              .setDescription(`
-•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫:lady_beetle:𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+              .setDescription(`•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫:lady_beetle:𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•
 ---------------:lady_beetle:---------------
 
-• ⏭ = **Skip the currently playing music.**
-• ⏸ = **Pause/Resume the currently playing music.**
-• 🔇 = **Mute/Unmute the currently playing music.**
-• 🔊 = **Change volume of currently playing music.**
-• 🔁 = **Toggle music loop.**
-• ⏺ = **Stops the currently playing music queue.**
+• ⏭=**Skip the currently playing music.**
+• ⏸=**Pause/Resume the currently playing music.**
+• 🔇=**Mute/Unmute the currently playing music.**
+• =**Change volume of currently playing music.**
+• 🔁=**Toggle music loop.**
+• ⏺=**Stops the currently playing music queue.**
 `)
           )
           .catch(console.error);
