@@ -35,8 +35,8 @@ module.exports = {
         return;
       }
       if (
-        (message.content.startsWith(AքʀɨʟʄɨӼ + "shuffle") &&
-          message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") ||
+        message.content.startsWith(AքʀɨʟʄɨӼ + "shuffle") &&
+          message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" ||
         message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ"
       ) {
         const queue = message.client.queue.get(message.guild.id);

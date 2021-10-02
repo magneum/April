@@ -77,8 +77,8 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
         return;
       }
       if (
-        (message.content.startsWith(AքʀɨʟʄɨӼ + "play") &&
-          message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") ||
+        message.content.startsWith(AքʀɨʟʄɨӼ + "play") &&
+          message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" ||
         message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ"
       ) {
         const { channel } = message.member.voice;

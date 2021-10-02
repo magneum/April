@@ -34,8 +34,8 @@ module.exports = {
       }
 
       if (
-        (message.content.startsWith(AքʀɨʟʄɨӼ + "pfp") &&
-          message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") ||
+        message.content.startsWith(AքʀɨʟʄɨӼ + "pfp") &&
+          message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" ||
         message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ"
       ) {
         message.react("✅");
