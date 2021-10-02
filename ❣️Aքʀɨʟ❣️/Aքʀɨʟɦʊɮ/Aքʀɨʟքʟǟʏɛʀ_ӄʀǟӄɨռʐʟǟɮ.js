@@ -81,7 +81,7 @@ module.exports = {
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -118,7 +118,7 @@ Only **YouTube** playing/streaming is allowed
           .send(
             new MessageEmbed()
               .setColor("#FF5F15")
-              .setTitle("⚠️Warning⚠️")
+              .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -229,7 +229,7 @@ Only **YouTube** playing/streaming is allowed
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setTitle("⚠️Warning⚠️")
+                    .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -293,7 +293,7 @@ Only **YouTube** playing/streaming is allowed
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setTitle("⚠️Warning⚠️")
+                    .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -377,7 +377,7 @@ Only **YouTube** playing/streaming is allowed
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setTitle("⚠️Warning⚠️")
+                    .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -470,7 +470,7 @@ Only **YouTube** playing/streaming is allowed
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setTitle("⚠️Warning⚠️")
+                    .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -540,7 +540,7 @@ Volume now at = **${queue.volume}%**
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setTitle("⚠️Warning⚠️")
+                    .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -606,7 +606,7 @@ Volume now at = **${queue.volume}%**
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setTitle("⚠️Warning⚠️")
+                    .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -670,7 +670,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setTitle("⚠️Warning⚠️")
+                    .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")

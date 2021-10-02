@@ -46,7 +46,7 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#FF5F15")
-              .setTitle("⚠️Warning⚠️")
+              .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -82,7 +82,7 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#FF5F15")
-              .setTitle("⚠️Warning⚠️")
+              .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -123,7 +123,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -157,7 +157,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -190,7 +190,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -225,7 +225,7 @@ ID= ${message.client.user}
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -261,7 +261,7 @@ ${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -295,7 +295,7 @@ Cannot connect to voice channel, missing permissions
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -356,7 +356,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!
                   .send(
                     new MessageEmbed()
                       .setColor("#FF5F15")
-                      .setTitle("⚠️Warning⚠️")
+                      .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                       .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                       .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                       .setFooter(
@@ -400,7 +400,7 @@ Audio Not Found
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -500,7 +500,7 @@ Following url redirection...
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setTitle("⚠️Warning⚠️")
+                    .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -634,7 +634,7 @@ and is 📄 bound to \`#${message.channel.name}\`**
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")

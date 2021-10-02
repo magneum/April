@@ -33,7 +33,7 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#FF5F15")
-              .setTitle("⚠️Warning⚠️")
+              .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter(
@@ -76,7 +76,7 @@ module.exports = {
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter(
@@ -112,7 +112,7 @@ There is no queue.
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter(

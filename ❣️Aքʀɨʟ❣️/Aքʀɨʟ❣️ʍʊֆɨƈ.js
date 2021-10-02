@@ -194,7 +194,7 @@ Aքʀɨʟʍʊֆɨƈ.on("message", async (message) => {
       message.reply(
         new MessageEmbed()
           .setColor("#e69138")
-          .setTitle("⚠️Warning⚠️")
+          .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
           .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -265,7 +265,7 @@ Aքʀɨʟʍʊֆɨƈ.on("message", async (message) => {
           .send(
             new MessageEmbed()
               .setColor("#e69138")
-              .setTitle("⚠️Warning⚠️")
+              .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -302,7 +302,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
         .send(
           new MessageEmbed()
             .setColor("#e69138")
-            .setTitle("⚠️Warning⚠️")
+            .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
             .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)

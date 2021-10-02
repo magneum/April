@@ -40,7 +40,7 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#FF5F15")
-              .setTitle("⚠️Warning⚠️")
+              .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -82,7 +82,7 @@ module.exports = {
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -114,7 +114,7 @@ module.exports = {
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -148,7 +148,7 @@ ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -180,7 +180,7 @@ Cannot connect to voice channel, missing permissions
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -212,7 +212,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -273,7 +273,7 @@ ID= ${message.client.user}
               .send(
                 new MessageEmbed()
                   .setColor("#FF5F15")
-                  .setTitle("⚠️Warning⚠️")
+                  .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                   .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -427,7 +427,7 @@ Started a playlist
               .send(
                 new MessageEmbed()
                   .setColor("#FF5F15")
-                  .setTitle("⚠️Warning⚠️")
+                  .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                   .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")

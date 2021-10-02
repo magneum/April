@@ -33,7 +33,7 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#FF5F15")
-              .setTitle("⚠️Warning⚠️")
+              .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -73,7 +73,7 @@ module.exports = {
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -109,7 +109,7 @@ ${AքʀɨʟʄɨӼ}{name} <Queue Number>
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -143,7 +143,7 @@ There is nothing playing that I could skip for you.
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
@@ -177,7 +177,7 @@ There is nothing playing that I could skip for you.
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("⚠️Warning⚠️")
+                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
