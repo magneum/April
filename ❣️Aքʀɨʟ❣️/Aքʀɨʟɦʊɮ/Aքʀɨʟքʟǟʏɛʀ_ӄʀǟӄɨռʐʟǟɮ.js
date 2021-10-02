@@ -131,10 +131,10 @@ module.exports = {
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
             .setDescription(`*💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞*
 
------------:lady_beetle:**TƬIƬILΣ**
+**TITLE**
 🏷• [${music.title}](${music.url})
 
-*-----------:lady_beetle:**RΣQUΣSƬΣD_BY**
+**Requested By**
 🎂• ${message.author}`)
         );
         var ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel
@@ -147,12 +147,12 @@ module.exports = {
               .setDescription(`•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫:lady_beetle:𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•
 ---------------:lady_beetle:---------------
 
-⏭•**Skip the currently playing music.**
-⏸•**Pause/Resume the currently playing music.**
-🔇•**Mute/Unmute the currently playing music.**
-🔊•**Change volume of currently playing music.**
+⏭•**Skip music**
+⏸•**Pause/Resume music.**
+🔇•**Mute/Unmute music.**
+🔊•**Change volume  music.**
 🔁•**Toggle music loop.**
-⏺•**Stops the currently playing music queue.**
+⏺•**Stops the music queue.**
 `)
           )
           .catch(console.error);
