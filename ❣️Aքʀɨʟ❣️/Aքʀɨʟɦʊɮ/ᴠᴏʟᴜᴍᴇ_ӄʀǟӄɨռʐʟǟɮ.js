@@ -31,7 +31,7 @@ module.exports = {
           });
         return;
       }
-      if (message.content.startsWith(AքʀɨʟʄɨӼ + "vol") && message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" || message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ") {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "vol") && (message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" || message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ")) {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
           message.react("❌");
