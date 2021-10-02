@@ -3,7 +3,7 @@ const {
   canModifyQueue,
   ᴀᴘʀɪʟᴡᴀᴋᴇ,
   Aքʀɨʟքʊʀɢɛʀ,
-} = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
+} = require("../Aքʀɨʟռɛʋ/April_env");
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const getVideoId = require("get-video-id");
 // =============================================================================================================================
@@ -79,7 +79,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69138")
+                .setColor("#FF5F15")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -115,7 +115,7 @@ Only **YouTube** playing/streaming is allowed
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#e69138")
+              .setColor("#FF5F15")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -225,7 +225,7 @@ Only **YouTube** playing/streaming is allowed
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#e69138")
+                    .setColor("#FF5F15")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -288,7 +288,7 @@ Only **YouTube** playing/streaming is allowed
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#e69138")
+                    .setColor("#FF5F15")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -372,7 +372,7 @@ Only **YouTube** playing/streaming is allowed
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#e69138")
+                    .setColor("#FF5F15")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -465,7 +465,7 @@ Only **YouTube** playing/streaming is allowed
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#e69138")
+                    .setColor("#FF5F15")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -535,7 +535,7 @@ Volume now at = **${queue.volume}%**
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#e69138")
+                    .setColor("#FF5F15")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -601,7 +601,7 @@ Volume now at = **${queue.volume}%**
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#e69138")
+                    .setColor("#FF5F15")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -665,7 +665,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#e69138")
+                    .setColor("#FF5F15")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)

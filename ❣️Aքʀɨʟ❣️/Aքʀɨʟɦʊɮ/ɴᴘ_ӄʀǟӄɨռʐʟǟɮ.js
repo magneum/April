@@ -1,7 +1,7 @@
 const getVideoId = require("get-video-id");
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const { splitBar } = require("string-progressbar");
-const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
+const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/April_env");
 // =============================================================================================================================
 //
 //
@@ -30,7 +30,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#e69138")
+              .setColor("#FF5F15")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -71,7 +71,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69138")
+                .setColor("#FF5F15")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)

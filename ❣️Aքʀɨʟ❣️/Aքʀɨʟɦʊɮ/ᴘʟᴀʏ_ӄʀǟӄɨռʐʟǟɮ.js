@@ -4,7 +4,7 @@ const {
   ᴀᴘʀɪʟᴠᴏʟ,
   AքʀɨʟʄɨӼ,
   Aքʀɨʟքʊʀɢɛʀ,
-} = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
+} = require("../Aքʀɨʟռɛʋ/April_env");
 const https = require("https");
 const ytdl = require("ytdl-core");
 const { play } = require("./Aքʀɨʟքʟǟʏɛʀ_ӄʀǟӄɨռʐʟǟɮ");
@@ -45,7 +45,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#e69138")
+              .setColor("#FF5F15")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -81,7 +81,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#e69138")
+              .setColor("#FF5F15")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -122,7 +122,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69138")
+                .setColor("#FF5F15")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -156,7 +156,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69138")
+                .setColor("#FF5F15")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -189,7 +189,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69138")
+                .setColor("#FF5F15")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -224,7 +224,7 @@ ID= ${message.client.user}
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69138")
+                .setColor("#FF5F15")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -260,7 +260,7 @@ ${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69138")
+                .setColor("#FF5F15")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -294,7 +294,7 @@ Cannot connect to voice channel, missing permissions
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69138")
+                .setColor("#FF5F15")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -355,7 +355,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!
                 message.channel
                   .send(
                     new MessageEmbed()
-                      .setColor("#e69138")
+                      .setColor("#FF5F15")
                       .setTitle("⚠️Warning⚠️")
                       .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                       .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -399,7 +399,7 @@ Audio Not Found
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69138")
+                .setColor("#FF5F15")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -499,7 +499,7 @@ Following url redirection...
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#e69138")
+                    .setColor("#FF5F15")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -633,7 +633,7 @@ and is 📄 bound to \`#${message.channel.name}\`**
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69138")
+                .setColor("#FF5F15")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)

@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('../ӄʀǟӄɨռʐʟǟɮ/src');
 const pattern = /^[0-9]{1,2}(\s*,\s*[0-9]{1,2})*$/;
-const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ, canModifyQueue } = require('../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ');
+const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ, canModifyQueue } = require('../Aքʀɨʟռɛʋ/April_env');
 // =============================================================================================================================
 //
 // 
@@ -25,7 +25,7 @@ module.exports = {
                 message.react('🔥');
                 message.channel
                     .send(new MessageEmbed()
-                        .setColor('#e69138')
+                        .setColor('#FF5F15')
                         .setTitle('⚠️Warning⚠️')
                         .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                         .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -60,7 +60,7 @@ module.exports = {
                     message.react('🔥');
                     message.channel
                         .send(new MessageEmbed()
-                            .setColor('#e69138')
+                            .setColor('#FF5F15')
                             .setTitle('⚠️Warning⚠️')
                             .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -91,7 +91,7 @@ There is no queue.
                     message.react('🔥');
                     message.channel
                         .send(new MessageEmbed()
-                            .setColor('#e69138')
+                            .setColor('#FF5F15')
                             .setTitle('⚠️Warning⚠️')
                             .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -122,7 +122,7 @@ There is no queue.
                     message.react('🔥');
                     message.channel
                         .send(new MessageEmbed()
-                            .setColor('#e69138')
+                            .setColor('#FF5F15')
                             .setTitle('⚠️Warning⚠️')
                             .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -161,7 +161,7 @@ There is no queue.
                     queue.textChannel
                         .send(
                             new MessageEmbed()
-                                .setColor('#ff0000')
+                                .setColor('#660000')
                                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                                 .setFooter(
@@ -191,7 +191,7 @@ There is no queue.
                     queue.textChannel
                         .send(
                             new MessageEmbed()
-                                .setColor('#ff0000')
+                                .setColor('#660000')
                                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                                 .setFooter(
@@ -221,7 +221,7 @@ There is no queue.
                     message.react('🔥');
                     message.channel
                         .send(new MessageEmbed()
-                            .setColor('#e69138')
+                            .setColor('#FF5F15')
                             .setTitle('⚠️Warning⚠️')
                             .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)

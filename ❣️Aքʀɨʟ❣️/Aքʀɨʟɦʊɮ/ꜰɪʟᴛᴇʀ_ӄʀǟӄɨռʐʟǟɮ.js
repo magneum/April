@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const { play } = require("./Aքʀɨʟքʟǟʏɛʀ_ӄʀǟӄɨռʐʟǟɮ");
-const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
+const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/April_env");
 // =============================================================================================================================
 //
 //
@@ -29,7 +29,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#e69138")
+              .setColor("#FF5F15")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -65,7 +65,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#e69138")
+              .setColor("#FF5F15")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -99,7 +99,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69138")
+                .setColor("#FF5F15")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -142,7 +142,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69138")
+                .setColor("#FF5F15")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -174,7 +174,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69138")
+                .setColor("#FF5F15")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -238,7 +238,7 @@ ID= ${message.client.user}
             message.channel
               .send(
                 new MessageEmbed()
-                  .setColor("#e69138")
+                  .setColor("#FF5F15")
                   .setTitle("⚠️Warning⚠️")
                   .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setFooter(`**Example:** ${AքʀɨʟʄɨӼ}filter bassboost`)
@@ -332,7 +332,7 @@ Restart **queue** and **filter** will be applied.
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69138")
+                .setColor("#FF5F15")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -366,7 +366,8 @@ Restart **queue** and **filter** will be applied.
           .setColor("#DB4434")
           .setTitle("🔺ERROR CAUGHT🔻")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png").setDescription(`
+          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
+          .setDescription(`
 **April** has encountered an error.
 
 Please report to either 

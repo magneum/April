@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
-const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
+const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/April_env");
 // =============================================================================================================================
 //
 //
@@ -79,7 +79,8 @@ module.exports = {
           .setColor("#DB4434")
           .setTitle("🔺ERROR CAUGHT🔻")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png").setDescription(`
+          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
+          .setDescription(`
 ---------------:lady_beetle:---------------
 
 **April has encountered an error!**
