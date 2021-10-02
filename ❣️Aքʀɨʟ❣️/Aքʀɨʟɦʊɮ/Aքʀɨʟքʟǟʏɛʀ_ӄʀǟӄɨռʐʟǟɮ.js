@@ -142,7 +142,7 @@ module.exports = {
             new MessageEmbed()
               .setColor("#ff0000")
               .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
-              .setImage(`https://i.postimg.cc/NGn094BR/A-M.gif`)
+              .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
               .setDescription(`•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫:lady_beetle:𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•
 ---------------:lady_beetle:---------------
