@@ -134,6 +134,13 @@ module.exports = {
 TƬIƬILΣ🏷**[${music.title}](${music.url})**
 RΣQUΣSƬΣD_BY🎂\`${message.author}\``)
         );
+        await AprilPlayingMessage.react("⏭");
+        await AprilPlayingMessage.react("⏸");
+        await AprilPlayingMessage.react("🔇");
+        await AprilPlayingMessage.react("🔉");
+        await AprilPlayingMessage.react("🔊");
+        await AprilPlayingMessage.react("🔁");
+        await AprilPlayingMessage.react("⏺");
         await queue.textChannel
           .send(
             new MessageEmbed().setColor("#ff0000").setDescription(`
@@ -154,13 +161,6 @@ RΣQUΣSƬΣD_BY🎂\`${message.author}\``)
               timeout: 30000,
             });
           });
-        await AprilPlayingMessage.react("⏭");
-        await AprilPlayingMessage.react("⏸");
-        await AprilPlayingMessage.react("🔇");
-        await AprilPlayingMessage.react("🔉");
-        await AprilPlayingMessage.react("🔊");
-        await AprilPlayingMessage.react("🔁");
-        await AprilPlayingMessage.react("⏺");
       } catch (error) {
         console.error(error);
       }
