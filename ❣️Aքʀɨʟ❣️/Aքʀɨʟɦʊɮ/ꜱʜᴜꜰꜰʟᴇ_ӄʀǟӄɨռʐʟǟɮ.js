@@ -120,7 +120,7 @@ There is nothing in queue.`)
       message.channel.send(
         new MessageEmbed()
           .setColor("#DB4434")
-          .setAuthor("🔺ERROR CAUGHT🔻")
+          .setAuthor("Error🔺Caught")
           .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
           .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
@@ -131,8 +131,7 @@ Please report to either
 or
 🔰**In telegram group** = https://t.me/Krakns
 
-
-**🔺Error Caught🔻**
+**Error🔻Caught**
 *${ErrorApril}*`)
       );
       console.error(ErrorApril);

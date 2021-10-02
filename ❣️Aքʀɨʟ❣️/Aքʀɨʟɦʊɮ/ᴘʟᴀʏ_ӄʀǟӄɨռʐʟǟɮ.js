@@ -114,7 +114,6 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
               new MessageEmbed()
                 .setColor("#FF5F15")
                 .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
-                .setAuthor(`😲 Warning! ⚠️`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
@@ -143,7 +142,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
                 .setDescription(`**Ú§êr >** ${message.author}
 
-You must be in the same Voice Channel as **ME**.
+You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
 ID= ${message.client.user}`)
             )
             .catch(console.error)
@@ -430,7 +429,6 @@ ${message.author}`
               .send(
                 new MessageEmbed()
                   .setColor("#ff0000")
-                  .setAuthor(`😲 Warning! ⚠️`)
                   .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -450,7 +448,6 @@ and is 📄 bound to \`#${message.channel.name}\`**`)
               .send(
                 new MessageEmbed()
                   .setColor("#ff0000")
-                  .setAuthor(`😲 Warning! ⚠️`)
                   .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -498,7 +495,7 @@ Could not join the channel: *${error}*`)
       message.channel.send(
         new MessageEmbed()
           .setColor("#DB4434")
-          .setAuthor("🔺ERROR CAUGHT🔻")
+          .setAuthor("Error🔺Caught")
           .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
           .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
@@ -509,8 +506,7 @@ Please report to either
 or
 🔰**In telegram group** = https://t.me/Krakns
 
-
-**🔺Error Caught🔻**
+**Error🔻Caught**
 *${ErrorApril}*`)
       );
       console.error(ErrorApril);

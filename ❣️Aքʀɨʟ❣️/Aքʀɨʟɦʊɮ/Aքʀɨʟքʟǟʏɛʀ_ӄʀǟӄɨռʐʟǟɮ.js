@@ -126,7 +126,7 @@ module.exports = {
           new MessageEmbed()
             .setColor("#ff0000")
             .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
-            .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+            .setThumbnail(`https://i.postimg.cc/BvsPV61N/A-M.gif`)
             .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
             .setDescription(`*💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞*
@@ -143,7 +143,11 @@ module.exports = {
         await AprilPlayingMessage.react("⏺");
         await queue.textChannel
           .send(
-            new MessageEmbed().setColor("#ff0000").setDescription(`
+            new MessageEmbed()
+              .setColor("#ff0000")
+              .setTitle("`https://i.postimg.cc/BvsPV61N/A-M.gif`")
+              .setThumbnail(`https://i.postimg.cc/BvsPV61N/A-M.gif`)
+              .setDescription(`
 * ♥️•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•*
 ---------------:lady_beetle:---------------
 
@@ -553,7 +557,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
       message.channel.send(
         new MessageEmbed()
           .setColor("#DB4434")
-          .setAuthor("🔺ERROR CAUGHT🔻")
+          .setAuthor("Error🔺Caught")
           .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
           .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
@@ -564,8 +568,7 @@ Please report to either
 or
 🔰**In telegram group** = https://t.me/Krakns
 
-
-**🔺Error Caught🔻**
+**Error🔻Caught**
 *${ErrorApril}*`)
       );
       console.error(ErrorApril);

@@ -141,11 +141,33 @@ Missing permission to manage messages or add reactions`)
           }
         });
       }
+      function generateQueueEmbed(message, queue) {
+        let embeds = [];
+        let k = 10;
+        for (let i = 0; i < queue.length; i += 10) {
+          const current = queue.slice(i, k);
+          let j = i;
+          k += 10;
+          const info = current
+            .map((track) => `${++j} - [${track.title}](${track.url})`)
+            .join(`\n`);
+          const embed = new MessageEmbed()
+            .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+            .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
+            .setColor("#ff0000")
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+            .setDescription(
+              `**Aքʀɨʟ❣️ʍʊֆɨƈ**\n\n♥️**Current Song** -_[${queue[0].title}]_\n\n${info}`
+            );
+          embeds.push(embed);
+        }
+        return embeds;
+      }
     } catch (ErrorApril) {
       message.channel.send(
         new MessageEmbed()
           .setColor("#DB4434")
-          .setAuthor("🔺ERROR CAUGHT🔻")
+          .setAuthor("Error🔺Caught")
           .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
           .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
@@ -156,33 +178,10 @@ Please report to either
 or
 🔰**In telegram group** = https://t.me/Krakns
 
-
-**🔺Error Caught🔻**
+**Error🔻Caught**
 *${ErrorApril}*`)
       );
       console.error(ErrorApril);
     }
   },
 };
-function generateQueueEmbed(message, queue) {
-  let embeds = [];
-  let k = 10;
-  for (let i = 0; i < queue.length; i += 10) {
-    const current = queue.slice(i, k);
-    let j = i;
-    k += 10;
-    const info = current
-      .map((track) => `${++j} - [${track.title}](${track.url})`)
-      .join(`\n`);
-    const embed = new MessageEmbed()
-      .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
-      .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-      .setColor("#ff0000")
-      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-      .setDescription(
-        `**Aքʀɨʟ❣️ʍʊֆɨƈ**\n\n♥️**Current Song** -_[${queue[0].title}]_\n\n${info}`
-      );
-    embeds.push(embed);
-  }
-  return embeds;
-}
