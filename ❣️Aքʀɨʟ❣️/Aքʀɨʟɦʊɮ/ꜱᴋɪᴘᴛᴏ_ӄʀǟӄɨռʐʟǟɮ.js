@@ -210,7 +210,7 @@ There is nothing playing that I could skip for you.
         }
         queue.connection.dispatcher.end();
         message.react("✅");
-        message.react("🍧");
+        message.react("❣️");
         queue.textChannel
           .send(
             new MessageEmbed()

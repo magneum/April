@@ -150,7 +150,7 @@ There is no queue.
         queue.songs = songs;
         message.client.queue.set(message.guild.id, queue);
         message.react("✅");
-        message.react("🍧");
+        message.react("❣️");
         queue.textChannel
           .send(
             new MessageEmbed()

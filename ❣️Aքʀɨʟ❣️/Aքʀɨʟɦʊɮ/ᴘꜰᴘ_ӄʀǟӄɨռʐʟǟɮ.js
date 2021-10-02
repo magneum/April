@@ -65,7 +65,7 @@ module.exports = {
         message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("✅");
-        message.react("🍧");
+        message.react("❣️");
         let AvatarEmbed = new MessageEmbed();
         const user = message.mentions.users.first();
         if (!message.mentions.users.first()) {

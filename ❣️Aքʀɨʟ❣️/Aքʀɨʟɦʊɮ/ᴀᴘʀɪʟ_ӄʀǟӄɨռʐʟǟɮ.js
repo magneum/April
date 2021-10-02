@@ -33,7 +33,7 @@ module.exports = {
 `;
       if (message.content.startsWith(AքʀɨʟʄɨӼ + "april")) {
         message.react("✅");
-        message.react("🍧");
+        message.react("❣️");
         message.author.send(
           new MessageEmbed()
             .setColor("#ff0000")

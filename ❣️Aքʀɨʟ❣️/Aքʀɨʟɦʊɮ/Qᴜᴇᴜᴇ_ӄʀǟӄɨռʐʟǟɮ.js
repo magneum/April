@@ -134,7 +134,7 @@ Missing permission to manage messages or add reactions
         // ============================================================================================================================
         let currentPage = 0;
         message.react("✅");
-        message.react("🍧");
+        message.react("❣️");
         const embeds = generateQueueEmbed(message, queue.songs);
         const queueEmbed = await message.channel.send(
           `**🏷Page Num:** - ${currentPage + 1}/${embeds.length}`,

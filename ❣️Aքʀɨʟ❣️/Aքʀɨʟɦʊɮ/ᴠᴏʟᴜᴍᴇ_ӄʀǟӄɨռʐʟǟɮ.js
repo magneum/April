@@ -232,7 +232,7 @@ Please use a number between 0 - 100.`)
         queue.volume = args[0];
         queue.connection.dispatcher.setVolumeLogarithmic(args[0] / 100);
         message.react("✅");
-        message.react("🍧");
+        message.react("❣️");
         queue.textChannel
           .send(
             new MessageEmbed()

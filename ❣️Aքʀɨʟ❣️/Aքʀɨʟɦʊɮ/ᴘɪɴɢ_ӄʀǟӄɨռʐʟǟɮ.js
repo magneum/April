@@ -57,7 +57,7 @@ module.exports = {
         message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("✅");
-        message.react("🍧");
+        message.react("❣️");
         message.channel
           .send(
             new MessageEmbed()

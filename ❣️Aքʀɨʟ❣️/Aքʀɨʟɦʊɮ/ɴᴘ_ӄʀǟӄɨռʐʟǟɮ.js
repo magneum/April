@@ -146,7 +146,7 @@ April is not playing anymusic yet....
           );
         }
         message.react("✅");
-        message.react("🍧");
+        message.react("❣️");
         message.channel.send(current).catch(console.error);
         return;
       }

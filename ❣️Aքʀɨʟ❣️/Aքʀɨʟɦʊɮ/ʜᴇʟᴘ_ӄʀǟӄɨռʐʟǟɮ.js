@@ -49,7 +49,7 @@ module.exports = {
       // =============================================================================================================================
       if (message.content.startsWith(AքʀɨʟʄɨӼ + "help")) {
         message.react("✅");
-        message.react("🍧");
+        message.react("❣️");
         message.author.send(
           new MessageEmbed()
             .setColor("#ff0000")

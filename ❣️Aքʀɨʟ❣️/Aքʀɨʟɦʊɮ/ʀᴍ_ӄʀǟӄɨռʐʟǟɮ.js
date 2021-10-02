@@ -149,7 +149,7 @@ There is no queue.`))
                         else return true;
                     });
                     message.react('✅');
-                    message.react('🍧');
+                    message.react('❣️');
                     queue.textChannel
                         .send(
                             new MessageEmbed()
@@ -177,7 +177,7 @@ There is no queue.`))
                 } else if (!isNaN(args[0]) && args[0] >= 1 && args[0] <= queue.songs.length) {
                     console.log(`we got elsed!`);
                     message.react('✅');
-                    message.react('🍧');
+                    message.react('❣️');
                     queue.textChannel
                         .send(
                             new MessageEmbed()

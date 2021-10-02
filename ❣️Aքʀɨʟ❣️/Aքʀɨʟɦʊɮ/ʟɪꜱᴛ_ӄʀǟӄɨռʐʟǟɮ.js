@@ -371,7 +371,7 @@ Playlist not found
             playlistEmbed.description.substr(0, 2007) +
             "**Aքʀɨʟ❣️ʍʊֆɨƈ**\nPlaylist larger than character limit...";
         message.react("✅");
-        message.react("🍧");
+        message.react("❣️");
         message.channel
           .send(
             new MessageEmbed()

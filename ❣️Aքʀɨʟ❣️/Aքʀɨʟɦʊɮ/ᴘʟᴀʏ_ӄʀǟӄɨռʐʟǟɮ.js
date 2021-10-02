@@ -152,7 +152,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
         // ============================================================================================================================
         if (channel && args.length) {
           message.react("✅");
-          message.react("🍧");
+          message.react("❣️");
           message.channel
             .send(
               new MessageEmbed()

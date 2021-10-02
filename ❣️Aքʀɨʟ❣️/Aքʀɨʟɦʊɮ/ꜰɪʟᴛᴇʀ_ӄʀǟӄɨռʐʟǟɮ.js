@@ -267,7 +267,7 @@ ID= ${message.client.user}`)
         try {
           const music = queue.songs[0];
           message.react("✅");
-          message.react("🍧");
+          message.react("❣️");
           message.channel.send(
             new MessageEmbed()
               .setColor("#ff0000")

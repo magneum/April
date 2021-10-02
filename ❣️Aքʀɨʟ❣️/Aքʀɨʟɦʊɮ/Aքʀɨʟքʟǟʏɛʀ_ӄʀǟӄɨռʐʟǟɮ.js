@@ -168,7 +168,7 @@ Only **YouTube** playing/streaming is allowed`)
       try {
         const { id } = getVideoId(`${music.url}`);
         message.react("✅");
-        message.react("🍧");
+        message.react("❣️");
         var AprilPlayingMessage = await queue.textChannel.send(
           new MessageEmbed()
             .setColor("#ff0000")
