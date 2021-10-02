@@ -179,12 +179,11 @@ Only **YouTube** playing/streaming is allowed`)
             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-            .setDescription(`=========♥️=========
-
-**🏷Title-** ${music.title}
-**🔗Link-** ${music.url}
+            .setDescription(`
 =========♥️=========
 
+
+**🏷Title-** [${music.title}](${music.url})
 **Song Requested by** ${message.author}`)
         );
         await AprilPlayingMessage.react("⏭");
