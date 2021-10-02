@@ -5,10 +5,7 @@ module.exports = {
   cooldown: 3,
   execute(message, args) {
     try {
-      if (
-        message.content.startsWith(AքʀɨʟʄɨӼ + "vol") &&
-        message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
-      ) {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "vol") && message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") {
         message.react("❌");
         message.react("🔥");
         message.channel
@@ -34,11 +31,7 @@ module.exports = {
           });
         return;
       }
-      if (
-        message.content.startsWith(AքʀɨʟʄɨӼ + "vol") &&
-          message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" ||
-        message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ"
-      ) {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "vol") && message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" || message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ") {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
           message.react("❌");

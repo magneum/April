@@ -5,10 +5,7 @@ module.exports = {
   cooldown: 3,
   execute(message) {
     try {
-      if (
-        message.content.startsWith(AքʀɨʟʄɨӼ + "pfp") &&
-        message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
-      ) {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "pfp") && message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") {
         message.react("❌");
         const embedfactor = new MessageEmbed()
           .setColor("#FF5F15")
@@ -32,12 +29,7 @@ module.exports = {
           });
         return;
       }
-
-      if (
-        message.content.startsWith(AքʀɨʟʄɨӼ + "pfp") &&
-          message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" ||
-        message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ"
-      ) {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "pfp") && message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" || message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ") {
         message.react("✅");
         message.react("❣️");
         let AvatarEmbed = new MessageEmbed();

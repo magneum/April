@@ -7,10 +7,7 @@ module.exports = {
   cooldown: 3,
   execute(message) {
     try {
-      if (
-        message.content.startsWith(AքʀɨʟʄɨӼ + "np") &&
-        message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
-      ) {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "np") && message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") {
         message.react("❌");
         message.react("🔥");
         message.channel
@@ -36,11 +33,7 @@ module.exports = {
           });
         return;
       }
-      if (
-        message.content.startsWith(AքʀɨʟʄɨӼ + "np") &&
-          message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" ||
-        message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ"
-      ) {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "np") && message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" || message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ") {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
           message.react("❌");
@@ -84,16 +77,16 @@ April is not playing anymusic yet....`)
           current.addField(
             `\u200b`,
             new Date(seek * 1000).toISOString().substr(11, 8) +
-              `[` +
-              splitBar(
-                music.duration == 0 ? seek : music.duration,
-                seek,
-                20
-              )[0] +
-              `]` +
-              (music.duration == 0
-                ? ` ◉ LIVE`
-                : new Date(music.duration * 1000).toISOString().substr(11, 8)),
+            `[` +
+            splitBar(
+              music.duration == 0 ? seek : music.duration,
+              seek,
+              20
+            )[0] +
+            `]` +
+            (music.duration == 0
+              ? ` ◉ LIVE`
+              : new Date(music.duration * 1000).toISOString().substr(11, 8)),
             false
           );
           current.setFooter(

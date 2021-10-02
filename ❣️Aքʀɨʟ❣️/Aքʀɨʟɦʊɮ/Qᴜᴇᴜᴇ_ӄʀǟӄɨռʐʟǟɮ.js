@@ -5,10 +5,7 @@ module.exports = {
   cooldown: 3,
   async execute(message) {
     try {
-      if (
-        message.content.startsWith(AքʀɨʟʄɨӼ + "queue") &&
-        message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
-      ) {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "queue") && message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") {
         message.react("❌");
         message.react("🔥");
         message.channel
@@ -34,11 +31,7 @@ module.exports = {
           });
         return;
       }
-      if (
-        message.content.startsWith(AքʀɨʟʄɨӼ + "queue") &&
-          message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" ||
-        message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ"
-      ) {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "queue") && message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" || message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ") {
         const permissions = message.channel.permissionsFor(message.client.user);
         if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
           message.react("❌");

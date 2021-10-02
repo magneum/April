@@ -6,10 +6,7 @@ module.exports = {
   cooldown: 3,
   async execute(message, args, client) {
     try {
-      if (
-        message.content.startsWith(AքʀɨʟʄɨӼ + "filter") &&
-        message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
-      ) {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "filter") && message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") {
         message.react("❌");
         message.react("🔥");
         message.channel
@@ -94,11 +91,7 @@ module.exports = {
           return;
         }
       }
-      if (
-        message.content.startsWith(AքʀɨʟʄɨӼ + "filter") &&
-          message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" ||
-        message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ"
-      ) {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "filter") && message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" || message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ") {
         if (!message.member.voice.channel) {
           message.react("❌");
           message.react("🔥");

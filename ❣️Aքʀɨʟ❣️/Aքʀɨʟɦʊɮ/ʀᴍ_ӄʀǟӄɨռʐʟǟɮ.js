@@ -1,22 +1,22 @@
-const { MessageEmbed } = require('../ӄʀǟӄɨռʐʟǟɮ/src');
+const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const pattern = /^[0-9]{1,2}(\s*,\s*[0-9]{1,2})*$/;
-const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ, canModifyQueue } = require('../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ');
+const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ, canModifyQueue } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
 module.exports = {
-    name: 'rm',
+    name: "rm",
     cooldown: 3,
     execute(message, args) {
         try {
-            if (message.content.startsWith(AքʀɨʟʄɨӼ + 'rm') && message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") {
-                message.react('❌');
-                message.react('🔥');
+            if (message.content.startsWith(AքʀɨʟʄɨӼ + "rm") && message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") {
+                message.react("❌");
+                message.react("🔥");
                 message.channel
                     .send(new MessageEmbed()
-                        .setColor('#FF5F15')
+                        .setColor("#FF5F15")
                         .setTitle("April❣️Music by🔱KrakinzLab™️")
                         .setAuthor(`😲 Warning! ⚠️`)
                         .setURL("https://github.com/Krakinz?tab=repositories")
                         .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                        .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ')
+                        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
                         .setDescription(`**Ú§êr >** ${message.author}
 
 **Category:** \`🔱Krakinz\`
@@ -30,19 +30,19 @@ module.exports = {
                     });
                 return;
             }
-            if (message.content.startsWith(AքʀɨʟʄɨӼ + 'rm') && message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" || message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ") {
+            if (message.content.startsWith(AքʀɨʟʄɨӼ + "rm") && message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" || message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ") {
                 const queue = message.client.queue.get(message.guild.id);
                 if (!queue) {
-                    message.react('❌');
-                    message.react('🔥');
+                    message.react("❌");
+                    message.react("🔥");
                     message.channel
                         .send(new MessageEmbed()
-                            .setColor('#FF5F15')
+                            .setColor("#FF5F15")
                             .setTitle("April❣️Music by🔱KrakinzLab™️")
                             .setAuthor(`😲 Warning! ⚠️`)
                             .setURL("https://github.com/Krakinz?tab=repositories")
                             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                            .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ')
+                            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
                             .setDescription(`**Ú§êr >** ${message.author}
 
 There is nothing in queue.`))
@@ -55,16 +55,16 @@ There is nothing in queue.`))
                     return;
                 }
                 if (!canModifyQueue(message.member)) {
-                    message.react('❌');
-                    message.react('🔥');
+                    message.react("❌");
+                    message.react("🔥");
                     message.channel
                         .send(new MessageEmbed()
-                            .setColor('#FF5F15')
+                            .setColor("#FF5F15")
                             .setTitle("April❣️Music by🔱KrakinzLab™️")
                             .setAuthor(`😲 Warning! ⚠️`)
                             .setURL("https://github.com/Krakinz?tab=repositories")
                             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                            .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ')
+                            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
                             .setDescription(`**Ú§êr >** ${message.author}
 
 *You need to* **join** *a voice channel first!*`))
@@ -77,16 +77,16 @@ There is nothing in queue.`))
                     return;
                 }
                 if (!args.length) {
-                    message.react('❌');
-                    message.react('🔥');
+                    message.react("❌");
+                    message.react("🔥");
                     message.channel
                         .send(new MessageEmbed()
-                            .setColor('#FF5F15')
+                            .setColor("#FF5F15")
                             .setTitle("April❣️Music by🔱KrakinzLab™️")
                             .setAuthor(`😲 Warning! ⚠️`)
                             .setURL("https://github.com/Krakinz?tab=repositories")
                             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                            .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ')
+                            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
                             .setDescription(`**Ú§êr >** ${message.author}
 
 ⚓️**usage:**${AքʀɨʟʄɨӼ}rm <Queue Number>`))
@@ -106,18 +106,18 @@ There is nothing in queue.`))
                         if (songs.find((songIndex) => songIndex - 1 === index)) removed.push(item);
                         else return true;
                     });
-                    message.react('✅');
-                    message.react('❣️');
+                    message.react("✅");
+                    message.react("❣️");
                     queue.textChannel
                         .send(
                             new MessageEmbed()
-                                .setColor('#660000')
+                                .setColor("#660000")
                                 .setAuthor(`😲 Warning! ⚠️`)
                                 .setTitle("April❣️Music by🔱KrakinzLab™️")
                                 .setURL("https://github.com/Krakinz?tab=repositories")
                                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                                 .setFooter(
-                                    '🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ'
+                                    "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ"
                                 ).setDescription(`**Ú§êr >** ${message.author}
 
 ⏺ Removed **${removed.map((music) => music.title).join(`\n`)}** from the queue.`)
@@ -130,18 +130,18 @@ There is nothing in queue.`))
                         });
                 } else if (!isNaN(args[0]) && args[0] >= 1 && args[0] <= queue.songs.length) {
                     console.log(`we got elsed!`);
-                    message.react('✅');
-                    message.react('❣️');
+                    message.react("✅");
+                    message.react("❣️");
                     queue.textChannel
                         .send(
                             new MessageEmbed()
-                                .setColor('#660000')
+                                .setColor("#660000")
                                 .setAuthor(`😲 Warning! ⚠️`)
                                 .setTitle("April❣️Music by🔱KrakinzLab™️")
                                 .setURL("https://github.com/Krakinz?tab=repositories")
                                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                                 .setFooter(
-                                    '🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ'
+                                    "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ"
                                 ).setDescription(`**Ú§êr >** ${message.author}
 
 ⏺ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`)
@@ -155,16 +155,16 @@ There is nothing in queue.`))
                     return;
                 } else {
                     console.log(`we got the last one`);
-                    message.react('❌');
-                    message.react('🔥');
+                    message.react("❌");
+                    message.react("🔥");
                     message.channel
                         .send(new MessageEmbed()
-                            .setColor('#FF5F15')
+                            .setColor("#FF5F15")
                             .setTitle("April❣️Music by🔱KrakinzLab™️")
                             .setAuthor(`😲 Warning! ⚠️`)
                             .setURL("https://github.com/Krakinz?tab=repositories")
                             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                            .setFooter('🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ')
+                            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
                             .setDescription(`**Ú§êr >** ${message.author}
 **usage:**${AքʀɨʟʄɨӼ}rm <Queue Number>`))
                         .catch(console.error)
