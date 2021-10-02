@@ -587,25 +587,7 @@ ${message.author}`
         try {
           try {
             queueConstruct.connection = await channel.join();
-            message.author.send(
-              new MessageEmbed()
-                .setColor("#ff0000")
-                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-                .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                .setDescription(
-                  `
-**𝕌𝕤𝕖𝕣:** ${message.author}
-
-
-**👍 Joined \`${channel.name}\`
-and is 📄 bound to \`#${message.channel.name}\`**
-
-`
-                )
-            );
-            message.channel
+            message.author
               .send(
                 new MessageEmbed()
                   .setColor("#ff0000")
@@ -630,6 +612,26 @@ and is 📄 bound to \`#${message.channel.name}\`**
                   timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                 });
               });
+            message.channel
+              .send(
+                new MessageEmbed()
+                  .setColor("#ff0000")
+                  .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                  .setURL("https://github.com/Krakinz?tab=repositories")
+                  .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+                  .setDescription(
+                    `
+**𝕌𝕤𝕖𝕣:** ${message.author}
+
+
+**👍 Joined \`${channel.name}\`
+and is 📄 bound to \`#${message.channel.name}\`**
+
+`
+                  )
+              )
+              .catch(console.error);
           } catch (e) {
             console.log(e.message);
           }
