@@ -88,11 +88,13 @@ try {
           .setDescription(
             `
 𝗗𝗲𝗮𝗿: @everyone
-=========♥️=========
+---------------♥️---------------
 
 
 ᴀ channel ɴᴀᴍᴇ **Aքʀɨʟ❣️քʟǟʏɛʀ** inside **🔱Krakinz** has been successfully created.
-Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..`
+Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..
+
+---------------♥️---------------`
           )
       )
       .catch(console.error);
@@ -193,14 +195,16 @@ Aքʀɨʟքʟǟʏɛʀ.on("message", async (message) => {
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           .setDescription(`
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
 
 𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️
 🔆-𝘔𝘶𝘴𝘪𝘤 𝘉𝘰𝘵 𝘧𝘰𝘳 𝘋𝘪𝘴𝘤𝘰𝘳𝘥 𝘸𝘪𝘵𝘩 𝘠𝘰𝘶𝘛𝘶𝘣𝘦_𝘋𝘭, 𝘣𝘶𝘪𝘭𝘵 𝘸𝘪𝘵𝘩 𝘋𝘪𝘴𝘤𝘰𝘳𝘥.𝘫𝘴
 • You are currently in a **DMChannel** and so you have been **restricted** using any **April 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀**
 • Add me in your channel and then all commands will be automatically accepted.
-🔰- https://github.com/HypeVoidSoul/April`)
+🔰- https://github.com/HypeVoidSoul/April
+
+---------------♥️---------------`)
       );
 
       return;
@@ -262,12 +266,14 @@ Aքʀɨʟքʟǟʏɛʀ.on("message", async (message) => {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
 
 Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
               command.name
-            }' command.      `)
+            }' command.      
+
+---------------♥️---------------`)
           )
           .catch(console.error);
         return;
@@ -298,7 +304,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
             .setDescription(
               `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
 
 There was an error executing that command.`
@@ -321,8 +327,7 @@ There was an error executing that command.`
         .setColor("#DB4434")
         .setTitle("🔺ERROR CAUGHT🔻")
         .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-        .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-        .setDescription(`
+        .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png").setDescription(`
 **April** has encountered an error.
 Please report to either 
 🔰**In Discord channel** = https://discord.gg/ucPpXWFK

@@ -36,12 +36,13 @@ module.exports = {
               .setDescription(
                 `
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
-⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`
+⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
+
+---------------♥️---------------`
               )
           )
           .catch(console.error)
@@ -76,10 +77,11 @@ module.exports = {
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+Missing permission to manage messages or add reactions
 
-Missing permission to manage messages or add reactions`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -110,10 +112,11 @@ Missing permission to manage messages or add reactions`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+⏺ Nothing playing in this server
 
-⏺ Nothing playing in this server`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -204,8 +207,7 @@ Missing permission to manage messages or add reactions`
           .setColor("#DB4434")
           .setTitle("🔺ERROR CAUGHT🔻")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-          .setDescription(`
+          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png").setDescription(`
 **April** has encountered an error.
 
 Please report to either 

@@ -36,12 +36,13 @@ module.exports = {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
-⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
+⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
+
+---------------♥️---------------`)
           )
           .catch(console.error)
           .then((message) => {
@@ -71,11 +72,12 @@ module.exports = {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 **Nothing in Queue!**
-*Add music in Queue first!*`)
+*Add music in Queue first!*
+
+---------------♥️---------------`)
           )
           .catch(console.error)
           .then((message) => {
@@ -104,8 +106,7 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 **usage:** \`${AքʀɨʟʄɨӼ}filter\`
 ▫️ 8D
@@ -113,7 +114,9 @@ module.exports = {
 ▫️ bassboost
 ▫️ nightcore
 ▫️ surrounding
-▫️ clear [Clean all applied filter(s)]`)
+▫️ clear [Clean all applied filter(s)]
+
+---------------♥️---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -146,10 +149,11 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+*Please join a* **Voice Channel** *first*
 
-*Please join a* **Voice Channel** *first*`)
+---------------♥️---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -177,11 +181,12 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 You must be in the same Voice Channel as **ME**.
-ID= ${message.client.user}`)
+ID= ${message.client.user}
+
+---------------♥️---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -241,7 +246,7 @@ ID= ${message.client.user}`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
 **That was not a valid filter!**
 
@@ -250,7 +255,9 @@ ID= ${message.client.user}`)
 ▫️ bassboost
 ▫️ nightcore
 ▫️ surrounding
-▫️ clear [Clean all applied filter(s)]`)
+▫️ clear [Clean all applied filter(s)]
+
+---------------♥️---------------`)
               )
               .catch(console.error)
               .then((message) => {
@@ -305,11 +312,12 @@ ID= ${message.client.user}`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 *Song Queue has been cleaned up.*
-Restart **queue** and **filter** will be applied.`)
+Restart **queue** and **filter** will be applied.
+
+---------------♥️---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -331,11 +339,12 @@ Restart **queue** and **filter** will be applied.`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 **Nothing in Queue!**
-*Add music in Queue first!*`)
+*Add music in Queue first!*
+
+---------------♥️---------------`)
             )
             .catch(console.error)
             .then((message) => {

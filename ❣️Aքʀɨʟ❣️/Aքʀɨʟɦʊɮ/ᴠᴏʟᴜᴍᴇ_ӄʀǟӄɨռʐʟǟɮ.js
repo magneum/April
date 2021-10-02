@@ -1,4 +1,8 @@
-const { canModifyQueue, AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/April_env");
+const {
+  canModifyQueue,
+  AքʀɨʟʄɨӼ,
+  Aքʀɨʟքʊʀɢɛʀ,
+} = require("../Aքʀɨʟռɛʋ/April_env");
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 // =============================================================================================================================
 //
@@ -36,12 +40,13 @@ module.exports = {
               .setDescription(
                 `
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
-⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`
+⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
+
+---------------♥️---------------`
               )
           )
           .catch(console.error)
@@ -76,10 +81,11 @@ module.exports = {
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+*You need to* **join** *a voice channel first!*
 
-*You need to* **join** *a voice channel first!*`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -109,10 +115,11 @@ module.exports = {
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+*You need to* **join** *a voice channel first!*
 
-*You need to* **join** *a voice channel first!*`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -142,10 +149,11 @@ module.exports = {
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+🔊 **The current volume is:** ${queue.volume}%
 
-🔊 **The current volume is:** ${queue.volume}%`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -175,10 +183,11 @@ module.exports = {
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+Please use a number to set volume.
 
-Please use a number to set volume.`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -207,10 +216,11 @@ Please use a number to set volume.`
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+Please use a number between 0 - 100.
 
-Please use a number between 0 - 100.'`)
+---------------♥️---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -237,10 +247,11 @@ Please use a number between 0 - 100.'`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`**User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+Volume set to: **${args[0]}%**
 
-Volume set to: **${args[0]}%**`)
+---------------♥️---------------`)
           )
           .catch(console.error)
           .then((message) => {
@@ -261,8 +272,7 @@ Volume set to: **${args[0]}%**`)
           .setColor("#DB4434")
           .setTitle("🔺ERROR CAUGHT🔻")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-          .setDescription(`
+          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png").setDescription(`
 **April** has encountered an error.
 
 Please report to either 

@@ -1,4 +1,8 @@
-const { canModifyQueue, AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/April_env");
+const {
+  canModifyQueue,
+  AքʀɨʟʄɨӼ,
+  Aքʀɨʟքʊʀɢɛʀ,
+} = require("../Aքʀɨʟռɛʋ/April_env");
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 // =============================================================================================================================
 //
@@ -36,12 +40,13 @@ module.exports = {
               .setDescription(
                 `
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
-⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`
+⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
+
+---------------♥️---------------`
               )
           )
           .catch(console.error)
@@ -75,11 +80,12 @@ module.exports = {
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 ⚓️**usage:**
-${AքʀɨʟʄɨӼ}{name} <Queue Number>`
+${AքʀɨʟʄɨӼ}{name} <Queue Number>
+
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -110,10 +116,11 @@ ${AքʀɨʟʄɨӼ}{name} <Queue Number>`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+There is nothing playing that I could skip for you.
 
-There is nothing playing that I could skip for you.`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -143,10 +150,11 @@ There is nothing playing that I could skip for you.`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+*You need to* **join** *a voice channel first!*
 
-*You need to* **join** *a voice channel first!*`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -176,10 +184,11 @@ There is nothing playing that I could skip for you.`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+There is nothing playing that I could skip for you.
 
-There is nothing playing that I could skip for you.`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -214,10 +223,11 @@ There is nothing playing that I could skip for you.`
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`**User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+⏺ stopped the music!
 
-⏺ stopped the music!`)
+---------------♥️---------------`)
           )
           .catch(console.error)
           .then((message) => {
@@ -237,8 +247,7 @@ There is nothing playing that I could skip for you.`
           .setColor("#DB4434")
           .setTitle("🔺ERROR CAUGHT🔻")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-          .setDescription(`
+          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png").setDescription(`
 **April** has encountered an error.
 
 Please report to either 

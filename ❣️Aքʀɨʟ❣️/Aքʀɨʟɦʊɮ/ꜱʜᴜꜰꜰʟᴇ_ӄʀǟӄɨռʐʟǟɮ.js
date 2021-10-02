@@ -1,4 +1,8 @@
-const { canModifyQueue, AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/April_env");
+const {
+  canModifyQueue,
+  AքʀɨʟʄɨӼ,
+  Aքʀɨʟքʊʀɢɛʀ,
+} = require("../Aքʀɨʟռɛʋ/April_env");
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 // =============================================================================================================================
 //
@@ -38,12 +42,13 @@ module.exports = {
               .setDescription(
                 `
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
-⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`
+⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
+
+---------------♥️---------------`
               )
           )
           .catch(console.error)
@@ -80,10 +85,11 @@ module.exports = {
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+There is no queue.
 
-There is no queue.`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -115,10 +121,11 @@ There is no queue.`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+*You need to* **join** *a voice channel first!*
 
-*You need to* **join** *a voice channel first!*`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -157,10 +164,11 @@ There is no queue.`
               .setFooter(
                 "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
               ).setDescription(`**User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+🔀 Shuffled the queue
 
-🔀 Shuffled the queue`)
+---------------♥️---------------`)
           )
           .catch(console.error)
           .then((message) => {
@@ -180,8 +188,7 @@ There is no queue.`
           .setColor("#DB4434")
           .setTitle("🔺ERROR CAUGHT🔻")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-          .setDescription(`
+          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png").setDescription(`
 **April** has encountered an error.
 
 Please report to either 

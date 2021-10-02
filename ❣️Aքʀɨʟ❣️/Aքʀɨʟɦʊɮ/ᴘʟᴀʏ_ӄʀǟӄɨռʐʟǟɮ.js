@@ -53,12 +53,13 @@ module.exports = {
               .setDescription(
                 `
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
-⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`
+⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
+
+---------------♥️---------------`
               )
           )
           .catch(console.error)
@@ -88,11 +89,12 @@ module.exports = {
               .setDescription(
                 `
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 This link seems to be a playlist link.
-Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`
+Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
+
+---------------♥️---------------`
               )
           )
           .catch(console.error)
@@ -128,10 +130,11 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+*You need to* **join** *a voice channel first!*
 
-*You need to* **join** *a voice channel first!*`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -161,10 +164,11 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+*Searching and Playing in less then* **3secs!**
 
-*Searching and Playing in less then* **3secs!**`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -193,11 +197,12 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 You must be in the same Voice Channel as **ME**.
-ID= ${message.client.user}`
+ID= ${message.client.user}
+
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -227,11 +232,12 @@ ID= ${message.client.user}`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 **usage:**
-${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**`
+${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**
+
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -262,10 +268,11 @@ ${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+Cannot connect to voice channel, missing permissions
 
-Cannot connect to voice channel, missing permissions`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -295,10 +302,11 @@ Cannot connect to voice channel, missing permissions`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+I cannot speak in this voice channel, make sure I have the proper permissions!
 
-I cannot speak in this voice channel, make sure I have the proper permissions!`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -354,10 +362,11 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`
                       .setFooter(
                         "𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
                       ).setDescription(`**User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+Audio Not Found
 
-Audio Not Found`)
+---------------♥️---------------`)
                   )
                   .catch(console.error)
                   .then((message) => {
@@ -398,10 +407,11 @@ Audio Not Found`)
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+Following url redirection...
 
-Following url redirection...`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
@@ -497,10 +507,11 @@ Following url redirection...`
                     .setDescription(
                       `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+Audio Not Found
 
-Audio Not Found`
+---------------♥️---------------`
                     )
                 )
                 .catch(console.error)
@@ -576,11 +587,12 @@ ${message.author}`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 **👍 Joined \`${channel.name}\`
-and is 📄 bound to \`#${message.channel.name}\`**`
+and is 📄 bound to \`#${message.channel.name}\`**
+
+---------------♥️---------------`
                 )
             );
             message.channel
@@ -593,11 +605,12 @@ and is 📄 bound to \`#${message.channel.name}\`**`
                   .setDescription(
                     `
 **User:** ${message.author}
-=========♥️=========
-
+---------------♥️---------------
 
 **👍 Joined \`${channel.name}\`
-and is 📄 bound to \`#${message.channel.name}\`**`
+and is 📄 bound to \`#${message.channel.name}\`**
+
+---------------♥️---------------`
                   )
               )
               .catch(console.error)
@@ -628,10 +641,11 @@ and is 📄 bound to \`#${message.channel.name}\`**`
                 .setDescription(
                   `
 **User:** ${message.author}
-=========♥️=========
+---------------♥️---------------
 
+Could not join the channel: *${error}*
 
-Could not join the channel: *${error}*`
+---------------♥️---------------`
                 )
             )
             .catch(console.error)
