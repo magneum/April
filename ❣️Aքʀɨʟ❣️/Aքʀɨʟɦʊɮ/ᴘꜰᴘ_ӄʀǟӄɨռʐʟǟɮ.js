@@ -29,7 +29,7 @@ module.exports = {
       ) {
         message.react("❌");
         const embedfactor = new MessageEmbed()
-          .setColor("#E0D268")
+          .setColor("#e69138")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)

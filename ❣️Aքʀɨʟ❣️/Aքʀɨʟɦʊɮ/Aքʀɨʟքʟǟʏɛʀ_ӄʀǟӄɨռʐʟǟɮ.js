@@ -79,7 +79,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#E0D268")
+                .setColor("#e69138")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -115,7 +115,7 @@ Only **YouTube** playing/streaming is allowed
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#E0D268")
+              .setColor("#e69138")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -225,7 +225,7 @@ Only **YouTube** playing/streaming is allowed
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#E0D268")
+                    .setColor("#e69138")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -288,7 +288,7 @@ Only **YouTube** playing/streaming is allowed
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#E0D268")
+                    .setColor("#e69138")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -372,7 +372,7 @@ Only **YouTube** playing/streaming is allowed
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#E0D268")
+                    .setColor("#e69138")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -465,7 +465,7 @@ Only **YouTube** playing/streaming is allowed
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#E0D268")
+                    .setColor("#e69138")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -535,7 +535,7 @@ Volume now at = **${queue.volume}%**
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#E0D268")
+                    .setColor("#e69138")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -601,7 +601,7 @@ Volume now at = **${queue.volume}%**
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#E0D268")
+                    .setColor("#e69138")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -665,7 +665,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#E0D268")
+                    .setColor("#e69138")
                     .setTitle("⚠️Warning⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)

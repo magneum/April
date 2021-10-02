@@ -32,7 +32,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#E0D268")
+              .setColor("#e69138")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -73,7 +73,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#E0D268")
+                .setColor("#e69138")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -107,7 +107,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#E0D268")
+                .setColor("#e69138")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -141,7 +141,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#E0D268")
+                .setColor("#e69138")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -175,7 +175,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#E0D268")
+                .setColor("#e69138")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -209,7 +209,7 @@ Please use a number to set volume.
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#E0D268")
+                .setColor("#e69138")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)

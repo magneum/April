@@ -12,16 +12,16 @@ const Aքʀɨʟʍʊֆɨƈ = new Client({ disableEveryone: false });
 const { Aքʀɨʟӄɛռ, AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("./Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ.js");
 const Aքʀɨʟֆɛʀʋɛʀ = express();
 const PORT = process.env.PORT || 8080;
-Aքʀɨʟֆɛʀʋɛʀ.listen(PORT);
-Aքʀɨʟʍʊֆɨƈ.login(Aքʀɨʟӄɛռ);
-Aքʀɨʟʍʊֆɨƈ.prefix = AքʀɨʟʄɨӼ;
-Aքʀɨʟʍʊֆɨƈ.queue = new Map();
-Aքʀɨʟʍʊֆɨƈ.commands = new Collection();
 // =============================================================================================================================
 // GNU GENERAL PUBLIC LICENSE
 // Version 3, 29 June 2007
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
 // ============================================================================================================================
+Aքʀɨʟֆɛʀʋɛʀ.listen(PORT);
+Aքʀɨʟʍʊֆɨƈ.login(Aքʀɨʟӄɛռ);
+Aքʀɨʟʍʊֆɨƈ.prefix = AքʀɨʟʄɨӼ;
+Aքʀɨʟʍʊֆɨƈ.queue = new Map();
+Aքʀɨʟʍʊֆɨƈ.commands = new Collection();
 const AprilEngineOil = new Collection();
 const { MessageEmbed } = require("./ӄʀǟӄɨռʐʟǟɮ/src");
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -193,7 +193,7 @@ Aքʀɨʟʍʊֆɨƈ.on("message", async (message) => {
       message.react("🔥");
       message.reply(
         new MessageEmbed()
-          .setColor("#E0D268")
+          .setColor("#e69138")
           .setTitle("⚠️Warning⚠️")
           .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -264,7 +264,7 @@ Aքʀɨʟʍʊֆɨƈ.on("message", async (message) => {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#E0D268")
+              .setColor("#e69138")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -301,7 +301,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
       message.channel
         .send(
           new MessageEmbed()
-            .setColor("#E0D268")
+            .setColor("#e69138")
             .setTitle("⚠️Warning⚠️")
             .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

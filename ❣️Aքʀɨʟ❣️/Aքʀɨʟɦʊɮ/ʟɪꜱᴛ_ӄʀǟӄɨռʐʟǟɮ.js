@@ -39,7 +39,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#E0D268")
+              .setColor("#e69138")
               .setTitle("⚠️Warning⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -81,7 +81,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#E0D268")
+                .setColor("#e69138")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -113,7 +113,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#E0D268")
+                .setColor("#e69138")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -147,7 +147,7 @@ ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#E0D268")
+                .setColor("#e69138")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -179,7 +179,7 @@ Cannot connect to voice channel, missing permissions
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#E0D268")
+                .setColor("#e69138")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -211,7 +211,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#E0D268")
+                .setColor("#e69138")
                 .setTitle("⚠️Warning⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -272,7 +272,7 @@ ID= ${message.client.user}
             message.channel
               .send(
                 new MessageEmbed()
-                  .setColor("#E0D268")
+                  .setColor("#e69138")
                   .setTitle("⚠️Warning⚠️")
                   .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -426,7 +426,7 @@ Started a playlist
             message.channel
               .send(
                 new MessageEmbed()
-                  .setColor("#E0D268")
+                  .setColor("#e69138")
                   .setTitle("⚠️Warning⚠️")
                   .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
