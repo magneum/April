@@ -122,29 +122,22 @@ module.exports = {
         const { id } = getVideoId(`${music.url}`);
         message.react("✅");
         message.react("❣️");
-        await queue.textChannel.send(
-          new MessageEmbed()
-            .setColor("#ff0000")
-            .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
-            .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
-            .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-            .setDescription(`*💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞*
-
-**TITLE**
-🏷• [${music.title}](${music.url})
-
-**Requested By**
-🎂• ${message.author}`)
-        );
         var ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel
           .send(
             new MessageEmbed()
               .setColor("#ff0000")
               .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
               .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
+              .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-              .setDescription(`•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫:lady_beetle:𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•
+              .setDescription(`*💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞*
+---------------:lady_beetle:---------------
+
+**TITLE**
+🏷• [${music.title}](${music.url})
+
+**Requested By**
+🎂• ${message.author}
 ---------------:lady_beetle:---------------
 
 ⏭•**Skip music**
@@ -152,8 +145,7 @@ module.exports = {
 🔇•**Mute/Unmute music.**
 🔊•**Change volume  music.**
 🔁•**Toggle music loop.**
-⏺•**Stops the music queue.**
-`)
+⏺•**Stops the music queue.**`)
           )
           .catch(console.error);
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏭");
