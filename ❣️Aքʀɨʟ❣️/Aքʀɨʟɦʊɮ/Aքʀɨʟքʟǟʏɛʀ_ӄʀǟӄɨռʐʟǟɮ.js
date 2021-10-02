@@ -148,7 +148,6 @@ RΣQUΣSƬΣD_BY🎂\`${message.author}\``)
 • ⏺ = **Stops the currently playing music queue.**
 `)
           )
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
           .catch(console.error)
           .then((message) => {
             message.delete({
