@@ -147,12 +147,12 @@ module.exports = {
               .setDescription(`•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫:lady_beetle:𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•
 ---------------:lady_beetle:---------------
 
-• ⏭=**Skip the currently playing music.**
-• ⏸=**Pause/Resume the currently playing music.**
-• 🔇=**Mute/Unmute the currently playing music.**
-• =**Change volume of currently playing music.**
-• 🔁=**Toggle music loop.**
-• ⏺=**Stops the currently playing music queue.**
+⏭•**Skip the currently playing music.**
+⏸•**Pause/Resume the currently playing music.**
+🔇•**Mute/Unmute the currently playing music.**
+🔊•**Change volume of currently playing music.**
+🔁•**Toggle music loop.**
+⏺•**Stops the currently playing music queue.**
 `)
           )
           .catch(console.error);
