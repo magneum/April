@@ -8,15 +8,15 @@ const express = require("express");
 const { readdirSync } = require("fs");
 const { join } = require("path");
 const { Client, Collection } = require("./ӄʀǟӄɨռʐʟǟɮ/src");
-const Aքʀɨʟքʟǟʏɛʀ = new Client({ disableEveryone: false });
+const Aքʀɨʟʍʊֆɨƈ = new Client({ disableEveryone: false });
 const { Aքʀɨʟӄɛռ, AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("./Aքʀɨʟռɛʋ/April_env.js");
 const Aքʀɨʟֆɛʀʋɛʀ = express();
 const PORT = process.env.PORT || 8080;
 Aքʀɨʟֆɛʀʋɛʀ.listen(PORT);
-Aքʀɨʟքʟǟʏɛʀ.login(Aքʀɨʟӄɛռ);
-Aքʀɨʟքʟǟʏɛʀ.prefix = AքʀɨʟʄɨӼ;
-Aքʀɨʟքʟǟʏɛʀ.queue = new Map();
-Aքʀɨʟքʟǟʏɛʀ.commands = new Collection();
+Aքʀɨʟʍʊֆɨƈ.login(Aքʀɨʟӄɛռ);
+Aքʀɨʟʍʊֆɨƈ.prefix = AքʀɨʟʄɨӼ;
+Aքʀɨʟʍʊֆɨƈ.queue = new Map();
+Aքʀɨʟʍʊֆɨƈ.commands = new Collection();
 // =============================================================================================================================
 // GNU GENERAL PUBLIC LICENSE
 // Version 3, 29 June 2007
@@ -30,7 +30,7 @@ const commandFiles = readdirSync(join(__dirname, "Aքʀɨʟɦʊɮ")).filter((fil
 );
 for (const file of commandFiles) {
   const command = require(join(__dirname, "Aքʀɨʟɦʊɮ", `${file}`));
-  Aքʀɨʟքʟǟʏɛʀ.commands.set(command.name, command);
+  Aքʀɨʟʍʊֆɨƈ.commands.set(command.name, command);
 }
 // =============================================================================================================================
 // GNU GENERAL PUBLIC LICENSE
@@ -38,15 +38,15 @@ for (const file of commandFiles) {
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
 // ============================================================================================================================
 try {
-  Aքʀɨʟքʟǟʏɛʀ.on("warn", (ᴀᴘʀɪʟ_WARN) => console.log(ᴀᴘʀɪʟ_WARN));
-  Aքʀɨʟքʟǟʏɛʀ.on("error", console.error);
-  Aքʀɨʟքʟǟʏɛʀ.on("ready", () => {
-    Aքʀɨʟքʟǟʏɛʀ.user.setActivity(`❣️ ${AքʀɨʟʄɨӼ}April | ${AքʀɨʟʄɨӼ}play`, {
+  Aքʀɨʟʍʊֆɨƈ.on("warn", (ᴀᴘʀɪʟ_WARN) => console.log(ᴀᴘʀɪʟ_WARN));
+  Aքʀɨʟʍʊֆɨƈ.on("error", console.error);
+  Aքʀɨʟʍʊֆɨƈ.on("ready", () => {
+    Aքʀɨʟʍʊֆɨƈ.user.setActivity(`❣️ ${AքʀɨʟʄɨӼ}April | ${AքʀɨʟʄɨӼ}play`, {
       type: "WATCHING",
     });
     console.log(`
 ♥️--------------- 𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️ ---------------♥️
-🔱Bot-Name:~~> ${Aքʀɨʟքʟǟʏɛʀ.user.username}
+🔱Bot-Name:~~> ${Aքʀɨʟʍʊֆɨƈ.user.username}
 🔱Bot-Os:~~> ${os.platform().toUpperCase()}
 🔱Bot-Port:~~> ${PORT}
 
@@ -72,7 +72,7 @@ has been licensed under GNU General Public License
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
 // ============================================================================================================================
 try {
-  Aքʀɨʟքʟǟʏɛʀ.on(`guildCreate`, (guild) => {
+  Aքʀɨʟʍʊֆɨƈ.on(`guildCreate`, (guild) => {
     const channel = guild.channels.cache.find(
       (channel) =>
         channel.type === `text` &&
@@ -88,15 +88,14 @@ try {
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           .setDescription(
-            `
-𝗗𝗲𝗮𝗿: @everyone
----------------♥️---------------
+            `𝗗𝗲𝗮𝗿: @everyone
+---------------:lady_beetle:---------------
 
 
-ᴀ channel ɴᴀᴍᴇ **Aքʀɨʟ❣️քʟǟʏɛʀ** inside **🔱Krakinz** has been successfully created.
+ᴀ channel ɴᴀᴍᴇ **Aքʀɨʟ❣️ʍʊֆɨƈ** inside **🔱Krakinz** has been successfully created.
 Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
           )
       )
       .catch(console.error);
@@ -115,12 +114,17 @@ Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           .setDescription(`❤️‍🔥 **Hey there MUSIC lovers !**
 I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
-Please use the channel **Aքʀɨʟ❣️քʟǟʏɛʀ** for any **ᴀᴘʀɪʟ_ᴘʟᴀʏᴇʀ** commands.
+Please use the channel **Aքʀɨʟ❣️ʍʊֆɨƈ** for any **ᴀᴘʀɪʟ_ᴘʟᴀʏᴇʀ** commands.
+---------------:lady_beetle:---------------
+
 :candy:**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅ** 
 *Please use* = **${AքʀɨʟʄɨӼ}April**  | **${AքʀɨʟʄɨӼ}play** | **${AքʀɨʟʄɨӼ}help** *to know more.*
+---------------:lady_beetle:---------------
+
 :star:**ɴᴏᴛᴇ to** @everyone:
-ᴀ channel ɴᴀᴍᴇ **Aքʀɨʟ❣️քʟǟʏɛʀ** inside **🔱Krakinz** has been successfully created.
-Please use only that channel for any **ᴀᴘʀɪʟ_ᴘʟᴀʏᴇʀ** commands..`)
+ᴀ channel ɴᴀᴍᴇ **Aքʀɨʟ❣️ʍʊֆɨƈ** inside **🔱Krakinz** has been successfully created.
+Please use only that channel for any **ᴀᴘʀɪʟ_ᴘʟᴀʏᴇʀ** commands..
+---------------:lady_beetle:---------------`)
       )
       .catch(console.error);
     // =============================================================================================================================
@@ -138,7 +142,7 @@ Please use only that channel for any **ᴀᴘʀɪʟ_ᴘʟᴀʏᴇʀ** commands..
       })
       .then((parent) => {
         guild.channels
-          .create("april💖player", {
+          .create("ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ", {
             type: "text",
             parent,
             permissionOverwrites: [
@@ -179,7 +183,7 @@ Please use only that channel for any **ᴀᴘʀɪʟ_ᴘʟᴀʏᴇʀ** commands..
 // Version 3, 29 June 2007
 // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
 // ============================================================================================================================
-Aքʀɨʟքʟǟʏɛʀ.on("message", async (message) => {
+Aքʀɨʟʍʊֆɨƈ.on("message", async (message) => {
   try {
     if (message.author.bot) {
       return;
@@ -197,7 +201,7 @@ Aքʀɨʟքʟǟʏɛʀ.on("message", async (message) => {
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 
 𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️
@@ -206,7 +210,7 @@ Aքʀɨʟքʟǟʏɛʀ.on("message", async (message) => {
 • Add me in your channel and then all commands will be automatically accepted.
 🔰- https://github.com/HypeVoidSoul/April
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
       );
 
       return;
@@ -217,7 +221,7 @@ Aքʀɨʟքʟǟʏɛʀ.on("message", async (message) => {
     // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
     // ============================================================================================================================
     const prefixRegex = new RegExp(
-      `^(<@!?${Aքʀɨʟքʟǟʏɛʀ.user.id}>|${escapeRegex(AքʀɨʟʄɨӼ)})\\s*`
+      `^(<@!?${Aքʀɨʟʍʊֆɨƈ.user.id}>|${escapeRegex(AքʀɨʟʄɨӼ)})\\s*`
     );
 
     if (!prefixRegex.test(message.content)) {
@@ -232,8 +236,8 @@ Aքʀɨʟքʟǟʏɛʀ.on("message", async (message) => {
     const args = message.content.slice(matchedPrefix.length).trim().split(/ +/);
     const commandName = args.shift().toLowerCase();
     const command =
-      Aքʀɨʟքʟǟʏɛʀ.commands.get(commandName) ||
-      Aքʀɨʟքʟǟʏɛʀ.commands.find(
+      Aքʀɨʟʍʊֆɨƈ.commands.get(commandName) ||
+      Aքʀɨʟʍʊֆɨƈ.commands.find(
         (cmd) => cmd.aliases && cmd.aliases.includes(commandName)
       );
     if (!command) {
@@ -268,14 +272,14 @@ Aքʀɨʟքʟǟʏɛʀ.on("message", async (message) => {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 
 Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
               command.name
             }' command.      
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
           )
           .catch(console.error);
         return;
@@ -306,7 +310,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
             .setDescription(
               `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 
 There was an error executing that command.`

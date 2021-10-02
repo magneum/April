@@ -21,7 +21,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "ping") &&
-        message.channel.name !== "april💖player"
+        message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("❌");
         message.channel
@@ -33,13 +33,13 @@ module.exports = {
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`**User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 **Category:** \`🔱Krakinz\`
-**Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
+**Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
           )
           .catch(console.error)
           .then((message) => {
@@ -56,7 +56,7 @@ module.exports = {
       // ============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "ping") &&
-        message.channel.name === "april💖player"
+        message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("✅");
         message.react("🍧");
@@ -70,11 +70,11 @@ module.exports = {
               .setDescription(
                 `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 ⌛️Average ping of April's Server **${Math.round(message.client.ws.ping)}ms**
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
               )
           )
           .catch(console.error)

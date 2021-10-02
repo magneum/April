@@ -33,6 +33,8 @@ module.exports = {
 • **${AքʀɨʟʄɨӼ}shuffle** = Shuffle music queue.
 • **${AքʀɨʟʄɨӼ}skipto** =Skip to the selected queue number.
 
+---------------:lady_beetle:---------------
+
 * ♥️•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•*
 • **⏭** = Skip the currently playing music.
 • **⏸** = Pause/Resume the currently playing music.

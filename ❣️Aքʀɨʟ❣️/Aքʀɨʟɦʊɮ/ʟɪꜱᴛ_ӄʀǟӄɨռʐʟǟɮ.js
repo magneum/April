@@ -32,7 +32,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "list") &&
-        message.channel.name !== "april💖player"
+        message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -47,13 +47,13 @@ module.exports = {
               .setDescription(
                 `\n\n
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 **Category:** \`🔱Krakinz\`
-**Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
+**Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
               )
           )
           .catch(console.error)
@@ -71,7 +71,7 @@ module.exports = {
       // =============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "list") &&
-        message.channel.name === "april💖player"
+        message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         const { channel } = message.member.voice;
         const serverQueue = message.client.queue.get(message.guild.id);
@@ -88,11 +88,11 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -120,12 +120,12 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 **usage:**
 ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -154,11 +154,11 @@ ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 Cannot connect to voice channel, missing permissions
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -186,11 +186,11 @@ Cannot connect to voice channel, missing permissions
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 I cannot speak in this voice channel, make sure I have the proper permissions!
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -218,12 +218,12 @@ I cannot speak in this voice channel, make sure I have the proper permissions!
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -280,11 +280,11 @@ ID= ${message.client.user}
                   .setDescription(
                     `\n\n
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 Playlist not found
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                   )
               )
               .catch(console.error)
@@ -303,7 +303,7 @@ Playlist not found
         } else if (scdl.isValidUrl(args[0])) {
           if (args[0].includes(`/sets/`)) {
             message.channel.send(
-              "**Aքʀɨʟ❣️քʟǟʏɛʀ**\n⌛ Fetching the playlist..."
+              "**Aքʀɨʟ❣️ʍʊֆɨƈ**\n⌛ Fetching the playlist..."
             );
             playlist = await scdl.getSetInfo(args[0], notneeded);
             videos = playlist.tracks.map((track) => ({
@@ -379,7 +379,7 @@ Playlist not found
         if (playlistEmbed.description.length >= 2048)
           playlistEmbed.description =
             playlistEmbed.description.substr(0, 2007) +
-            "**Aքʀɨʟ❣️քʟǟʏɛʀ**\nPlaylist larger than character limit...";
+            "**Aքʀɨʟ❣️ʍʊֆɨƈ**\nPlaylist larger than character limit...";
         message.react("✅");
         message.react("🍧");
         message.channel
@@ -393,10 +393,10 @@ Playlist not found
               .setDescription(
                 `\n\n
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 Started a playlist
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
               )
           )
           .catch(console.error)
@@ -434,11 +434,11 @@ Started a playlist
                   .setDescription(
                     `\n\n
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 Could not join the channel: *${error}*
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                   )
               )
               .catch(console.error)

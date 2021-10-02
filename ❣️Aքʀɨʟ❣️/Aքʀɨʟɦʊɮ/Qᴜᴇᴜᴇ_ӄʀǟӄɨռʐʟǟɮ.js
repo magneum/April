@@ -21,7 +21,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "queue") &&
-        message.channel.name !== "april💖player"
+        message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -36,13 +36,13 @@ module.exports = {
               .setDescription(
                 `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 **Category:** \`🔱Krakinz\`
-**Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
+**Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
               )
           )
           .catch(console.error)
@@ -60,7 +60,7 @@ module.exports = {
       // ============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "queue") &&
-        message.channel.name === "april💖player"
+        message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         const permissions = message.channel.permissionsFor(message.client.user);
         if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
@@ -77,11 +77,11 @@ module.exports = {
                 .setDescription(
                   `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 Missing permission to manage messages or add reactions
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                 )
             )
             .catch(console.error)
@@ -112,11 +112,11 @@ Missing permission to manage messages or add reactions
                 .setDescription(
                   `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 ⏺ Nothing playing in this server
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                 )
             )
             .catch(console.error)
@@ -239,7 +239,7 @@ function generateQueueEmbed(message, queue) {
       .setColor("#660000")
       .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
       .setDescription(
-        `**Aքʀɨʟ❣️քʟǟʏɛʀ**\n\n♥️**Current Song** -_[${queue[0].title}]_\n\n${info}`
+        `**Aքʀɨʟ❣️ʍʊֆɨƈ**\n\n♥️**Current Song** -_[${queue[0].title}]_\n\n${info}`
       );
     embeds.push(embed);
   }

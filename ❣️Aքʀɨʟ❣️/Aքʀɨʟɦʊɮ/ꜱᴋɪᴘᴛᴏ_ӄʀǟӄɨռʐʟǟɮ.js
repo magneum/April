@@ -25,7 +25,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "skipto") &&
-        message.channel.name !== "april💖player"
+        message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -40,13 +40,13 @@ module.exports = {
               .setDescription(
                 `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 **Category:** \`🔱Krakinz\`
-**Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
+**Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
               )
           )
           .catch(console.error)
@@ -64,7 +64,7 @@ module.exports = {
       // ============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "skipto") &&
-        message.channel.name === "april💖player"
+        message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         if (!args.length || isNaN(args[0])) {
           message.react("❌");
@@ -80,12 +80,12 @@ module.exports = {
                 .setDescription(
                   `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 ⚓️**usage:**
 ${AքʀɨʟʄɨӼ}{name} <Queue Number>
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                 )
             )
             .catch(console.error)
@@ -116,11 +116,11 @@ ${AքʀɨʟʄɨӼ}{name} <Queue Number>
                 .setDescription(
                   `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 There is nothing playing that I could skip for you.
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                 )
             )
             .catch(console.error)
@@ -150,11 +150,11 @@ There is nothing playing that I could skip for you.
                 .setDescription(
                   `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                 )
             )
             .catch(console.error)
@@ -184,11 +184,11 @@ There is nothing playing that I could skip for you.
                 .setDescription(
                   `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 There is nothing playing that I could skip for you.
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                 )
             )
             .catch(console.error)
@@ -223,11 +223,11 @@ There is nothing playing that I could skip for you.
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`**User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 ⏺ stopped the music!
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
           )
           .catch(console.error)
           .then((message) => {

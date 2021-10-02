@@ -20,7 +20,7 @@ module.exports = {
     // =============================================================================================================================
     execute(message, args) {
         try {
-            if (message.content.startsWith(AքʀɨʟʄɨӼ + 'rm') && message.channel.name !== "april💖player") {
+            if (message.content.startsWith(AքʀɨʟʄɨӼ + 'rm') && message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") {
                 message.react('❌');
                 message.react('🔥');
                 message.channel
@@ -33,13 +33,13 @@ module.exports = {
                         .setDescription(
                             `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 **Category:** \`🔱Krakinz\`
-**Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
+**Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
 
----------------♥️---------------`))
+---------------:lady_beetle:---------------`))
                     .catch(console.error)
                     .then((message) => {
                         message.delete({
@@ -53,7 +53,7 @@ module.exports = {
             // Version 3, 29 June 2007
             // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
             // ============================================================================================================================
-            if (message.content.startsWith(AքʀɨʟʄɨӼ + 'rm') && message.channel.name === "april💖player") {
+            if (message.content.startsWith(AքʀɨʟʄɨӼ + 'rm') && message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") {
                 const queue = message.client.queue.get(message.guild.id);
                 if (!queue) {
                     message.react('❌');
@@ -68,11 +68,11 @@ module.exports = {
                             .setDescription(
                                 `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 There is no queue.
 
----------------♥️---------------`))
+---------------:lady_beetle:---------------`))
                         .catch(console.error)
                         .then((message) => {
                             message.delete({
@@ -99,11 +99,11 @@ There is no queue.
                             .setDescription(
                                 `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
 
----------------♥️---------------`))
+---------------:lady_beetle:---------------`))
                         .catch(console.error)
                         .then((message) => {
                             message.delete({
@@ -130,11 +130,11 @@ There is no queue.
                             .setDescription(
                                 `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 ⚓️**usage:**${AքʀɨʟʄɨӼ}rm <Queue Number>
 
----------------♥️---------------`))
+---------------:lady_beetle:---------------`))
                         .catch(console.error)
                         .then((message) => {
                             message.delete({
@@ -167,11 +167,11 @@ There is no queue.
                                 .setFooter(
                                     '🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab'
                                 ).setDescription(`**User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 ⏺ Removed **${removed.map((music) => music.title).join(`\n`)}** from the queue.
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
                         )
                         .catch(console.error)
                         .then((message) => {
@@ -197,11 +197,11 @@ There is no queue.
                                 .setFooter(
                                     '🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab'
                                 ).setDescription(`**User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 ⏺ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
                         )
                         .catch(console.error)
                         .then((message) => {
@@ -229,11 +229,11 @@ There is no queue.
                             .setDescription(
                                 `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 **usage:**${AքʀɨʟʄɨӼ}rm <Queue Number>
 
----------------♥️---------------`))
+---------------:lady_beetle:---------------`))
                         .catch(console.error)
                         .then((message) => {
                             message.delete({

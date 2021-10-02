@@ -22,7 +22,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "filter") &&
-        message.channel.name !== "april💖player"
+        message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -36,13 +36,13 @@ module.exports = {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 **Category:** \`🔱Krakinz\`
-**Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
+**Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
           )
           .catch(console.error)
           .then((message) => {
@@ -72,12 +72,12 @@ module.exports = {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 **Nothing in Queue!**
 *Add music in Queue first!*
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
           )
           .catch(console.error)
           .then((message) => {
@@ -106,7 +106,7 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 **usage:** \`${AքʀɨʟʄɨӼ}filter\`
 ▫️ 8D
@@ -116,7 +116,7 @@ module.exports = {
 ▫️ surrounding
 ▫️ clear [Clean all applied filter(s)]
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -134,7 +134,7 @@ module.exports = {
       // =============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "filter") &&
-        message.channel.name === "april💖player"
+        message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         if (!message.member.voice.channel) {
           message.react("❌");
@@ -149,11 +149,11 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 *Please join a* **Voice Channel** *first*
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -181,12 +181,12 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -246,7 +246,7 @@ ID= ${message.client.user}
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 **That was not a valid filter!**
 
@@ -257,7 +257,7 @@ ID= ${message.client.user}
 ▫️ surrounding
 ▫️ clear [Clean all applied filter(s)]
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
               )
               .catch(console.error)
               .then((message) => {
@@ -312,12 +312,12 @@ ID= ${message.client.user}
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 *Song Queue has been cleaned up.*
 Restart **queue** and **filter** will be applied.
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -339,12 +339,12 @@ Restart **queue** and **filter** will be applied.
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 **Nothing in Queue!**
 *Add music in Queue first!*
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
             )
             .catch(console.error)
             .then((message) => {

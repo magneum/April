@@ -14,24 +14,24 @@ try:
     load_dotenv("./.env")
     AprilES = getenv("AprilES")
     AքʀɨʟʄɨӼ = getenv("BOTFIX")
-    Aքʀɨʟքʟǟʏɛʀ = commands.Bot(command_prefix=AքʀɨʟʄɨӼ,
+    Aքʀɨʟʍʊֆɨƈ = commands.Bot(command_prefix=AքʀɨʟʄɨӼ,
                               test_guilds=[889786523426373632])
     # ===========================================================================================================================
     # GNU GENERAL PUBLIC LICENSE
     # Version 3, 29 June 2007
     # 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
     # ============================================================================================================================
-    @Aքʀɨʟքʟǟʏɛʀ.slash_command(name="ping", description="𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️")
+    @Aքʀɨʟʍʊֆɨƈ.slash_command(name="ping", description="𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️")
     async def ping(speaker):
         await speaker.response.send_message(
-            f"Pong! {round(Aքʀɨʟքʟǟʏɛʀ.latency * 1000)}ms")
+            f"Pong! {round(Aքʀɨʟʍʊֆɨƈ.latency * 1000)}ms")
 
     # ===========================================================================================================================
     # GNU GENERAL PUBLIC LICENSE
     # Version 3, 29 June 2007
     # 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
     # ============================================================================================================================
-    @Aքʀɨʟքʟǟʏɛʀ.slash_command(name="help", description="𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️")
+    @Aքʀɨʟʍʊֆɨƈ.slash_command(name="help", description="𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️")
     async def help(speaker):
         embed = disnake.Embed(
             title="𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️",
@@ -41,7 +41,7 @@ try:
 • **{AքʀɨʟʄɨӼ}help** = Display this commands and descriptions.
 • **{AքʀɨʟʄɨӼ}april** = Display the  license and a few more info.
 • **{AքʀɨʟʄɨӼ}np** = Show now playing song.
-• **{AքʀɨʟʄɨӼ}ping** = Check server ping of Aքʀɨʟքʟǟʏɛʀ.
+• **{AքʀɨʟʄɨӼ}ping** = Check server ping of Aքʀɨʟʍʊֆɨƈ.
 • **{AքʀɨʟʄɨӼ}play** = Plays audio from YouTube.
 • **{AքʀɨʟʄɨӼ}list** = Play a playlist from YouTube.
 • **{AքʀɨʟʄɨӼ}queue** = Show the music queue and now playing.
@@ -67,7 +67,7 @@ try:
             url="https://i.postimg.cc/5tgjvj1y/A.png")
         embed.set_image(url="https://i.postimg.cc/5tgjvj1y/A.png")
         embed.set_footer(text="🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-        if speaker.channel.name == "Aքʀɨʟ❣️քʟǟʏɛʀ":
+        if speaker.channel.name == "Aքʀɨʟ❣️ʍʊֆɨƈ":
             await speaker.response.send_message(embed=embed)
         else:
             await speaker.author.send(embed=embed)
@@ -77,7 +77,7 @@ try:
     # Version 3, 29 June 2007
     # 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
     # ============================================================================================================================
-    @Aքʀɨʟքʟǟʏɛʀ.slash_command(name="April", description="𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️")
+    @Aքʀɨʟʍʊֆɨƈ.slash_command(name="April", description="𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️")
     async def April(speaker):
         embed = disnake.Embed(
             title="𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️",
@@ -98,7 +98,7 @@ try:
             url="https://i.postimg.cc/5tgjvj1y/A.png")
         embed.set_image(url="https://i.postimg.cc/5tgjvj1y/A.png")
         embed.set_footer(text="🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-        if speaker.channel.name == "Aքʀɨʟ❣️քʟǟʏɛʀ":
+        if speaker.channel.name == "Aքʀɨʟ❣️ʍʊֆɨƈ":
             await speaker.response.send_message(embed=embed)
         else:
             await speaker.author.send(embed=embed)
@@ -141,6 +141,6 @@ try:
     AprilLog.info(
         "~~~~~~~~~~~~~~~~~~~~~~~>  𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️ <~~~~~~~~~~~~~~~~~~~~~~~"
     )
-    Aքʀɨʟքʟǟʏɛʀ.run(AprilES)
+    Aքʀɨʟʍʊֆɨƈ.run(AprilES)
 except Exception as e:
     print(e)

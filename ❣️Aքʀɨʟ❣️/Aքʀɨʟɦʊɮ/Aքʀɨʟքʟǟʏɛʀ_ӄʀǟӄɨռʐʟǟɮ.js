@@ -38,10 +38,10 @@ module.exports = {
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
----------------♥️---------------
-**Aքʀɨʟ❣️քʟǟʏɛʀ** *has left the voice channel!*
+---------------:lady_beetle:---------------
+**Aքʀɨʟ❣️ʍʊֆɨƈ** *has left the voice channel!*
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -86,10 +86,10 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 Only **YouTube** playing/streaming is allowed
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
             )
             .catch(console.error)
             .then((message) => {
@@ -123,7 +123,7 @@ Only **YouTube** playing/streaming is allowed
               .setDescription(
                 `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 **Error:** 
 *${error}*`
               )
@@ -179,11 +179,12 @@ Only **YouTube** playing/streaming is allowed
             .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
             .setDescription(`
----------------♥️---------------
+---------------:lady_beetle:---------------
+
 **🏷Title-** [${music.title}](${music.url})
 **Song Requested by** ${message.author}
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
         );
         await AprilPlayingMessage.react("⏭");
         await AprilPlayingMessage.react("⏸");
@@ -232,10 +233,10 @@ Only **YouTube** playing/streaming is allowed
                     .setDescription(
                       `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 *You need to* ***join** *a voice channel first!*
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                     )
                 )
                 .catch(console.error)
@@ -260,11 +261,11 @@ Only **YouTube** playing/streaming is allowed
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 ⏩ *Skipped the music*
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
               )
               .catch(console.error)
               .then((message) => {
@@ -295,11 +296,11 @@ Only **YouTube** playing/streaming is allowed
                     .setDescription(
                       `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                     )
                 )
                 .catch(console.error)
@@ -326,11 +327,11 @@ Only **YouTube** playing/streaming is allowed
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 🚦 *Paused the music.*
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
                 )
                 .catch(console.error);
             } else {
@@ -344,11 +345,11 @@ Only **YouTube** playing/streaming is allowed
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 ▶ *Resumed the music!*
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
                 )
                 .catch(console.error)
                 .then((message) => {
@@ -379,11 +380,11 @@ Only **YouTube** playing/streaming is allowed
                     .setDescription(
                       `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                     )
                 )
                 .catch(console.error)
@@ -410,11 +411,11 @@ Only **YouTube** playing/streaming is allowed
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 🔇 Muted the music!
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
                 )
                 .catch(console.error)
                 .then((message) => {
@@ -434,11 +435,11 @@ Only **YouTube** playing/streaming is allowed
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(`**User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 🔊 Unmuted the music!
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
                 )
                 .catch(console.error)
                 .then((message) => {
@@ -472,11 +473,11 @@ Only **YouTube** playing/streaming is allowed
                     .setDescription(
                       `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                     )
                 )
                 .catch(console.error)
@@ -504,12 +505,12 @@ Only **YouTube** playing/streaming is allowed
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 🔉 Decreased the volume, 
 Volume now at = **${queue.volume}%**
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
               )
               .catch(console.error)
               .then((message) => {
@@ -542,11 +543,11 @@ Volume now at = **${queue.volume}%**
                     .setDescription(
                       `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                     )
                 )
                 .catch(console.error)
@@ -574,11 +575,11 @@ Volume now at = **${queue.volume}%**
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 🔊 Increased the volume, the volume is now ${queue.volume}%
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
               )
               .catch(console.error)
               .then((message) => {
@@ -608,11 +609,11 @@ Volume now at = **${queue.volume}%**
                     .setDescription(
                       `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                     )
                 )
                 .catch(console.error)
@@ -637,11 +638,11 @@ Volume now at = **${queue.volume}%**
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`**User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
               )
               .catch(console.error)
               .then((message) => {
@@ -672,11 +673,11 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}
                     .setDescription(
                       `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                     )
                 )
                 .catch(console.error)
@@ -704,12 +705,12 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(
                     `
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 Last Song was 👇🏻
 **${music.title}**
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                   )
               )
               .catch(console.error);

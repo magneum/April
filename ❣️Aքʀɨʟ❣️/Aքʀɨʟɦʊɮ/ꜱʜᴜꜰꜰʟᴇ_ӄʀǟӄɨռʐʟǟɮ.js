@@ -25,7 +25,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "shuffle") &&
-        message.channel.name !== "april💖player"
+        message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -42,13 +42,13 @@ module.exports = {
               .setDescription(
                 `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 **Category:** \`🔱Krakinz\`
-**Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
+**Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
               )
           )
           .catch(console.error)
@@ -66,7 +66,7 @@ module.exports = {
       // ============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "shuffle") &&
-        message.channel.name === "april💖player"
+        message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
@@ -85,11 +85,11 @@ module.exports = {
                 .setDescription(
                   `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 There is no queue.
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                 )
             )
             .catch(console.error)
@@ -121,11 +121,11 @@ There is no queue.
                 .setDescription(
                   `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 *You need to* **join** *a voice channel first!*
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                 )
             )
             .catch(console.error)
@@ -164,11 +164,11 @@ There is no queue.
               .setFooter(
                 "🔰Lic: 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯▪️▪️𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
               ).setDescription(`**User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 🔀 Shuffled the queue
 
----------------♥️---------------`)
+---------------:lady_beetle:---------------`)
           )
           .catch(console.error)
           .then((message) => {

@@ -23,7 +23,7 @@ module.exports = {
     try {
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "np") &&
-        message.channel.name !== "april💖player"
+        message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("❌");
         message.react("🔥");
@@ -38,13 +38,13 @@ module.exports = {
               .setDescription(
                 `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 **Category:** \`🔱Krakinz\`
-**Channel:** \`Aքʀɨʟ❣️քʟǟʏɛʀ\`
+**Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
               )
           )
           .catch(console.error)
@@ -62,7 +62,7 @@ module.exports = {
       // =============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "np") &&
-        message.channel.name === "april💖player"
+        message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
@@ -79,11 +79,11 @@ module.exports = {
                 .setDescription(
                   `
 **User:** ${message.author}
----------------♥️---------------
+---------------:lady_beetle:---------------
 
 April is not playing anymusic yet....
 
----------------♥️---------------`
+---------------:lady_beetle:---------------`
                 )
             )
             .catch(console.error)
@@ -112,7 +112,7 @@ April is not playing anymusic yet....
         // =============================================================================================================================
         const { id } = getVideoId(`${music.url}`);
         let current = new MessageEmbed()
-          .setTitle("**Aքʀɨʟ❣️քʟǟʏɛʀ**\n*Now playing*")
+          .setTitle("**Aքʀɨʟ❣️ʍʊֆɨƈ**\n*Now playing*")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
           .setDescription(`${music.title}\n${music.url}`)
