@@ -132,14 +132,16 @@ module.exports = {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
               .setDescription(`*💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞*
 ---------------:lady_beetle:---------------
+|----🏷**Title**
+|• [${music.title}](${music.url})
+|----🏷**Requested By**
+|• ${message.author}
 
-**TITLE**
-🏷• [${music.title}](${music.url})
-
-**Requested By**
-🎂• ${message.author}
 ---------------:lady_beetle:---------------
+👍 **Joined** \`${channel.name}\` 
+and is 📄 **Bound** to \`#${message.channel.name}\`
 
+---------------:lady_beetle:---------------
 ⏭•**Skip music**
 ⏸•**Pause/Resume music.**
 🔇•**Mute/Unmute music.**
