@@ -4,7 +4,7 @@ module.exports = {
   name: "help",
   execute(message) {
     try {
-      const AprilHelper = `
+      const ᴀᴘʀɪʟʜᴇʟᴘᴇʀ = `
 * ♥️•♪•♪𝐌𝐚𝐧𝐮𝐚𝐥-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•*
 • **${AքʀɨʟʄɨӼ}filter** = Music filters when playing audio.
 • **${AքʀɨʟʄɨӼ}help** = Display this commands and descriptions.
@@ -39,26 +39,26 @@ module.exports = {
         message.author
           .send(
             new MessageEmbed()
-              .setDescription(`**Ú§êr >** ${message.author}\n${AprilHelper}`)
+              .setDescription(`**Ú§êr >** ${message.author}\n${ᴀᴘʀɪʟʜᴇʟᴘᴇʀ}`)
               .setColor("#ff0000")
               .setAuthor(`😲 Warning! ⚠️`)
               .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setThumbnail(`https://i.postimg.cc/https://i.postimg.cc/s2JFYVWt/A-M.gif/APril-Gif.gif`)
+              .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
           )
           .catch(console.error);
         message.channel
           .send(
             new MessageEmbed()
-              .setDescription(`**Ú§êr >** ${message.author}\n${AprilHelper}`)
+              .setDescription(`**Ú§êr >** ${message.author}\n${ᴀᴘʀɪʟʜᴇʟᴘᴇʀ}`)
               .setColor("#ff0000")
               .setAuthor(`😲 Warning! ⚠️`)
               .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setThumbnail(`https://i.postimg.cc/https://i.postimg.cc/s2JFYVWt/A-M.gif/APril-Gif.gif`)
+              .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
           )
           .catch(console.error)

@@ -126,7 +126,7 @@ module.exports = {
           new MessageEmbed()
             .setColor("#ff0000")
             .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
-            .setThumbnail(`https://i.postimg.cc/https://i.postimg.cc/s2JFYVWt/A-M.gif/APril-Gif.gif`)
+            .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
             .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
             .setDescription(`*💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞*
@@ -138,7 +138,7 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#ff0000")
-              .setImage(`https://i.postimg.cc/https://i.postimg.cc/s2JFYVWt/A-M.gif/APril-Gif.gif`)
+              .setImage(`https://i.postimg.cc/NGn094BR/A-M.gif`)
               .setDescription(`
 •♪•♪𝐏𝐥𝐚𝐲𝐞𝐫:lady_beetle:𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•
 ---------------:lady_beetle:---------------
