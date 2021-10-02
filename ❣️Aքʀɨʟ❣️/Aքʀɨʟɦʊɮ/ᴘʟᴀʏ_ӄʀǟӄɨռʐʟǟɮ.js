@@ -53,13 +53,13 @@ module.exports = {
               .setDescription(
                 `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
 
----------------:lady_beetle:---------------`
+`
               )
           )
           .catch(console.error)
@@ -89,12 +89,12 @@ module.exports = {
               .setDescription(
                 `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 This link seems to be a playlist link.
 Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
 
----------------:lady_beetle:---------------`
+`
               )
           )
           .catch(console.error)
@@ -130,11 +130,11 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 *You need to* **join** *a voice channel first!*
 
----------------:lady_beetle:---------------`
+`
                 )
             )
             .catch(console.error)
@@ -164,11 +164,11 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 *Searching and Playing in less then* **3secs!**
 
----------------:lady_beetle:---------------`
+`
                 )
             )
             .catch(console.error)
@@ -197,12 +197,12 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}
 
----------------:lady_beetle:---------------`
+`
                 )
             )
             .catch(console.error)
@@ -232,12 +232,12 @@ ID= ${message.client.user}
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 **usage:**
 ${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**
 
----------------:lady_beetle:---------------`
+`
                 )
             )
             .catch(console.error)
@@ -268,11 +268,11 @@ ${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 Cannot connect to voice channel, missing permissions
 
----------------:lady_beetle:---------------`
+`
                 )
             )
             .catch(console.error)
@@ -302,11 +302,11 @@ Cannot connect to voice channel, missing permissions
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 I cannot speak in this voice channel, make sure I have the proper permissions!
 
----------------:lady_beetle:---------------`
+`
                 )
             )
             .catch(console.error)
@@ -362,11 +362,9 @@ I cannot speak in this voice channel, make sure I have the proper permissions!
                       .setFooter(
                         "𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
                       ).setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
 
-Audio Not Found
 
----------------:lady_beetle:---------------`)
+Audio Not Found`)
                   )
                   .catch(console.error)
                   .then((message) => {
@@ -407,11 +405,11 @@ Audio Not Found
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 Following url redirection...
 
----------------:lady_beetle:---------------`
+`
                 )
             )
             .catch(console.error)
@@ -507,11 +505,11 @@ Following url redirection...
                     .setDescription(
                       `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 Audio Not Found
 
----------------:lady_beetle:---------------`
+`
                     )
                 )
                 .catch(console.error)
@@ -587,12 +585,12 @@ ${message.author}`
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 **👍 Joined \`${channel.name}\`
 and is 📄 bound to \`#${message.channel.name}\`**
 
----------------:lady_beetle:---------------`
+`
                 )
             );
             message.channel
@@ -605,12 +603,12 @@ and is 📄 bound to \`#${message.channel.name}\`**
                   .setDescription(
                     `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 **👍 Joined \`${channel.name}\`
 and is 📄 bound to \`#${message.channel.name}\`**
 
----------------:lady_beetle:---------------`
+`
                   )
               )
               .catch(console.error)
@@ -641,11 +639,11 @@ and is 📄 bound to \`#${message.channel.name}\`**
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 Could not join the channel: *${error}*
 
----------------:lady_beetle:---------------`
+`
                 )
             )
             .catch(console.error)

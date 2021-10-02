@@ -36,13 +36,11 @@ module.exports = {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
-⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
-
----------------:lady_beetle:---------------`)
+⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
           )
           .catch(console.error)
           .then((message) => {
@@ -72,12 +70,10 @@ module.exports = {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 **Nothing in Queue!**
-*Add music in Queue first!*
-
----------------:lady_beetle:---------------`)
+*Add music in Queue first!*`)
           )
           .catch(console.error)
           .then((message) => {
@@ -106,7 +102,7 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 **usage:** \`${AքʀɨʟʄɨӼ}filter\`
 ▫️ 8D
@@ -114,9 +110,7 @@ module.exports = {
 ▫️ bassboost
 ▫️ nightcore
 ▫️ surrounding
-▫️ clear [Clean all applied filter(s)]
-
----------------:lady_beetle:---------------`)
+▫️ clear [Clean all applied filter(s)]`)
             )
             .catch(console.error)
             .then((message) => {
@@ -149,11 +143,9 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
 
-*Please join a* **Voice Channel** *first*
 
----------------:lady_beetle:---------------`)
+*Please join a* **Voice Channel** *first*`)
             )
             .catch(console.error)
             .then((message) => {
@@ -181,12 +173,10 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 You must be in the same Voice Channel as **ME**.
-ID= ${message.client.user}
-
----------------:lady_beetle:---------------`)
+ID= ${message.client.user}`)
             )
             .catch(console.error)
             .then((message) => {
@@ -246,7 +236,7 @@ ID= ${message.client.user}
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(`
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 **That was not a valid filter!**
 
@@ -255,9 +245,7 @@ ID= ${message.client.user}
 ▫️ bassboost
 ▫️ nightcore
 ▫️ surrounding
-▫️ clear [Clean all applied filter(s)]
-
----------------:lady_beetle:---------------`)
+▫️ clear [Clean all applied filter(s)]`)
               )
               .catch(console.error)
               .then((message) => {
@@ -312,12 +300,10 @@ ID= ${message.client.user}
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 *Song Queue has been cleaned up.*
-Restart **queue** and **filter** will be applied.
-
----------------:lady_beetle:---------------`)
+Restart **queue** and **filter** will be applied.`)
             )
             .catch(console.error)
             .then((message) => {
@@ -339,12 +325,10 @@ Restart **queue** and **filter** will be applied.
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 **Nothing in Queue!**
-*Add music in Queue first!*
-
----------------:lady_beetle:---------------`)
+*Add music in Queue first!*`)
             )
             .catch(console.error)
             .then((message) => {
@@ -366,8 +350,7 @@ Restart **queue** and **filter** will be applied.
           .setColor("#DB4434")
           .setTitle("🔺ERROR CAUGHT🔻")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-          .setDescription(`
+          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png").setDescription(`
 **April** has encountered an error.
 
 Please report to either 

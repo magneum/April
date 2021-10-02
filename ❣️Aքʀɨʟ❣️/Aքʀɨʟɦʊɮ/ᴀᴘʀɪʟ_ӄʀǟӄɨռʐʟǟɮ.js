@@ -24,13 +24,13 @@ module.exports = {
   execute(message) {
     try {
       const AprilNore = `
----------------:lady_beetle:---------------
+
 
 •> **April** is a Discord Music player Bot with YouTube Support and is available on both Discord and Telegram.\n
 •> **April** has been licensed under GNU General Public License 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁\n
 •> use **${AքʀɨʟʄɨӼ}help** to learn how to use **April**
 
----------------:lady_beetle:---------------`;
+`;
       if (message.content.startsWith(AքʀɨʟʄɨӼ + "april")) {
         message.react("✅");
         message.react("🍧");
@@ -79,9 +79,8 @@ module.exports = {
           .setColor("#DB4434")
           .setTitle("🔺ERROR CAUGHT🔻")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-          .setDescription(`
----------------:lady_beetle:---------------
+          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png").setDescription(`
+
 
 **April has encountered an error!**
 
@@ -90,7 +89,7 @@ Please report to either
 or
 🔰**In telegram group** = https://t.me/Krakns
 
----------------:lady_beetle:---------------
+
 
 **🔺Error Caught🔻**
 *${ErrorApril}*`)

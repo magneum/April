@@ -1,8 +1,4 @@
-const {
-  canModifyQueue,
-  AքʀɨʟʄɨӼ,
-  Aքʀɨʟքʊʀɢɛʀ,
-} = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
+const { canModifyQueue, AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 // =============================================================================================================================
 //
@@ -40,13 +36,13 @@ module.exports = {
               .setDescription(
                 `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
 
----------------:lady_beetle:---------------`
+`
               )
           )
           .catch(console.error)
@@ -81,11 +77,11 @@ module.exports = {
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 *You need to* **join** *a voice channel first!*
 
----------------:lady_beetle:---------------`
+`
                 )
             )
             .catch(console.error)
@@ -115,11 +111,11 @@ module.exports = {
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 *You need to* **join** *a voice channel first!*
 
----------------:lady_beetle:---------------`
+`
                 )
             )
             .catch(console.error)
@@ -149,11 +145,11 @@ module.exports = {
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 🔊 **The current volume is:** ${queue.volume}%
 
----------------:lady_beetle:---------------`
+`
                 )
             )
             .catch(console.error)
@@ -183,11 +179,11 @@ module.exports = {
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 Please use a number to set volume.
 
----------------:lady_beetle:---------------`
+`
                 )
             )
             .catch(console.error)
@@ -216,11 +212,9 @@ Please use a number to set volume.
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
 
-Please use a number between 0 - 100.
 
----------------:lady_beetle:---------------`)
+Please use a number between 0 - 100.`)
             )
             .catch(console.error)
             .then((message) => {
@@ -247,11 +241,9 @@ Please use a number between 0 - 100.
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
 
-Volume set to: **${args[0]}%**
 
----------------:lady_beetle:---------------`)
+Volume set to: **${args[0]}%**`)
           )
           .catch(console.error)
           .then((message) => {

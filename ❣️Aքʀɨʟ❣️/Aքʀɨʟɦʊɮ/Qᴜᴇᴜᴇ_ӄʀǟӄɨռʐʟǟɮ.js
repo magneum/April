@@ -36,13 +36,13 @@ module.exports = {
               .setDescription(
                 `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
 
----------------:lady_beetle:---------------`
+`
               )
           )
           .catch(console.error)
@@ -77,11 +77,11 @@ module.exports = {
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 Missing permission to manage messages or add reactions
 
----------------:lady_beetle:---------------`
+`
                 )
             )
             .catch(console.error)
@@ -112,11 +112,11 @@ Missing permission to manage messages or add reactions
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 ⏺ Nothing playing in this server
 
----------------:lady_beetle:---------------`
+`
                 )
             )
             .catch(console.error)

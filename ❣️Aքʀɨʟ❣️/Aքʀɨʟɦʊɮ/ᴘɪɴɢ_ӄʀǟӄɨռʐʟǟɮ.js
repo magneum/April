@@ -33,13 +33,11 @@ module.exports = {
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
-⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
-
----------------:lady_beetle:---------------`)
+⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
           )
           .catch(console.error)
           .then((message) => {
@@ -70,11 +68,11 @@ module.exports = {
               .setDescription(
                 `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 ⌛️Average ping of April's Server **${Math.round(message.client.ws.ping)}ms**
 
----------------:lady_beetle:---------------`
+`
               )
           )
           .catch(console.error)

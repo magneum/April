@@ -38,13 +38,13 @@ module.exports = {
               .setDescription(
                 `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
 
----------------:lady_beetle:---------------`
+`
               )
           )
           .catch(console.error)
@@ -79,11 +79,11 @@ module.exports = {
                 .setDescription(
                   `
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 April is not playing anymusic yet....
 
----------------:lady_beetle:---------------`
+`
                 )
             )
             .catch(console.error)

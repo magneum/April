@@ -47,13 +47,13 @@ module.exports = {
               .setDescription(
                 `\n\n
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
 
----------------:lady_beetle:---------------`
+`
               )
           )
           .catch(console.error)
@@ -88,11 +88,9 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
 
-*You need to* **join** *a voice channel first!*
 
----------------:lady_beetle:---------------`)
+*You need to* **join** *a voice channel first!*`)
             )
             .catch(console.error)
             .then((message) => {
@@ -120,12 +118,10 @@ module.exports = {
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 **usage:**
-${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**
-
----------------:lady_beetle:---------------`)
+${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
             )
             .catch(console.error)
             .then((message) => {
@@ -154,11 +150,9 @@ ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
 
-Cannot connect to voice channel, missing permissions
 
----------------:lady_beetle:---------------`)
+Cannot connect to voice channel, missing permissions`)
             )
             .catch(console.error)
             .then((message) => {
@@ -186,11 +180,9 @@ Cannot connect to voice channel, missing permissions
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
 
-I cannot speak in this voice channel, make sure I have the proper permissions!
 
----------------:lady_beetle:---------------`)
+I cannot speak in this voice channel, make sure I have the proper permissions!`)
             )
             .catch(console.error)
             .then((message) => {
@@ -218,12 +210,10 @@ I cannot speak in this voice channel, make sure I have the proper permissions!
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(`
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 You must be in the same Voice Channel as **ME**.
-ID= ${message.client.user}
-
----------------:lady_beetle:---------------`)
+ID= ${message.client.user}`)
             )
             .catch(console.error)
             .then((message) => {
@@ -280,11 +270,11 @@ ID= ${message.client.user}
                   .setDescription(
                     `\n\n
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 Playlist not found
 
----------------:lady_beetle:---------------`
+`
                   )
               )
               .catch(console.error)
@@ -393,10 +383,10 @@ Playlist not found
               .setDescription(
                 `\n\n
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 Started a playlist
 
----------------:lady_beetle:---------------`
+`
               )
           )
           .catch(console.error)
@@ -434,11 +424,11 @@ Started a playlist
                   .setDescription(
                     `\n\n
 **𝕌𝕤𝕖𝕣:** ${message.author}
----------------:lady_beetle:---------------
+
 
 Could not join the channel: *${error}*
 
----------------:lady_beetle:---------------`
+`
                   )
               )
               .catch(console.error)
