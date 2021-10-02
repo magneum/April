@@ -48,6 +48,7 @@ module.exports = {
               .setColor("#FF5F15")
               .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+              .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(
@@ -84,6 +85,7 @@ module.exports = {
               .setColor("#FF5F15")
               .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+              .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
               .setDescription(
@@ -125,6 +127,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
                 .setColor("#FF5F15")
                 .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
@@ -159,6 +162,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
                 .setColor("#FF5F15")
                 .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
@@ -192,6 +196,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
                 .setColor("#FF5F15")
                 .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
@@ -227,6 +232,7 @@ ID= ${message.client.user}
                 .setColor("#FF5F15")
                 .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
@@ -263,6 +269,7 @@ ${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**
                 .setColor("#FF5F15")
                 .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
@@ -297,6 +304,7 @@ Cannot connect to voice channel, missing permissions
                 .setColor("#FF5F15")
                 .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
@@ -358,6 +366,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!
                       .setColor("#FF5F15")
                       .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                       .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                      .setURL("https://github.com/Krakinz?tab=repositories")
                       .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                       .setFooter(
                         "𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
@@ -400,6 +409,7 @@ Audio Not Found`)
                 .setColor("#FF5F15")
                 .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
@@ -500,6 +510,7 @@ Following url redirection...
                     .setColor("#FF5F15")
                     .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                     .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                    .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                     .setDescription(
@@ -580,6 +591,7 @@ ${message.author}`
               new MessageEmbed()
                 .setColor("#ff0000")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(
@@ -598,6 +610,7 @@ and is 📄 bound to \`#${message.channel.name}\`**
                 new MessageEmbed()
                   .setColor("#ff0000")
                   .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                  .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                   .setDescription(
@@ -634,6 +647,7 @@ and is 📄 bound to \`#${message.channel.name}\`**
                 .setColor("#FF5F15")
                 .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
                 .setDescription(

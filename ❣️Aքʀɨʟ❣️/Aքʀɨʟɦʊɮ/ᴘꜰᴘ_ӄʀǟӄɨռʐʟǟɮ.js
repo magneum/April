@@ -32,6 +32,7 @@ module.exports = {
           .setColor("#FF5F15")
           .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
           .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+          .setURL("https://github.com/Krakinz?tab=repositories")
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           .setDescription(
@@ -70,7 +71,9 @@ module.exports = {
         const user = message.mentions.users.first();
         if (!message.mentions.users.first()) {
           AvatarEmbed.setColor("#ff0000");
-          AvatarEmbed.setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`);
+          AvatarEmbed.setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`).setURL(
+            "https://github.com/Krakinz?tab=repositories"
+          );
           AvatarEmbed.setImage(message.author.displayAvatarURL());
           AvatarEmbed.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab");
           AvatarEmbed.setDescription("🔥This is **your** Profile Picture");
@@ -79,7 +82,9 @@ module.exports = {
           return;
         } else {
           AvatarEmbed.setColor("#ff0000");
-          AvatarEmbed.setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`);
+          AvatarEmbed.setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`).setURL(
+            "https://github.com/Krakinz?tab=repositories"
+          );
           AvatarEmbed.setImage(user.displayAvatarURL());
           AvatarEmbed.setFooter(
             "𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
