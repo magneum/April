@@ -131,8 +131,8 @@ module.exports = {
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
             .setDescription(`*💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞*
 
-TƬIƬILΣ🏷**[${music.title}](${music.url})**
-RΣQUΣSƬΣD_BY🎂\`${message.author}\``)
+**🏷TƬIƬILΣ**==*[${music.title}](${music.url})*
+**🎂RΣQUΣSƬΣD_BY**==${message.author}`)
         );
         await AprilPlayingMessage.react("⏭");
         await AprilPlayingMessage.react("⏸");
