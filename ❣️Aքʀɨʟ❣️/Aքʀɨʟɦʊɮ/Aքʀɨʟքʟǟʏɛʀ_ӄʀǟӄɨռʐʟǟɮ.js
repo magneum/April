@@ -130,13 +130,14 @@ module.exports = {
               .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
               .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-              .setDescription(`---------------:lady_beetle:---------------
-|----🏷**Title**
+              .setDescription(`
+🏷**Title**
 |• [${music.title}](${music.url})
-|----🏷**Requested By**
+🏷**Requested By**
 |• ${message.author}
 
 ---------------:lady_beetle:---------------
+
 ⏭•**Skip music**
 ⏸•**Pause/Resume music.**
 🔇•**Mute/Unmute music.**
