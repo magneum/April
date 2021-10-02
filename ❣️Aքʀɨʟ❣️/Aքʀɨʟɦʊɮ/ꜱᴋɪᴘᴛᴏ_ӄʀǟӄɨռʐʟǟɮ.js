@@ -31,7 +31,7 @@ module.exports = {
           });
         return;
       }
-      if (message.content.startsWith(AքʀɨʟʄɨӼ + "skipto") && (message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" || message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ")) {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "skipto") && message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") {
         if (!args.length || isNaN(args[0])) {
           message.react("❌");
           message.react("🔥");

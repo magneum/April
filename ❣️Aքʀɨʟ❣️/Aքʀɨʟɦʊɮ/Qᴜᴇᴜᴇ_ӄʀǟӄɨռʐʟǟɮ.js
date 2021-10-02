@@ -31,7 +31,7 @@ module.exports = {
           });
         return;
       }
-      if (message.content.startsWith(AքʀɨʟʄɨӼ + "queue") && (message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" || message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ")) {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "queue") && message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") {
         const permissions = message.channel.permissionsFor(message.client.user);
         if (!permissions.has([`MANAGE_MESSAGES`, `ADD_REACTIONS`])) {
           message.react("❌");

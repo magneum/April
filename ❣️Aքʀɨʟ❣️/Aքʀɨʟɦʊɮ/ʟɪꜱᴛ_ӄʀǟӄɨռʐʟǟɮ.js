@@ -47,7 +47,7 @@ module.exports = {
         return;
       }
 
-      if (message.content.startsWith(AքʀɨʟʄɨӼ + "list") && (message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" || message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ")) {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "list") && message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" ) {
         const { channel } = message.member.voice;
         const serverQueue = message.client.queue.get(message.guild.id);
         if (!channel) {

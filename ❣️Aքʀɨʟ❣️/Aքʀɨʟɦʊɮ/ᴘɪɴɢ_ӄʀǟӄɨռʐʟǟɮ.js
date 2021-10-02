@@ -30,7 +30,7 @@ module.exports = {
           });
         return;
       }
-      if (message.content.startsWith(AքʀɨʟʄɨӼ + "ping") && (message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" || message.channel.name === "™ᴋʀᴀᴋɪɴᴢ🤖ᴛᴇꜱᴛ")) {
+      if (message.content.startsWith(AքʀɨʟʄɨӼ + "ping") && message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ" ) {
         message.react("✅");
         message.react("❣️");
         message.channel
