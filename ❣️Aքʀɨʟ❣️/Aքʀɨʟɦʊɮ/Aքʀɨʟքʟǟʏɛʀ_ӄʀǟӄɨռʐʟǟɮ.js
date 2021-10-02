@@ -3,7 +3,7 @@ const {
   canModifyQueue,
   ᴀᴘʀɪʟᴡᴀᴋᴇ,
   Aքʀɨʟքʊʀɢɛʀ,
-} = require("../Aքʀɨʟռɛʋ/April_env");
+} = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const getVideoId = require("get-video-id");
 // =============================================================================================================================
