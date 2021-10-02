@@ -70,3 +70,4 @@ Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶�
 ```
 
 ## Running in HEROKU!
+<p align="left"><img  width="50%" height="50%" img src="https://github.com/Krakinz/April/blob/KrakinzLab/%E2%9D%A3%EF%B8%8FA%D6%84%CA%80%C9%A8%CA%9F%E2%9D%A3%EF%B8%8F/%D3%84%CA%80%C7%9F%D3%84%C9%A8%D5%BC%CA%90%CA%9F%C7%9F%C9%AE/A%D6%84%CA%80%C9%A8%CA%9F%E2%9D%A3%EF%B8%8FM%CA%8A%D6%86%C9%A8%C6%88.gif" /></p>
