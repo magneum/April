@@ -1,21 +1,7 @@
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
-// =============================================================================================================================
-//
-//
-// GNU GENERAL PUBLIC LICENSE
-// Version 3, 29 June 2007
-// 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-//
-//
-// =============================================================================================================================
 module.exports = {
   name: "help",
-  // =============================================================================================================================
-  // GNU GENERAL PUBLIC LICENSE
-  // Version 3, 29 June 2007
-  // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-  // =============================================================================================================================
   execute(message) {
     try {
       const AprilHelper = `
@@ -42,11 +28,6 @@ module.exports = {
 • **🔁** = Toggle music loop.
 • **⏺** = Stops the currently playing music queue.
 • **🔊|🔉 ${AքʀɨʟʄɨӼ}vol** = Change volume of currently playing music.`;
-      // =============================================================================================================================
-      // GNU GENERAL PUBLIC LICENSE
-      // Version 3, 29 June 2007
-      // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // =============================================================================================================================
       if (message.content.startsWith(AքʀɨʟʄɨӼ + "help")) {
         message.react("✅");
         message.react("❣️");
@@ -58,25 +39,27 @@ module.exports = {
         message.author
           .send(
             new MessageEmbed()
-              .setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}\n${AprilHelper}`)
+              .setDescription(`**Ú§êr >** ${message.author}\n${AprilHelper}`)
               .setColor("#ff0000")
-              .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+              .setAuthor(`😲 Warning! ⚠️`)
+              .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
           )
           .catch(console.error);
         message.channel
           .send(
             new MessageEmbed()
-              .setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}\n${AprilHelper}`)
+              .setDescription(`**Ú§êr >** ${message.author}\n${AprilHelper}`)
               .setColor("#ff0000")
-              .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+              .setAuthor(`😲 Warning! ⚠️`)
+              .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
           )
           .catch(console.error)
           .then((message) => {
@@ -86,19 +69,15 @@ module.exports = {
           });
         return;
       }
-      // =============================================================================================================================
-      // GNU GENERAL PUBLIC LICENSE
-      // Version 3, 29 June 2007
-      // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // =============================================================================================================================
     } catch (ErrorApril) {
       message.channel.send(
         new MessageEmbed()
           .setColor("#DB4434")
-          .setTitle("🔺ERROR CAUGHT🔻")
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png").setDescription(`
-**April** has encountered an error.
+          .setAuthor("🔺ERROR CAUGHT🔻")
+          .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
+          .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
 
 Please report to either 
 🔰**In Discord channel** = https://discord.gg/ucPpXWFK

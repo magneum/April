@@ -1,22 +1,8 @@
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
-// =============================================================================================================================
-//
-//
-// GNU GENERAL PUBLIC LICENSE
-// Version 3, 29 June 2007
-// 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-//
-//
-// =============================================================================================================================
 module.exports = {
   name: "queue",
   cooldown: 3,
-  // =============================================================================================================================
-  // GNU GENERAL PUBLIC LICENSE
-  // Version 3, 29 June 2007
-  // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-  // =============================================================================================================================
   async execute(message) {
     try {
       if (
@@ -29,22 +15,16 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#FF5F15")
-              .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
-              .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-.setURL("https://github.com/Krakinz?tab=repositories")
+              .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+              .setAuthor(`😲 Warning! ⚠️`)
+              .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-              .setDescription(
-                `
-**𝕌𝕤𝕖𝕣:** ${message.author}
-
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+              .setDescription(`**Ú§êr >** ${message.author}
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
-⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
-
-`
-              )
+⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
           )
           .catch(console.error)
           .then((message) => {
@@ -54,11 +34,6 @@ module.exports = {
           });
         return;
       }
-      // =============================================================================================================================
-      // GNU GENERAL PUBLIC LICENSE
-      // Version 3, 29 June 2007
-      // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "queue") &&
         message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
@@ -71,20 +46,14 @@ module.exports = {
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
-                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-.setURL("https://github.com/Krakinz?tab=repositories")
+                .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+                .setAuthor(`😲 Warning! ⚠️`)
+                .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                .setDescription(
-                  `
-**𝕌𝕤𝕖𝕣:** ${message.author}
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+                .setDescription(`**Ú§êr >** ${message.author}
 
-
-Missing permission to manage messages or add reactions
-
-`
-                )
+Missing permission to manage messages or add reactions`)
             )
             .catch(console.error)
             .then((message) => {
@@ -94,11 +63,6 @@ Missing permission to manage messages or add reactions
             });
           return;
         }
-        // =============================================================================================================================
-        // GNU GENERAL PUBLIC LICENSE
-        // Version 3, 29 June 2007
-        // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ============================================================================================================================
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
           message.react("❌");
@@ -107,20 +71,14 @@ Missing permission to manage messages or add reactions
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
-                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-.setURL("https://github.com/Krakinz?tab=repositories")
+                .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+                .setAuthor(`😲 Warning! ⚠️`)
+                .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                .setDescription(
-                  `
-**𝕌𝕤𝕖𝕣:** ${message.author}
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+                .setDescription(`**Ú§êr >** ${message.author}
 
-
-⏺ Nothing playing in this server
-
-`
-                )
+⏺ Nothing playing in this server`)
             )
             .catch(console.error)
             .then((message) => {
@@ -130,11 +88,6 @@ Missing permission to manage messages or add reactions
             });
           return;
         }
-        // =============================================================================================================================
-        // GNU GENERAL PUBLIC LICENSE
-        // Version 3, 29 June 2007
-        // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ============================================================================================================================
         let currentPage = 0;
         message.react("✅");
         message.react("❣️");
@@ -143,7 +96,6 @@ Missing permission to manage messages or add reactions
           `**🏷Page Num:** - ${currentPage + 1}/${embeds.length}`,
           embeds[currentPage]
         );
-
         try {
           await queueEmbed.react(`⬅️`);
           await queueEmbed.react(`⏺`);
@@ -152,22 +104,12 @@ Missing permission to manage messages or add reactions
           console.error(error);
           message.channel.send(error.message).catch(console.error);
         }
-        // =============================================================================================================================
-        // GNU GENERAL PUBLIC LICENSE
-        // Version 3, 29 June 2007
-        // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ============================================================================================================================
         const filter = (reaction, user) =>
           [`⬅️`, `⏺`, `➡️`].includes(reaction.emoji.name) &&
           message.author.id === user.id;
         const collector = queueEmbed.createReactionCollector(filter, {
           time: 60000,
         });
-        // =============================================================================================================================
-        // GNU GENERAL PUBLIC LICENSE
-        // Version 3, 29 June 2007
-        // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ============================================================================================================================
         collector.on(`collect`, async (reaction, user) => {
           try {
             if (reaction.emoji.name === `➡️`) {
@@ -199,19 +141,15 @@ Missing permission to manage messages or add reactions
           }
         });
       }
-      // =============================================================================================================================
-      // GNU GENERAL PUBLIC LICENSE
-      // Version 3, 29 June 2007
-      // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ============================================================================================================================
     } catch (ErrorApril) {
       message.channel.send(
         new MessageEmbed()
           .setColor("#DB4434")
-          .setTitle("🔺ERROR CAUGHT🔻")
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png").setDescription(`
-**April** has encountered an error.
+          .setAuthor("🔺ERROR CAUGHT🔻")
+          .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
+          .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
 
 Please report to either 
 🔰**In Discord channel** = https://discord.gg/ucPpXWFK
@@ -226,7 +164,6 @@ or
     }
   },
 };
-
 function generateQueueEmbed(message, queue) {
   let embeds = [];
   let k = 10;
@@ -238,9 +175,10 @@ function generateQueueEmbed(message, queue) {
       .map((track) => `${++j} - [${track.title}](${track.url})`)
       .join(`\n`);
     const embed = new MessageEmbed()
+      .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
       .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
       .setColor("#ff0000")
-      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
       .setDescription(
         `**Aքʀɨʟ❣️ʍʊֆɨƈ**\n\n♥️**Current Song** -_[${queue[0].title}]_\n\n${info}`
       );

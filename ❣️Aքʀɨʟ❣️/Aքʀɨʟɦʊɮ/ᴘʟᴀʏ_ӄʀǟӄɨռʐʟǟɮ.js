@@ -17,23 +17,9 @@ const not_needed_scl = /^https?:\/\/(soundcloud\.app\.goo\.gl)\/(.*)$/;
 const ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ =
   /^(https?:\/\/)?(www\.)?(m\.)?(youtube\.com|youtu\.?be)\/.+$/gi;
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
-// =============================================================================================================================
-//
-//
-// GNU GENERAL PUBLIC LICENSE
-// Version 3, 29 June 2007
-// 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-//
-//
-// =============================================================================================================================
 module.exports = {
   name: "play",
   cooldown: 3,
-  // =============================================================================================================================
-  // GNU GENERAL PUBLIC LICENSE
-  // Version 3, 29 June 2007
-  // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-  // =============================================================================================================================
   async execute(message, args) {
     try {
       if (
@@ -46,22 +32,16 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#FF5F15")
-              .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
-              .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+              .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+              .setAuthor(`😲 Warning! ⚠️`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-              .setDescription(
-                `
-**𝕌𝕤𝕖𝕣:** ${message.author}
-
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+              .setDescription(`**Ú§êr >** ${message.author}
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
-⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.
-
-`
-              )
+⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
           )
           .catch(console.error)
           .then((message) => {
@@ -71,11 +51,6 @@ module.exports = {
           });
         return;
       }
-      // =============================================================================================================================
-      // GNU GENERAL PUBLIC LICENSE
-      // Version 3, 29 June 2007
-      // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ============================================================================================================================
       if (ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
         message.react("❌");
         message.react("🔥");
@@ -83,21 +58,15 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#FF5F15")
-              .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
-              .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+              .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+              .setAuthor(`😲 Warning! ⚠️`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-              .setDescription(
-                `
-**𝕌𝕤𝕖𝕣:** ${message.author}
-
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+              .setDescription(`**Ú§êr >** ${message.author}
 
 This link seems to be a playlist link.
-Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
-
-`
-              )
+Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
           )
           .catch(console.error)
           .then((message) => {
@@ -107,11 +76,6 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
           });
         return;
       }
-      // =============================================================================================================================
-      // GNU GENERAL PUBLIC LICENSE
-      // Version 3, 29 June 2007
-      // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ============================================================================================================================
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "play") &&
         message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
@@ -125,20 +89,14 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
-                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+                .setAuthor(`😲 Warning! ⚠️`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                .setDescription(
-                  `
-**𝕌𝕤𝕖𝕣:** ${message.author}
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+                .setDescription(`**Ú§êr >** ${message.author}
 
-
-*You need to* **join** *a voice channel first!*
-
-`
-                )
+*You need to* **join** *a voice channel first!*`)
             )
             .catch(console.error)
             .then((message) => {
@@ -148,11 +106,6 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
             });
           return;
         }
-        // =============================================================================================================================
-        // GNU GENERAL PUBLIC LICENSE
-        // Version 3, 29 June 2007
-        // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ============================================================================================================================
         if (channel && args.length) {
           message.react("✅");
           message.react("❣️");
@@ -160,20 +113,14 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
-                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+                .setAuthor(`😲 Warning! ⚠️`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                .setDescription(
-                  `
-**𝕌𝕤𝕖𝕣:** ${message.author}
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+                .setDescription(`**Ú§êr >** ${message.author}
 
-
-*Searching and Playing in less then* **3secs!**
-
-`
-                )
+*Searching and Playing in less then* **3secs!**`)
             )
             .catch(console.error)
             .then((message) => {
@@ -182,11 +129,6 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
               });
             });
         }
-        // =============================================================================================================================
-        // GNU GENERAL PUBLIC LICENSE
-        // Version 3, 29 June 2007
-        // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ============================================================================================================================
         if (serverQueue && channel !== message.guild.me.voice.channel) {
           message.react("❌");
           message.react("🔥");
@@ -194,21 +136,15 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
-                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+                .setAuthor(`😲 Warning! ⚠️`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                .setDescription(
-                  `
-**𝕌𝕤𝕖𝕣:** ${message.author}
-
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+                .setDescription(`**Ú§êr >** ${message.author}
 
 You must be in the same Voice Channel as **ME**.
-ID= ${message.client.user}
-
-`
-                )
+ID= ${message.client.user}`)
             )
             .catch(console.error)
             .then((message) => {
@@ -218,11 +154,6 @@ ID= ${message.client.user}
             });
           return;
         }
-        // =============================================================================================================================
-        // GNU GENERAL PUBLIC LICENSE
-        // Version 3, 29 June 2007
-        // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ============================================================================================================================
         if (!args.length) {
           message.react("❌");
           message.react("🔥");
@@ -230,21 +161,15 @@ ID= ${message.client.user}
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
-                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+                .setAuthor(`😲 Warning! ⚠️`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                .setDescription(
-                  `
-**𝕌𝕤𝕖𝕣:** ${message.author}
-
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+                .setDescription(`**Ú§êr >** ${message.author}
 
 **usage:**
-${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**
-
-`
-                )
+${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**`)
             )
             .catch(console.error)
             .then((message) => {
@@ -254,11 +179,6 @@ ${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**
             });
           return;
         }
-        // =============================================================================================================================
-        // GNU GENERAL PUBLIC LICENSE
-        // Version 3, 29 June 2007
-        // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ============================================================================================================================
         const permissions = channel.permissionsFor(message.client.user);
         if (!permissions.has(`CONNECT`)) {
           message.react("❌");
@@ -267,20 +187,14 @@ ${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
-                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+                .setAuthor(`😲 Warning! ⚠️`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                .setDescription(
-                  `
-**𝕌𝕤𝕖𝕣:** ${message.author}
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+                .setDescription(`**Ú§êr >** ${message.author}
 
-
-Cannot connect to voice channel, missing permissions
-
-`
-                )
+Cannot connect to voice channel, missing permissions`)
             )
             .catch(console.error)
             .then((message) => {
@@ -290,11 +204,6 @@ Cannot connect to voice channel, missing permissions
             });
           return;
         }
-        // =============================================================================================================================
-        // GNU GENERAL PUBLIC LICENSE
-        // Version 3, 29 June 2007
-        // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ============================================================================================================================
         if (!permissions.has(`SPEAK`)) {
           message.react("❌");
           message.react("🔥");
@@ -302,20 +211,14 @@ Cannot connect to voice channel, missing permissions
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
-                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+                .setAuthor(`😲 Warning! ⚠️`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                .setDescription(
-                  `
-**𝕌𝕤𝕖𝕣:** ${message.author}
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+                .setDescription(`**Ú§êr >** ${message.author}
 
-
-I cannot speak in this voice channel, make sure I have the proper permissions!
-
-`
-                )
+I cannot speak in this voice channel, make sure I have the proper permissions!`)
             )
             .catch(console.error)
             .then((message) => {
@@ -325,30 +228,15 @@ I cannot speak in this voice channel, make sure I have the proper permissions!
             });
           return;
         }
-        // =============================================================================================================================
-        // GNU GENERAL PUBLIC LICENSE
-        // Version 3, 29 June 2007
-        // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ============================================================================================================================
         const url = args[0];
         const search = args.join(` `);
         const urlValid = ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0]);
-        // =============================================================================================================================
-        // GNU GENERAL PUBLIC LICENSE
-        // Version 3, 29 June 2007
-        // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ============================================================================================================================
         if (!ɢᴏᴛʏᴏᴜᴛᴜʙᴇꜱɪɴɢʟᴇ.test(args[0]) && ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
           message.client.commands.get(`list`).execute(message, args);
           return;
         } else if (scdl.isValidUrl(url) && url.includes(`/sets/`)) {
           return;
         }
-        // =============================================================================================================================
-        // GNU GENERAL PUBLIC LICENSE
-        // Version 3, 29 June 2007
-        // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ============================================================================================================================
         if (not_needed_scl.test(url)) {
           try {
             https.get(url, function (res) {
@@ -364,14 +252,13 @@ I cannot speak in this voice channel, make sure I have the proper permissions!
                   .send(
                     new MessageEmbed()
                       .setColor("#FF5F15")
-                      .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
-                      .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                      .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+                      .setAuthor(`😲 Warning! ⚠️`)
                       .setURL("https://github.com/Krakinz?tab=repositories")
                       .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                       .setFooter(
                         "𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
-                      ).setDescription(`**𝕌𝕤𝕖𝕣:** ${message.author}
-
+                      ).setDescription(`**Ú§êr >** ${message.author}
 
 Audio Not Found`)
                   )
@@ -384,11 +271,6 @@ Audio Not Found`)
                 return;
               }
             });
-            // =============================================================================================================================
-            // GNU GENERAL PUBLIC LICENSE
-            // Version 3, 29 June 2007
-            // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-            // ============================================================================================================================
           } catch (error) {
             console.error(error);
             message.channel
@@ -407,20 +289,14 @@ Audio Not Found`)
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
-                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+                .setAuthor(`😲 Warning! ⚠️`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                .setDescription(
-                  `
-**𝕌𝕤𝕖𝕣:** ${message.author}
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+                .setDescription(`**Ú§êr >** ${message.author}
 
-
-Following url redirection...
-
-`
-                )
+Following url redirection...`)
             )
             .catch(console.error)
             .then((message) => {
@@ -430,11 +306,6 @@ Following url redirection...
             });
           return;
         }
-        // =============================================================================================================================
-        // GNU GENERAL PUBLIC LICENSE
-        // Version 3, 29 June 2007
-        // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ============================================================================================================================
         const queueConstruct = {
           textChannel: message.channel,
           channel,
@@ -466,11 +337,6 @@ Following url redirection...
                 });
               });
           }
-          // =============================================================================================================================
-          // GNU GENERAL PUBLIC LICENSE
-          // Version 3, 29 June 2007
-          // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-          // ============================================================================================================================
         } else if (scRegex.test(url)) {
           try {
             const trackInfo = await scdl.getInfo(url, notneeded);
@@ -490,17 +356,11 @@ Following url redirection...
                 });
               });
           }
-          // =============================================================================================================================
-          // GNU GENERAL PUBLIC LICENSE
-          // Version 3, 29 June 2007
-          // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-          // ============================================================================================================================
         } else {
           try {
             const results = await youtube.searchVideos(search, 1, {
               part: `snippet`,
             });
-
             if (!results.length) {
               message.react("❌");
               message.react("🔥");
@@ -508,20 +368,14 @@ Following url redirection...
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
-                    .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                    .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+                    .setAuthor(`😲 Warning! ⚠️`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                    .setDescription(
-                      `
-**𝕌𝕤𝕖𝕣:** ${message.author}
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+                    .setDescription(`**Ú§êr >** ${message.author}
 
-
-Audio Not Found
-
-`
-                    )
+Audio Not Found`)
                 )
                 .catch(console.error)
                 .then((message) => {
@@ -531,11 +385,6 @@ Audio Not Found
                 });
               return;
             }
-            // =============================================================================================================================
-            // GNU GENERAL PUBLIC LICENSE
-            // Version 3, 29 June 2007
-            // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-            // ============================================================================================================================
             songInfo = await ytdl.getInfo(results[0].url);
             music = {
               title: songInfo.videoDetails.title,
@@ -555,11 +404,6 @@ Audio Not Found
             return;
           }
         }
-        // =============================================================================================================================
-        // GNU GENERAL PUBLIC LICENSE
-        // Version 3, 29 June 2007
-        // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ============================================================================================================================
         if (serverQueue) {
           serverQueue.songs.push(music);
           serverQueue.textChannel
@@ -577,11 +421,6 @@ ${message.author}`
             });
           return;
         }
-        // =============================================================================================================================
-        // GNU GENERAL PUBLIC LICENSE
-        // Version 3, 29 June 2007
-        // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ============================================================================================================================
         queueConstruct.songs.push(music);
         message.client.queue.set(message.guild.id, queueConstruct);
         try {
@@ -591,20 +430,15 @@ ${message.author}`
               .send(
                 new MessageEmbed()
                   .setColor("#ff0000")
-                  .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                  .setAuthor(`😲 Warning! ⚠️`)
+                  .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                  .setDescription(
-                    `
-**𝕌𝕤𝕖𝕣:** ${message.author}
-
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+                  .setDescription(`**Ú§êr >** ${message.author}
 
 **👍 Joined \`${channel.name}\`
-and is 📄 bound to \`#${message.channel.name}\`**
-
-`
-                  )
+and is 📄 bound to \`#${message.channel.name}\`**`)
               )
               .catch(console.error)
               .then((message) => {
@@ -616,20 +450,15 @@ and is 📄 bound to \`#${message.channel.name}\`**
               .send(
                 new MessageEmbed()
                   .setColor("#ff0000")
-                  .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                  .setAuthor(`😲 Warning! ⚠️`)
+                  .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                  .setDescription(
-                    `
-**𝕌𝕤𝕖𝕣:** ${message.author}
-
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+                  .setDescription(`**Ú§êr >** ${message.author}
 
 **👍 Joined \`${channel.name}\`
-and is 📄 bound to \`#${message.channel.name}\`**
-
-`
-                  )
+and is 📄 bound to \`#${message.channel.name}\`**`)
               )
               .catch(console.error);
           } catch (e) {
@@ -647,20 +476,14 @@ and is 📄 bound to \`#${message.channel.name}\`**
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setTitle("😲𝗪𝗔𝗥𝗡𝗜𝗡𝗚⚠️")
-                .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+                .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+                .setAuthor(`😲 Warning! ⚠️`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                .setDescription(
-                  `
-**𝕌𝕤𝕖𝕣:** ${message.author}
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+                .setDescription(`**Ú§êr >** ${message.author}
 
-
-Could not join the channel: *${error}*
-
-`
-                )
+Could not join the channel: *${error}*`)
             )
             .catch(console.error)
             .then((message) => {
@@ -671,19 +494,15 @@ Could not join the channel: *${error}*
           return;
         }
       }
-      // =============================================================================================================================
-      // GNU GENERAL PUBLIC LICENSE
-      // Version 3, 29 June 2007
-      // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ============================================================================================================================
     } catch (ErrorApril) {
       message.channel.send(
         new MessageEmbed()
           .setColor("#DB4434")
-          .setTitle("🔺ERROR CAUGHT🔻")
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png").setDescription(`
-**April** has encountered an error.
+          .setAuthor("🔺ERROR CAUGHT🔻")
+          .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
+          .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
 
 Please report to either 
 🔰**In Discord channel** = https://discord.gg/ucPpXWFK
