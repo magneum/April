@@ -22,7 +22,7 @@ module.exports = {
               .setDescription(`**Ú§êr >** ${message.author}\n${ᴀᴘʀɪʟɴᴏʀᴇ}`)
               .setColor("#ff0000")
               .setAuthor(`😲 Warning! ⚠️`)
-              .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+              .setTitle("April❣️Music by🔱KrakinzLab™️")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setThumbnail(
@@ -37,7 +37,7 @@ module.exports = {
               .setDescription(`**Ú§êr >** ${message.author}\n${ᴀᴘʀɪʟɴᴏʀᴇ}`)
               .setColor("#ff0000")
               .setAuthor(`😲 Warning! ⚠️`)
-              .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+              .setTitle("April❣️Music by🔱KrakinzLab™️")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setThumbnail(
@@ -58,7 +58,7 @@ module.exports = {
         new MessageEmbed()
           .setColor("#DB4434")
           .setAuthor("Error🔺Caught")
-          .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
+          .setTitle("April❣️Music by🔱KrakinzLab™️")
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
           .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
           .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
