@@ -9,7 +9,7 @@ const { readdirSync } = require("fs");
 const { join } = require("path");
 const { Client, Collection } = require("./ӄʀǟӄɨռʐʟǟɮ/src");
 const Aքʀɨʟʍʊֆɨƈ = new Client({ disableEveryone: false });
-const { Aքʀɨʟӄɛռ, AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("./Aքʀɨʟռɛʋ/April_env.js");
+const { Aքʀɨʟӄɛռ, AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("./Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ.js");
 const Aքʀɨʟֆɛʀʋɛʀ = express();
 const PORT = process.env.PORT || 8080;
 Aքʀɨʟֆɛʀʋɛʀ.listen(PORT);
