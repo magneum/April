@@ -698,26 +698,26 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}
             // 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
             // ============================================================================================================================
             queue.songs = [];
-            const { id } = getVideoId(`${music.url}`);
-            queue.textChannel
-              .send(
-                new MessageEmbed()
-                  .setColor("#FAA0A0")
-                  .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
-                  .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                  .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
-                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
-                  .setDescription(
-                    `
----------------:lady_beetle:---------------
+            //             const { id } = getVideoId(`${music.url}`);
+            //             queue.textChannel
+            //               .send(
+            //                 new MessageEmbed()
+            //                   .setColor("#FAA0A0")
+            //                   .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
+            //                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+            //                   .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
+            //                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
+            //                   .setDescription(
+            //                     `
+            // ---------------:lady_beetle:---------------
 
-Last Song was 👇🏻
-**${music.title}**
+            // Last Song was 👇🏻
+            // **${music.title}**
 
----------------:lady_beetle:---------------`
-                  )
-              )
-              .catch(console.error);
+            // ---------------:lady_beetle:---------------`
+            //                   )
+            //               )
+            //               .catch(console.error);
             try {
               queue.connection.dispatcher.end();
             } catch (error) {
