@@ -138,10 +138,6 @@ module.exports = {
 |• ${message.author}
 
 ---------------:lady_beetle:---------------
-👍 **Joined** \`${channel.name}\` 
-and is 📄 **Bound** to \`#${message.channel.name}\`
-
----------------:lady_beetle:---------------
 ⏭•**Skip music**
 ⏸•**Pause/Resume music.**
 🔇•**Mute/Unmute music.**
