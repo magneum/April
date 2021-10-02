@@ -115,7 +115,9 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 .setColor("#FF5F15")
                 .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
                 .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                .setThumbnail(
+                  `https://i.postimg.cc/https://i.postimg.cc/s2JFYVWt/A-M.gif/APril-Gif.gif`
+                )
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
                 .setDescription(`**Ú§êr >** ${message.author}
 

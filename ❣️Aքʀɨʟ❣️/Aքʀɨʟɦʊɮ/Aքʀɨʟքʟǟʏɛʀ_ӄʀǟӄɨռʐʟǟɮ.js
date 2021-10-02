@@ -122,11 +122,11 @@ module.exports = {
         const { id } = getVideoId(`${music.url}`);
         message.react("✅");
         message.react("❣️");
-        var AprilPlayingMessage = await queue.textChannel.send(
+        await queue.textChannel.send(
           new MessageEmbed()
             .setColor("#ff0000")
             .setTitle("Aքʀɨʟ❣️Mʊֆɨƈ  BY 🔱KrakinzLab™️")
-            .setThumbnail(`https://i.postimg.cc/BvsPV61N/A-M.gif`)
+            .setThumbnail(`https://i.postimg.cc/https://i.postimg.cc/s2JFYVWt/A-M.gif/APril-Gif.gif`)
             .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
             .setDescription(`*💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞*
@@ -134,21 +134,13 @@ module.exports = {
 **🏷TƬIƬILΣ**==*[${music.title}](${music.url})*
 **🎂RΣQUΣSƬΣD_BY**==${message.author}`)
         );
-        await AprilPlayingMessage.react("⏭");
-        await AprilPlayingMessage.react("⏸");
-        await AprilPlayingMessage.react("🔇");
-        await AprilPlayingMessage.react("🔉");
-        await AprilPlayingMessage.react("🔊");
-        await AprilPlayingMessage.react("🔁");
-        await AprilPlayingMessage.react("⏺");
-        await queue.textChannel
+        var ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel
           .send(
             new MessageEmbed()
               .setColor("#ff0000")
-              .setTitle("`https://i.postimg.cc/BvsPV61N/A-M.gif`")
-              .setThumbnail(`https://i.postimg.cc/BvsPV61N/A-M.gif`)
+              .setImage(`https://i.postimg.cc/https://i.postimg.cc/s2JFYVWt/A-M.gif/APril-Gif.gif`)
               .setDescription(`
-* ♥️•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•*
+•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫:lady_beetle:𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•
 ---------------:lady_beetle:---------------
 
 • ⏭ = **Skip the currently playing music.**
@@ -159,17 +151,19 @@ module.exports = {
 • ⏺ = **Stops the currently playing music queue.**
 `)
           )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: 30000,
-            });
-          });
+          .catch(console.error);
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏭");
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏸");
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔇");
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔉");
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔊");
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔁");
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏺");
       } catch (error) {
         console.error(error);
       }
       const filter = (reaction, user) => user.id !== message.client.user.id;
-      var collector = AprilPlayingMessage.createReactionCollector(filter, {
+      var collector = ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.createReactionCollector(filter, {
         time: music.duration > 0 ? music.duration * 1000 : 600000,
       });
       collector.on("collect", (reaction, user) => {
@@ -551,7 +545,8 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
         }
       });
       collector.on("end", () => {
-        AprilPlayingMessage.reactions.removeAll().catch(console.error);
+        ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.delete();
+        // ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.reactions.removeAll().catch(console.error);
       });
     } catch (ErrorApril) {
       message.channel.send(
