@@ -116,7 +116,7 @@ April is not playing anymusic yet....
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")
           .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
           .setDescription(`${music.title}\n${music.url}`)
-          .setColor("#660000")
+          .setColor("#ff0000")
           .setAuthor(message.client.user.username);
         // =============================================================================================================================
         // GNU GENERAL PUBLIC LICENSE

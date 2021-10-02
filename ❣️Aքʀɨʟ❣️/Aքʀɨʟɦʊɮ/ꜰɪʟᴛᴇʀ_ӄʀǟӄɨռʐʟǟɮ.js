@@ -282,7 +282,7 @@ ID= ${message.client.user}
           message.react("🍧");
           message.channel.send(
             new MessageEmbed()
-              .setColor("#660000")
+              .setColor("#ff0000")
               .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021 Krakinz & KrakinzLab")

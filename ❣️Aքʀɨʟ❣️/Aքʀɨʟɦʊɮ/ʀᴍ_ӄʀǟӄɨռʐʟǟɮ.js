@@ -161,7 +161,7 @@ There is no queue.
                     queue.textChannel
                         .send(
                             new MessageEmbed()
-                                .setColor('#660000')
+                                .setColor('#ff0000')
                                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                                 .setFooter(
@@ -191,7 +191,7 @@ There is no queue.
                     queue.textChannel
                         .send(
                             new MessageEmbed()
-                                .setColor('#660000')
+                                .setColor('#ff0000')
                                 .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
                                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                                 .setFooter(

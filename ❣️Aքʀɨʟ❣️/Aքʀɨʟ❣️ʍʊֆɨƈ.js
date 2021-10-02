@@ -41,7 +41,7 @@ try {
   Aքʀɨʟʍʊֆɨƈ.on("warn", (ᴀᴘʀɪʟ_WARN) => console.log(ᴀᴘʀɪʟ_WARN));
   Aքʀɨʟʍʊֆɨƈ.on("error", console.error);
   Aքʀɨʟʍʊֆɨƈ.on("ready", () => {
-    Aքʀɨʟʍʊֆɨƈ.user.setActivity(`❣️ ${AքʀɨʟʄɨӼ}April | ${AքʀɨʟʄɨӼ}play`, {
+    Aքʀɨʟʍʊֆɨƈ.user.setActivity(`❣️ ${AքʀɨʟʄɨӼ}april | ${AքʀɨʟʄɨӼ}play`, {
       type: "WATCHING",
     });
     console.log(`
@@ -82,7 +82,7 @@ try {
     channel
       .send(
         new MessageEmbed()
-          .setColor("#660000")
+          .setColor("#ff0000")
           .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -107,7 +107,7 @@ Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..
     channel
       .send(
         new MessageEmbed()
-          .setColor("#660000")
+          .setColor("#ff0000")
           .setAuthor(`𝐀𝐩𝐫𝐢𝐥❣️by🔱KrakinzLab™️`)
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
