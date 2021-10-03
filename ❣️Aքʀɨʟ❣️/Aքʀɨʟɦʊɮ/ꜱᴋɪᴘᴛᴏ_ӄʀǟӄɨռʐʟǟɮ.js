@@ -1,5 +1,11 @@
-const { canModifyQueue, AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
-const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
+const {
+  canModifyQueue,
+  AքʀɨʟʄɨӼ,
+  Aքʀɨʟքʊʀɢɛʀ
+} = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
+const {
+  MessageEmbed
+} = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 module.exports = {
   name: "skipto",
   cooldown: 3,
@@ -11,13 +17,13 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#FF5F15")
-              .setTitle("April❣️Music by🔱KrakinzLab™️")
-              .setAuthor(`😲 Warning! ⚠️`)
-              .setURL("https://github.com/Krakinz?tab=repositories")
-              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-              .setDescription(`**Ú§êr >** ${message.author}
+            .setColor("#FF5F15")
+            .setTitle("April❣️Music by🔱KrakinzLab™️")
+            .setAuthor(`😲 Warning! ⚠️`)
+            .setURL("https://github.com/Krakinz?tab=repositories")
+            .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+            .setDescription(`**Ú§êr >** ${message.author}
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
@@ -38,13 +44,13 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#FF5F15")
-                .setTitle("April❣️Music by🔱KrakinzLab™️")
-                .setAuthor(`😲 Warning! ⚠️`)
-                .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-                .setDescription(`**Ú§êr >** ${message.author}
+              .setColor("#FF5F15")
+              .setTitle("April❣️Music by🔱KrakinzLab™️")
+              .setAuthor(`😲 Warning! ⚠️`)
+              .setURL("https://github.com/Krakinz?tab=repositories")
+              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+              .setDescription(`**Ú§êr >** ${message.author}
 
 ⚓️**usage:**
 ${AքʀɨʟʄɨӼ}skipto [Queue Number]`)
@@ -64,13 +70,13 @@ ${AքʀɨʟʄɨӼ}skipto [Queue Number]`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#FF5F15")
-                .setTitle("April❣️Music by🔱KrakinzLab™️")
-                .setAuthor(`😲 Warning! ⚠️`)
-                .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-                .setDescription(`**Ú§êr >** ${message.author}
+              .setColor("#FF5F15")
+              .setTitle("April❣️Music by🔱KrakinzLab™️")
+              .setAuthor(`😲 Warning! ⚠️`)
+              .setURL("https://github.com/Krakinz?tab=repositories")
+              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+              .setDescription(`**Ú§êr >** ${message.author}
 
 There is nothing playing that I could skip for you.`)
             )
@@ -88,13 +94,13 @@ There is nothing playing that I could skip for you.`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#FF5F15")
-                .setTitle("April❣️Music by🔱KrakinzLab™️")
-                .setAuthor(`😲 Warning! ⚠️`)
-                .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-                .setDescription(`**Ú§êr >** ${message.author}
+              .setColor("#FF5F15")
+              .setTitle("April❣️Music by🔱KrakinzLab™️")
+              .setAuthor(`😲 Warning! ⚠️`)
+              .setURL("https://github.com/Krakinz?tab=repositories")
+              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+              .setDescription(`**Ú§êr >** ${message.author}
 
 *You need to* **join** *a voice channel first!*`)
             )
@@ -112,13 +118,13 @@ There is nothing playing that I could skip for you.`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#FF5F15")
-                .setTitle("April❣️Music by🔱KrakinzLab™️")
-                .setAuthor(`😲 Warning! ⚠️`)
-                .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-                .setDescription(`**Ú§êr >** ${message.author}
+              .setColor("#FF5F15")
+              .setTitle("April❣️Music by🔱KrakinzLab™️")
+              .setAuthor(`😲 Warning! ⚠️`)
+              .setURL("https://github.com/Krakinz?tab=repositories")
+              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+              .setDescription(`**Ú§êr >** ${message.author}
 
 There is nothing playing that I could skip for you.`)
             )
@@ -144,13 +150,13 @@ There is nothing playing that I could skip for you.`)
         queue.textChannel
           .send(
             new MessageEmbed()
-              .setColor("#ff0000")
-              .setAuthor(`😲 Warning! ⚠️`)
-              .setTitle("April❣️Music by🔱KrakinzLab™️")
-              .setURL("https://github.com/Krakinz?tab=repositories")
-              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-              .setDescription(`**Ú§êr >** ${message.author}
+            .setColor("#ff0000")
+            .setAuthor(`😲 Warning! ⚠️`)
+            .setTitle("April❣️Music by🔱KrakinzLab™️")
+            .setURL("https://github.com/Krakinz?tab=repositories")
+            .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+            .setDescription(`**Ú§êr >** ${message.author}
 
 ⏺ stopped the music!`)
           )
@@ -164,12 +170,12 @@ There is nothing playing that I could skip for you.`)
     } catch (ErrorApril) {
       message.channel.send(
         new MessageEmbed()
-          .setColor("#DB4434")
-          .setAuthor("Error🔺Caught")
-          .setTitle("April❣️Music by🔱KrakinzLab™️")
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-          .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
+        .setColor("#DB4434")
+        .setAuthor("Error🔺Caught")
+        .setTitle("April❣️Music by🔱KrakinzLab™️")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+        .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
+        .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
 
 Please report to either 
 🔰**In Discord channel** = https://discord.gg/ucPpXWFK

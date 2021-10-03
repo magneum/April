@@ -1,5 +1,10 @@
-const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
-const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
+const {
+  MessageEmbed
+} = require("../ӄʀǟӄɨռʐʟǟɮ/src");
+const {
+  AքʀɨʟʄɨӼ,
+  Aքʀɨʟքʊʀɢɛʀ
+} = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
 module.exports = {
   name: "queue",
   cooldown: 3,
@@ -11,13 +16,13 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#FF5F15")
-              .setTitle("April❣️Music by🔱KrakinzLab™️")
-              .setAuthor(`😲 Warning! ⚠️`)
-              .setURL("https://github.com/Krakinz?tab=repositories")
-              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-              .setDescription(`**Ú§êr >** ${message.author}
+            .setColor("#FF5F15")
+            .setTitle("April❣️Music by🔱KrakinzLab™️")
+            .setAuthor(`😲 Warning! ⚠️`)
+            .setURL("https://github.com/Krakinz?tab=repositories")
+            .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+            .setDescription(`**Ú§êr >** ${message.author}
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
@@ -39,13 +44,13 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#FF5F15")
-                .setTitle("April❣️Music by🔱KrakinzLab™️")
-                .setAuthor(`😲 Warning! ⚠️`)
-                .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-                .setDescription(`**Ú§êr >** ${message.author}
+              .setColor("#FF5F15")
+              .setTitle("April❣️Music by🔱KrakinzLab™️")
+              .setAuthor(`😲 Warning! ⚠️`)
+              .setURL("https://github.com/Krakinz?tab=repositories")
+              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+              .setDescription(`**Ú§êr >** ${message.author}
 
 Missing permission to manage messages or add reactions`)
             )
@@ -64,13 +69,13 @@ Missing permission to manage messages or add reactions`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#FF5F15")
-                .setTitle("April❣️Music by🔱KrakinzLab™️")
-                .setAuthor(`😲 Warning! ⚠️`)
-                .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-                .setDescription(`**Ú§êr >** ${message.author}
+              .setColor("#FF5F15")
+              .setTitle("April❣️Music by🔱KrakinzLab™️")
+              .setAuthor(`😲 Warning! ⚠️`)
+              .setURL("https://github.com/Krakinz?tab=repositories")
+              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+              .setDescription(`**Ú§êr >** ${message.author}
 
 ⏺ Nothing playing in this server`)
             )
@@ -98,8 +103,7 @@ Missing permission to manage messages or add reactions`)
           console.error(error);
           message.channel.send(error.message).catch(console.error);
         }
-        const filter = (reaction, user) =>
-          [`⬅️`, `⏺`, `➡️`].includes(reaction.emoji.name) &&
+        const filter = (reaction, user) => [`⬅️`, `⏺`, `➡️`].includes(reaction.emoji.name) &&
           message.author.id === user.id;
         const collector = queueEmbed.createReactionCollector(filter, {
           time: 60000,
@@ -110,18 +114,18 @@ Missing permission to manage messages or add reactions`)
               if (currentPage < embeds.length - 1) {
                 currentPage++;
                 queueEmbed.edit("**🏷Page Num:** - ", {
-                  page: currentPage + 1,
-                  length: embeds.length,
-                }),
+                    page: currentPage + 1,
+                    length: embeds.length,
+                  }),
                   embeds[currentPage];
               }
             } else if (reaction.emoji.name === `⬅️`) {
               if (currentPage !== 0) {
                 --currentPage;
                 queueEmbed.edit("**🏷Page Num:** - ", {
-                  page: currentPage + 1,
-                  length: embeds.length,
-                }),
+                    page: currentPage + 1,
+                    length: embeds.length,
+                  }),
                   embeds[currentPage];
               }
             } else {
@@ -135,6 +139,7 @@ Missing permission to manage messages or add reactions`)
           }
         });
       }
+
       function generateQueueEmbed(message, queue) {
         let embeds = [];
         let k = 10;
@@ -160,12 +165,12 @@ Missing permission to manage messages or add reactions`)
     } catch (ErrorApril) {
       message.channel.send(
         new MessageEmbed()
-          .setColor("#DB4434")
-          .setAuthor("Error🔺Caught")
-          .setTitle("April❣️Music by🔱KrakinzLab™️")
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-          .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-          .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
+        .setColor("#DB4434")
+        .setAuthor("Error🔺Caught")
+        .setTitle("April❣️Music by🔱KrakinzLab™️")
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+        .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
+        .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
 
 Please report to either 
 🔰**In Discord channel** = https://discord.gg/ucPpXWFK

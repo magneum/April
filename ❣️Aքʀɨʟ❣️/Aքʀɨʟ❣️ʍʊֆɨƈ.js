@@ -1,10 +1,23 @@
 const os = require("os");
 const express = require("express");
-const { readdirSync } = require("fs");
-const { join } = require("path");
-const { Client, Collection } = require("./ӄʀǟӄɨռʐʟǟɮ/src");
-const Aքʀɨʟʍʊֆɨƈ = new Client({ disableEveryone: false });
-const { Aքʀɨʟӄɛռ, AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("./Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ.js");
+const {
+  readdirSync
+} = require("fs");
+const {
+  join
+} = require("path");
+const {
+  Client,
+  Collection
+} = require("./ӄʀǟӄɨռʐʟǟɮ/src");
+const Aքʀɨʟʍʊֆɨƈ = new Client({
+  disableEveryone: false
+});
+const {
+  Aքʀɨʟӄɛռ,
+  AքʀɨʟʄɨӼ,
+  Aքʀɨʟքʊʀɢɛʀ
+} = require("./Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ.js");
 const Aքʀɨʟֆɛʀʋɛʀ = express();
 const PORT = process.env.PORT || 8080;
 Aքʀɨʟֆɛʀʋɛʀ.listen(PORT);
@@ -13,7 +26,9 @@ Aքʀɨʟʍʊֆɨƈ.prefix = AքʀɨʟʄɨӼ;
 Aքʀɨʟʍʊֆɨƈ.queue = new Map();
 Aքʀɨʟʍʊֆɨƈ.commands = new Collection();
 const AprilEngineOil = new Collection();
-const { MessageEmbed } = require("./ӄʀǟӄɨռʐʟǟɮ/src");
+const {
+  MessageEmbed
+} = require("./ӄʀǟӄɨռʐʟǟɮ/src");
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const commandFiles = readdirSync(join(__dirname, "Aքʀɨʟɦʊɮ")).filter((file) =>
   file.endsWith("_ӄʀǟӄɨռʐʟǟɮ.js")
@@ -55,21 +70,21 @@ try {
   Aքʀɨʟʍʊֆɨƈ.on(`guildCreate`, (guild) => {
     const channel = guild.channels.cache.find(
       (channel) =>
-        channel.type === `text` &&
-        channel.permissionsFor(guild.me).has(`SEND_MESSAGES`)
+      channel.type === `text` &&
+      channel.permissionsFor(guild.me).has(`SEND_MESSAGES`)
     );
     channel.send("@everyone");
     channel
       .send(
         new MessageEmbed()
-          .setColor("#ff0000")
-          .setAuthor(`😲 Warning! ⚠️`)
-          .setURL("https://github.com/Krakinz?tab=repositories")
-          .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-          .setDescription(
-            `𝗗𝗲𝗮𝗿: @everyone
+        .setColor("#ff0000")
+        .setAuthor(`😲 Warning! ⚠️`)
+        .setURL("https://github.com/Krakinz?tab=repositories")
+        .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
+        .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+        .setDescription(
+          `𝗗𝗲𝗮𝗿: @everyone
 ---------------:lady_beetle:---------------
 
 
@@ -77,19 +92,19 @@ try {
 Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..
 
 ---------------:lady_beetle:---------------`
-          )
+        )
       )
       .catch(console.error);
     channel
       .send(
         new MessageEmbed()
-          .setColor("#ff0000")
-          .setAuthor(`😲 Warning! ⚠️`)
-          .setURL("https://github.com/Krakinz?tab=repositories")
-          .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-          .setDescription(`❤️‍🔥 **Hey there MUSIC lovers !**
+        .setColor("#ff0000")
+        .setAuthor(`😲 Warning! ⚠️`)
+        .setURL("https://github.com/Krakinz?tab=repositories")
+        .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
+        .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+        .setDescription(`❤️‍🔥 **Hey there MUSIC lovers !**
 I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
 Please use the channel **Aքʀɨʟ❣️ʍʊֆɨƈ** for any **ᴀᴘʀɪʟ_ᴘʟᴀʏᴇʀ** commands.
 ---------------:lady_beetle:---------------
@@ -107,9 +122,14 @@ Please use only that channel for any **ᴀᴘʀɪʟ_ᴘʟᴀʏᴇʀ** commands..
     guild.channels
       .create("🔱𝗞𝗥𝗔𝗞𝗜𝗡𝗭𝗟𝗔𝗕™", {
         type: "category",
-        permissionOverwrites: [
-          { id: guild.id, deny: ["VIEW_CHANNEL"] },
-          { id: guild.id, allow: ["VIEW_CHANNEL"] },
+        permissionOverwrites: [{
+            id: guild.id,
+            deny: ["VIEW_CHANNEL"]
+          },
+          {
+            id: guild.id,
+            allow: ["VIEW_CHANNEL"]
+          },
         ],
       })
       .then((parent) => {
@@ -117,8 +137,7 @@ Please use only that channel for any **ᴀᴘʀɪʟ_ᴘʟᴀʏᴇʀ** commands..
           .create("ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ", {
             type: "text",
             parent,
-            permissionOverwrites: [
-              {
+            permissionOverwrites: [{
                 id: guild.id,
                 deny: [
                   "MANAGE_ROLES",
@@ -155,14 +174,14 @@ Aքʀɨʟʍʊֆɨƈ.on("message", async (message) => {
       message.react("🔥");
       message.reply(
         new MessageEmbed()
-          .setColor("#e69138")
-          .setTitle("April❣️Music by🔱KrakinzLab™️")
-          .setAuthor(`😲 Warning! ⚠️`)
-          .setURL("https://github.com/Krakinz?tab=repositories")
-          .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-          .setDescription(`**Ú§êr >** ${message.author}
+        .setColor("#e69138")
+        .setTitle("April❣️Music by🔱KrakinzLab™️")
+        .setAuthor(`😲 Warning! ⚠️`)
+        .setURL("https://github.com/Krakinz?tab=repositories")
+        .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
+        .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+        .setDescription(`**Ú§êr >** ${message.author}
 ---------------:lady_beetle:---------------
 
 
@@ -209,14 +228,14 @@ April❣️Music by🔱KrakinzLab™️
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#e69138")
-              .setTitle("April❣️Music by🔱KrakinzLab™️")
-              .setAuthor(`😲 Warning! ⚠️`)
-              .setURL("https://github.com/Krakinz?tab=repositories")
-              .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-              .setDescription(`
+            .setColor("#e69138")
+            .setTitle("April❣️Music by🔱KrakinzLab™️")
+            .setAuthor(`😲 Warning! ⚠️`)
+            .setURL("https://github.com/Krakinz?tab=repositories")
+            .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
+            .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+            .setDescription(`
 **Ú§êr >** ${message.author}
 ---------------:lady_beetle:---------------
 
@@ -242,37 +261,39 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
       message.channel
         .send(
           new MessageEmbed()
-            .setColor("#e69138")
-            .setTitle("April❣️Music by🔱KrakinzLab™️")
-            .setAuthor(`😲 Warning! ⚠️`)
-            .setURL("https://github.com/Krakinz?tab=repositories")
-            .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-            .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-            .setDescription(
-              `
+          .setColor("#e69138")
+          .setTitle("April❣️Music by🔱KrakinzLab™️")
+          .setAuthor(`😲 Warning! ⚠️`)
+          .setURL("https://github.com/Krakinz?tab=repositories")
+          .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
+          .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+          .setDescription(
+            `
 **Ú§êr >** ${message.author}
 ---------------:lady_beetle:---------------
 
 
 There was an error executing that command.`
-            )
+          )
         )
         .catch(console.error)
         .then((message) => {
-          message.delete({ timeout: `${Aքʀɨʟքʊʀɢɛʀ}` });
+          message.delete({
+            timeout: `${Aքʀɨʟքʊʀɢɛʀ}`
+          });
           return;
         });
     }
   } catch (ErrorApril) {
     message.channel.send(
       new MessageEmbed()
-        .setColor("#DB4434")
-        .setAuthor("Error🔺Caught")
-        .setTitle("April❣️Music by🔱KrakinzLab™️")
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-        .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-        .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
+      .setColor("#DB4434")
+      .setAuthor("Error🔺Caught")
+      .setTitle("April❣️Music by🔱KrakinzLab™️")
+      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+      .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
+      .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
 
 Please report to either 
 🔰**In Discord channel** = https://discord.gg/ucPpXWFK

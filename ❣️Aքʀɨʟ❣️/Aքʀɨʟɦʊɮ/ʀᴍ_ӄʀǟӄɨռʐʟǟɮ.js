@@ -1,6 +1,12 @@
-const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
+const {
+    MessageEmbed
+} = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const pattern = /^[0-9]{1,2}(\s*,\s*[0-9]{1,2})*$/;
-const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ, canModifyQueue } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
+const {
+    AքʀɨʟʄɨӼ,
+    Aքʀɨʟքʊʀɢɛʀ,
+    canModifyQueue
+} = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
 module.exports = {
     name: "rm",
     cooldown: 3,
@@ -111,14 +117,14 @@ There is nothing in queue.`))
                     queue.textChannel
                         .send(
                             new MessageEmbed()
-                                .setColor("#660000")
-                                .setAuthor(`😲 Warning! ⚠️`)
-                                .setTitle("April❣️Music by🔱KrakinzLab™️")
-                                .setURL("https://github.com/Krakinz?tab=repositories")
-                                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                                .setFooter(
-                                    "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ"
-                                ).setDescription(`**Ú§êr >** ${message.author}
+                            .setColor("#660000")
+                            .setAuthor(`😲 Warning! ⚠️`)
+                            .setTitle("April❣️Music by🔱KrakinzLab™️")
+                            .setURL("https://github.com/Krakinz?tab=repositories")
+                            .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                            .setFooter(
+                                "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ"
+                            ).setDescription(`**Ú§êr >** ${message.author}
 
 ⏺ Removed **${removed.map((music) => music.title).join(`\n`)}** from the queue.`)
                         )
@@ -135,14 +141,14 @@ There is nothing in queue.`))
                     queue.textChannel
                         .send(
                             new MessageEmbed()
-                                .setColor("#660000")
-                                .setAuthor(`😲 Warning! ⚠️`)
-                                .setTitle("April❣️Music by🔱KrakinzLab™️")
-                                .setURL("https://github.com/Krakinz?tab=repositories")
-                                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                                .setFooter(
-                                    "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ"
-                                ).setDescription(`**Ú§êr >** ${message.author}
+                            .setColor("#660000")
+                            .setAuthor(`😲 Warning! ⚠️`)
+                            .setTitle("April❣️Music by🔱KrakinzLab™️")
+                            .setURL("https://github.com/Krakinz?tab=repositories")
+                            .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                            .setFooter(
+                                "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ"
+                            ).setDescription(`**Ú§êr >** ${message.author}
 
 ⏺ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`)
                         )
@@ -179,12 +185,12 @@ There is nothing in queue.`))
         } catch (ErrorApril) {
             message.channel.send(
                 new MessageEmbed()
-                    .setColor("#DB4434")
-                    .setAuthor("Error🔺Caught")
-                    .setTitle("April❣️Music by🔱KrakinzLab™️")
-                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-                    .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-                    .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
+                .setColor("#DB4434")
+                .setAuthor("Error🔺Caught")
+                .setTitle("April❣️Music by🔱KrakinzLab™️")
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+                .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
+                .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
 
 Please report to either 
 🔰**In Discord channel** = https://discord.gg/ucPpXWFK
