@@ -128,7 +128,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#FF5F15")
+                .setColor("#006400")
                 .setTitle("April❣️Music by🔱KrakinzLab™️")
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
