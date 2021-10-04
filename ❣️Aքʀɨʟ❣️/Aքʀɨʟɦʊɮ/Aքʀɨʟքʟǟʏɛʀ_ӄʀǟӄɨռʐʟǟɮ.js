@@ -214,69 +214,6 @@ module.exports = {
               });
             collector.stop();
             break;
-          //           case "⏸":
-          //             reaction.users.remove(user).catch(console.error);
-          //             if (!canModifyQueue(member)) {
-          //               message.react("❌");
-          //               message.react("🔥");
-          //               message.channel
-          //                 .send(
-          //                   new MessageEmbed()
-          //                     .setColor("#FF5F15")
-          //                     .setTitle("April❣️Music by🔱KrakinzLab™️")
-          //                     .setAuthor(`😲 Warning! ⚠️`)
-          //                     .setURL("https://github.com/Krakinz?tab=repositories")
-          //                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          //                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-          //                     .setDescription(`**Ú§êr >** ${message.author}
-
-          // **You need to join a voice channel first!**`)
-          //                 )
-          //                 .catch(console.error)
-          //                 .then((message) => {
-          //                   message.delete({
-          //                     timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-          //                   });
-          //                 });
-          //               return;
-          //             }
-          //             if (queue.playing) {
-          //               queue.playing = !queue.playing;
-          //               queue.connection.dispatcher.pause(true);
-          //               queue.textChannel
-          //                 .send(
-          //                   new MessageEmbed()
-          //                     .setColor("#ff0000")
-          //                     .setAuthor(`😲 Warning! ⚠️`)
-          //                     .setURL("https://github.com/Krakinz?tab=repositories")
-          //                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          //                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-          //                     .setDescription(`**Ú§êr >** ${message.author}
-          // 🚦 **Paused the music.**`)
-          //                 )
-          //                 .catch(console.error);
-          //             } else {
-          //               queue.playing = !queue.playing;
-          //               queue.connection.dispatcher.resume();
-          //               queue.textChannel
-          //                 .send(
-          //                   new MessageEmbed()
-          //                     .setColor("#ff0000")
-          //                     .setAuthor(`😲 Warning! ⚠️`)
-          //                     .setURL("https://github.com/Krakinz?tab=repositories")
-          //                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          //                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
-          //                     .setDescription(`**Ú§êr >** ${message.author}
-          // ▶ **Resumed the music!**`)
-          //                 )
-          //                 .catch(console.error)
-          //                 .then((message) => {
-          //                   message.delete({
-          //                     timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-          //                   });
-          //                 });
-          //             }
-          //             break;
           case "🔇":
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
