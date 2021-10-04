@@ -134,8 +134,8 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
                 .setDescription(`**Ú§êr >** ${message.author}
-
-*Searching and Playing in less then* **3secs!**`)
+                
+**Adding Song in less then 3secs!**`)
             )
             .catch(console.error)
             .then((message) => {
@@ -507,15 +507,24 @@ ${message.author}`
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
                   .setDescription(`**Ú§êr >** ${message.author}
 
-**👍 Joined \`${channel.name}\`
+**👍❣️ Joined \`${channel.name}\`
 and is 📄 bound to \`#${message.channel.name}\`**`)
               )
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
-              });
+              .catch(console.error);
+            message.channel
+              .send(
+                new MessageEmbed()
+                  .setColor("#ff0000")
+                  .setTitle("April❣️Music by🔱KrakinzLab™️")
+                  .setURL("https://github.com/Krakinz?tab=repositories")
+                  .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+                  .setDescription(`**Ú§êr >** ${message.author}
+
+**👍❣️ Joined \`${channel.name}\`
+and is 📄 bound to \`#${message.channel.name}\`**`)
+              )
+              .catch(console.error);
           } catch (e) {
             console.log(e.message);
           }
