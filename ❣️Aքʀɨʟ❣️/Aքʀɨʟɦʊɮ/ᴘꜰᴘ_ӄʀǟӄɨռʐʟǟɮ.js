@@ -20,7 +20,7 @@ module.exports = {
           .setAuthor(`😲 Warning! ⚠️`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
           .setDescription(`**Ú§êr >** ${message.author}
 
 **Category:** \`🔱Krakinz\`
@@ -53,7 +53,7 @@ module.exports = {
           AvatarEmbed.setAuthor(`😲 Warning! ⚠️`);
           AvatarEmbed.setURL("https://github.com/Krakinz?tab=repositories");
           AvatarEmbed.setImage(message.author.displayAvatarURL());
-          AvatarEmbed.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ");
+          AvatarEmbed.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️");
           AvatarEmbed.setDescription("🔥This is **your** Profile Picture");
           AvatarEmbed.setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`);
           message.channel.send(AvatarEmbed);
@@ -63,7 +63,7 @@ module.exports = {
           AvatarEmbed.setAuthor(`😲 Warning! ⚠️`);
           AvatarEmbed.setURL("https://github.com/Krakinz?tab=repositories");
           AvatarEmbed.setImage(user.displayAvatarURL());
-          AvatarEmbed.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ");
+          AvatarEmbed.setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️");
           AvatarEmbed.setDescription(`🔥This is **${user}'s** Profile Picture`);
           AvatarEmbed.setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`);
           message.channel.send(AvatarEmbed);
@@ -80,7 +80,7 @@ module.exports = {
           .setColor("#DB4434")
           .setAuthor("Error🔺Caught")
           .setTitle("April❣️Music by🔱KrakinzLab™️")
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
           .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
           .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
 
