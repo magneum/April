@@ -40,6 +40,25 @@ try {
   Aքʀɨʟʍʊֆɨƈ.on("warn", (ᴀᴘʀɪʟ_WARN) => console.log(ᴀᴘʀɪʟ_WARN));
   Aքʀɨʟʍʊֆɨƈ.on("error", console.error);
   Aքʀɨʟʍʊֆɨƈ.on("ready", () => {
+    Aքʀɨʟʍʊֆɨƈ.channels.cache
+      .get("894574779561017384")
+      .send(
+        new MessageEmbed()
+          .setColor("#ff0000")
+          .setTitle("April❣️Music by🔱KrakinzLab™️")
+          .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
+          .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+          .setDescription(`---------------:lady_beetle:---------------
+
+❣️𝐇𝐚𝐬 𝐛𝐞𝐞𝐧 𝐫𝐞𝐝𝐞𝐩𝐥𝐨𝐲𝐞𝐝 𝐚𝐧𝐝 𝐢𝐬 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐩𝐥𝐚𝐲 𝐦𝐮𝐬𝐢𝐜!❣️
+
+• **${AքʀɨʟʄɨӼ}help**
+*Display this commands and descriptions.*
+• **${AքʀɨʟʄɨӼ}april**
+*Display the  license and a few more info.*`)
+      )
+      .catch(console.error);
     Aքʀɨʟʍʊֆɨƈ.user.setActivity(`❣️ ${AքʀɨʟʄɨӼ}april && ${AքʀɨʟʄɨӼ}play`, {
       type: "WATCHING",
     });
@@ -264,9 +283,9 @@ April❣️Music by🔱KrakinzLab™️
 ---------------:lady_beetle:---------------
 
 
-Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the '${
+Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the "${
               command.name
-            }' command.      
+            }" command.      
 
 ---------------:lady_beetle:---------------`)
           )
