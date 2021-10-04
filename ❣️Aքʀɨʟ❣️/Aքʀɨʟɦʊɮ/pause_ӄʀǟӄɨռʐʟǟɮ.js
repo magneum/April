@@ -1,5 +1,5 @@
 const { canModifyQueue } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
-
+const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
 module.exports = {
   name: "pause",
   execute(message) {
