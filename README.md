@@ -3,7 +3,7 @@
 # ❣️『 ᴅɪꜱᴄᴏʀᴅ ᴍᴜꜱɪᴄ ʙᴏᴛ: April 』❣️
 
 <p align="centre"><img  width="100%" height="100%" img src="https://github.com/Krakinz/April/blob/KrakinzLab/%E2%9D%A3%EF%B8%8FA%D6%84%CA%80%C9%A8%CA%9F%E2%9D%A3%EF%B8%8F/A%D6%84%CA%80%C9%A8%CA%9F%D5%BC%C9%9B%CA%8B/A%D6%84%CA%80%C9%A8%CA%9F%D6%84%CA%9F%C7%9F%CA%8F%C9%9B%CA%80.png" /></p>
-<p align="left"><img  width="50%" height="50%" img src="https://i.postimg.cc/9MzGrn0N/2.jpg" /></p>
+
 # ❓ WΉY MΛDΣ ƬΉIS BӨƬ?
 
 ```sh
@@ -16,7 +16,7 @@
 📌 By The way i might not update this bot to Discord.js-V13
 rather i will make a new bot with Discord.js-V13.
 ```
-<p align="left"><img  width="50%" height="50%" img src="https://i.postimg.cc/SQTtSp2p/3.jpg" /></p>
+
 
 
 # 〽️ MΣΣƬ US ӨЯ CΉΣCK ӨƬΉΣЯ BӨƬS
