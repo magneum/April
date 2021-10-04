@@ -50,6 +50,26 @@ module.exports = {
     ) {
       const queue = message.client.queue.get(message.guild.id);
       if (!queue) {
+        message.react("❌");
+        message.react("🔥");
+        message.channel
+          .send(
+            new MessageEmbed()
+              .setColor("#FF5F15")
+              .setTitle("April❣️Music by🔱KrakinzLab™️")
+              .setAuthor(`😲 Warning! ⚠️`)
+              .setURL("https://github.com/Krakinz?tab=repositories")
+              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: ɢɴᴜ(ᴄ)2021 ᴋʀᴀᴋɪɴᴢ & ᴋʀᴀᴋɪɴᴢʟᴀʙ")
+              .setDescription(`**Ú§êr >** ${message.author}
+**You need to join a voice channel and add music first!**`)
+          )
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+            });
+          });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
