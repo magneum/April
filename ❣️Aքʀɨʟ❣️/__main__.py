@@ -52,7 +52,6 @@ try:
 
 *📌•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•*
 • **⏭** = Skip the currently playing song.
-• **⏸** = Pause/Resume the currently playing music.
 • **🔇** = Mute/Unmute the currently playing music.
 • **🔁** = Toggle music loop.
 • **⏺** = Stops the currently playing music queue.
