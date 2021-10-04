@@ -35,13 +35,11 @@ rather i will make a new bot with Discord.js-V13.
 • !april = Display the  license and a few more info.
 • !loop = Toggle music loop.
 • !np = Show now playing song.
-• !pause = Pause the currently playing music.
 • !ping = Check server ping of client.
 • !play = Plays audio from YouTube.
 • !list = Play a playlist from YouTube.
 • !queue = Show the music queue and now playing.
 • !rm = Remove song from the queue.
-• !resume = Resume currently playing music.
 • !shuffle = Shuffle music queue.
 • !next = Skip the currently playing song.
 • !skip = Skip to the selected queue number.
