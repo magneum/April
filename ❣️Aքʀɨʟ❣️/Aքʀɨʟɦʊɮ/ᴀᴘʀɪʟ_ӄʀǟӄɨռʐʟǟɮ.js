@@ -32,8 +32,8 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setDescription(`**Ú§êr >** ${message.author}\n${ᴀᴘʀɪʟɴᴏʀᴇ}`)
-              .setColor("#ff0000")
-              .setAuthor(`😲 Warning! ⚠️`)
+              .setColor("#e69159")
+              .setAuthor(`⚠️Warning!`)
               .setTitle("April❣️Music by🔱KrakinzLab™️")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -49,8 +49,8 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setDescription(`**Ú§êr >** ${message.author}\n${ᴀᴘʀɪʟɴᴏʀᴇ}`)
-              .setColor("#ff0000")
-              .setAuthor(`😲 Warning! ⚠️`)
+              .setColor("#e69159")
+              .setAuthor(`⚠️Warning!`)
               .setTitle("April❣️Music by🔱KrakinzLab™️")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

@@ -18,9 +18,9 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#FF5F15")
+              .setColor("#e69159")
               .setTitle("April❣️Music by🔱KrakinzLab™️")
-              .setAuthor(`😲 Warning! ⚠️`)
+              .setAuthor(`⚠️Warning!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
@@ -53,9 +53,9 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#FF5F15")
+                .setColor("#e69159")
                 .setTitle("April❣️Music by🔱KrakinzLab™️")
-                .setAuthor(`😲 Warning! ⚠️`)
+                .setAuthor(`⚠️Warning!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
@@ -81,9 +81,9 @@ There is nothing in queue.`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#FF5F15")
+                .setColor("#e69159")
                 .setTitle("April❣️Music by🔱KrakinzLab™️")
-                .setAuthor(`😲 Warning! ⚠️`)
+                .setAuthor(`⚠️Warning!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
@@ -116,7 +116,7 @@ There is nothing in queue.`)
           .send(
             new MessageEmbed()
               .setColor("#ff0000")
-              .setAuthor(`😲 Warning! ⚠️`)
+              .setAuthor(`⚠️Warning!`)
               .setTitle("April❣️Music by🔱KrakinzLab™️")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
