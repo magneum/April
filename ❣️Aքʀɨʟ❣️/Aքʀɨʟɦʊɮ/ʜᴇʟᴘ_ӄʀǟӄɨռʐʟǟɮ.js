@@ -1,10 +1,5 @@
-const {
-MessageEmbed
-} = require("../ӄʀǟӄɨռʐʟǟɮ/src");
-const {
-AքʀɨʟʄɨӼ,
-Aքʀɨʟքʊʀɢɛʀ
-} = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
+const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
+const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
 module.exports = {
 name: "help",
 execute(message) {
@@ -23,6 +18,8 @@ const ᴀᴘʀɪʟʜᴇʟᴘᴇʀ = `
 • **${AքʀɨʟʄɨӼ}resume** = Resume currently playing music.
 • **${AքʀɨʟʄɨӼ}shuffle** = Shuffle music queue.
 • **${AքʀɨʟʄɨӼ}skipto** =Skip to the selected queue number.
+• **${AքʀɨʟʄɨӼ}resume** =Resume the currently playing music.
+• **${AքʀɨʟʄɨӼ}pause** =Pause the currently playing music.
 
 ---------------:lady_beetle:---------------
 
