@@ -21,11 +21,14 @@ module.exports = {
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      client.on('voiceStateUpdate', (oldState, newState) => {
-        if (oldState.channelID === null || typeof oldState.channelID == 'undefined') return;
+      client.on("voiceStateUpdate", (oldState, newState) => {
+        if (
+          oldState.channelID === null ||
+          typeof oldState.channelID == "undefined"
+        )
+          return;
         if (newState.id !== client.user.id) return;
         return queue.delete(oldState.guild.id);
-
       });
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
@@ -278,18 +281,18 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
             if (music.duration > 0) {
               current.addField(
                 new Date(seek * 1000).toISOString().substr(11, 8) +
-                `❣️` +
-                splitBar(
-                  music.duration == 0 ? seek : music.duration,
-                  seek,
-                  20
-                )[0] +
-                `❣️` +
-                (music.duration == 0
-                  ? ` ◉ LIVE`
-                  : new Date(music.duration * 1000)
-                    .toISOString()
-                    .substr(11, 8)),
+                  `❣️` +
+                  splitBar(
+                    music.duration == 0 ? seek : music.duration,
+                    seek,
+                    20
+                  )[0] +
+                  `❣️` +
+                  (music.duration == 0
+                    ? ` ◉ LIVE`
+                    : new Date(music.duration * 1000)
+                        .toISOString()
+                        .substr(11, 8)),
                 false
               );
             }
@@ -447,7 +450,7 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
                 .catch(
                   console.error
                 ) // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—==================================================== // }); // }); // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`, // message.delete({ // .then((message) => {
-                `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
+              `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
               // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
             } else {
               queue.connection.dispatcher.setVolumeLogarithmic(
