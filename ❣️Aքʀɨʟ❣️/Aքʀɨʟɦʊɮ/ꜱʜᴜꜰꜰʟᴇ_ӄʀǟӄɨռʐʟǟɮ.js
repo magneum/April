@@ -5,7 +5,7 @@ const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 module.exports = {
   name: "shuffle",
-  cooldown: 3,
+  cooldown: 8,
   execute(message) {
     try {
       if (

@@ -16,7 +16,7 @@ const youtube = new YouTubeAPI(Aքʀɨʟȶʊɮɛ);
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 module.exports = {
   name: "list",
-  cooldown: 3,
+  cooldown: 4,
   async execute(message, args) {
     try {
       if (

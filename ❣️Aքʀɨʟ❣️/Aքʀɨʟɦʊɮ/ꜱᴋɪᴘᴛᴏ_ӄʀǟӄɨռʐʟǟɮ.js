@@ -5,7 +5,7 @@ const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 module.exports = {
   name: "skipto",
-  cooldown: 3,
+  cooldown: 4,
   execute(message, args) {
     try {
       if (

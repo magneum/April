@@ -12,7 +12,7 @@ const {
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 module.exports = {
     name: "rm",
-    cooldown: 3,
+    cooldown: 8,
     execute(message, args) {
         try {
             if (message.content.startsWith(AքʀɨʟʄɨӼ + "rm") && message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") {

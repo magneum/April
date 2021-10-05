@@ -22,7 +22,7 @@ const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 module.exports = {
   name: "play",
-  cooldown: 3,
+  cooldown: 8,
   async execute(message, args) {
     try {
       if (
