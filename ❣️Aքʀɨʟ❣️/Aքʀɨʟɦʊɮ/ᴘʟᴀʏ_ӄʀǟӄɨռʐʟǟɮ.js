@@ -119,7 +119,7 @@ message.react("✅");
 message.channel
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setDescription(
 `**❣️🔍Searching \`${args.join(" ")}\`, and Adding in 3sec**`
@@ -456,7 +456,7 @@ queueConstruct.connection = await channel.join();
 message.author
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setURL("https://github.com/Krakinz?tab=repositories")
 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -469,7 +469,7 @@ new MessageEmbed()
 message.channel
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setURL("https://github.com/Krakinz?tab=repositories")
 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -525,7 +525,7 @@ message.client.channels.cache
 .get("894958787792871475")
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

@@ -41,7 +41,7 @@ Aքʀɨʟʍʊֆɨƈ.channels.cache
 .get("894958787792871475")
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
@@ -96,7 +96,7 @@ channel.send("@everyone");
 channel
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
 .setURL("https://github.com/Krakinz?tab=repositories")
 .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -117,7 +117,7 @@ Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..
 channel
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
 .setURL("https://github.com/Krakinz?tab=repositories")
 .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -345,7 +345,7 @@ message.Aքʀɨʟʍʊֆɨƈ.channels.cache
 .get("894958787792871475")
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

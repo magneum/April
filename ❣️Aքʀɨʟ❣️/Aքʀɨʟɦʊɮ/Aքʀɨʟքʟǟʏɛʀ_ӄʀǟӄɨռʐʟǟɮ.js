@@ -36,7 +36,7 @@ queue.channel.leave();
 queue.textChannel
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -161,7 +161,7 @@ message.client.channels.cache
 .get("894958787792871475")
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setURL("https://github.com/Krakinz?tab=repositories")
 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -178,7 +178,7 @@ new MessageEmbed()
 var ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setURL("https://github.com/Krakinz?tab=repositories")
 .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
@@ -259,7 +259,7 @@ const { id } = getVideoId(`${music.url}`);
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 let current = new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setTitle(`Now🥳playing`)
 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -374,7 +374,7 @@ queue.connection.dispatcher.end();
 queue.textChannel
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
 .setURL("https://github.com/Krakinz?tab=repositories")
 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -428,7 +428,7 @@ queue.connection.dispatcher.setVolumeLogarithmic(0);
 queue.textChannel
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -450,7 +450,7 @@ queue.volume / 100
 queue.textChannel
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -513,7 +513,7 @@ queue.volume / 100
 queue.textChannel
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -576,7 +576,7 @@ queue.volume / 100
 queue.textChannel
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -629,7 +629,7 @@ queue.loop = !queue.loop;
 queue.textChannel
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -709,7 +709,7 @@ message.client.channels.cache
 .get("894958787792871475")
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

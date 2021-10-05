@@ -91,7 +91,7 @@ let current = new MessageEmbed()
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
 .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
 .setDescription(`${music.title}\n${music.url}`)
-.setColor("#E11A1A")
+.setColor("#990000")
 .setAuthor(message.client.user.username);
 if (music.duration > 0) {
 current.addField(
@@ -129,7 +129,7 @@ message.client.channels.cache
 .get("894958787792871475")
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

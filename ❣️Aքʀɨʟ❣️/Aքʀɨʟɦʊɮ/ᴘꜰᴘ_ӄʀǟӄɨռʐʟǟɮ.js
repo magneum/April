@@ -47,7 +47,7 @@ const user = message.mentions.users.first();
 if (!message.mentions.users.first()) {
 return message.channel.send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setURL("https://github.com/Krakinz?tab=repositories")
 .setImage(message.author.displayAvatarURL())
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
@@ -57,7 +57,7 @@ new MessageEmbed()
 } else {
 return message.channel.send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setURL("https://github.com/Krakinz?tab=repositories")
 .setImage(user.displayAvatarURL())
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
@@ -75,7 +75,7 @@ message.client.channels.cache
 .get("894958787792871475")
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

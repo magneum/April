@@ -177,7 +177,7 @@ const info = current
 const embed = new MessageEmbed()
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-.setColor("#E11A1A")
+.setColor("#990000")
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
 .setDescription(
 `**Aքʀɨʟ❣️ʍʊֆɨƈ**\n\n♥️**Current Song** -_[${queue[0].title}]_\n\n${info}`
@@ -195,7 +195,7 @@ message.client.channels.cache
 .get("894958787792871475")
 .send(
 new MessageEmbed()
-.setColor("#E11A1A")
+.setColor("#990000")
 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
 .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
