@@ -460,8 +460,7 @@ Audio Not Found`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                   .setDescription(`👍**Ú§êr >** ${message.author}
 
-**👍❣️ Joined \`${channel.name}\`
-and is 📄 bound to \`#${message.channel.name}\`**`)
+**👍❣️ Joined \`${channel.name}\`and is 📄 bound to \`#${message.channel.name}\`**`)
               )
               .catch(console.error);
             message.channel
@@ -474,8 +473,7 @@ and is 📄 bound to \`#${message.channel.name}\`**`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                   .setDescription(`👍**Ú§êr >** ${message.author}
 
-**👍❣️ Joined \`${channel.name}\`
-and is 📄 bound to \`#${message.channel.name}\`**`)
+**👍❣️ Joined \`${channel.name}\`and is 📄 bound to \`#${message.channel.name}\`**`)
               )
               .catch(console.error);
           } catch (e) {
