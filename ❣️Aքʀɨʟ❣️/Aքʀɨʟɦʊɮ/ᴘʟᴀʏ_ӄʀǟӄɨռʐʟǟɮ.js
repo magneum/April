@@ -42,7 +42,6 @@ module.exports = {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
               .setDescription(`👍**Ú§êr >** ${message.author}
 
-**Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
           )
@@ -566,7 +565,8 @@ and is 📄 bound to \`#${message.channel.name}\`**`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
                 .setDescription(`👍**Ú§êr >** ${message.author}
 
-Could not join the channel: *${error}*`)
+Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
+ *${error}*`)
             )
             .catch(console.error)
             .then((message) => {

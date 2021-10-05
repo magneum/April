@@ -36,7 +36,6 @@ module.exports = {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
               .setDescription(`👍**Ú§êr >** ${message.author}
 
-**Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
           )
@@ -235,13 +234,9 @@ ID= ${message.client.user}`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                  .setDescription(
-                    `\n\n
-👍**Ú§êr >** ${message.author}
+                  .setDescription(`👍**Ú§êr >** ${message.author}
 
-
-Playlist not found`
-                  )
+Playlist not found`)
               )
               .catch(console.error)
               .then((message) => {
@@ -333,15 +328,11 @@ Playlist not found`
               .setColor("#6c0000")
               .setAuthor(`⚠️Warning!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
-              .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
+              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-              .setDescription(
-                `\n\n
-👍**Ú§êr >** ${message.author}
+              .setDescription(`👍**Ú§êr >** ${message.author}
 
-Added a playlist`
-              )
+Added a playlist`)
           )
           .catch(console.error)
           .then((message) => {
@@ -374,12 +365,10 @@ Added a playlist`
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                  .setDescription(
-                    `\n\n
-👍**Ú§êr >** ${message.author}
+                  .setDescription(`👍**Ú§êr >** ${message.author}
 
-Could not join the channel: *${error}*`
-                  )
+Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
+ *${error}*`)
               )
               .catch(console.error)
               .then((message) => {
