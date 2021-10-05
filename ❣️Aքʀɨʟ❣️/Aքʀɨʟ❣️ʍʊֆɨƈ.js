@@ -3,7 +3,7 @@ const express = require("express");
 const { readdirSync } = require("fs");
 const { join } = require("path");
 const { Client, Collection } = require("./ӄʀǟӄɨռʐʟǟɮ/src");
-const Aքʀɨʟʍʊֆɨƈ = new Client({
+const client = new Client({
   disableEveryone: false,
 });
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -13,10 +13,10 @@ const { Aքʀɨʟӄɛռ, AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("./A
 const Aքʀɨʟֆɛʀʋɛʀ = express();
 const PORT = process.env.PORT || 8080;
 Aքʀɨʟֆɛʀʋɛʀ.listen(PORT);
-Aքʀɨʟʍʊֆɨƈ.login(Aքʀɨʟӄɛռ);
-Aքʀɨʟʍʊֆɨƈ.prefix = AքʀɨʟʄɨӼ;
-Aքʀɨʟʍʊֆɨƈ.queue = new Map();
-Aքʀɨʟʍʊֆɨƈ.commands = new Collection();
+client.login(Aքʀɨʟӄɛռ);
+client.prefix = AքʀɨʟʄɨӼ;
+client.queue = new Map();
+client.commands = new Collection();
 const AprilEngineOil = new Collection();
 const { MessageEmbed } = require("./ӄʀǟӄɨռʐʟǟɮ/src");
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -28,16 +28,16 @@ const commandFiles = readdirSync(join(__dirname, "Aքʀɨʟɦʊɮ")).filter((fil
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 for (const file of commandFiles) {
   const command = require(join(__dirname, "Aքʀɨʟɦʊɮ", `${file}`));
-  Aքʀɨʟʍʊֆɨƈ.commands.set(command.name, command);
+  client.commands.set(command.name, command);
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 try {
-  Aքʀɨʟʍʊֆɨƈ.on("warn", (ᴀᴘʀɪʟ_WARN) => console.log(ᴀᴘʀɪʟ_WARN));
-  Aքʀɨʟʍʊֆɨƈ.on("error", console.error);
-  Aքʀɨʟʍʊֆɨƈ.on("ready", () => {
-    Aքʀɨʟʍʊֆɨƈ.channels.cache
+  client.on("warn", (ᴀᴘʀɪʟ_WARN) => console.log(ᴀᴘʀɪʟ_WARN));
+  client.on("error", console.error);
+  client.on("ready", () => {
+    client.channels.cache
       .get("894958787792871475")
       .send(
         new MessageEmbed()
@@ -57,12 +57,12 @@ try {
 *Display the  license and a few more info.*`)
       )
       .catch(console.error);
-    Aքʀɨʟʍʊֆɨƈ.user.setActivity(`❣️ ${AքʀɨʟʄɨӼ}april && ${AքʀɨʟʄɨӼ}play`, {
+    client.user.setActivity(`❣️ ${AքʀɨʟʄɨӼ}april && ${AքʀɨʟʄɨӼ}play`, {
       type: "WATCHING",
     });
     console.log(`
 ♥️--------------- April❣️Music by🔱KrakinzLab™️ ---------------♥️
-🔱Bot-Name:~~> ${Aքʀɨʟʍʊֆɨƈ.user.username}
+🔱Bot-Name:~~> ${client.user.username}
 🔱Bot-Os:~~> ${os.platform().toUpperCase()}
 🔱Bot-Port:~~> ${PORT}
 
@@ -86,7 +86,7 @@ has been licensed under GNU General Public License
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 try {
-  Aքʀɨʟʍʊֆɨƈ.on(`guildCreate`, (guild) => {
+  client.on(`guildCreate`, (guild) => {
     const channel = guild.channels.cache.find(
       (channel) =>
         channel.type === `text` &&
@@ -188,7 +188,16 @@ Please use only that channel for any **ᴀᴘʀɪʟ_ᴘʟᴀʏᴇʀ** commands..
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-Aքʀɨʟʍʊֆɨƈ.on("message", async (message) => {
+// client.on("voiceStateUpdate", (oldState, newState) => {
+//   if (oldState.channelID === null || typeof oldState.channelID == "undefined")
+//     return;
+//   if (newState.id !== client.user.id) return;
+//   return queue.delete(oldState.guild.id);
+// });
+// ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+`|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
+// ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+client.on("message", async (message) => {
   try {
     if (message.author.bot) {
       return;
@@ -220,7 +229,7 @@ April❣️Music by🔱KrakinzLab™️
       return;
     }
     const prefixRegex = new RegExp(
-      `^(<@!?${Aքʀɨʟʍʊֆɨƈ.user.id}>|${escapeRegex(AքʀɨʟʄɨӼ)})\\s*`
+      `^(<@!?${client.user.id}>|${escapeRegex(AքʀɨʟʄɨӼ)})\\s*`
     );
     // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
     `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
@@ -235,8 +244,8 @@ April❣️Music by🔱KrakinzLab™️
     const args = message.content.slice(matchedPrefix.length).trim().split(/ +/);
     const commandName = args.shift().toLowerCase();
     const command =
-      Aքʀɨʟʍʊֆɨƈ.commands.get(commandName) ||
-      Aքʀɨʟʍʊֆɨƈ.commands.find(
+      client.commands.get(commandName) ||
+      client.commands.find(
         (cmd) => cmd.aliases && cmd.aliases.includes(commandName)
       );
     if (!command) {
@@ -274,8 +283,9 @@ April❣️Music by🔱KrakinzLab™️
 ---------------:lady_beetle:---------------
 
 
-Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the "${command.name
-                }" command.      
+Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the "${
+              command.name
+            }" command.      
 
 ---------------:lady_beetle:---------------`)
           )
