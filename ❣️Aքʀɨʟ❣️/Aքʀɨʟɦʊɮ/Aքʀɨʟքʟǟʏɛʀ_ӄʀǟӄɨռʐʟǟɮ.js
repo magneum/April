@@ -34,8 +34,8 @@ module.exports = {
             .send(
               new MessageEmbed()
                 .setColor("#E11A1A")
-                .setTitle(`⚠️Warning!`)
-                .setAuthor(`April❣️Music`)
+                .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
+                .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
@@ -77,12 +77,12 @@ module.exports = {
             .send(
               new MessageEmbed()
                 .setColor("#FF5F15")
-                .setAuthor(`April❣️Music`)
-                .setTitle(`⚠️Warning!`)
+                .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+                .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`👍**Ú§êr >** ${message.author}
+                .setDescription(`❣️| ${message.author}
 **Only YouTube playing/streaming is allowed**`)
             )
             .catch(console.error);
@@ -108,12 +108,12 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#FF5F15")
-              .setAuthor(`April❣️Music`)
-              .setTitle(`⚠️Warning!`)
+              .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+              .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-              .setDescription(`👍**Ú§êr >** ${message.author}
+              .setDescription(`❣️| ${message.author}
 **Error:** 
 *${error}*`)
           )
@@ -164,7 +164,7 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#E11A1A")
-              .setAuthor(`April❣️Music`)
+              .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
@@ -181,7 +181,7 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#E11A1A")
-              .setAuthor(`April❣️Music`)
+              .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
               .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
@@ -234,12 +234,12 @@ module.exports = {
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setAuthor(`April❣️Music`)
-                    .setTitle(`⚠️Warning!`)
+                    .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+                    .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                    .setDescription(`👍**Ú§êr >** ${message.author}
+                    .setDescription(`❣️| ${message.author}
 
 **You need to join a voice channel first!**`)
                 )
@@ -259,7 +259,7 @@ module.exports = {
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
             let current = new MessageEmbed()
               .setColor("#E11A1A")
-              .setAuthor(`April❣️Music`)
+              .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setTitle(`Now🥳playing`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
@@ -304,12 +304,12 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setAuthor(`April❣️Music`)
-                    .setTitle(`⚠️Warning!`)
+                    .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+                    .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                    .setDescription(`👍**Ú§êr >** ${message.author}
+                    .setDescription(`❣️| ${message.author}
 
 **You need to join a voice channel first!**`)
                 )
@@ -350,12 +350,12 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setAuthor(`April❣️Music`)
-                    .setTitle(`⚠️Warning!`)
+                    .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+                    .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                    .setDescription(`👍**Ú§êr >** ${message.author}
+                    .setDescription(`❣️| ${message.author}
 **You need to join a voice channel first!**`)
                 )
                 .catch(console.error);
@@ -374,11 +374,11 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
               .send(
                 new MessageEmbed()
                   .setColor("#E11A1A")
-                  .setTitle(`⚠️Warning!`)
+                  .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                  .setDescription(`👍**Ú§êr >** ${message.author}
+                  .setDescription(`❣️| ${message.author}
 ⏩ **Skipped the music**`)
               )
               .catch(console.error);
@@ -401,12 +401,12 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setAuthor(`April❣️Music`)
-                    .setTitle(`⚠️Warning!`)
+                    .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+                    .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                    .setDescription(`👍**Ú§êr >** ${message.author}
+                    .setDescription(`❣️| ${message.author}
 
 **You need to join a voice channel first!**`)
                 )
@@ -428,12 +428,12 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
                 .send(
                   new MessageEmbed()
                     .setColor("#E11A1A")
-                    .setTitle(`⚠️Warning!`)
-                    .setAuthor(`April❣️Music`)
+                    .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
+                    .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                    .setDescription(`👍**Ú§êr >** ${message.author}
+                    .setDescription(`❣️| ${message.author}
 
 🔇 Muted the music!`)
                 )
@@ -450,12 +450,12 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
                 .send(
                   new MessageEmbed()
                     .setColor("#E11A1A")
-                    .setTitle(`⚠️Warning!`)
-                    .setAuthor(`April❣️Music`)
+                    .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
+                    .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                    .setDescription(`👍**Ú§êr >** ${message.author}
+                    .setDescription(`❣️| ${message.author}
 
 🔊 Unmuted the music!`)
                 )
@@ -485,12 +485,12 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setAuthor(`April❣️Music`)
-                    .setTitle(`⚠️Warning!`)
+                    .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+                    .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                    .setDescription(`👍**Ú§êr >** ${message.author}
+                    .setDescription(`❣️| ${message.author}
 
 *You need to* **join** *a voice channel first!*`)
                 )
@@ -513,12 +513,12 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
               .send(
                 new MessageEmbed()
                   .setColor("#E11A1A")
-                  .setTitle(`⚠️Warning!`)
-                  .setAuthor(`April❣️Music`)
+                  .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
+                  .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                  .setDescription(`👍**Ú§êr >** ${message.author}
+                  .setDescription(`❣️| ${message.author}
 
 🔉 Decreased the volume, 
 Volume now at = **${queue.volume}%**`)
@@ -548,12 +548,12 @@ Volume now at = **${queue.volume}%**`)
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setAuthor(`April❣️Music`)
-                    .setTitle(`⚠️Warning!`)
+                    .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+                    .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                    .setDescription(`👍**Ú§êr >** ${message.author}
+                    .setDescription(`❣️| ${message.author}
 
 *You need to* **join** *a voice channel first!*`)
                 )
@@ -576,12 +576,12 @@ Volume now at = **${queue.volume}%**`)
               .send(
                 new MessageEmbed()
                   .setColor("#E11A1A")
-                  .setTitle(`⚠️Warning!`)
-                  .setAuthor(`April❣️Music`)
+                  .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
+                  .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                  .setDescription(`👍**Ú§êr >** ${message.author}
+                  .setDescription(`❣️| ${message.author}
 
 🔊 Increased the volume, the volume is now ${queue.volume}%`)
               )
@@ -604,12 +604,12 @@ Volume now at = **${queue.volume}%**`)
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setAuthor(`April❣️Music`)
-                    .setTitle(`⚠️Warning!`)
+                    .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+                    .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                    .setDescription(`👍**Ú§êr >** ${message.author}
+                    .setDescription(`❣️| ${message.author}
 
 *You need to* **join** *a voice channel first!*`)
                 )
@@ -629,12 +629,12 @@ Volume now at = **${queue.volume}%**`)
               .send(
                 new MessageEmbed()
                   .setColor("#E11A1A")
-                  .setTitle(`⚠️Warning!`)
-                  .setAuthor(`April❣️Music`)
+                  .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
+                  .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                  .setDescription(`👍**Ú§êr >** ${message.author}
+                  .setDescription(`❣️| ${message.author}
 
 Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
               )
@@ -658,12 +658,12 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                 .send(
                   new MessageEmbed()
                     .setColor("#FF5F15")
-                    .setAuthor(`April❣️Music`)
-                    .setTitle(`⚠️Warning!`)
+                    .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+                    .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                    .setDescription(`👍**Ú§êr >** ${message.author}
+                    .setDescription(`❣️| ${message.author}
 
 *You need to* **join** *a voice channel first!*`)
                 )
@@ -709,8 +709,8 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
         .send(
           new MessageEmbed()
             .setColor("#E11A1A")
-            .setTitle(`⚠️Warning!`)
-            .setAuthor(`April❣️Music`)
+            .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
+            .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
@@ -727,7 +727,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
         new MessageEmbed()
           .setColor("#DB4434")
           .setAuthor("Error🔺Caught")
-          .setAuthor(`April❣️Music`)
+          .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
           .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
           .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.

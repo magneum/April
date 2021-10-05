@@ -17,12 +17,12 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#e69159")
-              .setAuthor(`April❣️Music`)
-              .setTitle(`⚠️Warning!`)
+              .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+              .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-              .setDescription(`👍**Ú§êr >** ${message.author}
+              .setDescription(`❣️| ${message.author}
 
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
@@ -47,11 +47,12 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#E11A1A")
-              .setAuthor(`April❣️Music`)
+              .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-              .setDescription(`👍**Ú§êr >** ${message.author}
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`❣️| ${
+              message.author
+            }
 
 ⌛️Average ping of April's Server **${Math.round(message.client.ws.ping)}ms**`)
           )
@@ -73,8 +74,8 @@ module.exports = {
         .send(
           new MessageEmbed()
             .setColor("#E11A1A")
-            .setTitle(`⚠️Warning!`)
-            .setAuthor(`April❣️Music`)
+            .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
+            .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
@@ -91,7 +92,7 @@ module.exports = {
         new MessageEmbed()
           .setColor("#DB4434")
           .setAuthor("Error🔺Caught")
-          .setAuthor(`April❣️Music`)
+          .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
           .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
           .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.

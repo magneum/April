@@ -42,7 +42,7 @@ try {
       .send(
         new MessageEmbed()
           .setColor("#E11A1A")
-          .setAuthor(`April❣️Music`)
+          .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
 ** ♥️•♪•♪Aքʀɨʟ❣️ʍʊֆɨƈ♪•♪•**
@@ -97,7 +97,7 @@ try {
       .send(
         new MessageEmbed()
           .setColor("#E11A1A")
-          .setTitle(`⚠️Warning!`)
+          .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -118,7 +118,7 @@ Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..
       .send(
         new MessageEmbed()
           .setColor("#E11A1A")
-          .setTitle(`⚠️Warning!`)
+          .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -199,13 +199,13 @@ Aքʀɨʟʍʊֆɨƈ.on("message", async (message) => {
       message.reply(
         new MessageEmbed()
           .setColor("#e69159")
-          .setAuthor(`April❣️Music`)
-          .setTitle(`⚠️Warning!`)
+          .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+          .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-          .setDescription(`👍**Ú§êr >** ${message.author}
+          .setDescription(`❣️| ${message.author}
 ---------------:lady_beetle:---------------
 
 
@@ -264,13 +264,13 @@ April❣️Music by🔱KrakinzLab™️
           .send(
             new MessageEmbed()
               .setColor("#e69159")
-              .setAuthor(`April❣️Music`)
-              .setTitle(`⚠️Warning!`)
+              .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+              .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
-👍**Ú§êr >** ${message.author}
+❣️| ${message.author}
 ---------------:lady_beetle:---------------
 
 
@@ -304,15 +304,15 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the "${
         .send(
           new MessageEmbed()
             .setColor("#e69159")
-            .setAuthor(`April❣️Music`)
-            .setTitle(`⚠️Warning!`)
+            .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+            .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
             .setURL("https://github.com/Krakinz?tab=repositories")
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
             .setDescription(
               `
-👍**Ú§êr >** ${message.author}
+❣️| ${message.author}
 ---------------:lady_beetle:---------------
 
 
@@ -337,8 +337,8 @@ There was an error executing that command.`
       .send(
         new MessageEmbed()
           .setColor("#E11A1A")
-          .setTitle(`⚠️Warning!`)
-          .setAuthor(`April❣️Music`)
+          .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
+          .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
@@ -355,7 +355,7 @@ There was an error executing that command.`
       new MessageEmbed()
         .setColor("#DB4434")
         .setAuthor("Error🔺Caught")
-        .setAuthor(`April❣️Music`)
+        .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
         .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
         .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
         .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
