@@ -29,9 +29,6 @@ module.exports = {
           if (queue.connection.dispatcher && message.guild.me.voice.channel) {
             return;
           }
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-          `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
           queue.channel.leave();
           queue.textChannel
             .send(
@@ -45,7 +42,7 @@ module.exports = {
                 .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ has left the voice channel!**`)
             )
             .catch(console.error);
-        }, 1000);
+        }, ᴀᴘʀɪʟᴡᴀᴋᴇ);
         const queue = message.client.queue.get(message.guild.id);
         message.client.queue.delete(message.guild.id);
         return;
@@ -70,7 +67,7 @@ module.exports = {
           // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         } else {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -101,7 +98,7 @@ module.exports = {
         }
         console.error(error);
         message.react("❌");
-        message.react("🔥");
+
         message.channel
           .send(
             new MessageEmbed()
@@ -127,9 +124,7 @@ module.exports = {
       `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       const dispatcher = queue.connection
-        .play(musicfetcher, {
-          type: musicfetchergenre,
-        })
+        .play(musicfetcher, { type: musicfetchergenre })
         .on("finish", () => {
           if (collector && !collector.ended) collector.stop();
           queue.connection.removeAllListeners("disconnect");
@@ -230,7 +225,7 @@ module.exports = {
           case "🎙️":
             if (!canModifyQueue(member)) {
               message.react("❌");
-              message.react("🔥");
+
               message.channel
                 .send(
                   new MessageEmbed()
@@ -302,7 +297,7 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
           case "📖":
             if (!canModifyQueue(member)) {
               message.react("❌");
-              message.react("🔥");
+
               message.channel
                 .send(
                   new MessageEmbed()
@@ -348,7 +343,7 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               message.react("❌");
-              message.react("🔥");
+
               message.channel
                 .send(
                   new MessageEmbed()
@@ -399,7 +394,7 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               message.react("❌");
-              message.react("🔥");
+
               message.channel
                 .send(
                   new MessageEmbed()
@@ -483,7 +478,7 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
             if (!canModifyQueue(member)) {
               message.react("❌");
-              message.react("🔥");
+
               message.channel
                 .send(
                   new MessageEmbed()
@@ -546,7 +541,7 @@ Volume now at = **${queue.volume}%**`)
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
             if (!canModifyQueue(member)) {
               message.react("❌");
-              message.react("🔥");
+
               message.channel
                 .send(
                   new MessageEmbed()
@@ -602,7 +597,7 @@ Volume now at = **${queue.volume}%**`)
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               message.react("❌");
-              message.react("🔥");
+
               message.channel
                 .send(
                   new MessageEmbed()
@@ -656,7 +651,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               message.react("❌");
-              message.react("🔥");
+
               message.channel
                 .send(
                   new MessageEmbed()

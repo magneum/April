@@ -30,7 +30,6 @@ module.exports = {
         message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("❌");
-        message.react("🔥");
 
         message.channel
           .send(
@@ -57,7 +56,7 @@ module.exports = {
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       if (ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
         message.react("❌");
-        message.react("🔥");
+
         message.channel
           .send(
             new MessageEmbed()
@@ -90,7 +89,6 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
         const serverQueue = message.client.queue.get(message.guild.id);
         if (!channel) {
           message.react("❌");
-          message.react("🔥");
           message.channel
             .send(
               new MessageEmbed()
@@ -136,36 +134,35 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-        //         if (serverQueue && channel !== message.guild.me.voice.channel) {
-        //           message.react("❌");
-        //           message.react("🔥");
-        //           message.channel
-        //             .send(
-        //               new MessageEmbed()
-        //                 .setColor("#e69159")
-        //                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
-        //                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
-        //                 .setURL("https://github.com/Krakinz?tab=repositories")
-        //                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-        //                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-        //                 .setDescription(`❣️| ${message.author}
+        if (serverQueue && channel !== message.guild.me.voice.channel) {
+          message.react("❌");
+          message.channel
+            .send(
+              new MessageEmbed()
+                .setColor("#e69159")
+                .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+                .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
+                .setURL("https://github.com/Krakinz?tab=repositories")
+                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
+                .setDescription(`❣️| ${message.author}
 
-        // You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.`)
-        //             )
-        //             .catch(console.error);
-        //           // .then((message) => {
-        //           // message.delete({
-        //           // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-        //           // });
-        //           // });
-        //           return;
-        //         }
+You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.`)
+            )
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            });
+          return;
+        }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         if (!args.length) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -192,7 +189,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
         const permissions = channel.permissionsFor(message.client.user);
         if (!permissions.has(`CONNECT`)) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -218,7 +215,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         if (!permissions.has(`SPEAK`)) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -262,7 +259,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
               } else {
                 message.react("❌");
-                message.react("🔥");
+
                 message.channel
                   .send(
                     new MessageEmbed()
@@ -303,7 +300,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
           `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
           // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -372,7 +369,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
             });
             if (!results.length) {
               message.react("❌");
-              message.react("🔥");
+
               message.channel
                 .send(
                   new MessageEmbed()
@@ -498,7 +495,7 @@ Audio Not Found`)
           message.client.queue.delete(message.guild.id);
           await channel.leave();
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()

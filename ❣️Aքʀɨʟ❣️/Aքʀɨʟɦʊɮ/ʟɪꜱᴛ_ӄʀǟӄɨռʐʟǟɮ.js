@@ -25,7 +25,7 @@ module.exports = {
         message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("❌");
-        message.react("🔥");
+
         message.channel
           .send(
             new MessageEmbed()
@@ -59,7 +59,7 @@ module.exports = {
         const serverQueue = message.client.queue.get(message.guild.id);
         if (!channel) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -86,7 +86,7 @@ module.exports = {
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         if (!args.length) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -115,7 +115,7 @@ ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
         const permissions = channel.permissionsFor(message.client.user);
         if (!permissions.has(`CONNECT`)) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -142,7 +142,7 @@ Cannot connect to voice channel, missing permissions`)
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         if (!permissions.has(`SPEAK`)) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -169,7 +169,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         //         if (serverQueue && channel !== message.guild.me.voice.channel) {
         //           message.react("❌");
-        //           message.react("🔥");
+        //
         //           message.channel
         //             .send(
         //               new MessageEmbed()
@@ -225,7 +225,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
           } catch (error) {
             console.error(error);
             message.react("❌");
-            message.react("🔥");
+
             message.channel
               .send(
                 new MessageEmbed()
@@ -341,7 +341,7 @@ Added a playlist`)
             message.client.queue.delete(message.guild.id);
             await channel.leave();
             message.react("❌");
-            message.react("🔥");
+
             message.channel
               .send(
                 new MessageEmbed()

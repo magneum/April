@@ -18,7 +18,7 @@ module.exports = {
         message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("❌");
-        message.react("🔥");
+
         message.channel
           .send(
             new MessageEmbed()
@@ -51,7 +51,7 @@ module.exports = {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
