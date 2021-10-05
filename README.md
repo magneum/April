@@ -12,7 +12,7 @@
     💻 𝗪𝗵𝗮𝘁 𝗖𝗮𝗻 𝗕𝗼𝘁 𝗗𝗼???
 ❄️ 𝘗𝘭𝘢𝘺 𝘢𝘯𝘺 𝘮𝘶𝘴𝘪𝘤 𝘪𝘯 𝘺𝘰𝘶𝘳 discord channel.
 ❄️ 𝘠𝘰𝘶 𝘸𝘪𝘭𝘭 𝘩𝘢𝘷𝘦 𝘵𝘰 make bot admin 𝘵𝘰 𝘶𝘴𝘦 𝘵𝘩𝘪𝘴 𝘣𝘰𝘵 𝘰𝘳 𝘨𝘦𝘵 𝘦𝘳𝘳𝘰𝘳𝘴.
-❄️ Filters will be re-added in the code version 17.
+❄️ Filters will be re-added in the code in future.
 
 📌 By The way i might not update this bot to Discord.js-V13
 rather i will make a new bot with Discord.js-V13.
