@@ -419,61 +419,29 @@ Audio Not Found`)
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-        //         if (serverQueue) {
-        //           serverQueue.songs.push(music);
-        //           serverQueue.textChannel
-        //             .send(
-        //               `**Aքʀɨʟ❣️ʍʊֆɨƈ**
-        // ${music.title}
-        // _has been added to the queue by_
-        // ${message.author}`
-        //             )
-        //             .catch(console.error)
-        //             .then((message) => {
-        //               message.delete({
-        //                 timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-        //               });
-        //             });
-        //           return;
-        //         }
         if (serverQueue) {
-          let estimatedtime = Number(0);
-          for (let i = 0; i < serverQueue.songs.length; i++) {
-            let minutes = serverQueue.songs[i].duration.split(":")[0];
-            let seconds = serverQueue.songs[i].duration.split(":")[1];
-            estimatedtime += Number(minutes) * 60 + Number(seconds);
-          }
-          if (estimatedtime > 60) {
-            estimatedtime = Math.round((estimatedtime / 60) * 100) / 100;
-            estimatedtime = estimatedtime + " Minutes";
-          } else if (estimatedtime > 60) {
-            estimatedtime = Math.round((estimatedtime / 60) * 100) / 100;
-            estimatedtime = estimatedtime + " Hours";
-          } else {
-            estimatedtime = estimatedtime + " Seconds";
-          }
           serverQueue.songs.push(music);
           const newsong = new MessageEmbed()
             .setTitle("✅ " + music.title)
             .setColor("#ff0040")
-            .setThumbnail(thumb)
             .setURL(music.url)
+            .setThumbnail(`${message.member.user.displayAvatarURL()}`)
             .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
-            .addField(
-              "Estimated time until playing:",
-              `\`${estimatedtime}\``,
-              true
-            )
             .addField(
               "Position in queue",
               `**\`${serverQueue.songs.length - 1}\`**`,
               true
             )
-            .setFooter(
-              `Requested by: ${message.author.username}#${message.author.discriminator}`,
-              message.member.user.displayAvatarURL({ dynamic: true })
-            );
-          return serverQueue.textChannel.send(newsong).catch(console.error);
+            .addField("Song Duration", `**\`${music.duration}\`**`, true)
+            .setFooter(`Requested by: Check Top Right Thumbnail`);
+          return serverQueue.textChannel
+            .send(newsong)
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            });
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;

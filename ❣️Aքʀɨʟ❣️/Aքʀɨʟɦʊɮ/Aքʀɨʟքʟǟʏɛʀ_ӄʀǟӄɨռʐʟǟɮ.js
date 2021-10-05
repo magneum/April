@@ -190,7 +190,7 @@ module.exports = {
 🏷**Requested By**
 • ${message.author}#${message.author.discriminator}
 🏷**Duration**
-• \`${music.duration / 60}min\`
+• \`${Math.round((music.duration / 60) * 100) / 100}min\`
 
 💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞
 ÷Aքʀɨʟ❣️ʍʊֆɨƈ™÷••========—`)
