@@ -120,7 +120,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#ff0040")
+                .setColor("#E11A1A")
                 .setAuthor(`April❣️Music`)
                 .setDescription(
                   `**❣️🔍Searching \`${args.join(" ")}\`, and Adding in 3sec**`
@@ -453,7 +453,7 @@ Audio Not Found`)
             message.author
               .send(
                 new MessageEmbed()
-                  .setColor("#6c0000")
+                  .setColor("#E11A1A")
                   .setAuthor(`April❣️Music`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -466,7 +466,7 @@ Audio Not Found`)
             message.channel
               .send(
                 new MessageEmbed()
-                  .setColor("#6c0000")
+                  .setColor("#E11A1A")
                   .setAuthor(`April❣️Music`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -522,7 +522,7 @@ Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
         .get("894958787792871475")
         .send(
           new MessageEmbed()
-            .setColor("#6c0000")
+            .setColor("#E11A1A")
             .setTitle(`⚠️Warning!`)
             .setAuthor(`April❣️Music`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

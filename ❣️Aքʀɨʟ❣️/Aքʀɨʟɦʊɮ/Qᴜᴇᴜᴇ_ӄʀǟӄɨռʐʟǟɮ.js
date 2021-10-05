@@ -174,7 +174,7 @@ Missing permission to manage messages or add reactions`)
           const embed = new MessageEmbed()
             .setAuthor(`April❣️Music`)
             .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-            .setColor("#6c0000")
+            .setColor("#E11A1A")
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
             .setDescription(
               `**Aքʀɨʟ❣️ʍʊֆɨƈ**\n\n♥️**Current Song** -_[${queue[0].title}]_\n\n${info}`
@@ -192,7 +192,7 @@ Missing permission to manage messages or add reactions`)
         .get("894958787792871475")
         .send(
           new MessageEmbed()
-            .setColor("#6c0000")
+            .setColor("#E11A1A")
             .setTitle(`⚠️Warning!`)
             .setAuthor(`April❣️Music`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

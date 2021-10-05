@@ -44,7 +44,7 @@ module.exports = {
         if (!message.mentions.users.first()) {
           return message.channel.send(
             new MessageEmbed()
-              .setColor("#6c0000")
+              .setColor("#E11A1A")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(message.author.displayAvatarURL())
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
@@ -54,7 +54,7 @@ module.exports = {
         } else {
           return message.channel.send(
             new MessageEmbed()
-              .setColor("#6c0000")
+              .setColor("#E11A1A")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(user.displayAvatarURL())
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
@@ -72,7 +72,7 @@ module.exports = {
         .get("894958787792871475")
         .send(
           new MessageEmbed()
-            .setColor("#6c0000")
+            .setColor("#E11A1A")
             .setTitle(`⚠️Warning!`)
             .setAuthor(`April❣️Music`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

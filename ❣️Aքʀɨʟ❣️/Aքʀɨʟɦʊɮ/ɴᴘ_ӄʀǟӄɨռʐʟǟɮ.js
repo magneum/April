@@ -88,7 +88,7 @@ April is not playing anymusic yet....`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
           .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
           .setDescription(`${music.title}\n${music.url}`)
-          .setColor("#6c0000")
+          .setColor("#E11A1A")
           .setAuthor(message.client.user.username);
         if (music.duration > 0) {
           current.addField(
@@ -126,7 +126,7 @@ April is not playing anymusic yet....`)
         .get("894958787792871475")
         .send(
           new MessageEmbed()
-            .setColor("#6c0000")
+            .setColor("#E11A1A")
             .setTitle(`⚠️Warning!`)
             .setAuthor(`April❣️Music`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

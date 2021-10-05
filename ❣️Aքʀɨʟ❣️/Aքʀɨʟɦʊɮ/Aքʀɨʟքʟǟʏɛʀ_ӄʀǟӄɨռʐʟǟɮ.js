@@ -33,7 +33,7 @@ module.exports = {
           queue.textChannel
             .send(
               new MessageEmbed()
-                .setColor("#6c0000")
+                .setColor("#E11A1A")
                 .setTitle(`⚠️Warning!`)
                 .setAuthor(`April❣️Music`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -163,7 +163,7 @@ module.exports = {
           .get("894958787792871475")
           .send(
             new MessageEmbed()
-              .setColor("#6c0000")
+              .setColor("#E11A1A")
               .setAuthor(`April❣️Music`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -180,7 +180,7 @@ module.exports = {
         var ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel
           .send(
             new MessageEmbed()
-              .setColor("#6c0000")
+              .setColor("#E11A1A")
               .setAuthor(`April❣️Music`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
@@ -188,12 +188,13 @@ module.exports = {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
               .setDescription(`---------------:lady_beetle:---------------
 
-\`\`\`Title\`\`\`
+\`𝐓𝐢𝐭𝐥𝐞\`
 **🏷[${music.title}](${music.url})**
-\`\`\`Requested By**\`\`\`
-🏷${message.author}
-\`\`\`Duration**\`\`\`
+\`𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧\`
 **🏷${Math.round((music.duration / 60) * 100) / 100}min**
+\`𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲\`
+🏷${message.author}
+
 
 *Streaming from 𝐘⭕𝐮𝐓𝐮𝐛𝐞*`)
           )
@@ -257,7 +258,7 @@ module.exports = {
             `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
             let current = new MessageEmbed()
-              .setColor("#6c0000")
+              .setColor("#E11A1A")
               .setAuthor(`April❣️Music`)
               .setTitle(`Now🥳playing`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -372,7 +373,7 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#6c0000")
+                  .setColor("#E11A1A")
                   .setTitle(`⚠️Warning!`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -426,7 +427,7 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
               queue.textChannel
                 .send(
                   new MessageEmbed()
-                    .setColor("#6c0000")
+                    .setColor("#E11A1A")
                     .setTitle(`⚠️Warning!`)
                     .setAuthor(`April❣️Music`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
@@ -448,7 +449,7 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
               queue.textChannel
                 .send(
                   new MessageEmbed()
-                    .setColor("#6c0000")
+                    .setColor("#E11A1A")
                     .setTitle(`⚠️Warning!`)
                     .setAuthor(`April❣️Music`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
@@ -511,7 +512,7 @@ ${new Date(left * 1000).toISOString().substr(11, 8)}`);
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#6c0000")
+                  .setColor("#E11A1A")
                   .setTitle(`⚠️Warning!`)
                   .setAuthor(`April❣️Music`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
@@ -574,7 +575,7 @@ Volume now at = **${queue.volume}%**`)
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#6c0000")
+                  .setColor("#E11A1A")
                   .setTitle(`⚠️Warning!`)
                   .setAuthor(`April❣️Music`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
@@ -627,7 +628,7 @@ Volume now at = **${queue.volume}%**`)
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#6c0000")
+                  .setColor("#E11A1A")
                   .setTitle(`⚠️Warning!`)
                   .setAuthor(`April❣️Music`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
@@ -707,7 +708,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
         .get("894958787792871475")
         .send(
           new MessageEmbed()
-            .setColor("#6c0000")
+            .setColor("#E11A1A")
             .setTitle(`⚠️Warning!`)
             .setAuthor(`April❣️Music`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
