@@ -106,11 +106,8 @@ try {
             `𝗗𝗲𝗮𝗿: @everyone
 ---------------:lady_beetle:---------------
 
-
 ᴀ channel ɴᴀᴍᴇ **Aքʀɨʟ❣️ʍʊֆɨƈ** inside **🔱Krakinz** has been successfully created.
-Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..
-
----------------:lady_beetle:---------------`
+Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..`
           )
       )
       .catch(console.error);
