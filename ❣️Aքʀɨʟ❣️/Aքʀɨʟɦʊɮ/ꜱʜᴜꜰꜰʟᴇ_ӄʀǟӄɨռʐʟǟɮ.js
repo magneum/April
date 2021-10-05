@@ -9,6 +9,9 @@ module.exports = {
   cooldown: 3,
   execute(message) {
     try {
+      if (!message.guild) {
+        return;
+      }
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "shuffle") &&
         message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"

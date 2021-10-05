@@ -20,6 +20,9 @@ module.exports = {
   cooldown: 3,
   async execute(message, args) {
     try {
+      if (!message.guild) {
+        return;
+      }
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "list") &&
         message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"

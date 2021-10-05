@@ -9,6 +9,9 @@ module.exports = {
   cooldown: 3,
   async execute(message) {
     try {
+      if (!message.guild) {
+        return;
+      }
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "queue") &&
         message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"

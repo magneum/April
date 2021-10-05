@@ -9,6 +9,9 @@ module.exports = {
   cooldown: 3,
   execute(message, args) {
     try {
+      if (!message.guild) {
+        return;
+      }
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "vol") &&
         message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"

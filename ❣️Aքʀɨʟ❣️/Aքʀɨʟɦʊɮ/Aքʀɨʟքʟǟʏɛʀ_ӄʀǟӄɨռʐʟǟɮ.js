@@ -1,294 +1,194 @@
-const ytdl = require("ytdl-core-discord");
+const ytdl = require("discord-ytdl-core");
+const { createBar } = require("string-progressbar");
+const { canModifyQueue, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
 const {
-  canModifyQueue,
-  ᴀᴘʀɪʟᴡᴀᴋᴇ,
-  Aքʀɨʟքʊʀɢɛʀ,
-} = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
-const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
-const getVideoId = require("get-video-id");
+  MessageEmbed,
+  splitMessage,
+  escapeMarkdown,
+} = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-//                                                     GNU GENERAL PUBLIC LICENSE
-//                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
+`                       GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁`;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 module.exports = {
-  async play(music, message) {
+  async play(song, message, client, filters) {
     try {
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      //                                                     GNU GENERAL PUBLIC LICENSE
-      //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       const queue = message.client.queue.get(message.guild.id);
-      if (!music) {
-        setTimeout(function () {
-          if (queue.connection.dispatcher && message.guild.me.voice.channel) {
-            return;
-          }
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-          //                                                     GNU GENERAL PUBLIC LICENSE
-          //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-          queue.channel.leave();
-          queue.textChannel
-            .send(
-              new MessageEmbed()
-                .setColor("#ff0000")
-                .setAuthor(`⚠️Warning!`)
-                .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ has left the voice channel!**`)
-            )
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            });
-        }, ᴀᴘʀɪʟᴡᴀᴋᴇ);
-        const queue = message.client.queue.get(message.guild.id);
+      if (!song) {
+        queue.channel.leave();
         message.client.queue.delete(message.guild.id);
+        queue.textChannel
+          .send(
+            new MessageEmbed()
+              .setColor("#ff0040")
+              .setURL("https://github.com/Krakinz?tab=repositories")
+              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+              .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ has left the voice channel!**`)
+          )
+          .catch(console.error);
         return;
       }
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      //                                                     GNU GENERAL PUBLIC LICENSE
-      //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      let musicfetcher = null;
-      let musicfetchergenre = music.url.includes("youtube.com")
-        ? "opus"
-        : "ogg/opus";
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      //                                                     GNU GENERAL PUBLIC LICENSE
-      //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+
+      let stream = null;
+      let streamType = song.url.includes("youtube.com") ? "opus" : "ogg/opus";
+      let isnotayoutube = false;
+      let seekTime = 0;
+      let oldSeekTime = queue.realseek;
+      let encoderArgstoset;
+
+      if (filters === "remove") {
+        queue.filters = ["-af", "dynaudnorm=f=200"];
+        encoderArgstoset = queue.filters;
+        try {
+          seekTime =
+            (queue.connection.dispatcher.streamTime -
+              queue.connection.dispatcher.pausedTime) /
+              1000 +
+            oldSeekTime;
+        } catch {
+          seekTime = 0;
+        }
+        queue.realseek = seekTime;
+      } else if (filters) {
+        try {
+          seekTime =
+            (queue.connection.dispatcher.streamTime -
+              queue.connection.dispatcher.pausedTime) /
+              1000 +
+            oldSeekTime;
+        } catch {
+          seekTime = 0;
+        }
+        queue.realseek = seekTime;
+        queue.filters.push(filters);
+        encoderArgstoset = ["-af", queue.filters];
+      }
+
       try {
-        if (music.url.includes("youtube.com")) {
-          musicfetcher = await ytdl(music.url, {
+        if (song.url.includes("youtube.com")) {
+          stream = ytdl(song.url, {
+            filter: "audioonly",
+            opusEncoded: true,
+            encoderArgs: encoderArgstoset,
+            bitrate: 320,
+            seek: seekTime,
+            quality: "highestaudio",
+            liveBuffer: 40000,
             highWaterMark: 1 << 25,
           });
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-          //                                                     GNU GENERAL PUBLIC LICENSE
-          //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-        } else {
-          message.react("❌");
-          message.react("🔥");
-          message.channel
-            .send(
-              new MessageEmbed()
-                .setColor("#FF5F15")
-                .setTitle("April❣️Music by🔱KrakinzLab™️")
-                .setAuthor(`⚠️Warning!`)
-                .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                .setDescription(`**Ú§êr >** ${message.author}
-**Only YouTube playing/streaming is allowed**`)
-            )
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            });
-          return;
+        } else if (
+          song.url.includes(".mp3") ||
+          song.url.includes("baseradiode")
+        ) {
+          stream = song.url;
+          isnotayoutube = true;
         }
-        // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-        //                                                     GNU GENERAL PUBLIC LICENSE
-        //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       } catch (error) {
         if (queue) {
           queue.songs.shift();
           module.exports.play(queue.songs[0], message);
         }
+
         console.error(error);
-        message.react("❌");
-        message.react("🔥");
-        message.channel
-          .send(
-            new MessageEmbed()
-              .setColor("#FF5F15")
-              .setTitle("April❣️Music by🔱KrakinzLab™️")
-              .setAuthor(`⚠️Warning!`)
-              .setURL("https://github.com/Krakinz?tab=repositories")
-              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-              .setDescription(`**Ú§êr >** ${message.author}
-**Error:** 
-*${error}*`)
-          )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
-          });
+        message.channel.send(`Error: ${error.message ? error.message : error}`);
         return;
       }
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      //                                                     GNU GENERAL PUBLIC LICENSE
-      //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      const dispatcher = queue.connection
-        .play(musicfetcher, {
-          type: musicfetchergenre,
-        })
-        .on("finish", () => {
-          if (collector && !collector.ended) collector.stop();
-          queue.connection.removeAllListeners("disconnect");
-          if (queue.loop) {
-            let lastSong = queue.songs.shift();
-            queue.songs.push(lastSong);
-            module.exports.play(queue.songs[0], message);
-          } else {
+      queue.connection.on("disconnect", () =>
+        message.client.queue.delete(message.guild.id)
+      );
+
+      if (isnotayoutube) {
+        const dispatcher = queue.connection
+          .play(stream)
+          .on("finish", () => {
+            if (collector && !collector.ended) collector.stop();
+            if (queue.loop) {
+              let lastSong = queue.songs.shift();
+              queue.songs.push(lastSong);
+              module.exports.play(queue.songs[0], message);
+            } else {
+              queue.songs.shift();
+              module.exports.play(queue.songs[0], message);
+            }
+          })
+          .on("error", (err) => {
+            console.error(err);
             queue.songs.shift();
             module.exports.play(queue.songs[0], message);
-          }
-        })
-        .on("error", (err) => {
-          console.error(err);
-          queue.songs.shift();
-          module.exports.play(queue.songs[0], message);
-        });
-      dispatcher.setVolumeLogarithmic(queue.volume / 100);
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      //                                                     GNU GENERAL PUBLIC LICENSE
-      //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      try {
-        const { id } = getVideoId(`${music.url}`);
-        message.react("✅");
-        message.react("❣️");
-        // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-        //                                                     GNU GENERAL PUBLIC LICENSE
-        //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-        message.client.channels.cache
-          .get("894574779561017384")
-          .send(
-            new MessageEmbed()
-              .setColor("#ff0000")
-              .setTitle("April❣️Music by🔱KrakinzLab™️")
-              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-              .setDescription(`---------------:lady_beetle:---------------
+          });
+        dispatcher.setVolumeLogarithmic(queue.volume / 100);
+      } else {
+        const dispatcher = queue.connection
+          .play(stream, { type: streamType })
+          .on("finish", () => {
+            if (collector && !collector.ended) collector.stop();
+            if (queue.loop) {
+              let lastSong = queue.songs.shift();
+              queue.songs.push(lastSong);
+              module.exports.play(queue.songs[0], message);
+            } else {
+              queue.songs.shift();
+              module.exports.play(queue.songs[0], message);
+            }
+          })
+          .on("error", (err) => {
+            console.error(err);
+            queue.songs.shift();
+            module.exports.play(queue.songs[0], message);
+          });
+        dispatcher.setVolumeLogarithmic(queue.volume / 100);
+      }
 
-👍❣️𝗛𝗮𝘀 𝗯𝗲𝗲𝗻 𝗣𝗹𝘂𝗴𝗴𝗲𝗱 𝗯𝘆 \`${message.author}\`
-📄 𝗮𝗻𝗱 𝗶𝘀 𝗯𝗼𝘂𝗻𝗱 𝘁𝗼 \`#${message.channel.name}\`
-`)
-          )
-          .catch(console.error);
-        // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-        //                                                     GNU GENERAL PUBLIC LICENSE
-        //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-        var ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel
+      try {
+        let thumb;
+        if (song.thumbnail === undefined)
+          thumb =
+            "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png";
+        else thumb = song.thumbnail.url;
+        var playingMessage = await queue.textChannel
           .send(
             new MessageEmbed()
-              .setColor("#ff0000")
+              .setColor("#ff0040")
               .setTitle("April❣️Music by🔱KrakinzLab™️")
               .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
-              .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
+              .setImage(thumb)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-              .setDescription(`
+              .setDescription(`÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••========—
+
 🏷**Title**
-|• [${music.title}](${music.url})
+>• [${song.title}](${song.url})
 🏷**Requested By**
-|• ${message.author}
+>• ${message.author.username}#${message.author.discriminator}
+🏷**Duration**
+>• ${song.duration}
 
----------------:lady_beetle:---------------
-
-⏭•**Skip music**
-🔇•**Mute/Unmute music.**
-🔊•**Change volume  music.**
-🔁•**Toggle music loop.**
-⏺•**Stops the music queue.**
-
-💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞`)
+÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••========—`)
           )
           .catch(console.error);
-        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏭");
-        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔇");
-        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔉");
-        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔊");
-        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔁");
-        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏺");
+        await playingMessage.react("⏭"); //skip
+        await playingMessage.react("⏯️"); //pause
+        await playingMessage.react("🔄"); //loop
+        await playingMessage.react("⏹"); //stop
+        await playingMessage.react("🎙️"); //np
+        await playingMessage.react("📖"); //queue
+        await playingMessage.react("🔇"); // mute/unmute
+        await playingMessage.react("🔉"); //vol -
+        await playingMessage.react("🔊"); //vol +
       } catch (error) {
         console.error(error);
       }
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      //                                                     GNU GENERAL PUBLIC LICENSE
-      //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+
       const filter = (reaction, user) => user.id !== message.client.user.id;
-      var collector = ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.createReactionCollector(filter, {
-        time: music.duration > 0 ? music.duration * 1000 : 600000,
+      var collector = playingMessage.createReactionCollector(filter, {
+        time: song.duration > 0 ? song.duration * 1000 : 600000,
       });
-      collector.on("collect", (reaction, user) => {
+      collector.on("collect", async (reaction, user) => {
         if (!queue) {
           return;
         }
-        // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-        //                                                     GNU GENERAL PUBLIC LICENSE
-        //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-        // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         const member = message.guild.member(user);
+
         switch (reaction.emoji.name) {
-          case "⏭":
-            queue.playing = true;
-            reaction.users.remove(user).catch(console.error);
-            if (!canModifyQueue(member)) {
-              message.react("❌");
-              message.react("🔥");
-              message.channel
-                .send(
-                  new MessageEmbed()
-                    .setColor("#FF5F15")
-                    .setTitle("April❣️Music by🔱KrakinzLab™️")
-                    .setAuthor(`⚠️Warning!`)
-                    .setURL("https://github.com/Krakinz?tab=repositories")
-                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                    .setDescription(`**Ú§êr >** ${message.author}
-**You need to join a voice channel first!**`)
-                )
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
-                });
-              return;
-            }
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-            //                                                     GNU GENERAL PUBLIC LICENSE
-            //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-            queue.connection.dispatcher.end();
-            queue.textChannel
-              .send(
-                new MessageEmbed()
-                  .setColor("#ff0000")
-                  .setAuthor(`⚠️Warning!`)
-                  .setURL("https://github.com/Krakinz?tab=repositories")
-                  .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                  .setDescription(`**Ú§êr >** ${message.author}
-⏩ **Skipped the music**`)
-              )
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
-              });
-            collector.stop();
-            break;
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-          //                                                     GNU GENERAL PUBLIC LICENSE
-          //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
           case "🔇":
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
@@ -307,18 +207,9 @@ module.exports = {
 
 **You need to join a voice channel first!**`)
                 )
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
-                });
+                .catch(console.error);
               return;
             }
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-            //                                                     GNU GENERAL PUBLIC LICENSE
-            //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
             queue.muted = !queue.muted;
             if (queue.muted) {
               queue.connection.dispatcher.setVolumeLogarithmic(0);
@@ -334,16 +225,7 @@ module.exports = {
 
 🔇 Muted the music!`)
                 )
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
-                });
-              // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-              //                                                     GNU GENERAL PUBLIC LICENSE
-              //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-              // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+                .catch(console.error);
             } else {
               queue.connection.dispatcher.setVolumeLogarithmic(
                 queue.volume / 100
@@ -360,27 +242,15 @@ module.exports = {
 
 🔊 Unmuted the music!`)
                 )
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
-                });
+                .catch(console.error);
             }
             break;
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-          //                                                     GNU GENERAL PUBLIC LICENSE
-          //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+
           case "🔉":
             reaction.users.remove(user).catch(console.error);
             if (queue.volume == 0) {
               return;
             }
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-            //                                                     GNU GENERAL PUBLIC LICENSE
-            //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
             if (!canModifyQueue(member)) {
               message.react("❌");
               message.react("🔥");
@@ -397,18 +267,10 @@ module.exports = {
 
 *You need to* **join** *a voice channel first!*`)
                 )
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
-                });
+                .catch(console.error);
+
               return;
             }
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-            //                                                     GNU GENERAL PUBLIC LICENSE
-            //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
             queue.volume = Math.max(queue.volume - 10, 0);
             queue.connection.dispatcher.setVolumeLogarithmic(
               queue.volume / 100
@@ -426,26 +288,15 @@ module.exports = {
 🔉 Decreased the volume, 
 Volume now at = **${queue.volume}%**`)
               )
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
-              });
+              .catch(console.error);
+
             break;
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-          //                                                     GNU GENERAL PUBLIC LICENSE
-          //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+
           case "🔊":
             reaction.users.remove(user).catch(console.error);
             if (queue.volume == 100) {
               return;
             }
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-            //                                                     GNU GENERAL PUBLIC LICENSE
-            //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
             if (!canModifyQueue(member)) {
               message.react("❌");
               message.react("🔥");
@@ -462,18 +313,10 @@ Volume now at = **${queue.volume}%**`)
 
 *You need to* **join** *a voice channel first!*`)
                 )
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
-                });
+                .catch(console.error);
+
               return;
             }
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-            //                                                     GNU GENERAL PUBLIC LICENSE
-            //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
             queue.volume = Math.min(queue.volume + 10, 100);
             queue.connection.dispatcher.setVolumeLogarithmic(
               queue.volume / 100
@@ -490,18 +333,123 @@ Volume now at = **${queue.volume}%**`)
 
 🔊 Increased the volume, the volume is now ${queue.volume}%`)
               )
-              .catch(console.error)
-              .then((message) => {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
-              });
+              .catch(console.error);
+
             break;
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-          //                                                     GNU GENERAL PUBLIC LICENSE
-          //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-          case "🔁":
+
+          case "📖":
+            if (!canModifyQueue(member)) {
+              message.react("❌");
+              message.react("🔥");
+              message.channel
+                .send(
+                  new MessageEmbed()
+                    .setColor("#FF5F15")
+                    .setTitle("April❣️Music by🔱KrakinzLab™️")
+                    .setAuthor(`⚠️Warning!`)
+                    .setURL("https://github.com/Krakinz?tab=repositories")
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+                    .setDescription(`**Ú§êr >** ${message.author}
+
+**You need to join a voice channel first!**`)
+                )
+                .catch(console.error);
+
+              return;
+            }
+
+            reaction.users.remove(user).catch(console.error);
+            const description = queue.songs.map(
+              (song, index) => `${index + 1}. ${escapeMarkdown(song.title)}`
+            );
+            let queueEmbed = new MessageEmbed()
+              .setTitle("Music Queue")
+              .setDescription(description)
+              .setColor("#ff0040");
+            const splitDescription = splitMessage(description, {
+              maxLength: 2048,
+              char: "\n",
+              prepend: "",
+              append: "",
+            });
+            splitDescription.forEach(async (m) => {
+              queueEmbed.setDescription(m);
+              message.react("✅");
+              message.channel.send(queueEmbed);
+            });
+            break;
+
+          case "🎙️":
+            if (!canModifyQueue(member)) {
+              message.react("❌");
+              message.react("🔥");
+              message.channel
+                .send(
+                  new MessageEmbed()
+                    .setColor("#FF5F15")
+                    .setTitle("April❣️Music by🔱KrakinzLab™️")
+                    .setAuthor(`⚠️Warning!`)
+                    .setURL("https://github.com/Krakinz?tab=repositories")
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+                    .setDescription(`**Ú§êr >** ${message.author}
+
+**You need to join a voice channel first!**`)
+                )
+                .catch(console.error);
+
+              return;
+            }
+
+            reaction.users.remove(user).catch(console.error);
+            const song = queue.songs[0];
+            let minutes = song.duration.split(":")[0];
+            let seconds = song.duration.split(":")[1];
+            let ms = Number(minutes) * 60 + Number(seconds);
+            let thumb;
+            if (song.thumbnail === undefined)
+              thumb =
+                "https://cdn.discordapp.com/attachments/748095614017077318/769672148524335114/unknown.png";
+            else thumb = song.thumbnail.url;
+            const seek =
+              (queue.connection.dispatcher.streamTime -
+                queue.connection.dispatcher.pausedTime) /
+              1000;
+            const left = ms - seek;
+            let nowPlaying = new MessageEmbed()
+              .setTitle("Now playing")
+              .setDescription(`[**${song.title}**](${song.url})`)
+              .setThumbnail(thumb)
+              .setColor("#ff0040")
+              .setFooter(
+                "Time Remaining: " +
+                  new Date(left * 1000).toISOString().substr(11, 8)
+              );
+            if (ms >= 10000) {
+              nowPlaying.addField("\u200b", "🔴 LIVE", false);
+              return message.channel.send(nowPlaying);
+            }
+            if (ms > 0 && ms < 10000) {
+              nowPlaying.addField(
+                "\u200b",
+                "**[" +
+                  createBar(ms == 0 ? seek : ms, seek, 25, "▬", "⚪️")[0] +
+                  "]**\n**" +
+                  new Date(seek * 1000).toISOString().substr(11, 8) +
+                  " / " +
+                  (ms == 0
+                    ? " ◉ LIVE"
+                    : new Date(ms * 1000).toISOString().substr(11, 8)) +
+                  "**",
+                false
+              );
+              return message.channel.send(nowPlaying);
+            }
+            break;
+
+          case "⏭":
+            queue.playing = true;
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               message.react("❌");
@@ -517,21 +465,13 @@ Volume now at = **${queue.volume}%**`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
                     .setDescription(`**Ú§êr >** ${message.author}
 
-*You need to* **join** *a voice channel first!*`)
+**You need to join a voice channel first!**`)
                 )
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
-                });
+                .catch(console.error);
+
               return;
             }
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-            //                                                     GNU GENERAL PUBLIC LICENSE
-            //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-            queue.loop = !queue.loop;
+            queue.connection.dispatcher.end();
             queue.textChannel
               .send(
                 new MessageEmbed()
@@ -541,22 +481,19 @@ Volume now at = **${queue.volume}%**`)
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
                   .setDescription(`**Ú§êr >** ${message.author}
-
-Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
+⏩ **Skipped the music**`)
               )
               .catch(console.error)
               .then((message) => {
                 message.delete({
                   timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                 });
-              });
-            message.client.queue.delete(message.guild.id);
+              })
+              .catch(console.error);
+            collector.stop();
             break;
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-          //                                                     GNU GENERAL PUBLIC LICENSE
-          //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-          case "⏺":
+
+          case "⏯️":
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               message.react("❌");
@@ -572,21 +509,126 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
                     .setDescription(`**Ú§êr >** ${message.author}
 
-*You need to* **join** *a voice channel first!*`)
+**You need to join a voice channel first!**`)
                 )
-                .catch(console.error)
-                .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
-                });
+                .catch(console.error);
+
               return;
             }
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-            //                                                     GNU GENERAL PUBLIC LICENSE
-            //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+            if (queue.playing) {
+              queue.playing = !queue.playing;
+              queue.connection.dispatcher.pause(true);
+              var ᴀᴘʀɪʟᴘᴀᴜꜱᴇᴍᴇʙᴇᴅ = new MessageEmbed()
+                .setColor("#FF5F15")
+                .setTitle("April❣️Music by🔱KrakinzLab™️")
+                .setAuthor(`⚠️Warning!`)
+                .setURL("https://github.com/Krakinz?tab=repositories")
+                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+                .setDescription(
+                  `**Ú§êr >** ${user.username} paused the music.`,
+                  "https://cdn.discordapp.com/emojis/769912238236106793.png"
+                );
+              await queue.textChannel
+                .send(ᴀᴘʀɪʟᴘᴀᴜꜱᴇᴍᴇʙᴇᴅ)
+                .catch(console.error);
+            } else {
+              queue.playing = !queue.playing;
+              queue.connection.dispatcher.resume();
+              var ᴀᴘʀɪʟᴘʟᴀʏᴇᴍʙᴇᴅ = new MessageEmbed()
+                .setColor("#FF5F56")
+                .setTitle("April❣️Music by🔱KrakinzLab™️")
+                .setURL("https://github.com/Krakinz?tab=repositories")
+                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+                .setDescription(
+                  `**Ú§êr >** ${user.username} resumed the music!`,
+                  "https://cdn.discordapp.com/emojis/769912238236106793.png"
+                );
+              await queue.textChannel.send(ᴀᴘʀɪʟᴘʟᴀʏᴇᴍʙᴇᴅ).catch(console.error);
+              await ᴀᴘʀɪʟᴘᴀᴜꜱᴇᴍᴇʙᴇᴅ.delete();
+            }
+            break;
+
+          case "🔄":
+            reaction.users.remove(user).catch(console.error);
+            if (!canModifyQueue(member)) {
+              message.react("❌");
+              message.react("🔥");
+              message.channel
+                .send(
+                  new MessageEmbed()
+                    .setColor("#FF5F15")
+                    .setTitle("April❣️Music by🔱KrakinzLab™️")
+                    .setAuthor(`⚠️Warning!`)
+                    .setURL("https://github.com/Krakinz?tab=repositories")
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+                    .setDescription(`**Ú§êr >** ${message.author}
+
+**You need to join a voice channel first!**`)
+                )
+                .catch(console.error);
+
+              return;
+            }
+            queue.loop = !queue.loop;
+            queue.textChannel
+              .send(
+                new MessageEmbed()
+                  .setColor("#FF5F15")
+                  .setTitle("April❣️Music by🔱KrakinzLab™️")
+                  .setAuthor(`⚠️Warning!`)
+                  .setURL("https://github.com/Krakinz?tab=repositories")
+                  .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+                  .setDescription(`**Ú§êr >** ${message.author}
+
+April❣️Music queue loop has been ${queue.loop ? "enabled" : " disabled"}`)
+              )
+              .catch(console.error);
+
+            break;
+
+          case "⏹":
+            reaction.users.remove(user).catch(console.error);
+            if (!canModifyQueue(member)) {
+              message.react("❌");
+              message.react("🔥");
+              message.channel
+                .send(
+                  new MessageEmbed()
+                    .setColor("#FF5F15")
+                    .setTitle("April❣️Music by🔱KrakinzLab™️")
+                    .setAuthor(`⚠️Warning!`)
+                    .setURL("https://github.com/Krakinz?tab=repositories")
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+                    .setDescription(`**Ú§êr >** ${message.author}
+
+**You need to join a voice channel first!**`)
+                )
+                .catch(console.error);
+
+              return;
+            }
             queue.songs = [];
+            queue.textChannel
+              .send(
+                new MessageEmbed()
+                  .setColor("#FF5F15")
+                  .setTitle("April❣️Music by🔱KrakinzLab™️")
+                  .setAuthor(`⚠️Warning!`)
+                  .setURL("https://github.com/Krakinz?tab=repositories")
+                  .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                  .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+                  .setDescription(
+                    `**Ú§êr >** ${user.username} stopped the music!`,
+                    "https://cdn.discordapp.com/emojis/769915194066862080.png"
+                  )
+              )
+              .catch(console.error);
+
             try {
               queue.connection.dispatcher.end();
             } catch (error) {
@@ -595,23 +637,16 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
             }
             collector.stop();
             break;
+
           default:
             reaction.users.remove(user).catch(console.error);
             break;
         }
       });
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      //                                                     GNU GENERAL PUBLIC LICENSE
-      //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      collector.on("end", async () => {
-        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.reactions.removeAll().catch(console.error);
-        // await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.delete();
+
+      collector.on("end", () => {
+        playingMessage.reactions.removeAll().catch(console.error);
       });
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      //                                                     GNU GENERAL PUBLIC LICENSE
-      //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
     } catch (ErrorApril) {
       message.channel.send("@everyone");
       message.client.channels.cache
@@ -631,10 +666,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
 *${ErrorApril}*`)
         )
         .catch(console.error);
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      //                                                     GNU GENERAL PUBLIC LICENSE
-      //                                         𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+
       message.channel.send(
         new MessageEmbed()
           .setColor("#DB4434")

@@ -16,6 +16,9 @@ module.exports = {
     cooldown: 3,
     execute(message, args) {
         try {
+            if (!message.guild) {
+              return;
+            }
             if (message.content.startsWith(AքʀɨʟʄɨӼ + "rm") && message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") {
                 message.react("❌");
                 message.react("🔥");
