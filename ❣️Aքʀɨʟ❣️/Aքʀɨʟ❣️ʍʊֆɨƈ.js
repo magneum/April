@@ -41,7 +41,7 @@ try {
       .get("894574779561017384")
       .send(
         new MessageEmbed()
-          .setColor("#ff0000")
+          .setColor("#6c0000")
           .setTitle("April❣️Music by🔱KrakinzLab™️")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
@@ -96,7 +96,7 @@ try {
     channel
       .send(
         new MessageEmbed()
-          .setColor("#ff0000")
+          .setColor("#6c0000")
           .setAuthor(`⚠️Warning!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -117,7 +117,7 @@ Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..
     channel
       .send(
         new MessageEmbed()
-          .setColor("#ff0000")
+          .setColor("#6c0000")
           .setAuthor(`⚠️Warning!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -332,7 +332,7 @@ There was an error executing that command.`
       .get("894574779561017384")
       .send(
         new MessageEmbed()
-          .setColor("#ff0000")
+          .setColor("#6c0000")
           .setAuthor(`⚠️Warning!`)
           .setTitle("April❣️Music by🔱KrakinzLab™️")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

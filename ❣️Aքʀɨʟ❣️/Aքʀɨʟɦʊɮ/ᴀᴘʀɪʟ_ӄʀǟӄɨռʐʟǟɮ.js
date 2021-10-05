@@ -9,9 +9,13 @@ module.exports = {
   execute(message) {
     try {
       const ᴀᴘʀɪʟɴᴏʀᴇ = `
+** ♥️•♪•♪Aքʀɨʟ❣️ʍʊֆɨƈ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻♪•♪•**
+• *v17.k90*
+---------------:lady_beetle:---------------
+
 •> **❣️April** is a Discord Music player Bot with YouTube Support and is available on both Discord and Telegram.
 
-•> **❣️April** has no **slashcommands(/)**. *If you want to use* **slashcommands(/)** *then please use*  [Mêllðñ🍉þlå¥êr](https://github.com/Krakinz/Mellon)
+•> **❣️April** has no **slashcommands(/)**.**BETA!** *If you want to use* **slashcommands(/)** *then please use*  [Mêllðñ🍉þlå¥êr](https://github.com/Krakinz/Mellon)
 
 •> **❣️April** has been licensed under GNU General Public License 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
 
@@ -24,7 +28,7 @@ module.exports = {
         message.react("❣️");
         message.author.send(
           new MessageEmbed()
-            .setColor("#ff0000")
+            .setColor("#6c0000")
             .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
         );
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -58,12 +62,7 @@ module.exports = {
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
           )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
-          });
+          .catch(console.error);
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -75,7 +74,7 @@ module.exports = {
         .get("894574779561017384")
         .send(
           new MessageEmbed()
-            .setColor("#ff0000")
+            .setColor("#6c0000")
             .setAuthor(`⚠️Warning!`)
             .setTitle("April❣️Music by🔱KrakinzLab™️")
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

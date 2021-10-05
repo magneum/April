@@ -168,7 +168,7 @@ There is nothing playing that I could skip for you.`)
         queue.textChannel
           .send(
             new MessageEmbed()
-              .setColor("#ff0000")
+              .setColor("#6c0000")
               .setAuthor(`⚠️Warning!`)
               .setTitle("April❣️Music by🔱KrakinzLab™️")
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -194,7 +194,7 @@ There is nothing playing that I could skip for you.`)
         .get("894574779561017384")
         .send(
           new MessageEmbed()
-            .setColor("#ff0000")
+            .setColor("#6c0000")
             .setAuthor(`⚠️Warning!`)
             .setTitle("April❣️Music by🔱KrakinzLab™️")
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

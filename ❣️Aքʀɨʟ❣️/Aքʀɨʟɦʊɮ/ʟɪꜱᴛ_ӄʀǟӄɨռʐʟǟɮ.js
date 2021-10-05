@@ -319,7 +319,7 @@ Playlist not found`
             newSongs.map((music, index) => `${index + 1}. ${music.title}`)
           )
           .setURL(playlist.url)
-          .setColor("#ff0000")
+          .setColor("#6c0000")
           .setTimestamp();
         if (playlistEmbed.description.length >= 2048)
           playlistEmbed.description =
@@ -330,7 +330,7 @@ Playlist not found`
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#ff0000")
+              .setColor("#6c0000")
               .setAuthor(`⚠️Warning!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -400,7 +400,7 @@ Could not join the channel: *${error}*`
         .get("894574779561017384")
         .send(
           new MessageEmbed()
-            .setColor("#ff0000")
+            .setColor("#6c0000")
             .setAuthor(`⚠️Warning!`)
             .setTitle("April❣️Music by🔱KrakinzLab™️")
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

@@ -48,7 +48,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#ff0000")
+              .setColor("#6c0000")
               .setTitle("April❣️Music by🔱KrakinzLab™️")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -74,7 +74,7 @@ module.exports = {
         .get("894574779561017384")
         .send(
           new MessageEmbed()
-            .setColor("#ff0000")
+            .setColor("#6c0000")
             .setAuthor(`⚠️Warning!`)
             .setTitle("April❣️Music by🔱KrakinzLab™️")
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
