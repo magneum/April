@@ -33,7 +33,7 @@ module.exports = {
         message.author
           .send(
             new MessageEmbed()
-              .setDescription(`**Ú§êr >** ${message.author}\n${ᴀᴘʀɪʟɴᴏʀᴇ}`)
+              .setDescription(`👍**Ú§êr >** ${message.author}\n${ᴀᴘʀɪʟɴᴏʀᴇ}`)
               .setColor("#e69159")
               .setAuthor(`⚠️Warning!`)
               .setTitle("April❣️Music by🔱KrakinzLab™️")
@@ -49,13 +49,13 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setDescription(`**Ú§êr >** ${message.author}\n${ᴀᴘʀɪʟɴᴏʀᴇ}`)
+              .setDescription(
+                `👍**Ú§êr >** ${message.author}\n Check your \`direct messages\` for a list of **Aքʀɨʟ❣️ʍʊֆɨƈ™** Commands!**`
+              )
               .setColor("#e69159")
-              .setAuthor(`⚠️Warning!`)
               .setTitle("April❣️Music by🔱KrakinzLab™️")
               .setURL("https://github.com/Krakinz?tab=repositories")
-              .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
+              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
           )
           .catch(console.error)

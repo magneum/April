@@ -23,7 +23,7 @@ module.exports = {
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-              .setDescription(`**Ú§êr >** ${message.author}
+              .setDescription(`👍**Ú§êr >** ${message.author}
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
@@ -57,7 +57,7 @@ module.exports = {
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                .setDescription(`**Ú§êr >** ${message.author}
+                .setDescription(`👍**Ú§êr >** ${message.author}
 
 Missing permission to manage messages or add reactions`)
             )
@@ -85,7 +85,7 @@ Missing permission to manage messages or add reactions`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                .setDescription(`**Ú§êr >** ${message.author}
+                .setDescription(`👍**Ú§êr >** ${message.author}
 
 ⏺ Nothing playing in this server`)
             )

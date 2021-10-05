@@ -205,7 +205,7 @@ Aքʀɨʟʍʊֆɨƈ.on("message", async (message) => {
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-          .setDescription(`**Ú§êr >** ${message.author}
+          .setDescription(`👍**Ú§êr >** ${message.author}
 ---------------:lady_beetle:---------------
 
 
@@ -271,7 +271,7 @@ April❣️Music by🔱KrakinzLab™️
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
               .setDescription(`
-**Ú§êr >** ${message.author}
+👍**Ú§êr >** ${message.author}
 ---------------:lady_beetle:---------------
 
 
@@ -308,7 +308,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the "${
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
             .setDescription(
               `
-**Ú§êr >** ${message.author}
+👍**Ú§êr >** ${message.author}
 ---------------:lady_beetle:---------------
 
 

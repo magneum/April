@@ -48,7 +48,7 @@ module.exports = {
         message.author
           .send(
             new MessageEmbed()
-              .setDescription(`**Ú§êr >** ${message.author}\n${ᴀᴘʀɪʟʜᴇʟᴘᴇʀ}`)
+              .setDescription(`👍**Ú§êr >** ${message.author}\n${ᴀᴘʀɪʟʜᴇʟᴘᴇʀ}`)
               .setColor("#ff0000")
               .setAuthor(`⚠️Warning!`)
               .setTitle("April❣️Music by🔱KrakinzLab™️")
@@ -64,7 +64,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setDescription(`**Ú§êr >** ${message.author}\n${ᴀᴘʀɪʟʜᴇʟᴘᴇʀ}`)
+              .setDescription(`👍**Ú§êr >** ${message.author}\n${ᴀᴘʀɪʟʜᴇʟᴘᴇʀ}`)
               .setColor("#ff0000")
               .setAuthor(`⚠️Warning!`)
               .setTitle("April❣️Music by🔱KrakinzLab™️")

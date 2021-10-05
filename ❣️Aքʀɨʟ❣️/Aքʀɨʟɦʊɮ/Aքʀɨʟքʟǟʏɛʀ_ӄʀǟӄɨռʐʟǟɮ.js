@@ -76,7 +76,7 @@ module.exports = {
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                .setDescription(`**Ú§êr >** ${message.author}
+                .setDescription(`👍**Ú§êr >** ${message.author}
 **Only YouTube playing/streaming is allowed**`)
             )
             .catch(console.error)
@@ -107,7 +107,7 @@ module.exports = {
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-              .setDescription(`**Ú§êr >** ${message.author}
+              .setDescription(`👍**Ú§êr >** ${message.author}
 **Error:** 
 *${error}*`)
           )
@@ -237,7 +237,7 @@ module.exports = {
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                    .setDescription(`**Ú§êr >** ${message.author}
+                    .setDescription(`👍**Ú§êr >** ${message.author}
 **You need to join a voice channel first!**`)
                 )
                 .catch(console.error)
@@ -260,7 +260,7 @@ module.exports = {
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                  .setDescription(`**Ú§êr >** ${message.author}
+                  .setDescription(`👍**Ú§êr >** ${message.author}
 ⏩ **Skipped the music**`)
               )
               .catch(console.error)
@@ -288,7 +288,7 @@ module.exports = {
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                    .setDescription(`**Ú§êr >** ${message.author}
+                    .setDescription(`👍**Ú§êr >** ${message.author}
 
 **You need to join a voice channel first!**`)
                 )
@@ -314,7 +314,7 @@ module.exports = {
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                    .setDescription(`**Ú§êr >** ${message.author}
+                    .setDescription(`👍**Ú§êr >** ${message.author}
 
 🔇 Muted the music!`)
                 )
@@ -339,7 +339,7 @@ module.exports = {
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                    .setDescription(`**Ú§êr >** ${message.author}
+                    .setDescription(`👍**Ú§êr >** ${message.author}
 
 🔊 Unmuted the music!`)
                 )
@@ -374,7 +374,7 @@ module.exports = {
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                    .setDescription(`**Ú§êr >** ${message.author}
+                    .setDescription(`👍**Ú§êr >** ${message.author}
 
 *You need to* **join** *a voice channel first!*`)
                 )
@@ -401,7 +401,7 @@ module.exports = {
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                  .setDescription(`**Ú§êr >** ${message.author}
+                  .setDescription(`👍**Ú§êr >** ${message.author}
 
 🔉 Decreased the volume, 
 Volume now at = **${queue.volume}%**`)
@@ -436,7 +436,7 @@ Volume now at = **${queue.volume}%**`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                    .setDescription(`**Ú§êr >** ${message.author}
+                    .setDescription(`👍**Ú§êr >** ${message.author}
 
 *You need to* **join** *a voice channel first!*`)
                 )
@@ -463,7 +463,7 @@ Volume now at = **${queue.volume}%**`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                  .setDescription(`**Ú§êr >** ${message.author}
+                  .setDescription(`👍**Ú§êr >** ${message.author}
 
 🔊 Increased the volume, the volume is now ${queue.volume}%`)
               )
@@ -491,7 +491,7 @@ Volume now at = **${queue.volume}%**`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                    .setDescription(`**Ú§êr >** ${message.author}
+                    .setDescription(`👍**Ú§êr >** ${message.author}
 
 *You need to* **join** *a voice channel first!*`)
                 )
@@ -515,7 +515,7 @@ Volume now at = **${queue.volume}%**`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                  .setDescription(`**Ú§êr >** ${message.author}
+                  .setDescription(`👍**Ú§êr >** ${message.author}
 
 Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
               )
@@ -544,7 +544,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                    .setDescription(`**Ú§êr >** ${message.author}
+                    .setDescription(`👍**Ú§êr >** ${message.author}
 
 *You need to* **join** *a voice channel first!*`)
                 )

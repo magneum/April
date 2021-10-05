@@ -34,15 +34,11 @@ module.exports = {
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-              .setDescription(
-                `\n\n
-**Ú§êr >** ${message.author}
-
+              .setDescription(`👍**Ú§êr >** ${message.author}
 
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
-⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`
-              )
+⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
           )
           .catch(console.error)
           .then((message) => {
@@ -73,7 +69,7 @@ module.exports = {
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                .setDescription(`**Ú§êr >** ${message.author}
+                .setDescription(`👍**Ú§êr >** ${message.author}
 
 *You need to* **join** *a voice channel first!*`)
             )
@@ -100,7 +96,7 @@ module.exports = {
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                .setDescription(`**Ú§êr >** ${message.author}
+                .setDescription(`👍**Ú§êr >** ${message.author}
 
 **usage:**
 ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
@@ -129,7 +125,7 @@ ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                .setDescription(`**Ú§êr >** ${message.author}
+                .setDescription(`👍**Ú§êr >** ${message.author}
 
 Cannot connect to voice channel, missing permissions`)
             )
@@ -156,7 +152,7 @@ Cannot connect to voice channel, missing permissions`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                .setDescription(`**Ú§êr >** ${message.author}
+                .setDescription(`👍**Ú§êr >** ${message.author}
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`)
             )
@@ -183,7 +179,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-                .setDescription(`**Ú§êr >** ${message.author}
+                .setDescription(`👍**Ú§êr >** ${message.author}
 
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`)
@@ -241,7 +237,7 @@ ID= ${message.client.user}`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
                   .setDescription(
                     `\n\n
-**Ú§êr >** ${message.author}
+👍**Ú§êr >** ${message.author}
 
 
 Playlist not found`
@@ -342,7 +338,7 @@ Playlist not found`
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
               .setDescription(
                 `\n\n
-**Ú§êr >** ${message.author}
+👍**Ú§êr >** ${message.author}
 
 Added a playlist`
               )
@@ -380,7 +376,7 @@ Added a playlist`
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
                   .setDescription(
                     `\n\n
-**Ú§êr >** ${message.author}
+👍**Ú§êr >** ${message.author}
 
 Could not join the channel: *${error}*`
                   )
