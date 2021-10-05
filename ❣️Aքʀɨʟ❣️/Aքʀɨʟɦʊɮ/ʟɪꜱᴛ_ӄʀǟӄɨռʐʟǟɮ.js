@@ -167,31 +167,33 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-        //         if (serverQueue && channel !== message.guild.me.voice.channel) {
-        //           message.react("❌");
-        //
-        //           message.channel
-        //             .send(
-        //               new MessageEmbed()
-        //                 .setColor("#e69159")
-        //                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
-        //                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
-        //                 .setURL("https://github.com/Krakinz?tab=repositories")
-        //                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-        //                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-        //                 .setDescription(`❣️| ${message.author}
+        if (serverQueue && channel !== message.guild.me.voice.channel) {
+          message.react("❌");
+          serverQueue.delete(message.guild.id);
+          message.channel
+            .send(
+              new MessageEmbed()
+                .setColor("#e69159")
+                .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+                .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
+                .setURL("https://github.com/Krakinz?tab=repositories")
+                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
+                .setDescription(`❣️| ${message.author}
+You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
 
-        // You must be in the same Voice Channel as **ME**.
-        // ID= ${message.client.user}`)
-        //             )
-        //             .catch(console.error);
-        //           // .then((message) => {
-        //           // message.delete({
-        //           // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-        //           // });
-        //           // });
-        //           return;
-        //         }
+**IF THE BOT WAS DISCONNECTED WITHOUT STOPPING THE MUSIC QUEUE THEN THIS ERROR IS THROWN!**\n
+**PLEASE RE-ADD THE BOT IN THE SERVER...**
+*THE ERROR WILL BE FIXED SOON ONCE MY DEV BECOMES FREE*`)
+            )
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            });
+          return;
+        }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================

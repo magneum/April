@@ -30,7 +30,6 @@ module.exports = {
         message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("❌");
-
         message.channel
           .send(
             new MessageEmbed()
@@ -56,7 +55,6 @@ module.exports = {
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       if (ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
         message.react("❌");
-
         message.channel
           .send(
             new MessageEmbed()
@@ -136,6 +134,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         if (serverQueue && channel !== message.guild.me.voice.channel) {
           message.react("❌");
+          serverQueue.delete(message.guild.id);
           message.channel
             .send(
               new MessageEmbed()
@@ -165,7 +164,6 @@ You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         if (!args.length) {
           message.react("❌");
-
           message.channel
             .send(
               new MessageEmbed()
@@ -218,7 +216,6 @@ You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         if (!permissions.has(`SPEAK`)) {
           message.react("❌");
-
           message.channel
             .send(
               new MessageEmbed()
@@ -303,7 +300,6 @@ You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
           `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
           // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
           message.react("❌");
-
           message.channel
             .send(
               new MessageEmbed()
