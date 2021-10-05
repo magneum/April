@@ -33,12 +33,12 @@ new MessageEmbed()
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+});
+});
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -65,12 +65,12 @@ new MessageEmbed()
 
 April is not playing anymusic yet....`)
 )
-.catch(console.error);
-// .then((message) => {
-// message.delete({
-// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-// });
-// });
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+});
+});
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
