@@ -164,31 +164,31 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-        if (serverQueue && channel !== message.guild.me.voice.channel) {
-          message.react("❌");
-          message.react("🔥");
-          message.channel
-            .send(
-              new MessageEmbed()
-                .setColor("#e69159")
-                .setAuthor(`April❣️Music`)
-                .setTitle(`⚠️Warning!`)
-                .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`👍**Ú§êr >** ${message.author}
+        //         if (serverQueue && channel !== message.guild.me.voice.channel) {
+        //           message.react("❌");
+        //           message.react("🔥");
+        //           message.channel
+        //             .send(
+        //               new MessageEmbed()
+        //                 .setColor("#e69159")
+        //                 .setAuthor(`April❣️Music`)
+        //                 .setTitle(`⚠️Warning!`)
+        //                 .setURL("https://github.com/Krakinz?tab=repositories")
+        //                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+        //                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
+        //                 .setDescription(`👍**Ú§êr >** ${message.author}
 
-You must be in the same Voice Channel as **ME**.
-ID= ${message.client.user}`)
-            )
-            .catch(console.error);
-          // .then((message) => {
-          // message.delete({
-          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-          // });
-          // });
-          return;
-        }
+        // You must be in the same Voice Channel as **ME**.
+        // ID= ${message.client.user}`)
+        //             )
+        //             .catch(console.error);
+        //           // .then((message) => {
+        //           // message.delete({
+        //           // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        //           // });
+        //           // });
+        //           return;
+        //         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
