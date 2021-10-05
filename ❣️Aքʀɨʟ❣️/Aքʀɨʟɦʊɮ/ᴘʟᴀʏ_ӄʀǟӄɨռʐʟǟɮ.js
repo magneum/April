@@ -146,8 +146,11 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
+You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
 
-You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.`)
+**IF THE BOT WAS DISCONNECTED WITHOUT STOPPING THE MUSIC QUEUE THEN THIS ERROR IS THROWN!**\n
+**PLEASE RE-ADD THE BOT IN THE SERVER...**
+*THE ERROR WILL BE FIXED SOON ONCE MY DEV BECOMES FREE*`)
             )
             .catch(console.error)
             .then((message) => {
