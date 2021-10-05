@@ -28,7 +28,7 @@ module.exports = {
       ) {
         message.react("❌");
         message.react("🔥");
-        message.author.delete();
+
         message.channel
           .send(
             new MessageEmbed()
@@ -86,7 +86,6 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
         message.content.startsWith(AքʀɨʟʄɨӼ + "play") &&
         message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
-        message.author.delete();
         const { channel } = message.member.voice;
         const serverQueue = message.client.queue.get(message.guild.id);
         if (!channel) {
