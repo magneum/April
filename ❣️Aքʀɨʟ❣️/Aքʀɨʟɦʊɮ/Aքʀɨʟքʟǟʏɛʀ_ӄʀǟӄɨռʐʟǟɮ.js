@@ -651,7 +651,6 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               message.react("❌");
-
               message.channel
                 .send(
                   new MessageEmbed()
