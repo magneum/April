@@ -442,6 +442,14 @@
   "resolved" "https://registry.npmjs.org/detect-libc/-/detect-libc-1.0.3.tgz"
   "version" "1.0.3"
 
+"discord-ytdl-core@^4.1.3":
+  "integrity" "sha512-fsA7nGCP5sN/Ar+NCCgDpaQQDuBxf9z7uxITEm8d58qosKVaVskZ5/N7GOeMSvSX5YZ746N0VO3HLx73QtFlUg=="
+  "resolved" "https://registry.npmjs.org/discord-ytdl-core/-/discord-ytdl-core-4.1.5.tgz"
+  "version" "4.1.5"
+  dependencies:
+    "prism-media" "^1.2.2"
+    "ytdl-core" "^4.0.3"
+
 "dom-serializer@0":
   "integrity" "sha512-2/xPb3ORsQ42nHYiSunXkDjPLBaEj/xTwUO4B7XCZQTRk7EBtTOPaygh10YAAh2OI1Qrp6NWfpAhzswj0ydt9g=="
   "resolved" "https://registry.npmjs.org/dom-serializer/-/dom-serializer-0.2.2.tgz"
@@ -1252,7 +1260,7 @@
   "resolved" "https://registry.npmjs.org/prepend-http/-/prepend-http-2.0.0.tgz"
   "version" "2.0.0"
 
-"prism-media@^1.2.9", "prism-media@^1.3.1":
+"prism-media@^1.2.2", "prism-media@^1.2.9", "prism-media@^1.3.1":
   "integrity" "sha512-L6UsGHcT6i4wrQhFF1aPK+MNYgjRqR2tUoIqEY+CG1NqVkMjPRKzS37j9f8GiYPlD6wG9ruBj+q5Ax+bH8Ik1g=="
   "resolved" "https://registry.npmjs.org/prism-media/-/prism-media-1.3.2.tgz"
   "version" "1.3.2"
@@ -1801,7 +1809,7 @@
     "prism-media" "^1.3.1"
     "ytdl-core" "^4.8.2"
 
-"ytdl-core@^4.8.2", "ytdl-core@^4.9.1":
+"ytdl-core@^4.0.3", "ytdl-core@^4.8.2", "ytdl-core@^4.9.1":
   "integrity" "sha512-6Jbp5RDhUEozlaJQAR+l8oV8AHsx3WUXxSyPxzE6wOIAaLql7Hjiy0ZM58wZoyj1YEenlEPjEqcJIjKYKxvHtQ=="
   "resolved" "https://registry.npmjs.org/ytdl-core/-/ytdl-core-4.9.1.tgz"
   "version" "4.9.1"

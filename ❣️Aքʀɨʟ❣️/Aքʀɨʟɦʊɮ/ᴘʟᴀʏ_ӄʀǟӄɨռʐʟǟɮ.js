@@ -1,5 +1,5 @@
 const ytsr = require("youtube-sr");
-const { play } = require("./player");
+const { play } = require("./Aքʀɨʟքʟǟʏɛʀ_ӄʀǟӄɨռʐʟǟɮ");
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
 
@@ -32,32 +32,6 @@ module.exports = {
 **Category:** \`🔱Krakinz\`
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
-          )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
-          });
-        return;
-      }
-
-      if (ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
-        message.react("❌");
-        message.react("🔥");
-        message.channel
-          .send(
-            new MessageEmbed()
-              .setColor("#e69159")
-              .setTitle("April❣️Music by🔱KrakinzLab™️")
-              .setAuthor(`⚠️Warning!`)
-              .setURL("https://github.com/Krakinz?tab=repositories")
-              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-              .setDescription(`**Ú§êr >** ${message.author}
-
-This link seems to be a playlist link.
-Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
           )
           .catch(console.error)
           .then((message) => {
