@@ -29,12 +29,14 @@ module.exports = {
 ---------------:lady_beetle:---------------
 
 ** ♥️•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•**
-• **⏭** :Skip the currently playing music.
-• **⏸** :Pause/Resume the currently playing music.
-• **🔇** :Mute/Unmute the currently playing music.
-• **🔄** :Toggle music loop.
-• **⏹** :Stops the currently playing music queue.
-• **🔊|🔉 ${AքʀɨʟʄɨӼ}vol** :Change volume of currently playing music.`;
+•**⏭skip**
+•**🔄loop**
+•**🔇mute/unmute**
+•**🔉vol -**     
+•**🔊vol +**
+•**🎙️now playing**     
+•**📖queue**
+•**⏹stop**`;
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
