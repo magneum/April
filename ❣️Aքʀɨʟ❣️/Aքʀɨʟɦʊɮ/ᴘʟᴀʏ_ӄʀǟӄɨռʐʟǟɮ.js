@@ -308,7 +308,9 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}**Following url redirection...**`)
+                .setDescription(
+                  `❣️| ${message.author}**Following url redirection...**`
+                )
             )
             .catch(console.error);
           // .then((message) => {
@@ -416,18 +418,20 @@ Audio Not Found`)
                 .setTitle("✅ " + music.title)
                 .setColor("#ff0040")
                 .setURL(music.url)
-                .setThumbnail(`${message.member.user.displayAvatarURL()}`)
                 .setDescription(
                   `\`\`\`Succesfully added to the Queue.\`\`\`
-**👍Requested by: **
-${message.author} Check Top Right Thumbnail.`
+**👍Requested by:**${message.author}`
                 )
                 .addField(
                   "Position in queue",
-                  `**\`${serverQueue.songs.length - 1}\`**`,
+                  `**\`${serverQueue.songs.length}\`**`,
                   true
                 )
-                .addField("Song Duration", `**\`${music.duration}\`**`, true)
+                .addField(
+                  "Song Duration",
+                  `**🏷${Math.round((music.duration / 60) * 100) / 100}min**`,
+                  true
+                )
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
             )
             .catch(console.error);
