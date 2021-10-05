@@ -39,9 +39,7 @@ module.exports = {
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
               .setDescription(`❣️| ${message.author}
-
-**Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
-⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
+**Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
           )
           .catch(console.error);
         // .then((message) => {
@@ -67,7 +65,6 @@ module.exports = {
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
               .setDescription(`❣️| ${message.author}
-
 This link seems to be a playlist link.
 Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
           )
@@ -101,7 +98,6 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
-
 *You need to* **join** *a voice channel first!*`)
             )
             .catch(console.error);
@@ -127,7 +123,12 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 )
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
             )
-            .catch(console.error);
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            });
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
@@ -172,9 +173,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
-
-**usage:**
-${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**`)
+**usage:**${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**`)
             )
             .catch(console.error);
           // .then((message) => {
@@ -201,8 +200,7 @@ ${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
-
-Cannot connect to voice channel, missing permissions`)
+**Cannot connect to voice channel, missing permissions**`)
             )
             .catch(console.error);
           // .then((message) => {
@@ -228,8 +226,7 @@ Cannot connect to voice channel, missing permissions`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
-
-I cannot speak in this voice channel, make sure I have the proper permissions!`)
+**I cannot speak in this voice channel, make sure I have the proper permissions!**`)
             )
             .catch(console.error);
           // .then((message) => {
@@ -273,9 +270,10 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
                       .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                       .setFooter(
                         "𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
-                      ).setDescription(`❣️| ${message.author}
-
-Audio Not Found`)
+                      )
+                      .setDescription(
+                        `❣️| ${message.author} **Audio Not Found**`
+                      )
                   )
                   .catch(console.error);
                 // .then((message) => {
@@ -310,9 +308,7 @@ Audio Not Found`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
-
-Following url redirection...`)
+                .setDescription(`❣️| ${message.author}**Following url redirection...**`)
             )
             .catch(console.error);
           // .then((message) => {
@@ -422,9 +418,9 @@ Audio Not Found`)
                 .setURL(music.url)
                 .setThumbnail(`${message.member.user.displayAvatarURL()}`)
                 .setDescription(
-                  `\`\`\`:partying_face:Succesfully added to the Queue.\`\`\`
-**Requested by: **
-👍> ${message.author} Check Top Right Thumbnail.`
+                  `\`\`\`Succesfully added to the Queue.\`\`\`
+**👍Requested by: **
+${message.author} Check Top Right Thumbnail.`
                 )
                 .addField(
                   "Position in queue",

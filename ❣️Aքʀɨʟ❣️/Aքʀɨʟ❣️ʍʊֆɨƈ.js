@@ -274,9 +274,8 @@ April❣️Music by🔱KrakinzLab™️
 ---------------:lady_beetle:---------------
 
 
-Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the "${
-              command.name
-            }" command.      
+Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the "${command.name
+                }" command.      
 
 ---------------:lady_beetle:---------------`)
           )
