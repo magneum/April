@@ -28,6 +28,7 @@ module.exports = {
       ) {
         message.react("❌");
         message.react("🔥");
+        message.author.delete();
         message.channel
           .send(
             new MessageEmbed()
@@ -85,6 +86,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
         message.content.startsWith(AքʀɨʟʄɨӼ + "play") &&
         message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
+        message.author.delete();
         const { channel } = message.member.voice;
         const serverQueue = message.client.queue.get(message.guild.id);
         if (!channel) {
@@ -127,11 +129,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 )
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
             )
-            .then((message) => {
-              message.delete({
-                timeout: 8000,
-              });
-            });
+            .catch(console.error);
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
@@ -150,8 +148,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`👍**Ú§êr >** ${message.author}
 
-You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
-ID= ${message.client.user}`)
+You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.`)
             )
             .catch(console.error)
             .then((message) => {
@@ -566,8 +563,7 @@ Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
             .setAuthor(`April❣️Music`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-            .setDescription(`
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
 **Dear 🔱KRAKINZ🔱 There has been an Error in a GUILD.**
 
 **Error report:**
