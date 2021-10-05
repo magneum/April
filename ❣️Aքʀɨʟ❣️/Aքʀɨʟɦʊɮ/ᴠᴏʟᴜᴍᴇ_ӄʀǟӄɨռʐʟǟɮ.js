@@ -210,7 +210,7 @@ Volume set to: **${args[0]}%**`)
     } catch (ErrorApril) {
       message.channel.send("@everyone");
       message.client.channels.cache
-        .get("894574779561017384")
+        .get("894958787792871475")
         .send(
           new MessageEmbed()
             .setColor("#6c0000")
@@ -218,8 +218,7 @@ Volume set to: **${args[0]}%**`)
             .setAuthor(`April❣️Music`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-            .setDescription(`
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
 **Dear 🔱KRAKINZ🔱 There has been an Error in a GUILD.**
 
 **Error report:**

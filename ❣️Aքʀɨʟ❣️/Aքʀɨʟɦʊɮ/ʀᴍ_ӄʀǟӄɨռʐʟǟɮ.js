@@ -208,7 +208,7 @@ There is nothing in queue.`))
         } catch (ErrorApril) {
             message.channel.send("@everyone");
             message.client.channels.cache
-                .get("894574779561017384")
+                .get("894958787792871475")
                 .send(
                     new MessageEmbed()
                         .setColor("#6c0000")

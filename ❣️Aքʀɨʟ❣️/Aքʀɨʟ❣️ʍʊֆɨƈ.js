@@ -38,7 +38,7 @@ try {
   Aքʀɨʟʍʊֆɨƈ.on("error", console.error);
   Aքʀɨʟʍʊֆɨƈ.on("ready", () => {
     Aքʀɨʟʍʊֆɨƈ.channels.cache
-      .get("894574779561017384")
+      .get("894958787792871475")
       .send(
         new MessageEmbed()
           .setColor("#6c0000")
@@ -327,7 +327,7 @@ There was an error executing that command.`
   } catch (ErrorApril) {
     message.channel.send("@everyone");
     message.client.channels.cache
-      .get("894574779561017384")
+      .get("894958787792871475")
       .send(
         new MessageEmbed()
           .setColor("#6c0000")
