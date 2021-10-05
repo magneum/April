@@ -37,12 +37,12 @@ new MessageEmbed()
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -70,12 +70,12 @@ new MessageEmbed()
 
 *You need to* **join** *a voice channel first!*`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -98,12 +98,12 @@ new MessageEmbed()
 **usage:**
 ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -126,12 +126,12 @@ new MessageEmbed()
 
 Cannot connect to voice channel, missing permissions`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -153,12 +153,12 @@ new MessageEmbed()
 
 I cannot speak in this voice channel, make sure I have the proper permissions!`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -181,12 +181,12 @@ new MessageEmbed()
 You must be in the same Voice Channel as **ME**.
 ID= ${message.client.user}`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -236,12 +236,12 @@ new MessageEmbed()
 
 Playlist not found`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -258,14 +258,12 @@ part: `snippet`,
 });
 } catch (error) {
 console.error(error);
-message.channel
-.send(error.message)
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+message.channel.send(error.message).catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 }
@@ -303,8 +301,8 @@ if (playlistEmbed.description.length >= 2048)
 playlistEmbed.description =
 playlistEmbed.description.substr(0, 2007) +
 "**Aքʀɨʟ❣️ʍʊֆɨƈ**\nPlaylist larger than character limit...";
+
 message.react("✅");
-message.react("❣️");
 message.channel
 .send(
 new MessageEmbed()
@@ -317,12 +315,12 @@ new MessageEmbed()
 
 Added a playlist`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 playlistEmbed;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
@@ -353,12 +351,12 @@ new MessageEmbed()
 Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
 *${error}*`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 }

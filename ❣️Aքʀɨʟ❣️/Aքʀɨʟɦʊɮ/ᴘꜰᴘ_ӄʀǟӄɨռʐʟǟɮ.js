@@ -24,14 +24,12 @@ const embedfactor = new MessageEmbed()
 
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`);
-message.channel
-.send(embedfactor)
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+message.channel.send(embedfactor).catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -42,7 +40,6 @@ message.content.startsWith(AքʀɨʟʄɨӼ + "pfp") &&
 message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
 ) {
 message.react("✅");
-message.react("❣️");
 const user = message.mentions.users.first();
 if (!message.mentions.users.first()) {
 return message.channel.send(

@@ -31,11 +31,11 @@ message.channel
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`))
 .catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -58,11 +58,11 @@ message.channel
 
 There is nothing in queue.`))
 .catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -83,11 +83,11 @@ message.channel
 
 *You need to* **join** *a voice channel first!*`))
 .catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -126,8 +126,8 @@ queue.songs = queue.songs.filter((item, index) => {
 if (songs.find((songIndex) => songIndex - 1 === index)) removed.push(item);
 else return true;
 });
+
 message.react("✅");
-message.react("❣️");
 queue.textChannel
 .send(
 new MessageEmbed()
@@ -143,18 +143,18 @@ new MessageEmbed()
 ⏹ Removed **${removed.map((music) => music.title).join(`\n`)}** from the queue.`)
 )
 .catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 } else if (!isNaN(args[0]) && args[0] >= 1 && args[0] <= queue.songs.length) {
 console.log(`we got elsed!`);
+
 message.react("✅");
-message.react("❣️");
 queue.textChannel
 .send(
 new MessageEmbed()
@@ -170,11 +170,11 @@ new MessageEmbed()
 ⏹ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`)
 )
 .catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`

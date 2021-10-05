@@ -40,12 +40,12 @@ new MessageEmbed()
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
 .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ has left the voice channel!**`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 }, ᴀᴘʀɪʟᴡᴀᴋᴇ);
 const queue = message.client.queue.get(message.guild.id);
 message.client.queue.delete(message.guild.id);
@@ -84,12 +84,12 @@ new MessageEmbed()
 .setDescription(`👍**Ú§êr >** ${message.author}
 **Only YouTube playing/streaming is allowed**`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -116,12 +116,12 @@ new MessageEmbed()
 **Error:** 
 *${error}*`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -259,9 +259,7 @@ let current = new MessageEmbed()
 .setAuthor(`April❣️Music`)
 .setTitle(`Now🥳playing`)
 .setURL("https://github.com/Krakinz?tab=repositories")
-.setThumbnail(
-`https://img.youtube.com/vi/${id}/hqdefault.jpg`
-)
+.setThumbnail(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
 [${music.title}](${music.url})
 
@@ -285,14 +283,12 @@ seek,
 false
 );
 }
-message.channel
-.send(current)
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+message.channel.send(current).catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 break;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
@@ -359,12 +355,12 @@ new MessageEmbed()
 .setDescription(`👍**Ú§êr >** ${message.author}
 **You need to join a voice channel first!**`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -382,12 +378,12 @@ new MessageEmbed()
 .setDescription(`👍**Ú§êr >** ${message.author}
 ⏩ **Skipped the music**`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 collector.stop();
 break;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -411,12 +407,12 @@ new MessageEmbed()
 
 **You need to join a voice channel first!**`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -437,12 +433,11 @@ new MessageEmbed()
 
 🔇 Muted the music!`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error)// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -462,12 +457,12 @@ new MessageEmbed()
 
 🔊 Unmuted the music!`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 }
 break;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -497,12 +492,12 @@ new MessageEmbed()
 
 *You need to* **join** *a voice channel first!*`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -525,12 +520,12 @@ new MessageEmbed()
 🔉 Decreased the volume, 
 Volume now at = **${queue.volume}%**`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 break;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
@@ -559,12 +554,12 @@ new MessageEmbed()
 
 *You need to* **join** *a voice channel first!*`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -586,12 +581,12 @@ new MessageEmbed()
 
 🔊 Increased the volume, the volume is now ${queue.volume}%`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 break;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
@@ -614,12 +609,12 @@ new MessageEmbed()
 
 *You need to* **join** *a voice channel first!*`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -638,12 +633,12 @@ new MessageEmbed()
 
 Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 message.client.queue.delete(message.guild.id);
 break;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -667,12 +662,12 @@ new MessageEmbed()
 
 *You need to* **join** *a voice channel first!*`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================

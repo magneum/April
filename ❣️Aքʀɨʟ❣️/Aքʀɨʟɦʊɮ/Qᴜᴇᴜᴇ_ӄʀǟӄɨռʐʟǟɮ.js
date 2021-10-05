@@ -28,12 +28,12 @@ new MessageEmbed()
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -60,12 +60,12 @@ new MessageEmbed()
 
 Missing permission to manage messages or add reactions`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -88,20 +88,20 @@ new MessageEmbed()
 
 ⏹ Nothing playing in this server`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 let currentPage = 0;
+
 message.react("✅");
-message.react("❣️");
 const embeds = generateQueueEmbed(message, queue.songs);
 const queueEmbed = await message.channel.send(
 `**🏷Page Num:** - ${currentPage + 1}/${embeds.length}`,

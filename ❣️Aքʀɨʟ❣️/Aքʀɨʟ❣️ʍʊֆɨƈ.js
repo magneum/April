@@ -280,7 +280,12 @@ command.name
 
 ---------------:lady_beetle:---------------`)
 )
-.catch(console.error);
+.catch(console.error)
+.then((message) => {
+message.delete({
+timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+});
+});
 return;
 }
 }

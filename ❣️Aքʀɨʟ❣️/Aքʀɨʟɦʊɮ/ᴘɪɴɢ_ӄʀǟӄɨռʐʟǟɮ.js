@@ -27,12 +27,12 @@ new MessageEmbed()
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -43,7 +43,6 @@ message.content.startsWith(AքʀɨʟʄɨӼ + "ping") &&
 message.channel.name === "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
 ) {
 message.react("✅");
-message.react("❣️");
 message.channel
 .send(
 new MessageEmbed()
@@ -56,12 +55,12 @@ new MessageEmbed()
 
 ⌛️Average ping of April's Server **${Math.round(message.client.ws.ping)}ms**`)
 )
-.catch(console.error)
-.then((message) => {
-message.delete({
-timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-});
-});
+.catch(console.error);
+// .then((message) => {
+// message.delete({
+// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+// });
+// });
 return;
 }
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
