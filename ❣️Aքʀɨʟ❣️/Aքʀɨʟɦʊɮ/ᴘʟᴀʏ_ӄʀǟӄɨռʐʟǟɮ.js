@@ -22,6 +22,9 @@ module.exports = {
   cooldown: 8,
   async execute(message, args) {
     try {
+      if (message.author.bot) {
+        return;
+      }
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "play") &&
         message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"

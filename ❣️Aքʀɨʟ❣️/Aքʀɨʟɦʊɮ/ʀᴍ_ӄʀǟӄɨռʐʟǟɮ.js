@@ -15,6 +15,9 @@ module.exports = {
     cooldown: 8,
     execute(message, args) {
         try {
+            if (message.author.bot) {
+                return;
+            }
             if (message.content.startsWith(AքʀɨʟʄɨӼ + "rm") && message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") {
                 message.react("❌");
                 message.react("🔥");

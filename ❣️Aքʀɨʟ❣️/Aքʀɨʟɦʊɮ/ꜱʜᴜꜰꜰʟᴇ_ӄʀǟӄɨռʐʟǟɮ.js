@@ -8,6 +8,9 @@ module.exports = {
   cooldown: 8,
   execute(message) {
     try {
+      if (message.author.bot) {
+        return;
+      }
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "shuffle") &&
         message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"

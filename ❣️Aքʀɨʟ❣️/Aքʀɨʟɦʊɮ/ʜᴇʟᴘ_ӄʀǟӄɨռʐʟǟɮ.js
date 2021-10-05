@@ -8,6 +8,9 @@ module.exports = {
   cooldown: 3,
   execute(message) {
     try {
+      if (message.author.bot) {
+        return;
+      }
       const ᴀᴘʀɪʟʜᴇʟᴘᴇʀ = `
 ** ♥️•♪•♪Aքʀɨʟ❣️ʍʊֆɨƈ♪•♪•**
 • *version: v17.k90*

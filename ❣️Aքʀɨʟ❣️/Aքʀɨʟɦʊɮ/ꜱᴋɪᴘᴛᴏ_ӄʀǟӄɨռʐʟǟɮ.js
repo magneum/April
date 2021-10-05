@@ -8,6 +8,9 @@ module.exports = {
   cooldown: 4,
   execute(message, args) {
     try {
+      if (message.author.bot) {
+        return;
+      }
       if (
         message.content.startsWith(AքʀɨʟʄɨӼ + "skipto") &&
         message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
