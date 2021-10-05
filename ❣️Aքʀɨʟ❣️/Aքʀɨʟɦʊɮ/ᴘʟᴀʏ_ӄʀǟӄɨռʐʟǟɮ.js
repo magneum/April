@@ -250,9 +250,9 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
                   .setDescription(`**Ú§êr >** ${message.author}
 
 
-**👍❣️Joined:** \`${channel.name}\`
+**👍Joined:** \`${channel.name}\`
 **📄Bound to:** \`#${message.channel.name}\`
-**🙋🏽‍By:** ${message.author.username}#${message.author.discriminator}`)
+**❣️‍By:** \`${message.author.username}#${message.author.discriminator}\``)
               )
               .catch(console.error);
             message.channel
@@ -265,9 +265,9 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
                   .setDescription(`**Ú§êr >** ${message.author}
 
-**👍❣️Joined:** \`${channel.name}\`
+**👍Joined:** \`${channel.name}\`
 **📄Bound to:** \`#${message.channel.name}\`
-**🙋🏽‍By:** ${message.author.username}#${message.author.discriminator}`)
+**❣️‍By:** \`${message.author.username}#${message.author.discriminator}\``)
               )
               .catch(console.error);
 
