@@ -44,12 +44,13 @@ try {
           .setColor("#6c0000")
           .setAuthor(`April❣️Music`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-          .setDescription(`---------------:lady_beetle:---------------
-
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
+** ♥️•♪•♪Aքʀɨʟ❣️ʍʊֆɨƈ♪•♪•**
+• *version: v17.k90*
+---------------:lady_beetle:---------------
 ❣️𝐇𝐚𝐬 𝐛𝐞𝐞𝐧 𝐫𝐞𝐝𝐞𝐩𝐥𝐨𝐲𝐞𝐝 𝐚𝐧𝐝 𝐢𝐬 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐩𝐥𝐚𝐲 𝐦𝐮𝐬𝐢𝐜!❣️
-**Version == v16**
 
+---------------:lady_beetle:---------------
 • **${AքʀɨʟʄɨӼ}help**
 *Display this commands and descriptions.*
 • **${AքʀɨʟʄɨӼ}april**

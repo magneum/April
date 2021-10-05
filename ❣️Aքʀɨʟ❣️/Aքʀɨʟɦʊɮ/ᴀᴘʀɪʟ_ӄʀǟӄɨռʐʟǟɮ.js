@@ -9,8 +9,8 @@ module.exports = {
   execute(message) {
     try {
       const ᴀᴘʀɪʟɴᴏʀᴇ = `
-** ♥️•♪•♪Aքʀɨʟ❣️ʍʊֆɨƈ 𝗩𝗲𝗿𝘀𝗶𝗼𝗻♪•♪•**
-• *v17.k90*
+** ♥️•♪•♪Aքʀɨʟ❣️ʍʊֆɨƈ♪•♪•**
+• *version: v17.k90*
 ---------------:lady_beetle:---------------
 
 •> **❣️April** is a Discord Music player Bot with YouTube Support and is available on both Discord and Telegram.
