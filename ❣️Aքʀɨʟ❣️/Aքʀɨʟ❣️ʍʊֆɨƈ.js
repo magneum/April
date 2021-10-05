@@ -42,10 +42,10 @@ try {
       .send(
         new MessageEmbed()
           .setColor("#6c0000")
-          .setAuthor(`April❣️Music (c)`)
+          .setAuthor(`April❣️Music`)
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
           .setDescription(`---------------:lady_beetle:---------------
 
 ❣️𝐇𝐚𝐬 𝐛𝐞𝐞𝐧 𝐫𝐞𝐝𝐞𝐩𝐥𝐨𝐲𝐞𝐝 𝐚𝐧𝐝 𝐢𝐬 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐩𝐥𝐚𝐲 𝐦𝐮𝐬𝐢𝐜!❣️
@@ -101,7 +101,7 @@ try {
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
           .setDescription(
             `𝗗𝗲𝗮𝗿: @everyone
 ---------------:lady_beetle:---------------
@@ -122,7 +122,7 @@ Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
           .setDescription(`❤️‍🔥 **Hey there MUSIC lovers !**
 I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
 Please use the channel **Aքʀɨʟ❣️ʍʊֆɨƈ** for any **ᴀᴘʀɪʟ_ᴘʟᴀʏᴇʀ** commands.
@@ -199,12 +199,12 @@ Aքʀɨʟʍʊֆɨƈ.on("message", async (message) => {
       message.reply(
         new MessageEmbed()
           .setColor("#e69159")
-          .setAuthor(`April❣️Music (c)`)
+          .setAuthor(`April❣️Music`)
           .setTitle(`⚠️Warning!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
           .setDescription(`👍**Ú§êr >** ${message.author}
 ---------------:lady_beetle:---------------
 
@@ -264,12 +264,12 @@ April❣️Music by🔱KrakinzLab™️
           .send(
             new MessageEmbed()
               .setColor("#e69159")
-              .setAuthor(`April❣️Music (c)`)
+              .setAuthor(`April❣️Music`)
               .setTitle(`⚠️Warning!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
               .setDescription(`
 👍**Ú§êr >** ${message.author}
 ---------------:lady_beetle:---------------
@@ -300,12 +300,12 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the "${
         .send(
           new MessageEmbed()
             .setColor("#e69159")
-            .setAuthor(`April❣️Music (c)`)
+            .setAuthor(`April❣️Music`)
             .setTitle(`⚠️Warning!`)
             .setURL("https://github.com/Krakinz?tab=repositories")
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
             .setDescription(
               `
 👍**Ú§êr >** ${message.author}
@@ -334,10 +334,10 @@ There was an error executing that command.`
         new MessageEmbed()
           .setColor("#6c0000")
           .setTitle(`⚠️Warning!`)
-          .setAuthor(`April❣️Music (c)`)
+          .setAuthor(`April❣️Music`)
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
           .setDescription(`
 **Dear 🔱KRAKINZ🔱 There has been an Error in a GUILD.**
 
@@ -352,8 +352,8 @@ There was an error executing that command.`
       new MessageEmbed()
         .setColor("#DB4434")
         .setAuthor("Error🔺Caught")
-        .setAuthor(`April❣️Music (c)`)
-        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+        .setAuthor(`April❣️Music`)
+        .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
         .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
         .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
 

@@ -18,11 +18,11 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#e69159")
-              .setAuthor(`April❣️Music (c)`)
+              .setAuthor(`April❣️Music`)
               .setTitle(`⚠️Warning!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
               .setDescription(`👍**Ú§êr >** ${message.author}
 
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
@@ -51,11 +51,11 @@ module.exports = {
             .send(
               new MessageEmbed()
                 .setColor("#e69159")
-                .setAuthor(`April❣️Music (c)`)
+                .setAuthor(`April❣️Music`)
                 .setTitle(`⚠️Warning!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`👍**Ú§êr >** ${message.author}
 
 Missing permission to manage messages or add reactions`)
@@ -79,11 +79,11 @@ Missing permission to manage messages or add reactions`)
             .send(
               new MessageEmbed()
                 .setColor("#e69159")
-                .setAuthor(`April❣️Music (c)`)
+                .setAuthor(`April❣️Music`)
                 .setTitle(`⚠️Warning!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`👍**Ú§êr >** ${message.author}
 
 ⏹ Nothing playing in this server`)
@@ -172,10 +172,10 @@ Missing permission to manage messages or add reactions`)
             .map((track) => `${++j} - [${track.title}](${track.url})`)
             .join(`\n`);
           const embed = new MessageEmbed()
-            .setAuthor(`April❣️Music (c)`)
+            .setAuthor(`April❣️Music`)
             .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
             .setColor("#6c0000")
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
             .setDescription(
               `**Aքʀɨʟ❣️ʍʊֆɨƈ**\n\n♥️**Current Song** -_[${queue[0].title}]_\n\n${info}`
             );
@@ -194,10 +194,10 @@ Missing permission to manage messages or add reactions`)
           new MessageEmbed()
             .setColor("#6c0000")
             .setTitle(`⚠️Warning!`)
-            .setAuthor(`April❣️Music (c)`)
+            .setAuthor(`April❣️Music`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
             .setDescription(`
 **Dear 🔱KRAKINZ🔱 There has been an Error in a GUILD.**
 
@@ -212,8 +212,8 @@ Missing permission to manage messages or add reactions`)
         new MessageEmbed()
           .setColor("#DB4434")
           .setAuthor("Error🔺Caught")
-          .setAuthor(`April❣️Music (c)`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+          .setAuthor(`April❣️Music`)
+          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
           .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
           .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
 
