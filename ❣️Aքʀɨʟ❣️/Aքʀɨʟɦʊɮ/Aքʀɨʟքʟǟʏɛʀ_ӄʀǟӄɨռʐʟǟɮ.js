@@ -188,11 +188,14 @@ module.exports = {
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
               .setDescription(`---------------:lady_beetle:---------------
 
-**🏷\`\`\`Title\`\`\`**• [${music.title}](${music.url})
-**🏷\`\`\`Requested By**\`\`\`**• ${message.author}
-**🏷\`\`\`Duration**\`\`\`**• ${Math.round((music.duration / 60) * 100) / 100}min
+\`\`\`Title\`\`\`
+**🏷[${music.title}](${music.url})**
+\`\`\`Requested By**\`\`\`
+🏷${message.author}
+\`\`\`Duration**\`\`\`
+**🏷${Math.round((music.duration / 60) * 100) / 100}min**
 
-💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞`)
+*Streaming from 𝐘⭕𝐮𝐓𝐮𝐛𝐞*`)
           )
           .catch(console.error);
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏭"); //skip
