@@ -1,6 +1,5 @@
 const {
   Aքʀɨʟȶʊɮɛ,
-  notneeded,
   ᴀᴘʀɪʟᴍᴀx,
   ᴀᴘʀɪʟᴠᴏʟ,
   AքʀɨʟʄɨӼ,
@@ -9,7 +8,6 @@ const {
 const { play } = require("./Aքʀɨʟքʟǟʏɛʀ_ӄʀǟӄɨռʐʟǟɮ");
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const YouTubeAPI = require("simple-youtube-api");
-const scdl = require("soundcloud-downloader").default;
 const youtube = new YouTubeAPI(Aքʀɨʟȶʊɮɛ);
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
@@ -29,7 +27,7 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setColor("#e69159")
-              .setTitle("April❣️Music by🔱KrakinzLab™️")
+              .setTitle(`April❣️Music (c)`)
               .setAuthor(`⚠️Warning!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -63,7 +61,7 @@ module.exports = {
             .send(
               new MessageEmbed()
                 .setColor("#e69159")
-                .setTitle("April❣️Music by🔱KrakinzLab™️")
+                .setTitle(`April❣️Music (c)`)
                 .setAuthor(`⚠️Warning!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -90,7 +88,7 @@ module.exports = {
             .send(
               new MessageEmbed()
                 .setColor("#e69159")
-                .setTitle("April❣️Music by🔱KrakinzLab™️")
+                .setTitle(`April❣️Music (c)`)
                 .setAuthor(`⚠️Warning!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -119,7 +117,7 @@ ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
             .send(
               new MessageEmbed()
                 .setColor("#e69159")
-                .setTitle("April❣️Music by🔱KrakinzLab™️")
+                .setTitle(`April❣️Music (c)`)
                 .setAuthor(`⚠️Warning!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -146,7 +144,7 @@ Cannot connect to voice channel, missing permissions`)
             .send(
               new MessageEmbed()
                 .setColor("#e69159")
-                .setTitle("April❣️Music by🔱KrakinzLab™️")
+                .setTitle(`April❣️Music (c)`)
                 .setAuthor(`⚠️Warning!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -173,7 +171,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
             .send(
               new MessageEmbed()
                 .setColor("#e69159")
-                .setTitle("April❣️Music by🔱KrakinzLab™️")
+                .setTitle(`April❣️Music (c)`)
                 .setAuthor(`⚠️Warning!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -229,7 +227,7 @@ ID= ${message.client.user}`)
               .send(
                 new MessageEmbed()
                   .setColor("#e69159")
-                  .setTitle("April❣️Music by🔱KrakinzLab™️")
+                  .setTitle(`April❣️Music (c)`)
                   .setAuthor(`⚠️Warning!`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -245,21 +243,6 @@ Playlist not found`)
                 });
               });
             return;
-          }
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-          `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
-          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-        } else if (scdl.isValidUrl(args[0])) {
-          if (args[0].includes(`/sets/`)) {
-            message.channel.send(
-              "**Aքʀɨʟ❣️ʍʊֆɨƈ**\n⌛ Fetching the playlist..."
-            );
-            playlist = await scdl.getSetInfo(args[0], notneeded);
-            videos = playlist.tracks.map((track) => ({
-              title: track.title,
-              url: track.permalink_url,
-              duration: track.duration / 1000,
-            }));
           }
           // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
           `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
@@ -360,7 +343,7 @@ Added a playlist`)
               .send(
                 new MessageEmbed()
                   .setColor("#e69159")
-                  .setTitle("April❣️Music by🔱KrakinzLab™️")
+                  .setTitle(`April❣️Music (c)`)
                   .setAuthor(`⚠️Warning!`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -391,7 +374,7 @@ Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
           new MessageEmbed()
             .setColor("#6c0000")
             .setAuthor(`⚠️Warning!`)
-            .setTitle("April❣️Music by🔱KrakinzLab™️")
+            .setTitle(`April❣️Music (c)`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
@@ -409,7 +392,7 @@ Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
         new MessageEmbed()
           .setColor("#DB4434")
           .setAuthor("Error🔺Caught")
-          .setTitle("April❣️Music by🔱KrakinzLab™️")
+          .setTitle(`April❣️Music (c)`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
           .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
           .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
