@@ -18,7 +18,7 @@ client.once("disconnect", () => {
   console.log("Disconnect!");
 });
 
-client.on("message", async message => {
+client.on("message", async (message) => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
 
@@ -66,7 +66,7 @@ async function execute(message, serverQueue) {
       connection: null,
       songs: [],
       volume: 5,
-      playing: true
+      playing: true,
     };
 
     queue.set(message.guild.id, queueContruct);
@@ -125,7 +125,7 @@ function play(guild, song) {
       serverQueue.songs.shift();
       play(guild, serverQueue.songs[0]);
     })
-    .on("error", error => console.error(error));
+    .on("error", (error) => console.error(error));
   dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
   serverQueue.textChannel.send(`Start playing: **${song.title}**`);
 }
