@@ -28,14 +28,15 @@ module.exports = {
 • **${AքʀɨʟʄɨӼ}resume** :Resume currently playing music.
 • **${AքʀɨʟʄɨӼ}shuffle** :Shuffle music queue.
 • **${AքʀɨʟʄɨӼ}skipto** :Skip to the selected queue number.
-• **${AքʀɨʟʄɨӼ}vol** =Change volume of currently playing music.
+• **${AքʀɨʟʄɨӼ}stop** :Stops the music.
+• **${AքʀɨʟʄɨӼ}vol** :Change volume of currently playing music.
 ---------------:lady_beetle:---------------
 
 ** ♥️•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•**
-•**⏭skip**|•**🔄loop**
-•**🔉vol -**|•**🔊vol +**
-•**🎙️now playing**|•**📖queue**
-•**🔇mute/unmute**|•**⏹stop**`;
+•**⏭skip**••❣️••**🔄loop**
+•**🔉vol -**••❣️••**🔊vol +**
+•**🎙️now playing**••❣️••**📖queue**
+•**🔇mute/unmute**••❣️••**⏹stop**`;
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
