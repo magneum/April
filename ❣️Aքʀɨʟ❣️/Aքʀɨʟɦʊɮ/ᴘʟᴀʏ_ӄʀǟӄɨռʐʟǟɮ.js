@@ -317,7 +317,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
             queueConstruct.connection.voice.setSelfDeaf(true);
             queueConstruct.connection.voice.setDeaf(true);
           }
-        } catch {
+        } catch (error) {
           console.log(error);
         }
         if (urlValid) {

@@ -1,5 +1,5 @@
 const ytdl = require("discord-ytdl-core");
-const { createBar } = require("string-progressbar");
+const { splitBar } = require("string-progressbar");
 const { canModifyQueue, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
 const {
   MessageEmbed,
@@ -434,7 +434,7 @@ Volume now at = **${queue.volume}%**`)
               nowPlaying.addField(
                 "\u200b",
                 "**[" +
-                  createBar(ms == 0 ? seek : ms, seek, 25, "▬", "⚪️")[0] +
+                  splitBar(ms == 0 ? seek : ms, seek, 25, "▬", "⚪️")[0] +
                   "]**\n**" +
                   new Date(seek * 1000).toISOString().substr(11, 8) +
                   " / " +
@@ -531,7 +531,12 @@ Volume now at = **${queue.volume}%**`)
                 );
               await queue.textChannel
                 .send(ᴀᴘʀɪʟᴘᴀᴜꜱᴇᴍᴇʙᴇᴅ)
-                .catch(console.error);
+                .catch(console.error)
+                .then((message) => {
+                  message.delete({
+                    timeout: 30000,
+                  });
+                });
             } else {
               queue.playing = !queue.playing;
               queue.connection.dispatcher.resume();
@@ -545,8 +550,14 @@ Volume now at = **${queue.volume}%**`)
                   `**Ú§êr >** ${user.username} resumed the music!`,
                   "https://cdn.discordapp.com/emojis/769912238236106793.png"
                 );
-              await queue.textChannel.send(ᴀᴘʀɪʟᴘʟᴀʏᴇᴍʙᴇᴅ).catch(console.error);
-              await ᴀᴘʀɪʟᴘᴀᴜꜱᴇᴍᴇʙᴇᴅ.delete();
+              await queue.textChannel
+                .send(ᴀᴘʀɪʟᴘʟᴀʏᴇᴍʙᴇᴅ)
+                .catch(console.error)
+                .then((message) => {
+                  message.delete({
+                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                  });
+                });
             }
             break;
 
