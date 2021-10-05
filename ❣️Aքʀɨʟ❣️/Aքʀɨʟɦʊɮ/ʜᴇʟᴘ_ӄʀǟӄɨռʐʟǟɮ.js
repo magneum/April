@@ -10,7 +10,6 @@ module.exports = {
     try {
       const ᴀᴘʀɪʟʜᴇʟᴘᴇʀ = `
 * ♥️•♪•♪𝐌𝐚𝐧𝐮𝐚𝐥-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•*
-• **${AքʀɨʟʄɨӼ}filter** = Music filters when playing audio.
 • **${AքʀɨʟʄɨӼ}help** = Display this commands and descriptions.
 • **${AքʀɨʟʄɨӼ}april** = Display the  license and a few more info.
 • **${AքʀɨʟʄɨӼ}np** = Show now playing music.
