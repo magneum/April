@@ -452,12 +452,12 @@ Audio Not Found`)
           } else {
             estimatedtime = estimatedtime + " Seconds";
           }
-          serverQueue.songs.push(song);
+          serverQueue.songs.push(music);
           const newsong = new MessageEmbed()
-            .setTitle("✅ " + song.title)
+            .setTitle("✅ " + music.title)
             .setColor("#ff0040")
             .setThumbnail(thumb)
-            .setURL(song.url)
+            .setURL(music.url)
             .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
             .addField(
               "Estimated time until playing:",
