@@ -2,6 +2,9 @@ const ytsr = require("youtube-sr");
 const { play } = require("./Aքʀɨʟքʟǟʏɛʀ_ӄʀǟӄɨռʐʟǟɮ");
 const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const { AքʀɨʟʄɨӼ, Aքʀɨʟքʊʀɢɛʀ } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
+const videoPattern =
+  /^(https?:\/\/)?(www\.)?(m\.)?(youtube\.com|youtu\.?be)\/.+$/gi;
+const ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ = /^.*(list=)([^#\&\?]*).*/gi;
 
 module.exports = {
   name: "play",
@@ -72,7 +75,30 @@ module.exports = {
             });
           return;
         }
-
+        if (ɢᴏᴛʏᴏᴜᴛᴜʙᴇʟɪꜱᴛ.test(args[0])) {
+          message.react("❌");
+          message.react("🔥");
+          message.channel
+            .send(
+              new MessageEmbed()
+                .setColor("#e69159")
+                .setTitle("April❣️Music by🔱KrakinzLab™️")
+                .setAuthor(`⚠️Warning!`)
+                .setURL("https://github.com/Krakinz?tab=repositories")
+                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+                .setDescription(`**Ú§êr >** ${message.author}
+  This link seems to be a playlist link.
+  Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
+            )
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            });
+          return;
+        }
         if (serverQueue && channel !== message.guild.me.voice.channel) {
           message.react("❌");
           message.react("🔥");
@@ -177,8 +203,6 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
         }
 
         const search = args.join(" ");
-        const videoPattern =
-          /^(https?:\/\/)?(www\.)?(m\.)?(youtube\.com|youtu\.?be)\/.+$^.*(list=)([^#\&\?]*).*/gi;
         const urlValid = videoPattern.test(args[0]);
 
         const queueConstruct = {
@@ -375,27 +399,27 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
             estimatedtime = estimatedtime + " Seconds";
           }
           serverQueue.songs.push(song);
-          const newsong = new MessageEmbed()
-            .setTitle("✅ " + song.title)
-            .setColor("#ff0000")
-            .setThumbnail(thumb)
-            .setURL(song.url)
-            .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
-            .addField(
-              "Estimated time until playing:",
-              `\`${estimatedtime}\``,
-              true
+          return serverQueue.textChannel
+            .send(
+              new MessageEmbed()
+                .setTitle("✅ " + song.title)
+                .setColor("#ff0000")
+                .setThumbnail(thumb)
+                .setURL(song.url)
+                .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
+                .addField(
+                  "Estimated time until playing:",
+                  `\`${estimatedtime}\``,
+                  true
+                )
+                .addField(
+                  "Position in queue",
+                  `**\`${serverQueue.songs.length - 1}\`**`,
+                  true
+                )
+                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
             )
-            .addField(
-              "Position in queue",
-              `**\`${serverQueue.songs.length - 1}\`**`,
-              true
-            )
-            .setFooter(
-              `Requested by: ${message.author.username}#${message.author.discriminator}`,
-              message.member.user.displayAvatarURL({ dynamic: true })
-            );
-          return serverQueue.textChannel.send(newsong).catch(console.error);
+            .catch(console.error);
         }
         queueConstruct.songs.push(song);
         message.client.queue.set(message.guild.id, queueConstruct);
