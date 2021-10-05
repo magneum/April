@@ -140,7 +140,7 @@ There is nothing in queue.`))
                                     "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️"
                                 ).setDescription(`👍**Ú§êr >** ${message.author}
 
-⏺ Removed **${removed.map((music) => music.title).join(`\n`)}** from the queue.`)
+⏹ Removed **${removed.map((music) => music.title).join(`\n`)}** from the queue.`)
                         )
                         .catch(console.error)
                         .then((message) => {
@@ -167,7 +167,7 @@ There is nothing in queue.`))
                                     "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️"
                                 ).setDescription(`👍**Ú§êr >** ${message.author}
 
-⏺ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`)
+⏹ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`)
                         )
                         .catch(console.error)
                         .then((message) => {

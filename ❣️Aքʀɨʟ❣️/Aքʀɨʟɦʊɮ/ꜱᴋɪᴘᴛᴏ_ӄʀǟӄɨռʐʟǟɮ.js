@@ -175,7 +175,7 @@ There is nothing playing that I could skip for you.`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
               .setDescription(`👍**Ú§êr >** ${message.author}
 
-⏺ stopped the music!`)
+⏹ stopped the music!`)
           )
           .catch(console.error)
           .then((message) => {

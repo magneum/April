@@ -4,7 +4,11 @@ const {
   ᴀᴘʀɪʟᴡᴀᴋᴇ,
   Aքʀɨʟքʊʀɢɛʀ,
 } = require("../Aքʀɨʟռɛʋ/ʟᴏᴀᴅᴇʀ");
-const { MessageEmbed } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
+const {
+  MessageEmbed,
+  splitMessage,
+  escapeMarkdown,
+} = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const getVideoId = require("get-video-id");
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
@@ -165,8 +169,7 @@ module.exports = {
               .setDescription(`---------------:lady_beetle:---------------
 
 👍❣️𝗛𝗮𝘀 𝗯𝗲𝗲𝗻 𝗣𝗹𝘂𝗴𝗴𝗲𝗱 𝗯𝘆 \`${message.author}\`
-📄 𝗮𝗻𝗱 𝗶𝘀 𝗯𝗼𝘂𝗻𝗱 𝘁𝗼 \`#${message.channel.name}\`
-`)
+📄 𝗮𝗻𝗱 𝗶𝘀 𝗯𝗼𝘂𝗻𝗱 𝘁𝗼 \`#${message.channel.name}\``)
           )
           .catch(console.error);
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -178,31 +181,28 @@ module.exports = {
               .setColor("#6c0000")
               .setTitle("April❣️Music by🔱KrakinzLab™️")
               .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
-              .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
+              .setImage(`https://img.youtube.com/vi/${id}/default.jpg`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
-              .setDescription(`
+              .setDescription(`---------------:lady_beetle:---------------
 🏷**Title**
-|• [${music.title}](${music.url})
+>• [${song.title}](${song.url})
 🏷**Requested By**
-|• ${message.author}
+>• ${message.author}#${message.author.discriminator}
+🏷**Duration**
+>• \`${song.duration}\`minutes
 
----------------:lady_beetle:---------------
-
-⏭•**Skip music**
-🔇•**Mute/Unmute music.**
-🔊•**Change volume  music.**
-🔁•**Toggle music loop.**
-⏺•**Stops the music queue.**
-
-💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞`)
+💯Direct Streaming from 𝐘𝐨𝐮𝐓𝐮𝐛𝐞
+÷Aքʀɨʟ❣️ʍʊֆɨƈ™÷••========—`)
           )
           .catch(console.error);
-        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏭");
-        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔇");
-        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔉");
-        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔊");
-        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔁");
-        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏺");
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏭"); //skip
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔇"); // mute/unmute
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔉"); //vol -
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔊"); //vol +
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔄"); //loop
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏹"); //stop
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🎙️"); //np
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("📖"); //queue
       } catch (error) {
         console.error(error);
       }
@@ -222,6 +222,118 @@ module.exports = {
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         const member = message.guild.member(user);
         switch (reaction.emoji.name) {
+          case "🎙️":
+            if (!canModifyQueue(member)) {
+              message.react("❌");
+              message.react("🔥");
+              message.channel
+                .send(
+                  new MessageEmbed()
+                    .setColor("#FF5F15")
+                    .setTitle("April❣️Music by🔱KrakinzLab™️")
+                    .setAuthor(`⚠️Warning!`)
+                    .setURL("https://github.com/Krakinz?tab=repositories")
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+                    .setDescription(`👍**Ú§êr >** ${message.author}
+
+**You need to join a voice channel first!**`)
+                )
+                .catch(console.error);
+              return;
+            }
+            reaction.users.remove(user).catch(console.error);
+            const song = queue.songs[0];
+            let minutes = song.duration.split(":")[0];
+            let seconds = song.duration.split(":")[1];
+            let ms = Number(minutes) * 60 + Number(seconds);
+            let thumb;
+            if (song.thumbnail === undefined) {
+              const { id } = getVideoId(`${music.url}`);
+              thumb = `https://img.youtube.com/vi/${id}/default.jpg`;
+            } else thumb = song.thumbnail.url;
+            const seek =
+              (queue.connection.dispatcher.streamTime -
+                queue.connection.dispatcher.pausedTime) /
+              1000;
+            const left = ms - seek;
+            let nowPlaying = new MessageEmbed()
+              .setTitle("Now playing")
+              .setDescription(`[**${song.title}**](${song.url})`)
+              .setThumbnail(thumb)
+              .setColor("#ff0040")
+              .setFooter(
+                "Time Remaining: " +
+                  new Date(left * 1000).toISOString().substr(11, 8)
+              );
+            if (ms >= 10000) {
+              nowPlaying.addField("\u200b", "🔴 LIVE", false);
+              return message.channel.send(nowPlaying);
+            }
+            if (ms > 0 && ms < 10000) {
+              nowPlaying.addField(
+                "\u200b",
+                "**[" +
+                  splitBar(ms == 0 ? seek : ms, seek, 25, "▬", "⚪️")[0] +
+                  "]**\n**" +
+                  new Date(seek * 1000).toISOString().substr(11, 8) +
+                  " / " +
+                  (ms == 0
+                    ? " ◉ LIVE"
+                    : new Date(ms * 1000).toISOString().substr(11, 8)) +
+                  "**",
+                false
+              );
+              return message.channel.send(nowPlaying);
+            }
+            break;
+            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+            `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
+          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+          case "📖":
+            if (!canModifyQueue(member)) {
+              message.react("❌");
+              message.react("🔥");
+              message.channel
+                .send(
+                  new MessageEmbed()
+                    .setColor("#FF5F15")
+                    .setTitle("April❣️Music by🔱KrakinzLab™️")
+                    .setAuthor(`⚠️Warning!`)
+                    .setURL("https://github.com/Krakinz?tab=repositories")
+                    .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                    .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(C)2021-Krakinz™️🔱KrakinzLab™️")
+                    .setDescription(`👍**Ú§êr >** ${message.author}
+
+**You need to join a voice channel first!**`)
+                )
+                .catch(console.error);
+
+              return;
+            }
+            reaction.users.remove(user).catch(console.error);
+            const description = queue.songs.map(
+              (song, index) => `${index + 1}. ${escapeMarkdown(song.title)}`
+            );
+            let queueEmbed = new MessageEmbed()
+              .setTitle("Music Queue")
+              .setDescription(description)
+              .setColor("#ff0040");
+            const splitDescription = splitMessage(description, {
+              maxLength: 2048,
+              char: "\n",
+              prepend: "",
+              append: "",
+            });
+            splitDescription.forEach(async (m) => {
+              queueEmbed.setDescription(m);
+              message.react("✅");
+              message.channel.send(queueEmbed);
+            });
+            break;
+            // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+            `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
+          // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
           case "⏭":
             queue.playing = true;
             reaction.users.remove(user).catch(console.error);
@@ -477,7 +589,7 @@ Volume now at = **${queue.volume}%**`)
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
             `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
           // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-          case "🔁":
+          case "🔄":
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               message.react("❌");
@@ -530,7 +642,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
             `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
           // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-          case "⏺":
+          case "⏹":
             reaction.users.remove(user).catch(console.error);
             if (!canModifyQueue(member)) {
               message.react("❌");
