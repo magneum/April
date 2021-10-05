@@ -57,7 +57,7 @@ try {
 *Display the  license and a few more info.*`)
       )
       .catch(console.error);
-    Aքʀɨʟʍʊֆɨƈ.user.setActivity(`❣️ ${AքʀɨʟʄɨӼ}april && ${AքʀɨʟʄɨӼ}play`, {
+    Aքʀɨʟʍʊֆɨƈ.user.setActivity(`❣️ ${AքʀɨʟʄɨӼ}april & ${AքʀɨʟʄɨӼ}play`, {
       type: "WATCHING",
     });
     console.log(`
