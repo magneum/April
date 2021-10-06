@@ -195,18 +195,7 @@ module.exports = {
 •**🔇mute/unmute**••❣️••**⏹stop**`)
           )
           .catch(console.error);
-        setInterval(function () {
-          message.channel
-            .send(
-              `⚠️ᴡᴀʀɴɪɴɢ! | **Do Not Disconnect the bot.. Always either End using ${AքʀɨʟʄɨӼ}stop or ⏹**`
-            )
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: 6000,
-              });
-            });
-        }, 1 * 60000);
+      
 
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏭");
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔄");
