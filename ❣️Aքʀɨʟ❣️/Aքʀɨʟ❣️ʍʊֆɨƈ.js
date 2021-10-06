@@ -41,7 +41,7 @@ try {
     //       .get("894958787792871475")
     //       .send(
     //         new MessageEmbed()
-    //           .setColor("#900C3F")
+    //           .setColor("#ff0034")
     //           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
     //           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
     //           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
@@ -96,7 +96,7 @@ try {
     channel
       .send(
         new MessageEmbed()
-          .setColor("#900C3F")
+          .setColor("#ff0034")
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -114,7 +114,7 @@ Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..`
     channel
       .send(
         new MessageEmbed()
-          .setColor("#900C3F")
+          .setColor("#ff0034")
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

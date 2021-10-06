@@ -176,7 +176,7 @@ Missing permission to manage messages or add reactions`)
           const embed = new MessageEmbed()
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-            .setColor("#900C3F")
+            .setColor("#ff0034")
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
             .setDescription(
               `**Aքʀɨʟ❣️ʍʊֆɨƈ**\n\n♥️**Current Song** -_[${queue[0].title}]_\n\n${info}`

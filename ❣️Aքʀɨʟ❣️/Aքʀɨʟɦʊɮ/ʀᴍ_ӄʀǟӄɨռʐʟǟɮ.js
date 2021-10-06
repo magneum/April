@@ -133,7 +133,7 @@ You need to join a voice channel first!`))
                     queue.textChannel
                         .send(
                             new MessageEmbed()
-                                .setColor("#900C3F")
+                                .setColor("#ff0034")
                                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -160,7 +160,7 @@ You need to join a voice channel first!`))
                     queue.textChannel
                         .send(
                             new MessageEmbed()
-                                .setColor("#900C3F")
+                                .setColor("#ff0034")
                                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                                 .setURL("https://github.com/Krakinz?tab=repositories")

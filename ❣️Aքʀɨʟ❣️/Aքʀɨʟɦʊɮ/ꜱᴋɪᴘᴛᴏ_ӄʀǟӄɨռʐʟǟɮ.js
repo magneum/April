@@ -170,7 +170,7 @@ There is nothing playing that I could skip for you.`)
         queue.textChannel
           .send(
             new MessageEmbed()
-              .setColor("#900C3F")
+              .setColor("#ff0034")
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setURL("https://github.com/Krakinz?tab=repositories")

@@ -28,7 +28,7 @@ module.exports = {
         message.react("✅");
         message.author.send(
           new MessageEmbed()
-            .setColor("#900C3F")
+            .setColor("#ff0034")
             .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
         );
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================

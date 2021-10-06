@@ -49,7 +49,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#900C3F")
+              .setColor("#ff0034")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)

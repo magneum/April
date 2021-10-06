@@ -299,7 +299,7 @@ Playlist not found`)
             newSongs.map((music, index) => `${index + 1}. ${music.title}`)
           )
           .setURL(playlist.url)
-          .setColor("#900C3F")
+          .setColor("#ff0034")
           .setTimestamp();
         if (playlistEmbed.description.length >= 2048)
           playlistEmbed.description =
@@ -310,7 +310,7 @@ Playlist not found`)
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#900C3F")
+              .setColor("#ff0034")
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)

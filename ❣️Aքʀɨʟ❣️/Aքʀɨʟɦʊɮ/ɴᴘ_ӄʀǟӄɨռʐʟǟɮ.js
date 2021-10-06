@@ -90,7 +90,7 @@ April is not playing anymusic yet....`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
           .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
           .setDescription(`${music.title}\n${music.url}`)
-          .setColor("#900C3F")
+          .setColor("#ff0034")
           .setAuthor(message.client.user.username);
         if (music.duration > 0) {
           current.addField(

@@ -44,7 +44,7 @@ module.exports = {
         message.react("✅");
         message.author.send(
           new MessageEmbed()
-            .setColor("#900C3F")
+            .setColor("#ff0034")
             .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
         );
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -54,7 +54,7 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setDescription(`❣️| ${message.author}\n${ᴀᴘʀɪʟʜᴇʟᴘᴇʀ}`)
-              .setColor("#900C3F")
+              .setColor("#ff0034")
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setURL("https://github.com/Krakinz?tab=repositories")
