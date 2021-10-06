@@ -43,7 +43,7 @@ try {
         new MessageEmbed()
           .setColor("#ffffff")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
-          // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+          .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
 ** ♥️•♪•♪Aքʀɨʟ❣️ʍʊֆɨƈ♪•♪•**
 • *version: v17.k90*
