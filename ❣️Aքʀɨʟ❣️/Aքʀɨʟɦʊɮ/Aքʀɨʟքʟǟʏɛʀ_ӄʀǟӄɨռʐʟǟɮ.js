@@ -166,8 +166,7 @@ module.exports = {
 📄 𝗮𝗻𝗱 𝗶𝘀 𝗯𝗼𝘂𝗻𝗱 𝘁𝗼 \`#${message.channel.name}\``)
           )
           .catch(console.error)
-          .catch(console.error)// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`, // message.delete({ // .then((message) => {
-        // });
+          .catch(console.error)// }); // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`, // message.delete({ // .then((message) => {
         // });
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
@@ -189,11 +188,11 @@ module.exports = {
 \`𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲\`
 🏷${message.author}
 
-** ♥️•♪•♪𝐏𝐥𝐚𝐲𝐞𝐫-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•**
+** •♪•♪𝐏𝐥𝐚𝐲𝐞𝐫-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•**
 •**⏭skip**••❣️••**🔄loop**
 •**🔉vol -**••❣️••**🔊vol +**
-•**⭕now playing**••❣️••**📖queue**
-•**🔇mute/unmute**••❣️••**⏹stop**`)
+•**⭕now playing**••❣️••**🔇mute/unmute**
+•**⏹stop**`)
           )
           .catch(console.error);
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏭");
@@ -202,7 +201,6 @@ module.exports = {
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔉");
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔊");
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⭕");
-        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("📖");
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏹");
       } catch (error) {
         console.error(error);
