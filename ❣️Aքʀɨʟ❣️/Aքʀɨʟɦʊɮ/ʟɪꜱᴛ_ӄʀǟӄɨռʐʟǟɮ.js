@@ -34,10 +34,9 @@ module.exports = {
               .setURL("https://github.com/Krakinz?tab=repositories")
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-              .setDescription(`❣️| ${message.author}
-
-**Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
-⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
+              .setDescription(
+                `❣️| ${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`
+              )
           )
           .catch(console.error);
         // .then((message) => {
@@ -69,7 +68,6 @@ module.exports = {
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
-
 *You need to* **join** *a voice channel first!*`)
             )
             .catch(console.error);
@@ -96,7 +94,6 @@ module.exports = {
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
-
 **usage:**
 ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
             )
@@ -125,7 +122,6 @@ ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
-
 Cannot connect to voice channel, missing permissions`)
             )
             .catch(console.error);
@@ -152,7 +148,6 @@ Cannot connect to voice channel, missing permissions`)
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
-
 I cannot speak in this voice channel, make sure I have the proper permissions!`)
             )
             .catch(console.error);
@@ -178,8 +173,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
-You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
+                .setDescription(`❣️| ${message.author}You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
 
 **IF THE BOT WAS DISCONNECTED WITHOUT STOPPING THE MUSIC QUEUE THEN THIS ERROR IS THROWN!**\n
 **PLEASE RE-ADD THE BOT IN THE SERVER...**
@@ -237,7 +231,6 @@ You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
                   // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                   .setDescription(`❣️| ${message.author}
-
 Playlist not found`)
               )
               .catch(console.error);
@@ -316,7 +309,6 @@ Playlist not found`)
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
               .setDescription(`❣️| ${message.author}
-
 Added a playlist`)
           )
           .catch(console.error);
@@ -351,7 +343,6 @@ Added a playlist`)
                   // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                   .setDescription(`❣️| ${message.author}
-
 Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
 *${error}*`)
               )

@@ -26,10 +26,9 @@ module.exports = {
               .setURL("https://github.com/Krakinz?tab=repositories")
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-              .setDescription(`❣️| ${message.author}
-
-**Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
-⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
+              .setDescription(
+                `❣️| ${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`
+              )
           )
           .catch(console.error);
         // .then((message) => {
@@ -59,9 +58,9 @@ module.exports = {
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
-
-Missing permission to manage messages or add reactions`)
+                .setDescription(
+                  `❣️| ${message.author}Missing permission to manage messages or add reactions`
+                )
             )
             .catch(console.error);
           // .then((message) => {
@@ -87,9 +86,9 @@ Missing permission to manage messages or add reactions`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
-
-⏹ Nothing playing in this server`)
+                .setDescription(
+                  `❣️| ${message.author}⏺ Nothing playing in this server`
+                )
             )
             .catch(console.error);
           // .then((message) => {
@@ -99,9 +98,7 @@ Missing permission to manage messages or add reactions`)
           // });
           return;
         }
-        // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-        `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
-        // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+
         let currentPage = 0;
         message.react("✅");
         const embeds = generateQueueEmbed(message, queue.songs);
@@ -114,7 +111,7 @@ Missing permission to manage messages or add reactions`)
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         try {
           await queueEmbed.react(`⬅️`);
-          await queueEmbed.react(`⏹`);
+          await queueEmbed.react(`⏺`);
           await queueEmbed.react(`➡️`);
         } catch (error) {
           console.error(error);
@@ -124,7 +121,7 @@ Missing permission to manage messages or add reactions`)
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         const filter = (reaction, user) =>
-          [`⬅️`, `⏹`, `➡️`].includes(reaction.emoji.name) &&
+          [`⬅️`, `⏺`, `➡️`].includes(reaction.emoji.name) &&
           message.author.id === user.id;
         const collector = queueEmbed.createReactionCollector(filter, {
           time: 60000,
@@ -163,33 +160,7 @@ Missing permission to manage messages or add reactions`)
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      function generateQueueEmbed(message, queue) {
-        let embeds = [];
-        let k = 10;
-        for (let i = 0; i < queue.length; i += 10) {
-          const current = queue.slice(i, k);
-          let j = i;
-          k += 10;
-          const info = current
-            .map((track) => `${++j} - [${track.title}](${track.url})`)
-            .join(`\n`);
-          const embed = new MessageEmbed()
-            .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
-            .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-            .setColor("#ff0034")
-            .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-            .setDescription(
-              `**Aքʀɨʟ❣️ʍʊֆɨƈ**\n\n♥️**Current Song** -_[${queue[0].title}]_\n\n${info}`
-            );
-          embeds.push(embed);
-        }
-        return embeds;
-      }
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-      `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
-      // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
     } catch (ErrorApril) {
-
       message.client.channels.cache
         .get("894958787792871475")
         .send(
@@ -230,3 +201,28 @@ or
     }
   },
 };
+// ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+`|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
+// ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+function generateQueueEmbed(message, queue) {
+  let embeds = [];
+  let k = 10;
+  for (let i = 0; i < queue.length; i += 10) {
+    const current = queue.slice(i, k);
+    let j = i;
+    k += 10;
+    const info = current
+      .map((track) => `${++j} - [${track.title}](${track.url})`)
+      .join(`\n`);
+    const embed = new MessageEmbed()
+      .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+      .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
+      .setColor("#ff0034")
+      .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
+      .setDescription(
+        `**Aքʀɨʟ❣️ʍʊֆɨƈ**\n\n♥️**Current Song** -_[${queue[0].title}]_\n\n${info}`
+      );
+    embeds.push(embed);
+  }
+  return embeds;
+}

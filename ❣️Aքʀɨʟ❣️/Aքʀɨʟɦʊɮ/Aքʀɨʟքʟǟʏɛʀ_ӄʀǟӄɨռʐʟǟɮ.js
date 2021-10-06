@@ -77,8 +77,9 @@ module.exports = {
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
-**Only YouTube playing/streaming is allowed**`)
+                .setDescription(
+                  `❣️| ${message.author}**Only YouTube playing/streaming is allowed**`
+                )
             )
             .catch(console.error);
           // .then((message) => {
@@ -107,8 +108,7 @@ module.exports = {
               .setURL("https://github.com/Krakinz?tab=repositories")
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-              .setDescription(`❣️| ${message.author}
-**Error:** 
+              .setDescription(`❣️| ${message.author}**Error:** 
 *${error}*`)
           )
           .catch(console.error);
@@ -165,8 +165,7 @@ module.exports = {
 👍❣️𝗛𝗮𝘀 𝗯𝗲𝗲𝗻 𝗣𝗹𝘂𝗴𝗴𝗲𝗱 𝗯𝘆 \`${message.author}\`
 📄 𝗮𝗻𝗱 𝗶𝘀 𝗯𝗼𝘂𝗻𝗱 𝘁𝗼 \`#${message.channel.name}\``)
           )
-          .catch(console.error)// }); // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`, // message.delete({ // .then((message) => {
-        // });
+          .catch(console.error);
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -194,6 +193,7 @@ module.exports = {
 •**⏹stop**`)
           )
           .catch(console.error);
+
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏭");
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔄");
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔇");
@@ -234,7 +234,6 @@ module.exports = {
                     // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                     .setDescription(`❣️| ${message.author}
-
 **You need to join a voice channel first!**`)
                 )
                 .catch(console.error);
@@ -304,7 +303,6 @@ module.exports = {
                     // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                     .setDescription(`❣️| ${message.author}
-
 **You need to join a voice channel first!**`)
                 )
                 .catch(console.error);
@@ -352,8 +350,9 @@ module.exports = {
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                    .setDescription(`❣️| ${message.author}
-**You need to join a voice channel first!**`)
+                    .setDescription(
+                      `❣️| ${message.author}**You need to join a voice channel first!**`
+                    )
                 )
                 .catch(console.error);
               // .then((message) => {
@@ -375,8 +374,9 @@ module.exports = {
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                  .setDescription(`❣️| ${message.author}
-⏩ **Skipped the music**`)
+                  .setDescription(
+                    `❣️| ${message.author}⏩ **Skipped the music**`
+                  )
               )
               .catch(console.error);
             // .then((message) => {
@@ -404,7 +404,6 @@ module.exports = {
                     // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                     .setDescription(`❣️| ${message.author}
-
 **You need to join a voice channel first!**`)
                 )
                 .catch(console.error);
@@ -431,7 +430,6 @@ module.exports = {
                     // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                     .setDescription(`❣️| ${message.author}
-
 🔇 Muted the music!`)
                 )
                 .catch(
@@ -453,7 +451,6 @@ module.exports = {
                     // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                     .setDescription(`❣️| ${message.author}
-
 🔊 Unmuted the music!`)
                 )
                 .catch(console.error);
@@ -488,7 +485,6 @@ module.exports = {
                     // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                     .setDescription(`❣️| ${message.author}
-
 *You need to* **join** *a voice channel first!*`)
                 )
                 .catch(console.error);
@@ -516,7 +512,6 @@ module.exports = {
                   // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                   .setDescription(`❣️| ${message.author}
-
 🔉 Decreased the volume, 
 Volume now at = **${queue.volume}%**`)
               )
@@ -551,7 +546,6 @@ Volume now at = **${queue.volume}%**`)
                     // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                     .setDescription(`❣️| ${message.author}
-
 *You need to* **join** *a voice channel first!*`)
                 )
                 .catch(console.error);
@@ -579,7 +573,6 @@ Volume now at = **${queue.volume}%**`)
                   // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                   .setDescription(`❣️| ${message.author}
-
 🔊 Increased the volume, the volume is now ${queue.volume}%`)
               )
               .catch(console.error);
@@ -607,7 +600,6 @@ Volume now at = **${queue.volume}%**`)
                     // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                     .setDescription(`❣️| ${message.author}
-
 *You need to* **join** *a voice channel first!*`)
                 )
                 .catch(console.error);
@@ -632,7 +624,6 @@ Volume now at = **${queue.volume}%**`)
                   // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                   .setDescription(`❣️| ${message.author}
-
 Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
               )
               .catch(console.error);
@@ -660,7 +651,6 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                     // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                     .setDescription(`❣️| ${message.author}
-
 *You need to* **join** *a voice channel first!*`)
                 )
                 .catch(console.error);
