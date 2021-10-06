@@ -31,12 +31,12 @@ module.exports = {
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
           )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        // });
+        // });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -63,12 +63,12 @@ module.exports = {
 
 *You need to* **join** *a voice channel first!*`)
             )
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+          // });
+          // });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -90,12 +90,12 @@ module.exports = {
 
 *You need to* **join** *a voice channel first!*`)
             )
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+          // });
+          // });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -117,12 +117,12 @@ module.exports = {
 
 🔊 **The current volume is:** ${queue.volume}%`)
             )
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+          // });
+          // });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -144,12 +144,12 @@ module.exports = {
 
 Please use a number to set volume.`)
             )
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+          // });
+          // });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -171,12 +171,12 @@ Please use a number to set volume.`)
 
 Please use a number between 0 - 100.`)
             )
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+          // });
+          // });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -199,12 +199,12 @@ Please use a number between 0 - 100.`)
 
 Volume set to: **${args[0]}%**`)
           )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        // });
+        // });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================

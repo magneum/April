@@ -34,12 +34,12 @@ module.exports = {
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
           )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        // });
+        // });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -64,12 +64,12 @@ module.exports = {
 
 *You need to* **join** *a voice channel first!*`)
           )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        // });
+        // });
         return;
       }
       queue.songs = [];

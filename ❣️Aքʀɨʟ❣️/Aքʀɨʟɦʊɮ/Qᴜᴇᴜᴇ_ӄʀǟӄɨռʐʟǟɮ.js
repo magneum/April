@@ -31,12 +31,12 @@ module.exports = {
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
           )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        // });
+        // });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -63,12 +63,12 @@ module.exports = {
 
 Missing permission to manage messages or add reactions`)
             )
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+          // });
+          // });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -91,12 +91,12 @@ Missing permission to manage messages or add reactions`)
 
 ⏹ Nothing playing in this server`)
             )
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+          // });
+          // });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================

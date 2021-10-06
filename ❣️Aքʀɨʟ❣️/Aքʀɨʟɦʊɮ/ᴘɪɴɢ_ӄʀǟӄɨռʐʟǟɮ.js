@@ -30,12 +30,12 @@ module.exports = {
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
           )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        // });
+        // });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -59,12 +59,12 @@ module.exports = {
 
 ⌛️Average ping of April's Server **${Math.round(message.client.ws.ping)}ms**`)
           )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        // });
+        // });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================

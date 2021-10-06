@@ -32,12 +32,12 @@ module.exports = {
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`)
           )
-          .catch(console.error)
-          .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // message.delete({
+        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        // });
+        // });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -64,12 +64,12 @@ module.exports = {
 
 April is not playing anymusic yet....`)
             )
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // message.delete({
+          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+          // });
+          // });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -96,13 +96,13 @@ April is not playing anymusic yet....`)
           current.addField(
             `\u200b`,
             new Date(seek * 1000).toISOString().substr(11, 8) +
-              `[` +
+              `\n❣️` +
               splitBar(
                 music.duration == 0 ? seek : music.duration,
                 seek,
                 20
               )[0] +
-              `]` +
+              `❣️\n` +
               (music.duration == 0
                 ? ` ◉ LIVE`
                 : new Date(music.duration * 1000).toISOString().substr(11, 8)),
