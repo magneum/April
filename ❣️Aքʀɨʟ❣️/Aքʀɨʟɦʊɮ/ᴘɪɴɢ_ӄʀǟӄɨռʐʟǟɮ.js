@@ -29,16 +29,16 @@ module.exports = {
                 `❣️\`User\`${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`
               )
           )
-          .catch(console.error)
-          .then((message) => {
-            try {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            } catch (err) {
-              console.log(err);
-            }
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // try {
+        // message.delete({
+        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        // });
+        // } catch (err) {
+        // console.log(err);
+        // }
+        // });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -62,16 +62,16 @@ module.exports = {
 
 ⌛️Average ping of April's Server **${Math.round(message.client.ws.ping)}ms**`)
           )
-          .catch(console.error)
-          .then((message) => {
-            try {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            } catch (err) {
-              console.log(err);
-            }
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // try {
+        // message.delete({
+        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        // });
+        // } catch (err) {
+        // console.log(err);
+        // }
+        // });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================

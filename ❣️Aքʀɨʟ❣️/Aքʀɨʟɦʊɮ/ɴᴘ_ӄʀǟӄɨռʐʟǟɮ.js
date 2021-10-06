@@ -31,16 +31,16 @@ module.exports = {
                 `❣️\`User\`${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`
               )
           )
-          .catch(console.error)
-          .then((message) => {
-            try {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            } catch (err) {
-              console.log(err);
-            }
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // try {
+        // message.delete({
+        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        // });
+        // } catch (err) {
+        // console.log(err);
+        // }
+        // });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -67,16 +67,16 @@ module.exports = {
                   `❣️\`User\`${message.author}April is not playing anymusic yet....`
                 )
             )
-            .catch(console.error)
-            .then((message) => {
-              try {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
-              } catch (err) {
-                console.log(err);
-              }
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // try {
+          // message.delete({
+          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+          // });
+          // } catch (err) {
+          // console.log(err);
+          // }
+          // });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================

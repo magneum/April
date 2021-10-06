@@ -30,16 +30,16 @@ module.exports = {
                 `❣️\`User\`${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`
               )
           )
-          .catch(console.error)
-          .then((message) => {
-            try {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            } catch (err) {
-              console.log(err);
-            }
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // try {
+        // message.delete({
+        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        // });
+        // } catch (err) {
+        // console.log(err);
+        // }
+        // });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -65,16 +65,16 @@ module.exports = {
                 .setDescription(`❣️\`User\`${message.author}
 *You need to* **join** *a voice channel first!*`)
             )
-            .catch(console.error)
-            .then((message) => {
-              try {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
-              } catch (err) {
-                console.log(err);
-              }
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // try {
+          // message.delete({
+          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+          // });
+          // } catch (err) {
+          // console.log(err);
+          // }
+          // });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -95,16 +95,16 @@ module.exports = {
                 .setDescription(`❣️\`User\`${message.author}
 *You need to* **join** *a voice channel first!*`)
             )
-            .catch(console.error)
-            .then((message) => {
-              try {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
-              } catch (err) {
-                console.log(err);
-              }
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // try {
+          // message.delete({
+          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+          // });
+          // } catch (err) {
+          // console.log(err);
+          // }
+          // });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -125,16 +125,16 @@ module.exports = {
                 .setDescription(`❣️\`User\`${message.author}
 🔊 **The current volume is:** ${queue.volume}%`)
             )
-            .catch(console.error)
-            .then((message) => {
-              try {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
-              } catch (err) {
-                console.log(err);
-              }
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // try {
+          // message.delete({
+          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+          // });
+          // } catch (err) {
+          // console.log(err);
+          // }
+          // });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -155,16 +155,16 @@ module.exports = {
                 .setDescription(`❣️\`User\`${message.author}
 Please use a number to set volume.`)
             )
-            .catch(console.error)
-            .then((message) => {
-              try {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
-              } catch (err) {
-                console.log(err);
-              }
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // try {
+          // message.delete({
+          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+          // });
+          // } catch (err) {
+          // console.log(err);
+          // }
+          // });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -185,16 +185,16 @@ Please use a number to set volume.`)
                 .setDescription(`❣️\`User\`${message.author}
 Please use a number between 0 - 100.`)
             )
-            .catch(console.error)
-            .then((message) => {
-              try {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
-              } catch (err) {
-                console.log(err);
-              }
-            });
+            .catch(console.error);
+          // .then((message) => {
+          // try {
+          // message.delete({
+          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+          // });
+          // } catch (err) {
+          // console.log(err);
+          // }
+          // });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -216,16 +216,16 @@ Please use a number between 0 - 100.`)
               .setDescription(`❣️\`User\`${message.author}
 Volume set to: **${args[0]}%**`)
           )
-          .catch(console.error)
-          .then((message) => {
-            try {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            } catch (err) {
-              console.log(err);
-            }
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // try {
+        // message.delete({
+        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        // });
+        // } catch (err) {
+        // console.log(err);
+        // }
+        // });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================

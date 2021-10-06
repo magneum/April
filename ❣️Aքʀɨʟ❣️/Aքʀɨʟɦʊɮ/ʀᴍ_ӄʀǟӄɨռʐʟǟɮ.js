@@ -104,13 +104,15 @@ You need to join a voice channel first!`))
                             .setDescription(`❣️\`User\`${message.author}
 ⚓️**usage:**${AքʀɨʟʄɨӼ}rm <Queue Number>`))
                         .catch(console.error)
-                        .then((message) => {
-                            try {
-                                message.delete({
-                                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                                });
-                            } catch (err) { console.log(err); }
-                        });
+                    // .then((message) => {
+                    // try {
+                    // message.delete({
+                    // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                    // });
+                    // } catch (err) {
+                    // console.log(err);
+                    // }
+                    // });
                     return;
                 }
                 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -189,13 +191,15 @@ You need to join a voice channel first!`))
                             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                             .setDescription(`❣️\`User\`${message.author}**usage:**${AքʀɨʟʄɨӼ}rm <Queue Number>`))
                         .catch(console.error)
-                        .then((message) => {
-                            try {
-                                message.delete({
-                                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                                });
-                            } catch (err) { console.log(err); }
-                        });
+                    // .then((message) => {
+                    // try {
+                    // message.delete({
+                    // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                    // });
+                    // } catch (err) {
+                    // console.log(err);
+                    // }
+                    // });
                     return;
                 }
             }

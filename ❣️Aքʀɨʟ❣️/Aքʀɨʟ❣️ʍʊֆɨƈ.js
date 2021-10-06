@@ -292,16 +292,16 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${
               command.name
             }\` command.`)
           )
-          .catch(console.error)
-          .then((message) => {
-            try {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            } catch (err) {
-              console.log(err);
-            }
-          });
+          .catch(console.error);
+        // .then((message) => {
+        // try {
+        // message.delete({
+        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        // });
+        // } catch (err) {
+        // console.log(err);
+        // }
+        // });
         return;
       }
     }
