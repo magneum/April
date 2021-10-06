@@ -16,7 +16,7 @@ module.exports = {
         message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("❌");
-        message.react("🔥");
+
         message.channel
           .send(
             new MessageEmbed()
@@ -32,9 +32,11 @@ module.exports = {
           )
           .catch(console.error)
           .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
+            try {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            } catch {}
           });
         return;
       }
@@ -48,7 +50,7 @@ module.exports = {
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -63,9 +65,11 @@ module.exports = {
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -74,7 +78,7 @@ module.exports = {
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         if (!canModifyQueue(message.member)) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -89,9 +93,11 @@ module.exports = {
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -100,7 +106,7 @@ module.exports = {
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         if (!args[0]) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -115,9 +121,11 @@ module.exports = {
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -126,7 +134,7 @@ module.exports = {
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         if (isNaN(args[0])) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -141,9 +149,11 @@ Please use a number to set volume.`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -152,7 +162,7 @@ Please use a number to set volume.`)
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         if (Number(args[0]) > 100 || Number(args[0]) < 0) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -167,9 +177,11 @@ Please use a number between 0 - 100.`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -183,7 +195,7 @@ Please use a number between 0 - 100.`)
         queue.textChannel
           .send(
             new MessageEmbed()
-              .setColor("#ff0034")
+              .setColor("#ff0011")
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -194,9 +206,11 @@ Volume set to: **${args[0]}%**`)
           )
           .catch(console.error)
           .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
+            try {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            } catch {}
           });
         return;
       }
@@ -225,7 +239,7 @@ Volume set to: **${args[0]}%**`)
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       message.channel.send(
         new MessageEmbed()
-          .setColor("#ff0000")
+          .setColor("#ef4567")
           .setAuthor("Error🔺Caught")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")

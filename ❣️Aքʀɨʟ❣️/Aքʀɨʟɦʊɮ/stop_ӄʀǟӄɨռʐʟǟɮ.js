@@ -35,9 +35,11 @@ module.exports = {
           )
           .catch(console.error)
           .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
+            try {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            } catch {}
           });
         return;
       }
@@ -64,9 +66,11 @@ module.exports = {
           )
           .catch(console.error)
           .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
+            try {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            } catch {}
           });
         return;
       }
@@ -110,7 +114,7 @@ module.exports = {
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       message.channel.send(
         new MessageEmbed()
-          .setColor("#ff0000")
+          .setColor("#ef4567")
           .setAuthor("Error🔺Caught")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")

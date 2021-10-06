@@ -16,7 +16,7 @@ module.exports = {
         message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ"
       ) {
         message.react("❌");
-        message.react("🔥");
+
         message.channel
           .send(
             new MessageEmbed()
@@ -32,9 +32,11 @@ module.exports = {
           )
           .catch(console.error)
           .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
+            try {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            } catch {}
           });
         return;
       }
@@ -47,7 +49,7 @@ module.exports = {
       ) {
         if (!args.length || isNaN(args[0])) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -63,9 +65,11 @@ ${AքʀɨʟʄɨӼ}skipto [Queue Number]`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -75,7 +79,7 @@ ${AքʀɨʟʄɨӼ}skipto [Queue Number]`)
         const queue = message.client.queue.get(message.guild.id);
         if (!queue) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -90,9 +94,11 @@ There is nothing playing that I could skip for you.`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -101,7 +107,7 @@ There is nothing playing that I could skip for you.`)
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         if (!canModifyQueue(message.member)) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -116,9 +122,11 @@ There is nothing playing that I could skip for you.`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -127,7 +135,7 @@ There is nothing playing that I could skip for you.`)
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         if (args[0] > queue.songs.length) {
           message.react("❌");
-          message.react("🔥");
+
           message.channel
             .send(
               new MessageEmbed()
@@ -142,9 +150,11 @@ There is nothing playing that I could skip for you.`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -165,7 +175,7 @@ There is nothing playing that I could skip for you.`)
         queue.textChannel
           .send(
             new MessageEmbed()
-              .setColor("#ff0034")
+              .setColor("#ff0011")
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -176,9 +186,11 @@ There is nothing playing that I could skip for you.`)
           )
           .catch(console.error)
           .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
+            try {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            } catch {}
           });
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -206,7 +218,7 @@ There is nothing playing that I could skip for you.`)
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       message.channel.send(
         new MessageEmbed()
-          .setColor("#ff0000")
+          .setColor("#ef4567")
           .setAuthor("Error🔺Caught")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")

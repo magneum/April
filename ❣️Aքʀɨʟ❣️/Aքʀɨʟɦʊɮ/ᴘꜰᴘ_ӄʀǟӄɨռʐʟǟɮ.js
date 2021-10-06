@@ -30,9 +30,11 @@ module.exports = {
           .send(embedfactor)
           .catch(console.error)
           .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
+            try {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            } catch {}
           });
         return;
       }
@@ -48,7 +50,7 @@ module.exports = {
         if (!message.mentions.users.first()) {
           return message.channel.send(
             new MessageEmbed()
-              .setColor("#ff0034")
+              .setColor("#ff0011")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(message.author.displayAvatarURL())
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
@@ -58,7 +60,7 @@ module.exports = {
         } else {
           return message.channel.send(
             new MessageEmbed()
-              .setColor("#ff0034")
+              .setColor("#ff0011")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(user.displayAvatarURL())
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
@@ -92,7 +94,7 @@ module.exports = {
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       message.channel.send(
         new MessageEmbed()
-          .setColor("#ff0000")
+          .setColor("#ef4567")
           .setAuthor("Error🔺Caught")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")

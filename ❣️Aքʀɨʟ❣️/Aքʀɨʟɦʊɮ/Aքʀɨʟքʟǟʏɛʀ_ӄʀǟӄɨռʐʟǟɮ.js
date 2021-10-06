@@ -83,9 +83,11 @@ module.exports = {
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -113,9 +115,11 @@ module.exports = {
           )
           .catch(console.error)
           .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
+            try {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            } catch {}
           });
         return;
       }
@@ -155,7 +159,7 @@ module.exports = {
           .get("894958787792871475")
           .send(
             new MessageEmbed()
-              .setColor("#ff0034")
+              .setColor("#ff0011")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -172,7 +176,7 @@ module.exports = {
         var ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel
           .send(
             new MessageEmbed()
-              .setColor("#ff0034")
+              .setColor("#ff0011")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
@@ -251,7 +255,7 @@ module.exports = {
             `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
             let current = new MessageEmbed()
-              .setColor("#ff0034")
+              .setColor("#ff0011")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setTitle(`\`\`\`Now🥳playing\`\`\``)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -285,9 +289,11 @@ module.exports = {
               .send(current)
               .catch(console.error)
               .then((message) => {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
+                try {
+                  message.delete({
+                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                  });
+                } catch {}
               });
             break;
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -321,7 +327,7 @@ module.exports = {
               .setDescription(description)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setFooter("-••÷ ÄþRÌL❣️QÚÈÚÈ ÷••-")
-              .setColor("#ff0034");
+              .setColor("#ff0011");
             const splitDescription = splitMessage(description, {
               maxLength: 4096,
               char: "\n",
@@ -334,9 +340,11 @@ module.exports = {
                 .send(queueEmbed)
                 .catch(console.error)
                 .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
+                  try {
+                    message.delete({
+                      timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                    });
+                  } catch {}
                 });
             });
             break;
@@ -363,9 +371,11 @@ module.exports = {
                 )
                 .catch(console.error)
                 .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
+                  try {
+                    message.delete({
+                      timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                    });
+                  } catch {}
                 });
               return;
             }
@@ -376,7 +386,7 @@ module.exports = {
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#ff0034")
+                  .setColor("#ff0011")
                   .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -387,9 +397,11 @@ module.exports = {
               )
               .catch(console.error)
               .then((message) => {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
+                try {
+                  message.delete({
+                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                  });
+                } catch {}
               });
             collector.stop();
             break;
@@ -415,9 +427,11 @@ module.exports = {
                 )
                 .catch(console.error)
                 .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
+                  try {
+                    message.delete({
+                      timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                    });
+                  } catch {}
                 });
               return;
             }
@@ -430,7 +444,7 @@ module.exports = {
               queue.textChannel
                 .send(
                   new MessageEmbed()
-                    .setColor("#ff0034")
+                    .setColor("#ff0011")
                     .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
@@ -451,7 +465,7 @@ module.exports = {
               queue.textChannel
                 .send(
                   new MessageEmbed()
-                    .setColor("#ff0034")
+                    .setColor("#ff0011")
                     .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
@@ -462,9 +476,11 @@ module.exports = {
                 )
                 .catch(console.error)
                 .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
+                  try {
+                    message.delete({
+                      timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                    });
+                  } catch {}
                 });
             }
             break;
@@ -496,9 +512,11 @@ module.exports = {
                 )
                 .catch(console.error)
                 .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
+                  try {
+                    message.delete({
+                      timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                    });
+                  } catch {}
                 });
               return;
             }
@@ -512,7 +530,7 @@ module.exports = {
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#ff0034")
+                  .setColor("#ff0011")
                   .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                   .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
@@ -524,9 +542,11 @@ Volume now at = **${queue.volume}%**`)
               )
               .catch(console.error)
               .then((message) => {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
+                try {
+                  message.delete({
+                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                  });
+                } catch {}
               });
             break;
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -557,9 +577,11 @@ Volume now at = **${queue.volume}%**`)
                 )
                 .catch(console.error)
                 .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
+                  try {
+                    message.delete({
+                      timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                    });
+                  } catch {}
                 });
               return;
             }
@@ -573,7 +595,7 @@ Volume now at = **${queue.volume}%**`)
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#ff0034")
+                  .setColor("#ff0011")
                   .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                   .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
@@ -584,9 +606,11 @@ Volume now at = **${queue.volume}%**`)
               )
               .catch(console.error)
               .then((message) => {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
+                try {
+                  message.delete({
+                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                  });
+                } catch {}
               });
             break;
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -611,9 +635,11 @@ Volume now at = **${queue.volume}%**`)
                 )
                 .catch(console.error)
                 .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
+                  try {
+                    message.delete({
+                      timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                    });
+                  } catch {}
                 });
               return;
             }
@@ -624,7 +650,7 @@ Volume now at = **${queue.volume}%**`)
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#ff0034")
+                  .setColor("#ff0011")
                   .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                   .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
@@ -635,9 +661,11 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
               )
               .catch(console.error)
               .then((message) => {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
+                try {
+                  message.delete({
+                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                  });
+                } catch {}
               });
             message.client.queue.delete(message.guild.id);
             break;
@@ -662,9 +690,11 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                 )
                 .catch(console.error)
                 .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
+                  try {
+                    message.delete({
+                      timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                    });
+                  } catch {}
                 });
               return;
             }
@@ -717,7 +747,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       message.channel.send(
         new MessageEmbed()
-          .setColor("#ff0000")
+          .setColor("#ef4567")
           .setAuthor("Error🔺Caught")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")

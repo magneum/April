@@ -45,9 +45,11 @@ module.exports = {
           )
           .catch(console.error)
           .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
+            try {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            } catch {}
           });
         return;
       }
@@ -70,9 +72,11 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
           )
           .catch(console.error)
           .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
+            try {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            } catch {}
           });
         return;
       }
@@ -93,7 +97,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#ff0034")
+                .setColor("#ff0011")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setDescription(
                   `**❣️🔍Searching \`${args.join(" ")}\`, and Adding in 3sec**`
@@ -102,9 +106,11 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -128,9 +134,11 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -154,9 +162,11 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -182,9 +192,11 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -208,9 +220,11 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -255,9 +269,11 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                   )
                   .catch(console.error)
                   .then((message) => {
-                    message.delete({
-                      timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                    });
+                    try {
+                      message.delete({
+                        timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                      });
+                    } catch {}
                   });
                 return;
               }
@@ -268,9 +284,11 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
               .send(error.message)
               .catch(console.error)
               .then((message) => {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
+                try {
+                  message.delete({
+                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                  });
+                } catch {}
               });
             return;
           }
@@ -293,9 +311,11 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -331,9 +351,11 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
               .send(error.message)
               .catch(console.error)
               .then((message) => {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
+                try {
+                  message.delete({
+                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                  });
+                } catch {}
               });
           }
           // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -361,9 +383,11 @@ Audio Not Found`)
                 )
                 .catch(console.error)
                 .then((message) => {
-                  message.delete({
-                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                  });
+                  try {
+                    message.delete({
+                      timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                    });
+                  } catch {}
                 });
               return;
             }
@@ -382,9 +406,11 @@ Audio Not Found`)
               .send(error.message)
               .catch(console.error)
               .then((message) => {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
+                try {
+                  message.delete({
+                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                  });
+                } catch {}
               });
             return;
           }
@@ -398,7 +424,7 @@ Audio Not Found`)
             .send(
               new MessageEmbed()
                 .setTitle("✅ " + music.title)
-                .setColor("#ff0034")
+                .setColor("#ff0011")
                 .setURL(music.url)
                 .setDescription(
                   `\`\`\`Succesfully added to the Queue.\`\`\`
@@ -418,9 +444,11 @@ Audio Not Found`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -435,7 +463,7 @@ Audio Not Found`)
             message.author
               .send(
                 new MessageEmbed()
-                  .setColor("#ff0034")
+                  .setColor("#ff0011")
                   .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -447,7 +475,7 @@ Audio Not Found`)
             message.channel
               .send(
                 new MessageEmbed()
-                  .setColor("#ff0034")
+                  .setColor("#ff0011")
                   .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -485,9 +513,11 @@ Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -517,7 +547,7 @@ Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       message.channel.send(
         new MessageEmbed()
-          .setColor("#ff0000")
+          .setColor("#ef4567")
           .setAuthor("Error🔺Caught")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")

@@ -40,9 +40,11 @@ module.exports = {
           )
           .catch(console.error)
           .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
+            try {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            } catch {}
           });
         return;
       }
@@ -72,9 +74,11 @@ module.exports = {
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -99,9 +103,11 @@ ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -126,9 +132,11 @@ Cannot connect to voice channel, missing permissions`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -152,9 +160,11 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -181,9 +191,11 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
             )
             .catch(console.error)
             .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
+              try {
+                message.delete({
+                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                });
+              } catch {}
             });
           return;
         }
@@ -235,9 +247,11 @@ Playlist not found`)
               )
               .catch(console.error)
               .then((message) => {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
+                try {
+                  message.delete({
+                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                  });
+                } catch {}
               });
             return;
           }
@@ -259,9 +273,11 @@ Playlist not found`)
               .send(error.message)
               .catch(console.error)
               .then((message) => {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
+                try {
+                  message.delete({
+                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                  });
+                } catch {}
               });
             return;
           }
@@ -294,7 +310,7 @@ Playlist not found`)
             newSongs.map((music, index) => `${index + 1}. ${music.title}`)
           )
           .setURL(playlist.url)
-          .setColor("#ff0034")
+          .setColor("#ff0011")
           .setTimestamp();
         if (playlistEmbed.description.length >= 2048)
           playlistEmbed.description =
@@ -305,7 +321,7 @@ Playlist not found`)
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#ff0034")
+              .setColor("#ff0011")
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -315,9 +331,11 @@ Added a playlist`)
           )
           .catch(console.error)
           .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
+            try {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            } catch {}
           });
         playlistEmbed;
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -350,9 +368,11 @@ Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
               )
               .catch(console.error)
               .then((message) => {
-                message.delete({
-                  timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                });
+                try {
+                  message.delete({
+                    timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                  });
+                } catch {}
               });
             return;
           }
@@ -383,7 +403,7 @@ Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       message.channel.send(
         new MessageEmbed()
-          .setColor("#ff0000")
+          .setColor("#ef4567")
           .setAuthor("Error🔺Caught")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")

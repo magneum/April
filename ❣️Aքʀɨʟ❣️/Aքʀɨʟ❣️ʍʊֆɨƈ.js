@@ -41,7 +41,7 @@ try {
     //       .get("894958787792871475")
     //       .send(
     //         new MessageEmbed()
-    //           .setColor("#ff0034")
+    //           .setColor("#ff0011")
     //           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
     //           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
     //           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
@@ -96,7 +96,7 @@ try {
     channel
       .send(
         new MessageEmbed()
-          .setColor("#ff0034")
+          .setColor("#ff0011")
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -114,7 +114,7 @@ Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..`
     channel
       .send(
         new MessageEmbed()
-          .setColor("#ff0034")
+          .setColor("#ff0011")
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -210,7 +210,7 @@ Aքʀɨʟʍʊֆɨƈ.on("message", async (message) => {
     }
     if (!message.guild) {
       message.react("❌");
-      message.react("🔥");
+
       message.reply(
         new MessageEmbed()
           .setColor("#bc8a59")
@@ -274,7 +274,7 @@ April❣️Music by🔱KrakinzLab™️
       if (now < expirationTime) {
         const timeLeft = (expirationTime - now) / 1000;
         message.react("❌");
-        message.react("🔥");
+
         message.channel
           .send(
             new MessageEmbed()
@@ -294,9 +294,11 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${
           )
           .catch(console.error)
           .then((message) => {
-            message.delete({
-              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-            });
+            try {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            } catch {}
           });
         return;
       }
@@ -311,7 +313,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${
     } catch (error) {
       console.error(error);
       message.react("❌");
-      message.react("🔥");
+
       message.channel
         .send(
           new MessageEmbed()
@@ -363,7 +365,7 @@ There was an error executing that command.`
     // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
     message.channel.send(
       new MessageEmbed()
-        .setColor("#ff0000")
+        .setColor("#ef4567")
         .setAuthor("Error🔺Caught")
         .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
         .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
