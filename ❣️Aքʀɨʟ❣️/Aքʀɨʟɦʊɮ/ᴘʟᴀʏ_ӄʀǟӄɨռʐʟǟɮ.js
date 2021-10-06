@@ -97,7 +97,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
-*You need to* **join** *a voice channel first!*`)
+        *You need to* **join** *a voice channel first!*`)
             )
             .catch(console.error)
             .then((message) => {
@@ -107,6 +107,16 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
             });
           return;
         }
+
+        try {
+          await Bot.leave();
+          await message.react("✅");
+        } catch (e) {
+          return message.channel
+            .send("Error: Unknown")
+            .then(() => console.log(e));
+        }
+
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
