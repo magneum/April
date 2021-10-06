@@ -37,26 +37,26 @@ try {
   Aքʀɨʟʍʊֆɨƈ.on("warn", (ᴀᴘʀɪʟ_WARN) => console.log(ᴀᴘʀɪʟ_WARN));
   Aքʀɨʟʍʊֆɨƈ.on("error", console.error);
   Aքʀɨʟʍʊֆɨƈ.on("ready", () => {
-    Aքʀɨʟʍʊֆɨƈ.channels.cache
-      .get("894958787792871475")
-      .send(
-        new MessageEmbed()
-          .setColor("#900C3F")
-          .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
-          .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
-** ♥️•♪•♪Aքʀɨʟ❣️ʍʊֆɨƈ♪•♪•**
-• *version: v17.k90*
----------------:lady_beetle:---------------
-❣️𝐇𝐚𝐬 𝐛𝐞𝐞𝐧 𝐫𝐞𝐝𝐞𝐩𝐥𝐨𝐲𝐞𝐝 𝐚𝐧𝐝 𝐢𝐬 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐩𝐥𝐚𝐲 𝐦𝐮𝐬𝐢𝐜!❣️
+    //     Aքʀɨʟʍʊֆɨƈ.channels.cache
+    //       .get("894958787792871475")
+    //       .send(
+    //         new MessageEmbed()
+    //           .setColor("#900C3F")
+    //           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+    //           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
+    //           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
+    // ** ♥️•♪•♪Aքʀɨʟ❣️ʍʊֆɨƈ♪•♪•**
+    // • *version: v17.k90*
+    // ---------------:lady_beetle:---------------
+    // ❣️𝐇𝐚𝐬 𝐛𝐞𝐞𝐧 𝐫𝐞𝐝𝐞𝐩𝐥𝐨𝐲𝐞𝐝 𝐚𝐧𝐝 𝐢𝐬 𝐫𝐞𝐚𝐝𝐲 𝐭𝐨 𝐩𝐥𝐚𝐲 𝐦𝐮𝐬𝐢𝐜!❣️
 
----------------:lady_beetle:---------------
-• **${AքʀɨʟʄɨӼ}help**
-*Display this commands and descriptions.*
-• **${AքʀɨʟʄɨӼ}april**
-*Display the  license and a few more info.*`)
-      )
-      .catch(console.error);
+    // ---------------:lady_beetle:---------------
+    // • **${AքʀɨʟʄɨӼ}help**
+    // *Display this commands and descriptions.*
+    // • **${AքʀɨʟʄɨӼ}april**
+    // *Display the  license and a few more info.*`)
+    //       )
+    //       .catch(console.error);
     Aքʀɨʟʍʊֆɨƈ.user.setActivity(`❣️ ${AքʀɨʟʄɨӼ}april & ${AքʀɨʟʄɨӼ}play`, {
       type: "WATCHING",
     });
