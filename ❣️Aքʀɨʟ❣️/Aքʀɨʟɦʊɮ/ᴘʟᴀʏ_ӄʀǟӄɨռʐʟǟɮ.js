@@ -122,11 +122,10 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
-You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
+**𝗬𝗼𝘂 𝗺𝘂𝘀𝘁 𝗯𝗲 𝗶𝗻 𝘁𝗵𝗲 𝘀𝗮𝗺𝗲 𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗮𝘀 Aքʀɨʟ❣️Mʊֆɨƈ**.
 
-**IF THE BOT WAS DISCONNECTED WITHOUT STOPPING THE MUSIC QUEUE THEN THIS ERROR IS THROWN!**\n
-**PLEASE RE-ADD THE BOT IN THE SERVER...**
-*THE ERROR WILL BE FIXED SOON ONCE MY DEV BECOMES FREE*`)
+—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—
+**[**ᴄʜᴇᴄᴋ ɪꜰ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ᴅɪꜱᴄᴏɴɴᴇᴄᴛᴇᴅ ᴡɪᴛʜᴏᴜᴛ ꜱᴛᴏᴘᴘɪɴɢ ᴛʜᴇ ᴍᴜꜱɪᴄ Qᴜᴇᴜᴇ.ɪꜰ ꜱᴏ ᴛʜᴇɴ ᴛʜɪꜱ ᴇʀʀᴏʀ ɪꜱ ᴛʜʀᴏᴡɴ!ᴘʟᴇᴀꜱᴇ ʀᴇ-ᴀᴅᴅ ᴛʜᴇ ʙᴏᴛ ɪɴ ᴛʜᴇ ꜱᴇʀᴠᴇʀ...ᴛʜᴇ ᴇʀʀᴏʀ ᴡɪʟʟ ʙᴇ ꜰɪxᴇᴅ ꜱᴏᴏɴ ᴏɴᴄᴇ ᴍʏ ᴅᴇᴠ ʙᴇᴄᴏᴍᴇꜱ ꜰʀᴇᴇ**]**`)
             )
             .catch(console.error)
             .then((message) => {
