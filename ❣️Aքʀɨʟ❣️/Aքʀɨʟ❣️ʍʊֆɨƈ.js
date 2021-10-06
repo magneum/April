@@ -185,12 +185,21 @@ Please use only that channel for any **ᴀᴘʀɪʟ_ᴘʟᴀʏᴇʀ** commands..
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-// Aքʀɨʟʍʊֆɨƈ.on("voiceStateUpdate", (oldState, newState) => {
-//   if (oldState.channelID === null || typeof oldState.channelID == "undefined")
-//     return;
-//   if (newState.id !== Aքʀɨʟʍʊֆɨƈ.user.id) return;
-//   return queue.delete(oldState.guild.id);
-// });
+Aքʀɨʟʍʊֆɨƈ.on("disconnect", (event) => {
+  if (event.code !== 1000) {
+    console.log(
+      "Discord client disconnected with reason: " +
+        event.reason +
+        " (" +
+        event.code +
+        ")."
+    );
+    console.log("Attempting to reconnect in 6s...");
+    setTimeout(() => {
+      Aքʀɨʟʍʊֆɨƈ.login(Aքʀɨʟӄɛռ);
+    }, 6000);
+  }
+});
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================

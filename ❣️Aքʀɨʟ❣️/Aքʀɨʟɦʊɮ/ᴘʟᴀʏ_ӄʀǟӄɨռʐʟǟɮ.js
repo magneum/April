@@ -85,37 +85,6 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
       ) {
         const { channel } = message.member.voice;
         const serverQueue = message.client.queue.get(message.guild.id);
-        // if (!channel) {
-        //   message.react("❌");
-        //   message.channel
-        //     .send(
-        //       new MessageEmbed()
-        //         .setColor("#ffc02b")
-        //         .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
-        //         .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
-        //         .setURL("https://github.com/Krakinz?tab=repositories")
-        //         .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-        //         .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-        //         .setDescription(`❣️| ${message.author}
-        // *You need to* **join** *a voice channel first!*`)
-        //     )
-        //     .catch(console.error)
-        //     .then((message) => {
-        //       message.delete({
-        //         timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-        //       });
-        //     });
-        //   return;
-        // }
-
-        // try {
-        //   await Bot.leave();
-        //   await message.react("✅");
-        // } catch (e) {
-        //   return message.channel
-        //     .send("Error: Unknown")
-        //     .then(() => console.log(e));
-        // }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -143,7 +112,6 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         if (serverQueue && channel !== message.guild.me.voice.channel) {
           message.react("❌");
-          serverQueue.delete(message.guild.id);
           message.channel
             .send(
               new MessageEmbed()
