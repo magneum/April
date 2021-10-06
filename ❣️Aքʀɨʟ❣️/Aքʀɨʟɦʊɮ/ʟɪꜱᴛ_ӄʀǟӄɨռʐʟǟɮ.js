@@ -28,7 +28,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#ffc02b")
+              .setColor("#bc8a59")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -62,7 +62,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#ffc02b")
+                .setColor("#bc8a59")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -89,7 +89,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#ffc02b")
+                .setColor("#bc8a59")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -118,7 +118,7 @@ ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#ffc02b")
+                .setColor("#bc8a59")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -145,7 +145,7 @@ Cannot connect to voice channel, missing permissions`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#ffc02b")
+                .setColor("#bc8a59")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -172,7 +172,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#ffc02b")
+                .setColor("#bc8a59")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -230,7 +230,7 @@ You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
             message.channel
               .send(
                 new MessageEmbed()
-                  .setColor("#ffc02b")
+                  .setColor("#bc8a59")
                   .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
@@ -299,7 +299,7 @@ Playlist not found`)
             newSongs.map((music, index) => `${index + 1}. ${music.title}`)
           )
           .setURL(playlist.url)
-          .setColor("#ffffff")
+          .setColor("#900C3F")
           .setTimestamp();
         if (playlistEmbed.description.length >= 2048)
           playlistEmbed.description =
@@ -310,7 +310,7 @@ Playlist not found`)
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#ffffff")
+              .setColor("#900C3F")
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -344,7 +344,7 @@ Added a playlist`)
             message.channel
               .send(
                 new MessageEmbed()
-                  .setColor("#ffc02b")
+                  .setColor("#bc8a59")
                   .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
@@ -374,7 +374,7 @@ Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
         .get("894958787792871475")
         .send(
           new MessageEmbed()
-            .setColor("#ff7800")
+            .setColor("#FFC300")
             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

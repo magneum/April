@@ -20,7 +20,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#ffc02b")
+              .setColor("#bc8a59")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -53,7 +53,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#ffc02b")
+                .setColor("#bc8a59")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -81,7 +81,7 @@ Missing permission to manage messages or add reactions`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#ffc02b")
+                .setColor("#bc8a59")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -176,7 +176,7 @@ Missing permission to manage messages or add reactions`)
           const embed = new MessageEmbed()
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-            .setColor("#ffffff")
+            .setColor("#900C3F")
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
             .setDescription(
               `**Aքʀɨʟ❣️ʍʊֆɨƈ**\n\n♥️**Current Song** -_[${queue[0].title}]_\n\n${info}`
@@ -194,7 +194,7 @@ Missing permission to manage messages or add reactions`)
         .get("894958787792871475")
         .send(
           new MessageEmbed()
-            .setColor("#ff7800")
+            .setColor("#FFC300")
             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

@@ -41,7 +41,7 @@ try {
       .get("894958787792871475")
       .send(
         new MessageEmbed()
-          .setColor("#ffffff")
+          .setColor("#900C3F")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
@@ -96,7 +96,7 @@ try {
     channel
       .send(
         new MessageEmbed()
-          .setColor("#ffffff")
+          .setColor("#900C3F")
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -114,7 +114,7 @@ Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..`
     channel
       .send(
         new MessageEmbed()
-          .setColor("#ffffff")
+          .setColor("#900C3F")
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -213,7 +213,7 @@ Aքʀɨʟʍʊֆɨƈ.on("message", async (message) => {
       message.react("🔥");
       message.reply(
         new MessageEmbed()
-          .setColor("#ffc02b")
+          .setColor("#bc8a59")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
@@ -278,7 +278,7 @@ April❣️Music by🔱KrakinzLab™️
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#ffc02b")
+              .setColor("#bc8a59")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -288,12 +288,9 @@ April❣️Music by🔱KrakinzLab™️
 ❣️| ${message.author}
 ---------------:lady_beetle:---------------
 
-
-Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the "${
+Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${
               command.name
-            }" command.      
-
----------------:lady_beetle:---------------`)
+            }\` command.`)
           )
           .catch(console.error)
           .then((message) => {
@@ -318,7 +315,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the "${
       message.channel
         .send(
           new MessageEmbed()
-            .setColor("#ffc02b")
+            .setColor("#bc8a59")
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
             .setURL("https://github.com/Krakinz?tab=repositories")
@@ -326,10 +323,8 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the "${
             // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
             .setDescription(
-              `
-❣️| ${message.author}
+              `❣️| ${message.author}
 ---------------:lady_beetle:---------------
-
 
 There was an error executing that command.`
             )
@@ -351,7 +346,7 @@ There was an error executing that command.`
       .get("894958787792871475")
       .send(
         new MessageEmbed()
-          .setColor("#ff7800")
+          .setColor("#FFC300")
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

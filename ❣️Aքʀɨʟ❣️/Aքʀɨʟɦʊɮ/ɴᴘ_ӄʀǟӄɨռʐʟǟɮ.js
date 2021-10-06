@@ -21,7 +21,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#ffc02b")
+              .setColor("#bc8a59")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -54,7 +54,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#ffc02b")
+                .setColor("#bc8a59")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -90,7 +90,7 @@ April is not playing anymusic yet....`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
           .setImage(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
           .setDescription(`${music.title}\n${music.url}`)
-          .setColor("#ffffff")
+          .setColor("#900C3F")
           .setAuthor(message.client.user.username);
         if (music.duration > 0) {
           current.addField(
@@ -128,7 +128,7 @@ April is not playing anymusic yet....`)
         .get("894958787792871475")
         .send(
           new MessageEmbed()
-            .setColor("#ff7800")
+            .setColor("#FFC300")
             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

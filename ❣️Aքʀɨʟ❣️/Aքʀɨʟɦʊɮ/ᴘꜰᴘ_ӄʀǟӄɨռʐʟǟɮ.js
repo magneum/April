@@ -17,7 +17,7 @@ module.exports = {
       ) {
         message.react("❌");
         const embedfactor = new MessageEmbed()
-          .setColor("#ffc02b")
+          .setColor("#bc8a59")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
@@ -47,7 +47,7 @@ module.exports = {
         if (!message.mentions.users.first()) {
           return message.channel.send(
             new MessageEmbed()
-              .setColor("#ffffff")
+              .setColor("#900C3F")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(message.author.displayAvatarURL())
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
@@ -57,7 +57,7 @@ module.exports = {
         } else {
           return message.channel.send(
             new MessageEmbed()
-              .setColor("#ffffff")
+              .setColor("#900C3F")
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(user.displayAvatarURL())
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
@@ -75,7 +75,7 @@ module.exports = {
         .get("894958787792871475")
         .send(
           new MessageEmbed()
-            .setColor("#ff7800")
+            .setColor("#FFC300")
             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)

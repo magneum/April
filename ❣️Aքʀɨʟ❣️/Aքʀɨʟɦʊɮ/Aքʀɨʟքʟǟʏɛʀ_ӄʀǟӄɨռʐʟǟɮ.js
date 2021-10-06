@@ -71,7 +71,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#FF5F15")
+                .setColor("#bc8a59")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -98,11 +98,10 @@ module.exports = {
         }
         console.error(error);
         message.react("❌");
-
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#FF5F15")
+              .setColor("#bc8a59")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -156,7 +155,7 @@ module.exports = {
           .get("894958787792871475")
           .send(
             new MessageEmbed()
-              .setColor("#ffffff")
+              .setColor("#900C3F")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -167,8 +166,7 @@ module.exports = {
 📄 𝗮𝗻𝗱 𝗶𝘀 𝗯𝗼𝘂𝗻𝗱 𝘁𝗼 \`#${message.channel.name}\``)
           )
           .catch(console.error)
-          .catch(console.error)// message.delete({ // .then((message) => {
-        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+          .catch(console.error)// timeout: `${Aքʀɨʟքʊʀɢɛʀ}`, // message.delete({ // .then((message) => {
         // });
         // });
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -177,7 +175,7 @@ module.exports = {
         var ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ = await queue.textChannel
           .send(
             new MessageEmbed()
-              .setColor("#ffffff")
+              .setColor("#900C3F")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
@@ -232,7 +230,7 @@ module.exports = {
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#FF5F15")
+                    .setColor("#bc8a59")
                     .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
@@ -257,7 +255,7 @@ module.exports = {
             `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
             let current = new MessageEmbed()
-              .setColor("#ffffff")
+              .setColor("#900C3F")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setTitle(`Now🥳playing`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -302,7 +300,7 @@ module.exports = {
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#FF5F15")
+                    .setColor("#bc8a59")
                     .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
@@ -323,7 +321,7 @@ module.exports = {
             let queueEmbed = new MessageEmbed()
               .setTitle("Music Queue")
               .setDescription(description)
-              .setColor("#ffffff");
+              .setColor("#900C3F");
             const splitDescription = splitMessage(description, {
               maxLength: 8000,
               char: "\n",
@@ -351,7 +349,7 @@ module.exports = {
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#FF5F15")
+                    .setColor("#bc8a59")
                     .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
@@ -375,7 +373,7 @@ module.exports = {
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#ffffff")
+                  .setColor("#900C3F")
                   .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -402,7 +400,7 @@ module.exports = {
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#FF5F15")
+                    .setColor("#bc8a59")
                     .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
@@ -429,7 +427,7 @@ module.exports = {
               queue.textChannel
                 .send(
                   new MessageEmbed()
-                    .setColor("#ffffff")
+                    .setColor("#900C3F")
                     .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
@@ -451,7 +449,7 @@ module.exports = {
               queue.textChannel
                 .send(
                   new MessageEmbed()
-                    .setColor("#ffffff")
+                    .setColor("#900C3F")
                     .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
@@ -486,7 +484,7 @@ module.exports = {
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#FF5F15")
+                    .setColor("#bc8a59")
                     .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
@@ -514,7 +512,7 @@ module.exports = {
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#ffffff")
+                  .setColor("#900C3F")
                   .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                   .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
@@ -549,7 +547,7 @@ Volume now at = **${queue.volume}%**`)
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#FF5F15")
+                    .setColor("#bc8a59")
                     .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
@@ -577,7 +575,7 @@ Volume now at = **${queue.volume}%**`)
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#ffffff")
+                  .setColor("#900C3F")
                   .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                   .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
@@ -605,7 +603,7 @@ Volume now at = **${queue.volume}%**`)
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#FF5F15")
+                    .setColor("#bc8a59")
                     .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
@@ -630,7 +628,7 @@ Volume now at = **${queue.volume}%**`)
             queue.textChannel
               .send(
                 new MessageEmbed()
-                  .setColor("#ffffff")
+                  .setColor("#900C3F")
                   .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                   .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
@@ -658,7 +656,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#FF5F15")
+                    .setColor("#bc8a59")
                     .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
@@ -709,7 +707,7 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
         .get("894958787792871475")
         .send(
           new MessageEmbed()
-            .setColor("#ff7800")
+            .setColor("#FFC300 ")
             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
