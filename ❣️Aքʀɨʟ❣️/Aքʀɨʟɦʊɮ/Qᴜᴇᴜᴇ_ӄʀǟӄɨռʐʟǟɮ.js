@@ -20,7 +20,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#e69159")
+              .setColor("#ffc02b")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -53,7 +53,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69159")
+                .setColor("#ffc02b")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -81,7 +81,7 @@ Missing permission to manage messages or add reactions`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69159")
+                .setColor("#ffc02b")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -103,7 +103,6 @@ Missing permission to manage messages or add reactions`)
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         let currentPage = 0;
-
         message.react("✅");
         const embeds = generateQueueEmbed(message, queue.songs);
         const queueEmbed = await message.channel.send(
@@ -177,7 +176,7 @@ Missing permission to manage messages or add reactions`)
           const embed = new MessageEmbed()
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
-            .setColor("#990000")
+            .setColor("#ffffff")
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
             .setDescription(
               `**Aքʀɨʟ❣️ʍʊֆɨƈ**\n\n♥️**Current Song** -_[${queue[0].title}]_\n\n${info}`
@@ -195,7 +194,7 @@ Missing permission to manage messages or add reactions`)
         .get("894958787792871475")
         .send(
           new MessageEmbed()
-            .setColor("#990000")
+            .setColor("#ff7800")
             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -212,7 +211,7 @@ Missing permission to manage messages or add reactions`)
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       message.channel.send(
         new MessageEmbed()
-          .setColor("#DB4434")
+          .setColor("#ff0000")
           .setAuthor("Error🔺Caught")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")

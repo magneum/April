@@ -23,7 +23,7 @@ module.exports = {
                 message.react("🔥");
                 message.channel
                     .send(new MessageEmbed()
-                        .setColor("#e69159")
+                        .setColor("#ffc02b")
                         .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                         .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                         .setURL("https://github.com/Krakinz?tab=repositories")
@@ -34,11 +34,11 @@ module.exports = {
 **Channel:** \`Aքʀɨʟ❣️ʍʊֆɨƈ\`
 ⚠️Please use 👆🏻 for any **ᴀᴘʀɪʟ** commands.`))
                     .catch(console.error)
-                // .then((message) => {
-                // message.delete({
-                // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                // });
-                // });
+                    .then((message) => {
+                        message.delete({
+                            timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                        });
+                    });
                 return;
             }
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -51,21 +51,20 @@ module.exports = {
                     message.react("🔥");
                     message.channel
                         .send(new MessageEmbed()
-                            .setColor("#e69159")
+                            .setColor("#ffc02b")
                             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                             .setURL("https://github.com/Krakinz?tab=repositories")
                             .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                             .setDescription(`❣️| ${message.author}
-
 There is nothing in queue.`))
                         .catch(console.error)
-                    // .then((message) => {
-                    // message.delete({
-                    // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                    // });
-                    // });
+                        .then((message) => {
+                            message.delete({
+                                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                            });
+                        });
                     return;
                 }
                 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -76,7 +75,7 @@ There is nothing in queue.`))
                     message.react("🔥");
                     message.channel
                         .send(new MessageEmbed()
-                            .setColor("#e69159")
+                            .setColor("#ffc02b")
                             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                             .setURL("https://github.com/Krakinz?tab=repositories")
@@ -84,13 +83,13 @@ There is nothing in queue.`))
                             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                             .setDescription(`❣️| ${message.author}
 
-*You need to* **join** *a voice channel first!*`))
+You need to join a voice channel first!`))
                         .catch(console.error)
-                    // .then((message) => {
-                    // message.delete({
-                    // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                    // });
-                    // });
+                        .then((message) => {
+                            message.delete({
+                                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                            });
+                        });
                     return;
                 }
                 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -101,7 +100,7 @@ There is nothing in queue.`))
                     message.react("🔥");
                     message.channel
                         .send(new MessageEmbed()
-                            .setColor("#e69159")
+                            .setColor("#ffc02b")
                             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                             .setURL("https://github.com/Krakinz?tab=repositories")
@@ -134,7 +133,7 @@ There is nothing in queue.`))
                     queue.textChannel
                         .send(
                             new MessageEmbed()
-                                .setColor("#660000")
+                                .setColor("#ffffff")
                                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -146,13 +145,13 @@ There is nothing in queue.`))
 ⏹ Removed **${removed.map((music) => music.title).join(`\n`)}** from the queue.`)
                         )
                         .catch(console.error)
-                        // .then((message) => {
-                        // message.delete({
-                        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                        // });
-                        // });
-                        // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
-                        `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`
+                        .then((message) => {
+                            message.delete({
+                                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                            });
+                        });
+                    // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
+                    `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`
                     // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
                 } else if (!isNaN(args[0]) && args[0] >= 1 && args[0] <= queue.songs.length) {
                     console.log(`we got elsed!`);
@@ -161,7 +160,7 @@ There is nothing in queue.`))
                     queue.textChannel
                         .send(
                             new MessageEmbed()
-                                .setColor("#660000")
+                                .setColor("#ffffff")
                                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -173,11 +172,11 @@ There is nothing in queue.`))
 ⏹ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`)
                         )
                         .catch(console.error)
-                    // .then((message) => {
-                    // message.delete({
-                    // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-                    // });
-                    // });
+                        .then((message) => {
+                            message.delete({
+                                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                            });
+                        });
                     return;
                     // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
                     `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`
@@ -188,7 +187,7 @@ There is nothing in queue.`))
                     message.react("🔥");
                     message.channel
                         .send(new MessageEmbed()
-                            .setColor("#e69159")
+                            .setColor("#ffc02b")
                             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                             .setURL("https://github.com/Krakinz?tab=repositories")
@@ -214,7 +213,7 @@ There is nothing in queue.`))
                 .get("894958787792871475")
                 .send(
                     new MessageEmbed()
-                        .setColor("#990000")
+                        .setColor("#ff7800")
                         .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                         .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                         .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -232,7 +231,7 @@ There is nothing in queue.`))
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
             message.channel.send(
                 new MessageEmbed()
-                    .setColor("#DB4434")
+                    .setColor("#ff0000")
                     .setAuthor("Error🔺Caught")
                     .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")

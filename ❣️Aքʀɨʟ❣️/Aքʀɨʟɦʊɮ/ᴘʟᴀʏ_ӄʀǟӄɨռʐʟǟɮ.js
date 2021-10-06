@@ -33,7 +33,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#e69159")
+              .setColor("#ffc02b")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -58,7 +58,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#e69159")
+              .setColor("#ffc02b")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -85,38 +85,37 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
       ) {
         const { channel } = message.member.voice;
         const serverQueue = message.client.queue.get(message.guild.id);
-        if (!channel) {
-          message.react("❌");
-          message.channel
-            .send(
-              new MessageEmbed()
-                .setColor("#e69159")
-                .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
-                .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
-                .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
-                .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
-        *You need to* **join** *a voice channel first!*`)
-            )
-            .catch(console.error)
-            .then((message) => {
-              message.delete({
-                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-              });
-            });
-          return;
-        }
+        // if (!channel) {
+        //   message.react("❌");
+        //   message.channel
+        //     .send(
+        //       new MessageEmbed()
+        //         .setColor("#ffc02b")
+        //         .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
+        //         .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
+        //         .setURL("https://github.com/Krakinz?tab=repositories")
+        //         .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+        //         .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
+        //         .setDescription(`❣️| ${message.author}
+        // *You need to* **join** *a voice channel first!*`)
+        //     )
+        //     .catch(console.error)
+        //     .then((message) => {
+        //       message.delete({
+        //         timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+        //       });
+        //     });
+        //   return;
+        // }
 
-        try {
-          await Bot.leave();
-          await message.react("✅");
-        } catch (e) {
-          return message.channel
-            .send("Error: Unknown")
-            .then(() => console.log(e));
-        }
-
+        // try {
+        //   await Bot.leave();
+        //   await message.react("✅");
+        // } catch (e) {
+        //   return message.channel
+        //     .send("Error: Unknown")
+        //     .then(() => console.log(e));
+        // }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -125,7 +124,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#990000")
+                .setColor("#ffffff")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setDescription(
                   `**❣️🔍Searching \`${args.join(" ")}\`, and Adding in 3sec**`
@@ -148,7 +147,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69159")
+                .setColor("#ffc02b")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -177,7 +176,7 @@ You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69159")
+                .setColor("#ffc02b")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -204,7 +203,7 @@ You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69159")
+                .setColor("#ffc02b")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -229,7 +228,7 @@ You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69159")
+                .setColor("#ffc02b")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -273,7 +272,7 @@ You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
                 message.channel
                   .send(
                     new MessageEmbed()
-                      .setColor("#e69159")
+                      .setColor("#ffc02b")
                       .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                       .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                       .setURL("https://github.com/Krakinz?tab=repositories")
@@ -313,7 +312,7 @@ You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69159")
+                .setColor("#ffc02b")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -382,7 +381,7 @@ You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
               message.channel
                 .send(
                   new MessageEmbed()
-                    .setColor("#e69159")
+                    .setColor("#ffc02b")
                     .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                     .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
@@ -431,7 +430,7 @@ Audio Not Found`)
             .send(
               new MessageEmbed()
                 .setTitle("✅ " + music.title)
-                .setColor("#ff0040")
+                .setColor("#ffffff")
                 .setURL(music.url)
                 .setDescription(
                   `\`\`\`Succesfully added to the Queue.\`\`\`
@@ -468,7 +467,7 @@ Audio Not Found`)
             message.author
               .send(
                 new MessageEmbed()
-                  .setColor("#990000")
+                  .setColor("#ffffff")
                   .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -481,7 +480,7 @@ Audio Not Found`)
             message.channel
               .send(
                 new MessageEmbed()
-                  .setColor("#990000")
+                  .setColor("#ffffff")
                   .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -508,7 +507,7 @@ Audio Not Found`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69159")
+                .setColor("#ffc02b")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -537,7 +536,7 @@ Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
         .get("894958787792871475")
         .send(
           new MessageEmbed()
-            .setColor("#990000")
+            .setColor("#ff7800")
             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -554,7 +553,7 @@ Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       message.channel.send(
         new MessageEmbed()
-          .setColor("#DB4434")
+          .setColor("#ff0000")
           .setAuthor("Error🔺Caught")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")

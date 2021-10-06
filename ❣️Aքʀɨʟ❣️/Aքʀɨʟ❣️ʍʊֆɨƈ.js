@@ -41,7 +41,7 @@ try {
       .get("894958787792871475")
       .send(
         new MessageEmbed()
-          .setColor("#990000")
+          .setColor("#ffffff")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
@@ -96,7 +96,7 @@ try {
     channel
       .send(
         new MessageEmbed()
-          .setColor("#990000")
+          .setColor("#ffffff")
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -114,7 +114,7 @@ Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..`
     channel
       .send(
         new MessageEmbed()
-          .setColor("#990000")
+          .setColor("#ffffff")
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -204,7 +204,7 @@ Aքʀɨʟʍʊֆɨƈ.on("message", async (message) => {
       message.react("🔥");
       message.reply(
         new MessageEmbed()
-          .setColor("#e69159")
+          .setColor("#ffc02b")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
@@ -269,7 +269,7 @@ April❣️Music by🔱KrakinzLab™️
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#e69159")
+              .setColor("#ffc02b")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -309,7 +309,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the "${
       message.channel
         .send(
           new MessageEmbed()
-            .setColor("#e69159")
+            .setColor("#ffc02b")
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
             .setURL("https://github.com/Krakinz?tab=repositories")
@@ -342,7 +342,7 @@ There was an error executing that command.`
       .get("894958787792871475")
       .send(
         new MessageEmbed()
-          .setColor("#990000")
+          .setColor("#ff7800")
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -359,7 +359,7 @@ There was an error executing that command.`
     // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
     message.channel.send(
       new MessageEmbed()
-        .setColor("#DB4434")
+        .setColor("#ff0000")
         .setAuthor("Error🔺Caught")
         .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
         .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")

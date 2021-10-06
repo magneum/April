@@ -20,7 +20,7 @@ module.exports = {
         message.channel
           .send(
             new MessageEmbed()
-              .setColor("#e69159")
+              .setColor("#ffc02b")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -53,7 +53,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69159")
+                .setColor("#ffc02b")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -80,7 +80,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69159")
+                .setColor("#ffc02b")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -107,7 +107,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69159")
+                .setColor("#ffc02b")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -134,7 +134,7 @@ module.exports = {
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69159")
+                .setColor("#ffc02b")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -161,7 +161,7 @@ Please use a number to set volume.`)
           message.channel
             .send(
               new MessageEmbed()
-                .setColor("#e69159")
+                .setColor("#ffc02b")
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
@@ -189,7 +189,7 @@ Please use a number between 0 - 100.`)
         queue.textChannel
           .send(
             new MessageEmbed()
-              .setColor("#990000")
+              .setColor("#ffffff")
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -212,20 +212,20 @@ Volume set to: **${args[0]}%**`)
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
     } catch (ErrorApril) {
       message.channel.send("@everyone");
-      message.client.channels.cache
+      message.Aքʀɨʟʍʊֆɨƈ.channels.cache
         .get("894958787792871475")
         .send(
           new MessageEmbed()
-            .setColor("#990000")
+            .setColor("#ff7800")
             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
-**Dear 🔱KRAKINZ🔱 There has been an Error in a GUILD.**
-
-**Error report:**
-*${ErrorApril}*`)
+  **Dear 🔱KRAKINZ🔱 There has been an Error in a GUILD.**
+  
+  **Error report:**
+  *${ErrorApril}*`)
         )
         .catch(console.error);
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -233,20 +233,20 @@ Volume set to: **${args[0]}%**`)
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       message.channel.send(
         new MessageEmbed()
-          .setColor("#DB4434")
+          .setColor("#ff0000")
           .setAuthor("Error🔺Caught")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
           .setThumbnail("https://i.postimg.cc/5tgjvj1y/A.png")
           .setDescription(`**Aքʀɨʟ❣️ʍʊֆɨƈ** has encountered an error.
-
-Please report to either 
-🔰**In Discord channel** = https://discord.gg/ucPpXWFK
-or
-🔰**In telegram group** = https://t.me/Krakns
-
-**Error🔻Caught**
-*${ErrorApril}*`)
+  
+  Please report to either 
+  🔰**In Discord channel** = https://discord.gg/ucPpXWFK
+  or
+  🔰**In telegram group** = https://t.me/Krakns
+  
+  **Error🔻Caught**
+  *${ErrorApril}*`)
       );
       console.error(ErrorApril);
     }

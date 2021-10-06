@@ -18,8 +18,6 @@ module.exports = {
 
 •> **❣️April** is a Discord Music player Bot with YouTube Support and is available on both Discord and Telegram.
 
-•> **❣️April** has no **slashcommands(/)**.**BETA!** *If you want to use* **slashcommands(/)** *then please use*  [Mêllðñ🍉þlå¥êr](https://github.com/Krakinz/Mellon)
-
 •> **❣️April** has been licensed under GNU General Public License 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
 
 •> use **${AքʀɨʟʄɨӼ}help** to learn how to use **❣️April**`;
@@ -30,7 +28,7 @@ module.exports = {
         message.react("✅");
         message.author.send(
           new MessageEmbed()
-            .setColor("#990000")
+            .setColor("#ffffff")
             .setDescription(`**👍 Sent from <#${message.channel.id}>**`)
         );
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -40,7 +38,7 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setDescription(`❣️| ${message.author}\n${ᴀᴘʀɪʟɴᴏʀᴇ}`)
-              .setColor("#e69159")
+              .setColor("#ffc02b")
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setURL("https://github.com/Krakinz?tab=repositories")
@@ -58,7 +56,7 @@ module.exports = {
               .setDescription(
                 `❣️| ${message.author}\n Check your \`direct messages\` for a list of **Aքʀɨʟ❣️ʍʊֆɨƈ™** Commands!**`
               )
-              .setColor("#e69159")
+              .setColor("#ffc02b")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -76,7 +74,7 @@ module.exports = {
         .get("894958787792871475")
         .send(
           new MessageEmbed()
-            .setColor("#990000")
+            .setColor("#ff7800")
             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
@@ -93,7 +91,7 @@ module.exports = {
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       message.channel.send(
         new MessageEmbed()
-          .setColor("#DB4434")
+          .setColor("#ff0000")
           .setAuthor("Error🔺Caught")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
