@@ -11,7 +11,7 @@ const {
   escapeMarkdown,
 } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const getVideoId = require("get-video-id");
-const { splitBar } = require("string-progressbar");
+const { filledBar } = require("string-progressbar");
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -167,8 +167,7 @@ module.exports = {
 📄 𝗮𝗻𝗱 𝗶𝘀 𝗯𝗼𝘂𝗻𝗱 𝘁𝗼 \`#${message.channel.name}\``)
           )
           .catch(console.error)
-          .catch(console.error)// .then((message) => {
-        // message.delete({
+          .catch(console.error)// message.delete({ // .then((message) => {
         // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
         // });
         // });
@@ -273,7 +272,7 @@ module.exports = {
               current.addField(
                 new Date(seek * 1000).toISOString().substr(11, 8) +
                   `\n❣️` +
-                  splitBar(
+                  filledBar(
                     music.duration == 0 ? seek : music.duration,
                     seek,
                     20
