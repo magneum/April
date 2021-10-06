@@ -95,13 +95,13 @@ module.exports = {
           current.addField(
             `\u200b`,
             new Date(seek * 1000).toISOString().substr(11, 8) +
-              `\n❣️` +
+              `❣️` +
               splitBar(
                 music.duration == 0 ? seek : music.duration,
                 seek,
                 20
               )[0] +
-              `❣️\n` +
+              `❣️` +
               (music.duration == 0
                 ? ` ◉ LIVE`
                 : new Date(music.duration * 1000).toISOString().substr(11, 8)),

@@ -11,7 +11,7 @@ const {
   escapeMarkdown,
 } = require("../ӄʀǟӄɨռʐʟǟɮ/src");
 const getVideoId = require("get-video-id");
-const { filledBar } = require("string-progressbar");
+const { splitBar } = require("string-progressbar");
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
 `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -182,15 +182,15 @@ module.exports = {
 \`𝐓𝐢𝐭𝐥𝐞\`
 **🏷[${music.title}](${music.url})**
 \`𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧\`
-**🏷${music.duration}secs**
+**🏷${music.duration}**sec
 \`𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲\`
 🏷${message.author}
 
 ** •♪•♪𝐏𝐥𝐚𝐲𝐞𝐫-𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬♪•♪•**
-•**⏭skip**••❣️••**🔄loop**
-•**🔉vol -**••❣️••**🔊vol +**
-•**⭕now playing**••❣️••**🔇mute/unmute**
-•**⏹stop**`)
+•**⏭skip**====❣️====**loop🔄**
+•**🔉vol-**====❣️====**+vol🔊**
+•**⏹stop**====❣️====**📖queue**
+•**🟢now playing**====❣️====**mute/unmute🔇**`)
           )
           .catch(console.error);
 
@@ -199,7 +199,8 @@ module.exports = {
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔇");
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔉");
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🔊");
-        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⭕");
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("📖");
+        await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("🟢");
         await ᴀᴘʀɪʟᴘʟᴀʏɪɴɢᴍᴇꜱꜱᴀɢᴇ.react("⏹");
       } catch (error) {
         console.error(error);
@@ -220,10 +221,9 @@ module.exports = {
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
         const member = message.guild.member(user);
         switch (reaction.emoji.name) {
-          case "⭕":
+          case "🟢":
             if (!canModifyQueue(member)) {
               message.react("❌");
-
               message.channel
                 .send(
                   new MessageEmbed()
@@ -253,30 +253,32 @@ module.exports = {
             let current = new MessageEmbed()
               .setColor("#ff0034")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
-              .setTitle(`Now🥳playing`)
+              .setTitle(`\`\`\`Now🥳playing\`\`\``)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setThumbnail(`https://img.youtube.com/vi/${id}/hqdefault.jpg`)
-              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-              .setDescription(
-                `[${music.title}](${music.url})
-
-**⏱Time Remaining:** ${new Date(left * 1000).toISOString().substr(11, 8)}`
-              );
+              .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
+\`𝐓𝐢𝐭𝐥𝐞\`
+**🏷[${music.title}](${music.url})**
+\`𝐓𝐢𝐦𝐞 𝐑𝐞𝐦𝐚𝐢𝐧𝐢𝐧𝐠\`
+⏱**${new Date(left * 1000).toISOString().substr(11, 8)}**
+---------------:lady_beetle:---------------\n`);
             if (music.duration > 0) {
               current.addField(
-                new Date(seek * 1000).toISOString().substr(11, 8) +
+                `ʜʜ:ᴍᴍ:ꜱꜱ\n` +
+                  new Date(seek * 1000).toISOString().substr(11, 8) +
                   `\n❣️` +
-                  filledBar(
+                  splitBar(
                     music.duration == 0 ? seek : music.duration,
                     seek,
                     20
                   )[0] +
                   `❣️\n` +
                   (music.duration == 0
-                    ? ` ◉ LIVE`
+                    ? " ◉ LIVE"
                     : new Date(music.duration * 1000)
                         .toISOString()
-                        .substr(11, 8))
+                        .substr(11, 8)),
+                false
               );
             }
             message.channel.send(current).catch(console.error);
@@ -292,7 +294,6 @@ module.exports = {
           case "📖":
             if (!canModifyQueue(member)) {
               message.react("❌");
-
               message.channel
                 .send(
                   new MessageEmbed()
@@ -311,14 +312,16 @@ module.exports = {
             }
             reaction.users.remove(user).catch(console.error);
             const description = queue.songs.map(
-              (song, index) => `${index + 1}. ${escapeMarkdown(song.title)}`
+              (song, index) => `**${index + 1}.**${escapeMarkdown(song.title)}`
             );
             let queueEmbed = new MessageEmbed()
-              .setTitle("Music Queue")
+              .setTitle(`\`\`\`-••÷ ÄþRÌL❣️QÚÈÚÈ ÷••-\`\`\``)
               .setDescription(description)
+              .setURL("https://github.com/Krakinz?tab=repositories")
+              .setFooter("-••÷ ÄþRÌL❣️QÚÈÚÈ ÷••-")
               .setColor("#ff0034");
             const splitDescription = splitMessage(description, {
-              maxLength: 8000,
+              maxLength: 4096,
               char: "\n",
               prepend: "",
               append: "",
