@@ -33,12 +33,12 @@ module.exports = {
                 `❣️| ${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`
               )
           )
-          .catch(console.error);
-        // .then((message) => {
-        // message.delete({
-        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-        // });
-        // });
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+            });
+          });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -62,12 +62,12 @@ module.exports = {
               .setDescription(`❣️| ${message.author}
 *You need to* **join** *a voice channel first!*`)
           )
-          .catch(console.error);
-        // .then((message) => {
-        // message.delete({
-        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-        // });
-        // });
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+            });
+          });
         return;
       }
       queue.songs = [];

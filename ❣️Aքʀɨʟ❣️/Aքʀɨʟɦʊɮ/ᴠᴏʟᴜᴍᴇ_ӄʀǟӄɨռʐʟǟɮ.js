@@ -30,12 +30,12 @@ module.exports = {
                 `❣️| ${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`
               )
           )
-          .catch(console.error);
-        // .then((message) => {
-        // message.delete({
-        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-        // });
-        // });
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+            });
+          });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -61,12 +61,12 @@ module.exports = {
                 .setDescription(`❣️| ${message.author}
 *You need to* **join** *a voice channel first!*`)
             )
-            .catch(console.error);
-          // .then((message) => {
-          // message.delete({
-          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-          // });
-          // });
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -87,12 +87,12 @@ module.exports = {
                 .setDescription(`❣️| ${message.author}
 *You need to* **join** *a voice channel first!*`)
             )
-            .catch(console.error);
-          // .then((message) => {
-          // message.delete({
-          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-          // });
-          // });
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -113,12 +113,12 @@ module.exports = {
                 .setDescription(`❣️| ${message.author}
 🔊 **The current volume is:** ${queue.volume}%`)
             )
-            .catch(console.error);
-          // .then((message) => {
-          // message.delete({
-          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-          // });
-          // });
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -139,12 +139,12 @@ module.exports = {
                 .setDescription(`❣️| ${message.author}
 Please use a number to set volume.`)
             )
-            .catch(console.error);
-          // .then((message) => {
-          // message.delete({
-          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-          // });
-          // });
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -165,12 +165,12 @@ Please use a number to set volume.`)
                 .setDescription(`❣️| ${message.author}
 Please use a number between 0 - 100.`)
             )
-            .catch(console.error);
-          // .then((message) => {
-          // message.delete({
-          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-          // });
-          // });
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -192,12 +192,12 @@ Please use a number between 0 - 100.`)
               .setDescription(`❣️| ${message.author}
 Volume set to: **${args[0]}%**`)
           )
-          .catch(console.error);
-        // .then((message) => {
-        // message.delete({
-        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-        // });
-        // });
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+            });
+          });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================

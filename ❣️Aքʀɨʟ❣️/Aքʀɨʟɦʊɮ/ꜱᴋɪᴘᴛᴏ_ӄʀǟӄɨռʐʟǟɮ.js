@@ -30,12 +30,12 @@ module.exports = {
                 `❣️| ${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`
               )
           )
-          .catch(console.error);
-        // .then((message) => {
-        // message.delete({
-        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-        // });
-        // });
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+            });
+          });
         return;
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -61,12 +61,12 @@ module.exports = {
 ⚓️**usage:**
 ${AքʀɨʟʄɨӼ}skipto [Queue Number]`)
             )
-            .catch(console.error);
-          // .then((message) => {
-          // message.delete({
-          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-          // });
-          // });
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -88,12 +88,12 @@ ${AքʀɨʟʄɨӼ}skipto [Queue Number]`)
                 .setDescription(`❣️| ${message.author}
 There is nothing playing that I could skip for you.`)
             )
-            .catch(console.error);
-          // .then((message) => {
-          // message.delete({
-          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-          // });
-          // });
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -114,12 +114,12 @@ There is nothing playing that I could skip for you.`)
                 .setDescription(`❣️| ${message.author}
 *You need to* **join** *a voice channel first!*`)
             )
-            .catch(console.error);
-          // .then((message) => {
-          // message.delete({
-          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-          // });
-          // });
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -140,12 +140,12 @@ There is nothing playing that I could skip for you.`)
                 .setDescription(`❣️| ${message.author}
 There is nothing playing that I could skip for you.`)
             )
-            .catch(console.error);
-          // .then((message) => {
-          // message.delete({
-          // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-          // });
-          // });
+            .catch(console.error)
+            .then((message) => {
+              message.delete({
+                timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+              });
+            });
           return;
         }
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -174,12 +174,12 @@ There is nothing playing that I could skip for you.`)
               .setDescription(`❣️| ${message.author}
 ⏹ stopped the music!`)
           )
-          .catch(console.error);
-        // .then((message) => {
-        // message.delete({
-        // timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
-        // });
-        // });
+          .catch(console.error)
+          .then((message) => {
+            message.delete({
+              timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+            });
+          });
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
       `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
