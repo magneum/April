@@ -184,7 +184,7 @@ module.exports = {
 \`𝐓𝐢𝐭𝐥𝐞\`
 **🏷[${music.title}](${music.url})**
 \`𝐃𝐮𝐫𝐚𝐭𝐢𝐨𝐧\`
-**🏷${music.duration / 60}secs**
+**🏷${music.duration}secs**
 \`𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲\`
 🏷${message.author}
 
