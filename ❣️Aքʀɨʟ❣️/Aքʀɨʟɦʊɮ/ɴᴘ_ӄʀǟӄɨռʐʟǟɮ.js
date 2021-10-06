@@ -25,7 +25,7 @@ module.exports = {
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
-              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+              // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
               .setDescription(`❣️| ${message.author}
 
@@ -58,7 +58,7 @@ module.exports = {
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
 
@@ -132,7 +132,7 @@ April is not playing anymusic yet....`)
             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-            .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
+            // .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
 **Dear 🔱KRAKINZ🔱 There has been an Error in a GUILD.**
 

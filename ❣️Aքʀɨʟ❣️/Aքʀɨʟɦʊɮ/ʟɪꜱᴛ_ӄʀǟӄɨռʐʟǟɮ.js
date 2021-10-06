@@ -32,7 +32,7 @@ module.exports = {
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
-              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+              // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
               .setDescription(`❣️| ${message.author}
 
@@ -66,7 +66,7 @@ module.exports = {
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
 
@@ -93,7 +93,7 @@ module.exports = {
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
 
@@ -122,7 +122,7 @@ ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
 
@@ -149,7 +149,7 @@ Cannot connect to voice channel, missing permissions`)
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
 
@@ -176,7 +176,7 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
                 .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                 .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
-                .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(`❣️| ${message.author}
 You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
@@ -234,7 +234,7 @@ You must be in the same Voice Channel as **Aքʀɨʟ❣️Mʊֆɨƈ**.
                   .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
-                  .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                  // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                   .setDescription(`❣️| ${message.author}
 
@@ -315,7 +315,7 @@ Playlist not found`)
               .setColor("#ffffff")
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
-              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+              // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
               .setDescription(`❣️| ${message.author}
 
@@ -350,7 +350,7 @@ Added a playlist`)
                   .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
                   .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
-                  .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+                  // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                   .setDescription(`❣️| ${message.author}
 
@@ -380,7 +380,7 @@ Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
             .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-            .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
+            // .setThumbnail(`https://i.postimg.cc/NGn094BR/A-M.gif`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
 **Dear 🔱KRAKINZ🔱 There has been an Error in a GUILD.**
 

@@ -43,7 +43,7 @@ try {
         new MessageEmbed()
           .setColor("#ffffff")
           .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
-          .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+          // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
 ** ♥️•♪•♪Aքʀɨʟ❣️ʍʊֆɨƈ♪•♪•**
 • *version: v17.k90*
@@ -100,7 +100,7 @@ try {
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+          // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
           .setDescription(
             `𝗗𝗲𝗮𝗿: @everyone
@@ -118,7 +118,7 @@ Please use the channel for any **ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ** commands..`
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+          // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
           .setDescription(`❤️‍🔥 **Hey there MUSIC lovers !**
 I got you all covered with direct music streaming from ʏᴏᴜᴛᴜʙᴇ to discord voice channel.
@@ -218,7 +218,7 @@ Aքʀɨʟʍʊֆɨƈ.on("message", async (message) => {
           .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
           .setURL("https://github.com/Krakinz?tab=repositories")
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-          .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+          // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
           .setDescription(`❣️| ${message.author}
 ---------------:lady_beetle:---------------
@@ -283,7 +283,7 @@ April❣️Music by🔱KrakinzLab™️
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-              .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+              // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
 ❣️| ${message.author}
 ---------------:lady_beetle:---------------
@@ -323,7 +323,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the "${
             .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
             .setURL("https://github.com/Krakinz?tab=repositories")
             .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
-            .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
+            // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
             .setDescription(
               `
