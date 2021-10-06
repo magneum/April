@@ -191,7 +191,7 @@ There is nothing playing that I could skip for you.`)
       `|>                         GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁                       |<`;
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
     } catch (ErrorApril) {
-      message.channel.send("@everyone");
+
       message.Aքʀɨʟʍʊֆɨƈ.channels.cache
         .get("894958787792871475")
         .send(
