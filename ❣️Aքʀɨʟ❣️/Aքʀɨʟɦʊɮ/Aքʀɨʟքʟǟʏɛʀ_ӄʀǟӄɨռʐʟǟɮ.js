@@ -240,7 +240,14 @@ module.exports = {
                     .setDescription(`❣️| ${message.author}
 **You need to join a voice channel first!**`)
                 )
-                .catch(console.error);
+                .catch(console.error)
+                .then((message) => {
+                  try {
+                    message.delete({
+                      timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
+                    });
+                  } catch {}
+                });
               return;
             }
             reaction.users.remove(user).catch(console.error);
