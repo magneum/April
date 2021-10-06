@@ -27,7 +27,7 @@ module.exports = {
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
               .setDescription(
-                `❣️| ${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`
+                `❣️\`User\`${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`
               )
           )
           .catch(console.error)
@@ -59,7 +59,7 @@ module.exports = {
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
+                .setDescription(`❣️\`User\`${message.author}
 ⚓️**usage:**
 ${AքʀɨʟʄɨӼ}skipto [Queue Number]`)
             )
@@ -89,7 +89,7 @@ ${AքʀɨʟʄɨӼ}skipto [Queue Number]`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
+                .setDescription(`❣️\`User\`${message.author}
 There is nothing playing that I could skip for you.`)
             )
             .catch(console.error)
@@ -117,7 +117,7 @@ There is nothing playing that I could skip for you.`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
+                .setDescription(`❣️\`User\`${message.author}
 *You need to* **join** *a voice channel first!*`)
             )
             .catch(console.error)
@@ -145,7 +145,7 @@ There is nothing playing that I could skip for you.`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
+                .setDescription(`❣️\`User\`${message.author}
 There is nothing playing that I could skip for you.`)
             )
             .catch(console.error)
@@ -181,7 +181,7 @@ There is nothing playing that I could skip for you.`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-              .setDescription(`❣️| ${message.author}
+              .setDescription(`❣️\`User\`${message.author}
 ⏹ stopped the music!`)
           )
           .catch(console.error)

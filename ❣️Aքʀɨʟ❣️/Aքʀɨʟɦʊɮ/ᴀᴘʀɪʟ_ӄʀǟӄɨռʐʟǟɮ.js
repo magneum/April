@@ -37,7 +37,7 @@ module.exports = {
         message.author
           .send(
             new MessageEmbed()
-              .setDescription(`❣️| ${message.author}\n${ᴀᴘʀɪʟɴᴏʀᴇ}`)
+              .setDescription(`❣️\`User\`${message.author}\n${ᴀᴘʀɪʟɴᴏʀᴇ}`)
               .setColor("#bc8a59")
               .setTitle(`⚠️ᴡᴀʀɴɪɴɢ!`)
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)
@@ -54,7 +54,7 @@ module.exports = {
           .send(
             new MessageEmbed()
               .setDescription(
-                `❣️| ${message.author}\n Check your \`direct messages\` for a list of **Aքʀɨʟ❣️ʍʊֆɨƈ™** Commands!**`
+                `❣️\`User\`${message.author}\n Check your \`direct messages\` for a list of **Aքʀɨʟ❣️ʍʊֆɨƈ™** Commands!**`
               )
               .setColor("#bc8a59")
               .setAuthor(`ÄþRÌL❣️MÚ§ÌÇ`)

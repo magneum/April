@@ -40,7 +40,7 @@ module.exports = {
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
               .setDescription(
-                `❣️| ${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`
+                `❣️\`User\`${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`
               )
           )
           .catch(console.error)
@@ -67,7 +67,7 @@ module.exports = {
               .setURL("https://github.com/Krakinz?tab=repositories")
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-              .setDescription(`❣️| ${message.author}This link seems to be a playlist link.
+              .setDescription(`❣️\`User\`${message.author}This link seems to be a playlist link.
 Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
           )
           .catch(console.error)
@@ -127,7 +127,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}**𝗬𝗼𝘂 𝗺𝘂𝘀𝘁 𝗯𝗲 𝗶𝗻 𝘁𝗵𝗲 𝘀𝗮𝗺𝗲 𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗮𝘀 Aքʀɨʟ❣️Mʊֆɨƈ**.
+                .setDescription(`❣️\`User\`${message.author}**𝗬𝗼𝘂 𝗺𝘂𝘀𝘁 𝗯𝗲 𝗶𝗻 𝘁𝗵𝗲 𝘀𝗮𝗺𝗲 𝗩𝗼𝗶𝗰𝗲 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗮𝘀 Aքʀɨʟ❣️Mʊֆɨƈ**.
 
 **ALSO READ👇🏽‍**
 **[**ᴄʜᴇᴄᴋ ɪꜰ ᴛʜᴇ ʙᴏᴛ ᴡᴀꜱ ᴅɪꜱᴄᴏɴɴᴇᴄᴛᴇᴅ ᴡɪᴛʜᴏᴜᴛ ꜱᴛᴏᴘᴘɪɴɢ ᴛʜᴇ ᴍᴜꜱɪᴄ Qᴜᴇᴜᴇ.ɪꜰ ꜱᴏ ᴛʜᴇɴ ᴛʜɪꜱ ᴇʀʀᴏʀ ɪꜱ ᴛʜʀᴏᴡɴ!ᴘʟᴇᴀꜱᴇ ʀᴇ-ᴀᴅᴅ ᴛʜᴇ ʙᴏᴛ ɪɴ ᴛʜᴇ ꜱᴇʀᴠᴇʀ...ᴛʜᴇ ᴇʀʀᴏʀ ᴡɪʟʟ ʙᴇ ꜰɪxᴇᴅ ꜱᴏᴏɴ ᴏɴᴄᴇ ᴍʏ ᴅᴇᴠ ʙᴇᴄᴏᴍᴇꜱ ꜰʀᴇᴇ**]**`)
@@ -157,7 +157,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(
-                  `❣️| ${message.author}**usage:**${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**`
+                  `❣️\`User\`${message.author}**usage:**${AքʀɨʟʄɨӼ}play **YouTube URL** or **Video Name**`
                 )
             )
             .catch(console.error)
@@ -187,7 +187,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(
-                  `❣️| ${message.author}**Cannot connect to voice channel, missing permissions**`
+                  `❣️\`User\`${message.author}**Cannot connect to voice channel, missing permissions**`
                 )
             )
             .catch(console.error)
@@ -215,7 +215,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(
-                  `❣️| ${message.author}**I cannot speak in this voice channel, make sure I have the proper permissions!**`
+                  `❣️\`User\`${message.author}**I cannot speak in this voice channel, make sure I have the proper permissions!**`
                 )
             )
             .catch(console.error)
@@ -264,7 +264,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                         "𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭(𝐂)𝟐𝟎𝟐𝟏 𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗦𝗼𝘂𝗹-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝗟𝗮𝗯-𝗛𝘆𝗽𝗲𝗩𝗼𝗶𝗱𝘀"
                       )
                       .setDescription(
-                        `❣️| ${message.author} **Audio Not Found**`
+                        `❣️\`User\`${message.author} **Audio Not Found**`
                       )
                   )
                   .catch(console.error)
@@ -306,7 +306,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
                 .setDescription(
-                  `❣️| ${message.author}**Following url redirection...**`
+                  `❣️\`User\`${message.author}**Following url redirection...**`
                 )
             )
             .catch(console.error)
@@ -378,7 +378,7 @@ Please use **${AքʀɨʟʄɨӼ}list** command for any YouTube playlists..`)
                     .setURL("https://github.com/Krakinz?tab=repositories")
                     // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                     .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                    .setDescription(`❣️| ${message.author}
+                    .setDescription(`❣️\`User\`${message.author}
 Audio Not Found`)
                 )
                 .catch(console.error)
@@ -468,7 +468,7 @@ Audio Not Found`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                  .setDescription(`❣️| ${message.author}
+                  .setDescription(`❣️\`User\`${message.author}
 **👍❣️ Joined \`${channel.name}\`and is 📄 bound to \`#${message.channel.name}\`**`)
               )
               .catch(console.error);
@@ -480,7 +480,7 @@ Audio Not Found`)
                   .setURL("https://github.com/Krakinz?tab=repositories")
                   // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                   .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                  .setDescription(`❣️| ${message.author}
+                  .setDescription(`❣️\`User\`${message.author}
 **👍❣️ Joined \`${channel.name}\`and is 📄 bound to \`#${message.channel.name}\`**`)
               )
               .catch(console.error);
@@ -507,7 +507,7 @@ Audio Not Found`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
+                .setDescription(`❣️\`User\`${message.author}
 Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
 *${error}*`)
             )

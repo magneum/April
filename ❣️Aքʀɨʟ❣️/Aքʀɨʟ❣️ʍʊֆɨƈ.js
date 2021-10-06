@@ -220,7 +220,7 @@ Aքʀɨʟʍʊֆɨƈ.on("message", async (message) => {
           .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
           // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
           .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-          .setDescription(`❣️| ${message.author}
+          .setDescription(`❣️\`User\`${message.author}
 ---------------:lady_beetle:---------------
 
 
@@ -285,7 +285,7 @@ April❣️Music by🔱KrakinzLab™️
               .setImage(`https://i.postimg.cc/5tgjvj1y/A.png`)
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️").setDescription(`
-❣️| ${message.author}
+❣️\`User\`${message.author}
 ---------------:lady_beetle:---------------
 
 Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${
@@ -325,7 +325,7 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${
             // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
             .setDescription(
-              `❣️| ${message.author}
+              `❣️\`User\`${message.author}
 ---------------:lady_beetle:---------------
 
 There was an error executing that command.`

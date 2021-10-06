@@ -29,7 +29,7 @@ module.exports = {
                         .setURL("https://github.com/Krakinz?tab=repositories")
                         // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                         .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                        .setDescription(`❣️| ${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`))
+                        .setDescription(`❣️\`User\`${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`))
                     .catch(console.error)
                 // .then((message) => {
                 // message.delete({
@@ -54,7 +54,7 @@ module.exports = {
                             .setURL("https://github.com/Krakinz?tab=repositories")
                             // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                            .setDescription(`❣️| ${message.author}There is nothing in queue.`))
+                            .setDescription(`❣️\`User\`${message.author}There is nothing in queue.`))
                         .catch(console.error)
                     // .then((message) => {
                     // message.delete({
@@ -77,7 +77,7 @@ module.exports = {
                             .setURL("https://github.com/Krakinz?tab=repositories")
                             // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                            .setDescription(`❣️| ${message.author}
+                            .setDescription(`❣️\`User\`${message.author}
 You need to join a voice channel first!`))
                         .catch(console.error)
                     // .then((message) => {
@@ -101,7 +101,7 @@ You need to join a voice channel first!`))
                             .setURL("https://github.com/Krakinz?tab=repositories")
                             // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                            .setDescription(`❣️| ${message.author}
+                            .setDescription(`❣️\`User\`${message.author}
 ⚓️**usage:**${AքʀɨʟʄɨӼ}rm <Queue Number>`))
                         .catch(console.error)
                         .then((message) => {
@@ -136,7 +136,7 @@ You need to join a voice channel first!`))
                                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                                 .setFooter(
                                     "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️"
-                                ).setDescription(`❣️| ${message.author}
+                                ).setDescription(`❣️\`User\`${message.author}
 ⏹ Removed **${removed.map((music) => music.title).join(`\n`)}** from the queue.`)
                         )
                         .catch(console.error)
@@ -162,7 +162,7 @@ You need to join a voice channel first!`))
                                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                                 .setFooter(
                                     "🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️"
-                                ).setDescription(`❣️| ${message.author}
+                                ).setDescription(`❣️\`User\`${message.author}
 ⏹ Removed **${queue.songs.splice(args[0] - 1, 1)[0].title}** from the queue.`)
                         )
                         .catch(console.error)
@@ -187,7 +187,7 @@ You need to join a voice channel first!`))
                             .setURL("https://github.com/Krakinz?tab=repositories")
                             // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                             .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                            .setDescription(`❣️| ${message.author}**usage:**${AքʀɨʟʄɨӼ}rm <Queue Number>`))
+                            .setDescription(`❣️\`User\`${message.author}**usage:**${AքʀɨʟʄɨӼ}rm <Queue Number>`))
                         .catch(console.error)
                         .then((message) => {
                             try {

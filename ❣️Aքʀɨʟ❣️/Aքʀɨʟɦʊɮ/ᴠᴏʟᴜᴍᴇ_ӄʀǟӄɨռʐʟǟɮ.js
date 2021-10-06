@@ -27,7 +27,7 @@ module.exports = {
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
               .setDescription(
-                `❣️| ${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`
+                `❣️\`User\`${message.author} |⚠️Please use \`Channel: Aքʀɨʟ❣️ʍʊֆɨƈ\` for any **ᴀᴘʀɪʟ** commands.`
               )
           )
           .catch(console.error)
@@ -60,7 +60,7 @@ module.exports = {
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
+                .setDescription(`❣️\`User\`${message.author}
 *You need to* **join** *a voice channel first!*`)
             )
             .catch(console.error)
@@ -88,7 +88,7 @@ module.exports = {
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
+                .setDescription(`❣️\`User\`${message.author}
 *You need to* **join** *a voice channel first!*`)
             )
             .catch(console.error)
@@ -116,7 +116,7 @@ module.exports = {
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
+                .setDescription(`❣️\`User\`${message.author}
 🔊 **The current volume is:** ${queue.volume}%`)
             )
             .catch(console.error)
@@ -144,7 +144,7 @@ module.exports = {
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
+                .setDescription(`❣️\`User\`${message.author}
 Please use a number to set volume.`)
             )
             .catch(console.error)
@@ -172,7 +172,7 @@ Please use a number to set volume.`)
                 .setURL("https://github.com/Krakinz?tab=repositories")
                 // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
                 .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-                .setDescription(`❣️| ${message.author}
+                .setDescription(`❣️\`User\`${message.author}
 Please use a number between 0 - 100.`)
             )
             .catch(console.error)
@@ -201,7 +201,7 @@ Please use a number between 0 - 100.`)
               .setURL("https://github.com/Krakinz?tab=repositories")
               // .setThumbnail(`https://i.postimg.cc/5tgjvj1y/A.png`)
               .setFooter("🔰𝗟𝗶𝗰𝗲𝗻𝘀𝗲: GNU(c)KrakinzLab™️")
-              .setDescription(`❣️| ${message.author}
+              .setDescription(`❣️\`User\`${message.author}
 Volume set to: **${args[0]}%**`)
           )
           .catch(console.error)
