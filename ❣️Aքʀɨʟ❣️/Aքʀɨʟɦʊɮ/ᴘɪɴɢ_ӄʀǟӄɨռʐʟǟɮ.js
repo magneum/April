@@ -35,7 +35,9 @@ module.exports = {
               message.delete({
                 timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
               });
-            } catch {}
+            } catch (err) {
+              console.log(err);
+            }
           });
         return;
       }
@@ -66,7 +68,9 @@ module.exports = {
               message.delete({
                 timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
               });
-            } catch {}
+            } catch (err) {
+              console.log(err);
+            }
           });
         return;
       }

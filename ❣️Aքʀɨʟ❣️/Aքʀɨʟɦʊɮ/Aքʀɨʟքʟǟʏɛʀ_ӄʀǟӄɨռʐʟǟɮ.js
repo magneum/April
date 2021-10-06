@@ -87,7 +87,9 @@ module.exports = {
                 message.delete({
                   timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                 });
-              } catch {}
+              } catch (err) {
+                console.log(err);
+              }
             });
           return;
         }
@@ -119,7 +121,9 @@ module.exports = {
               message.delete({
                 timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
               });
-            } catch {}
+            } catch (err) {
+              console.log(err);
+            }
           });
         return;
       }
@@ -246,7 +250,9 @@ module.exports = {
                     message.delete({
                       timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                     });
-                  } catch {}
+                  } catch (err) {
+                    console.log(err);
+                  }
                 });
               return;
             }
@@ -300,7 +306,9 @@ module.exports = {
                   message.delete({
                     timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                   });
-                } catch {}
+                } catch (err) {
+                  console.log(err);
+                }
               });
             break;
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -351,7 +359,9 @@ module.exports = {
                     message.delete({
                       timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                     });
-                  } catch {}
+                  } catch (err) {
+                    console.log(err);
+                  }
                 });
             });
             break;
@@ -382,7 +392,9 @@ module.exports = {
                     message.delete({
                       timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                     });
-                  } catch {}
+                  } catch (err) {
+                    console.log(err);
+                  }
                 });
               return;
             }
@@ -408,7 +420,9 @@ module.exports = {
                   message.delete({
                     timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                   });
-                } catch {}
+                } catch (err) {
+                  console.log(err);
+                }
               });
             collector.stop();
             break;
@@ -438,7 +452,9 @@ module.exports = {
                     message.delete({
                       timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                     });
-                  } catch {}
+                  } catch (err) {
+                    console.log(err);
+                  }
                 });
               return;
             }
@@ -487,7 +503,9 @@ module.exports = {
                     message.delete({
                       timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                     });
-                  } catch {}
+                  } catch (err) {
+                    console.log(err);
+                  }
                 });
             }
             break;
@@ -523,7 +541,9 @@ module.exports = {
                     message.delete({
                       timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                     });
-                  } catch {}
+                  } catch (err) {
+                    console.log(err);
+                  }
                 });
               return;
             }
@@ -553,7 +573,9 @@ Volume now at = **${queue.volume}%**`)
                   message.delete({
                     timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                   });
-                } catch {}
+                } catch (err) {
+                  console.log(err);
+                }
               });
             break;
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -588,7 +610,9 @@ Volume now at = **${queue.volume}%**`)
                     message.delete({
                       timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                     });
-                  } catch {}
+                  } catch (err) {
+                    console.log(err);
+                  }
                 });
               return;
             }
@@ -617,7 +641,9 @@ Volume now at = **${queue.volume}%**`)
                   message.delete({
                     timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                   });
-                } catch {}
+                } catch (err) {
+                  console.log(err);
+                }
               });
             break;
             // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -646,7 +672,9 @@ Volume now at = **${queue.volume}%**`)
                     message.delete({
                       timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                     });
-                  } catch {}
+                  } catch (err) {
+                    console.log(err);
+                  }
                 });
               return;
             }
@@ -672,7 +700,9 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                   message.delete({
                     timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                   });
-                } catch {}
+                } catch (err) {
+                  console.log(err);
+                }
               });
             message.client.queue.delete(message.guild.id);
             break;
@@ -701,7 +731,9 @@ Loop is now ${queue.loop ? "**Turned On**" : "**Turned Off**"}`)
                     message.delete({
                       timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                     });
-                  } catch {}
+                  } catch (err) {
+                    console.log(err);
+                  }
                 });
               return;
             }

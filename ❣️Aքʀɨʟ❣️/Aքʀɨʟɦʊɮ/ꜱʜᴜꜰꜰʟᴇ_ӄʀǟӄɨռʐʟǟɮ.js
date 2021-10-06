@@ -36,7 +36,9 @@ module.exports = {
               message.delete({
                 timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
               });
-            } catch {}
+            } catch (err) {
+              console.log(err);
+            }
           });
         return;
       }
@@ -69,7 +71,9 @@ There is nothing in queue.`)
                 message.delete({
                   timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                 });
-              } catch {}
+              } catch (err) {
+                console.log(err);
+              }
             });
           return;
         }
@@ -97,7 +101,9 @@ There is nothing in queue.`)
                 message.delete({
                   timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                 });
-              } catch {}
+              } catch (err) {
+                console.log(err);
+              }
             });
           return;
         }
@@ -131,7 +137,9 @@ There is nothing in queue.`)
               message.delete({
                 timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
               });
-            } catch {}
+            } catch (err) {
+              console.log(err);
+            }
           });
       }
       // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================

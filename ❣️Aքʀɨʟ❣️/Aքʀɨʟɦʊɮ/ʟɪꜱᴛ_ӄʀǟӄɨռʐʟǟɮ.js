@@ -44,7 +44,9 @@ module.exports = {
               message.delete({
                 timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
               });
-            } catch {}
+            } catch (err) {
+              console.log(err);
+            }
           });
         return;
       }
@@ -78,7 +80,9 @@ module.exports = {
                 message.delete({
                   timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                 });
-              } catch {}
+              } catch (err) {
+                console.log(err);
+              }
             });
           return;
         }
@@ -107,7 +111,9 @@ ${AքʀɨʟʄɨӼ}playlist **YouTube Playlist URL** or **Valid Playlist Name**`)
                 message.delete({
                   timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                 });
-              } catch {}
+              } catch (err) {
+                console.log(err);
+              }
             });
           return;
         }
@@ -136,7 +142,9 @@ Cannot connect to voice channel, missing permissions`)
                 message.delete({
                   timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                 });
-              } catch {}
+              } catch (err) {
+                console.log(err);
+              }
             });
           return;
         }
@@ -164,7 +172,9 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
                 message.delete({
                   timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                 });
-              } catch {}
+              } catch (err) {
+                console.log(err);
+              }
             });
           return;
         }
@@ -195,7 +205,9 @@ I cannot speak in this voice channel, make sure I have the proper permissions!`)
                 message.delete({
                   timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                 });
-              } catch {}
+              } catch (err) {
+                console.log(err);
+              }
             });
           return;
         }
@@ -251,7 +263,9 @@ Playlist not found`)
                   message.delete({
                     timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                   });
-                } catch {}
+                } catch (err) {
+                  console.log(err);
+                }
               });
             return;
           }
@@ -277,7 +291,9 @@ Playlist not found`)
                   message.delete({
                     timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                   });
-                } catch {}
+                } catch (err) {
+                  console.log(err);
+                }
               });
             return;
           }
@@ -335,7 +351,9 @@ Added a playlist`)
               message.delete({
                 timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
               });
-            } catch {}
+            } catch (err) {
+              console.log(err);
+            }
           });
         playlistEmbed;
         // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
@@ -372,7 +390,9 @@ Aքʀɨʟ❣️ʍʊֆɨƈ™ Could not join the channel
                   message.delete({
                     timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                   });
-                } catch {}
+                } catch (err) {
+                  console.log(err);
+                }
               });
             return;
           }

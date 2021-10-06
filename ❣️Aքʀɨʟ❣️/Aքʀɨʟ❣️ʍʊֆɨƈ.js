@@ -298,7 +298,9 @@ Please wait ${timeLeft.toFixed(1)} more second(s) before reusing the \`${
               message.delete({
                 timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
               });
-            } catch {}
+            } catch (err) {
+              console.log(err);
+            }
           });
         return;
       }

@@ -20,7 +20,7 @@ module.exports = {
             }
             if (message.content.startsWith(AքʀɨʟʄɨӼ + "rm") && message.channel.name !== "ᴀᴘʀɪʟ💖ᴍᴜꜱɪᴄ") {
                 message.react("❌");
-                
+
                 message.channel
                     .send(new MessageEmbed()
                         .setColor("#bc8a59")
@@ -45,7 +45,7 @@ module.exports = {
                 const queue = message.client.queue.get(message.guild.id);
                 if (!queue) {
                     message.react("❌");
-                    
+
                     message.channel
                         .send(new MessageEmbed()
                             .setColor("#bc8a59")
@@ -68,7 +68,7 @@ module.exports = {
                 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
                 if (!canModifyQueue(message.member)) {
                     message.react("❌");
-                    
+
                     message.channel
                         .send(new MessageEmbed()
                             .setColor("#bc8a59")
@@ -92,7 +92,7 @@ You need to join a voice channel first!`))
                 // ====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—====================================================
                 if (!args.length) {
                     message.react("❌");
-                    
+
                     message.channel
                         .send(new MessageEmbed()
                             .setColor("#bc8a59")
@@ -109,7 +109,7 @@ You need to join a voice channel first!`))
                                 message.delete({
                                     timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                                 });
-                            } catch { }
+                            } catch (err) { console.log(err); }
                         });
                     return;
                 }
@@ -178,7 +178,7 @@ You need to join a voice channel first!`))
                 } else {
                     console.log(`we got the last one`);
                     message.react("❌");
-                    
+
                     message.channel
                         .send(new MessageEmbed()
                             .setColor("#bc8a59")
@@ -194,7 +194,7 @@ You need to join a voice channel first!`))
                                 message.delete({
                                     timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                                 });
-                            } catch { }
+                            } catch (err) { console.log(err); }
                         });
                     return;
                 }

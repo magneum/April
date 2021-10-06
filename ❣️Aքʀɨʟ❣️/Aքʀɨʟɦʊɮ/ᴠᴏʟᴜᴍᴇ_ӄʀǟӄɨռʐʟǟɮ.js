@@ -36,7 +36,9 @@ module.exports = {
               message.delete({
                 timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
               });
-            } catch {}
+            } catch (err) {
+              console.log(err);
+            }
           });
         return;
       }
@@ -69,7 +71,9 @@ module.exports = {
                 message.delete({
                   timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                 });
-              } catch {}
+              } catch (err) {
+                console.log(err);
+              }
             });
           return;
         }
@@ -97,7 +101,9 @@ module.exports = {
                 message.delete({
                   timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                 });
-              } catch {}
+              } catch (err) {
+                console.log(err);
+              }
             });
           return;
         }
@@ -125,7 +131,9 @@ module.exports = {
                 message.delete({
                   timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                 });
-              } catch {}
+              } catch (err) {
+                console.log(err);
+              }
             });
           return;
         }
@@ -153,7 +161,9 @@ Please use a number to set volume.`)
                 message.delete({
                   timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                 });
-              } catch {}
+              } catch (err) {
+                console.log(err);
+              }
             });
           return;
         }
@@ -181,7 +191,9 @@ Please use a number between 0 - 100.`)
                 message.delete({
                   timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
                 });
-              } catch {}
+              } catch (err) {
+                console.log(err);
+              }
             });
           return;
         }
@@ -210,7 +222,9 @@ Volume set to: **${args[0]}%**`)
               message.delete({
                 timeout: `${Aքʀɨʟքʊʀɢɛʀ}`,
               });
-            } catch {}
+            } catch (err) {
+              console.log(err);
+            }
           });
         return;
       }
