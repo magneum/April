@@ -1,28 +1,8 @@
-[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="HypeVoidSoul"/><img align="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
-
-```sh
-====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—======================
-GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
-====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—======================
-```
+# ⚠️⚠️⚠️PLEASE DO NOT USE THIS BOT! USE 🍏YouTify™> https://github.com/Krakinz/YouTify.git
 
 # ❣️『 ᴅɪꜱᴄᴏʀᴅ ᴍᴜꜱɪᴄ ʙᴏᴛ: April 』❣️
-
 <p align="centre"><img  width="100%" height="100%" img src="https://github.com/Krakinz/April/blob/KrakinzLab/%E2%9D%A3%EF%B8%8FA%D6%84%CA%80%C9%A8%CA%9F%E2%9D%A3%EF%B8%8F/A%D6%84%CA%80%C9%A8%CA%9F%D5%BC%C9%9B%CA%8B/A%D6%84%CA%80%C9%A8%CA%9F%D6%84%CA%9F%C7%9F%CA%8F%C9%9B%CA%80.png" /></p>
 
-# ❓ WΉY MΛDΣ ƬΉIS BӨƬ?
-
-```sh
-❣️=======ᴀᴘʀɪʟ❣️ᴘʟᴀʏᴇʀ=======❣️
-
-    💻 𝗪𝗵𝗮𝘁 𝗖𝗮𝗻 𝗕𝗼𝘁 𝗗𝗼???
-❄️ 𝘗𝘭𝘢𝘺 𝘢𝘯𝘺 𝘮𝘶𝘴𝘪𝘤 𝘪𝘯 𝘺𝘰𝘶𝘳 discord channel.
-❄️ 𝘠𝘰𝘶 𝘸𝘪𝘭𝘭 𝘩𝘢𝘷𝘦 𝘵𝘰 make bot admin 𝘵𝘰 𝘶𝘴𝘦 𝘵𝘩𝘪𝘴 𝘣𝘰𝘵 𝘰𝘳 𝘨𝘦𝘵 𝘦𝘳𝘳𝘰𝘳𝘴.
-❄️ Filters will be re-added in the code in future.
-
-📌 By The way i might not update this bot to Discord.js-V13
-rather i will make a new bot with Discord.js-V13.
-```
 
 # 〽️ MΣΣƬ US ӨЯ CΉΣCK ӨƬΉΣЯ BӨƬS
 
@@ -69,13 +49,4 @@ Everyone is permitted to 𝗰𝗼𝗽𝘆 𝗮𝗻𝗱 𝗱𝗶𝘀𝘁𝗿𝗶�
     has been licensed under GNU General Public License
 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁
 ===================================================================
-```
-
-## Running in HEROKU!
-
-<p align="left"><img  width="50%" height="50%" img src="https://github.com/Krakinz/April/blob/KrakinzLab/%E2%9D%A3%EF%B8%8FA%D6%84%CA%80%C9%A8%CA%9F%E2%9D%A3%EF%B8%8F/%D3%84%CA%80%C7%9F%D3%84%C9%A8%D5%BC%CA%90%CA%9F%C7%9F%C9%AE/A%D6%84%CA%80%C9%A8%CA%9F%E2%9D%A3%EF%B8%8FM%CA%8A%D6%86%C9%A8%C6%88.gif" /></p>
-```sh
-====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—======================
-GNU GENERAL PUBLIC LICENSE 𝐂𝐨𝐩𝐲𝐫𝐢𝐠𝐡𝐭 (𝐂) 𝟐𝟎𝟐𝟏 𝗞𝗿𝗮𝗸𝗶𝗻𝘇 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗟𝗮𝗯 | 𝗞𝗿𝗮𝗸𝗶𝗻𝘇𝗕𝗼𝘁  
-====================================================—••÷[Aքʀɨʟ❣️ʍʊֆɨƈ™]÷••—======================
 ```
